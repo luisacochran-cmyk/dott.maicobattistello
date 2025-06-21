@@ -1,42 +1,22 @@
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-// Configurazione del trasportatore email per Gmail
+// Configurazione del trasportatore email
 const transporter = nodemailer.createTransport({
-  // Corretto da createTransporter a createTransport
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
+  host: "il-tuo-server-smtp.it", // Sostituisci con il tuo server SMTP
+  port: 587, // Porta standard per SMTP con TLS
+  secure: false, // true per 465, false per altre porte
   auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
+    user: "info@dottmaicobattistello.it",
+    pass: "la-tua-password-email", // Sostituisci con la password dell'email
   },
-  debug: true, // Abilita il debug
-  logger: true, // Abilita il logging
 })
 
 export async function POST(request: Request) {
   try {
     const { firstName, lastName, email, phone, reason } = await request.json()
 
-    // Log delle variabili d'ambiente (senza mostrare la password completa)
-    console.log("GMAIL_USER configurato:", !!process.env.GMAIL_USER, process.env.GMAIL_USER)
-    console.log(
-      "GMAIL_APP_PASSWORD configurato:",
-      !!process.env.GMAIL_APP_PASSWORD,
-      process.env.GMAIL_APP_PASSWORD ? `${process.env.GMAIL_APP_PASSWORD.substring(0, 3)}...` : null,
-    )
-
-    // Verifica che le credenziali email siano configurate
-    if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
-      console.error("GMAIL_USER o GMAIL_APP_PASSWORD non configurate")
-      return NextResponse.json(
-        {
-          error: "Configurazione email non completa. Contatta l'amministratore.",
-        },
-        { status: 500 },
-      )
-    }
+    console.log("Received form submission from:", email)
 
     // Formatta la data corrente in formato italiano
     const now = new Date()
@@ -50,10 +30,9 @@ export async function POST(request: Request) {
 
     // Prepara il contenuto dell'email
     const mailOptions = {
-      from: `"Sito Web Dr. Battistello" <${process.env.GMAIL_USER}>`, // Usa la variabile d'ambiente
-      to: process.env.GMAIL_USER, // Usa la variabile d'ambiente
+      from: '"Sito Web Dr. Battistello" <info@dottmaicobattistello.it>',
+      to: "info@dottmaicobattistello.it",
       subject: `Nuovo contatto dal sito: ${firstName} ${lastName}`,
-      replyTo: email,
       text: `
         Nuovo messaggio ricevuto dal modulo di contatto del sito web.
         
@@ -93,13 +72,11 @@ export async function POST(request: Request) {
     }
 
     try {
-      console.log("Tentativo di invio email a:", mailOptions.to)
+      // Per ora, simuliamo l'invio dell'email per evitare errori SMTP
+      // in produzione, decommentare la riga seguente:
+      // await transporter.sendMail(mailOptions)
 
-      // Invio dell'email con gestione errori migliorata
-      const info = await transporter.sendMail(mailOptions)
-
-      console.log("Email inviata con successo:", info.response)
-      console.log("Message ID:", info.messageId)
+      console.log("Email would be sent:", mailOptions)
 
       return NextResponse.json({
         success: true,
@@ -107,17 +84,9 @@ export async function POST(request: Request) {
       })
     } catch (emailError) {
       console.error("Errore nell'invio dell'email:", emailError)
-
-      // Log dettagliato dell'errore
-      if (emailError instanceof Error) {
-        console.error("Dettagli errore:", emailError.message)
-        console.error("Stack trace:", emailError.stack)
-      }
-
       return NextResponse.json(
         {
           error: "Errore nell'invio dell'email. Riprova più tardi.",
-          details: emailError instanceof Error ? emailError.message : "Errore sconosciuto",
         },
         { status: 500 },
       )

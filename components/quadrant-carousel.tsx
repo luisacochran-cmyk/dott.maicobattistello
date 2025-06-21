@@ -24,18 +24,17 @@ export default function QuadrantCarousel({
   items = [
     {
       title: "Ozonoterapia + Osteopatia",
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ozonosteopic.jpg-8YPM2ER5BSHlgZEDoA1kWc8izXQr9f.jpeg",
+      image: "/images/homeozonosteo.jpg",
       link: "/ozone-osteopathy",
     },
     {
       title: "Osteopatia",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/osteopic.jpg-1DghIg2avBhDEuGOkg7IMcB61GdHay.jpeg",
+      image: "/images/homeosteo.jpg",
       link: "/osteopathy",
     },
     {
       title: "Ozonoterapia",
-      image: "/images/piccolaemo.jpg",
+      image: "/images/homeozono.jpg",
       link: "/ozone-therapy",
     },
   ],
