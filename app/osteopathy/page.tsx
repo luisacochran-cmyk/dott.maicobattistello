@@ -22,11 +22,12 @@ export default function OsteopathyPage() {
 
           <p className="text-lg mb-6">
             L'Osteopatia è una terapia sanitaria manuale che si avvicina alla persona malata nella sua totalità, cioè in
-            maniera olistica. L'Osteopata esamina le strutture del corpo (colonna vertebrale, articolazioni, fasce
-            muscolari, proiezioni viscerali e ossa craniche), cercando le principali aree di squilibrio
-            posturale/articolare, tensione muscolo-legamentosa/fasciale, e con tecniche manipolative attente, adatte
-            alle esigenze specifiche di ogni individuo, dall'anziano, al bambino, alla donna in gravidanza, ripristina
-            queste aree, recuperando il corretto equilibrio posturale, l'equilibrio funzionale e il benessere fisico.
+            <strong> maniera olistica</strong>. L'Osteopata esamina le <strong>strutture del corpo</strong> (colonna
+            vertebrale, articolazioni, fasce muscolari, proiezioni viscerali e ossa craniche), cercando le principali
+            aree di squilibrio posturale/articolare, tensione muscolo-legamentosa/fasciale, e con{" "}
+            <strong>tecniche manipolative attente</strong>, adatte alle esigenze specifiche di ogni individuo,
+            dall'anziano, al bambino, alla donna in gravidanza, ripristina queste aree, recuperando il corretto
+            equilibrio posturale, l'equilibrio funzionale e il benessere fisico.
           </p>
         </div>
       </div>
@@ -37,18 +38,17 @@ export default function OsteopathyPage() {
           items={[
             {
               title: "Trattamento Osteopatico",
-              image:
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/osteopic.jpg-1DghIg2avBhDEuGOkg7IMcB61GdHay.jpeg",
+              image: "/images/nuovaosteo1.jpg",
               link: "/osteopathy",
             },
             {
               title: "Manipolazione Cranio-Sacrale",
-              image: "/images/osteopatia1.jpg",
+              image: "/images/nuovaosteo2.jpg",
               link: "/osteopathy",
             },
             {
               title: "Trattamento Viscerale",
-              image: "/images/osteopatia2.jpg",
+              image: "/images/nuovaosteo3.jpg",
               link: "/osteopathy",
             },
           ]}

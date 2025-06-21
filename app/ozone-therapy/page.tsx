@@ -22,13 +22,14 @@ export default function OzoneTherapyPage() {
           <h2 className="text-2xl font-semibold mb-6">Cos'è l'Ozonoterapia?</h2>
 
           <p className="text-lg mb-6">
-            L'ossigeno-ozonoterapia utilizza una miscela di ossigeno e gas ozono per il trattamento sintomatico ed
-            eziologico delle malattie umane e animali. Questi gas all'interno del corpo hanno proprietà
-            antinfiammatorie, analgesiche e antiedemigene e sono in grado di generare benessere, guarire processi
-            infiammatori e promuovere la rigenerazione dei tessuti. Per queste caratteristiche è diventata una terapia
-            medica di provata sicurezza, efficacia e minima invasività. Secondo il Ministero della Salute, questo tipo
-            di terapia è particolarmente efficace, non solo nel migliorare i sintomi delle ernie discali ma anche nel
-            ridurne il volume, esercitando un vero e proprio effetto curativo.
+            L'ossigeno-ozonoterapia utilizza una <strong>miscela di ossigeno e gas ozono</strong> per il trattamento
+            sintomatico ed eziologico delle malattie umane e animali. Questi gas all'interno del corpo hanno proprietà
+            <strong> antinfiammatorie, analgesiche e antiedemigene</strong> e sono in grado di{" "}
+            <strong>generare benessere</strong>, guarire processi infiammatori e promuovere la{" "}
+            <strong>rigenerazione dei tessuti</strong>. Per queste caratteristiche è diventata una terapia medica di
+            provata sicurezza, efficacia e minima invasività. Secondo il Ministero della Salute, questo tipo di terapia
+            è particolarmente efficace, non solo nel migliorare i sintomi delle ernie discali ma anche nel ridurne il
+            volume, esercitando un vero e proprio <strong>effetto curativo</strong>.
           </p>
         </div>
       </div>
@@ -44,12 +45,12 @@ export default function OzoneTherapyPage() {
             },
             {
               title: "Piccola Autoemoterapia",
-              image: "/images/piccolaemo.jpg",
+              image: "/images/nuovaozono1.jpg",
               link: "/ozone-therapy",
             },
             {
               title: "Consulenza Specialistica",
-              image: "/images/ozonoterapia5863.jpg",
+              image: "/images/nuovaozono2.jpg",
               link: "/ozone-therapy",
             },
           ]}
@@ -63,13 +64,13 @@ export default function OzoneTherapyPage() {
             <h3 className="text-xl font-semibold mb-4">Piccola Autoemoterapia (PAET)</h3>
             <p className="text-lg mb-4">
               La Piccola Autoemoterapia è una delle tecniche utilizzate nell'ozonoterapia. Consiste nel prelevare una
-              piccola quantità di sangue dal paziente, miscelarla con ozono medicale e reiniettarla per via
-              intramuscolare.
+              <strong> piccola quantità</strong> di sangue dal paziente, miscelarla con ozono medicale e reiniettarla
+              per <strong>via intramuscolare</strong>.
             </p>
             <p className="text-lg">
-              Questo trattamento stimola il sistema immunitario e ha proprietà antinfiammatorie, analgesiche e
-              rigenerative. È particolarmente efficace per problematiche localizzate e per migliorare la risposta
-              immunitaria dell'organismo.
+              Questo trattamento stimola il sistema immunitario e ha proprietà{" "}
+              <strong>antinfiammatorie, analgesiche e rigenerative</strong>. È particolarmente efficace per
+              problematiche localizzate e per <strong>migliorare la risposta immunitaria</strong> dell'organismo.
             </p>
           </div>
           <div className="md:w-1/2">
@@ -84,6 +85,39 @@ export default function OzoneTherapyPage() {
                 unoptimized
               />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Grande Autoemoterapia Section */}
+      <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
+          <div className="md:w-1/2 order-2 md:order-1">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/nuovaozonosteo2.jpg"
+                alt="Grande Autoemoterapia"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover"
+                priority
+                unoptimized
+              />
+            </div>
+          </div>
+          <div className="md:w-1/2 order-1 md:order-2">
+            <h3 className="text-xl font-semibold mb-4">Grande Autoemoterapia (GAET)</h3>
+            <p className="text-lg mb-4">
+              La Grande Autoemoterapia rappresenta la tecnica più avanzata dell'Ozonoterapia sistemica. Consiste nel
+              prelevare una <strong>maggiore quantità di sangue</strong> dal paziente (circa 100-200ml), ozonizzarlo in
+              modo controllato e reinfonderlo <strong>per via endovenosa</strong>.
+            </p>
+            <p className="text-lg">
+              Questo trattamento ha <strong>effetti sistemici profondi</strong>, stimolando il sistema immunitario,
+              migliorando l'ossigenazione tissutale e producendo{" "}
+              <strong>potenti effetti antinfiammatori e rigenerativi</strong>. È particolarmente indicato per patologie
+              croniche e <strong>condizioni sistemiche complesse</strong>.
+            </p>
           </div>
         </div>
       </div>

@@ -292,12 +292,12 @@ export default function ContactForm() {
                   <div>
                     <h3 className="font-medium">Email</h3>
                     <a
-                      href="mailto:info@dottmaicobattistello.it"
+                      href="mailto:maico.battistello@gmail.com"
                       className="text-primary hover:underline text-lg group inline-flex items-center"
                       rel="noopener"
-                      aria-label="Invia email a info@dottmaicobattistello.it"
+                      aria-label="Invia email a maico.battistello@gmail.com"
                     >
-                      info@dottmaicobattistello.it
+                      maico.battistello@gmail.com
                     </a>
                   </div>
                 </div>

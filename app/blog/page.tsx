@@ -9,7 +9,6 @@ import Image from "next/image"
 import AnimatedLink from "@/components/animated-link"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import QuadrantCarousel from "@/components/quadrant-carousel"
 import AnimatedScrollElement from "@/components/animated-scroll-element"
 
 type Category = "all" | "osteopathy" | "ozone-therapy" | "legal-medicine"
@@ -437,19 +436,32 @@ export default function BlogPage() {
                       <h3 className="text-2xl font-bold mb-8 text-center">Articoli Correlati</h3>
                     </AnimatedScrollElement>
                     <AnimatedScrollElement direction="up" delay={0.3}>
-                      <div className="max-w-4xl mx-auto">
-                        <QuadrantCarousel
-                          items={articles
-                            .filter(
-                              (article) =>
-                                article.category === activeArticle.category && article.id !== activeArticle.id,
-                            )
-                            .map((article) => ({
-                              title: article.title,
-                              image: article.image,
-                              link: `/blog/${article.id}`,
-                            }))}
-                        />
+                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {articles
+                          .filter(
+                            (article) => article.category === activeArticle.category && article.id !== activeArticle.id,
+                          )
+                          .map((article) => (
+                            <div
+                              key={article.id}
+                              onClick={(e) => handleArticleClick(article, e)}
+                              className="cursor-pointer group"
+                            >
+                              <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                                  <Image
+                                    src={article.image || "/placeholder.svg"}
+                                    alt={article.title}
+                                    fill
+                                    className="object-cover transform transition-transform group-hover:scale-105"
+                                  />
+                                </div>
+                                <div className="p-4">
+                                  <h4 className="text-lg font-semibold">{article.title}</h4>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
                       </div>
                     </AnimatedScrollElement>
                   </div>

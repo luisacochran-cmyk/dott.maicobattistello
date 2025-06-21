@@ -33,8 +33,8 @@ export default function OzoneOsteopathyPage() {
               <AnimatedLink href="/ozone-therapy" className="text-primary">
                 Ozonoterapia
               </AnimatedLink>
-              , il Dr. Maico Battistello ha sviluppato un trattamento combinato unico, ottenendo risultati clinici che
-              nessuna delle due discipline da sola può fornire.
+              , il Dr. Maico Battistello ha sviluppato un <strong>trattamento combinato unico</strong>, ottenendo
+              risultati clinici che nessuna delle due discipline da sola può fornire.
             </p>
           </AnimatedScrollElement>
 
@@ -49,7 +49,7 @@ export default function OzoneOsteopathyPage() {
 
           <AnimatedScrollElement direction="up" delay={0.3}>
             <p className="text-lg mb-4">
-              Le proprietà naturali antinfiammatorie e miorilassanti dell'{" "}
+              Le proprietà naturali <strong>antinfiammatorie</strong> e miorilassanti dell'{" "}
               <AnimatedLink href="/ozone-therapy" className="text-primary">
                 Ozonoterapia
               </AnimatedLink>
@@ -81,7 +81,7 @@ export default function OzoneOsteopathyPage() {
             items={[
               {
                 title: "Trattamento Combinato",
-                image: "/images/osteozonoterapia0.jpg",
+                image: "/images/nuovaozonosteo1.jpg",
                 link: "/ozone-osteopathy",
               },
               {
