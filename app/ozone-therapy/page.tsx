@@ -1,0 +1,231 @@
+"use client"
+import Breadcrumb from "@/components/breadcrumb"
+import ContactForm from "@/components/contact-form"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import QuadrantCarousel from "@/components/quadrant-carousel"
+import Image from "next/image"
+
+export default function OzoneTherapyPage() {
+  return (
+    <div className="pt-20">
+      {/* Breadcrumb */}
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Ozonoterapia", href: "/ozone-therapy" },
+        ]}
+      />
+
+      {/* Main Content */}
+      <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <div className="prose max-w-none">
+          <h2 className="text-2xl font-semibold mb-6">Cos'è l'Ozonoterapia?</h2>
+
+          <p className="text-lg mb-6">
+            L'ossigeno-ozonoterapia utilizza una miscela di ossigeno e gas ozono per il trattamento sintomatico ed
+            eziologico delle malattie umane e animali. Questi gas all'interno del corpo hanno proprietà
+            antinfiammatorie, analgesiche e antiedemigene e sono in grado di generare benessere, guarire processi
+            infiammatori e promuovere la rigenerazione dei tessuti. Per queste caratteristiche è diventata una terapia
+            medica di provata sicurezza, efficacia e minima invasività. Secondo il Ministero della Salute, questo tipo
+            di terapia è particolarmente efficace, non solo nel migliorare i sintomi delle ernie discali ma anche nel
+            ridurne il volume, esercitando un vero e proprio effetto curativo.
+          </p>
+        </div>
+      </div>
+
+      {/* Image Carousel Section */}
+      <div className="-mt-8 mb-12">
+        <QuadrantCarousel
+          items={[
+            {
+              title: "Trattamento di Ozonoterapia",
+              image: "/images/ozonoterapia3.jpg",
+              link: "/ozone-therapy",
+            },
+            {
+              title: "Piccola Autoemoterapia",
+              image: "/images/piccolaemo.jpg",
+              link: "/ozone-therapy",
+            },
+            {
+              title: "Consulenza Specialistica",
+              image: "/images/ozonoterapia5863.jpg",
+              link: "/ozone-therapy",
+            },
+          ]}
+        />
+      </div>
+
+      {/* Piccola Autoemoterapia Section */}
+      <div className="container mx-auto px-4 py-8 max-w-4xl">
+        <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
+          <div className="md:w-1/2">
+            <h3 className="text-xl font-semibold mb-4">Piccola Autoemoterapia (PAET)</h3>
+            <p className="text-lg mb-4">
+              La Piccola Autoemoterapia è una delle tecniche utilizzate nell'ozonoterapia. Consiste nel prelevare una
+              piccola quantità di sangue dal paziente, miscelarla con ozono medicale e reiniettarla per via
+              intramuscolare.
+            </p>
+            <p className="text-lg">
+              Questo trattamento stimola il sistema immunitario e ha proprietà antinfiammatorie, analgesiche e
+              rigenerative. È particolarmente efficace per problematiche localizzate e per migliorare la risposta
+              immunitaria dell'organismo.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/paet.jpg"
+                alt="Piccola Autoemoterapia"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover"
+                priority
+                unoptimized
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Collapsible Sections */}
+      <section className="py-8 container mx-auto">
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="administration-methods">
+            <AccordionTrigger className="text-xl font-semibold">Metodi di Somministrazione</AccordionTrigger>
+            <AccordionContent>
+              <div className="prose max-w-none">
+                <p className="text-lg">
+                  L'ozonoterapia può essere somministrata localmente o sistemicamente a seconda delle patologie da
+                  trattare.
+                </p>
+                <p className="text-lg">
+                  Le varie vie di somministrazione possono anche essere utilizzate da sole o in combinazione, per
+                  esercitare un effetto sinergico.
+                </p>
+                <p className="text-lg">Le principali vie di somministrazione sono:</p>
+
+                <h4 className="font-semibold mt-4">Sistemica:</h4>
+                <p className="text-lg">
+                  Applicata nei casi in cui la prognosi e la progressione della malattia possono beneficiare della
+                  modulazione della risposta infiammatoria o di un migliore apporto di ossigeno ai tessuti. Questi
+                  includono:
+                </p>
+                <ul className="list-disc pl-6">
+                  <li>Grande Auto-emoterapia (GAET) – venosa;</li>
+                  <li>Piccola Auto-emoterapia Infusionale (PAEI) – muscolo profondo;</li>
+                  <li>Rettale</li>
+                </ul>
+
+                <h4 className="font-semibold mt-4">Locale:</h4>
+                <p className="text-lg">
+                  Applicata quando c'è la necessità di sfruttare gli effetti analgesici, antinfiammatori e miorilassanti
+                  per patologie muscolo-scheletriche, intestinali e altre. La somministrazione avviene tramite:
+                </p>
+                <ul className="list-disc pl-6">
+                  <li>Intramuscolare, paravertebrale</li>
+                  <li>Sottocutanea</li>
+                  <li>Peri-articolare</li>
+                  <li>Intra-articolare</li>
+                  <li>Insufflazione (rettale e vaginale)</li>
+                  <li>Topica con Sacca di Ozono</li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="clinical-therapeutic-indications">
+            <AccordionTrigger className="text-xl font-semibold">Indicazioni Clinico-Terapeutiche</AccordionTrigger>
+            <AccordionContent>
+              <div className="prose max-w-none">
+                <p className="text-lg">
+                  Grazie alla Medicina Basata sull'Evidenza (EBM), le patologie trattate con l'Ossigeno-Ozonoterapia
+                  sono suddivise in tre categorie.
+                </p>
+
+                <h4 className="font-semibold mt-4">Evidenza di Tipo A:</h4>
+                <p className="text-lg">
+                  Basata su revisioni sistematiche con omogeneità di studi caso-controllo. Le principali applicazioni
+                  cliniche riconosciute dal Ministero della Salute includono:
+                </p>
+                <ul className="list-disc pl-6">
+                  <li>Ernie Discali</li>
+                  <li>Protrusioni Discali</li>
+                  <li>Discopatie</li>
+                  <li>Sindrome Faccettale</li>
+                  <li>Osteoartrosi, Gonartrosi, Condromalacia rotulea</li>
+                </ul>
+
+                <h4 className="font-semibold mt-4">Evidenza di Tipo B:</h4>
+                <p className="text-lg">Basata su singoli studi randomizzati, studi di coorte o studi caso-controllo.</p>
+                <ul className="list-disc pl-6">
+                  <li>Patologie Ortopediche</li>
+                  <li>Piede Diabetico</li>
+                  <li>Ulcere Cutanee e Ustioni</li>
+                  <li>Malattie Cutanee Acute causate da batteri, funghi o virus</li>
+                </ul>
+
+                <h4 className="font-semibold mt-4">Evidenza di Tipo C:</h4>
+                <p className="text-lg">
+                  Basata su opinioni di esperti senza ricerca sistematica o scientifica specifica.
+                </p>
+                <ul className="list-disc pl-6">
+                  <li>Long Covid</li>
+                  <li>Fibromialgia</li>
+                  <li>Stanchezza Cronica (CFS)</li>
+                  <li>Stanchezza Stagionale o da Lavoro</li>
+                  <li>Debolezza Generale o Mancanza di Energia nel Parkinson</li>
+                  <li>Benessere post-ospedalizzazione/recupero</li>
+                  <li>Artrite Reumatoide, Artrite Psoriasica</li>
+                  <li>Disfunzione Erettile</li>
+                  <li>Malattie Autoimmuni (supporto alle terapie convenzionali)</li>
+                  <li>Demenza Senile/Alzheimer (complementare alla terapia convenzionale)</li>
+                  <li>Asma</li>
+                  <li>Emicranie</li>
+                  <li>Cefalee a Grappolo o Tensiva</li>
+                  <li>Problemi Infettivi</li>
+                  <li>Problemi Circolatori</li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="contraindications">
+            <AccordionTrigger className="text-xl font-semibold">Controindicazioni</AccordionTrigger>
+            <AccordionContent>
+              <div className="prose max-w-none">
+                <p className="text-lg">
+                  A concentrazioni terapeutiche, l'Ossigeno-Ozonoterapia non ha effetti collaterali. Non è un
+                  trattamento doloroso. Non provoca reazioni allergiche. Non interferisce con i farmaci in uso.
+                </p>
+
+                <p className="text-lg mt-4">Le controindicazioni sono limitate alla GAET per le seguenti condizioni:</p>
+                <ul className="list-disc pl-6">
+                  <li>Favismo</li>
+                  <li>Ipertiroidismo grave</li>
+                  <li>Allergie al citrato e agli anticoagulanti</li>
+                  <li>Epilessia</li>
+                  <li>Gravidanza</li>
+                  <li>Sport agonistico</li>
+                </ul>
+
+                <p className="text-lg mt-4">
+                  Tutti i trattamenti con ozono vengono eseguiti utilizzando apparecchiature certificate, aderendo alle
+                  linee guida sviluppate dalle principali società scientifiche nazionali e internazionali, come:
+                </p>
+                <ul className="list-disc pl-6">
+                  <li>SIOOT (Società Scientifica Internazionale di Ossigeno-Ozonoterapia)</li>
+                  <li>Nuova FIO (Federazione Italiana di Ossigeno-Ozonoterapia)</li>
+                  <li>ISCO3 (Comitato Scientifico Internazionale di Ozonoterapia)</li>
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </section>
+
+      {/* Contact Form */}
+      <ContactForm />
+    </div>
+  )
+}
