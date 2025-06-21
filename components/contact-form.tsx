@@ -309,6 +309,11 @@ export default function ContactForm() {
           </AnimatedScrollElement>
 
           <AnimatedScrollElement direction="right" delay={0.3}>
+            <AnimatedScrollElement direction="up" delay={0.2}>
+              <h3 className="text-2xl md:text-3xl font-bold text-center mb-6 md:hidden">
+                Compila il Form per Contattarmi
+              </h3>
+            </AnimatedScrollElement>
             {submitStatus && submitStatus.success ? (
               <div className="bg-green-50 border border-green-200 rounded-lg p-6 flex flex-col items-center justify-center h-full success-message">
                 <CheckCircle className="h-16 w-16 text-green-500 mb-4 success-check" />

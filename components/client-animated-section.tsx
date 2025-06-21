@@ -67,9 +67,7 @@ export function TreatmentsSection() {
         <AnimatedScrollElement className="mb-8 text-center" direction="up" delay={0.1}>
           <h2 className="text-3xl font-bold mb-4">I Nostri Trattamenti</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            {"Scopri il nostro approccio innovativo alla salute "}
-            <br />
-            {"attraverso la combinazione di Ozonoterapia e Osteopatia"}
+            Scopri il nostro approccio innovativo alla salute attraverso la combinazione di Ozonoterapia e Osteopatia
           </p>
         </AnimatedScrollElement>
         <AnimatedScrollElement direction="up" delay={0.3}>
@@ -132,9 +130,9 @@ export function AdvancedTherapySection() {
             <AnimatedScrollElement className="space-y-4 mb-8" direction="right" delay={0.3}>
               <h3 className="text-xl font-semibold text-blue-200 text-wave-hover">Terapia all'Avanguardia</h3>
               <p className="text-lg">
-                L'Ozonoterapia sfrutta le proprietà biochimiche dell'ozono, che fornisce{" "}
-                <strong>effetti benefici</strong> per il tuo corpo. L'Ossigeno-Ozonoterapia ha proprietà
-                antinfiammatorie, analgesiche, miorilassanti, immunomodulanti, antibatteriche, fungicide e antivirali.
+                L'ozonoterapia sfrutta le proprietà biochimiche dell'ozono, che fornisce effetti benefici per il tuo
+                corpo. L'ossigeno-ozonoterapia ha proprietà antinfiammatorie, analgesiche, miorilassanti,
+                immunomodulanti, antibatteriche, fungicide e antivirali.
               </p>
             </AnimatedScrollElement>
             <AnimatedScrollElement direction="up" delay={0.5}>

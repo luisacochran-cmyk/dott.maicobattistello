@@ -1,14 +1,14 @@
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-// Configurazione del trasportatore email
+// Configurazione del trasportatore email per Gmail
 const transporter = nodemailer.createTransport({
-  host: "il-tuo-server-smtp.it", // Sostituisci con il tuo server SMTP
-  port: 587, // Porta standard per SMTP con TLS
+  host: "smtp.gmail.com",
+  port: 587,
   secure: false, // true per 465, false per altre porte
   auth: {
-    user: "info@dottmaicobattistello.it",
-    pass: "la-tua-password-email", // Sostituisci con la password dell'email
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD, // App Password di Gmail
   },
 })
 
@@ -17,6 +17,17 @@ export async function POST(request: Request) {
     const { firstName, lastName, email, phone, reason } = await request.json()
 
     console.log("Received form submission from:", email)
+
+    // Verifica che le credenziali email siano configurate
+    if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+      console.error("GMAIL_USER o GMAIL_APP_PASSWORD non configurate")
+      return NextResponse.json(
+        {
+          error: "Configurazione email non completa. Contatta l'amministratore.",
+        },
+        { status: 500 },
+      )
+    }
 
     // Formatta la data corrente in formato italiano
     const now = new Date()
@@ -30,9 +41,10 @@ export async function POST(request: Request) {
 
     // Prepara il contenuto dell'email
     const mailOptions = {
-      from: '"Sito Web Dr. Battistello" <info@dottmaicobattistello.it>',
-      to: "info@dottmaicobattistello.it",
+      from: '"Sito Web Dr. Battistello" <maico.battistello@gmail.com>',
+      to: "maico.battistello@gmail.com",
       subject: `Nuovo contatto dal sito: ${firstName} ${lastName}`,
+      replyTo: email, // Permette di rispondere direttamente al mittente
       text: `
         Nuovo messaggio ricevuto dal modulo di contatto del sito web.
         
@@ -72,11 +84,10 @@ export async function POST(request: Request) {
     }
 
     try {
-      // Per ora, simuliamo l'invio dell'email per evitare errori SMTP
-      // in produzione, decommentare la riga seguente:
-      // await transporter.sendMail(mailOptions)
+      // Invio dell'email
+      await transporter.sendMail(mailOptions)
 
-      console.log("Email would be sent:", mailOptions)
+      console.log("Email inviata con successo a:", mailOptions.to)
 
       return NextResponse.json({
         success: true,

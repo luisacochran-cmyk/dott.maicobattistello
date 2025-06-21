@@ -17,11 +17,11 @@ export default function AboutMePage() {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Photo */}
           <div className="md:w-1/3">
-            <div className="w-[250px] h-[350px] mx-auto">
+            <div className="w-[250px] h-[350px] bg-gray-200 mx-auto">
               <img
                 src="/images/medicinalegale1.jpg"
                 alt="Dr. Maico Battistello"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

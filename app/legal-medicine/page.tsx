@@ -21,13 +21,13 @@ export default function LegalMedicinePage() {
 
           <p className="text-lg mb-6">
             La consulenza specialistica e la relazione medico-legale vengono fornite dopo un esame medico diretto della
-            parte lesa e un'<strong>attenta revisione</strong> dell'intero processo clinico, diagnostico e terapeutico
-            intrapreso dall'individuo.
+            parte lesa e un'attenta revisione dell'intero processo clinico, diagnostico e terapeutico intrapreso
+            dall'individuo.
           </p>
 
           <p className="text-lg mb-6">
-            Lo scopo sia della consulenza che della relazione è fornire una <strong>valutazione accurata</strong> delle
-            menomazioni derivanti da <strong>incidenti, lesioni o malattie</strong>.
+            Lo scopo sia della consulenza che della relazione è fornire una valutazione accurata delle menomazioni
+            derivanti da incidenti, lesioni o malattie.
           </p>
 
           <p className="text-lg mb-6">
