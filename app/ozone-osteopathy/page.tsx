@@ -86,7 +86,7 @@ export default function OzoneOsteopathyPage() {
               },
               {
                 title: "Osteopatia Cervicale",
-                image: "/images/oscervicale.jpg",
+                image: "/images/osteopatiacervicale2.jpg",
                 link: "/ozone-osteopathy",
               },
               {
@@ -107,11 +107,6 @@ export default function OzoneOsteopathyPage() {
               {
                 title: "Osteopatia Spalla",
                 image: "/images/osspalla.jpg",
-                link: "/ozone-osteopathy",
-              },
-              {
-                title: "Trattamento di Ozonoterapia",
-                image: "/images/ozonoterapia3.jpg",
                 link: "/ozone-osteopathy",
               },
             ]}

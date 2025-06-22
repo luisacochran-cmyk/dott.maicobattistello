@@ -75,7 +75,7 @@ export function TreatmentsSection() {
             items={[
               {
                 title: "Ozonoterapia + Osteopatia",
-                image: "/images/homeozonosteo.jpg",
+                image: "/images/homeozono.jpg",
                 link: "/ozone-osteopathy",
               },
               {
@@ -85,7 +85,7 @@ export function TreatmentsSection() {
               },
               {
                 title: "Ozonoterapia",
-                image: "/images/homeozono.jpg",
+                image: "/images/homeozonosteo.jpg",
                 link: "/ozone-therapy",
               },
             ]}

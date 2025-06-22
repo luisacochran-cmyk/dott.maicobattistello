@@ -58,6 +58,11 @@ export default function OzoneTherapyPage() {
               image: "/images/ozonoterapia.jpg",
               link: "/ozone-therapy",
             },
+            {
+              title: "Trattamento di Ozonoterapia",
+              image: "/images/ozonoterapia3.jpg",
+              link: "/ozone-therapy",
+            },
           ]}
         />
       </div>

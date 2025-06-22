@@ -12,7 +12,31 @@ const nextConfig = {
         destination: '/about-me',
         permanent: true,
       },
-      // Rimosso il redirect www -> non-www che causava il loop infinito
+      {
+        source: '/ozonoterapia-osteopatia',
+        destination: '/ozone-osteopathy',
+        permanent: true,
+      },
+      {
+        source: '/osteopatia',
+        destination: '/osteopathy',
+        permanent: true,
+      },
+      {
+        source: '/ozonoterapia',
+        destination: '/ozone-therapy',
+        permanent: true,
+      },
+      {
+        source: '/news',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/medicina-legale-a-padova',
+        destination: '/legal-medicine',
+        permanent: true,
+      },
     ]
   },
   eslint: {

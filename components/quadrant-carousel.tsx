@@ -241,7 +241,11 @@ export default function QuadrantCarousel({
                         ? "object-cover object-bottom"
                         : items[itemIndex].image.includes("nuovaosteo1.jpg")
                           ? "object-cover object-[center_bottom]"
-                          : "object-cover"
+                          : items[itemIndex].image.includes("osteopatiacervicale.jpg")
+                            ? "object-cover object-[center_bottom]"
+                            : items[itemIndex].image.includes("osteopatiacervicale2.jpg")
+                              ? "object-cover object-bottom"
+                              : "object-cover"
                     }`}
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={isCurrent}
