@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dottmaicobattistello.it/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/about-me</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/medicinalegale1.jpg</image:loc>
+      <image:title>Dr. Maico Battistello - Medico Specialista</image:title>
+      <image:caption>Dr. Maico Battistello, specializzato in Osteopatia, Ozonoterapia e Medicina Legale</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozone-therapy</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/osteopathy</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozone-osteopathy</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/legal-medicine</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/contacts</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/blog</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
