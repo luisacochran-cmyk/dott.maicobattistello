@@ -12,18 +12,7 @@ const nextConfig = {
         destination: '/about-me',
         permanent: true,
       },
-      // Redirect da www a non-www per consistenza SEO
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.dottmaicobattistello.it',
-          },
-        ],
-        destination: 'https://dottmaicobattistello.it/:path*',
-        permanent: true,
-      },
+      // Rimosso il redirect www -> non-www che causava il loop infinito
     ]
   },
   eslint: {
