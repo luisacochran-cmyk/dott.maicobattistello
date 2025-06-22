@@ -38,14 +38,14 @@ export function HeroSection({ className }: HeroSectionProps) {
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-lg py-6 hover-lift"
+                className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-base sm:text-lg py-3 sm:py-6 hover-lift"
               >
                 <Link href="/ozone-osteopathy">Scopri di più</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-lg py-6 hover-lift"
+                className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-base sm:text-lg py-3 sm:py-6 hover-lift"
               >
                 <Link href="/contacts" className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
@@ -143,6 +143,7 @@ export function AdvancedTherapySection() {
               width={400}
               height={400}
               className="w-full max-w-md mx-auto rounded-lg"
+              unoptimized
             />
           </AnimatedScrollElement>
           <div className="md:col-span-2 flex flex-col items-center text-center">

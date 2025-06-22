@@ -53,6 +53,11 @@ export default function OzoneTherapyPage() {
               image: "/images/nuovaozono2.jpg",
               link: "/ozone-therapy",
             },
+            {
+              title: "Ozonoterapia Avanzata",
+              image: "/images/ozonoterapia.jpg",
+              link: "/ozone-therapy",
+            },
           ]}
         />
       </div>

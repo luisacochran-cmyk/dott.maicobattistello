@@ -90,14 +90,12 @@
   position: relative;
 }
 
-/* Mobile-specific background positioning */
+/* Mobile-specific background image and positioning */
 @media (max-width: 768px) {
   .hero-section {
-    background-position: 70% center; /* Shift to show both doctor and patient */
-  }
-
-  .hero-section-mobile {
-    background-position: 85% center; /* Shift further right on mobile */
+    background-image: url("/images/homemobile3.jpg");
+    background-position: center;
+    background-size: cover;
   }
 }
 

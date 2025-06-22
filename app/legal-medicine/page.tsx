@@ -50,7 +50,7 @@ export default function LegalMedicinePage() {
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/medlegale.jpg-RS0IvBU5iZfMrAp9XVe8gOEYtCR5sP.jpeg"
                   alt="Consulenza di Medicina Legale"
                   fill
-                  className="object-cover object-right md:object-center"
+                  className="object-cover object-[55%_center] md:object-center"
                   sizes="(max-width: 768px) 100vw, 70vw"
                   priority
                 />
