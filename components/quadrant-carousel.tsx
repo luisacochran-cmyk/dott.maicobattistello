@@ -236,16 +236,17 @@ export default function QuadrantCarousel({
                     alt={items[itemIndex].title}
                     fill
                     className={`transition-transform duration-500 ${
-                      items[itemIndex].image.includes("medlegale.jpg") ||
-                      items[itemIndex].image.includes("osteopic.jpg")
-                        ? "object-cover object-bottom"
-                        : items[itemIndex].image.includes("nuovaosteo1.jpg")
-                          ? "object-cover object-[center_bottom]"
-                          : items[itemIndex].image.includes("osteopatiacervicale.jpg")
+                      items[itemIndex].image.includes("medlegale.jpg")
+                        ? "object-cover object-[70%_center] md:object-bottom"
+                        : items[itemIndex].image.includes("osteopic.jpg")
+                          ? "object-cover object-bottom"
+                          : items[itemIndex].image.includes("nuovaosteo1.jpg")
                             ? "object-cover object-[center_bottom]"
-                            : items[itemIndex].image.includes("osteopatiacervicale2.jpg")
-                              ? "object-cover object-bottom"
-                              : "object-cover"
+                            : items[itemIndex].image.includes("osteopatiacervicale.jpg")
+                              ? "object-cover object-[center_bottom]"
+                              : items[itemIndex].image.includes("osteopatiacervicale2.jpg")
+                                ? "object-cover object-bottom"
+                                : "object-cover"
                     }`}
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={isCurrent}

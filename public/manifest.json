@@ -1,0 +1,55 @@
+{
+  "name": "Dr. Maico Battistello - Ozonoterapia e Osteopatia",
+  "short_name": "Dr. Battistello",
+  "description": "Specialista in Ozonoterapia, Osteopatia e Medicina Legale",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "it",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/images/nuovologo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/nuovologo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["medical", "health", "business"],
+  "shortcuts": [
+    {
+      "name": "Prenota Appuntamento",
+      "short_name": "Prenota",
+      "description": "Prenota un appuntamento con Dr. Battistello",
+      "url": "/contacts",
+      "icons": [
+        {
+          "src": "/images/nuovologo.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Ozonoterapia",
+      "short_name": "Ozono",
+      "description": "Informazioni sull'Ozonoterapia",
+      "url": "/ozone-therapy",
+      "icons": [
+        {
+          "src": "/images/nuovologo.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
