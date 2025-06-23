@@ -120,7 +120,6 @@ const nextConfig = {
   trailingSlash: false,
   // Enhanced for mobile compatibility
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
 }
