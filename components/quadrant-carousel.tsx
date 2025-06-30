@@ -49,25 +49,32 @@ export default function QuadrantCarousel({
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const carouselRef = useRef<HTMLDivElement>(null)
 
-  // Aggiungi queste variabili per gestire il touch
+  // Touch handling variables
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
-  const minSwipeDistance = 50 // Distanza minima per considerare un swipe valido
+  const touchStartY = useRef(0)
+  const touchEndY = useRef(0)
+  const minSwipeDistance = 50
+  const maxVerticalDistance = 100 // Maximum vertical movement to still consider it a horizontal swipe
 
-  // Aggiungi queste funzioni per gestire gli eventi touch
-  const handleTouchStart = (e: React.TouchEvent) => {
+  // Touch event handlers - solo per le aree laterali di swipe
+  const handleSwipeTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX
+    touchStartY.current = e.touches[0].clientY
   }
 
-  const handleTouchMove = (e: React.TouchEvent) => {
+  const handleSwipeTouchMove = (e: React.TouchEvent) => {
     touchEndX.current = e.touches[0].clientX
+    touchStartY.current = e.touches[0].clientY
   }
 
-  const handleTouchEnd = () => {
-    const distance = touchStartX.current - touchEndX.current
+  const handleSwipeTouchEnd = () => {
+    const horizontalDistance = touchStartX.current - touchEndX.current
+    const verticalDistance = Math.abs(touchStartY.current - touchEndY.current)
 
-    if (Math.abs(distance) > minSwipeDistance) {
-      if (distance > 0) {
+    // Solo processa come swipe se il movimento orizzontale è significativo e quello verticale è minimo
+    if (Math.abs(horizontalDistance) > minSwipeDistance && verticalDistance < maxVerticalDistance) {
+      if (horizontalDistance > 0) {
         // Swipe verso sinistra (avanti)
         handleNext()
       } else {
@@ -77,7 +84,6 @@ export default function QuadrantCarousel({
     }
   }
 
-  // Sostituisci la funzione getVisibleIndices con questa versione migliorata
   const getVisibleIndices = () => {
     const total = items.length
     return [
@@ -113,7 +119,6 @@ export default function QuadrantCarousel({
     setIsTransitioning(true)
     setActiveIndex((prev) => (prev - 1 + items.length) % items.length)
 
-    // Reset transitioning state after animation completes
     setTimeout(() => {
       setIsTransitioning(false)
     }, 800)
@@ -130,7 +135,6 @@ export default function QuadrantCarousel({
     setIsTransitioning(true)
     setActiveIndex((prev) => (prev + 1) % items.length)
 
-    // Reset transitioning state after animation completes
     setTimeout(() => {
       setIsTransitioning(false)
     }, 800)
@@ -165,10 +169,21 @@ export default function QuadrantCarousel({
         setIsPaused(false)
         setHoveredIndex(null)
       }}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
     >
+      {/* Aree di swipe laterali - MOLTO PIÙ PICCOLE per lasciare spazio al centro */}
+      <div
+        className="absolute left-0 top-0 w-8 h-full z-40 md:hidden"
+        onTouchStart={handleSwipeTouchStart}
+        onTouchMove={handleSwipeTouchMove}
+        onTouchEnd={handleSwipeTouchEnd}
+      />
+      <div
+        className="absolute right-0 top-0 w-8 h-full z-40 md:hidden"
+        onTouchStart={handleSwipeTouchStart}
+        onTouchMove={handleSwipeTouchMove}
+        onTouchEnd={handleSwipeTouchEnd}
+      />
+
       {/* Main carousel container with 3D perspective */}
       <div className="absolute inset-0 flex items-center justify-center perspective">
         {/* Render the three visible items */}
@@ -183,21 +198,21 @@ export default function QuadrantCarousel({
           let scale = 1
           let opacity = 1
           let zIndex = 10
-          const rotate = position * 8 // Aumentato da 5 a 8 per una rotazione più pronunciata
+          const rotate = position * 8
 
           // Adjust for current item
           if (isCurrent) {
             zIndex = 20
             scale = 1
           } else {
-            opacity = 0.7 // Ridotto da 0.8 a 0.7 per maggiore contrasto
+            opacity = 0.7
             scale = 0.85
-            zPosition = -150 // Aumentato da -100 a -150 per maggiore profondità
+            zPosition = -150
           }
 
           // Adjust for hovered item - only apply special effects to current item
           if (isHovered && isCurrent) {
-            scale = 1.08 // Aumentato da 1.05 a 1.08
+            scale = 1.08
           }
 
           // Determine if this item is being repositioned (moving from one edge to another)
@@ -251,7 +266,7 @@ export default function QuadrantCarousel({
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority={isCurrent}
                   />
-                  {/* Enhanced overlay gradient for depth effect - updated to match homepage style */}
+                  {/* Enhanced overlay gradient for depth effect */}
                   <div
                     className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-xl"
                     style={{
@@ -289,18 +304,20 @@ export default function QuadrantCarousel({
       {/* Navigation Arrows */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2 z-30 transition-all duration-300 shadow-md hover:scale-110"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-4 z-50 transition-all duration-300 shadow-lg hover:scale-110 touch-manipulation"
         aria-label="Slide precedente"
         disabled={isTransitioning}
+        style={{ minWidth: "56px", minHeight: "56px" }}
       >
         <ChevronLeft className="h-6 w-6 text-gray-800" />
       </button>
 
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2 z-30 transition-all duration-300 shadow-md hover:scale-110"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-4 z-50 transition-all duration-300 shadow-lg hover:scale-110 touch-manipulation"
         aria-label="Slide successiva"
         disabled={isTransitioning}
+        style={{ minWidth: "56px", minHeight: "56px" }}
       >
         <ChevronRight className="h-6 w-6 text-gray-800" />
       </button>
