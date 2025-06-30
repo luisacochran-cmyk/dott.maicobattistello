@@ -63,8 +63,8 @@ export function HeroSection({ className }: HeroSectionProps) {
 export function TreatmentsSection() {
   return (
     <section className="py-16">
-      <div className="container">
-        <AnimatedScrollElement className="mb-8 text-center" direction="up" delay={0.1}>
+      <div className="container px-0 md:px-4">
+        <AnimatedScrollElement className="mb-8 text-center px-4" direction="up" delay={0.1}>
           <h2 className="text-3xl font-bold mb-4">I Nostri Trattamenti</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Scopri il nostro approccio innovativo alla salute attraverso la combinazione di Ozonoterapia e Osteopatia
@@ -90,6 +90,7 @@ export function TreatmentsSection() {
               },
             ]}
             showTitles={true}
+            fullWidthMobile={true}
           />
         </AnimatedScrollElement>
       </div>

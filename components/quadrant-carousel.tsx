@@ -1,5 +1,3 @@
-// Refine the carousel component to ensure perfect consistency with homepage
-
 "use client"
 
 import type React from "react"
@@ -18,6 +16,7 @@ interface QuadrantItem {
 interface QuadrantCarouselProps {
   items?: QuadrantItem[]
   showTitles?: boolean
+  fullWidthMobile?: boolean
 }
 
 export default function QuadrantCarousel({
@@ -40,6 +39,7 @@ export default function QuadrantCarousel({
     },
   ],
   showTitles = false,
+  fullWidthMobile = false,
 }: QuadrantCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
@@ -159,7 +159,7 @@ export default function QuadrantCarousel({
   return (
     <div
       ref={carouselRef}
-      className="relative w-full max-w-4xl mx-auto h-[400px] overflow-hidden"
+      className={`relative w-full h-[400px] overflow-hidden ${fullWidthMobile ? "max-w-none" : "max-w-4xl mx-auto"}`}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => {
         setIsPaused(false)
@@ -215,7 +215,7 @@ export default function QuadrantCarousel({
                 transform: `translateX(${xPosition}%) translateZ(${zPosition}px) rotateY(${rotate}deg) scale(${scale})`,
                 opacity,
                 zIndex,
-                width: "70%",
+                width: fullWidthMobile ? "90%" : "70%",
                 height: isCurrent ? "350px" : "300px",
                 transformOrigin: position < 0 ? "right center" : position > 0 ? "left center" : "center",
                 transition: `transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.8s ease, height 0.8s ease`,
