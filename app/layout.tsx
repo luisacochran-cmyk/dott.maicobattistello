@@ -5,6 +5,8 @@ import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import CookieBanner from "@/components/cookie-banner"
+import GoogleAnalytics from "@/components/google-analytics"
+import { Suspense } from "react"
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -252,12 +254,31 @@ export default function RootLayout({
             }),
           }}
         />
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3FPBVTC8P"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C3FPBVTC8P', {
+        page_title: document.title,
+        page_location: window.location.href,
+      });
+    `,
+          }}
+        />
       </head>
       <body className={roboto.className}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-        <CookieBanner />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+          <CookieBanner />
+          <GoogleAnalytics />
+        </Suspense>
       </body>
     </html>
   )
