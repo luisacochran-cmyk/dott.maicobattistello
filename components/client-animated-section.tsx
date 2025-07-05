@@ -90,7 +90,6 @@ export function TreatmentsSection() {
               },
             ]}
             showTitles={true}
-            fullWidthMobile={true}
           />
         </AnimatedScrollElement>
       </div>
