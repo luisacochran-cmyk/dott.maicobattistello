@@ -247,9 +247,10 @@ export default function QuadrantCarousel({
               >
                 <div className="absolute inset-0 overflow-hidden rounded-xl">
                   <Image
-                    src={items[itemIndex].image || "/placeholder.svg"}
+                    src={items[itemIndex].image || "/placeholder.png"}
                     alt={items[itemIndex].title}
                     fill
+                    unoptimized
                     className={`transition-transform duration-500 ${
                       items[itemIndex].image.includes("medlegale.jpg")
                         ? "object-cover object-[70%_center] md:object-bottom"
