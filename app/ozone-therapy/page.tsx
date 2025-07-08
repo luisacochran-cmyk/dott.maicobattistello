@@ -3,7 +3,6 @@ import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import QuadrantCarousel from "@/components/quadrant-carousel"
-import Image from "next/image"
 
 export default function OzoneTherapyPage() {
   return (
@@ -85,15 +84,15 @@ export default function OzoneTherapyPage() {
           </div>
           <div className="md:w-1/2">
             <div className="rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/images/paet.jpg"
-                alt="Piccola Autoemoterapia"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover"
-                priority
-                unoptimized
-              />
+              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1099674288?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                  title="PAET_finale"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -104,15 +103,15 @@ export default function OzoneTherapyPage() {
         <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="rounded-lg overflow-hidden shadow-lg">
-              <Image
-                src="/images/gaet.jpg"
-                alt="Grande Autoemoterapia"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover"
-                priority
-                unoptimized
-              />
+              <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1099674406?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                  title="GAET_finale"
+                />
+              </div>
             </div>
           </div>
           <div className="md:w-1/2 order-1 md:order-2">
