@@ -85,11 +85,12 @@ export default function OzoneTherapyPage() {
           <div className="md:w-1/2">
             <div className="rounded-lg overflow-hidden shadow-lg aspect-video w-full max-w-md md:max-w-none mx-auto">
               <iframe
-                src="https://player.vimeo.com/video/1099674288?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                src="https://player.vimeo.com/video/1113175260?badge=0&autopause=0&player_id=0&app_id=58479"
                 className="w-full h-full"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                title="PAET_finale"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="PAET_finale2"
               />
             </div>
           </div>
