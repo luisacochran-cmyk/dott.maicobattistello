@@ -53,4 +53,156 @@
     <priority>0.5</priority>
     <changefreq>weekly</changefreq>
   </url>
+
+  <!-- Pagine Ozonoterapia Localizzate -->
+  <url>
+    <loc>https://dottmaicobattistello.it/ozonoterapia-padova</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/nuovaozonosteo1.jpg</image:loc>
+      <image:title>Ozonoterapia a Padova - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti di ozonoterapia a Padova con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozonoterapia-vicenza</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/ozonoterapia.jpg</image:loc>
+      <image:title>Ozonoterapia a Vicenza - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti di ozonoterapia a Vicenza con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozonoterapia-schio</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/osteozonoterapia1.jpg</image:loc>
+      <image:title>Ozonoterapia a Schio - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti di ozonoterapia a Schio con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozonoterapia-malo</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/ozonoterapia3.jpg</image:loc>
+      <image:title>Ozonoterapia a Malo - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti di ozonoterapia a Malo con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pagine Osteopatia Localizzate -->
+  <url>
+    <loc>https://dottmaicobattistello.it/osteopatia-padova</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/nuovaosteo1.jpg</image:loc>
+      <image:title>Osteopatia a Padova - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti osteopatici a Padova con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/osteopatia-vicenza</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/nuovaosteo2.jpg</image:loc>
+      <image:title>Osteopatia a Vicenza - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti osteopatici a Vicenza con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/osteopatia-schio</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/nuovaosteo3.jpg</image:loc>
+      <image:title>Osteopatia a Schio - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti osteopatici a Schio con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/osteopatia-malo</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/osteopatiacervicale.jpg</image:loc>
+      <image:title>Osteopatia a Malo - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamenti osteopatici a Malo con il Dr. Maico Battistello</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Pagine Ozonoterapia + Osteopatia Localizzate -->
+  <url>
+    <loc>https://dottmaicobattistello.it/ozono-osteo-padova</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/ozcervicale.jpg</image:loc>
+      <image:title>Ozonoterapia + Osteopatia a Padova - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamento combinato di ozonoterapia e osteopatia a Padova</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozono-osteo-vicenza</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/osteopatiacervicale2.jpg</image:loc>
+      <image:title>Ozonoterapia + Osteopatia a Vicenza - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamento combinato di ozonoterapia e osteopatia a Vicenza</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozono-osteo-schio</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/oslombare.jpg</image:loc>
+      <image:title>Ozonoterapia + Osteopatia a Schio - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamento combinato di ozonoterapia e osteopatia a Schio</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/ozono-osteo-malo</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://dottmaicobattistello.it/images/ozspalla.jpg</image:loc>
+      <image:title>Ozonoterapia + Osteopatia a Malo - Dr. Maico Battistello</image:title>
+      <image:caption>Trattamento combinato di ozonoterapia e osteopatia a Malo</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Privacy e Cookie Policy -->
+  <url>
+    <loc>https://dottmaicobattistello.it/privacy-policy</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://dottmaicobattistello.it/cookie-policy</loc>
+    <lastmod>2024-01-15</lastmod>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>
