@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
+import Link from "next/link"
 
 export default function OsteopathyPage() {
   return (
@@ -29,6 +30,28 @@ export default function OsteopathyPage() {
             dall'anziano, al bambino, alla donna in gravidanza, ripristina queste aree, recuperando il corretto
             equilibrio posturale, l'equilibrio funzionale e il benessere fisico.
           </p>
+        </div>
+      </div>
+
+      {/* Cities Links Section */}
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+          <h3 className="text-xl font-semibold mb-3">📍 Trattamenti Osteopatici nelle principali città</h3>
+          <p className="mb-4">Il Dr. Maico Battistello offre trattamenti osteopatici anche presso:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <Link href="/osteopatia-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Osteopatia a Padova
+            </Link>
+            <Link href="/osteopatia-vicenza" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Osteopatia a Vicenza
+            </Link>
+            <Link href="/osteopatia-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Osteopatia a Schio
+            </Link>
+            <Link href="/osteopatia-malo" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Osteopatia a Malo
+            </Link>
+          </div>
         </div>
       </div>
 

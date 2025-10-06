@@ -1,0 +1,119 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Dr. Maico Battistello - Ozonoterapia e Osteopatia",
+  "description": "Specialista in Ozonoterapia, Osteopatia e Medicina Legale. Trattamenti innovativi per ernie discali, artrosi e dolori cronici.",
+  "url": "https://dottmaicobattistello.it",
+  "telephone": "+39-XXX-XXXXXXX",
+  "email": "info@dottmaicobattistello.it",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Via del Commissario, 1",
+      "addressLocality": "Padova",
+      "addressRegion": "Veneto",
+      "postalCode": "35100",
+      "addressCountry": "IT"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Centro Medico Met",
+      "addressLocality": "Schio",
+      "addressRegion": "Veneto",
+      "postalCode": "36015",
+      "addressCountry": "IT"
+    },
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "Centro Medico Medicalis",
+      "addressLocality": "Malo",
+      "addressRegion": "Veneto",
+      "postalCode": "36034",
+      "addressCountry": "IT"
+    }
+  ],
+  "geo": [
+    {
+      "@type": "GeoCoordinates",
+      "latitude": 45.4064,
+      "longitude": 11.8768
+    },
+    {
+      "@type": "GeoCoordinates",
+      "latitude": 45.7147,
+      "longitude": 11.3578
+    },
+    {
+      "@type": "GeoCoordinates",
+      "latitude": 45.6539,
+      "longitude": 11.4167
+    }
+  ],
+  "areaServed": [
+    "Padova",
+    "Vicenza",
+    "Schio",
+    "Malo",
+    "Abano Terme",
+    "Cittadella",
+    "Thiene",
+    "Bassano del Grappa",
+    "Valdagno",
+    "Arzignano"
+  ],
+  "openingHours": ["Mo-Fr 09:00-18:00"],
+  "priceRange": "€€",
+  "paymentAccepted": ["Cash", "Credit Card"],
+  "currenciesAccepted": "EUR",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servizi Medici",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Ozonoterapia",
+          "description": "Trattamenti di ozonoterapia per ernie discali, artrosi e patologie infiammatorie"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Osteopatia",
+          "description": "Trattamenti osteopatici manuali per il riequilibrio posturale e funzionale"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Medicina Legale",
+          "description": "Consulenze medico-legali e perizie specialistiche"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "127",
+    "bestRating": "5"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Maria R."
+      },
+      "reviewBody": "Dopo anni di dolore alla schiena, l'ozonoterapia del Dr. Battistello mi ha ridato la vita. Professionalità eccezionale."
+    }
+  ]
+}

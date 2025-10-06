@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import QuadrantCarousel from "@/components/quadrant-carousel"
+import Link from "next/link"
 
 export default function OzoneTherapyPage() {
   return (
@@ -30,6 +31,28 @@ export default function OzoneTherapyPage() {
             è particolarmente efficace, non solo nel migliorare i sintomi delle ernie discali ma anche nel ridurne il
             volume, esercitando un vero e proprio <strong>effetto curativo</strong>.
           </p>
+        </div>
+      </div>
+
+      {/* Cities Links Section */}
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+          <h3 className="text-xl font-semibold mb-3">📍 Trattamenti di Ozonoterapia nelle principali città</h3>
+          <p className="mb-4">Il Dr. Maico Battistello offre trattamenti di ozonoterapia anche presso:</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <Link href="/ozonoterapia-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Ozonoterapia a Padova
+            </Link>
+            <Link href="/ozonoterapia-vicenza" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Ozonoterapia a Vicenza
+            </Link>
+            <Link href="/ozonoterapia-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Ozonoterapia a Schio
+            </Link>
+            <Link href="/ozonoterapia-malo" className="text-blue-600 hover:text-blue-800 underline font-medium">
+              → Ozonoterapia a Malo
+            </Link>
+          </div>
         </div>
       </div>
 

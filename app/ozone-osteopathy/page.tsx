@@ -71,6 +71,30 @@ export default function OzoneOsteopathyPage() {
               </Button>
             </div>
           </AnimatedScrollElement>
+
+          {/* Cities Links Section */}
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+              <h3 className="text-xl font-semibold mb-3">📍 Trattamenti Combinati nelle principali città</h3>
+              <p className="mb-4">
+                Il Dr. Maico Battistello offre il trattamento combinato Ozonoterapia + Osteopatia anche presso:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <Link href="/ozono-osteo-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                  → Ozono + Osteo a Padova
+                </Link>
+                <Link href="/ozono-osteo-vicenza" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                  → Ozono + Osteo a Vicenza
+                </Link>
+                <Link href="/ozono-osteo-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                  → Ozono + Osteo a Schio
+                </Link>
+                <Link href="/ozono-osteo-malo" className="text-blue-600 hover:text-blue-800 underline font-medium">
+                  → Ozono + Osteo a Malo
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
