@@ -138,7 +138,7 @@ export function AdvancedTherapySection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           <AnimatedScrollElement className="md:col-span-1" direction="left" delay={0.1}>
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/avantgardepic.jpg-mfJIjkIXbkIrXI8d56YJslAgsYbgQ7.jpeg"
+              src="/images/design-mode/avantgardepic.jpg.jpeg"
               alt="Attrezzatura per ozonoterapia"
               width={400}
               height={400}

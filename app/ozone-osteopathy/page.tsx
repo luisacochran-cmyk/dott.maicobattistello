@@ -15,7 +15,7 @@ export default function OzoneOsteopathyPage() {
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
-            { label: "Ozonoterapia + Osteopatia", href: "/ozone-osteopathy" },
+            { label: "Ozonoterapia + Osteopatia", href: "/ozonoterapia-osteopatia" },
           ]}
         />
       </div>

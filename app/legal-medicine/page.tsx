@@ -16,7 +16,7 @@ export default function LegalMedicinePage() {
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
-          { label: "Medicina Legale", href: "/legal-medicine" },
+          { label: "Medicina Legale", href: "/medicina-legale" },
         ]}
       />
 
@@ -86,7 +86,7 @@ export default function LegalMedicinePage() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-[70%] h-[350px] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/medlegale.jpg-RS0IvBU5iZfMrAp9XVe8gOEYtCR5sP.jpeg"
+                  src="/images/design-mode/medlegale.jpg.jpeg"
                   alt="Consulenza di Medicina Legale"
                   fill
                   className="object-cover object-[90%_center] md:object-center"

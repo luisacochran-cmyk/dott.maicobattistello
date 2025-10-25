@@ -11,7 +11,7 @@ export default function OsteopathyPage() {
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
-            { label: "Osteopatia", href: "/osteopathy" },
+            { label: "Osteopatia", href: "/osteopatia" },
           ]}
         />
       </div>

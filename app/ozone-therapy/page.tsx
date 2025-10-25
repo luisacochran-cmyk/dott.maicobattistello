@@ -12,7 +12,7 @@ export default function OzoneTherapyPage() {
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
-          { label: "Ozonoterapia", href: "/ozone-therapy" },
+          { label: "Ozonoterapia", href: "/ozononoterapia" },
         ]}
       />
 

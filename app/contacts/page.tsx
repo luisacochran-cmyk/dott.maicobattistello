@@ -8,7 +8,7 @@ export default function ContactsPage() {
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
-          { label: "Contatti", href: "/contacts" },
+          { label: "Contatti", href: "/contatti" },
         ]}
       />
 

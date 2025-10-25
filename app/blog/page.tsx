@@ -410,7 +410,7 @@ export default function BlogPage() {
                   {activeArticle.id === 1 && (
                     <div className="article-image-container">
                       <Image
-                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/articolo1pic.jpg-ZLi9Q4rvxxCqyMGfn62XNPMVDnLgcH.jpeg"
+                        src="/images/design-mode/articolo1pic.jpg.jpeg"
                         alt="Attrezzatura per Ozonoterapia"
                         fill
                         className="object-cover"
