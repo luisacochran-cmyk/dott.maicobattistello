@@ -1,14 +1,13 @@
 import { NextResponse } from "next/server"
 import nodemailer from "nodemailer"
 
-// Configurazione del trasportatore email per Gmail
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
-  secure: false, // true per 465, false per altre porte
+  secure: false,
   auth: {
     user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD, // App Password di Gmail
+    pass: process.env.GMAIL_APP_PASSWORD,
   },
 })
 
@@ -18,7 +17,6 @@ export async function POST(request: Request) {
 
     console.log("Received form submission from:", email)
 
-    // Verifica che le credenziali email siano configurate
     if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
       console.error("GMAIL_USER o GMAIL_APP_PASSWORD non configurate")
       return NextResponse.json(
@@ -29,7 +27,6 @@ export async function POST(request: Request) {
       )
     }
 
-    // Formatta la data corrente in formato italiano
     const now = new Date()
     const formattedDate = now.toLocaleDateString("it-IT", {
       day: "2-digit",
@@ -39,12 +36,11 @@ export async function POST(request: Request) {
       minute: "2-digit",
     })
 
-    // Prepara il contenuto dell'email
     const mailOptions = {
       from: '"Sito Web Dr. Battistello" <maico.battistello@gmail.com>',
       to: "maico.battistello@gmail.com",
       subject: `Nuovo contatto dal sito: ${firstName} ${lastName}`,
-      replyTo: email, // Permette di rispondere direttamente al mittente
+      replyTo: email,
       text: `
         Nuovo messaggio ricevuto dal modulo di contatto del sito web.
         
@@ -84,7 +80,6 @@ export async function POST(request: Request) {
     }
 
     try {
-      // Invio dell'email
       await transporter.sendMail(mailOptions)
 
       console.log("Email inviata con successo a:", mailOptions.to)

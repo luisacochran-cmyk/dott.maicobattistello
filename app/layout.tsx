@@ -84,29 +84,24 @@ export default function RootLayout({
   return (
     <html lang="it">
       <head>
-        {/* Enhanced Mobile Viewport */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover"
         />
 
-        {/* WhatsApp Business Specific Meta Tags */}
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Dr. Battistello" />
 
-        {/* Enhanced Security Headers */}
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
         <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
 
-        {/* Force HTTPS */}
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
-        {/* WhatsApp/Social Media Meta Tags */}
         <meta property="og:site_name" content="Dr. Maico Battistello" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="it_IT" />
@@ -123,7 +118,6 @@ export default function RootLayout({
         <meta property="og:image:alt" content="Dr. Maico Battistello - Specialista in Ozonoterapia e Osteopatia" />
         <meta property="og:image:type" content="image/png" />
 
-        {/* Twitter/X Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@drmaicobt" />
         <meta name="twitter:creator" content="@drmaicobt" />
@@ -134,31 +128,25 @@ export default function RootLayout({
         />
         <meta name="twitter:image" content="https://dottmaicobattistello.it/images/nuovologo.png" />
 
-        {/* Additional Security and Performance */}
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-        {/* DNS Prefetch for Performance */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//hebbkx1anhila5yf.public.blob.vercel-storage.com" />
 
-        {/* Preconnect for Critical Resources */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
 
-        {/* Favicon and Icons */}
         <link rel="icon" href="/images/fotoweb.png" sizes="any" />
         <link rel="icon" href="/images/fotoweb.png" type="image/png" />
         <link rel="apple-touch-icon" href="/images/fotoweb.png" />
 
         <link rel="manifest" href="/manifest.json" />
 
-        {/* Canonical URL */}
         <link rel="canonical" href="https://dottmaicobattistello.it" />
 
-        {/* Enhanced Structured Data for WhatsApp Business */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -240,7 +228,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Additional Schema for Person */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -277,7 +264,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3FPBVTC8P"></script>
         <script
           dangerouslySetInnerHTML={{
