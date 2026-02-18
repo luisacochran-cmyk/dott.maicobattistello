@@ -246,7 +246,6 @@ export default function BlogPage() {
     }
   }, [isFilterOpen])
 
-  // Effect to highlight search terms in article content
   useEffect(() => {
     if (activeArticle && searchTerm.trim()) {
       const content = activeArticle.content || ""
@@ -260,7 +259,6 @@ export default function BlogPage() {
 
   const filteredArticles = articles.filter((article) => {
     if (activeArticle) {
-      // When viewing an article, don't filter the list
       return true
     }
     const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -274,19 +272,17 @@ export default function BlogPage() {
   const handleArticleClick = (article: Article, e: React.MouseEvent) => {
     e.preventDefault()
     setActiveArticle(article)
-    setSearchTerm("") // Clear search when opening an article
+    setSearchTerm("")
     setHighlightedContent(null)
-    // Scroll to top when viewing an article
     window.scrollTo(0, 0)
   }
 
   const handleBackToList = () => {
     setActiveArticle(null)
-    setSearchTerm("") // Clear search when returning to list
+    setSearchTerm("")
     setHighlightedContent(null)
   }
 
-  // Generate breadcrumb items based on current view
   const getBreadcrumbItems = () => {
     const baseItems = [
       { label: "Home", href: "/" },
@@ -300,7 +296,6 @@ export default function BlogPage() {
     return baseItems
   }
 
-  // Translate category names
   const getCategoryName = (category: Category) => {
     switch (category) {
       case "osteopathy":
@@ -391,7 +386,7 @@ export default function BlogPage() {
           )
         }
 
-        // Handle bold text
+    
         if (paragraph.includes("**")) {
           const parts = paragraph.split(/(\*\*.*?\*\*)/g)
           return (
@@ -410,7 +405,7 @@ export default function BlogPage() {
           )
         }
 
-        // Handle italic text
+    
         if (paragraph.includes("***")) {
           const parts = paragraph.split(/(\*\*\*.*?\*\*\*)/g)
           return (
@@ -428,7 +423,7 @@ export default function BlogPage() {
           )
         }
 
-        // Regular paragraph
+    
         return (
           <p key={index} className="text-lg leading-relaxed mb-4">
             {paragraph}
@@ -448,13 +443,10 @@ export default function BlogPage() {
 
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Section - 20% */}
           <div className="w-full lg:w-1/5">
             <div className="sticky top-24 space-y-6">
-              {/* Filtri e ricerca - Riorganizzati per mobile */}
               {!activeArticle && (
                 <div className="flex flex-col space-y-4">
-                  {/* Category Filter - Mostrato per primo su mobile */}
                   <div className="order-1 lg:order-2 category-dropdown-container relative z-50" ref={filterRef}>
                     <button
                       onClick={() => setIsFilterOpen(!isFilterOpen)}
@@ -485,7 +477,6 @@ export default function BlogPage() {
                     )}
                   </div>
 
-                  {/* Search Bar - Mostrato per secondo su mobile */}
                   <div className="order-2 lg:order-1 relative">
                     <input
                       type="text"
@@ -499,7 +490,6 @@ export default function BlogPage() {
                 </div>
               )}
 
-              {/* Search Bar - Solo quando si visualizza un articolo */}
               {activeArticle && (
                 <div className="relative">
                   <input
@@ -513,7 +503,6 @@ export default function BlogPage() {
                 </div>
               )}
 
-              {/* Article Info - Only shown when viewing an article on desktop */}
               {activeArticle && (
                 <div className="bg-gray-50 p-4 rounded-lg hidden md:block">
                   <h3 className="font-semibold mb-2">Informazioni Articolo</h3>
@@ -524,14 +513,12 @@ export default function BlogPage() {
                 </div>
               )}
 
-              {/* Pagination Info and Controls - Only shown when not viewing an article */}
               {!activeArticle && (
                 <div className="space-y-3">
                   <div className="text-sm text-gray-600">
                     Pagina {currentPage} di {totalPages}
                   </div>
 
-                  {/* Desktop Pagination Controls */}
                   <div className="hidden lg:flex items-center gap-2">
                     <button
                       onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
@@ -553,11 +540,9 @@ export default function BlogPage() {
             </div>
           </div>
 
-          {/* Right Section - 80% */}
           <div className="w-full lg:w-4/5">
             {activeArticle ? (
               <div className="bg-white rounded-lg shadow-sm p-6">
-                {/* Article Header with Back Button and Metadata - Aligned horizontally on desktop */}
                 <div className="article-header-desktop">
                   <div className="article-header-left">
                     <button
@@ -574,7 +559,6 @@ export default function BlogPage() {
                   </div>
                 </div>
 
-                {/* Article Featured Image */}
                 <div className="article-image-container">
                   <Image
                     src={activeArticle.image || "/placeholder.svg"}
@@ -584,7 +568,6 @@ export default function BlogPage() {
                   />
                 </div>
 
-                {/* Book Appointment Button with hover-lift animation */}
                 <div className="mt-8 text-center">
                   <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white hover-lift">
                     <Link href="/contacts" className="flex items-center gap-2 no-underline">
@@ -594,15 +577,12 @@ export default function BlogPage() {
                   </Button>
                 </div>
 
-                {/* Article Content */}
                 <div className="prose max-w-none article-content">{renderArticleContent()}</div>
 
-                {/* Bibliography Dropdown */}
                 <div className="mt-8 mb-8">
                   <BibliographyDropdown />
                 </div>
 
-                {/* Related Articles Section */}
                 {activeArticle && (
                   <div className="mt-16">
                     <AnimatedScrollElement direction="up" delay={0.1}>
@@ -679,7 +659,6 @@ export default function BlogPage() {
                   </div>
                 )}
 
-                {/* Mobile Pagination */}
                 <div className="mt-8 flex justify-center lg:hidden">
                   <div className="flex items-center gap-4">
                     <button

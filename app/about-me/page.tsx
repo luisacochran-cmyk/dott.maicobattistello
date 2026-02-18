@@ -56,7 +56,6 @@ export default function AboutMePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="pt-20">
-        {/* Breadcrumb */}
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
@@ -66,7 +65,6 @@ export default function AboutMePage() {
 
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Photo */}
             <div className="md:w-1/3">
               <div className="w-[250px] h-[350px] mx-auto">
                 <img
@@ -78,7 +76,6 @@ export default function AboutMePage() {
               </div>
             </div>
 
-            {/* Biography */}
             <div className="md:w-2/3" itemScope itemType="https://schema.org/Person">
               <h1 className="text-3xl font-bold mb-2" itemProp="name">
                 Dr. Maico Battistello
@@ -107,12 +104,10 @@ export default function AboutMePage() {
             </div>
           </div>
 
-          {/* Word Carousel */}
           <div className="my-12">
             <WordCarousel words={["Professionalità", "Affidabilità", "Esperienza", "Passione"]} />
           </div>
 
-          {/* Contact Form */}
           <ContactForm />
         </div>
       </div>

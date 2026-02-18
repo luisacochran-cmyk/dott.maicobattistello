@@ -3,7 +3,6 @@ import Breadcrumb from "@/components/breadcrumb"
 export default function CookiePolicyPage() {
   return (
     <div className="pt-20">
-      {/* Breadcrumb */}
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

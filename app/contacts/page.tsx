@@ -4,7 +4,6 @@ import ContactForm from "@/components/contact-form"
 export default function ContactsPage() {
   return (
     <div className="pt-20">
-      {/* Breadcrumb */}
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -12,7 +11,6 @@ export default function ContactsPage() {
         ]}
       />
 
-      {/* Contact Form */}
       <ContactForm />
     </div>
   )

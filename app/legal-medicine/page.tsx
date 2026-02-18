@@ -12,7 +12,6 @@ export const metadata = {
 export default function LegalMedicinePage() {
   return (
     <div className="pt-20">
-      {/* Breadcrumb */}
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },
@@ -20,7 +19,6 @@ export default function LegalMedicinePage() {
         ]}
       />
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
           <h1 className="text-3xl font-bold mb-6">Medicina Legale – Dr. Maico Battistello</h1>
@@ -124,7 +122,6 @@ export default function LegalMedicinePage() {
         </div>
       </div>
 
-      {/* Single Image Section */}
       <AnimatedScrollElement direction="up" delay={0.5}>
         <div className="my-12">
           <div className="relative w-full max-w-4xl mx-auto h-[400px] overflow-hidden">

@@ -51,7 +51,6 @@ const nextConfig = {
   },
   async rewrites() {
     return [
-      // Rewrites per le pagine principali - URL italiani che servono contenuto inglese
       {
         source: '/ozonoterapia',
         destination: '/ozone-therapy',
@@ -80,7 +79,6 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // Force HTTPS redirects
       {
         source: '/:path*',
         has: [
@@ -93,7 +91,6 @@ const nextConfig = {
         destination: 'https://dottmaicobattistello.it/:path*',
         permanent: true,
       },
-      // Redirect vecchi URL inglesi agli URL italiani
       {
         source: '/ozone-therapy',
         destination: '/ozonoterapia',
@@ -124,7 +121,6 @@ const nextConfig = {
         destination: '/contatti',
         permanent: true,
       },
-      // Legacy redirects
       {
         source: '/chisono',
         destination: '/chi-sono',

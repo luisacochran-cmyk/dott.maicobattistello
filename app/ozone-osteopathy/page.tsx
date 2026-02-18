@@ -10,7 +10,6 @@ import QuadrantCarousel from "@/components/quadrant-carousel"
 export default function OzoneOsteopathyPage() {
   return (
     <div className="pt-20">
-      {/* Breadcrumb */}
       <div className="w-full">
         <Breadcrumb
           items={[
@@ -20,7 +19,6 @@ export default function OzoneOsteopathyPage() {
         />
       </div>
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
           <AnimatedScrollElement direction="up" delay={0.1}>
@@ -72,7 +70,6 @@ export default function OzoneOsteopathyPage() {
             </div>
           </AnimatedScrollElement>
 
-          {/* Cities Links Section */}
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
               <h3 className="text-xl font-semibold mb-3">📍 Trattamenti Combinati nelle principali città</h3>
@@ -98,7 +95,6 @@ export default function OzoneOsteopathyPage() {
         </div>
       </div>
 
-      {/* Image Carousel Section */}
       <AnimatedScrollElement direction="up" delay={0.5}>
         <div className="my-12">
           <QuadrantCarousel
@@ -138,7 +134,6 @@ export default function OzoneOsteopathyPage() {
         </div>
       </AnimatedScrollElement>
 
-      {/* Contact Form */}
       <ContactForm />
     </div>
   )

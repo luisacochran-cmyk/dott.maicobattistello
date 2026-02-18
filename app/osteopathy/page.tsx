@@ -6,7 +6,6 @@ import Link from "next/link"
 export default function OsteopathyPage() {
   return (
     <div className="pt-20">
-      {/* Breadcrumb */}
       <div className="w-full bg-secondary">
         <Breadcrumb
           items={[
@@ -16,7 +15,6 @@ export default function OsteopathyPage() {
         />
       </div>
 
-      {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
           <h2 className="text-2xl font-semibold mb-6">Cos'è l'Osteopatia?</h2>
@@ -33,7 +31,6 @@ export default function OsteopathyPage() {
         </div>
       </div>
 
-      {/* Cities Links Section */}
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
           <h3 className="text-xl font-semibold mb-3">📍 Trattamenti Osteopatici nelle principali città</h3>
@@ -55,7 +52,6 @@ export default function OsteopathyPage() {
         </div>
       </div>
 
-      {/* Image Carousel Section */}
       <div className="my-12">
         <QuadrantCarousel
           items={[
@@ -83,7 +79,6 @@ export default function OsteopathyPage() {
         />
       </div>
 
-      {/* Contact Form */}
       <ContactForm />
     </div>
   )
