@@ -49,13 +49,12 @@ export default function QuadrantCarousel({
   const timerRef = useRef<NodeJS.Timeout | null>(null)
   const carouselRef = useRef<HTMLDivElement>(null)
 
-  // Touch handling variables
   const touchStartX = useRef(0)
   const touchEndX = useRef(0)
   const touchStartY = useRef(0)
   const touchEndY = useRef(0)
   const minSwipeDistance = 50
-  const maxVerticalDistance = 100 // Maximum vertical movement to still consider it a horizontal swipe
+  const maxVerticalDistance = 100 
 
   // Touch event handlers - solo per le aree laterali di swipe
   const handleSwipeTouchStart = (e: React.TouchEvent) => {
@@ -72,13 +71,11 @@ export default function QuadrantCarousel({
     const horizontalDistance = touchStartX.current - touchEndX.current
     const verticalDistance = Math.abs(touchStartY.current - touchEndY.current)
 
-    // Solo processa come swipe se il movimento orizzontale è significativo e quello verticale è minimo
     if (Math.abs(horizontalDistance) > minSwipeDistance && verticalDistance < maxVerticalDistance) {
       if (horizontalDistance > 0) {
-        // Swipe verso sinistra (avanti)
+
         handleNext()
       } else {
-        // Swipe verso destra (indietro)
         handlePrev()
       }
     }
@@ -87,9 +84,9 @@ export default function QuadrantCarousel({
   const getVisibleIndices = () => {
     const total = items.length
     return [
-      (activeIndex - 1 + total) % total, // Previous
-      activeIndex, // Current
-      (activeIndex + 1) % total, // Next
+      (activeIndex - 1 + total) % total,
+      activeIndex,
+      (activeIndex + 1) % total,
     ]
   }
 
@@ -98,7 +95,7 @@ export default function QuadrantCarousel({
     if (!isPaused && !isTransitioning) {
       timerRef.current = setTimeout(() => {
         handleNext()
-      }, 6000) // 6 seconds between transitions
+      }, 6000)
     }
 
     return () => {
@@ -192,15 +189,13 @@ export default function QuadrantCarousel({
           const isHovered = itemIndex === hoveredIndex
           const position = positionIndex - 1 // -1 (prev), 0 (current), 1 (next)
 
-          // Calculate position and style based on item's position
           const xPosition = position * 100
           let zPosition = 0
           let scale = 1
           let opacity = 1
           let zIndex = 10
           const rotate = position * 8
-
-          // Adjust for current item
+          
           if (isCurrent) {
             zIndex = 20
             scale = 1

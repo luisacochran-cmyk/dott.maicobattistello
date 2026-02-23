@@ -12,19 +12,6 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 ## Deployment
 
-Your project is live at:
+Project is live at:
 
 **[https://vercel.com/kawelongon24-itsaltoadrias-projects/v0-drbattistello100325](https://vercel.com/kawelongon24-itsaltoadrias-projects/v0-drbattistello100325)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/tnavmeIZ6EO](https://v0.dev/chat/projects/tnavmeIZ6EO)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository

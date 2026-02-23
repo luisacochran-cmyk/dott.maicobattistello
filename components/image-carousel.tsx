@@ -15,7 +15,7 @@ export default function ImageCarousel({
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/influenzapic.jpg-QDBcWx2qsMvOUTnXrgctaxQrEmmehI.jpeg",
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/covidlongpic.jpg-7zJDuOj4PblQREeGna6YpQ0rDP2opu.jpeg",
   ],
-  autoplaySpeed = 2000, // Updated from 3000 to 2000 (1 second less)
+  autoplaySpeed = 2000,
 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
 
