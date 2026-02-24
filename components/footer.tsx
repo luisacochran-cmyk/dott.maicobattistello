@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-white py-6 border-t">
       <div className="container grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
         <div>
-          <p className="text-sm text-gray-600">© 2025 Tutti i diritti riservati.</p>
+          <p className="text-sm text-gray-600">© 2026 Tutti i diritti riservati.</p>
         </div>
         <div>
           <p className="text-sm text-gray-600">

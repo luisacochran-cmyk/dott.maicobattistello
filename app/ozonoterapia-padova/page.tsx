@@ -200,7 +200,7 @@ export default function OzonoterapiaPadovaPage() {
           <div className="md:w-1/2">
             <div className="rounded-lg overflow-hidden shadow-lg aspect-video w-full max-w-md md:max-w-none mx-auto">
               <iframe
-                src="https://player.vimeo.com/video/1113175260?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                src="https://player.vimeo.com/video/1167667781?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
                 className="w-full h-full"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
@@ -218,7 +218,7 @@ export default function OzonoterapiaPadovaPage() {
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="rounded-lg overflow-hidden shadow-lg aspect-video w-full max-w-md md:max-w-none mx-auto">
               <iframe
-                src="https://player.vimeo.com/video/1099674406?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
+                src="https://player.vimeo.com/video/1167667746?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479"
                 className="w-full h-full"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
