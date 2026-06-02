@@ -303,9 +303,9 @@ export default function ContactForm() {
                 </div>
               </div>
             <div className="flex items-center space-x-4 mt-4">
-  <div className="bg-primary rounded-full p-3 text-white">
-    f
-  </div>
+  <div className="bg-primary rounded-full w-12 h-12 flex items-center justify-center text-white">
+  <span className="text-2xl font-bold">f</span>
+</div>
   <div>
     <h3 className="font-medium">Facebook</h3>
     <a
