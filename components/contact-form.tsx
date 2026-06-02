@@ -302,6 +302,23 @@ export default function ContactForm() {
                   </div>
                 </div>
               </div>
+            <div className="flex items-center space-x-4 mt-4">
+  <div className="bg-primary rounded-full p-3 text-white">
+    Facebook
+  </div>
+  <div>
+    <h3 className="font-medium">Facebook</h3>
+    <a
+      href="https://www.facebook.com/maicobattistello"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-primary hover:underline text-lg"
+    >
+      Segui la pagina Facebook
+    </a>
+  </div>
+</div>
+          
               <div className="pl-0">
                 <LocationList />
               </div>
