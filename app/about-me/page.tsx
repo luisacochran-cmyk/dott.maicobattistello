@@ -97,10 +97,10 @@ Riceve presso le sedi di Marostica, Monte di Malo, Schio e Padova, occupandosi d
 
 Nel 2019 ha inoltre conseguito la certificazione in Pet Therapy, qualificandosi come Project Manager, Coordinatore di Intervento e Conduttore di Cani.
                <p className="text-lg">
-La sua attività professionale è orientata alla valutazione medico-legale e all'integrazione di osteopatia e ossigeno-ozonoterapia, attraverso protocolli clinici consolidati e un approccio multidisciplinare orientato alla persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e ai percorsi terapeutici personalizzati.
+La sua attività professionale è orientata alla valutazione medico-legale e all'integrazione di osteopatia e ossigeno-ozonoterapia, attraverso protocolli clinici consolidati e un approccio multidisciplinare orientato alla persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e ai percorsi terapeutici personalizzati.</p>
 <p className="text-lg">
-È iscritto a SIOT (Società Italiana di Ossigeno-Ozonoterapia) e a Nuova FIO (Nuova Federazione Italiana di Ossigeno-Ozono), società scientifiche di riferimento nel settore. La sua attività clinica si basa sull'applicazione di protocolli riconosciuti e sull'integrazione tra medicina, osteopatia e ossigeno-ozonoterapia.
-</p>
+Segue protocolli clinici riconosciuti da SIOOT (Società Italiana di Ossigeno-Ozonoterapia) e Nuova FIO (Nuova Federazione Italiana di Ossigeno-Ozono), società scientifiche di riferimento nel campo dell'ossigeno-ozonoterapia.
+
                 </p>
               </div>
             </div>
