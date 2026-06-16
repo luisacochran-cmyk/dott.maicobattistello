@@ -89,11 +89,13 @@ export default function AboutMePage() {
 
               <div className="space-y-4">
                 <p className="text-lg" itemProp="description">
-                  Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999. Specializzato in Medicina
-                  Legale presso l'Università di Parma nel 2004. Ha conseguito il diploma in Osteopatia presso l'Istituto
-                  Europeo per la Medicina Osteopatica (EIOM) di Padova nel 2005. Ozonoterapeuta dal 2017. Nel 2019, ha
-                  ottenuto la certificazione in "Pet Therapy", qualificandosi come Project Manager, Coordinatore di
-                  Intervento e Conduttore di Cani.
+Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999 e specializzato in Medicina Legale presso l'Università di Parma nel 2004. Ha conseguito il diploma in Osteopatia presso l'Istituto Europeo per la Medicina Osteopatica (EIOM) di Padova nel 2005 ed esercita come Ozonoterapeuta dal 2017.
+
+Nel corso della sua attività professionale ha integrato competenze in Medicina Legale, Osteopatia e Ozonoterapia, sviluppando un approccio orientato alla persona e alla gestione multidisciplinare dei disturbi muscolo-scheletrici e del dolore.
+
+Riceve presso diverse sedi nelle province di Vicenza e Padova, occupandosi di valutazione medico-legale, osteopatia e ossigeno-ozonoterapia.
+
+Nel 2019 ha inoltre conseguito la certificazione in Pet Therapy, qualificandosi come Project Manager, Coordinatore di Intervento e Conduttore di Cani.
                 </p>
                 <p className="text-lg">
                   Iscritto a società scientifiche riconosciute dal Ministero della Salute, in conformità alla Legge n.
