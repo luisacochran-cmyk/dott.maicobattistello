@@ -93,11 +93,11 @@ Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999 e speci
 
 Nel corso della sua attività professionale ha integrato competenze in Medicina Legale, Osteopatia e Ozonoterapia, sviluppando un approccio orientato alla persona e alla gestione multidisciplinare dei disturbi muscolo-scheletrici e del dolore.
 
-Riceve presso le sedi di Marostica, Monte di Malo, Schio e Padova, occupandosi di valutazione medico-legale, osteopatia e ossigeno-ozonoterapia.
+Riceve presso le sedi di Marostica, Monte di Malo, Schio e Padova, occupandosi di valutazioni medico-legali, osteopatia e ossigeno-ozonoterapia.
 
 Nel 2019 ha inoltre conseguito la certificazione in Pet Therapy, qualificandosi come Project Manager, Coordinatore di Intervento e Conduttore di Cani.
                <p className="text-lg">
-La sua attività professionale è orientata alla valutazione medico-legale e all'integrazione di competenze in osteopatia e ossigeno-ozonoterapia, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e ai percorsi terapeutici personalizzati.
+La sua attività professionale è orientata alla valutazione medico-legale e all'integrazione di osteopatia e ossigeno-ozonoterapia, attraverso protocolli clinici consolidati e un approccio multidisciplinare orientato alla persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e ai percorsi terapeutici personalizzati.
 </p>
                 </p>
               </div>
