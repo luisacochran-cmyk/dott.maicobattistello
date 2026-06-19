@@ -40,7 +40,7 @@ export default function MedicinaLegaleVicenzaPage() {
 
          <div className="text-lg mb-6 space-y-4">
   <p>
-    Il Dr. Maico Battistello svolge attività di medicina legale a Vicenza, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative.
+    Il Dr. Maico Battistello svolge attività di medicina legale a Vicenza, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative della provincia di Vicenza.
   </p>
 
   <p>
