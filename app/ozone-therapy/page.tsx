@@ -153,7 +153,7 @@ export default function OzoneTherapyPage() {
       <section className="py-8 container mx-auto">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="administration-methods">
-            <AccordionTrigger className="text-xl font-semibold">Metodi di Somministrazione</AccordionTrigger>
+            <AccordionTrigger className="text-2xl font-bold py-5">Metodi di Somministrazione</AccordionTrigger>
             <AccordionContent>
              <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
@@ -196,7 +196,7 @@ export default function OzoneTherapyPage() {
           </AccordionItem>
 
           <AccordionItem value="clinical-therapeutic-indications">
-            <AccordionTrigger className="text-xl font-semibold">Indicazioni Clinico-Terapeutiche</AccordionTrigger>
+            <AccordionTrigger className="text-2xl font-bold py-5">Indicazioni Clinico-Terapeutiche</AccordionTrigger>
             <AccordionContent>
              <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
@@ -252,7 +252,7 @@ export default function OzoneTherapyPage() {
           </AccordionItem>
 
           <AccordionItem value="contraindications">
-            <AccordionTrigger className="text-xl font-semibold">Controindicazioni</AccordionTrigger>
+            <AccordionTrigger className="text-2xl font-bold py-5">Controindicazioni</AccordionTrigger>
             <AccordionContent>
              <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
