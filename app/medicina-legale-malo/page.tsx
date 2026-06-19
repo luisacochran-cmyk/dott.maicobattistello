@@ -38,7 +38,19 @@ export default function MedicinaLegaleMaloPage() {
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
-          <p className="text-lg mb-6">{service.longDescription}</p>
+        <div className="text-lg mb-6 space-y-4">
+  <p>
+    Il Dr. Maico Battistello svolge attività di medicina legale a Monte di Malo, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative.
+  </p>
+
+  <p>
+    La consulenza medico-legale può essere utile in caso di danno biologico, infortuni, sinistri stradali, invalidità permanente, responsabilità professionale e controversie assicurative.
+  </p>
+
+  <p>
+    Ogni valutazione viene svolta attraverso l’analisi della documentazione clinica, l’inquadramento del caso e, quando necessario, la visita specialistica.
+  </p>
+</div>
 
           <h3 className="text-xl font-semibold mb-4">Servizi di Medicina Legale a {city.name}</h3>
 
