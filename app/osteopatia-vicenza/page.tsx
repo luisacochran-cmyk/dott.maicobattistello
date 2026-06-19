@@ -4,7 +4,7 @@ import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
-const city = cities.find((c) => c.slug === "vicenza")!
+const city = cities.find((c) => c.slug === "marostica")!
 const service = services.find((s) => s.slug === "osteopatia")!
 const seoData = generateLocalSEO(service, city)
 
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function OsteopatiaVicenzaPage() {
+export default function OsteopatiaMarosticaPage() {
   return (
     <div className="pt-20">
       {/* Breadcrumb */}
@@ -43,11 +43,11 @@ export default function OsteopatiaVicenzaPage() {
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
           <p className="text-lg mb-6">
-  L’<strong>Osteopatia</strong> è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di migliorare la funzionalità del corpo attraverso la valutazione e il trattamento delle restrizioni di mobilità e delle alterazioni funzionali.
+  L’<strong>Osteopatia</strong> è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di individuare e trattare le alterazioni funzionali che possono influire sul movimento, sulla postura e sul benessere generale.
 
-  A <strong>Vicenza</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone che presentano disturbi muscolo-scheletrici, problematiche posturali, limitazioni del movimento e condizioni che possono influire sulla qualità della vita quotidiana.
+  A <strong>Marostica</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone di ogni età, attraverso una valutazione accurata delle problematiche muscolo-scheletriche, delle tensioni posturali e delle limitazioni funzionali.
 
-  Attraverso una valutazione individuale e un approccio orientato alla persona, il trattamento osteopatico mira a favorire il recupero della <strong>funzionalità</strong>, dell’<strong>equilibrio corporeo</strong> e del benessere generale.
+  Il trattamento osteopatico può essere utile in presenza di cervicalgia, lombalgia, dolori articolari, disturbi posturali e problematiche legate alla mobilità, con l’obiettivo di favorire il recupero della <strong>funzionalità</strong>, della <strong>mobilità articolare</strong> e del benessere della persona.
 </p>
         </div>
       </div>
