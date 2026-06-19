@@ -242,7 +242,8 @@ export default function OzoneTherapyPage() {
     Le indicazioni vengono valutate caso per caso. L&apos;ossigeno-ozonoterapia non sostituisce le terapie mediche convenzionali, ma può integrarsi in un percorso clinico appropriato.
   </p>
 </div>
-          </AccordionItem>
+</AccordionContent>
+</AccordionItem>
 
           <AccordionItem value="contraindications">
             <AccordionTrigger className="text-2xl font-bold py-5">Controindicazioni</AccordionTrigger>
