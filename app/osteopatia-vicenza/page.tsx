@@ -43,16 +43,12 @@ export default function OsteopatiaVicenzaPage() {
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
           <p className="text-lg mb-6">
-            L'Osteopatia è una terapia sanitaria manuale che si avvicina alla persona malata nella sua totalità, cioè in
-            <strong> maniera olistica</strong>. L'Osteopata esamina le <strong>strutture del corpo</strong> (colonna
-            vertebrale, articolazioni, fasce muscolari, proiezioni viscerali e ossa craniche), cercando le principali
-            aree di squilibrio posturale/articolare, tensione muscolo-legamentosa/fasciale, e con{" "}
-            <strong>tecniche manipolative attente</strong>, adatte alle esigenze specifiche di ogni individuo,
-            dall'anziano, al bambino, alla donna in gravidanza, ripristina queste aree, recuperando il corretto
-            equilibrio posturale, l'equilibrio funzionale e il benessere fisico. Nella provincia di{" "}
-            <strong>Vicenza</strong>, il Dr. Maico Battistello offre consulenze osteopatiche presso strutture
-            specializzate, garantendo un approccio professionale e risultati duraturi.
-          </p>
+  L’<strong>Osteopatia</strong> è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di migliorare la funzionalità del corpo attraverso la valutazione e il trattamento delle restrizioni di mobilità e delle alterazioni funzionali.
+
+  A <strong>Vicenza</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone che presentano disturbi muscolo-scheletrici, problematiche posturali, limitazioni del movimento e condizioni che possono influire sulla qualità della vita quotidiana.
+
+  Attraverso una valutazione individuale e un approccio orientato alla persona, il trattamento osteopatico mira a favorire il recupero della <strong>funzionalità</strong>, dell’<strong>equilibrio corporeo</strong> e del benessere generale.
+</p>
         </div>
       </div>
 
