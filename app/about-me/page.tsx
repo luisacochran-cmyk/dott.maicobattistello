@@ -87,22 +87,25 @@ export default function AboutMePage() {
                 Specializzato in Osteopatia, Ozonoterapia e Medicina Legale
               </h3>
 
-         <div className="space-y-4" itemProp="description">
-<p className="text-lg">
-  Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999 e specializzato in Medicina Legale presso l'Università di Parma nel 2004. Ha conseguito il diploma in Osteopatia presso l'Istituto Europeo per la Medicina Osteopatica (EIOM) di Padova nel 2005 ed esercita come ozonoterapeuta dal 2017.
-</p>
+         <div className="space-y-4">
+  <p className="text-lg" itemProp="description">
+    Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999 e specializzato in Medicina Legale presso l'Università di Parma nel 2004. Ha conseguito il diploma in Osteopatia presso l'Istituto Europeo per la Medicina Osteopatica (EIOM) di Padova nel 2005 ed esercita come ozonoterapeuta dal 2017.
+  </p>
 
-<p className="text-lg mt-4">
-  Nel 2019 ha conseguito la certificazione in Pet Therapy, qualificandosi come Project Manager, Coordinatore di Intervento e Conduttore di Cani.
-</p>
+  <p className="text-lg mt-4">
+    Nel 2019 ha conseguito la certificazione in Pet Therapy, qualificandosi come Project Manager, Coordinatore di Intervento e Conduttore di Cani.
+  </p>
 
-<p className="text-lg mt-4">
-  La sua attività professionale è orientata alla presa in carico globale della persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e alla costruzione di percorsi terapeutici personalizzati. Nell'ambito dell'Ossigeno-Ozonoterapia segue le linee guida e le buone pratiche riconosciute dalla Nuova FIO e dalla SIOOT.
+  <p className="text-lg mt-4">
+  La sua attività professionale è orientata alla presa in carico globale della persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e alla costruzione di percorsi terapeutici personalizzati.
+
+  Nell'ambito dell'Ossigeno-Ozonoterapia segue le linee guida e le buone pratiche riconosciute dalla Nuova FIO e dalla SIOOT.
 </p>
 
 <p className="text-lg mt-4">
   Riceve presso le sedi di Marostica, Monte di Malo, Schio e Padova, occupandosi di Medicina Legale, Osteopatia e Ossigeno-Ozonoterapia.
 </p>
+</div>
            
         </div>
             </div>
