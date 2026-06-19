@@ -42,17 +42,13 @@ export default function OsteopatiaSchioPage() {
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
-          <p className="text-lg mb-6">
-            L'Osteopatia è una terapia sanitaria manuale che si avvicina alla persona malata nella sua totalità, cioè in
-            <strong> maniera olistica</strong>. L'Osteopata esamina le <strong>strutture del corpo</strong> (colonna
-            vertebrale, articolazioni, fasce muscolari, proiezioni viscerali e ossa craniche), cercando le principali
-            aree di squilibrio posturale/articolare, tensione muscolo-legamentosa/fasciale, e con{" "}
-            <strong>tecniche manipolative attente</strong>, adatte alle esigenze specifiche di ogni individuo,
-            dall'anziano, al bambino, alla donna in gravidanza, ripristina queste aree, recuperando il corretto
-            equilibrio posturale, l'equilibrio funzionale e il benessere fisico. A <strong>Schio</strong>, il Dr. Maico
-            Battistello riceve presso il Centro Medico Met, dove applica tecniche osteopatiche innovative per il
-            benessere dei suoi pazienti.
-          </p>
+         <p className="text-lg mb-6">
+  L’Osteopatia è una disciplina manuale che si basa sulla valutazione e sul trattamento delle disfunzioni che possono influire sull’equilibrio e sulla mobilità del corpo.
+
+  A <strong>Schio</strong>, il Dr. Maico Battistello offre trattamenti osteopatici rivolti a persone di ogni età, con un approccio personalizzato orientato alla ricerca delle cause funzionali che possono contribuire a dolore, rigidità e limitazioni del movimento.
+
+  Attraverso una valutazione individuale e tecniche manuali adattate alle esigenze del paziente, il trattamento osteopatico mira a favorire il recupero della funzionalità, della mobilità articolare e del benessere generale della persona.
+</p>
         </div>
       </div>
 
