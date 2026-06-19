@@ -40,7 +40,9 @@ export default function MedicinaLegaleSchioPage() {
 
           <div className="text-lg mb-6 space-y-4">
   <p>
-    Il Dr. Maico Battistello svolge attività di medicina legale a Schio, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative.
+    <p>
+  Il Dr. Maico Battistello svolge attività di medicina legale a Schio, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative dell’area scledense e dell’Alto Vicentino.
+</p>
   </p>
 
   <p>
