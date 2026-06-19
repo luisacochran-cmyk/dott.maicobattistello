@@ -50,7 +50,7 @@ export default function OsteopatiaMaloPage() {
 
   Il trattamento osteopatico può essere utile in presenza di lombalgia, cervicalgia, dolori articolari, disturbi posturali e problematiche muscolo-scheletriche, sempre nell’ambito di un percorso individualizzato orientato al recupero della <strong>funzionalità</strong>, della <strong>mobilità</strong> e del benessere generale della persona.
 </p>
-```
+
 
 
 
