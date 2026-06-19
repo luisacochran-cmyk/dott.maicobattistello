@@ -40,7 +40,9 @@ export default function MedicinaLegalePadovaPage() {
 
          <div className="text-lg mb-6 space-y-4">
   <p>
-    Il Dr. Maico Battistello svolge attività di medicina legale a Padova, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative.
+   <p>
+  Il Dr. Maico Battistello svolge attività di medicina legale a Padova, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative in uno dei principali contesti professionali e universitari del Veneto.
+</p>
   </p>
 
   <p>
