@@ -81,7 +81,7 @@ export default function OzoneOsteopathyPage() {
                   → Ozono + Osteo a Padova
                 </Link>
                 <Link href="/ozono-osteo-vicenza" className="text-blue-600 hover:text-blue-800 underline font-medium">
-                  → Ozono + Osteo a Vicenza
+                 → Ozono + Osteo a Marostica
                 </Link>
                 <Link href="/ozono-osteo-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
                   → Ozono + Osteo a Schio
