@@ -23,27 +23,30 @@ export default function OzoneOsteopathyPage() {
         <div className="prose max-w-none">
           <AnimatedScrollElement direction="up" delay={0.1}>
             <p className="text-lg mb-6">
-              Attraverso anni di esperienza in{" "}
-              <AnimatedLink href="/osteopathy" className="text-primary">
-                Terapia Osteopatica
-              </AnimatedLink>{" "}
-              e{" "}
-              <AnimatedLink href="/ozone-therapy" className="text-primary">
-                Ozonoterapia
-              </AnimatedLink>
-              , il Dr. Maico Battistello ha sviluppato un <strong>trattamento combinato unico</strong>, ottenendo
-              risultati clinici che nessuna delle due discipline da sola può fornire.
+            Attraverso anni di esperienza in{" "}
+<AnimatedLink href="/osteopathy" className="text-primary">
+  Terapia Osteopatica
+</AnimatedLink>{" "}
+e{" "}
+<AnimatedLink href="/ozone-therapy" className="text-primary">
+  Ozonoterapia
+</AnimatedLink>
+, il Dr. Maico Battistello ha sviluppato un <strong>approccio integrato</strong> che combina i benefici delle due discipline per il trattamento di dolore muscolo-scheletrico, disturbi articolari e condizioni infiammatorie croniche. Questo trattamento viene proposto nelle sedi di Padova, Marostica, Schio e Malo, con un percorso personalizzato in base alle esigenze del paziente.
             </p>
           </AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.2}>
-            <h3 className="text-xl font-semibold mb-4">Le condizioni che ne beneficiano maggiormente includono:</h3>
+           <h3 className="text-xl font-semibold mb-4">
+Quando può essere utile il trattamento combinato Ozonoterapia + Osteopatia
+</h3>
             <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Disturbi spinali (cervicali/lombari) da ernie discali, artrosi, traumi</li>
-              <li>Dolore radicolare dovuto a ernie discali (irradiato a braccia o gambe)</li>
-              <li>Artrosi dell'anca e del ginocchio (coxartrosi e gonartrosi)</li>
-            </ul>
-          </AnimatedScrollElement>
+        <li>Dolore cervicale e lombare associato a ernie discali, artrosi o traumi</li>
+<li>Sciatalgia e dolore radicolare irradiato a braccia o gambe</li>
+<li>Artrosi dell'anca, del ginocchio e di altre articolazioni</li>
+<li>Contratture muscolari e limitazioni della mobilità articolare</li>
+<li>Condizioni infiammatorie croniche dell'apparato muscolo-scheletrico</li>
+</ul>
+</AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.3}>
             <p className="text-lg mb-4">
@@ -72,7 +75,7 @@ export default function OzoneOsteopathyPage() {
 
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-              <h3 className="text-xl font-semibold mb-3">📍 Trattamenti Combinati nelle principali città</h3>
+           <h3 className="text-xl font-semibold mb-3">Trattamento combinato Ozonoterapia + Osteopatia nelle sedi di:</h3>
               <p className="mb-4">
                 Il Dr. Maico Battistello offre il trattamento combinato Ozonoterapia + Osteopatia anche presso:
               </p>
@@ -80,7 +83,7 @@ export default function OzoneOsteopathyPage() {
                 <Link href="/ozono-osteo-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
                   → Ozono + Osteo a Padova
                 </Link>
-                <Link href="/ozono-osteo-vicenza" className="text-blue-600 hover:text-blue-800 underline font-medium">
+               <Link href="/ozono-osteo-marostica" className="text-blue-600 hover:text-blue-800 underline font-medium">
                  → Ozono + Osteo a Marostica
                 </Link>
                 <Link href="/ozono-osteo-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
