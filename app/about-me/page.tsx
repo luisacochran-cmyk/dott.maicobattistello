@@ -96,7 +96,7 @@ Riceve presso le sedi di Marostica, Monte di Malo, Schio e Padova, occupandosi d
 Nel 2019 ha conseguito la certificazione in Pet Therapy, qualificandosi come Project Manager, Coordinatore di Intervento e Conduttore di Cani.
 
 La sua attività professionale è orientata alla presa in carico globale della persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e alla costruzione di percorsi terapeutici personalizzati. Nell'ambito dell'Ossigeno-Ozonoterapia segue protocolli clinici e linee guida riconosciuti dalla Nuova FIO e dalla SIOOT.
-                
+</p>                
               </div>
             </div>
           </div>
