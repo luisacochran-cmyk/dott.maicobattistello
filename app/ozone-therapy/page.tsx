@@ -18,7 +18,7 @@ export default function OzoneTherapyPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+       <div className="prose prose-lg max-w-none leading-relaxed">
           <h2 className="text-2xl font-semibold mb-6">Cos'è l'Ozonoterapia?</h2>
 
 <p className="text-lg mb-6">
@@ -155,7 +155,7 @@ export default function OzoneTherapyPage() {
           <AccordionItem value="administration-methods">
             <AccordionTrigger className="text-xl font-semibold">Metodi di Somministrazione</AccordionTrigger>
             <AccordionContent>
-              <div className="prose max-w-none">
+             <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
                   L'ozonoterapia può essere somministrata localmente o sistemicamente a seconda delle patologie da
                   trattare.
@@ -198,7 +198,7 @@ export default function OzoneTherapyPage() {
           <AccordionItem value="clinical-therapeutic-indications">
             <AccordionTrigger className="text-xl font-semibold">Indicazioni Clinico-Terapeutiche</AccordionTrigger>
             <AccordionContent>
-              <div className="prose max-w-none">
+             <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
                   Grazie alla Medicina Basata sull'Evidenza (EBM), le patologie trattate con l'Ossigeno-Ozonoterapia
                   sono suddivise in tre categorie.
@@ -254,7 +254,7 @@ export default function OzoneTherapyPage() {
           <AccordionItem value="contraindications">
             <AccordionTrigger className="text-xl font-semibold">Controindicazioni</AccordionTrigger>
             <AccordionContent>
-              <div className="prose max-w-none">
+             <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
                   A concentrazioni terapeutiche, l'Ossigeno-Ozonoterapia non ha effetti collaterali. Non è un
                   trattamento doloroso. Non provoca reazioni allergiche. Non interferisce con i farmaci in uso.
