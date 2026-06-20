@@ -84,12 +84,12 @@ export default function AboutMePage() {
                 Laureato in Medicina e Chirurgia
               </h2>
               <h3 className="text-lg mb-4 italic text-gray-600" itemProp="description">
-                Specializzato in Osteopatia, Ozonoterapia e Medicina Legale
+               Medico Legale, Osteopata e Ozonoterapeuta
               </h3>
 
          <div className="space-y-4">
   <p className="text-lg" itemProp="description">
-    Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999 e specializzato in Medicina Legale presso l'Università di Parma nel 2004. Ha conseguito il diploma in Osteopatia presso l'Istituto Europeo per la Medicina Osteopatica (EIOM) di Padova nel 2005 ed esercita come ozonoterapeuta dal 2017.
+  Laureato in Medicina e Chirurgia presso l'Università di Padova nel 1999 e specializzato in Medicina Legale presso l'Università di Parma nel 2004. Nel 2005 ha conseguito il diploma in Osteopatia presso l'Istituto Europeo per la Medicina Osteopatica (EIOM) di Padova e dal 2017 integra nella propria attività clinica l'Ossigeno-Ozonoterapia.
   </p>
 
   <p className="text-lg mt-4">
@@ -97,7 +97,7 @@ export default function AboutMePage() {
   </p>
 
   <p className="text-lg mt-4">
-  La sua attività professionale è orientata alla presa in carico globale della persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e alla costruzione di percorsi terapeutici personalizzati.
+La sua attività professionale è orientata alla presa in carico globale della persona, con particolare attenzione ai disturbi muscolo-scheletrici, al dolore cronico e alla costruzione di percorsi terapeutici personalizzati, integrando competenze di Medicina Legale, Osteopatia e Ossigeno-Ozonoterapia.
 
   Nell'ambito dell'Ossigeno-Ozonoterapia segue le linee guida e le buone pratiche riconosciute dalla Nuova FIO e dalla SIOOT.
 </p>
