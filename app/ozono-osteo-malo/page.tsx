@@ -48,7 +48,8 @@ export default function OzonoOsteoMaloPage() {
          <AnimatedScrollElement direction="up" delay={0.1}>
   <p className="text-lg mb-6">
     A <strong>Malo</strong>, il Dr. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un percorso personalizzato, rivolto in particolare a disturbi muscolo-scheletrici, dolore cronico e problematiche funzionali della colonna. L'approccio combinato consente di valutare sia la componente <strong>infiammatoria</strong> sia le alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>, adattando il trattamento alle esigenze della persona e alle caratteristiche specifiche del disturbo presentato.
-</AnimatedScrollElement>
+</p>
+         </AnimatedScrollElement>
 
         <AnimatedScrollElement direction="up" delay={0.2}>
   <h3 className="text-xl font-semibold mb-4">
