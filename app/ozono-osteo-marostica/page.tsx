@@ -46,21 +46,9 @@ export default function OzonoOsteoMarosticaPage() {
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
           <AnimatedScrollElement direction="up" delay={0.1}>
-            <p className="text-lg mb-6">
-              A <strong>{city.name}</strong>, {service.longDescription} Le
-              proprietà naturali <strong>antinfiammatorie</strong> e
-              miorilassanti dell'{" "}
-              <AnimatedLink href="/ozone-therapy" className="text-primary">
-                Ozonoterapia
-              </AnimatedLink>
-              , combinate con il riallineamento posturale della{" "}
-              <AnimatedLink href="/osteopathy" className="text-primary">
-                Manipolazione Osteopatica
-              </AnimatedLink>
-              , producono risultati eccezionali nella provincia di{" "}
-              <strong>{city.province}</strong>, specialmente per condizioni
-              croniche che impattano la vita quotidiana.
-            </p>
+         <p className="text-lg mb-6">
+           A <strong>Marostica</strong>, il Dr. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un percorso clinico personalizzato, rivolto soprattutto a disturbi muscolo-scheletrici, dolore cronico e problematiche funzionali della colonna. La combinazione tra valutazione medica, trattamento ozonoterapico e approccio osteopatico permette di considerare non solo il sintomo, ma anche il contesto posturale e funzionale della persona.
+   </p>
           </AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.2}>
