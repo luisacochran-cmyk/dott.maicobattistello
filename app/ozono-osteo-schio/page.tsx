@@ -45,13 +45,13 @@ export default function OzonoOsteoSchioPage() {
         <div className="prose max-w-none">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-        <AnimatedScrollElement direction="up" delay={0.1}>
+       <AnimatedScrollElement direction="up" delay={0.1}>
   <p className="text-lg mb-6">
     A <strong>Schio</strong>, il Dr. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un percorso personalizzato dedicato a disturbi muscolo-scheletrici, dolore cronico e limitazioni funzionali. L'approccio combinato consente di valutare sia la componente <strong>infiammatoria</strong> sia le alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>, con particolare attenzione alle esigenze delle <strong>persone attive</strong> e ai disturbi legati a <strong>sovraccarichi lavorativi o sportivi</strong>. L'obiettivo è favorire il recupero della <strong>funzionalità</strong> e una migliore <strong>qualità del movimento</strong>.
   </p>
 </AnimatedScrollElement>
 
-         <AnimatedScrollElement direction="up" delay={0.2}>
+<AnimatedScrollElement direction="up" delay={0.2}>
   <h3 className="text-xl font-semibold mb-4">
     Quando può essere indicato l'approccio integrato a Schio
   </h3>
