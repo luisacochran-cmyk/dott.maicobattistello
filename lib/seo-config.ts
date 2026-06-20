@@ -170,7 +170,8 @@ export const services: ServiceConfig[] = [
     slug: "osteopatia",
     description: "Trattamenti osteopatici manuali per il riequilibrio posturale e funzionale",
     longDescription:
-      "L'Osteopatia è una terapia sanitaria manuale che si avvicina alla persona malata nella sua totalità, con tecniche manipolative attente per ripristinare l'equilibrio posturale e funzionale.",
+     longDescription:
+"L'osteopatia è una terapia manuale che valuta le relazioni tra struttura e funzione del corpo. Attraverso una valutazione accurata e tecniche specifiche, l'osteopata individua alterazioni della mobilità e della funzione che possono contribuire a dolore, limitazioni del movimento e disturbi muscolo-scheletrici. Il trattamento viene adattato alle caratteristiche della persona con l'obiettivo di favorire una migliore funzionalità e qualità di vita.",
     keywords: [
       "osteopatia",
       "osteopata",
