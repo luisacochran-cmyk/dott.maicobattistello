@@ -21,46 +21,45 @@ export default function OzoneOsteopathyPage() {
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
-          <AnimatedScrollElement direction="up" delay={0.1}>
-            <p className="text-lg mb-6">
-            Attraverso anni di esperienza in{" "}
-<AnimatedLink href="/osteopathy" className="text-primary">
-  Terapia Osteopatica
-</AnimatedLink>{" "}
-e{" "}
-<AnimatedLink href="/ozone-therapy" className="text-primary">
-  Ozonoterapia
-</AnimatedLink>
-, il Dr. Maico Battistello ha sviluppato un <strong>approccio integrato</strong> che combina i benefici delle due discipline per il trattamento di dolore muscolo-scheletrico, disturbi articolari e condizioni infiammatorie croniche. Questo trattamento viene proposto nelle sedi di Padova, Marostica, Schio e Malo, con un percorso personalizzato in base alle esigenze del paziente.
-            </p>
-          </AnimatedScrollElement>
-
-          <AnimatedScrollElement direction="up" delay={0.2}>
-           <h3 className="text-xl font-semibold mb-4">
-Quando può essere utile il trattamento combinato Ozonoterapia + Osteopatia
-</h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-        <li>Dolore cervicale e lombare associato a ernie discali, artrosi o traumi</li>
-<li>Sciatalgia e dolore radicolare irradiato a braccia o gambe</li>
-<li>Artrosi dell'anca, del ginocchio e di altre articolazioni</li>
-<li>Contratture muscolari e limitazioni della mobilità articolare</li>
-<li>Condizioni infiammatorie croniche dell'apparato muscolo-scheletrico</li>
-</ul>
+         <AnimatedScrollElement direction="up" delay={0.1}>
+  <p className="text-lg mb-6">
+    L'ossigeno-ozonoterapia e l'osteopatia sono due metodiche differenti che, in molti casi,
+    possono essere utilizzate in modo complementare.
+  </p>
+  <p className="text-lg mb-6">
+    Nella pratica clinica del Dr. Maico Battistello, l'associazione tra queste due discipline
+    viene valutata quando il disturbo presenta sia una componente <strong>infiammatoria</strong> sia
+    alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>.
+  </p>
+  <p className="text-lg mb-6">
+    L'obiettivo è intervenire non solo sul sintomo doloroso, ma anche sui fattori biomeccanici
+    che possono contribuire al mantenimento del problema nel tempo.
+  </p>
 </AnimatedScrollElement>
 
-          <AnimatedScrollElement direction="up" delay={0.3}>
-            <p className="text-lg mb-4">
-              Le proprietà naturali <strong>antinfiammatorie</strong> e miorilassanti dell'{" "}
-              <AnimatedLink href="/ozone-therapy" className="text-primary">
-                Ozonoterapia
-              </AnimatedLink>
-              , combinate con il riallineamento posturale della{" "}
-              <AnimatedLink href="/osteopathy" className="text-primary">
-                Manipolazione Osteopatica
-              </AnimatedLink>
-              , producono risultati eccezionali, specialmente per condizioni croniche che impattano la vita quotidiana.
-            </p>
-          </AnimatedScrollElement>
+<AnimatedScrollElement direction="up" delay={0.2}>
+  <h3 className="text-xl font-semibold mb-4">
+    Quando può essere indicato un approccio integrato
+  </h3>
+  <ul className="list-disc pl-6 mb-6 space-y-2">
+    <li>Cervicalgia e lombalgia</li>
+    <li>Ernie e protrusioni discali</li>
+    <li>Sciatalgia e dolore radicolare</li>
+    <li>Artrosi e problematiche articolari</li>
+    <li>Contratture muscolari persistenti</li>
+    <li>Limitazioni della mobilità</li>
+    <li>Disturbi muscolo-scheletrici cronici</li>
+    <li>Dolore correlato a sovraccarichi posturali</li>
+  </ul>
+</AnimatedScrollElement>
+
+<AnimatedScrollElement direction="up" delay={0.3}>
+  <p className="text-lg mb-4">
+    La scelta del trattamento viene sempre definita dopo una <strong>valutazione individuale</strong>.
+    In alcuni casi può essere indicata prevalentemente l'ossigeno-ozonoterapia, in altri l'osteopatia;
+    in altri ancora può essere utile un <strong>approccio integrato</strong> tra le due metodiche.
+  </p>
+</AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.4}>
             <div className="mt-8 text-center">
