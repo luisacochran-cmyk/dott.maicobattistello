@@ -22,10 +22,9 @@ export default function OzoneOsteopathyPage() {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
          <AnimatedScrollElement direction="up" delay={0.1}>
-  <p className="text-lg mb-6">
-    L'ossigeno-ozonoterapia e l'osteopatia sono due metodiche differenti che, in molti casi,
-    possono essere utilizzate in modo complementare.
-  </p>
+  <p className="text-lg">
+  <strong>L'ossigeno-ozonoterapia e l'osteopatia</strong> sono due metodiche differenti che, in molti casi, possono essere utilizzate in modo complementare.
+</p>
   <p className="text-lg mb-6">
   Nella pratica clinica del Dr. Maico Battistello, l'associazione tra queste due discipline viene frequentemente presa in considerazione quando il disturbo presenta sia una componente <strong>infiammatoria</strong> sia alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>. In questi casi, l'utilizzo complementare delle due metodiche può consentire un <strong>approccio più completo</strong> alle diverse componenti del problema.
   </p>
