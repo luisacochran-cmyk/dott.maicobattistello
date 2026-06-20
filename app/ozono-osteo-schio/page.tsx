@@ -45,32 +45,26 @@ export default function OzonoOsteoSchioPage() {
         <div className="prose max-w-none">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-          <AnimatedScrollElement direction="up" delay={0.1}>
-            <p className="text-lg mb-6">
-              A <strong>{city.name}</strong>, {service.longDescription} Le proprietà naturali{" "}
-              <strong>antinfiammatorie</strong> e miorilassanti dell'{" "}
-              <AnimatedLink href="/ozone-therapy" className="text-primary">
-                Ozonoterapia
-              </AnimatedLink>
-              , combinate con il riallineamento posturale della{" "}
-              <AnimatedLink href="/osteopathy" className="text-primary">
-                Manipolazione Osteopatica
-              </AnimatedLink>
-              , producono risultati eccezionali nella provincia di <strong>{city.province}</strong>, specialmente per
-              condizioni croniche che impattano la vita quotidiana.
-            </p>
-          </AnimatedScrollElement>
+        <AnimatedScrollElement direction="up" delay={0.1}>
+  <p className="text-lg mb-6">
+    A <strong>Schio</strong>, il Dr. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un percorso personalizzato dedicato a disturbi muscolo-scheletrici, dolore cronico e limitazioni funzionali. L'approccio combinato consente di valutare sia la componente <strong>infiammatoria</strong> sia le alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>, con particolare attenzione alle esigenze delle persone attive e ai disturbi legati a sovraccarichi lavorativi o sportivi.
+  </p>
+</AnimatedScrollElement>
 
-          <AnimatedScrollElement direction="up" delay={0.2}>
-            <h3 className="text-xl font-semibold mb-4">
-              Le condizioni che ne beneficiano maggiormente a {city.name} includono:
-            </h3>
-            <ul className="list-disc pl-6 mb-6 space-y-2">
-              <li>Disturbi spinali (cervicali/lombari) da ernie discali, artrosi, traumi</li>
-              <li>Dolore radicolare dovuto a ernie discali (irradiato a braccia o gambe)</li>
-              <li>Artrosi dell'anca e del ginocchio (coxartrosi e gonartrosi)</li>
-            </ul>
-          </AnimatedScrollElement>
+         <AnimatedScrollElement direction="up" delay={0.2}>
+  <h3 className="text-xl font-semibold mb-4">
+    Quando può essere indicato l'approccio integrato a Schio
+  </h3>
+  <ul className="list-disc pl-6 mb-6 space-y-2">
+    <li>Cervicalgia e lombalgia</li>
+    <li>Ernie e protrusioni discali</li>
+    <li>Sciatalgia e dolore radicolare</li>
+    <li>Artrosi e problematiche articolari</li>
+    <li>Contratture muscolari persistenti</li>
+    <li>Disturbi correlati a sovraccarichi lavorativi o sportivi</li>
+    <li>Limitazioni della mobilità e recupero funzionale</li>
+  </ul>
+</AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.4}>
             <div className="mt-8 text-center">
