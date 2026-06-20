@@ -20,13 +20,11 @@ export default function OsteopathyPage() {
           <h2 className="text-2xl font-semibold mb-6">Cos'è l'Osteopatia?</h2>
 
           <p className="text-lg mb-6">
-            L'Osteopatia è una terapia sanitaria manuale che si avvicina alla persona malata nella sua totalità, cioè in
-            <strong> maniera olistica</strong>. L'Osteopata esamina le <strong>strutture del corpo</strong> (colonna
-            vertebrale, articolazioni, fasce muscolari, proiezioni viscerali e ossa craniche), cercando le principali
-            aree di squilibrio posturale/articolare, tensione muscolo-legamentosa/fasciale, e con{" "}
-            <strong>tecniche manipolative attente</strong>, adatte alle esigenze specifiche di ogni individuo,
-            dall'anziano, al bambino, alla donna in gravidanza, ripristina queste aree, recuperando il corretto
-            equilibrio posturale, l'equilibrio funzionale e il benessere fisico.
+           L'Osteopatia è una <strong>terapia manuale</strong> che valuta le relazioni tra <strong>struttura e funzione del corpo</strong>, con particolare attenzione alla colonna vertebrale, alle articolazioni, al sistema muscolare e ai tessuti connettivi.
+
+Attraverso una valutazione accurata e tecniche manuali specifiche, l'osteopata individua le alterazioni della mobilità e della funzione che possono contribuire a <strong>dolore</strong>, limitazioni del movimento e <strong>disturbi muscolo-scheletrici</strong>.
+
+Il trattamento viene adattato alle caratteristiche della persona, con l'obiettivo di favorire un migliore equilibrio funzionale e una maggiore qualità di vita.
           </p>
         </div>
       </div>
