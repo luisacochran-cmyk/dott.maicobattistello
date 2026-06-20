@@ -66,7 +66,7 @@ export default function AboutMePage() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3">
-              <div className="w-[250px] h-[350px] mx-auto">
+             <div className="w-[300px] h-[420px] mx-auto">
                 <img
                   src="/images/medicinalegale1.jpg"
                   alt="Dr. Maico Battistello - Medico Specialista in Osteopatia, Ozonoterapia e Medicina Legale"
