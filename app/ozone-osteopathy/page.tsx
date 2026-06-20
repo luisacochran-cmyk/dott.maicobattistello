@@ -27,9 +27,7 @@ export default function OzoneOsteopathyPage() {
     possono essere utilizzate in modo complementare.
   </p>
   <p className="text-lg mb-6">
-    Nella pratica clinica del Dr. Maico Battistello, l'associazione tra queste due discipline
-    viene valutata quando il disturbo presenta sia una componente <strong>infiammatoria</strong> sia
-    alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>.
+  Nella pratica clinica del Dr. Maico Battistello, l'associazione tra queste due discipline viene frequentemente presa in considerazione quando il disturbo presenta sia una componente <strong>infiammatoria</strong> sia alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>. In questi casi, l'utilizzo complementare delle due metodiche può consentire un <strong>approccio più completo</strong> alle diverse componenti del problema.
   </p>
   <p className="text-lg mb-6">
     L'obiettivo è intervenire non solo sul sintomo doloroso, ma anche sui fattori biomeccanici
