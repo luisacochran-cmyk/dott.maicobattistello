@@ -376,7 +376,7 @@ export default function OzonoterapiaPadovaPage() {
             openingHours: ["Mo-Fr 09:00-18:00"],
             telephone: "+39-XXX-XXXXXXX",
             email: "info@dottmaicobattistello.it",
-            hasMap: "https://maps.google.com/?q=Padova+ozonoterapia",
+           hasMap: "https://maps.google.com/?q=Padova+ozonoterapia"
           
               
           }),
