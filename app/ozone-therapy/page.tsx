@@ -1,10 +1,16 @@
-"use client"
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import Link from "next/link"
-
+export const metadata = {
+  title: "Ozonoterapia - Dr. Maico Battistello",
+  description:
+    "Ozonoterapia per dolore cronico, ernie, artrosi, infiammazione e recupero funzionale. Visite a Marostica, Schio, Monte di Malo e Padova.",
+  alternates: {
+    canonical: "https://dottmaicobattistello.it/ozonoterapia",
+  },
+}
 export default function OzoneTherapyPage() {
   return (
     <div className="pt-20">
