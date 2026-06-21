@@ -15,7 +15,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia Padova, Vicenza",
+  title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo, Padova e Vicenza",
   description:
     "Dr. Maico Battistello - Specialista in Ozonoterapia e Osteopatia a Padova, Vicenza, Schio, Malo. Medicina Legale e trattamenti avanzati.",
   generator: "v0.dev",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia Padova, Vicenza",
+    title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo, Padova e Vicenza",
     description:
       "Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Padova, Vicenza, Schio, Malo. Prenota la tua visita.",
     url: "https://dottmaicobattistello.it",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia Padova, Vicenza",
+    title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo, Padova e Vicenza",
     description:
       "Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Padova, Vicenza, Schio, Malo. Prenota la tua visita.",
     images: ["https://dottmaicobattistello.it/images/nuovologo.png"],
@@ -106,7 +106,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="it_IT" />
         <meta property="og:url" content="https://dottmaicobattistello.it" />
-        <meta property="og:title" content="Dr. Maico Battistello - Ozonoterapia e Osteopatia Padova, Vicenza" />
+        <meta property="og:title" content="Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo, Padova e Vicenza" />
         <meta
           property="og:description"
           content="Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Padova, Vicenza, Schio, Malo. Prenota la tua visita."
@@ -121,7 +121,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@drmaicobt" />
         <meta name="twitter:creator" content="@drmaicobt" />
-        <meta name="twitter:title" content="Dr. Maico Battistello - Ozonoterapia e Osteopatia Padova, Vicenza" />
+        <meta name="twitter:title" content="Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo, Padova e Vicenza" />
         <meta
           name="twitter:description"
           content="Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Padova, Vicenza, Schio, Malo. Prenota la tua visita."
