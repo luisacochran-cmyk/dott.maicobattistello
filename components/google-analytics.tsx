@@ -15,7 +15,7 @@ export default function GoogleAnalytics() {
 
   useEffect(() => {
     if (typeof window.gtag !== "undefined") {
-      window.gtag("config", "G-C3FPBVTC8P", {
+      window.gtag("config", "G-XNWBDZLN2G", {
         page_path: pathname + searchParams.toString(),
       })
     }
