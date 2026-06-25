@@ -264,20 +264,24 @@ export default function RootLayout({
           }}
         />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNWBDZLN2G"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XNWBDZLN2G', {
+      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
         page_title: document.title,
         page_location: window.location.href,
       });
     `,
-          }}
-        />
+              }}
+            />
+          </>
+        )}
       </head>
       <body className={roboto.className}>
         <Suspense fallback={<div>Loading...</div>}>
