@@ -129,24 +129,9 @@ export default function MedicinaLegaleMaloPage() {
               Contattami Ora
             </Link>
           </div>
-
-          <h3 className="text-xl font-semibold mb-4">Altre Città Servite</h3>
-          <p className="text-base mb-4">Oltre a {city.name}, offro consulenze di medicina legale anche a:</p>
-          <div className="grid grid-cols-2 gap-3 mb-8">
-            {cities
-            .filter((c) => c.slug !== city.slug && c.slug !== "vicenza")  
-              .map((otherCity) => (
-                <Link
-                  key={otherCity.slug}
-                  href={`/medicina-legale-${otherCity.slug}`}
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Medicina Legale a {otherCity.name}
-                </Link>
-              ))}
-          </div>
-        </div>
-      </div>
+          
     </div>
+        </div>
+            </div>
   )
 }
