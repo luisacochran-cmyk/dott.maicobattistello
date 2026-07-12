@@ -122,19 +122,12 @@ export default function MedicinaLegaleSchioPage() {
               Per richiedere una consulenza medico-legale specialistica a {city.name} o per informazioni sui costi,
               contattami ora:
             </p>
-            <Link
-              href="/contacts"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
-            >
-              Contattami Ora
-            </Link>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-4">Altre Città Servite</h3>
-          <p className="text-base mb-4">Oltre a {city.name}, offro consulenze di medicina legale anche a:</p>
-          <div className="grid grid-cols-2 gap-3 mb-8">
-            {cities
-          
+                    <Link
+            href="/contacts"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+          >
+            Contattami Ora
+          </Link>
         </div>
       </div>
     </div>
