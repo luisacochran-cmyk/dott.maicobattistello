@@ -131,5 +131,6 @@ export default function MedicinaLegaleSchioPage() {
         </div>
       </div>
     </div>
+   </div>
   )
 }
