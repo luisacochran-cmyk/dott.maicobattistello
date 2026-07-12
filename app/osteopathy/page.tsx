@@ -44,7 +44,7 @@ Il trattamento viene adattato alle caratteristiche della persona, con l'obiettiv
             <Link href="/osteopatia-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
               → Osteopatia a Padova
             </Link>
-           <Link href="/osteopatia-vicenza" className="text-blue-600 hover:text-blue-800 underline font-medium">
+           <Link href="/osteopatia-marostica" className="text-blue-600 hover:text-blue-800 underline font-medium">
   → Osteopatia a Marostica
 </Link>
             <Link href="/osteopatia-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
