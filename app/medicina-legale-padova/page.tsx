@@ -134,7 +134,7 @@ export default function MedicinaLegalePadovaPage() {
           <p className="text-base mb-4">Oltre a {city.name}, offro consulenze di medicina legale anche a:</p>
           <div className="grid grid-cols-2 gap-3 mb-8">
             {cities
-              .filter((c) => c.slug !== city.slug)
+              .filter((c) => c.slug !== city.slug && c.slug !== "vicenza")
               .map((otherCity) => (
                 <Link
                   key={otherCity.slug}
