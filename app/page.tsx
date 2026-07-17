@@ -5,7 +5,8 @@ import {
   SubtitleSection,
   DescriptionSection,
   LocationsSection,
-  AdvancedTherapySection,
+FaqSection,
+AdvancedTherapySection,
 } from "@/components/client-animated-section"
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
 <SubtitleSection />
 <DescriptionSection />
 <LocationsSection />
+<FaqSection />
 <AdvancedTherapySection />
     </>
   )
