@@ -1,6 +1,7 @@
 import {
   HeroSection,
   TreatmentsSection,
+  ConditionsSection,
   SubtitleSection,
   DescriptionSection,
   AdvancedTherapySection,
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <ConditionsSection />
       <TreatmentsSection />
       <SubtitleSection />
       <DescriptionSection />
