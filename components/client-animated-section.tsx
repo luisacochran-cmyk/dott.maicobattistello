@@ -304,3 +304,74 @@ export function LocationsSection() {
     </section>
   )
 }
+
+export function FaqSection() {
+  const faqs = [
+    {
+      question: "Come si svolge la prima visita?",
+      answer:
+        "La prima visita prevede la raccolta della storia clinica, l’ascolto dei sintomi e una valutazione medica del quadro complessivo. Solo successivamente viene individuato il percorso più appropriato.",
+    },
+    {
+      question: "Ozonoterapia e Osteopatia vengono sempre utilizzate insieme?",
+      answer:
+        "No. In base alla valutazione clinica possono essere impiegate singolarmente oppure integrate, quando le condizioni e le esigenze della persona lo rendono indicato.",
+    },
+    {
+      question: "In quali sedi riceve il Dott. Maico Battistello?",
+      answer:
+        "Il Dott. Maico Battistello riceve a Marostica, Schio, Malo e Padova. Le informazioni relative alle singole sedi sono disponibili nelle pagine dedicate.",
+    },
+    {
+      question: "Come posso prenotare una visita?",
+      answer:
+        "È possibile richiedere un appuntamento attraverso la pagina Contatti, scegliendo la sede più comoda e utilizzando i recapiti disponibili.",
+    },
+  ]
+
+  return (
+    <section className="py-16 bg-white">
+      <div className="container px-4 md:px-4">
+        <AnimatedScrollElement
+          className="text-center"
+          direction="up"
+          delay={0.1}
+        >
+          <h2 className="text-3xl font-bold mb-4">Domande frequenti</h2>
+
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+            Alcune informazioni utili per comprendere come si svolge la
+            valutazione e come richiedere un appuntamento.
+          </p>
+
+          <div className="max-w-4xl mx-auto space-y-4 text-left">
+            {faqs.map((faq) => (
+              <div
+                key={faq.question}
+                className="border border-gray-200 rounded-lg bg-gray-50 px-6 py-5"
+              >
+                <h3 className="text-lg font-semibold mb-2">
+                  {faq.question}
+                </h3>
+
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
+            >
+              <Link href="/contacts">Richiedi un appuntamento</Link>
+            </Button>
+          </div>
+        </AnimatedScrollElement>
+      </div>
+    </section>
+  )
+}
