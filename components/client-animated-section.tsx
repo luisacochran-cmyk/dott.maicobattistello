@@ -124,10 +124,26 @@ export function TreatmentsSection() {
     <section className="py-16">
       <div className="container px-0 md:px-4">
         <AnimatedScrollElement className="mb-8 text-center px-4" direction="up" delay={0.1}>
-          <h2 className="text-3xl font-bold mb-4">I Nostri Trattamenti</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Scopri il nostro approccio innovativo alla salute attraverso la combinazione di Ozonoterapia e Osteopatia
-          </p>
+          <h2 className="text-3xl font-bold mb-4">Un approccio costruito sulla persona</h2>
+         <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-8">
+Quando il dolore, la limitazione funzionale o altri disturbi persistono nel tempo, applicare sempre lo stesso trattamento raramente rappresenta la soluzione migliore.
+
+<br /><br />
+
+Ogni persona presenta una storia clinica diversa, sintomi differenti ed esigenze specifiche.
+
+<br /><br />
+
+Per questo motivo, ogni percorso inizia con una valutazione medica approfondita, finalizzata a comprendere il problema nella sua globalità prima di individuare il trattamento più appropriato.
+
+<br /><br />
+
+A seconda del quadro clinico possono essere impiegate l'Ozonoterapia, l'Osteopatia oppure la loro integrazione.
+
+<br /><br />
+
+Quando indicato, il percorso può essere completato con strategie mirate sullo stile di vita e ulteriori indicazioni personalizzate, sempre all'interno di un piano terapeutico costruito sulla persona.
+</p>
         </AnimatedScrollElement>
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
