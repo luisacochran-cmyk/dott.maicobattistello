@@ -217,18 +217,24 @@ export function AdvancedTherapySection() {
           </AnimatedScrollElement>
           <div className="md:col-span-2 flex flex-col items-center text-center">
             <AnimatedScrollElement className="space-y-4 mb-8" direction="right" delay={0.3}>
-              <h3 className="text-xl font-semibold text-blue-200 text-wave-hover">Terapia all'Avanguardia</h3>
-              <p className="text-lg">
-                L'ozonoterapia sfrutta le proprietà biochimiche dell'ozono, che fornisce{" "}
-                <strong>effetti benefici</strong> per il tuo corpo. L'ossigeno-ozonoterapia ha proprietà
-                antinfiammatorie, analgesiche, miorilassanti, immunomodulanti, antibatteriche, fungicide e antivirali.
-              </p>
+              <h3 className="text-xl font-semibold text-blue-200 text-wave-hover">
+  Ozonoterapia e Osteopatia: strumenti diversi, un unico percorso
+</h3>
+              <p className="text-lg leading-relaxed">
+  Ozonoterapia e Osteopatia non rappresentano soluzioni standard da applicare indistintamente.
+  In base alla valutazione clinica possono essere utilizzate singolarmente oppure integrate,
+  quando il quadro della persona lo richiede.
+  <br /><br />
+  L'obiettivo è individuare il percorso più appropriato per affrontare il dolore,
+  favorire il recupero della funzionalità e accompagnare la persona nel tempo.
+</p>
+                
             </AnimatedScrollElement>
             <AnimatedScrollElement direction="up" delay={0.5}>
               <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 hover-lift">
                 <Link href="/contacts" className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
-                  <span>Prenota Ora un Appuntamento</span>
+                 <span>Prenota una visita</span>
                 </Link>
               </Button>
             </AnimatedScrollElement>
