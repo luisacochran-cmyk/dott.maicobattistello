@@ -18,18 +18,24 @@ export function HeroSection({ className }: HeroSectionProps) {
       <div className="container">
         <div className="max-w-xl md:max-w-2xl mx-auto md:mx-0 md:ml-[10%] lg:ml-[5%] text-left">
           <AnimatedScrollElement className="mb-3" direction="left" delay={0.1}>
-            <p className="text-xl text-white font-medium">Nuova innovazione terapeutica:</p>
+            <p className="text-xl text-white font-medium">
+              Dott. Maico Battistello
+            </p>
           </AnimatedScrollElement>
 
           <AnimatedScrollElement className="mb-5" direction="left" delay={0.3}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-              <ClientTypewriter text="Ozonoterapia & Osteopatia" delay={100} />
+              <ClientTypewriter
+                text="Ozonoterapia, Osteopatia e Medicina Legale"
+                delay={80}
+              />
             </h1>
           </AnimatedScrollElement>
 
           <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
             <p className="text-xl md:text-2xl text-white">
-              <ClientTypewriter text="Unite per un trattamento innovativo" delay={80} />
+              Un approccio medico personalizzato per il dolore, l'infiammazione
+              e il recupero della funzionalità.
             </p>
           </AnimatedScrollElement>
 
@@ -40,8 +46,11 @@ export function HeroSection({ className }: HeroSectionProps) {
                 size="lg"
                 className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-base sm:text-lg py-3 sm:py-6 hover-lift"
               >
-                <Link href="/ozone-osteopathy">Scopri di più</Link>
+                <Link href="/ozone-osteopathy">
+                  Scopri l'approccio integrato
+                </Link>
               </Button>
+
               <Button
                 asChild
                 size="lg"
@@ -49,7 +58,7 @@ export function HeroSection({ className }: HeroSectionProps) {
               >
                 <Link href="/contacts" className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
-                  <span>Prenota un Appuntamento</span>
+                  <span>Prenota una visita</span>
                 </Link>
               </Button>
             </div>
@@ -59,7 +68,6 @@ export function HeroSection({ className }: HeroSectionProps) {
     </section>
   )
 }
-
 export function TreatmentsSection() {
   return (
     <section className="py-16">
