@@ -244,3 +244,45 @@ export function AdvancedTherapySection() {
     </section>
   )
 }
+export function LocationsSection() {
+  const locations = ["Marostica", "Schio", "Malo", "Padova"]
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="container px-4 md:px-4">
+        <AnimatedScrollElement
+          className="text-center"
+          direction="up"
+          delay={0.1}
+        >
+          <h2 className="text-3xl font-bold mb-4">Dove ricevo</h2>
+
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+            Il Dott. Maico Battistello riceve in diverse sedi tra le province di
+            Vicenza e Padova, per offrire ai pazienti la possibilità di
+            individuare la struttura più comoda per il proprio percorso.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10">
+            {locations.map((location) => (
+              <div
+                key={location}
+                className="bg-white border border-gray-200 rounded-lg px-6 py-5 font-semibold shadow-sm"
+              >
+                {location}
+              </div>
+            ))}
+          </div>
+
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
+          >
+            <Link href="/contacts">Contatti e sedi</Link>
+          </Button>
+        </AnimatedScrollElement>
+      </div>
+    </section>
+  )
+}
