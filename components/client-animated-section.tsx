@@ -245,7 +245,24 @@ export function AdvancedTherapySection() {
   )
 }
 export function LocationsSection() {
-  const locations = ["Marostica", "Schio", "Malo", "Padova"]
+  const locations = [
+    {
+      name: "Marostica",
+      href: "/ozonoterapia-marostica",
+    },
+    {
+      name: "Schio",
+      href: "/ozonoterapia-schio",
+    },
+    {
+      name: "Malo",
+      href: "/ozonoterapia-malo",
+    },
+    {
+      name: "Padova",
+      href: "/ozonoterapia-padova",
+    },
+  ]
 
   return (
     <section className="py-16 bg-gray-50">
@@ -258,19 +275,20 @@ export function LocationsSection() {
           <h2 className="text-3xl font-bold mb-4">Dove ricevo</h2>
 
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-            Il Dott. Maico Battistello riceve in diverse sedi tra le province di
-            Vicenza e Padova, per offrire ai pazienti la possibilità di
-            individuare la struttura più comoda per il proprio percorso.
+            Il Dott. Maico Battistello riceve a Marostica, Schio, Malo e Padova.
+            Scegli la sede più comoda e scopri le informazioni dedicate a
+            ciascun ambulatorio.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10">
             {locations.map((location) => (
-              <div
-                key={location}
-                className="bg-white border border-gray-200 rounded-lg px-6 py-5 font-semibold shadow-sm"
+              <Link
+                key={location.name}
+                href={location.href}
+                className="bg-white border border-gray-200 rounded-lg px-6 py-5 font-semibold shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary"
               >
-                {location}
-              </div>
+                {location.name}
+              </Link>
             ))}
           </div>
 
