@@ -184,8 +184,7 @@ export function DescriptionSection() {
       <div className="container">
         <AnimatedScrollElement className="mb-8" direction="up" delay={0.1}>
          <p className="text-center text-lg max-w-3xl mx-auto leading-relaxed">
-  Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche, Ozonoterapia e Osteopatia per costruire percorsi terapeutici personalizzati.
-
+  Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche con l’Ozonoterapia e l’Osteopatia per costruire percorsi terapeutici personalizzati.
   <br /><br />
 
   Ogni scelta nasce da una valutazione clinica approfondita e dall'ascolto della persona, con l'obiettivo di individuare il trattamento più appropriato in base alle esigenze del singolo paziente.
