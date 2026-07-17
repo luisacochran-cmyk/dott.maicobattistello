@@ -134,7 +134,7 @@ export function TreatmentsSection() {
 
   <br /><br />
 
-  A seconda del quadro clinico possono essere impiegate l'Ozonoterapia, l'Osteopatia oppure la loro integrazione. Quando indicato, il percorso può essere completato con strategie mirate sullo stile di vita e ulteriori indicazioni personalizzate, sempre nel rispetto delle esigenze cliniche della persona.
+  A seconda del quadro clinico possono essere impiegate l'Ozonoterapia, l'Osteopatia oppure la loro integrazione. Quando indicato, il percorso può essere integrato con strategie mirate sullo stile di vita e ulteriori indicazioni personalizzate, sempre nel rispetto delle esigenze cliniche della persona.
 </p>
         </AnimatedScrollElement>
         <AnimatedScrollElement direction="up" delay={0.3}>
