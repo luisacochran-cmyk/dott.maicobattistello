@@ -68,6 +68,57 @@ export function HeroSection({ className }: HeroSectionProps) {
     </section>
   )
 }
+export function ConditionsSection() {
+  const conditions = [
+    "Cervicalgia",
+    "Lombalgia",
+    "Sciatalgia",
+    "Ernia e protrusione discale",
+    "Artrosi",
+    "Tendiniti",
+    "Dolore alla spalla",
+    "Dolore al ginocchio",
+    "Dolori muscolari e articolari",
+    "Infiammazione cronica",
+    "Fibromialgia",
+    "Stanchezza persistente e riduzione della vitalità",
+  ]
+
+  return (
+    <section className="py-16 bg-gray-50">
+      <div className="container px-4">
+        <AnimatedScrollElement
+          className="mb-10 text-center"
+          direction="up"
+          delay={0.1}
+        >
+          <h2 className="text-3xl font-bold mb-4">
+            Per quali disturbi può essere utile una valutazione?
+          </h2>
+
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Il dolore e la limitazione funzionale possono avere origini
+            differenti. Una valutazione medica permette di comprendere il
+            quadro della persona e individuare il percorso più appropriato.
+          </p>
+        </AnimatedScrollElement>
+
+        <AnimatedScrollElement direction="up" delay={0.3}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {conditions.map((condition) => (
+              <div
+                key={condition}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 px-5 py-4 text-center font-medium text-gray-800"
+              >
+                {condition}
+              </div>
+            ))}
+          </div>
+        </AnimatedScrollElement>
+      </div>
+    </section>
+  )
+}
 export function TreatmentsSection() {
   return (
     <section className="py-16">
