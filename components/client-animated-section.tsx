@@ -170,7 +170,7 @@ export function SubtitleSection() {
       <div className="container">
         <AnimatedScrollElement direction="up" delay={0.1}>
           <h2 className="text-2xl md:text-3xl font-bold text-center text-primary">
-            Scegli Esperienza e Professionalità per le tue cure
+           Il Dott. Maico Battistello
           </h2>
         </AnimatedScrollElement>
       </div>
@@ -183,14 +183,17 @@ export function DescriptionSection() {
     <section className="py-12">
       <div className="container">
         <AnimatedScrollElement className="mb-8" direction="up" delay={0.1}>
-          <p className="text-center text-lg max-w-3xl mx-auto">
-            Laureato in medicina e chirurgia, specializzato in medicina legale. Osteopata e Ozonoterapeuta, da anni
-            promuove l'uso combinato di queste discipline per ottenere risultati migliori e più duraturi.
-          </p>
+         <p className="text-center text-lg max-w-3xl mx-auto leading-relaxed">
+  Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche, Ozonoterapia e Osteopatia per costruire percorsi terapeutici personalizzati.
+
+  <br /><br />
+
+  Ogni scelta nasce da una valutazione clinica approfondita e dall'ascolto della persona, con l'obiettivo di individuare il trattamento più appropriato in base alle esigenze del singolo paziente.
+</p>
         </AnimatedScrollElement>
         <AnimatedScrollElement className="text-center" direction="up" delay={0.3}>
           <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift">
-            <Link href="/about-me">Scopri di più su di me</Link>
+           <Link href="/about-me">Conosci il Dott. Battistello</Link>
           </Button>
         </AnimatedScrollElement>
       </div>
