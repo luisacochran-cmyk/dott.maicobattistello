@@ -1,3 +1,5 @@
+import { MapPin, Facebook } from "lucide-react"
+
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
@@ -8,21 +10,23 @@ export default function Footer() {
               Dott. Maico Battistello
             </h3>
 
-            <p className="text-base text-gray-700 leading-relaxed">
-              Medico Chirurgo · Medico Legale
-              <br />
-              Osteopata · Ozonoterapeuta
-            </p>
+           <p className="text-base text-primary leading-relaxed">
+  Medico Chirurgo · Medico Legale
+  <br />
+  Osteopata · Ozonoterapeuta
+</p>
 
-            <p className="text-base text-gray-700 mt-3">
-              Marostica · Schio · Malo · Padova
-            </p>
+<p className="text-base text-gray-700 mt-3 flex items-center justify-center md:justify-start gap-2">
+  <MapPin className="h-4 w-4 text-primary" />
+  <span>Marostica · Schio · Malo · Padova</span>
+</p>
+
           </div>
 
           <div className="text-center">
-            <h3 className="text-base font-semibold text-gray-900 mb-4">
-              Aree di attività
-            </h3>
+            <h3 className="text-base font-semibold text-primary mb-4">
+  Aree di attività
+</h3>
 
             <div className="flex flex-col gap-2 text-base text-gray-700">
               <a
