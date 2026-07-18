@@ -286,7 +286,7 @@ export function LocationsSection() {
               <Link
                 key={location.name}
                 href={location.href}
-                className="bg-white border border-gray-200 rounded-lg px-6 py-5 font-semibold shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-primary"
+               className="bg-gradient-to-br from-white to-blue-50 border border-blue-200 rounded-xl px-6 py-5 font-semibold text-gray-800 text-center shadow-sm transition-all duration-300 hover:shadow-md hover:border-blue-300 hover:-translate-y-1"
               >
                 {location.name}
               </Link>
