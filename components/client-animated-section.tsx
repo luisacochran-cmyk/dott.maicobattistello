@@ -14,7 +14,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ className }: HeroSectionProps) {
   return (
-    <section className={`hero-section hero-section-mobile flex items-center pt-20 ${className}`}>
+  <section className={`hero-section hero-section-mobile flex items-center pt-20 pb-10 md:pb-16 ${className}`}>
       <div className="container">
         <div className="max-w-xl md:max-w-2xl mx-auto md:mx-0 md:ml-[10%] lg:ml-[5%] text-left">
           <AnimatedScrollElement className="mb-3" direction="left" delay={0.1}>
