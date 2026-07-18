@@ -85,7 +85,7 @@
 .hero-section {
   background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/homepic1.jpg-62A6H6JQfBVL6BDeVOySEABMNcDOSj.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: center 30%;
   height: calc(100vh - 80px);
   position: relative;
 }
