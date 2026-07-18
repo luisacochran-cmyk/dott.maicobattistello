@@ -78,7 +78,7 @@ export default function Footer() {
   target="_blank"
   rel="noopener noreferrer"
 >
- <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#1877F2] text-sm font-bold text-white">
+<span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#1877F2] text-sm font-bold text-white">
   f
 </span>
 <span>Seguimi su Facebook</span>
