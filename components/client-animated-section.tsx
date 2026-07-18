@@ -80,9 +80,10 @@ export function ConditionsSection() {
     "Dolore al ginocchio",
     "Dolori muscolari e articolari",
     "Infiammazione cronica",
-    "Fibromialgia",
-    "Stanchezza persistente e riduzione della vitalità",
-  ]
+   "Fibromialgia",
+"Stanchezza persistente e riduzione della vitalità",
+"E molto altro",
+]
 
   return (
     <section className="py-16 bg-gray-50">
