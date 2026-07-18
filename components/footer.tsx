@@ -78,8 +78,10 @@ export default function Footer() {
   target="_blank"
   rel="noopener noreferrer"
 >
-  <Facebook className="h-5 w-5" />
-  <span>Seguimi su Facebook</span>
+ <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#1877F2] text-sm font-bold text-white">
+  f
+</span>
+<span>Seguimi su Facebook</span>
 </a>
             </div>
           </div>
