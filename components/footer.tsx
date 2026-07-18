@@ -1,79 +1,87 @@
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="container px-4 md:px-4 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+    <footer className="bg-gray-50 border-t border-gray-200">
+      <div className="container px-4 md:px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
               Dott. Maico Battistello
             </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
-              Medico Chirurgo · Medico Legale · Osteopata · Ozonoterapeuta
+
+            <p className="text-base text-gray-700 leading-relaxed">
+              Medico Chirurgo · Medico Legale
+              <br />
+              Osteopata · Ozonoterapeuta
             </p>
-            <p className="text-sm text-gray-600 mt-2">
+
+            <p className="text-base text-gray-700 mt-3">
               Marostica · Schio · Malo · Padova
             </p>
           </div>
 
-          <div className="md:text-center">
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">
+          <div className="text-center">
+            <h3 className="text-base font-semibold text-gray-900 mb-4">
               Aree di attività
             </h3>
-            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-gray-600">
+
+            <div className="flex flex-col gap-2 text-base text-gray-700">
               <a
                 href="/ozonoterapia"
-                className="footer-link hover:text-blue-500 transition-colors"
+                className="hover:text-blue-600 transition-colors"
               >
                 Ozonoterapia
               </a>
+
               <a
                 href="/osteopatia"
-                className="footer-link hover:text-blue-500 transition-colors"
+                className="hover:text-blue-600 transition-colors"
               >
                 Osteopatia
               </a>
+
               <a
                 href="/medicina-legale"
-                className="footer-link hover:text-blue-500 transition-colors"
+                className="hover:text-blue-600 transition-colors"
               >
                 Medicina Legale
               </a>
             </div>
           </div>
 
-          <div className="md:text-right">
-            <h3 className="text-sm font-semibold text-gray-900 mb-3">
+          <div className="text-center md:text-right">
+            <h3 className="text-base font-semibold text-gray-900 mb-4">
               Informazioni
             </h3>
-            <div className="flex flex-wrap justify-center md:justify-end gap-x-4 gap-y-2 text-sm text-gray-600">
+
+            <div className="flex flex-col gap-2 text-base text-gray-700">
               <a
                 href="/privacy-policy"
-                className="footer-link hover:text-blue-500 transition-colors"
+                className="hover:text-blue-600 transition-colors"
               >
                 Privacy Policy
               </a>
 
               <a
                 href="/cookie-policy"
-                className="footer-link hover:text-blue-500 transition-colors"
+                className="hover:text-blue-600 transition-colors"
               >
                 Cookie Policy
               </a>
 
               <a
                 href="https://www.facebook.com/maicobattistello"
-                className="footer-link hover:text-blue-500 transition-colors"
+                className="font-medium hover:text-blue-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                Seguimi su Facebook
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-gray-200 text-center">
-          <p className="text-xs text-gray-500">
+        <div className="mt-10 pt-6 border-t border-gray-300 text-center">
+          <p className="text-sm text-gray-600">
             © 2026 Dott. Maico Battistello. Tutti i diritti riservati.
           </p>
         </div>
