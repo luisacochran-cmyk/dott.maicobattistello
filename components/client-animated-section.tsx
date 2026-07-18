@@ -349,7 +349,7 @@ export function FaqSection() {
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-                className="border border-gray-200 rounded-lg bg-gray-50 px-6 py-5"
+              className="border border-blue-100 rounded-2xl bg-gradient-to-br from-white to-blue-50/60 px-6 py-5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-blue-200"
               >
                 <h3 className="text-lg font-semibold mb-2">
                   {faq.question}
