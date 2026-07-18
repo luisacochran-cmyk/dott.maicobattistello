@@ -203,43 +203,33 @@ export function DescriptionSection() {
 export function AdvancedTherapySection() {
   return (
     <section className="py-16 bg-primary text-white">
-      <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          <AnimatedScrollElement className="md:col-span-1" direction="left" delay={0.1}>
-            <Image
-              src="/images/design-mode/avantgardepic.jpg.jpeg"
-              alt="Attrezzatura per ozonoterapia"
-              width={400}
-              height={400}
-              className="w-full max-w-md mx-auto rounded-lg"
-              unoptimized
-            />
-          </AnimatedScrollElement>
-          <div className="md:col-span-2 flex flex-col items-center text-center">
-            <AnimatedScrollElement className="space-y-4 mb-8" direction="right" delay={0.3}>
-              <h3 className="text-xl font-semibold text-blue-200 text-wave-hover">
-  Ozonoterapia e Osteopatia: strumenti diversi, un unico percorso
-</h3>
-              <p className="text-lg leading-relaxed">
-  Ozonoterapia e Osteopatia non rappresentano soluzioni standard da applicare indistintamente.
-  In base alla valutazione clinica possono essere utilizzate singolarmente oppure integrate,
-  quando il quadro della persona lo richiede.
-  <br /><br />
-  L'obiettivo è individuare il percorso più appropriato per affrontare il dolore,
-  favorire il recupero della funzionalità e accompagnare la persona nel tempo.
-</p>
-                
-            </AnimatedScrollElement>
-            <AnimatedScrollElement direction="up" delay={0.5}>
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100 hover-lift">
-                <Link href="/contacts" className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
-                 <span>Prenota una visita</span>
-                </Link>
-              </Button>
-            </AnimatedScrollElement>
-          </div>
-        </div>
+      <div className="container px-4 md:px-4">
+        <AnimatedScrollElement
+          className="text-center max-w-4xl mx-auto"
+          direction="up"
+          delay={0.1}
+        >
+          <h2 className="text-3xl font-bold mb-6">
+            Non esiste un trattamento giusto per tutti.
+          </h2>
+
+          <p className="text-lg leading-relaxed mb-8">
+            Dolore, infiammazione e limitazione funzionale possono presentarsi
+            in modo diverso da persona a persona. La visita permette di valutare
+            il quadro clinico e orientare il percorso terapeutico in modo mirato.
+          </p>
+
+          <Button
+            asChild
+            size="lg"
+            className="bg-white text-primary hover:bg-gray-100 hover-lift"
+          >
+            <Link href="/contacts" className="flex items-center gap-2">
+              <Calendar className="h-5 w-5" />
+              <span>Prenota una visita</span>
+            </Link>
+          </Button>
+        </AnimatedScrollElement>
       </div>
     </section>
   )
