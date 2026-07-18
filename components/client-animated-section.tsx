@@ -82,7 +82,7 @@ export function ConditionsSection() {
     "Infiammazione cronica",
    "Fibromialgia",
 "Stanchezza persistente e riduzione della vitalità",
-"E molto altro",
+
 ]
 
   return (
@@ -104,18 +104,28 @@ export function ConditionsSection() {
           </p>
         </AnimatedScrollElement>
 
-        <AnimatedScrollElement direction="up" delay={0.3}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {conditions.map((condition) => (
-              <div
-                key={condition}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 px-5 py-4 text-center font-medium text-gray-800"
-              >
-                {condition}
-              </div>
-            ))}
-          </div>
-        </AnimatedScrollElement>
+      <AnimatedScrollElement direction="up" delay={0.3}>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+    {conditions.map((condition) => (
+      <div
+        key={condition}
+        className="bg-gradient-to-br from-white to-blue-50/60 border border-blue-100 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-200 transition-all duration-300 ease-out px-5 py-4 text-center"
+      >
+        <span className="text-gray-800 font-medium text-base leading-snug">
+          {condition}
+        </span>
+      </div>
+    ))}
+  </div>
+
+  <div className="mt-6 flex justify-center">
+    <div className="bg-gradient-to-br from-white to-blue-50/60 border border-blue-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300 ease-out px-8 py-4 text-center min-w-[220px]">
+      <span className="text-blue-700 font-semibold text-base tracking-wide">
+        … e molto altro
+      </span>
+    </div>
+  </div>
+</AnimatedScrollElement>
       </div>
     </section>
   )
