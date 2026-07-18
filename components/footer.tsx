@@ -53,9 +53,9 @@ export default function Footer() {
           </div>
 
           <div className="text-center md:text-right">
-            <h3 className="text-base font-semibold text-gray-900 mb-4">
-              Informazioni
-            </h3>
+           <h3 className="text-base font-semibold text-primary mb-4">
+  Informazioni
+</h3>
 
             <div className="flex flex-col gap-2 text-base text-gray-700">
               <a
@@ -72,14 +72,15 @@ export default function Footer() {
                 Cookie Policy
               </a>
 
-              <a
-                href="https://www.facebook.com/maicobattistello"
-                className="font-medium hover:text-blue-600 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Seguimi su Facebook
-              </a>
+           <a
+  href="https://www.facebook.com/maicobattistello"
+  className="inline-flex items-center justify-center md:justify-end gap-2 font-medium text-primary hover:text-blue-600 transition-colors"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Facebook className="h-5 w-5" />
+  <span>Seguimi su Facebook</span>
+</a>
             </div>
           </div>
         </div>
