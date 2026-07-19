@@ -299,6 +299,17 @@ body.menu-open {
   border-radius: 0.5rem;
   object-fit: cover;
 }
+.article-image-contain {
+  aspect-ratio: auto;
+  height: auto;
+}
+
+.article-image-contain img {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
 
 /* Special style for article1pic to prevent cropping */
 .article1pic-container {
