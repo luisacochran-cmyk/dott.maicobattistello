@@ -263,11 +263,11 @@ const BibliographyDropdown: React.FC<BibliographyDropdownProps> = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const bibliographyItems = [
-    "Bocci V, Zanardi I, Travagli V. 'Ozone acting on human blood yields a hormetic dose-response relationship.' Medical Gas Research.",
+       "Bocci VA, Zanardi I, Travagli V. 'Ozone acting on human blood yields a hormetic dose-response relationship.' Journal of Translational Medicine. 2011;9:66.",
     "Re L, Malcangi G, Martinez-Sanchez G. 'Ozone therapy: A clinical overview and mechanisms.' Evidence-Based Complementary and Alternative Medicine.",
-    "Smith NL, Wilson AL, Gandhi J, Vatsia S, Khan SA. 'Ozone therapy: An overview of pharmacodynamics, current research, and therapeutic potential.' Medical Gas Research.",
-    "Elvis AM, Ekta JS. 'Ozone therapy: A clinical review.' Journal of Natural Science, Biology and Medicine.",
-    "Borrelli E, et al. 'Mechanisms of action of ozone therapy in medical practice.' International Journal of Ozone Therapy.",
+    "Smith NL, Wilson AL, Gandhi J, Vatsia S, Khan SA. 'Ozone therapy: An overview of pharmacodynamics, current research, and clinical utility.' Medical Gas Research. 2017;7(3):212-219.",
+    "Elvis AM, Ekta JS. 'Ozone therapy: A clinical review.' Journal of Natural Science, Biology and Medicine. 2011;2(1):66-70.",
+    "Borrelli E, et al. 'Mechanisms of action of ozone therapy in medical practice.' International Journal of Ozone Therapy."
   ]
 
   return (
