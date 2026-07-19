@@ -253,7 +253,7 @@ Se desideri valutare il tuo stato infiammatorio e strutturare un percorso terape
 
 • **Padova**
 
-Clicca qui per richiedere informazioni e prenotare un appuntamento.
+
 `,
   },
 ]
@@ -405,10 +405,11 @@ export default function BlogPage() {
         }
 
         if (
-          paragraph.includes("Ozonoterapia") ||
-          paragraph.includes("Osteopatia") ||
-          paragraph.includes("ossigeno-ozonoterapia")
-        ) {
+  activeArticle.id !== 4 &&
+  (paragraph.includes("Ozonoterapia") ||
+    paragraph.includes("Osteopatia") ||
+    paragraph.includes("ossigeno-ozonoterapia"))
+) {
           const parts = paragraph.split(/(Ozonoterapia|Osteopatia|ossigeno-ozonoterapia)/gi).map((part, i) => {
             if (part?.toLowerCase() === "ossigeno-ozonoterapia") {
               return (
@@ -640,21 +641,23 @@ export default function BlogPage() {
                     src={activeArticle.image || "/placeholder.svg"}
                     alt={activeArticle.title}
                     fill
-                    className="object-cover"
+                    className={activeArticle.id === 4 ? "object-contain" : "object-cover"}
                   />
                 </div>
 
-                <div className="mt-8 text-center">
-                  <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white hover-lift">
-                    <Link href="/contacts" className="flex items-center gap-2 no-underline">
-                      <Calendar className="h-5 w-5" />
-                      <span>Prenota un Appuntamento</span>
-                    </Link>
-                  </Button>
-                </div>
+               
 
                 <div className="prose max-w-none article-content">{renderArticleContent()}</div>
-
+{activeArticle.id === 4 && (
+  <div className="mt-10 text-center">
+    <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white hover-lift">
+      <Link href="/contacts" className="flex items-center gap-2 no-underline">
+        <Calendar className="h-5 w-5" />
+        <span>Richiedi informazioni o prenota una visita</span>
+      </Link>
+    </Button>
+  </div>
+)}
                 <div className="mt-8 mb-8">
                   <BibliographyDropdown />
                 </div>
