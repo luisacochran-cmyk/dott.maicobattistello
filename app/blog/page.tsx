@@ -636,7 +636,7 @@ export default function BlogPage() {
                   </div>
                 </div>
 
-                <div className="article-image-container">
+                <div className={activeArticle.id === 4 ? "article-image-container article-image-contain" : "article-image-container"}>
                   <Image
                     src={activeArticle.image || "/placeholder.svg"}
                     alt={activeArticle.title}
