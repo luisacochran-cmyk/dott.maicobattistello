@@ -182,7 +182,7 @@ Selezionare di seguito per leggere le fonti peer-reviewed:`,
   {
     id: 4,
    title: "Infiammazione Cronica di Basso Grado: Cos'è e Perché Causa Dolori Articolari Persistenti",
-   image: "/images/infiammazione-cronica-maico.png",
+  image: "/infiammazione-cronica-maico.png",
 category: "ozone-therapy",
 publishDate: "19/07/2026",
    content: `L'infiammazione cronica di basso grado (Systemic Chronic Inflammation - SCI) rappresenta uno dei principali motori biologici dei disturbi del nostro tempo.
