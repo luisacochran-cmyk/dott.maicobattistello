@@ -119,7 +119,33 @@ export default function BlogArticlePage({
             </p>
           )
         }
+if (
+  article.slug === "infiammazione-cronica-basso-grado" &&
+  ["• **Marostica**", "• **Malo**", "• **Schio**", "• **Padova**"].includes(paragraph.trim())
+) {
+  const cityLinks: Record<string, string> = {
+    Marostica: "/ozono-osteo-marostica",
+    Malo: "/ozono-osteo-malo",
+    Schio: "/ozono-osteo-schio",
+    Padova: "/ozono-osteo-padova",
+  }
 
+  const city = paragraph
+    .trim()
+    .replace("• **", "")
+    .replace("**", "")
+
+  return (
+    <p key={index} className="text-lg leading-relaxed mb-4">
+      •{" "}
+      <strong>
+        <AnimatedLink href={cityLinks[city]}>
+          {city}
+        </AnimatedLink>
+      </strong>
+    </p>
+  )
+}
     
         if (paragraph.includes("**")) {
           const parts = paragraph.split(/(\*\*.*?\*\*)/g)
