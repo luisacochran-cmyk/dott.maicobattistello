@@ -285,6 +285,14 @@ const isOsteopatiaMalo =
   service.slug === "osteopatia" && city.slug === "malo"
   const isOsteopatiaPadova =
   service.slug === "osteopatia" && city.slug === "padova"
+  const isOzonoterapiaPadova =
+  service.slug === "ozonoterapia" && city.slug === "padova"
+  const isOzonoterapiaMarostica =
+  service.slug === "ozonoterapia" && city.slug === "marostica"
+  const isOzonoterapiaSchio =
+  service.slug === "ozonoterapia" && city.slug === "schio"
+  const isOzonoterapiaMalo =
+  service.slug === "ozonoterapia" && city.slug === "malo"
   return {
  
   title: isOsteopatiaMarostica
@@ -295,6 +303,14 @@ const isOsteopatiaMalo =
       ? "Osteopata a Malo | Dr. Maico Battistello – Osteopatia"
         : isOsteopatiaPadova
       ? "Osteopata a Padova | Dr. Maico Battistello – Osteopatia"
+    : isOzonoterapiaPadova
+  ? "Ozonoterapia a Padova | Dr. Maico Battistello – Ozonoterapia"
+    : isOzonoterapiaMarostica
+  ? "Ozonoterapia a Marostica | Dr. Maico Battistello – Ozonoterapia"
+    : isOzonoterapiaSchio
+  ? "Ozonoterapia a Schio | Dr. Maico Battistello – Ozonoterapia"
+    : isOzonoterapiaMalo
+  ? "Ozonoterapia a Malo | Dr. Maico Battistello – Ozonoterapia"
       : `${service.name} a ${city.name} – Dr. Maico Battistello | Specialista ${city.province}`,
     description: `${service.description} a ${city.name} con il Dr. Maico Battistello. Specialista qualificato nella provincia di ${city.province}. Pazienti da ${nearbyTownsText}. Prenota la tua visita.`,
     h1: `${service.name} a ${city.name} – Dr. Maico Battistello`,
