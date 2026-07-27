@@ -279,10 +279,16 @@ export function generateLocalSEO(service: ServiceConfig, city: CityConfig) {
   const isOsteopatiaMarostica =
   service.slug === "osteopatia" && city.slug === "marostica"
 
+  const isOsteopatiaSchio =
+    service.slug === "osteopatia" && city.slug === "schio"
+
   return {
-   title: isOsteopatiaMarostica
+ 
+  title: isOsteopatiaMarostica
   ? "Osteopata a Marostica | Dr. Maico Battistello – Osteopatia"
-  : `${service.name} a ${city.name} - Dr. Maico Battistello | Specialista ${city.province}`,
+  : isOsteopatiaSchio
+    ? "Osteopata a Schio | Dr. Maico Battistello – Osteopatia"
+    : `${service.name} a ${city.name} – Dr. Maico Battistello | Specialista ${city.province}`,
     description: `${service.description} a ${city.name} con il Dr. Maico Battistello. Specialista qualificato nella provincia di ${city.province}. Pazienti da ${nearbyTownsText}. Prenota la tua visita.`,
     h1: `${service.name} a ${city.name} – Dr. Maico Battistello`,
     h2: `Cos'è ${service.name === "Medicina Legale" ? "la" : "la"} ${service.name}?`,
