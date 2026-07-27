@@ -75,13 +75,13 @@ Se soffri di dolore persistente, rigidità articolare o disturbi che continuano 
 
 Se desideri valutare il tuo stato infiammatorio e strutturare un percorso terapeutico personalizzato, il Dott. Maico Battistello riceve su appuntamento presso gli studi di:
 
-• **[Marostica](/ozono-osteo-marostica)**
+• **Marostica**
 
-• **[Malo](/ozono-osteo-malo)**
+• **Malo**
 
-• **[Schio](/ozono-osteo-schio)**
+• **Schio**
 
-• **[Padova](/ozono-osteo-padova)**`,
+• **Padova**`,
   },
 ]
 
