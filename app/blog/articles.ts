@@ -81,7 +81,7 @@ Se desideri valutare il tuo stato infiammatorio e strutturare un percorso terape
 
 • **[Schio](/ozono-osteo-schio)**
 
-• **[Padova](/ozono-osteo-padova)**",
+• **[Padova](/ozono-osteo-padova)**`,
   },
 ]
 
