@@ -310,7 +310,16 @@ const isOsteopatiaMalo =
         addressLocality: city.name,
         addressRegion: "Veneto",
         addressCountry: "IT",
-        postalCode: city.slug === "padova" ? "35100" : city.slug === "vicenza" ? "36100" : "36015",
+       postalCode:
+  city.slug === "padova"
+    ? "35100"
+    : city.slug === "marostica"
+      ? "36063"
+      : city.slug === "malo"
+        ? "36034"
+        : city.slug === "schio"
+          ? "36015"
+          : "",
       },
       geo: {
         "@type": "GeoCoordinates",
