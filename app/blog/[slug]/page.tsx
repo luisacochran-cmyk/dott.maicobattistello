@@ -5,7 +5,7 @@ import { Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 import { getArticleBySlug } from "../articles"
-
+import AnimatedLink from "@/components/animated-link"
 type BlogArticlePageProps = {
   params: {
     slug: string
@@ -42,6 +42,134 @@ export default function BlogArticlePage({
   }
 
   const paragraphs = article.content.split("\n\n")
+    const renderArticleContent = () => {
+    return article.content
+      .split("\n\n")
+      .map((paragraph, index) => {
+        if (!paragraph.trim()) return null
+
+        if (paragraph.startsWith("### ")) {
+          const title = paragraph.replace("### ", "").trim()
+          return (
+            <h3 key={index} className="text-xl font-bold text-primary mt-6 mb-4 border-b-2 border-primary pb-2">
+              {title}
+            </h3>
+          )
+        }
+
+        if (paragraph.trim() === "---") {
+          return <div key={index} className="my-8 border-t border-gray-300"></div>
+        }
+
+        if (
+ 
+  (paragraph.includes("Ozonoterapia") ||
+    paragraph.includes("Osteopatia") ||
+    paragraph.includes("ossigeno-ozonoterapia"))
+) {
+          const parts = paragraph.split(/(Ozonoterapia|Osteopatia|ossigeno-ozonoterapia)/gi).map((part, i) => {
+            if (part?.toLowerCase() === "ossigeno-ozonoterapia") {
+              return (
+                <AnimatedLink key={i} href="/ozonoterapia">
+                  {part}
+                </AnimatedLink>
+              )
+            }
+            if (part?.toLowerCase() === "osteopatia") {
+              return (
+                <AnimatedLink key={i} href="/osteopatia">
+                  {part}
+                </AnimatedLink>
+              )
+            }
+            if (part?.toLowerCase() === "ossigeno-ozonoterapia") {
+              return (
+                <AnimatedLink key={i} href="/ozonoterapia">
+                  {part}
+                </AnimatedLink>
+              )
+            }
+            return part
+          })
+
+          return (
+            <p key={index} className="text-lg leading-relaxed mb-4">
+              {parts.map((part, i) => {
+                if (typeof part !== "string") return part
+
+                const boldItalicParts = part.split(/(\*\*\*.*?\*\*\*|\*\*.*?\*\*)/g)
+                return boldItalicParts.map((subpart, j) => {
+                  if (subpart?.startsWith("***") && subpart?.endsWith("***")) {
+                    return (
+                      <em key={j} className="italic font-semibold text-primary">
+                        {subpart.slice(3, -3)}
+                      </em>
+                    )
+                  }
+                  if (subpart?.startsWith("**") && subpart?.endsWith("**")) {
+                    return (
+                      <strong key={j} className="font-bold text-primary">
+                        {subpart.slice(2, -2)}
+                      </strong>
+                    )
+                  }
+                  return subpart
+                })
+              })}
+            </p>
+          )
+        }
+
+    
+        if (paragraph.includes("**")) {
+          const parts = paragraph.split(/(\*\*.*?\*\*)/g)
+          return (
+            <p key={index} className="text-lg leading-relaxed mb-4">
+              {parts.map((part, i) => {
+                if (part?.startsWith("**") && part?.endsWith("**")) {
+                  return (
+                    <strong key={i} className="font-bold text-primary">
+                      {part.slice(2, -2)}
+                    </strong>
+                  )
+                }
+                return part
+              })}
+            </p>
+          )
+        }
+
+    
+        if (paragraph.includes("***")) {
+          const parts = paragraph.split(/(\*\*\*.*?\*\*\*)/g)
+          return (
+            <p key={index} className="text-lg leading-relaxed mb-4">
+              {parts.map((part, i) =>
+                part?.startsWith("***") && part?.endsWith("***") ? (
+                  <em key={i} className="italic font-semibold text-primary">
+                    {part.slice(3, -3)}
+                  </em>
+                ) : (
+                  part
+                ),
+              )}
+            </p>
+          )
+        }
+
+    
+        return (
+          <p key={index} className="text-lg leading-relaxed mb-4">
+            {paragraph}
+          </p>
+        )
+      })
+      .filter((_, index) => {
+        const paragraphs = article.content.split("\n\n")
+        const currentParagraph = paragraphs[index] || ""
+        return !currentParagraph.startsWith("### BIBLIOGRAFIA")
+      })
+  }
 
   return (
     <main className="pt-28 min-h-screen">
@@ -64,71 +192,9 @@ export default function BlogArticlePage({
           />
         </div>
 
-              <div className="space-y-5">
-          {paragraphs.map((paragraph, index) => {
-            const cleanParagraph = paragraph.trim()
-
-            if (!cleanParagraph) {
-              return null
-            }
-
-            if (cleanParagraph === "---") {
-              return <hr key={index} className="my-10 border-gray-200" />
-            }
-
-            if (cleanParagraph.startsWith("### ")) {
-              return (
-                <h2
-                  key={index}
-                  className="text-2xl font-bold mt-10 mb-4"
-                >
-                  {cleanParagraph.replace("### ", "")}
-                </h2>
-              )
-            }
-
-            if (cleanParagraph.startsWith("• ")) {
-              const bulletText = cleanParagraph.slice(2)
-              const parts = bulletText.split(/(\*\*.*?\*\*)/g)
-
-              return (
-                <div
-                  key={index}
-                  className="flex gap-3 text-lg leading-relaxed"
-                >
-                  <span>•</span>
-                  <p>
-                    {parts.map((part, partIndex) =>
-                      part.startsWith("**") && part.endsWith("**") ? (
-                        <strong key={partIndex}>
-                          {part.slice(2, -2)}
-                        </strong>
-                      ) : (
-                        part
-                      ),
-                    )}
-                  </p>
-                </div>
-              )
-            }
-
-            const parts = cleanParagraph.split(/(\*\*.*?\*\*)/g)
-
-            return (
-              <p key={index} className="text-lg leading-relaxed">
-                {parts.map((part, partIndex) =>
-                  part.startsWith("**") && part.endsWith("**") ? (
-                    <strong key={partIndex}>
-                      {part.slice(2, -2)}
-                    </strong>
-                  ) : (
-                    part
-                  ),
-                )}
-              </p>
-            )
-          })}
-        </div>
+             <div className="prose max-w-none article-content">
+  {renderArticleContent()}
+</div>
 
         <div className="mt-12 text-center">
           <Button
