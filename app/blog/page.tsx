@@ -104,7 +104,6 @@ Il Dr. Maico Battistello, con la sua esperienza in questo campo terapeutico, ada
   },
   {
     id: 3,
-    title:
      title: "Malanni stagionali: Ozonoterapia, Osteopatia, GAET e PAET",
 image: "/images/gaet.jpg",
     category: "ozone-therapy",
