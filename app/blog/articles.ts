@@ -87,7 +87,7 @@ Se desideri valutare il tuo stato infiammatorio e strutturare un percorso terape
 87    slug: "malanni-stagionali-ozonoterapia-osteopatia-gaet-paet",
 88    title:
 89      "Malanni stagionali: Ozonoterapia, Osteopatia, GAET e PAET",
-90    image: "/images/........",
+90    image: "/images/gaet.jpg",
 91    category: "Ozonoterapia",
 92    publishDate: "28/07/2026",
 93   content: `Con l'arrivo dell'autunno aumentano stanchezza, dolori articolari e muscolari, cervicalgie, lombalgie, sinusiti e cali delle difese. L'ossigeno-ozonoterapia, integrata alla manipolazione osteopatica e alle metodiche sistemiche come GAET e PAET, offre un approccio clinico sinergico in grado di ridurre l'infiammazione, migliorare il bilancio redox, sostenere l'immunità e ristabilire la funzione biomeccanica.
