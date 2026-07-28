@@ -105,8 +105,8 @@ Il Dr. Maico Battistello, con la sua esperienza in questo campo terapeutico, ada
   {
     id: 3,
     title:
-      "Malanni stagionali e difese naturali: il ruolo dell'ossigeno-ozonoterapia integrata con osteopatia, Grande Autoemoterapia (GAET) e Piccola Autoemoterapia (PAET)",
-    image: "/images/nuovaozono2.jpg",
+     title: "Malanni stagionali: Ozonoterapia, Osteopatia, GAET e PAET",
+image: "/images/gaet.jpg",
     category: "ozone-therapy",
     publishDate: "11/10/2025",
     content: `Con l'arrivo dell'autunno aumentano stanchezza, dolori articolari e muscolari, cervicalgie, lombalgie, sinusiti e cali delle difese. L'ossigeno-ozonoterapia, integrata alla manipolazione osteopatica e alle metodiche sistemiche come GAET e PAET, offre un approccio clinico sinergico in grado di ridurre l'infiammazione, migliorare il bilancio redox, sostenere l'immunità e ristabilire la funzione biomeccanica.
