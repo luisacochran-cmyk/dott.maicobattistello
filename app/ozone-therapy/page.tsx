@@ -67,27 +67,27 @@ export default function OzoneTherapyPage() {
             {
               title: "Trattamento Combinato",
               image: "/images/nuovaozonosteo1.jpg",
-              link: "/ozone-therapy",
+              link:  "/ozonoterapia",
             },
             {
               title: "Terapia Integrata",
               image: "/images/osteozonoterapia1.jpg",
-              link: "/ozone-therapy",
+              link: "/ozonoterapia",
             },
             {
               title: "Risultati Clinici",
               image: "/images/osteozonoterapia2.jpg",
-              link: "/ozone-therapy",
+             link: "/ozonoterapia",
             },
             {
               title: "Ozonoterapia Avanzata",
               image: "/images/ozonoterapia.jpg",
-              link: "/ozone-therapy",
+              link: "/ozonoterapia",
             },
             {
               title: "Trattamento di Ozonoterapia",
               image: "/images/ozonoterapia3.jpg",
-              link: "/ozone-therapy",
+            link: "/ozonoterapia",
             },
           ]}
         />
