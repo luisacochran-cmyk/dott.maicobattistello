@@ -133,7 +133,7 @@ const nextConfig = {
       },
       {
         source: '/medicina-legale-a-padova',
-        destination: '/medicina-legale',
+      destination: '/medicina-legale-padova',
         permanent: true,
       },
     ]
