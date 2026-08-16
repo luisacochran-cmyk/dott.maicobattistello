@@ -145,7 +145,6 @@ export default function RootLayout({
 
         <link rel="manifest" href="/manifest.json" />
 
-        <link rel="canonical" href="https://dottmaicobattistello.it" />
 
         <script
           type="application/ld+json"
@@ -177,7 +176,10 @@ export default function RootLayout({
               priceRange: "€€",
               image: "https://dottmaicobattistello.it/images/nuovologo.png",
               logo: "https://dottmaicobattistello.it/images/nuovologo.png",
-              sameAs: ["https://dottmaicobattistello.it"],
+             sameAs: [
+  "https://dottmaicobattistello.it",
+  "https://www.facebook.com/maicobattistello",
+],
               openingHours: "Mo-Fr 09:00-18:00",
               areaServed: [
                 {
@@ -186,7 +188,7 @@ export default function RootLayout({
                 },
                 {
                   "@type": "City",
-                  name: "Vicenza",
+                  name: "Marostica",
                 },
                 {
                   "@type": "City",
