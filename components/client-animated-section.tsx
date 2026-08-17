@@ -287,7 +287,7 @@ export function LocationsSection() {
   size="lg"
   className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
 >
-  <Link href="/ozonoterapia">Scopri l’Ozonoterapia</Link>
+ <Link href="/ozonoterapia-osteopatia">Scopri di più</Link>
 </Button>
         </AnimatedScrollElement>
       </div>
