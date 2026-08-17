@@ -273,14 +273,13 @@ export function LocationsSection() {
           direction="up"
           delay={0.1}
         >
-         <h2 className="text-3xl font-bold mb-4">
-  Ossigeno-Ozonoterapia
+       <h2 className="text-3xl font-bold mb-4">
+  Ozonoterapia + Osteopatia
 </h2>
 
 <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-  Scopri l’approccio del Dott. Maico Battistello all’ossigeno-ozonoterapia,
-  le principali applicazioni e i percorsi disponibili nelle sedi di Marostica,
-  Schio, Malo e Padova.
+  Scopri l’approccio integrato del Dott. Maico Battistello, che combina
+  ossigeno-ozonoterapia e osteopatia quando indicato dalla valutazione clinica.
 </p>
 
 <Button
@@ -288,7 +287,7 @@ export function LocationsSection() {
   size="lg"
   className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
 >
-  <Link href="/ozonoterapia">Scopri l&apos;Ozonoterapia</Link>
+  <Link href="/ozonoterapia">Scopri l’Ozonoterapia</Link>
 </Button>
         </AnimatedScrollElement>
       </div>
