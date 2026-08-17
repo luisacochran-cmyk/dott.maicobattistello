@@ -273,13 +273,14 @@ export function LocationsSection() {
           direction="up"
           delay={0.1}
         >
-          <h2 className="text-3xl font-bold mb-4">Dove ricevo</h2>
+          <h2 className="text-3xl font-bold mb-4">
+  Ozonoterapia nelle diverse sedi
+</h2>
 
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-            Il Dott. Maico Battistello riceve a Marostica, Schio, Malo e Padova.
-            Scegli la sede più comoda e scopri le informazioni dedicate a
-            ciascun ambulatorio.
-          </p>
+<p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+  Scopri le informazioni dedicate all’ozonoterapia nelle sedi di Marostica,
+  Schio, Malo e Padova. Seleziona una città per consultare la relativa pagina.
+</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10">
             {locations.map((location) => (
