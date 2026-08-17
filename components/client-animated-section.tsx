@@ -273,34 +273,23 @@ export function LocationsSection() {
           direction="up"
           delay={0.1}
         >
-          <h2 className="text-3xl font-bold mb-4">
-  Ozonoterapia nelle diverse sedi
+         <h2 className="text-3xl font-bold mb-4">
+  Ossigeno-Ozonoterapia
 </h2>
 
 <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-  Scopri le informazioni dedicate all’ozonoterapia nelle sedi di Marostica,
-  Schio, Malo e Padova. Seleziona una città per consultare la relativa pagina.
+  Scopri l’approccio del Dott. Maico Battistello all’ossigeno-ozonoterapia,
+  le principali applicazioni e i percorsi disponibili nelle sedi di Marostica,
+  Schio, Malo e Padova.
 </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-10">
-            {locations.map((location) => (
-              <Link
-                key={location.name}
-                href={location.href}
-               className="bg-gradient-to-br from-white to-blue-50 border border-blue-200 rounded-xl px-6 py-5 font-semibold text-gray-800 text-center shadow-sm transition-all duration-300 hover:shadow-md hover:border-blue-300 hover:-translate-y-1"
-              >
-                {location.name}
-              </Link>
-            ))}
-          </div>
-
-          <Button
-            asChild
-            size="lg"
-            className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
-          >
-            <Link href="/contacts">Contatti e sedi</Link>
-          </Button>
+<Button
+  asChild
+  size="lg"
+  className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
+>
+  <Link href="/ozonoterapia">Scopri l&apos;Ozonoterapia</Link>
+</Button>
         </AnimatedScrollElement>
       </div>
     </section>
