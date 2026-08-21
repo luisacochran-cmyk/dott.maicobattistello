@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <div className="mb-4 flex justify-center md:justify-start">
               <Image
-                src="/logo-simbolo.png"
+               src="/images/logo-simbolo.png"
                 alt="Dott. Maico Battistello"
                 width={56}
                 height={56}
