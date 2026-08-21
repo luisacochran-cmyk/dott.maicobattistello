@@ -86,9 +86,7 @@ export function ConditionsSection() {
           direction="up"
           delay={0.1}
         >
-         <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-  Disturbi e condizioni
-</p>
+         
 
 <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
   Per quali disturbi può essere utile una valutazione?
