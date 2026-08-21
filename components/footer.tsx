@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
        <div className="text-center md:text-left">
-                    <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
+                   <div className="flex items-center justify-center md:justify-start gap-3 mb-1">
  <img
   src="/images/logo-footer.png"
   alt="Logo Dott. Maico Battistello"
@@ -18,13 +18,13 @@ export default function Footer() {
   </h3>
 </div>
 
-            <p className="text-base text-primary leading-relaxed">
+          <p className="text-base text-primary leading-snug">
               Medico Chirurgo · Medico Legale
               <br />
               Osteopata · Ozonoterapeuta
             </p>
 
-          <p className="text-base text-gray-700 mt-3 flex items-center justify-center md:justify-start gap-2">
+        <p className="text-base text-gray-700 mt-2 flex items-center justify-center md:justify-start gap-2">
               <MapPin className="h-4 w-4 text-primary" />
               <span>Marostica · Schio · Malo · Padova</span>
             </p>
