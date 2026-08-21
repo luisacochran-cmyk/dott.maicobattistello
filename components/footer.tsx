@@ -24,7 +24,7 @@ export default function Footer() {
                 Osteopata · Ozonoterapeuta
               </p>
 
-              <p className="text-base text-gray-700 mt-2 flex items-center gap-2">
+             <p className="text-base text-gray-700 mt-2 flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
                 <span>Marostica · Schio · Malo · Padova</span>
               </p>
