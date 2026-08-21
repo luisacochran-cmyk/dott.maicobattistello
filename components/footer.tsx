@@ -6,28 +6,29 @@ export default function Footer() {
       <div className="container px-4 md:px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-       <div className="text-center md:text-left">
-                   <div className="flex items-center justify-center md:justify-start gap-3 mb-1">
- <img
-  src="/images/logo-footer.png"
-  alt="Logo Dott. Maico Battistello"
-  className="h-14 w-14 object-contain flex-shrink-0"
-/>
-  <h3 className="text-xl font-bold text-gray-900">
-    Dott. Maico Battistello
-  </h3>
-</div>
+                <div className="flex items-start justify-center md:justify-start gap-2">
+            <img
+              src="/images/logo-footer.png"
+              alt="Logo Dott. Maico Battistello"
+              className="h-14 w-14 object-contain flex-shrink-0"
+            />
 
-          <p className="text-base text-primary leading-snug">
-              Medico Chirurgo · Medico Legale
-              <br />
-              Osteopata · Ozonoterapeuta
-            </p>
+            <div className="text-left">
+              <h3 className="text-xl font-bold text-gray-900 mb-1">
+                Dott. Maico Battistello
+              </h3>
 
-        <p className="text-base text-gray-700 mt-2 flex items-center justify-center md:justify-start gap-2">
-              <MapPin className="h-4 w-4 text-primary" />
-              <span>Marostica · Schio · Malo · Padova</span>
-            </p>
+              <p className="text-base text-primary leading-snug">
+                Medico Chirurgo · Medico Legale
+                <br />
+                Osteopata · Ozonoterapeuta
+              </p>
+
+              <p className="text-base text-gray-700 mt-2 flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                <span>Marostica · Schio · Malo · Padova</span>
+              </p>
+            </div>
           </div>
 
           <div className="text-center">
