@@ -24,7 +24,6 @@ export default function Home() {
       <TreatmentsSection />
       <SubtitleSection />
       <DescriptionSection />
-      <LocationsSection />
       <FaqSection />
       <AdvancedTherapySection />
     </>
