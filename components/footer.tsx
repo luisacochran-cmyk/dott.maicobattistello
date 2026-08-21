@@ -8,7 +8,7 @@ export default function Footer() {
           <img
             src="/images/logo-footer.png"
             alt="Logo Dott. Maico Battistello"
-            className="h-20 w-20 object-contain mx-auto mb-3"
+          className="h-24 w-24 object-contain mx-auto mb-2"
           />
 
           <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* Aree di attività */}
-        <div className="border-t border-gray-200 mt-8 pt-7">
+       <div className="border-t border-gray-200 mt-6 pt-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
 
             <a
