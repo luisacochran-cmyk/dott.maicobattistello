@@ -70,7 +70,6 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
         />
         <div className="container relative z-10 flex h-full items-center justify-between">
         
-<div className="container relative z-10 flex h-full items-center justify-between">
   <Link href="/" className="flex items-center gap-3">
     <Image
       src="/images/logo-simbolo.png"
