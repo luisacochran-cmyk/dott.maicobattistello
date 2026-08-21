@@ -241,7 +241,7 @@ export function AdvancedTherapySection() {
           <Button
             asChild
             size="lg"
-            className="bg-white text-primary hover:bg-gray-100 hover-lift"
+           className="bg-white text-primary hover:bg-gray-100 hover-lift text-lg px-8 h-12"
           >
             <Link href="/contacts" className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
