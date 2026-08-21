@@ -143,17 +143,20 @@ export function TreatmentsSection() {
           </h2>
 
          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
-            L'esperienza maturata dal Dott. Maico Battistello nell'Ozonoterapia
-            e nell'Osteopatia ha portato allo sviluppo di un approccio che
-            integra le due discipline all'interno dello stesso percorso
-            terapeutico.
-          </p>
+  La passione e l'esperienza maturate negli anni nell'Osteopatia e
+  nell'Ozonoterapia hanno portato il Dott. Maico Battistello a sviluppare
+  un approccio che combina le due pratiche terapeutiche, valorizzandone
+  le caratteristiche complementari all'interno di un unico percorso.
+</p>
 
-        <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            L'obiettivo è intervenire sul dolore e sui processi infiammatori,
-            considerando al tempo stesso gli aspetti funzionali e posturali
-            che possono contribuire al problema.
-          </p>
+<p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+  L'azione dell'Ozonoterapia sul dolore e sui processi infiammatori si
+  affianca al trattamento osteopatico, rivolto agli aspetti funzionali
+  e posturali della persona. Due discipline diverse che, quando indicate
+  dalla valutazione clinica, possono essere integrate con l'obiettivo di
+  ottenere un beneficio più completo e costruire un percorso realmente
+  personalizzato.
+</p>
         </AnimatedScrollElement>
 
         <AnimatedScrollElement direction="up" delay={0.3}>
