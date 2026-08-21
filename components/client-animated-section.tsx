@@ -213,7 +213,7 @@ export function DescriptionSection() {
 </p>
         </AnimatedScrollElement>
         <AnimatedScrollElement className="text-center" direction="up" delay={0.3}>
-          <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift">
+        <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white font-semibold text-lg px-8 h-12 hover-lift">
            <Link href="/about-me">Conosci il Dott. Battistello</Link>
           </Button>
         </AnimatedScrollElement>
