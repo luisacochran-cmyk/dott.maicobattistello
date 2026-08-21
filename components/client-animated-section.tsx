@@ -131,58 +131,57 @@ export function ConditionsSection() {
 }
 export function TreatmentsSection() {
   return (
-    <section className="py-16">
-      <div className="container px-0 md:px-4">
-     
+    <section className="py-16 md:py-20 bg-white">
+      <div className="container px-4">
+        <AnimatedScrollElement
+          className="text-center max-w-4xl mx-auto mb-12"
+          direction="up"
+          delay={0.1}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+            Ozonoterapia e Osteopatia: due discipline, un unico percorso
+          </h2>
 
-<AnimatedScrollElement
-  className="mb-10 px-4"
-  direction="up"
-  delay={0.1}
->
-  <div className="max-w-5xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center tracking-tight">
-      Un approccio costruito sulla persona
-    </h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-5">
+            L'esperienza maturata dal Dott. Maico Battistello nell'Ozonoterapia
+            e nell'Osteopatia ha portato allo sviluppo di un approccio che
+            integra le due discipline all'interno dello stesso percorso
+            terapeutico.
+          </p>
 
-    <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center leading-relaxed mb-10">
-      Ogni percorso inizia da una valutazione medica del quadro clinico,
-      dei sintomi e delle esigenze della persona.
-    </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            L'obiettivo è intervenire sul dolore e sui processi infiammatori,
+            considerando al tempo stesso gli aspetti funzionali e posturali
+            che possono contribuire al problema.
+          </p>
+        </AnimatedScrollElement>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-      <div className="border border-blue-100 rounded-2xl p-6 bg-white shadow-sm">
-        <h3 className="text-lg font-semibold text-primary mb-3">
-          Valutazione
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          Il punto di partenza è comprendere il problema nella sua globalità,
-          prima di individuare il percorso più appropriato.
-        </p>
+        <AnimatedScrollElement direction="up" delay={0.3}>
+          <QuadrantCarousel
+            items={[
+              {
+                title: "Approccio integrato",
+                image: "/images/homeozono.jpg",
+                link: "/ozone-osteopathy",
+              },
+              {
+                title: "Osteopatia nel percorso terapeutico",
+                image: "/images/homeosteo.jpg",
+                link: "/osteopathy",
+              },
+              {
+                title: "Ozonoterapia nel percorso terapeutico",
+                image: "/images/homeozonosteo.jpg",
+                link: "/ozone-therapy",
+              },
+            ]}
+            showTitles={true}
+          />
+        </AnimatedScrollElement>
       </div>
-
-      <div className="border border-blue-100 rounded-2xl p-6 bg-white shadow-sm">
-        <h3 className="text-lg font-semibold text-primary mb-3">
-          Integrazione
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          Ozonoterapia e Osteopatia possono essere utilizzate singolarmente
-          o integrate in base al quadro clinico.
-        </p>
-      </div>
-
-      <div className="border border-blue-100 rounded-2xl p-6 bg-white shadow-sm">
-        <h3 className="text-lg font-semibold text-primary mb-3">
-          Personalizzazione
-        </h3>
-        <p className="text-gray-600 leading-relaxed">
-          Quando indicato, il percorso può comprendere strategie mirate
-          sullo stile di vita e ulteriori indicazioni personalizzate.
-        </p>
-      </div>
-    </div>
-  </div>
-
+    </section>
+  )
+}
         </AnimatedScrollElement>
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
