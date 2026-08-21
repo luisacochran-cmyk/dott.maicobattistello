@@ -18,13 +18,27 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+       <>
       <HeroSection />
+
       <ConditionsSection />
+
+      <div
+        aria-hidden="true"
+        className="h-12 bg-gradient-to-b from-white to-slate-50"
+      />
+
       <TreatmentsSection />
       <SubtitleSection />
       <DescriptionSection />
+
+      <div
+        aria-hidden="true"
+        className="h-10 bg-gradient-to-b from-white via-slate-50 to-white"
+      />
+
       <FaqSection />
+
       <AdvancedTherapySection />
     </>
   )
