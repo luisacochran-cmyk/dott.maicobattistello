@@ -134,22 +134,54 @@ export function TreatmentsSection() {
   Un approccio costruito sulla persona
 </h2>
 
-<p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-  Ogni percorso inizia da una valutazione medica del quadro clinico,
-  dei sintomi e delle esigenze della persona.
+<AnimatedScrollElement
+  className="mb-10 px-4"
+  direction="up"
+  delay={0.1}
+>
+  <div className="max-w-5xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center tracking-tight">
+      Un approccio costruito sulla persona
+    </h2>
 
-  <br /><br />
+    <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center leading-relaxed mb-10">
+      Ogni percorso inizia da una valutazione medica del quadro clinico,
+      dei sintomi e delle esigenze della persona.
+    </p>
 
-  Ozonoterapia e Osteopatia non vengono considerate come trattamenti
-  separati, ma come strumenti che possono essere utilizzati singolarmente
-  o integrati all'interno di un percorso terapeutico personalizzato.
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="border border-blue-100 rounded-2xl p-6 bg-white shadow-sm">
+        <h3 className="text-lg font-semibold text-primary mb-3">
+          Valutazione
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Il punto di partenza è comprendere il problema nella sua globalità,
+          prima di individuare il percorso più appropriato.
+        </p>
+      </div>
 
-  <br /><br />
+      <div className="border border-blue-100 rounded-2xl p-6 bg-white shadow-sm">
+        <h3 className="text-lg font-semibold text-primary mb-3">
+          Integrazione
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Ozonoterapia e Osteopatia possono essere utilizzate singolarmente
+          o integrate in base al quadro clinico.
+        </p>
+      </div>
 
-  Quando indicato, il percorso può comprendere anche strategie mirate
-  sullo stile di vita e indicazioni personalizzate, con l'obiettivo di
-  affrontare il problema nella sua globalità.
-</p>
+      <div className="border border-blue-100 rounded-2xl p-6 bg-white shadow-sm">
+        <h3 className="text-lg font-semibold text-primary mb-3">
+          Personalizzazione
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          Quando indicato, il percorso può comprendere strategie mirate
+          sullo stile di vita e ulteriori indicazioni personalizzate.
+        </p>
+      </div>
+    </div>
+  </div>
+
         </AnimatedScrollElement>
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
