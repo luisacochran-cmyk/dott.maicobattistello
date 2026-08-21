@@ -129,10 +129,7 @@ export function TreatmentsSection() {
   return (
     <section className="py-16">
       <div className="container px-0 md:px-4">
-        <AnimatedScrollElement className="mb-8 text-center px-4" direction="up" delay={0.1}>
-         <h2 className="text-3xl font-bold mb-6">
-  Un approccio costruito sulla persona
-</h2>
+     
 
 <AnimatedScrollElement
   className="mb-10 px-4"
