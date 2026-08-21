@@ -23,21 +23,19 @@ export function HeroSection({ className }: HeroSectionProps) {
             </p>
           </AnimatedScrollElement>
 
-          <AnimatedScrollElement className="mb-5" direction="left" delay={0.3}>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-              <ClientTypewriter
-                text="Ozonoterapia, Osteopatia e Medicina Legale"
-                delay={80}
-              />
-            </h1>
-          </AnimatedScrollElement>
+         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+  <ClientTypewriter
+    text="Un approccio innovativo e integrato"
+    delay={80}
+  />
+</h1>
 
-          <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
-            <p className="text-xl md:text-2xl text-white">
-              Un approccio medico personalizzato per il dolore, l'infiammazione
-              e il recupero della funzionalità.
-            </p>
-          </AnimatedScrollElement>
+         <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
+  <p className="text-xl md:text-2xl text-white">
+    Ozonoterapia e osteopatia in un percorso terapeutico personalizzato
+    per il dolore, l'infiammazione e il recupero della funzionalità.
+  </p>
+</AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.7}>
             <div className="flex flex-col sm:flex-row gap-4">
