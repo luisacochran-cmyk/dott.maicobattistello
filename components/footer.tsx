@@ -7,16 +7,25 @@ export default function Footer() {
       <div className="container px-4 md:px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-          <div className="text-center md:text-left">
-            <div className="mb-4 flex justify-center md:justify-start">
-              <Image
-               src="/images/logo-simbolo.png"
-                alt="Dott. Maico Battistello"
-                width={56}
-                height={56}
-                className="h-14 w-14 object-contain"
-              />
-            </div>
+         <div className="text-center md:text-left">
+  <div className="flex items-center justify-center md:justify-start gap-3 mb-5">
+    <Image
+      src="/images/logo-simbolo.png"
+      alt="Dott. Maico Battistello"
+      width={64}
+      height={64}
+      className="h-16 w-16 object-contain"
+    />
+
+    <div className="flex flex-col leading-tight text-left">
+      <span className="text-xl font-bold text-[#5E67A6] whitespace-nowrap">
+        Dott. Maico Battistello
+      </span>
+      <span className="text-sm font-medium text-[#5E67A6] whitespace-nowrap">
+        Medico Legale | Osteopata | Ozonoterapeuta
+      </span>
+    </div>
+  </div>
 
             <h3 className="text-xl font-bold text-gray-900 mb-3">
               Dott. Maico Battistello
