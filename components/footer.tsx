@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -24,7 +23,7 @@ export default function Footer() {
                 Osteopata · Ozonoterapeuta
               </p>
 
-           <p className="text-base text-gray-600 mt-2 leading-snug">
+          <p className="text-base text-gray-600 mt-2 leading-snug">
   Marostica · Schio · Malo · Padova
 </p>
 
