@@ -8,13 +8,11 @@ export default function Footer() {
 
        <div className="text-center md:text-left">
                     <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
-  <div className="h-14 w-14 overflow-hidden flex-shrink-0">
-    <img
-      src="/images/logo-footer.png"
-      alt="Logo Dott. Maico Battistello"
-      className="h-full w-full object-cover scale-150"
-    />
-  </div>
+ <img
+  src="/images/logo-footer.png"
+  alt="Logo Dott. Maico Battistello"
+  className="h-14 w-14 object-contain flex-shrink-0"
+/>
   <h3 className="text-xl font-bold text-gray-900">
     Dott. Maico Battistello
   </h3>
