@@ -133,34 +133,42 @@ export function TreatmentsSection() {
     <section className="py-16">
       <div className="container px-0 md:px-4">
         <AnimatedScrollElement className="mb-8 text-center px-4" direction="up" delay={0.1}>
-          <h2 className="text-3xl font-bold mb-6">Un approccio costruito sulla persona</h2>
-       <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-  Quando il dolore, la limitazione funzionale o altri disturbi persistono nel tempo, applicare sempre lo stesso trattamento raramente rappresenta la soluzione migliore.
+         <h2 className="text-3xl font-bold mb-6">
+  Un approccio costruito sulla persona
+</h2>
+
+<p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+  Ogni percorso inizia da una valutazione medica del quadro clinico,
+  dei sintomi e delle esigenze della persona.
 
   <br /><br />
 
-  Ogni persona presenta una storia clinica, sintomi ed esigenze differenti. Per questo motivo, ogni percorso inizia con una valutazione medica approfondita, finalizzata a comprendere il problema nella sua globalità prima di individuare il trattamento più appropriato.
+  Ozonoterapia e Osteopatia non vengono considerate come trattamenti
+  separati, ma come strumenti che possono essere utilizzati singolarmente
+  o integrati all'interno di un percorso terapeutico personalizzato.
 
   <br /><br />
 
-  A seconda del quadro clinico possono essere impiegate l'Ozonoterapia, l'Osteopatia oppure la loro integrazione. Quando indicato, il percorso può essere integrato con strategie mirate sullo stile di vita e ulteriori indicazioni personalizzate, sempre nel rispetto delle esigenze cliniche della persona.
+  Quando indicato, il percorso può comprendere anche strategie mirate
+  sullo stile di vita e indicazioni personalizzate, con l'obiettivo di
+  affrontare il problema nella sua globalità.
 </p>
         </AnimatedScrollElement>
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
             items={[
               {
-                title: "Ozonoterapia + Osteopatia",
+               title: "Approccio integrato",
                 image: "/images/homeozono.jpg",
                 link: "/ozone-osteopathy",
               },
               {
-                title: "Osteopatia",
+               title: "Osteopatia nel percorso terapeutico",
                 image: "/images/homeosteo.jpg",
                 link: "/osteopathy",
               },
               {
-                title: "Ozonoterapia",
+               title: "Ozonoterapia nel percorso terapeutico",
                 image: "/images/homeozonosteo.jpg",
                 link: "/ozone-therapy",
               },
