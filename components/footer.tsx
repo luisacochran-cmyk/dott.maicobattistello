@@ -7,9 +7,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
           <div className="text-center md:text-left">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Dott. Maico Battistello
-            </h3>
+                      <div className="flex items-center justify-center md:justify-start gap-3 mb-3">
+              <img
+                src="/images/logo-footer.png"
+                alt="Logo Dott. Maico Battistello"
+                className="h-10 w-10 object-contain"
+              />
+              <h3 className="text-xl font-bold text-gray-900">
+                Dott. Maico Battistello
+              </h3>
+            </div>
 
             <p className="text-base text-primary leading-relaxed">
               Medico Chirurgo · Medico Legale
