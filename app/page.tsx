@@ -6,7 +6,6 @@ import {
   ConditionsSection,
   SubtitleSection,
   DescriptionSection,
-  LocationsSection,
   FaqSection,
   AdvancedTherapySection,
 } from "@/components/client-animated-section"
