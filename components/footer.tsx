@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { MapPin } from "lucide-react"
 
 export default function Footer() {
@@ -7,26 +6,16 @@ export default function Footer() {
       <div className="container px-4 md:px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-      <div className="text-center md:text-left">
-  <div className="flex items-center justify-center md:justify-start gap-4 mb-5">
-    <Image
-      src="/images/Logo for footer.png"
-      alt="Logo Dott. Maico Battistello"
-      width={72}
-      height={72}
-      className="h-[72px] w-[72px] object-contain"
-    />
+          <div className="text-center md:text-left">
+            <h3 className="text-xl font-bold text-gray-900 mb-3">
+              Dott. Maico Battistello
+            </h3>
 
-    <div className="flex flex-col leading-tight text-left">
-      <span className="text-xl font-bold text-[#1746A2] whitespace-nowrap">
-        Dott. Maico Battistello
-      </span>
-      <span className="text-sm font-medium text-[#1746A2] mt-1 whitespace-nowrap">
-        Medico Legale | Osteopata | Ozonoterapeuta
-      </span>
-    </div>
-  </div>
-
+            <p className="text-base text-primary leading-relaxed">
+              Medico Chirurgo · Medico Legale
+              <br />
+              Osteopata · Ozonoterapeuta
+            </p>
 
             <p className="text-base text-gray-700 mt-3 flex items-center justify-center md:justify-start gap-2">
               <MapPin className="h-4 w-4 text-primary" />
