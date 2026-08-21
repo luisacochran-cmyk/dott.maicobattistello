@@ -202,7 +202,7 @@ export function DescriptionSection() {
     <section className="py-12">
       <div className="container">
         <AnimatedScrollElement className="mb-8" direction="up" delay={0.1}>
-         <p className="text-center text-lg max-w-3xl mx-auto leading-relaxed">
+       <p className="text-center text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
   Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche con l’Ozonoterapia e l’Osteopatia per costruire percorsi terapeutici personalizzati.
   <br /><br />
 
