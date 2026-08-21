@@ -89,7 +89,7 @@ export function ConditionsSection() {
                 Colonna e schiena
               </h3>
 
-              <div className="space-y-3 text-gray-700 leading-relaxed">
+             <div className="space-y-3 text-lg text-gray-700 leading-relaxed">
                 <p>Cervicalgia</p>
                 <p>Lombalgia</p>
                 <p>Sciatalgia</p>
@@ -102,7 +102,7 @@ export function ConditionsSection() {
                 Articolazioni e movimento
               </h3>
 
-              <div className="space-y-3 text-gray-700 leading-relaxed">
+             <div className="space-y-3 text-lg text-gray-700 leading-relaxed">
                 <p>Artrosi</p>
                 <p>Tendiniti</p>
                 <p>Dolore alla spalla</p>
@@ -116,7 +116,7 @@ export function ConditionsSection() {
                 Dolore e condizioni persistenti
               </h3>
 
-              <div className="space-y-3 text-gray-700 leading-relaxed">
+            <div className="space-y-3 text-lg text-gray-700 leading-relaxed">
                 <p>Infiammazione cronica</p>
                 <p>Fibromialgia</p>
                 <p>Stanchezza persistente e riduzione della vitalità</p>
@@ -142,14 +142,14 @@ export function TreatmentsSection() {
             Ozonoterapia e Osteopatia: due discipline, un unico percorso
           </h2>
 
-          <p className="text-lg text-gray-600 leading-relaxed mb-5">
+         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
             L'esperienza maturata dal Dott. Maico Battistello nell'Ozonoterapia
             e nell'Osteopatia ha portato allo sviluppo di un approccio che
             integra le due discipline all'interno dello stesso percorso
             terapeutico.
           </p>
 
-          <p className="text-lg text-gray-600 leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
             L'obiettivo è intervenire sul dolore e sui processi infiammatori,
             considerando al tempo stesso gli aspetti funzionali e posturali
             che possono contribuire al problema.
