@@ -69,17 +69,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
           }}
         />
         <div className="container relative z-10 flex h-full items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/nuovologo.png"
-              alt="Dr. Maico Battistello Logo"
-              width={300}
-              height={70}
-             className="h-[72px] w-auto"
-              priority
-              quality={100}
-            />
-          </Link>
+        
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
