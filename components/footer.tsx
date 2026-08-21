@@ -1,11 +1,10 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
-    <footer className="bg-gray-50 border-t border-gray-200">
       <div className="container px-4 md:px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                <div className="flex items-start justify-center md:justify-start gap-2">
+          <div className="flex items-start justify-center md:justify-start gap-2">
             <img
               src="/images/logo-footer.png"
               alt="Logo Dott. Maico Battistello"
@@ -23,9 +22,11 @@ export default function Footer() {
                 Osteopata · Ozonoterapeuta
               </p>
 
-          <p className="text-base text-gray-600 mt-2 leading-snug">
-  Marostica · Schio · Malo · Padova
-</p>
+              <p className="text-base text-gray-600 mt-2 leading-snug">
+                Marostica · Schio · Malo · Padova
+              </p>
+            </div>
+          </div>
 
           <div className="text-center">
             <h3 className="text-base font-semibold text-primary mb-4">
