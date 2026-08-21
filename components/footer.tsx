@@ -1,9 +1,21 @@
+import Image from "next/image"
 import { MapPin, Facebook } from "lucide-react"
 
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
       <div className="container px-4 md:px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="text-center md:text-left">
+            <div className="mb-4 flex justify-center md:justify-start">
+              <Image
+                src="/logo-simbolo.png"
+                alt="Dott. Maico Battistello"
+                width={56}
+                height={56}
+                className="h-14 w-14 object-contain"
+              />
+            </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold text-gray-900 mb-3">
