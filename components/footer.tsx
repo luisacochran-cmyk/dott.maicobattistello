@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="text-center md:pt-10">
             <h3 className="text-base font-semibold text-primary mb-4">
               Aree di attività
             </h3>
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center md:pt-10">
             <h3 className="text-base font-semibold text-primary mb-4">
               Informazioni
             </h3>
