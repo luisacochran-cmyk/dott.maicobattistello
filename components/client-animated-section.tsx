@@ -359,15 +359,6 @@ export function FaqSection() {
             ))}
           </div>
 
-          <div className="mt-10">
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
-            >
-              <Link href="/contacts">Richiedi un appuntamento</Link>
-            </Button>
-          </div>
         </AnimatedScrollElement>
       </div>
     </section>
