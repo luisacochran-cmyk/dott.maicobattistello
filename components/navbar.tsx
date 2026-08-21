@@ -70,8 +70,30 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
         />
         <div className="container relative z-10 flex h-full items-center justify-between">
         
+<div className="container relative z-10 flex h-full items-center justify-between">
+  <Link href="/" className="flex items-center gap-3">
+    <Image
+      src="/images/logo-simbolo.png"
+      alt="Dott. Maico Battistello"
+      width={64}
+      height={64}
+      className="h-16 w-16 object-contain"
+      priority
+      quality={100}
+    />
 
-          {/* Desktop Navigation */}
+    <div className="hidden sm:flex flex-col leading-tight">
+      <span className="text-white text-xl font-bold whitespace-nowrap">
+        Dott. Maico Battistello
+      </span>
+      <span className="text-white/90 text-xs font-medium whitespace-nowrap">
+        Medico Legale | Osteopata | Ozonoterapeuta
+      </span>
+    </div>
+  </Link>
+
+  {/* Desktop Navigation */}
+         
           <nav className="hidden lg:flex items-center space-x-8">
             <div className="relative group">
               <Link href="/ozonoterapia-osteopatia" className="nav-link font-bold">
