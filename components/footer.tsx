@@ -4,11 +4,11 @@ export default function Footer() {
       <div className="container px-4 md:px-4 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
 
-          <div className="text-center">
+         <div className="text-center md:-mt-3">
             <img
               src="/images/logo-footer.png"
               alt="Logo Dott. Maico Battistello"
-             className="h-20 w-20 object-contain mx-auto mb-2"
+           className="h-16 w-16 object-contain mx-auto mb-1"
             />
 
             <h3 className="text-xl font-bold text-gray-900 mb-2">
