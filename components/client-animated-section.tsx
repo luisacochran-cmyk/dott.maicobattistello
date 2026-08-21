@@ -79,16 +79,20 @@ export function ConditionsSection() {
 ]
 
   return (
-    <section className="py-16 bg-gray-50">
+   <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
       <div className="container px-4">
         <AnimatedScrollElement
           className="mb-10 text-center"
           direction="up"
           delay={0.1}
         >
-          <h2 className="text-3xl font-bold mb-4">
-            Per quali disturbi può essere utile una valutazione?
-          </h2>
+         <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+  Disturbi e condizioni
+</p>
+
+<h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+  Per quali disturbi può essere utile una valutazione?
+</h2>
 
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Il dolore e la limitazione funzionale possono avere origini
@@ -102,7 +106,7 @@ export function ConditionsSection() {
     {conditions.map((condition) => (
       <div
         key={condition}
-        className="bg-gradient-to-br from-white to-blue-50/60 border border-blue-100 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-200 transition-all duration-300 ease-out px-5 py-4 text-center"
+        className="bg-gradient-to-br from-white to-blue-50/60 border border-blue-100 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 ease-out px-5 py-5 text-center"
       >
         <span className="text-gray-800 font-medium text-base leading-snug">
           {condition}
