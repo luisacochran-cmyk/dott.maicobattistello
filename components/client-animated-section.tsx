@@ -182,33 +182,6 @@ export function TreatmentsSection() {
     </section>
   )
 }
-        </AnimatedScrollElement>
-        <AnimatedScrollElement direction="up" delay={0.3}>
-          <QuadrantCarousel
-            items={[
-              {
-               title: "Approccio integrato",
-                image: "/images/homeozono.jpg",
-                link: "/ozone-osteopathy",
-              },
-              {
-               title: "Osteopatia nel percorso terapeutico",
-                image: "/images/homeosteo.jpg",
-                link: "/osteopathy",
-              },
-              {
-               title: "Ozonoterapia nel percorso terapeutico",
-                image: "/images/homeozonosteo.jpg",
-                link: "/ozone-therapy",
-              },
-            ]}
-            showTitles={true}
-          />
-        </AnimatedScrollElement>
-      </div>
-    </section>
-  )
-}
 
 export function SubtitleSection() {
   return (
