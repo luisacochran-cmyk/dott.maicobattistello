@@ -60,7 +60,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 h-20 transition-all duration-300 backdrop-blur-sm`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 h-24 transition-all duration-300 backdrop-blur-sm`}>
         <div
           className="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 navbar-gradient"
           style={{
@@ -75,7 +75,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
               alt="Dr. Maico Battistello Logo"
               width={300}
               height={70}
-              className="h-16 w-auto"
+             className="h-[72px] w-auto"
               priority
               quality={100}
             />
