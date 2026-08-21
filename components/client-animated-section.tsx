@@ -62,65 +62,69 @@ export function HeroSection({ className }: HeroSectionProps) {
   )
 }
 export function ConditionsSection() {
-  const conditions = [
-    "Cervicalgia",
-    "Lombalgia",
-    "Sciatalgia",
-    "Ernia e protrusione discale",
-    "Artrosi",
-    "Tendiniti",
-    "Dolore alla spalla",
-    "Dolore al ginocchio",
-    "Dolori muscolari e articolari",
-    "Infiammazione cronica",
-   "Fibromialgia",
-"Stanchezza persistente e riduzione della vitalità",
-
-]
-
   return (
-   <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container px-4">
         <AnimatedScrollElement
-          className="mb-10 text-center"
+          className="mb-12 text-center"
           direction="up"
           delay={0.1}
         >
-         
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+            Per quali disturbi può essere utile una valutazione?
+          </h2>
 
-<h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-  Per quali disturbi può essere utile una valutazione?
-</h2>
-
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Il dolore e la limitazione funzionale possono avere origini
             differenti. Una valutazione medica permette di comprendere il
             quadro della persona e individuare il percorso più appropriato.
           </p>
         </AnimatedScrollElement>
 
-      <AnimatedScrollElement direction="up" delay={0.3}>
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-    {conditions.map((condition) => (
-      <div
-        key={condition}
-        className="bg-gradient-to-br from-white to-blue-50/60 border border-blue-100 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-300 hover:-translate-y-1 transition-all duration-300 ease-out px-5 py-5 text-center"
-      >
-        <span className="text-gray-800 font-medium text-base leading-snug">
-          {condition}
-        </span>
-      </div>
-    ))}
-  </div>
+        <AnimatedScrollElement direction="up" delay={0.3}>
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0">
 
-  <div className="mt-6 flex justify-center">
-    <div className="bg-gradient-to-br from-white to-blue-50/60 border border-blue-200 rounded-2xl shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300 ease-out px-8 py-4 text-center min-w-[220px]">
-      <span className="text-blue-700 font-semibold text-base tracking-wide">
-        … e molto altro
-      </span>
-    </div>
-  </div>
-</AnimatedScrollElement>
+            <div className="md:px-8">
+              <h3 className="text-xl font-semibold text-primary mb-5">
+                Colonna e schiena
+              </h3>
+
+              <div className="space-y-3 text-gray-700 leading-relaxed">
+                <p>Cervicalgia</p>
+                <p>Lombalgia</p>
+                <p>Sciatalgia</p>
+                <p>Ernia e protrusione discale</p>
+              </div>
+            </div>
+
+            <div className="md:px-8 md:border-l md:border-gray-200">
+              <h3 className="text-xl font-semibold text-primary mb-5">
+                Articolazioni e movimento
+              </h3>
+
+              <div className="space-y-3 text-gray-700 leading-relaxed">
+                <p>Artrosi</p>
+                <p>Tendiniti</p>
+                <p>Dolore alla spalla</p>
+                <p>Dolore al ginocchio</p>
+                <p>Dolori muscolari e articolari</p>
+              </div>
+            </div>
+
+            <div className="md:px-8 md:border-l md:border-gray-200">
+              <h3 className="text-xl font-semibold text-primary mb-5">
+                Dolore e condizioni persistenti
+              </h3>
+
+              <div className="space-y-3 text-gray-700 leading-relaxed">
+                <p>Infiammazione cronica</p>
+                <p>Fibromialgia</p>
+                <p>Stanchezza persistente e riduzione della vitalità</p>
+              </div>
+            </div>
+
+          </div>
+        </AnimatedScrollElement>
       </div>
     </section>
   )
