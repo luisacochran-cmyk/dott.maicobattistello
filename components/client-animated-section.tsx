@@ -133,7 +133,7 @@ export function TreatmentsSection() {
     <section className="py-16 md:py-20 bg-white">
       <div className="container px-4">
         <AnimatedScrollElement
-          className="text-center max-w-4xl mx-auto mb-12"
+          className="text-center max-w-3xl mx-auto mb-12"
           direction="up"
           delay={0.1}
         >
@@ -141,13 +141,13 @@ export function TreatmentsSection() {
   Un approccio costruito sulla persona
 </h2>
 
-     <p>
+   <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
   L'esperienza maturata negli anni nell'Osteopatia e nell'Ozonoterapia ha portato
   il Dott. Maico Battistello a sviluppare un approccio che parte dalla valutazione
   della persona nel suo insieme, prima ancora dalla scelta del trattamento.
 </p>
 
-<p>
+<p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
   L'Ozonoterapia può essere indicata per intervenire sul dolore e sui processi
   infiammatori; l'Osteopatia si concentra invece sugli aspetti funzionali e
   posturali che possono contribuire al disturbo. Sono discipline diverse, con
@@ -156,7 +156,7 @@ export function TreatmentsSection() {
   l'indicazione.
 </p>
 
-<p>
+<p className="text-lg md:text-xl text-gray-600 leading-relaxed">
   L'obiettivo non è applicare un trattamento prestabilito, ma individuare il
   percorso più appropriato per la singola persona, tenendo conto del quadro
   clinico, della funzionalità e delle esigenze individuali.
