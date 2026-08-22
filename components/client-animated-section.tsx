@@ -25,9 +25,9 @@ export function HeroSection({ className }: HeroSectionProps) {
   />
 </h1>
 
-      <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
+     <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
   <p className="text-xl md:text-2xl text-white">
-    Ozonoterapia e Osteopatia, un percorso integrato.
+    Un approccio personalizzato al dolore, all'infiammazione e al recupero della funzionalità.
   </p>
 </AnimatedScrollElement>
 
@@ -137,9 +137,9 @@ export function TreatmentsSection() {
           direction="up"
           delay={0.1}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-            Ozonoterapia e Osteopatia: due discipline, un unico percorso
-          </h2>
+         <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+  Un approccio costruito sulla persona
+</h2>
 
          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
   La passione e l'esperienza maturate negli anni nell'Osteopatia e
