@@ -18,17 +18,16 @@ export function HeroSection({ className }: HeroSectionProps) {
       <div className="container">
         <div className="max-w-xl md:max-w-2xl mx-auto md:mx-0 md:ml-[10%] lg:ml-[5%] text-left">
       
-         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
   <ClientTypewriter
-    text="Un approccio innovativo e integrato"
+    text="Ozonoterapia e Osteopatia: due discipline, un unico percorso"
     delay={80}
   />
 </h1>
 
-         <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
+      <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
   <p className="text-xl md:text-2xl text-white">
-    Ozonoterapia e osteopatia in un percorso terapeutico personalizzato
-    per il dolore, l'infiammazione e il recupero della funzionalità.
+    Ozonoterapia e Osteopatia, un percorso integrato.
   </p>
 </AnimatedScrollElement>
 
