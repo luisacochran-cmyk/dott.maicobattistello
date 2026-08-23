@@ -34,33 +34,61 @@ export default function OzonoterapiaPadovaPage() {
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
-       <h1 className="text-4xl font-bold mb-6">{seoData.h1}</h1>
+      <h1 className="text-4xl font-bold mb-6">{seoData.h1}</h1>
 
-         <h2 className="text-3xl font-semibold mb-6">{seoData.h2}</h2>
+<h2 className="text-3xl font-semibold mb-6">{seoData.h2}</h2>
 
-       <p className="text-xl leading-relaxed mb-6">
-            A <strong>Padova</strong>, il Dr. Maico Battistello utilizza l'ossigeno-ozonoterapia in un percorso
-            personalizzato, rivolto in particolare a disturbi muscolo-scheletrici, dolore cronico e problematiche
-            funzionali della colonna.
-          </p>
+<p className="text-xl leading-relaxed mb-6">
+  A <strong>Padova</strong>, il Dott. Maico Battistello utilizza
+  l'<strong>ossigeno-ozonoterapia</strong> nell'ambito di percorsi rivolti
+  alla gestione del <strong>dolore</strong>, dei{" "}
+  <strong>disturbi muscolo-scheletrici</strong> e delle problematiche
+  funzionali della <strong>colonna vertebrale</strong> e delle articolazioni.
+</p>
 
-        <p className="text-xl leading-relaxed mb-6">
-            Il trattamento viene valutato in base alla condizione del paziente, alla sede del disturbo e agli obiettivi
-            clinici. L'ozonoterapia può essere indicata quando è presente una componente <strong>infiammatoria</strong>,
-            dolorosa o articolare, con l'obiettivo di contribuire alla riduzione del <strong>dolore</strong>, al
-            miglioramento della <strong>funzionalità</strong> e a una migliore qualità del movimento.
-          </p>
+<p className="text-xl leading-relaxed mb-6">
+  Ogni trattamento parte dalla <strong>valutazione clinica</strong>. Natura e
+  sede del disturbo, presenza di una componente infiammatoria, limitazioni
+  funzionali e caratteristiche individuali contribuiscono a determinare se
+  l'ozonoterapia possa essere indicata e quale modalità di somministrazione
+  sia più appropriata.
+</p>
 
-         <h3 className="text-2xl font-semibold mt-8 mb-4">Quando può essere indicata l'ozonoterapia a Padova</h3>
+<p className="text-xl leading-relaxed mb-8">
+  L'obiettivo non è applicare un protocollo prestabilito, ma costruire un
+  percorso coerente con il quadro clinico della persona. Quando indicato, il
+  trattamento può inoltre inserirsi in un approccio più ampio che considera
+  non soltanto il dolore, ma anche <strong>funzionalità, mobilità e qualità
+  del movimento</strong>.
+</p>
 
-         <ul className="list-disc pl-6 mb-8 space-y-3 text-lg leading-relaxed">
-            <li>Cervicalgia e lombalgia</li>
-            <li>Ernie e protrusioni discali</li>
-            <li>Sciatalgia e dolore radicolare</li>
-            <li>Artrosi e problematiche articolari</li>
-            <li>Tendinopatie e dolore muscolo-scheletrico</li>
-            <li>Limitazioni della mobilità e recupero funzionale</li>
-          </ul>
+<h3 className="text-2xl font-semibold mt-8 mb-4">
+  Quando può essere indicata l'ozonoterapia a Padova
+</h3>
+
+<p className="text-lg leading-relaxed mb-5">
+  L'ossigeno-ozonoterapia può essere presa in considerazione, dopo valutazione
+  medica, nell'ambito di differenti condizioni muscolo-scheletriche e
+  dolorose, tra cui:
+</p>
+
+<ul className="list-disc pl-6 mb-6 space-y-3 text-lg leading-relaxed">
+  <li><strong>Cervicalgia e lombalgia</strong></li>
+  <li><strong>Ernie e protrusioni discali</strong></li>
+  <li><strong>Sciatalgia e dolore radicolare</strong></li>
+  <li><strong>Artrosi e problematiche articolari</strong></li>
+  <li><strong>Tendinopatie e disturbi muscolo-scheletrici</strong></li>
+  <li>Dolore associato a <strong>limitazioni della mobilità e della funzionalità</strong></li>
+</ul>
+
+<p className="text-lg leading-relaxed mb-8">
+  Le possibili indicazioni dell'ozonoterapia presentano{" "}
+  <strong>livelli differenti di evidenza scientifica</strong>. Per questo
+  l'indicazione non deriva semplicemente dalla presenza di una determinata
+  patologia: è la valutazione medica a stabilire l'appropriatezza del
+  trattamento nel singolo caso e la modalità con cui eventualmente inserirlo
+  nel percorso terapeutico.
+</p>
         </div>
       </div>
 
