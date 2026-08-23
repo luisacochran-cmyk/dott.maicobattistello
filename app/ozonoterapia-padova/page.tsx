@@ -66,13 +66,13 @@ export default function OzonoterapiaPadovaPage() {
   Quando può essere indicata l'ozonoterapia a Padova
 </h3>
 
-<p className="text-lg leading-relaxed mb-5">
+<p className="text-xl leading-relaxed mb-5">
   L'ossigeno-ozonoterapia può essere presa in considerazione, dopo valutazione
   medica, nell'ambito di differenti condizioni muscolo-scheletriche e
   dolorose, tra cui:
 </p>
 
-<ul className="list-disc pl-6 mb-6 space-y-3 text-lg leading-relaxed">
+<ul className="list-disc pl-6 mb-6 space-y-3 text-xl leading-relaxed">
   <li><strong>Cervicalgia e lombalgia</strong></li>
   <li><strong>Ernie e protrusioni discali</strong></li>
   <li><strong>Sciatalgia e dolore radicolare</strong></li>
@@ -81,7 +81,7 @@ export default function OzonoterapiaPadovaPage() {
   <li>Dolore associato a <strong>limitazioni della mobilità e della funzionalità</strong></li>
 </ul>
 
-<p className="text-lg leading-relaxed mb-8">
+<p className="text-xl leading-relaxed mb-8">
   Le possibili indicazioni dell'ozonoterapia presentano{" "}
   <strong>livelli differenti di evidenza scientifica</strong>. Per questo
   l'indicazione non deriva semplicemente dalla presenza di una determinata
