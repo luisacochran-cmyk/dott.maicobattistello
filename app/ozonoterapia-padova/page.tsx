@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
@@ -166,48 +165,7 @@ export default function OzonoterapiaPadovaPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <h3 className="text-2xl font-bold mb-6">Domande frequenti sull'ozonoterapia a Padova</h3>
-
-        <Accordion type="single" collapsible className="w-full">
-          <AccordionItem value="quando-ozonoterapia-padova">
-            <AccordionTrigger className="text-lg font-semibold">
-              Quando può essere indicata l'ozonoterapia?
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className="text-lg">
-                Può essere valutata in presenza di dolore, infiammazione, disturbi muscolo-scheletrici, problematiche
-                articolari o limitazioni funzionali, sempre dopo una valutazione medica.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem value="efficacia-ozonoterapia-padova">
-            <AccordionTrigger className="text-lg font-semibold">
-              L'ozonoterapia è sempre indicata?
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className="text-lg">
-                No. L'indicazione dipende dal quadro clinico, dalla sede del disturbo e dalla risposta individuale del
-                paziente. Per questo il trattamento viene valutato caso per caso.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
-
-          <AccordionItem value="sicurezza-ozonoterapia-padova">
-            <AccordionTrigger className="text-lg font-semibold">
-              Il trattamento viene personalizzato?
-            </AccordionTrigger>
-            <AccordionContent>
-              <p className="text-lg">
-                Sì. Il percorso viene adattato alle caratteristiche della persona, al tipo di disturbo e agli obiettivi
-                clinici individuati durante la valutazione.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </div>
-
+    
       <ContactForm />
 
       <script
