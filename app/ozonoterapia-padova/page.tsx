@@ -34,26 +34,26 @@ export default function OzonoterapiaPadovaPage() {
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
-          <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
+       <h1 className="text-4xl font-bold mb-6">{seoData.h1}</h1>
 
-          <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
+         <h2 className="text-3xl font-semibold mb-6">{seoData.h2}</h2>
 
-          <p className="text-lg mb-6">
+       <p className="text-xl leading-relaxed mb-6">
             A <strong>Padova</strong>, il Dr. Maico Battistello utilizza l'ossigeno-ozonoterapia in un percorso
             personalizzato, rivolto in particolare a disturbi muscolo-scheletrici, dolore cronico e problematiche
             funzionali della colonna.
           </p>
 
-          <p className="text-lg mb-6">
+        <p className="text-xl leading-relaxed mb-6">
             Il trattamento viene valutato in base alla condizione del paziente, alla sede del disturbo e agli obiettivi
             clinici. L'ozonoterapia può essere indicata quando è presente una componente <strong>infiammatoria</strong>,
             dolorosa o articolare, con l'obiettivo di contribuire alla riduzione del <strong>dolore</strong>, al
             miglioramento della <strong>funzionalità</strong> e a una migliore qualità del movimento.
           </p>
 
-          <h3 className="text-xl font-semibold mb-4">Quando può essere indicata l'ozonoterapia a Padova</h3>
+         <h3 className="text-2xl font-semibold mt-8 mb-4">Quando può essere indicata l'ozonoterapia a Padova</h3>
 
-          <ul className="list-disc pl-6 mb-6 space-y-2">
+         <ul className="list-disc pl-6 mb-8 space-y-3 text-lg leading-relaxed">
             <li>Cervicalgia e lombalgia</li>
             <li>Ernie e protrusioni discali</li>
             <li>Sciatalgia e dolore radicolare</li>
