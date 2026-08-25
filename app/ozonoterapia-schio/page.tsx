@@ -157,11 +157,11 @@ export default function OzonoterapiaSchioPage() {
       <section className="py-8 container mx-auto">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="administration-methods">
-            <AccordionTrigger className="text-xl font-semibold">
+        <AccordionTrigger className="text-2xl font-bold py-5">
               Metodi di Somministrazione dell'Ozonoterapia a {city.name}
             </AccordionTrigger>
             <AccordionContent>
-              <div className="prose max-w-none">
+            <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
                   L'ozonoterapia a <strong>{city.name}</strong> può essere somministrata localmente o sistemicamente a
                   seconda delle patologie da trattare.
@@ -202,12 +202,12 @@ export default function OzonoterapiaSchioPage() {
           </AccordionItem>
 
         <AccordionItem value="clinical-therapeutic-indications">
-  <AccordionTrigger className="text-xl font-semibold">
+ <AccordionTrigger className="text-2xl font-bold py-5">
     Indicazioni Clinico-Terapeutiche
   </AccordionTrigger>
 
   <AccordionContent>
-    <div className="prose max-w-none">
+   <div className="prose prose-lg max-w-none leading-relaxed">
       <p className="text-lg">
         L&apos;ossigeno-ozonoterapia può essere utilizzata come supporto in diversi
         quadri clinici, sempre dopo una valutazione medica e all&apos;interno di un
@@ -215,14 +215,14 @@ export default function OzonoterapiaSchioPage() {
       </p>
 
       <div className="mt-5 rounded-lg border border-blue-200 bg-blue-50 p-5">
-        <p className="text-base leading-relaxed">
+      <p className="text-lg leading-relaxed">
           Le indicazioni clinico-terapeutiche sono classificate secondo i diversi
           livelli di evidenza scientifica disponibili.
         </p>
 
         <a
           href="/ozonoterapia"
-          className="mt-3 inline-block font-semibold text-blue-600 hover:underline"
+        className="mt-4 inline-block text-lg font-semibold text-blue-600 hover:underline"
         >
           Scopri le indicazioni e i livelli di evidenza →
         </a>
@@ -232,9 +232,9 @@ export default function OzonoterapiaSchioPage() {
 </AccordionItem>
 
           <AccordionItem value="contraindications">
-            <AccordionTrigger className="text-xl font-semibold">Controindicazioni</AccordionTrigger>
+            <AccordionTrigger className="text-2xl font-bold py-5">Controindicazioni</AccordionTrigger>
             <AccordionContent>
-              <div className="prose max-w-none">
+             <div className="prose prose-lg max-w-none leading-relaxed">
                 <p className="text-lg">
                   A concentrazioni terapeutiche, l'Ossigeno-Ozonoterapia non ha effetti collaterali. Non è un
                   trattamento doloroso. Non provoca reazioni allergiche. Non interferisce con i farmaci in uso.
