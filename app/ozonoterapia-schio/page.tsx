@@ -172,7 +172,6 @@ export default function OzonoterapiaSchioPage() {
                 </p>
                 <p className="text-lg">Le principali vie di somministrazione sono:</p>
 
-              <ul className="list-disc pl-6 text-lg leading-relaxed">
                 <p className="text-lg">
                   Applicata nei casi in cui la prognosi e la progressione della malattia possono beneficiare della
                   modulazione della risposta infiammatoria o di un migliore apporto di ossigeno ai tessuti. Questi
