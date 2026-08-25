@@ -2,7 +2,6 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
@@ -151,7 +150,6 @@ export default function OzonoterapiaMaloPage() {
         </div>
       </div>
 
-        </div>
 
       {/* Ozonoterapia - Approfondimento */}
       <section className="container mx-auto max-w-4xl px-4 py-10">
@@ -176,7 +174,6 @@ export default function OzonoterapiaMaloPage() {
         </div>
       </section>
 
-      <ContactForm />
 
       {/* Contact Form */}
       <ContactForm />
