@@ -201,62 +201,35 @@ export default function OzonoterapiaSchioPage() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="clinical-therapeutic-indications">
-            <AccordionTrigger className="text-xl font-semibold">Indicazioni Clinico-Terapeutiche</AccordionTrigger>
-            <AccordionContent>
-              <div className="prose max-w-none">
-                <p className="text-lg">
-                  Grazie alla Medicina Basata sull'Evidenza (EBM), le patologie trattate con l'Ossigeno-Ozonoterapia a{" "}
-                  <strong>{city.name}</strong>
-                  sono suddivise in tre categorie.
-                </p>
+        <AccordionItem value="clinical-therapeutic-indications">
+  <AccordionTrigger className="text-xl font-semibold">
+    Indicazioni Clinico-Terapeutiche
+  </AccordionTrigger>
 
-                <h4 className="font-semibold mt-4">Evidenza di Tipo A:</h4>
-                <p className="text-lg">
-                  Basata su revisioni sistematiche con omogeneità di studi caso-controllo. Le principali applicazioni
-                  cliniche riconosciute dal Ministero della Salute includono:
-                </p>
-                <ul className="list-disc pl-6">
-                  <li>Ernie Discali</li>
-                  <li>Protrusioni Discali</li>
-                  <li>Discopatie</li>
-                  <li>Sindrome Faccettale</li>
-                  <li>Osteoartrosi, Gonartrosi, Condromalacia rotulea</li>
-                </ul>
+  <AccordionContent>
+    <div className="prose max-w-none">
+      <p className="text-lg">
+        L&apos;ossigeno-ozonoterapia può essere utilizzata come supporto in diversi
+        quadri clinici, sempre dopo una valutazione medica e all&apos;interno di un
+        percorso personalizzato.
+      </p>
 
-                <h4 className="font-semibold mt-4">Evidenza di Tipo B:</h4>
-                <p className="text-lg">Basata su singoli studi randomizzati, studi di coorte o studi caso-controllo.</p>
-                <ul className="list-disc pl-6">
-                  <li>Patologie Ortopediche</li>
-                  <li>Piede Diabetico</li>
-                  <li>Ulcere Cutanee e Ustioni</li>
-                  <li>Malattie Cutanee Acute causate da batteri, funghi o virus</li>
-                </ul>
+      <div className="mt-5 rounded-lg border border-blue-200 bg-blue-50 p-5">
+        <p className="text-base leading-relaxed">
+          Le indicazioni clinico-terapeutiche sono classificate secondo i diversi
+          livelli di evidenza scientifica disponibili.
+        </p>
 
-                <h4 className="font-semibold mt-4">Evidenza di Tipo C:</h4>
-                <p className="text-lg">
-                  Basata su opinioni di esperti senza ricerca sistematica o scientifica specifica.
-                </p>
-                <ul className="list-disc pl-6">
-                  <li>Long Covid</li>
-                  <li>Fibromialgia</li>
-                  <li>Stanchezza Cronica (CFS)</li>
-                  <li>Stanchezza Stagionale o da Lavoro</li>
-                  <li>Debolezza Generale o Mancanza di Energia nel Parkinson</li>
-                  <li>Benessere post-ospedalizzazione/recupero</li>
-                  <li>Artrite Reumatoide, Artrite Psoriasica</li>
-                  <li>Disfunzione Erettile</li>
-                  <li>Malattie Autoimmuni (supporto alle terapie convenzionali)</li>
-                  <li>Demenza Senile/Alzheimer (complementare alla terapia convenzionale)</li>
-                  <li>Asma</li>
-                  <li>Emicranie</li>
-                  <li>Cefalee a Grappolo o Tensiva</li>
-                  <li>Problemi Infettivi</li>
-                  <li>Problemi Circolatori</li>
-                </ul>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+        <a
+          href="/ozonoterapia"
+          className="mt-3 inline-block font-semibold text-blue-600 hover:underline"
+        >
+          Scopri le indicazioni e i livelli di evidenza →
+        </a>
+      </div>
+    </div>
+  </AccordionContent>
+</AccordionItem>
 
           <AccordionItem value="contraindications">
             <AccordionTrigger className="text-xl font-semibold">Controindicazioni</AccordionTrigger>
