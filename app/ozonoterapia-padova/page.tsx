@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import Link from "next/link"import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
@@ -193,6 +193,28 @@ export default function OzonoterapiaPadovaPage() {
         </div>
       </div>
 
+      {/* Ozonoterapia - Approfondimento */}
+<section className="container mx-auto max-w-4xl px-4 py-10">
+  <div className="rounded-xl border border-blue-200 bg-blue-50 p-6 md:p-8">
+    <h2 className="text-2xl font-bold mb-3">
+      Approfondisci l’Ozonoterapia
+    </h2>
+
+    <p className="text-lg leading-relaxed mb-5">
+      Per conoscere i metodi di somministrazione, le indicazioni
+      clinico-terapeutiche suddivise per livello di evidenza e le
+      controindicazioni, consulta la pagina completa dedicata
+      all’Ozonoterapia.
+    </p>
+
+    <Link
+      href="/ozonoterapia"
+      className="inline-flex items-center text-lg font-semibold text-blue-600 hover:text-blue-800 hover:underline"
+    >
+      Scopri metodi, indicazioni e controindicazioni →
+    </Link>
+  </div>
+</section>
     
       <ContactForm />
 
