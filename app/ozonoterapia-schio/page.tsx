@@ -172,24 +172,24 @@ export default function OzonoterapiaSchioPage() {
                 </p>
                 <p className="text-lg">Le principali vie di somministrazione sono:</p>
 
-                <h4 className="font-semibold mt-4">Sistemica:</h4>
+              <ul className="list-disc pl-6 text-lg leading-relaxed">
                 <p className="text-lg">
                   Applicata nei casi in cui la prognosi e la progressione della malattia possono beneficiare della
                   modulazione della risposta infiammatoria o di un migliore apporto di ossigeno ai tessuti. Questi
                   includono:
                 </p>
-                <ul className="list-disc pl-6">
+               <ul className="list-disc pl-6 text-lg leading-relaxed">
                   <li>Grande Auto-emoterapia (GAET) – venosa;</li>
                   <li>Piccola Auto-emoterapia Infusionale (PAEI) – muscolo profondo;</li>
                   <li>Rettale</li>
                 </ul>
 
-                <h4 className="font-semibold mt-4">Locale:</h4>
+               <h4 className="text-lg font-semibold mt-4">Locale:</h4>
                 <p className="text-lg">
                   Applicata quando c'è la necessità di sfruttare gli effetti analgesici, antinfiammatori e miorilassanti
                   per patologie muscolo-scheletriche, intestinali e altre. La somministrazione avviene tramite:
                 </p>
-                <ul className="list-disc pl-6">
+                <ul className="list-disc pl-6 text-lg leading-relaxed">
                   <li>Intramuscolare, paravertebrale</li>
                   <li>Sottocutanea</li>
                   <li>Peri-articolare</li>
@@ -241,7 +241,7 @@ export default function OzonoterapiaSchioPage() {
                 </p>
 
                 <p className="text-lg mt-4">Le controindicazioni sono limitate alla GAET per le seguenti condizioni:</p>
-                <ul className="list-disc pl-6">
+              <ul className="list-disc pl-6 text-lg leading-relaxed">
                   <li>Favismo</li>
                   <li>Ipertiroidismo grave</li>
                   <li>Allergie al citrato e agli anticoagulanti</li>
@@ -254,7 +254,7 @@ export default function OzonoterapiaSchioPage() {
                   Tutti i trattamenti con ozono vengono eseguiti utilizzando apparecchiature certificate, aderendo alle
                   linee guida sviluppate dalle principali società scientifiche nazionali e internazionali, come:
                 </p>
-                <ul className="list-disc pl-6">
+             <ul className="list-disc pl-6 text-lg leading-relaxed">
                   <li>SIOOT (Società Scientifica Internazionale di Ossigeno-Ozonoterapia)</li>
                   <li>Nuova FIO (Federazione Italiana di Ossigeno-Ozonoterapia)</li>
                   <li>ISCO3 (Comitato Scientifico Internazionale di Ozonoterapia)</li>
