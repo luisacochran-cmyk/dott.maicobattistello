@@ -200,57 +200,126 @@ export default function OzoneTherapyPage() {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="clinical-therapeutic-indications">
-            <AccordionTrigger className="text-2xl font-bold py-5">Indicazioni Clinico-Terapeutiche</AccordionTrigger>
-            <AccordionContent>
-        <div className="prose prose-lg max-w-none leading-relaxed">
-<p className="text-xl">
-   L&apos;ossigeno-ozonoterapia può essere utilizzata come supporto in diversi quadri clinici, sempre dopo una valutazione medica e all&apos;interno di un percorso personalizzato.
-</p>
-<h4 className="font-bold text-2xl mt-8">Dolore e colonna vertebrale</h4>
+      <AccordionItem value="clinical-therapeutic-indications">
+  <AccordionTrigger className="text-2xl font-bold py-5">
+    Indicazioni Clinico-Terapeutiche
+  </AccordionTrigger>
 
-<ul className="list-disc pl-6 text-lg">
-  <li><strong>Ernie discali</strong></li>
-  <li><strong>Protrusioni discali</strong></li>
-  <li>Discopatie</li>
-  <li>Sindrome faccettale</li>
-  <li>Lombalgia e dolore muscolo-scheletrico</li>
-</ul>
-<h4 className="font-bold text-2xl mt-8">Articolazioni e infiammazione</h4>
+  <AccordionContent>
+    <div className="space-y-6 pb-4">
+      <p className="text-lg leading-relaxed">
+        Grazie alla Medicina Basata sull&apos;Evidenza (EBM), le indicazioni
+        dell&apos;ossigeno-ozonoterapia possono essere suddivise in tre categorie
+        in base al livello di evidenza disponibile.
+      </p>
 
-<ul className="list-disc pl-6 text-lg">
-  <li><strong>Artrosi</strong></li>
-  <li>Gonartrosi</li>
-  <li>Patologie ortopediche</li>
-  <li>Artrite reumatoide e artrite psoriasica</li>
-  <li>Tendinopatie e condizioni infiammatorie</li>
-</ul>
-  
+      {/* Evidenza Tipo A */}
+      <div className="rounded-xl border border-blue-200 bg-blue-50 p-6">
+        <div className="flex items-start gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xl font-bold text-white">
+            A
+          </div>
 
-<h4 className="font-bold text-2xl mt-8">Cute e circolazione</h4>
-  <ul className="list-disc pl-6 text-lg">
-    <li>Piede diabetico</li>
-    <li>Ulcere cutanee e ustioni</li>
-    <li>Problemi circolatori</li>
-    <li>Lesioni cutanee di difficile guarigione</li>
-  </ul>
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-blue-700">
+              Evidenza di Tipo A
+            </h4>
 
-<h4 className="font-bold text-2xl mt-8">Altri ambiti di supporto</h4>
-  <ul className="list-disc pl-6 text-lg">
-    <li><strong>Fibromialgia</strong></li>
-    <li><strong>Long Covid</strong></li>
-    <li>Stanchezza cronica</li>
-    <li>Emicrania e cefalea tensiva</li>
-    <li>Benessere post-ospedalizzazione/recupero</li>
-  </ul>
+            <p className="mt-2 text-base leading-relaxed text-gray-700">
+              Basata su revisioni sistematiche con omogeneità di studi
+              caso-controllo. Le principali applicazioni cliniche riconosciute
+              dal Ministero della Salute includono:
+            </p>
 
-<p className="text-lg text-gray-600 mt-8 leading-relaxed">
-    Le indicazioni vengono valutate caso per caso. L'ossigeno-ozonoterapia non sostituisce le terapie mediche convenzionali, ma può integrarsi in un percorso clinico appropriato.
-  </p>
-</div>
-</AccordionContent>
+            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-base md:grid-cols-2">
+              <li>Ernie discali</li>
+              <li>Protrusioni discali</li>
+              <li>Discopatie</li>
+              <li>Sindrome faccettale</li>
+              <li>Osteoartrosi, gonartrosi, condromalacia rotulea</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Evidenza Tipo B */}
+      <div className="rounded-xl border border-blue-200 bg-white p-6 shadow-sm">
+        <div className="flex items-start gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-blue-600 text-xl font-bold text-blue-700">
+            B
+          </div>
+
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-blue-700">
+              Evidenza di Tipo B
+            </h4>
+
+            <p className="mt-2 text-base leading-relaxed text-gray-700">
+              Basata su singoli studi randomizzati, studi di coorte o studi
+              caso-controllo.
+            </p>
+
+            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-base md:grid-cols-2">
+              <li>Patologie ortopediche</li>
+              <li>Piede diabetico</li>
+              <li>Ulcere cutanee e ustioni</li>
+              <li>Malattie cutanee acute causate da batteri, funghi o virus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Evidenza Tipo C */}
+      <div className="rounded-xl border border-gray-200 bg-gray-50 p-6">
+        <div className="flex items-start gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-gray-400 text-xl font-bold text-gray-700">
+            C
+          </div>
+
+          <div className="flex-1">
+            <h4 className="text-xl font-bold text-gray-800">
+              Evidenza di Tipo C
+            </h4>
+
+            <p className="mt-2 text-base leading-relaxed text-gray-700">
+              Basata su opinioni di esperti senza ricerca sistematica o
+              scientifica specifica.
+            </p>
+
+            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-base md:grid-cols-2">
+              <li>Long Covid</li>
+              <li>Fibromialgia</li>
+              <li>Stanchezza cronica (CFS)</li>
+              <li>Stanchezza stagionale o da lavoro</li>
+              <li>Debolezza generale o mancanza di energia nel Parkinson</li>
+              <li>Benessere post-ospedalizzazione/recupero</li>
+              <li>Artrite reumatoide, artrite psoriasica</li>
+              <li>Disfunzione erettile</li>
+              <li>Malattie autoimmuni (supporto alle terapie convenzionali)</li>
+              <li>
+                Demenza senile/Alzheimer (complementare alla terapia
+                convenzionale)
+              </li>
+              <li>Asma</li>
+              <li>Emicranie</li>
+              <li>Cefalea a grappolo o tensiva</li>
+              <li>Problemi infettivi</li>
+              <li>Problemi circolatori</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-lg border-l-4 border-blue-600 bg-blue-50 px-5 py-4">
+        <p className="text-base leading-relaxed text-gray-700">
+          <strong>Le indicazioni vengono valutate caso per caso.</strong>{" "}
+          L&apos;ossigeno-ozonoterapia non sostituisce le terapie mediche
+          convenzionali, ma può integrarsi in un percorso clinico appropriato.
+        </p>
+      </div>
+    </div>
+  </AccordionContent>
 </AccordionItem>
-
           <AccordionItem value="contraindications">
             <AccordionTrigger className="text-2xl font-bold py-5">Controindicazioni</AccordionTrigger>
             <AccordionContent>
