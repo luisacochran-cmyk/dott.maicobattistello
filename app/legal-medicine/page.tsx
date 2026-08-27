@@ -138,3 +138,10 @@ export default function LegalMedicinePage() {
     </Link>
   </div>
 </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  )
+}
