@@ -56,8 +56,8 @@ export default function MedicinaLegaleMaloPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             {service.conditions.map((condition, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                <p className="font-medium text-gray-800">✓ {condition}</p>
+             <div key={index} className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+             <p className="text-lg font-medium text-gray-800">✓ {condition}</p>
               </div>
             ))}
           </div>
