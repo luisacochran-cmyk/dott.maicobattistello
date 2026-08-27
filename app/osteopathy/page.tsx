@@ -24,9 +24,9 @@ export default function OsteopathyPage() {
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose max-w-none">
-          <h2 className="text-2xl font-semibold mb-6">Cos'è l'Osteopatia?</h2>
+        <h2 className="text-3xl font-bold mb-6">Cos'è l'Osteopatia?</h2>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
            L'Osteopatia è una <strong>terapia manuale</strong> che valuta le relazioni tra <strong>struttura e funzione del corpo</strong>, con particolare attenzione alla colonna vertebrale, alle articolazioni, al sistema muscolare e ai tessuti connettivi.
 
 Attraverso una valutazione accurata e tecniche manuali specifiche, l'osteopata individua le alterazioni della mobilità e della funzione che possono contribuire a <strong>dolore</strong>, limitazioni del movimento e <strong>disturbi muscolo-scheletrici</strong>.
@@ -39,21 +39,39 @@ Il trattamento viene adattato alle caratteristiche della persona, con l'obiettiv
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
           <h3 className="text-xl font-semibold mb-3">📍 Trattamenti Osteopatici nelle principali città</h3>
-          <p className="mb-4">Il Dr. Maico Battistello offre trattamenti osteopatici anche presso:</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <Link href="/osteopatia-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Osteopatia a Padova
-            </Link>
-           <Link href="/osteopatia-marostica" className="text-blue-600 hover:text-blue-800 underline font-medium">
-  → Osteopatia a Marostica
-</Link>
-            <Link href="/osteopatia-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Osteopatia a Schio
-            </Link>
-            <Link href="/osteopatia-malo" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Osteopatia a Malo
-            </Link>
-          </div>
+         <p className="text-lg leading-relaxed mb-4">
+  Il Dr. Maico Battistello offre trattamenti osteopatici anche presso:
+</p>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+  <Link
+    href="/osteopatia-padova"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Osteopatia a Padova
+  </Link>
+
+  <Link
+    href="/osteopatia-marostica"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Osteopatia a Marostica
+  </Link>
+
+  <Link
+    href="/osteopatia-schio"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Osteopatia a Schio
+  </Link>
+
+  <Link
+    href="/osteopatia-malo"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Osteopatia a Malo
+  </Link>
+</div>
         </div>
       </div>
 
