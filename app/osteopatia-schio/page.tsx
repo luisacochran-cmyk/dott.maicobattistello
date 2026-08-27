@@ -37,12 +37,12 @@ export default function OsteopatiaSchioPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+      <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
-       <p className="text-lg mb-6">
+      <p className="text-xl leading-relaxed mb-8">
   L’<strong>Osteopatia</strong> è una disciplina manuale che si basa sulla valutazione e sul trattamento delle disfunzioni che possono influire sull’equilibrio e sulla mobilità del corpo.
 
   A <strong>Schio</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone di ogni età, con un approccio orientato alla ricerca delle cause funzionali che possono contribuire a dolore, rigidità e limitazioni del movimento.
