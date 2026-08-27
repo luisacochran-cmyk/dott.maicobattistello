@@ -73,7 +73,7 @@ export function ConditionsSection() {
             Per quali disturbi può essere utile una valutazione?
           </h2>
 
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Il dolore e la limitazione funzionale possono avere origini
             differenti. Una valutazione medica permette di comprendere il
             quadro della persona e individuare il percorso più appropriato.
