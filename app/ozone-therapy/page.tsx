@@ -42,21 +42,36 @@ export default function OzoneTherapyPage() {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
           <h3 className="text-xl font-semibold mb-3">📍 Trattamenti di Ozonoterapia nelle principali città</h3>
-          <p className="mb-4">Il Dr. Maico Battistello offre trattamenti di ozonoterapia anche presso:</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <Link href="/ozonoterapia-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Ozonoterapia a Padova
-            </Link>
-         <Link href="/ozonoterapia-marostica" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Ozonoterapia a Marostica
-            </Link>
-            <Link href="/ozonoterapia-schio" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Ozonoterapia a Schio
-            </Link>
-            <Link href="/ozonoterapia-malo" className="text-blue-600 hover:text-blue-800 underline font-medium">
-              → Ozonoterapia a Malo
-            </Link>
-          </div>
+         <p className="text-lg leading-relaxed mb-4">Il Dr. Maico Battistello offre trattamenti di ozonoterapia anche presso:</p>
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+  <Link
+    href="/ozonoterapia-padova"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Ozonoterapia a Padova
+  </Link>
+
+  <Link
+    href="/ozonoterapia-marostica"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Ozonoterapia a Marostica
+  </Link>
+
+  <Link
+    href="/ozonoterapia-schio"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Ozonoterapia a Schio
+  </Link>
+
+  <Link
+    href="/ozonoterapia-malo"
+    className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
+  >
+    → Ozonoterapia a Malo
+  </Link>
+</div>
         </div>
       </div>
 
@@ -201,15 +216,14 @@ export default function OzoneTherapyPage() {
 </div>
             </AccordionContent>
           </AccordionItem>
-
-      <AccordionItem value="clinical-therapeutic-indications">
+<AccordionItem value="clinical-therapeutic-indications">
   <AccordionTrigger className="text-2xl font-bold py-5">
     Indicazioni Clinico-Terapeutiche
   </AccordionTrigger>
 
   <AccordionContent>
     <div className="space-y-6 pb-4">
-      <p className="text-lg leading-relaxed">
+      <p className="text-lg md:text-xl leading-relaxed">
         Grazie alla Medicina Basata sull&apos;Evidenza (EBM), le indicazioni
         dell&apos;ossigeno-ozonoterapia possono essere suddivise in tre categorie
         in base al livello di evidenza disponibile.
@@ -227,13 +241,13 @@ export default function OzoneTherapyPage() {
               Evidenza di Tipo A
             </h4>
 
-            <p className="mt-2 text-base leading-relaxed text-gray-700">
+            <p className="mt-2 text-lg leading-relaxed text-gray-700">
               Basata su revisioni sistematiche con omogeneità di studi
               caso-controllo. Le principali applicazioni cliniche riconosciute
               dal Ministero della Salute includono:
             </p>
 
-            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-base md:grid-cols-2">
+            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-lg md:grid-cols-2">
               <li>Ernie discali</li>
               <li>Protrusioni discali</li>
               <li>Discopatie</li>
@@ -247,7 +261,7 @@ export default function OzoneTherapyPage() {
       {/* Evidenza Tipo B */}
       <div className="rounded-xl border border-blue-200 bg-white p-6 shadow-sm">
         <div className="flex items-start gap-4">
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-blue-600 text-xl font-bold text-blue-700">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-blue-600 text-xl font-bold text-blue-600">
             B
           </div>
 
@@ -256,12 +270,12 @@ export default function OzoneTherapyPage() {
               Evidenza di Tipo B
             </h4>
 
-            <p className="mt-2 text-base leading-relaxed text-gray-700">
+            <p className="mt-2 text-lg leading-relaxed text-gray-700">
               Basata su singoli studi randomizzati, studi di coorte o studi
               caso-controllo.
             </p>
 
-            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-base md:grid-cols-2">
+            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-lg md:grid-cols-2">
               <li>Patologie ortopediche</li>
               <li>Piede diabetico</li>
               <li>Ulcere cutanee e ustioni</li>
@@ -283,12 +297,12 @@ export default function OzoneTherapyPage() {
               Evidenza di Tipo C
             </h4>
 
-            <p className="mt-2 text-base leading-relaxed text-gray-700">
+            <p className="mt-2 text-lg leading-relaxed text-gray-700">
               Basata su opinioni di esperti senza ricerca sistematica o
               scientifica specifica.
             </p>
 
-            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-base md:grid-cols-2">
+            <ul className="mt-4 grid list-disc gap-x-8 gap-y-2 pl-6 text-lg md:grid-cols-2">
               <li>Long Covid</li>
               <li>Fibromialgia</li>
               <li>Stanchezza cronica (CFS)</li>
@@ -313,7 +327,7 @@ export default function OzoneTherapyPage() {
       </div>
 
       <div className="rounded-lg border-l-4 border-blue-600 bg-blue-50 px-5 py-4">
-        <p className="text-base leading-relaxed text-gray-700">
+        <p className="text-lg leading-relaxed text-gray-700">
           <strong>Le indicazioni vengono valutate caso per caso.</strong>{" "}
           L&apos;ossigeno-ozonoterapia non sostituisce le terapie mediche
           convenzionali, ma può integrarsi in un percorso clinico appropriato.
@@ -322,37 +336,47 @@ export default function OzoneTherapyPage() {
     </div>
   </AccordionContent>
 </AccordionItem>
-          <AccordionItem value="contraindications">
-            <AccordionTrigger className="text-2xl font-bold py-5">Controindicazioni</AccordionTrigger>
-            <AccordionContent>
-             <div className="prose prose-lg max-w-none leading-relaxed">
-                <p className="text-lg">
-                  A concentrazioni terapeutiche, l'Ossigeno-Ozonoterapia non ha effetti collaterali. Non è un
-                  trattamento doloroso. Non provoca reazioni allergiche. Non interferisce con i farmaci in uso.
-                </p>
 
-                <p className="text-lg mt-4">Le controindicazioni sono limitate alla GAET per le seguenti condizioni:</p>
-               <ul className="list-disc pl-6 text-lg">
-                  <li>Favismo</li>
-                  <li>Ipertiroidismo grave</li>
-                  <li>Allergie al citrato e agli anticoagulanti</li>
-                  <li>Epilessia</li>
-                  <li>Gravidanza</li>
-                  <li>Sport agonistico</li>
-                </ul>
+<AccordionItem value="contraindications">
+  <AccordionTrigger className="text-2xl font-bold py-5">
+    Controindicazioni
+  </AccordionTrigger>
 
-                <p className="text-lg mt-4">
-                  Tutti i trattamenti con ozono vengono eseguiti utilizzando apparecchiature certificate, aderendo alle
-                  linee guida sviluppate dalle principali società scientifiche nazionali e internazionali, come:
-                </p>
-               <ul className="list-disc pl-6 text-lg">
-                  <li>SIOOT (Società Scientifica Internazionale di Ossigeno-Ozonoterapia)</li>
-                  <li>Nuova FIO (Federazione Italiana di Ossigeno-Ozonoterapia)</li>
-                  <li>ISCO3 (Comitato Scientifico Internazionale di Ozonoterapia)</li>
-                </ul>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+  <AccordionContent>
+    <div className="prose prose-lg max-w-none leading-relaxed">
+      <p className="text-lg md:text-xl leading-relaxed">
+        A concentrazioni terapeutiche, l&apos;Ossigeno-Ozonoterapia non ha effetti
+        collaterali. Non è un trattamento doloroso. Non provoca reazioni
+        allergiche. Non interferisce con i farmaci in uso.
+      </p>
+
+      <p className="mt-4 text-lg md:text-xl leading-relaxed">
+        Le controindicazioni sono limitate alla GAET per le seguenti condizioni:
+      </p>
+
+      <ul className="list-disc pl-6 text-lg leading-relaxed">
+        <li>Favismo</li>
+        <li>Ipertiroidismo grave</li>
+        <li>Allergie al citrato e agli anticoagulanti</li>
+        <li>Epilessia</li>
+        <li>Gravidanza</li>
+        <li>Sport agonistico</li>
+      </ul>
+
+      <p className="mt-4 text-lg md:text-xl leading-relaxed">
+        Tutti i trattamenti con ozono vengono eseguiti utilizzando apparecchiature
+        certificate, aderendo alle linee guida sviluppate dalle principali società
+        scientifiche nazionali e internazionali, come:
+      </p>
+
+      <ul className="list-disc pl-6 text-lg leading-relaxed">
+        <li>SIOOT (Società Scientifica Internazionale di Ossigeno-Ozonoterapia)</li>
+        <li>Nuova FIO (Federazione Italiana di Ossigeno-Ozonoterapia)</li>
+        <li>ISCO3 (Comitato Scientifico Internazionale di Ozonoterapia)</li>
+      </ul>
+    </div>
+  </AccordionContent>
+</AccordionItem>
         </Accordion>
       </section>
 
