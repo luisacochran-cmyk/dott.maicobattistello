@@ -33,7 +33,7 @@ export default function MedicinaLegalemarosticaPage() {
       />
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+        <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
@@ -52,17 +52,29 @@ export default function MedicinaLegalemarosticaPage() {
   <p>
     Ogni valutazione viene svolta attraverso l’analisi della documentazione clinica, l’inquadramento del caso e, quando necessario, la visita specialistica.
   </p>
+</div><div className="text-xl leading-relaxed mb-8 space-y-4">
+  <p>
+    Il Dr. Maico Battistello svolge attività di medicina legale a Marostica, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative di Marostica, Bassano del Grappa e dei comuni limitrofi.
+  </p>
+
+  <p>
+    La consulenza medico-legale può essere utile in caso di danno biologico, infortuni, sinistri stradali, invalidità permanente, responsabilità professionale e controversie assicurative.
+  </p>
+
+  <p>
+    Ogni valutazione viene svolta attraverso l’analisi della documentazione clinica, l’inquadramento del caso e, quando necessario, la visita specialistica.
+  </p>
 </div>
 
           <h3 className="text-xl font-semibold mb-4">Servizi di Medicina Legale a {city.name}</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             {service.conditions.map((condition, index) => (
-              <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm">
-                <p className="font-medium text-gray-800">✓ {condition}</p>
+             <div key={index} className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+               <p className="text-lg font-medium text-gray-800">✓ {condition}</p>
               </div>
             ))}
-          </div>
+          
 
           <h3 className="text-xl font-semibold mb-4">Vantaggi della Consulenza con il Dr. Battistello</h3>
 
