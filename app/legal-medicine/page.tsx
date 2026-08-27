@@ -21,22 +21,22 @@ export default function LegalMedicinePage() {
       />
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+      <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">Medicina Legale – Dr. Maico Battistello</h1>
 
           <h2 className="text-2xl font-semibold mb-6 text-primary border-b-2 border-primary pb-3">Cos'è la Medicina Legale</h2>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
             La medicina legale è la disciplina che mette in relazione <strong>scienza medica e diritto</strong>. Si occupa di analizzare e valutare, secondo criteri scientifici, gli aspetti <strong>clinici, diagnostici e prognostici</strong> di un evento lesivo o di una patologia, al fine di stabilirne le <strong>conseguenze giuridiche, assicurative o risarcitorie</strong>.
           </p>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
             In ambito pratico, la medicina legale interviene in tutte le situazioni in cui è necessario un <strong>parere tecnico qualificato</strong> per chiarire l'entità del danno alla persona, la correttezza delle cure e la <strong>relazione causale tra evento e menomazione</strong>. Questa disciplina è quindi un punto d'incontro tra il mondo della medicina e quello della giustizia, con l'obiettivo di tutelare il paziente e garantire equità nelle valutazioni medico-assicurative.
           </p>
 
           <h2 className="text-2xl font-semibold mb-6 text-primary border-b-2 border-primary pb-3 mt-10">Presentazione</h2>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
             Sono il <strong>Dr. Maico Battistello</strong>, medico chirurgo con esperienza dal 2001 in ambito di <strong>medicina legale e delle assicurazioni</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati, e agenzie.
           </p>
 
@@ -72,13 +72,13 @@ export default function LegalMedicinePage() {
 
           <h2 className="text-2xl font-semibold mb-6 text-primary border-b-2 border-primary pb-3 mt-10">Consulenze Tecniche di Parte (CTP)</h2>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
             Offro attività di <strong>Consulente Tecnico di Parte</strong> in procedimenti civili, con studio del caso e della documentazione sanitaria; parere scritto preventivo sulla sostenibilità della richiesta risarcitoria; assistenza durante le operazioni peritali; confronto tecnico con CTU e altre parti coinvolte. L'obiettivo è tutelare in modo rigoroso e scientificamente fondato gli interessi del cliente.
           </p>
 
           <h2 className="text-2xl font-semibold mb-6 text-primary border-b-2 border-primary pb-3 mt-10">Approccio Integrato Medico-Legale e Terapeutico</h2>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
             In qualità di medico legale, osteopata e ozonoterapeuta, unisco alla valutazione del danno una <strong>visione clinica completa</strong>. Questo mi permette di valutare la <strong>pertinenza e la congruità delle terapie eseguite</strong>; indicare quando siano necessari <strong>esami diagnostico-strumentali aggiuntivi</strong> per documentare al meglio le lesioni; e correlare in modo preciso <strong>quadro clinico, iter terapeutico e menomazioni permanenti</strong>. Questo approccio integrato offre un vantaggio concreto in ambito assicurativo e giudiziario.
           </p>
 
@@ -91,7 +91,7 @@ export default function LegalMedicinePage() {
             <li>Agenzie che necessitano di <strong>supporto medico-legale</strong> sui propri assistiti</li>
           </ul>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-6">
             Per i dettagli sui prezzi e per prenotare una consulenza, contattami ora cliccando{" "}
             <Link href="/contacts" className="text-primary hover:text-primary-dark underline">
               qui
@@ -99,9 +99,9 @@ export default function LegalMedicinePage() {
             .
           </p>
 
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-            <h3 className="text-xl font-semibold mb-3">📍 Consulenze Medicina Legale nelle principali città</h3>
-            <p className="mb-4">Il Dr. Maico Battistello offre consulenze medico-legali presso:</p>
+       <h3 className="text-xl font-semibold mb-3">📍 Consulenze Medicina Legale nelle principali città</h3>
+<p className="text-lg leading-relaxed mb-4">Il Dr. Maico Battistello offre consulenze medico-legali presso:</p>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Link href="/medicina-legale-padova" className="text-blue-600 hover:text-blue-800 underline font-medium">
                 → Medicina Legale a Padova
