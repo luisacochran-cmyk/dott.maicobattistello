@@ -37,12 +37,12 @@ export default function OsteopatiaMarosticaPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+     <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
-          <p className="text-lg mb-6">
+         <p className="text-xl leading-relaxed mb-8">
   L’<strong>Osteopatia</strong> è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di individuare e trattare le alterazioni funzionali che possono influire sul movimento, sulla postura e sul benessere generale.
 
   A <strong>Marostica</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone di ogni età, attraverso una valutazione accurata delle problematiche muscolo-scheletriche, delle tensioni posturali e delle limitazioni funzionali.
