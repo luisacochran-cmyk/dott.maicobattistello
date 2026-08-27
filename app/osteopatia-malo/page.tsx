@@ -43,7 +43,7 @@ export default function OsteopatiaMaloPage() {
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
   
-<p className="text-lg leading-relaxed mb-8">
+<p className="text-xl leading-relaxed mb-8">
   L’Osteopatia è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di individuare e trattare le alterazioni funzionali che possono contribuire a <strong>dolore</strong>, rigidità e limitazioni del movimento.
 
   A <strong>Monte di Malo</strong>, il Dr. Maico Battistello svolge <strong>trattamenti osteopatici personalizzati</strong> rivolti ad adulti, anziani, sportivi e donne in gravidanza, attraverso una valutazione accurata della postura, della mobilità articolare e delle tensioni muscolo-fasciali.
