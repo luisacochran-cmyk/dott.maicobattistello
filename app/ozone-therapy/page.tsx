@@ -25,9 +25,9 @@ export default function OzoneTherapyPage() {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
        <div className="prose prose-lg max-w-none leading-relaxed">
-          <h2 className="text-2xl font-semibold mb-6">Cos'è l'Ozonoterapia?</h2>
+       <h2 className="text-3xl font-bold mb-6">Cos'è l'Ozonoterapia?</h2>
 
-<p className="text-lg mb-6">
+<p className="text-xl leading-relaxed mb-6">
   L’<strong>ossigeno-ozonoterapia</strong> utilizza una miscela di ossigeno e ozono impiegata in diversi ambiti della pratica medica come supporto nel trattamento di specifiche condizioni cliniche. Le modalità di applicazione vengono valutate dal medico in base alle caratteristiche del paziente e al quadro clinico.
 
   L’<strong>ozono medicale</strong> è oggetto di interesse per le sue proprietà biologiche e viene utilizzato, in contesti appropriati, come supporto nei percorsi terapeutici rivolti a <strong>patologie muscolo-scheletriche</strong>, stati infiammatori e condizioni dolorose.
