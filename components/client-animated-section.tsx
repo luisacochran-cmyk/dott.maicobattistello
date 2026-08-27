@@ -359,7 +359,7 @@ export function FaqSection() {
                   {faq.question}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+               <p className="text-lg text-gray-600 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
