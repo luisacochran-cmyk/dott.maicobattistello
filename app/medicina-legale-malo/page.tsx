@@ -33,16 +33,14 @@ export default function MedicinaLegaleMaloPage() {
       />
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+      <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
-        <div className="text-lg mb-6 space-y-4">
+        <div className="text-xl leading-relaxed mb-8 space-y-4">
   <p>
-    <p>
-  Il Dr. Maico Battistello svolge attività di medicina legale a Monte di Malo, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative dell’area dell’Alto Vicentino.
-</p>
+    Il Dr. Maico Battistello svolge attività di medicina legale a Monte di Malo, offrendo consulenze medico-legali rivolte a privati, professionisti, studi legali e compagnie assicurative dell’area dell’Alto Vicentino.
   </p>
 
   <p>
