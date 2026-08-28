@@ -137,20 +137,20 @@ export default function ChiSonoPage() {
                   attività professionale, attraverso visite e consulenze
                   medico-legali.
                 </p>
+
+                <p>
+                  Parallelamente, l&apos;interesse per una lettura funzionale
+                  dell&apos;apparato muscolo-scheletrico lo porta ad
+                  approfondire l&apos;Osteopatia. Nel 2005 consegue il diploma
+                  presso l&apos;Istituto Europeo per la Medicina Osteopatica
+                  (EIOM) di Padova.
+                </p>
               </div>
             </div>
           </div>
 
           <div className="prose prose-lg max-w-none mt-10 md:mt-12">
             <div className="text-xl leading-relaxed space-y-6">
-              <p>
-                Parallelamente, l&apos;interesse per una lettura funzionale
-                dell&apos;apparato muscolo-scheletrico lo porta ad
-                approfondire l&apos;Osteopatia. Nel 2005 consegue il diploma
-                presso l&apos;Istituto Europeo per la Medicina Osteopatica
-                (EIOM) di Padova.
-              </p>
-
               <p>
                 Dal 2017 integra nella propria attività clinica anche
                 l&apos;Ossigeno-Ozonoterapia, ampliando ulteriormente le
