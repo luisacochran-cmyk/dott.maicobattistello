@@ -5,7 +5,6 @@ import ContactForm from "@/components/contact-form"
 import { Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import AnimatedScrollElement from "@/components/animated-scroll-element"
-import AnimatedLink from "@/components/animated-link"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
@@ -34,43 +33,84 @@ export default function OzonoOsteoPadovaPage() {
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
-            { label: "Ozonoterapia + Osteopatia", href: "/ozone-osteopathy" },
-            { label: `${city.name}`, href: `/ozono-osteo-${city.slug}` },
+            {
+              label: "Ozonoterapia + Osteopatia",
+              href: "/ozonoterapia-osteopatia",
+            },
+            {
+              label: city.name,
+              href: `/ozono-osteo-${city.slug}`,
+            },
           ]}
         />
       </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+        <div className="prose prose-lg max-w-none">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-         <AnimatedScrollElement direction="up" delay={0.1}>
-  <p className="text-lg mb-6">
-    A <strong>Padova</strong>, il Dr. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un percorso personalizzato rivolto a pazienti con dolore muscolo-scheletrico, disturbi articolari e problematiche funzionali della colonna. In un contesto urbano, dove sedentarietà, lavoro d'ufficio e sovraccarichi posturali sono frequenti, l'approccio integrato permette di affrontare problematiche frequentemente associate a <strong>sedentarietà</strong>, <strong>lavoro d'ufficio</strong> e <strong>sovraccarichi posturali</strong>, valutando sia gli aspetti <strong>funzionali</strong> sia quelli <strong>infiammatori</strong> del disturbo.
-  </p>
-</AnimatedScrollElement>
-         <AnimatedScrollElement direction="up" delay={0.2}>
-  <h3 className="text-xl font-semibold mb-4">
-    Quando può essere indicato l'approccio integrato a Padova
-  </h3>
-  <ul className="list-disc pl-6 mb-6 space-y-2">
-    <li>Cervicalgia e lombalgia</li>
-    <li>Dolore cervicale legato a postura e lavoro sedentario</li>
-    <li>Ernie e protrusioni discali</li>
-    <li>Sciatalgia e dolore radicolare</li>
-    <li>Artrosi e problematiche articolari</li>
-    <li>Contratture muscolari persistenti</li>
-    <li>Disturbi muscolo-scheletrici cronici</li>
-  </ul>
-</AnimatedScrollElement>
+          <AnimatedScrollElement direction="up" delay={0.1}>
+            <div className="text-xl mb-8 space-y-5">
+              <p>
+                A <strong>Padova</strong>, il Dr. Maico Battistello integra
+                ossigeno-ozonoterapia e osteopatia in un percorso personalizzato
+                rivolto a pazienti con dolore muscolo-scheletrico, disturbi
+                articolari e problematiche funzionali della colonna.
+              </p>
 
+              <p>
+                In un contesto urbano, dove <strong>sedentarietà</strong>,{" "}
+                <strong>lavoro d&apos;ufficio</strong> e{" "}
+                <strong>sovraccarichi posturali</strong> sono frequenti,
+                l&apos;approccio integrato consente di valutare sia gli aspetti{" "}
+                <strong>funzionali</strong> sia quelli{" "}
+                <strong>infiammatori</strong> del disturbo.
+              </p>
+            </div>
+          </AnimatedScrollElement>
+
+          <AnimatedScrollElement direction="up" delay={0.2}>
+            <h3 className="text-2xl font-semibold mb-5">
+              Quando può essere indicato l&apos;approccio integrato a Padova
+            </h3>
+
+            <ul className="list-disc pl-6 mb-8 text-lg space-y-3">
+              <li>Cervicalgia e lombalgia</li>
+              <li>Dolore cervicale legato a postura e lavoro sedentario</li>
+              <li>Ernie e protrusioni discali</li>
+              <li>Sciatalgia e dolore radicolare</li>
+              <li>Artrosi e problematiche articolari</li>
+              <li>Contratture muscolari persistenti</li>
+              <li>Disturbi muscolo-scheletrici cronici</li>
+            </ul>
+          </AnimatedScrollElement>
+
+          <AnimatedScrollElement direction="up" delay={0.3}>
+            <p className="text-lg mb-8">
+              La scelta del trattamento viene sempre definita dopo una{" "}
+              <strong>valutazione individuale</strong>. In alcuni casi può
+              essere indicata prevalentemente l&apos;ossigeno-ozonoterapia, in
+              altri l&apos;osteopatia; in altri ancora può essere utile un{" "}
+              <strong>approccio integrato</strong> tra le due metodiche.
+            </p>
+          </AnimatedScrollElement>
+
+          {/* CTA */}
           <AnimatedScrollElement direction="up" delay={0.4}>
-            <div className="mt-8 text-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift">
-                <Link href="/contacts" className="flex items-center gap-2 no-underline">
-                  <Calendar className="h-5 w-5" />
-                  <span>Prenota un Appuntamento</span>
+            <div className="my-10 text-center">
+              <Button
+                asChild
+                className="h-auto bg-primary hover:bg-primary-dark text-white text-lg font-semibold px-8 py-4 rounded-lg hover-lift"
+              >
+                <Link
+                  href="/contacts"
+                  className="flex items-center justify-center gap-3 no-underline"
+                >
+                  <Calendar className="h-6 w-6" />
+                  <span className="text-lg font-semibold">
+                    Prenota un Appuntamento
+                  </span>
                 </Link>
               </Button>
             </div>
