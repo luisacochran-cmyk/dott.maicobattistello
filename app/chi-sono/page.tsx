@@ -6,17 +6,17 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Chi Sono - Dr. Maico Battistello | Medico Specialista",
   description:
-    "Dr. Maico Battistello, laureato in Medicina e Chirurgia, specializzato in Osteopatia, Ozonoterapia e Medicina Legale. Esperienza dal 1999.",
+    "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta. Un percorso professionale costruito tra Medicina, valutazione funzionale e approccio personalizzato.",
   openGraph: {
     title: "Chi Sono - Dr. Maico Battistello",
     description:
-      "Dr. Maico Battistello, specializzato in Osteopatia, Ozonoterapia e Medicina Legale",
+      "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
     images: [
       {
         url: "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
         width: 800,
         height: 600,
-        alt: "Dr. Maico Battistello - Medico Specialista",
+        alt: "Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta",
       },
     ],
     type: "profile",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chi Sono - Dr. Maico Battistello",
     description:
-      "Dr. Maico Battistello, specializzato in Osteopatia, Ozonoterapia e Medicina Legale",
+      "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
     images: [
       "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
     ],
@@ -42,7 +42,7 @@ export default function ChiSonoPage() {
     name: "Dr. Maico Battistello",
     jobTitle: "Medico Chirurgo",
     description:
-      "Specializzato in Osteopatia, Ozonoterapia e Medicina Legale",
+      "Medico Legale, Osteopata e Ozonoterapeuta",
     image:
       "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
     url: "https://dottmaicobattistello.it/chi-sono",
@@ -58,9 +58,9 @@ export default function ChiSonoPage() {
       },
     ],
     knowsAbout: [
+      "Medicina Legale",
       "Osteopatia",
       "Ozonoterapia",
-      "Medicina Legale",
       "Pet Therapy",
     ],
   }
@@ -82,108 +82,138 @@ export default function ChiSonoPage() {
           ]}
         />
 
-        <div className="container mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-1/3">
-              <div className="w-[340px] max-w-full h-[476px] mx-auto">
+        <div className="container mx-auto px-4 py-10 max-w-7xl">
+          <div className="flex flex-col md:flex-row gap-10 lg:gap-16 items-start">
+
+            <div className="md:w-[38%] lg:w-[36%]">
+              <div className="w-[380px] max-w-full h-[532px] mx-auto md:mx-0">
                 <img
                   src="/images/medicinalegale1.jpg"
-                  alt="Dr. Maico Battistello - Medico Specialista in Osteopatia, Ozonoterapia e Medicina Legale"
-                  className="w-full h-full object-cover rounded-lg"
+                  alt="Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta"
+                  className="w-full h-full object-cover rounded-xl shadow-sm"
                   itemProp="image"
                 />
               </div>
             </div>
 
             <div
-              className="md:w-2/3"
+              className="md:w-[62%] lg:w-[64%] prose prose-lg max-w-none"
               itemScope
               itemType="https://schema.org/Person"
             >
               <h1
-                className="text-3xl font-bold mb-2"
+                className="text-3xl font-bold mb-3"
                 itemProp="name"
               >
                 Dr. Maico Battistello
               </h1>
 
               <h2
-                className="text-xl mb-1 italic text-gray-600"
+                className="text-xl mb-4 italic text-gray-600"
                 itemProp="jobTitle"
               >
-                Laureato in Medicina e Chirurgia
+                Medico Legale · Osteopata · Ozonoterapeuta
               </h2>
 
-              <h3
-                className="text-lg mb-4 italic text-gray-600"
-                itemProp="description"
-              >
-                Medico Legale, Osteopata e Ozonoterapeuta
-              </h3>
+              <p className="text-xl font-medium leading-relaxed mb-8 text-gray-800">
+                Competenze diverse, una stessa attenzione alla persona.
+              </p>
 
-              <div className="space-y-4">
-                <p
-                  className="text-lg"
-                  itemProp="description"
-                >
+              <div className="text-lg leading-relaxed space-y-6">
+
+                <p itemProp="description">
+                  Il percorso professionale del Dr. Maico Battistello nasce
+                  dalla Medicina e si sviluppa negli anni attraverso ambiti
+                  differenti, uniti da un interesse costante per la
+                  comprensione del corpo, della sua funzionalità e delle
+                  conseguenze che dolore, trauma e alterazioni
+                  muscolo-scheletriche possono avere sulla vita della persona.
+                </p>
+
+                <p>
                   Laureato in Medicina e Chirurgia presso
-                  l&apos;Università di Padova nel 1999 e
-                  specializzato in Medicina Legale presso
-                  l&apos;Università di Parma nel 2004. Nel 2005
-                  ha conseguito il diploma in Osteopatia presso
-                  l&apos;Istituto Europeo per la Medicina
-                  Osteopatica (EIOM) di Padova e dal 2017 integra
-                  nella propria attività clinica
-                  l&apos;Ossigeno-Ozonoterapia.
+                  l&apos;Università di Padova nel 1999, prosegue la propria
+                  formazione conseguendo nel 2004 la specializzazione in
+                  Medicina Legale presso l&apos;Università di Parma. Un
+                  ambito che ancora oggi rappresenta una parte importante
+                  della sua attività professionale, attraverso visite e
+                  consulenze medico-legali.
                 </p>
 
-                <p className="text-lg mt-4">
-                  Nel 2019 ha conseguito la certificazione in Pet
-                  Therapy, qualificandosi come Project Manager,
-                  Coordinatore di Intervento e Conduttore di Cani.
+                <p>
+                  Parallelamente, l&apos;interesse per una lettura funzionale
+                  dell&apos;apparato muscolo-scheletrico lo porta ad
+                  approfondire l&apos;Osteopatia. Nel 2005 consegue il diploma
+                  presso l&apos;Istituto Europeo per la Medicina Osteopatica
+                  (EIOM) di Padova.
                 </p>
 
-                <p className="text-lg mt-4">
-                  La sua attività professionale è orientata alla
-                  presa in carico globale della persona, con
-                  particolare attenzione ai disturbi
-                  muscolo-scheletrici, al dolore cronico e alla
-                  costruzione di percorsi terapeutici
-                  personalizzati, integrando competenze di
-                  Medicina Legale, Osteopatia e
-                  Ossigeno-Ozonoterapia.
+                <p>
+                  Dal 2017 integra nella propria attività clinica anche
+                  l&apos;Ossigeno-Ozonoterapia, ampliando ulteriormente le
+                  possibilità di valutazione e trattamento delle problematiche
+                  dolorose e muscolo-scheletriche.
                 </p>
 
-                <p className="text-lg mt-4">
-                  Nell&apos;ambito
-                  dell&apos;Ossigeno-Ozonoterapia segue le linee
-                  guida e le buone pratiche riconosciute dalla
-                  Nuova FIO e dalla SIOOT.
+                <p className="text-xl font-medium leading-relaxed text-gray-900">
+                  È proprio dall&apos;incontro tra queste esperienze che nasce
+                  il suo modo di lavorare: non partire automaticamente da una
+                  tecnica, ma dalla comprensione del problema.
                 </p>
 
-                <p className="text-lg mt-4">
-                  È disponibile per visite e consulenze nelle sedi
-                  di Marostica, Malo, Schio e Padova.
+                <p>
+                  Osteopatia e Ossigeno-Ozonoterapia possono così essere
+                  utilizzate singolarmente oppure integrate, quando indicato,
+                  all&apos;interno di un percorso costruito sulle
+                  caratteristiche e sulle esigenze della singola persona.
                 </p>
+
+                <p>
+                  L&apos;obiettivo non è applicare lo stesso trattamento a
+                  tutti, ma valutare ciò che può essere più appropriato in quel
+                  momento, considerando il dolore insieme agli aspetti
+                  articolari, muscolari, funzionali e posturali che possono
+                  contribuire al disturbo.
+                </p>
+
+                <p>
+                  Accanto all&apos;attività medica, nel 2019 consegue anche la
+                  certificazione nell&apos;ambito della Pet Therapy,
+                  qualificandosi come Project Manager, Coordinatore di
+                  Intervento e Conduttore di Cani: un&apos;ulteriore esperienza
+                  all&apos;interno di un percorso professionale caratterizzato
+                  dall&apos;interesse per modalità diverse di relazione, cura
+                  e assistenza.
+                </p>
+
+                <p>
+                  Nell&apos;ambito dell&apos;Ossigeno-Ozonoterapia opera
+                  facendo riferimento alle linee guida e alle buone pratiche
+                  professionali del settore.
+                </p>
+
+                <p>
+                  Il Dr. Maico Battistello riceve su appuntamento nelle sedi di
+                  <strong> Marostica, Malo, Schio e Padova</strong>.
+                </p>
+
               </div>
             </div>
           </div>
         </div>
 
-        <div className="my-12">
-          <div className="my-12">
-            <WordCarousel
-              words={[
-                "Professionalità",
-                "Affidabilità",
-                "Esperienza",
-                "Passione",
-              ]}
-            />
-          </div>
-
-          <ContactForm />
+        <div className="my-14">
+          <WordCarousel
+            words={[
+              "Professionalità",
+              "Affidabilità",
+              "Esperienza",
+              "Passione",
+            ]}
+          />
         </div>
+
+        <ContactForm />
       </div>
     </>
   )
