@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/breadcrumb"
-import ContactForm from "@/components/contact-form"
 import {
   Accordion,
   AccordionContent,
@@ -480,8 +479,23 @@ export default function OzoneTherapyPage() {
         </Accordion>
       </section>
 
-      {/* Contact Form */}
-      <ContactForm />
-    </div>
-  )
-}
+    {/* CTA Contatti */}
+<section className="container mx-auto px-4 py-10 max-w-4xl">
+  <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 md:p-8 text-center">
+    <h2 className="text-2xl md:text-3xl font-semibold mb-3">
+      Vuoi richiedere una valutazione?
+    </h2>
+
+    <p className="text-lg leading-relaxed text-gray-700 mb-6">
+      Per informazioni sui trattamenti o per richiedere un appuntamento,
+      consulta la pagina dedicata ai contatti e alle sedi.
+    </p>
+
+    <Link
+      href="/contacts"
+      className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold no-underline hover:bg-blue-700 transition-colors"
+    >
+      Contatti e appuntamenti
+    </Link>
+  </div>
+</section>
