@@ -41,8 +41,7 @@ export default function ChiSonoPage() {
     "@type": "Person",
     name: "Dr. Maico Battistello",
     jobTitle: "Medico Chirurgo",
-    description:
-      "Medico Legale, Osteopata e Ozonoterapeuta",
+    description: "Medico Legale, Osteopata e Ozonoterapeuta",
     image:
       "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
     url: "https://dottmaicobattistello.it/chi-sono",
@@ -90,7 +89,6 @@ export default function ChiSonoPage() {
                   src="/images/medicinalegale1.jpg"
                   alt="Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta"
                   className="w-full h-auto object-cover rounded-xl shadow-sm"
-                  itemProp="image"
                 />
               </div>
             </div>
@@ -114,20 +112,19 @@ export default function ChiSonoPage() {
                 Medico Legale · Osteopata · Ozonoterapeuta
               </h2>
 
-              <p className="text-xl font-medium leading-relaxed mb-8 text-gray-800">
-                Competenze diverse, una stessa attenzione alla persona.
+              <p
+                className="text-xl font-medium leading-relaxed mb-8 text-gray-800"
+                itemProp="description"
+              >
+                Quello del Dr. Maico Battistello è un percorso professionale
+                cresciuto nel tempo, attraversando discipline diverse e
+                mettendole progressivamente in relazione. Dalla Medicina
+                Legale all&apos;Osteopatia, fino all&apos;Ossigeno-Ozonoterapia,
+                ogni nuova competenza ha aggiunto una prospettiva alla
+                precedente.
               </p>
 
               <div className="text-xl leading-relaxed space-y-6">
-                <p itemProp="description">
-                  Il percorso professionale del Dr. Maico Battistello nasce
-                  dalla Medicina e si sviluppa negli anni attraverso ambiti
-                  differenti, uniti da un interesse costante per la
-                  comprensione del corpo, della sua funzionalità e delle
-                  conseguenze che dolore, trauma e alterazioni
-                  muscolo-scheletriche possono avere sulla vita della persona.
-                </p>
-
                 <p>
                   Laureato in Medicina e Chirurgia presso
                   l&apos;Università di Padova nel 1999, prosegue la propria
@@ -160,18 +157,18 @@ export default function ChiSonoPage() {
 
               <div className="my-10 border-l-4 border-primary pl-6">
                 <p className="text-xl md:text-2xl font-semibold leading-relaxed text-gray-900 m-0">
-                  È proprio dall&apos;incontro tra queste esperienze che nasce
-                  il suo modo di lavorare: non partire automaticamente da una
-                  tecnica, ma dalla comprensione del problema.
+                  Osteopatia e Ossigeno-Ozonoterapia non sono rimaste, nel suo
+                  percorso, due competenze parallele. L&apos;esperienza maturata
+                  sul campo le ha portate a incontrarsi. Ed è proprio in questo
+                  incontro che oggi si riconosce uno degli elementi più
+                  distintivi del suo lavoro.
                 </p>
               </div>
 
               <p>
-                L&apos;obiettivo non è applicare lo stesso trattamento a tutti,
-                ma valutare ciò che può essere più appropriato in quel momento,
-                considerando il dolore insieme agli aspetti articolari,
-                muscolari, funzionali e posturali che possono contribuire al
-                disturbo.
+                Due discipline diverse, due prospettive sul dolore e sulla
+                funzionalità, un&apos;esperienza clinica che permette di
+                metterle in relazione.
               </p>
 
               <p>
