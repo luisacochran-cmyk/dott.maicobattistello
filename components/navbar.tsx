@@ -85,7 +85,9 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
      <span className="text-white text-base sm:text-xl font-bold whitespace-nowrap">
         Dott. Maico Battistello
       </span>
-      <span className="text-white/90 text-[9px] sm:text-xs font-medium whitespace-nowrap">
+    <span className="text-white/90 text-[9px] sm:text-sm font-medium whitespace-nowrap">
+  Medico Legale | Osteopata | Ozonoterapeuta
+</span>
         Medico Legale | Osteopata | Ozonoterapeuta
       </span>
     </div>
