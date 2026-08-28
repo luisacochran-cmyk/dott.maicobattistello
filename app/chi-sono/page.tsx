@@ -166,16 +166,6 @@ export default function ChiSonoPage() {
                 </p>
               </div>
 
-            <p>
-  L&apos;esperienza maturata in questi diversi ambiti gli permette oggi di
-  integrare Osteopatia e Ossigeno-Ozonoterapia all&apos;interno di un unico
-  percorso di valutazione e trattamento. Le due discipline possono essere
-  utilizzate anche separatamente, quando indicato, ma è dalla loro integrazione
-  che nasce uno degli elementi distintivi del suo approccio: scegliere e
-  combinare strumenti diversi sulla base delle caratteristiche e delle esigenze
-  della singola persona.
-</p>
-
               <p>
                 L&apos;obiettivo non è applicare lo stesso trattamento a tutti,
                 ma valutare ciò che può essere più appropriato in quel momento,
