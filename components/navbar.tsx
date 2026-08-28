@@ -92,8 +92,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
   </Link>
 
   {/* Desktop Navigation */}
-         
-         <nav className="hidden lg:flex items-center space-x-8 text-lg">
+        <nav className="hidden lg:flex items-center space-x-8 text-xl">
             <div className="relative group">
               <Link href="/ozonoterapia-osteopatia" className="nav-link font-bold">
                 Ozonoterapia + Osteopatia
