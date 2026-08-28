@@ -499,3 +499,6 @@ export default function OzoneTherapyPage() {
     </Link>
   </div>
 </section>
+    </div>
+  )
+}
