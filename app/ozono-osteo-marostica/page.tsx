@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import Breadcrumb from "@/components/breadcrumb";
-import ContactForm from "@/components/contact-form";
-import { Calendar } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import AnimatedScrollElement from "@/components/animated-scroll-element";
-import AnimatedLink from "@/components/animated-link";
-import QuadrantCarousel from "@/components/quadrant-carousel";
-import { cities, services, generateLocalSEO } from "@/lib/seo-config";
+import type { Metadata } from "next"
+import Link from "next/link"
+import Breadcrumb from "@/components/breadcrumb"
+import ContactForm from "@/components/contact-form"
+import { Calendar } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import AnimatedScrollElement from "@/components/animated-scroll-element"
+import QuadrantCarousel from "@/components/quadrant-carousel"
+import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
 const city = cities.find((c) => c.slug === "marostica")!
 const service = services.find((s) => s.slug === "ozono-osteo")!
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
     description: seoData.description,
     url: seoData.canonical,
   },
-};
+}
 
 export default function OzonoOsteoMarosticaPage() {
   return (
@@ -34,51 +33,83 @@ export default function OzonoOsteoMarosticaPage() {
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
-            { label: "Ozonoterapia + Osteopatia", href: "/ozone-osteopathy" },
-            { label: `${city.name}`, href: `/ozono-osteo-${city.slug}` },
+            {
+              label: "Ozonoterapia + Osteopatia",
+              href: "/ozonoterapia-osteopatia",
+            },
+            {
+              label: city.name,
+              href: `/ozono-osteo-${city.slug}`,
+            },
           ]}
         />
       </div>
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+        <div className="prose prose-lg max-w-none">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-         <AnimatedScrollElement direction="up" delay={0.1}>
-  <p className="text-lg mb-6">
-    A <strong>Marostica</strong>, il Dr. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un percorso personalizzato rivolto a persone con dolore muscolo-scheletrico, limitazioni funzionali e problematiche articolari. L'approccio combinato consente di valutare sia la componente <strong>infiammatoria</strong> sia le alterazioni della <strong>mobilità articolare, muscolare o posturale</strong>, adattando il trattamento alle caratteristiche e agli obiettivi della singola persona.
-  </p>
-</AnimatedScrollElement>
+          <AnimatedScrollElement direction="up" delay={0.1}>
+            <div className="text-xl mb-8 space-y-5">
+              <p>
+                A <strong>Marostica</strong>, il Dr. Maico Battistello integra
+                ossigeno-ozonoterapia e osteopatia in un percorso personalizzato
+                rivolto a persone con dolore muscolo-scheletrico, limitazioni
+                funzionali e problematiche articolari.
+              </p>
 
-         <AnimatedScrollElement direction="up" delay={0.2}>
-  <h3 className="text-xl font-semibold mb-4">
-    Quando può essere indicato l'approccio integrato a Marostica
-  </h3>
-  <ul className="list-disc pl-6 mb-6 space-y-2">
-    <li>Cervicalgia e lombalgia</li>
-    <li>Ernie e protrusioni discali</li>
-    <li>Sciatalgia e dolore radicolare</li>
-    <li>Artrosi e problematiche articolari</li>
-    <li>Contratture muscolari persistenti</li>
-    <li>Limitazioni della mobilità e recupero funzionale</li>
-    <li>Disturbi muscolo-scheletrici cronici</li>
-  </ul>
-</AnimatedScrollElement>
+              <p>
+                L&apos;approccio combinato consente di valutare sia la componente{" "}
+                <strong>infiammatoria</strong> sia le alterazioni della{" "}
+                <strong>mobilità articolare, muscolare o posturale</strong>,
+                adattando il trattamento alle caratteristiche e agli obiettivi
+                della singola persona.
+              </p>
+            </div>
+          </AnimatedScrollElement>
 
+          <AnimatedScrollElement direction="up" delay={0.2}>
+            <h3 className="text-2xl font-semibold mb-5">
+              Quando può essere indicato l&apos;approccio integrato a Marostica
+            </h3>
+
+            <ul className="list-disc pl-6 mb-8 text-lg space-y-3">
+              <li>Cervicalgia e lombalgia</li>
+              <li>Ernie e protrusioni discali</li>
+              <li>Sciatalgia e dolore radicolare</li>
+              <li>Artrosi e problematiche articolari</li>
+              <li>Contratture muscolari persistenti</li>
+              <li>Limitazioni della mobilità e recupero funzionale</li>
+              <li>Disturbi muscolo-scheletrici cronici</li>
+            </ul>
+          </AnimatedScrollElement>
+
+          <AnimatedScrollElement direction="up" delay={0.3}>
+            <p className="text-lg mb-8">
+              La scelta del trattamento viene sempre definita dopo una{" "}
+              <strong>valutazione individuale</strong>. In alcuni casi può
+              essere indicata prevalentemente l&apos;ossigeno-ozonoterapia, in
+              altri l&apos;osteopatia; in altri ancora può essere utile un{" "}
+              <strong>approccio integrato</strong> tra le due metodiche.
+            </p>
+          </AnimatedScrollElement>
+
+          {/* CTA */}
           <AnimatedScrollElement direction="up" delay={0.4}>
-            <div className="mt-8 text-center">
+            <div className="my-10 text-center">
               <Button
                 asChild
-                size="lg"
-                className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
+                className="h-auto bg-primary hover:bg-primary-dark text-white text-lg font-semibold px-8 py-4 rounded-lg hover-lift"
               >
                 <Link
                   href="/contacts"
-                  className="flex items-center gap-2 no-underline"
+                  className="flex items-center justify-center gap-3 no-underline"
                 >
-                  <Calendar className="h-5 w-5" />
-                  <span>Prenota un Appuntamento</span>
+                  <Calendar className="h-6 w-6" />
+                  <span className="text-lg font-semibold">
+                    Prenota un Appuntamento
+                  </span>
                 </Link>
               </Button>
             </div>
@@ -137,5 +168,5 @@ export default function OzonoOsteoMarosticaPage() {
         }}
       />
     </div>
-  );
+  )
 }
