@@ -57,7 +57,7 @@ export default function OzoneOsteopathyPage() {
               Quando può essere indicato un approccio integrato
             </h3>
 
-            <ul className="list-disc pl-6 mb-8 text-lg space-y-2">
+           <ul className="list-disc pl-6 mb-8 text-xl space-y-3">
               <li>Cervicalgia e lombalgia</li>
               <li>Ernie e protrusioni discali</li>
               <li>Sciatalgia e dolore radicolare</li>
@@ -79,11 +79,11 @@ export default function OzoneOsteopathyPage() {
 
           <AnimatedScrollElement direction="up" delay={0.4}>
             <div className="mt-8 text-center">
-              <Button
-                asChild
-                size="lg"
-                className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
-              >
+           <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary-dark text-white text-lg font-semibold px-8 py-6 hover-lift"
+            >
                 <Link href="/contacts" className="flex items-center gap-2 no-underline">
                   <Calendar className="h-5 w-5" />
                   <span>Prenota un Appuntamento</span>
