@@ -22,42 +22,55 @@ export default function OzoneOsteopathyPage() {
         <Breadcrumb
           items={[
             { label: "Home", href: "/" },
-            { label: "Ozonoterapia + Osteopatia", href: "/ozonoterapia-osteopatia" },
+            {
+              label: "Ozonoterapia + Osteopatia",
+              href: "/ozonoterapia-osteopatia",
+            },
           ]}
         />
       </div>
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose prose-lg max-w-none">
+
+          {/* INTRODUZIONE */}
           <AnimatedScrollElement direction="up" delay={0.1}>
-            <div className="text-xl mb-8 space-y-4">
+            <div className="text-xl mb-8 space-y-5">
               <p>
-                <strong>L'ossigeno-ozonoterapia e l'osteopatia</strong> sono due metodiche differenti che, in molti
-                casi, possono essere utilizzate in modo complementare.
+                <strong>L&apos;ossigeno-ozonoterapia e l&apos;osteopatia</strong>{" "}
+                sono due metodiche differenti che, in molti casi, possono essere
+                utilizzate in modo complementare.
               </p>
 
               <p>
-                Nella pratica clinica del Dr. Maico Battistello, l'associazione tra queste due discipline viene
-                frequentemente presa in considerazione quando il disturbo presenta sia una componente{" "}
+                Nella pratica clinica del Dr. Maico Battistello, l&apos;associazione
+                tra queste due discipline viene frequentemente presa in
+                considerazione quando il disturbo presenta sia una componente{" "}
                 <strong>infiammatoria</strong> sia alterazioni della{" "}
-                <strong>mobilità articolare, muscolare o posturale</strong>. In questi casi, l'utilizzo complementare
-                delle due metodiche può consentire un <strong>approccio più completo</strong> alle diverse componenti
+                <strong>
+                  mobilità articolare, muscolare o posturale
+                </strong>
+                . In questi casi, l&apos;utilizzo complementare delle due
+                metodiche può consentire un{" "}
+                <strong>approccio più completo</strong> alle diverse componenti
                 del problema.
               </p>
 
               <p>
-                L'obiettivo è intervenire non solo sul sintomo doloroso, ma anche sui fattori biomeccanici che possono
-                contribuire al mantenimento del problema nel tempo.
+                L&apos;obiettivo è intervenire non solo sul sintomo doloroso, ma
+                anche sui fattori biomeccanici che possono contribuire al
+                mantenimento del problema nel tempo.
               </p>
             </div>
           </AnimatedScrollElement>
 
+          {/* INDICAZIONI */}
           <AnimatedScrollElement direction="up" delay={0.2}>
-            <h3 className="text-2xl font-semibold mb-4">
+            <h3 className="text-2xl font-semibold mb-5">
               Quando può essere indicato un approccio integrato
             </h3>
 
-           <ul className="list-disc pl-6 mb-8 text-xl space-y-3">
+            <ul className="list-disc pl-6 mb-8 text-lg space-y-3">
               <li>Cervicalgia e lombalgia</li>
               <li>Ernie e protrusioni discali</li>
               <li>Sciatalgia e dolore radicolare</li>
@@ -69,71 +82,84 @@ export default function OzoneOsteopathyPage() {
             </ul>
           </AnimatedScrollElement>
 
+          {/* VALUTAZIONE */}
           <AnimatedScrollElement direction="up" delay={0.3}>
-            <p className="text-lg mb-6">
-              La scelta del trattamento viene sempre definita dopo una <strong>valutazione individuale</strong>. In
-              alcuni casi può essere indicata prevalentemente l'ossigeno-ozonoterapia, in altri l'osteopatia; in altri
-              ancora può essere utile un <strong>approccio integrato</strong> tra le due metodiche.
+            <p className="text-lg mb-8">
+              La scelta del trattamento viene sempre definita dopo una{" "}
+              <strong>valutazione individuale</strong>. In alcuni casi può essere
+              indicata prevalentemente l&apos;ossigeno-ozonoterapia, in altri
+              l&apos;osteopatia; in altri ancora può essere utile un{" "}
+              <strong>approccio integrato</strong> tra le due metodiche.
             </p>
           </AnimatedScrollElement>
 
+          {/* CTA */}
           <AnimatedScrollElement direction="up" delay={0.4}>
-            <div className="mt-8 text-center">
-           <Button
-            asChild
-            size="lg"
-            className="bg-primary hover:bg-primary-dark text-white text-lg font-semibold px-8 py-6 hover-lift"
-            >
-                <Link href="/contacts" className="flex items-center gap-2 no-underline">
-                  <Calendar className="h-5 w-5" />
-                  <span>Prenota un Appuntamento</span>
+            <div className="my-10 text-center">
+              <Button
+                asChild
+                className="h-auto bg-primary hover:bg-primary-dark text-white text-lg font-semibold px-8 py-4 rounded-lg hover-lift"
+              >
+                <Link
+                  href="/contacts"
+                  className="flex items-center justify-center gap-3 no-underline"
+                >
+                  <Calendar className="h-6 w-6" />
+                  <span className="text-lg font-semibold">
+                    Prenota un Appuntamento
+                  </span>
                 </Link>
               </Button>
             </div>
           </AnimatedScrollElement>
 
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-            <h3 className="text-2xl font-semibold mb-3">
-              Trattamento combinato Ozonoterapia + Osteopatia nelle sedi di:
-            </h3>
+          {/* SEDI */}
+          <AnimatedScrollElement direction="up" delay={0.45}>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+              <h3 className="text-2xl font-semibold mb-4">
+                Trattamento combinato Ozonoterapia + Osteopatia nelle sedi di:
+              </h3>
 
-            <p className="text-lg mb-4">
-              Il Dr. Maico Battistello offre il trattamento combinato Ozonoterapia + Osteopatia anche presso:
-            </p>
+              <p className="text-lg mb-5">
+                Il Dr. Maico Battistello offre il trattamento combinato
+                Ozonoterapia + Osteopatia anche presso:
+              </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
-              <Link
-                href="/ozono-osteo-padova"
-                className="text-blue-600 hover:text-blue-800 underline font-medium"
-              >
-                → Ozono + Osteo a Padova
-              </Link>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
+                <Link
+                  href="/ozono-osteo-padova"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  → Ozono + Osteo a Padova
+                </Link>
 
-              <Link
-                href="/ozono-osteo-marostica"
-                className="text-blue-600 hover:text-blue-800 underline font-medium"
-              >
-                → Ozono + Osteo a Marostica
-              </Link>
+                <Link
+                  href="/ozono-osteo-marostica"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  → Ozono + Osteo a Marostica
+                </Link>
 
-              <Link
-                href="/ozono-osteo-schio"
-                className="text-blue-600 hover:text-blue-800 underline font-medium"
-              >
-                → Ozono + Osteo a Schio
-              </Link>
+                <Link
+                  href="/ozono-osteo-schio"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  → Ozono + Osteo a Schio
+                </Link>
 
-              <Link
-                href="/ozono-osteo-malo"
-                className="text-blue-600 hover:text-blue-800 underline font-medium"
-              >
-                → Ozono + Osteo a Malo
-              </Link>
+                <Link
+                  href="/ozono-osteo-malo"
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  → Ozono + Osteo a Malo
+                </Link>
+              </div>
             </div>
-          </div>
+          </AnimatedScrollElement>
         </div>
       </div>
 
+      {/* CAROUSEL */}
       <AnimatedScrollElement direction="up" delay={0.5}>
         <div className="my-12">
           <QuadrantCarousel
