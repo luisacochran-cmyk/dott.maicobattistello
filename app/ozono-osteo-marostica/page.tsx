@@ -50,6 +50,7 @@ export default function OzonoOsteoMarosticaPage() {
         <div className="prose prose-lg max-w-none">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
+          {/* INTRODUZIONE */}
           <AnimatedScrollElement direction="up" delay={0.1}>
             <div className="text-xl mb-8 space-y-5">
               <p>
@@ -69,6 +70,23 @@ export default function OzonoOsteoMarosticaPage() {
             </div>
           </AnimatedScrollElement>
 
+          {/* AREA GEOGRAFICA */}
+          <AnimatedScrollElement direction="up" delay={0.15}>
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">
+                Ozonoterapia e Osteopatia a Marostica e nell&apos;area pedemontana
+              </h2>
+
+              <p className="text-lg">
+                Lo studio di <strong>Marostica</strong> è facilmente raggiungibile
+                anche da <strong>Bassano del Grappa, Nove, Schiavon, Colceresa,
+                Breganze, Sandrigo e Lusiana Conco</strong>, oltre che dagli altri
+                comuni dell&apos;area Bassanese e pedemontana vicentina.
+              </p>
+            </div>
+          </AnimatedScrollElement>
+
+          {/* INDICAZIONI */}
           <AnimatedScrollElement direction="up" delay={0.2}>
             <h3 className="text-2xl font-semibold mb-5">
               Quando può essere indicato l&apos;approccio integrato a Marostica
@@ -85,6 +103,7 @@ export default function OzonoOsteoMarosticaPage() {
             </ul>
           </AnimatedScrollElement>
 
+          {/* VALUTAZIONE */}
           <AnimatedScrollElement direction="up" delay={0.3}>
             <p className="text-lg mb-8">
               La scelta del trattamento viene sempre definita dopo una{" "}
