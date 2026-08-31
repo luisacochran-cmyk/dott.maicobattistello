@@ -317,11 +317,11 @@ export function FaqSection() {
       answer:
         "La prima visita prevede la raccolta della storia clinica, l’ascolto dei sintomi e una valutazione medica del quadro complessivo. Solo successivamente viene individuato il percorso più appropriato.",
     },
-    {
-      question: "Ozonoterapia e Osteopatia vengono sempre utilizzate insieme?",
-      answer:
-        "No. In base alla valutazione clinica possono essere impiegate singolarmente oppure integrate, quando le condizioni e le esigenze della persona lo rendono indicato.",
-    },
+{
+  question: "Come vengono integrate Ozonoterapia e Osteopatia nel percorso di cura?",
+  answer:
+    "Quando clinicamente indicato, Ozonoterapia e Osteopatia possono essere integrate all’interno di un unico percorso, mettendo in relazione approcci differenti sulla base della valutazione complessiva della persona. Il trattamento viene quindi definito in modo personalizzato, in funzione del quadro clinico e delle specifiche esigenze.",
+},
     {
       question: "In quali sedi riceve il Dott. Maico Battistello?",
       answer:
