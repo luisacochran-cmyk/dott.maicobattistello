@@ -29,79 +29,88 @@ export const cities: CityConfig[] = [
     coordinates: { lat: 45.4064, lng: 11.8768 },
     nearbyTowns: [
       "Abano Terme",
-      "Cittadella",
-      "Camposampiero",
-      "Piove di Sacco",
-      "Este",
-      "Monselice",
       "Selvazzano Dentro",
-      "Vigonza",
       "Albignasego",
+      "Vigonza",
       "Cadoneghe",
+      "Rubano",
+      "Limena",
+      "Noventa Padovana",
+      "Ponte San Nicolò",
+      "Vigodarzere",
     ],
     population: 214000,
-    description: "Capoluogo della provincia veneta, centro universitario e culturale di grande importanza",
+    description:
+      "Capoluogo della provincia veneta e importante centro sanitario, universitario e culturale",
   },
+
   {
+    // Mantenuta temporaneamente: verificare eventuali utilizzi prima della rimozione
     name: "Vicenza",
     slug: "vicenza",
     province: "VI",
     coordinates: { lat: 45.5455, lng: 11.5353 },
     nearbyTowns: [
-      "Bassano del Grappa",
-      "Thiene",
-      "Arzignano",
-      "Montecchio Maggiore",
-      "Valdagno",
       "Creazzo",
-      "Torri di Quartesolo",
-      "Dueville",
-      "Costabissara",
       "Altavilla Vicentina",
+      "Torri di Quartesolo",
+      "Costabissara",
+      "Dueville",
+      "Caldogno",
+      "Monticello Conte Otto",
+      "Arcugnano",
+      "Longare",
+      "Bolzano Vicentino",
     ],
     population: 111000,
-    description: "Città del Palladio, patrimonio UNESCO e importante centro industriale del Veneto",
+    description:
+      "Capoluogo della provincia di Vicenza e riferimento per l'area vicentina",
   },
+
   {
     name: "Schio",
     slug: "schio",
     province: "VI",
     coordinates: { lat: 45.7147, lng: 11.3578 },
     nearbyTowns: [
-      "Thiene",
-      "Valdagno",
-      "Marostica",
-      "Breganze",
-      "Piovene Rocchette",
       "Santorso",
+      "Piovene Rocchette",
+      "Torrebelvicino",
+      "Marano Vicentino",
+      "Thiene",
+      "Zanè",
       "Villaverla",
-      "Zugliano",
+      "Valdagno",
       "Carrè",
-      "Chiuppano",
+      "Zugliano",
     ],
     population: 39000,
-    description: "Importante centro industriale dell'Alto Vicentino, conosciuto per la tradizione tessile",
+    description:
+      "Centro dell'Alto Vicentino e punto di riferimento per Schio e i comuni circostanti",
   },
+
   {
     name: "Malo",
     slug: "malo",
     province: "VI",
     coordinates: { lat: 45.6539, lng: 11.4167 },
     nearbyTowns: [
+      "Monte di Malo",
+      "Isola Vicentina",
+      "Marano Vicentino",
       "Thiene",
       "Schio",
-      "Isola Vicentina",
-      "Monte di Malo",
-      "Santorso",
       "Villaverla",
-      "Carrè",
-      "Zugliano",
-      "Breganze",
-      "Piovene Rocchette",
+      "San Vito di Leguzzano",
+      "Castelgomberto",
+      "Cornedo Vicentino",
+      "Santorso",
     ],
     population: 14000,
-    description: "Comune dell'Alto Vicentino, centro di eccellenza per l'industria e l'artigianato",
+    description:
+      "Comune dell'Alto Vicentino, vicino a Schio, Thiene e ai principali centri dell'area",
   },
+
   {
     name: "Marostica",
     slug: "marostica",
@@ -109,18 +118,19 @@ export const cities: CityConfig[] = [
     coordinates: { lat: 45.7887, lng: 11.6142 },
     nearbyTowns: [
       "Bassano del Grappa",
-      "Thiene",
-      "Schio",
-      "Malo",
-      "Valdagno",
+      "Nove",
+      "Schiavon",
+      "Colceresa",
       "Breganze",
-      "Piovene Rocchette",
-      "Villaverla",
-      "Carrè",
-      "Zugliano",
+      "Sandrigo",
+      "Lusiana Conco",
+      "Pianezze",
+      "Cartigliano",
+      "Rosà",
     ],
     population: 13000,
-    description: "Comune dell'Alto Vicentino, famosa per la Partita a Scacchi e il Castello",
+    description:
+      "Comune dell'area pedemontana vicentina, vicino a Bassano del Grappa e ai principali centri del Bassanese",
   },
 ]
 
@@ -128,31 +138,31 @@ export const services: ServiceConfig[] = [
   {
     name: "Ozonoterapia",
     slug: "ozonoterapia",
-    description: "Trattamenti di ozonoterapia per ernie discali, artrosi e patologie infiammatorie",
+    description:
+      "Ossigeno-ozonoterapia nell'ambito di percorsi personalizzati per problematiche muscolo-scheletriche, articolari e dolorose",
     longDescription:
-      "L'ossigeno-ozonoterapia utilizza una miscela di ossigeno e gas ozono per il trattamento sintomatico ed eziologico delle malattie. Questi gas hanno proprietà antinfiammatorie, analgesiche e antiedemigene.",
+      "L'ossigeno-ozonoterapia utilizza una miscela di ossigeno e ozono medicale. L'indicazione al trattamento viene definita dopo una valutazione clinica individuale, considerando il quadro della persona e gli obiettivi terapeutici.",
     keywords: [
       "ozonoterapia",
       "ozono terapia",
       "ossigeno ozonoterapia",
       "ernia discale",
+      "protrusione discale",
       "artrosi",
       "dolore cervicale",
+      "cervicalgia",
+      "lombalgia",
       "mal di schiena",
       "GAET",
       "PAET",
       "autoemoterapia",
-      "terapia ozono",
-      "cura ozono",
     ],
     benefits: [
-      "Riduzione del dolore",
-      "Effetto antinfiammatorio",
-      "Miglioramento della circolazione",
-      "Stimolazione del sistema immunitario",
-      "Rigenerazione tissutale",
-      "Minima invasività",
-      "Nessun effetto collaterale",
+      "Approccio personalizzato",
+      "Valutazione clinica individuale",
+      "Gestione del dolore muscolo-scheletrico",
+      "Supporto nel percorso terapeutico",
+      "Possibile integrazione con altri approcci clinici",
     ],
     conditions: [
       "Ernie discali",
@@ -160,86 +170,91 @@ export const services: ServiceConfig[] = [
       "Artrosi",
       "Dolori cervicali",
       "Lombalgia",
-      "Fibromialgia",
-      "Long Covid",
-      "Ulcere cutanee",
+      "Sciatalgia",
+      "Problematiche articolari",
+      "Dolore muscolo-scheletrico",
     ],
   },
+
   {
     name: "Osteopatia",
     slug: "osteopatia",
-    description: "Trattamenti osteopatici manuali per il riequilibrio posturale e funzionale",
-     longDescription:"L'osteopatia è una terapia manuale che valuta le relazioni tra struttura e funzione del corpo. Attraverso una valutazione accurata e tecniche specifiche, l'osteopata individua alterazioni della mobilità e della funzione che possono contribuire a dolore, limitazioni del movimento e disturbi muscolo-scheletrici. Il trattamento viene adattato alle caratteristiche della persona con l'obiettivo di favorire una migliore funzionalità e qualità di vita.",
+    description:
+      "Valutazione e trattamento osteopatico per mobilità, funzione e problematiche muscolo-scheletriche",
+    longDescription:
+      "L'osteopatia è una disciplina manuale che considera le relazioni tra struttura e funzione del corpo. Attraverso la valutazione clinica e funzionale, il trattamento viene adattato alle caratteristiche della persona e alle eventuali limitazioni della mobilità.",
     keywords: [
       "osteopatia",
       "osteopata",
-      "manipolazione osteopatica",
+      "trattamento osteopatico",
       "terapia manuale",
-      "riequilibrio posturale",
+      "mobilità articolare",
       "dolore muscolare",
       "cervicalgia",
       "lombalgia",
-      "mal di testa",
       "postura",
+      "funzione muscolo-scheletrica",
     ],
     benefits: [
-      "Riequilibrio posturale",
-      "Riduzione delle tensioni muscolari",
+      "Valutazione individuale",
+      "Approccio personalizzato",
       "Miglioramento della mobilità",
-      "Approccio olistico",
-      "Trattamento personalizzato",
-      "Tecniche non invasive",
-      "Risultati duraturi",
+      "Gestione delle tensioni muscolari",
+      "Valutazione della funzione muscolo-scheletrica",
     ],
     conditions: [
       "Dolori cervicali",
       "Lombalgia",
       "Cefalee",
-      "Problemi posturali",
+      "Limitazioni della mobilità",
       "Tensioni muscolari",
       "Disturbi articolari",
-      "Stress fisico",
+      "Problematiche posturali",
     ],
   },
+
   {
     name: "Ozonoterapia + Osteopatia",
     slug: "ozono-osteo",
-    description: "Trattamento combinato innovativo di ozonoterapia e osteopatia per risultati superiori",
+    description:
+      "Approccio integrato tra ossigeno-ozonoterapia e osteopatia, definito sulla base della valutazione clinica individuale",
     longDescription:
-"Il Dr. Maico Battistello utilizza l'ossigeno-ozonoterapia e l'osteopatia in modo integrato quando la valutazione clinica lo ritiene appropriato. L'obiettivo è offrire un approccio personalizzato che consideri la persona nella sua globalità, combinando competenze e strumenti terapeutici differenti all'interno di un percorso personalizzato.",
+      "Il Dr. Maico Battistello mette in relazione ossigeno-ozonoterapia e osteopatia quando clinicamente indicato. Le due metodiche vengono considerate all'interno di un percorso personalizzato, sulla base della valutazione complessiva della persona, del quadro clinico e delle specifiche esigenze.",
     keywords: [
       "ozonoterapia osteopatia",
-      "trattamento combinato",
-      "terapia integrata",
+      "ossigeno ozonoterapia osteopatia",
       "ozono osteopatia",
-      "approccio multidisciplinare",
-      "risultati superiori",
-      "innovazione terapeutica",
+      "approccio integrato",
+      "percorso personalizzato",
+      "dolore muscolo-scheletrico",
+      "mobilità articolare",
+      "valutazione clinica",
     ],
     benefits: [
-      "Risultati superiori",
-      "Approccio multidisciplinare",
-      "Sinergia terapeutica",
-      "Trattamento completo",
-      "Riduzione dei tempi di guarigione",
-      "Efficacia potenziata",
-      "Innovazione clinica",
+      "Valutazione complessiva della persona",
+      "Approccio integrato quando clinicamente indicato",
+      "Percorso personalizzato",
+      "Valutazione della componente dolorosa e funzionale",
+      "Integrazione di strumenti terapeutici differenti",
     ],
     conditions: [
-      "Patologie croniche complesse",
-      "Ernie discali severe",
-      "Artrosi avanzata",
-      "Dolori persistenti",
-      "Problemi posturali cronici",
-      "Condizioni multisintomatiche",
+      "Cervicalgia e lombalgia",
+      "Ernie e protrusioni discali",
+      "Sciatalgia e dolore radicolare",
+      "Artrosi e problematiche articolari",
+      "Contratture muscolari persistenti",
+      "Limitazioni della mobilità",
+      "Disturbi muscolo-scheletrici cronici",
     ],
   },
+
   {
     name: "Medicina Legale",
     slug: "medicina-legale",
-    description: "Consulenze medico-legali specialistiche e perizie per danni da incidenti e malattie",
+    description:
+      "Consulenze medico-legali, valutazione del danno e relazioni medico-legali",
     longDescription:
-      "La consulenza specialistica e la relazione medico-legale vengono fornite dopo un esame medico diretto della parte lesa e un'attenta revisione dell'intero processo clinico, diagnostico e terapeutico intrapreso dall'individuo.",
+      "La consulenza medico-legale viene effettuata attraverso l'esame della documentazione clinica, la valutazione diretta della persona e l'analisi del percorso diagnostico e terapeutico, in relazione allo specifico quesito medico-legale.",
     keywords: [
       "medicina legale",
       "medico legale",
@@ -253,18 +268,16 @@ export const services: ServiceConfig[] = [
       "valutazione del danno",
     ],
     benefits: [
-      "Valutazione accurata del danno",
-      "Relazioni tecniche dettagliate",
-      "Supporto legale qualificato",
+      "Valutazione medico-legale",
       "Analisi della documentazione clinica",
-      "Quantificazione dell'invalidità",
-      "Assistenza nel contenzioso",
-      "Esperienza pluriennale",
+      "Relazione medico-legale",
+      "Valutazione del danno",
+      "Consulenza tecnica di parte",
     ],
     conditions: [
       "Danni da incidente stradale",
       "Infortuni sul lavoro",
-      "Malasanità",
+      "Responsabilità sanitaria",
       "Invalidità civile",
       "Danni da lesioni personali",
       "Responsabilità professionale",
@@ -273,75 +286,98 @@ export const services: ServiceConfig[] = [
   },
 ]
 
-export function generateLocalSEO(service: ServiceConfig, city: CityConfig) {
+export function generateLocalSEO(
+  service: ServiceConfig,
+  city: CityConfig
+) {
   const nearbyTownsText = city.nearbyTowns.slice(0, 5).join(", ")
 
   const isOsteopatiaMarostica =
-  service.slug === "osteopatia" && city.slug === "marostica"
+    service.slug === "osteopatia" && city.slug === "marostica"
 
   const isOsteopatiaSchio =
     service.slug === "osteopatia" && city.slug === "schio"
-const isOsteopatiaMalo =
-  service.slug === "osteopatia" && city.slug === "malo"
+
+  const isOsteopatiaMalo =
+    service.slug === "osteopatia" && city.slug === "malo"
+
   const isOsteopatiaPadova =
-  service.slug === "osteopatia" && city.slug === "padova"
+    service.slug === "osteopatia" && city.slug === "padova"
+
   const isOzonoterapiaPadova =
-  service.slug === "ozonoterapia" && city.slug === "padova"
+    service.slug === "ozonoterapia" && city.slug === "padova"
+
   const isOzonoterapiaMarostica =
-  service.slug === "ozonoterapia" && city.slug === "marostica"
+    service.slug === "ozonoterapia" && city.slug === "marostica"
+
   const isOzonoterapiaSchio =
-  service.slug === "ozonoterapia" && city.slug === "schio"
+    service.slug === "ozonoterapia" && city.slug === "schio"
+
   const isOzonoterapiaMalo =
-  service.slug === "ozonoterapia" && city.slug === "malo"
+    service.slug === "ozonoterapia" && city.slug === "malo"
+
   return {
- 
-  title: isOsteopatiaMarostica
-  ? "Osteopata a Marostica | Dr. Maico Battistello – Osteopatia"
-  : isOsteopatiaSchio
-    ? "Osteopata a Schio | Dr. Maico Battistello – Osteopatia"
-    : isOsteopatiaMalo
-      ? "Osteopata a Malo | Dr. Maico Battistello – Osteopatia"
-        : isOsteopatiaPadova
-      ? "Osteopata a Padova | Dr. Maico Battistello – Osteopatia"
-    : isOzonoterapiaPadova
-  ? "Ozonoterapia a Padova | Dr. Maico Battistello – Ozonoterapia"
-    : isOzonoterapiaMarostica
-  ? "Ozonoterapia a Marostica | Dr. Maico Battistello – Ozonoterapia"
-    : isOzonoterapiaSchio
-  ? "Ozonoterapia a Schio | Dr. Maico Battistello – Ozonoterapia"
-    : isOzonoterapiaMalo
-  ? "Ozonoterapia a Malo | Dr. Maico Battistello – Ozonoterapia"
-      : `${service.name} a ${city.name} – Dr. Maico Battistello | Specialista ${city.province}`,
-    description: `${service.description} a ${city.name} con il Dr. Maico Battistello. Specialista qualificato nella provincia di ${city.province}. Pazienti da ${nearbyTownsText}. Prenota la tua visita.`,
+    title: isOsteopatiaMarostica
+      ? "Osteopata a Marostica | Dr. Maico Battistello – Osteopatia"
+      : isOsteopatiaSchio
+        ? "Osteopata a Schio | Dr. Maico Battistello – Osteopatia"
+        : isOsteopatiaMalo
+          ? "Osteopata a Malo | Dr. Maico Battistello – Osteopatia"
+          : isOsteopatiaPadova
+            ? "Osteopata a Padova | Dr. Maico Battistello – Osteopatia"
+            : isOzonoterapiaPadova
+              ? "Ozonoterapia a Padova | Dr. Maico Battistello"
+              : isOzonoterapiaMarostica
+                ? "Ozonoterapia a Marostica | Dr. Maico Battistello"
+                : isOzonoterapiaSchio
+                  ? "Ozonoterapia a Schio | Dr. Maico Battistello"
+                  : isOzonoterapiaMalo
+                    ? "Ozonoterapia a Malo | Dr. Maico Battistello"
+                    : `${service.name} a ${city.name} | Dr. Maico Battistello`,
+
+    description:
+      `${service.description} a ${city.name} con il Dr. Maico Battistello. ` +
+      `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
+
     h1: `${service.name} a ${city.name} – Dr. Maico Battistello`,
-    h2: `Cos'è ${service.name === "Medicina Legale" ? "la" : "la"} ${service.name}?`,
-    canonical: `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
+
+    h2: `${service.name} a ${city.name}`,
+
+    canonical:
+      `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
+
     structuredData: {
       "@context": "https://schema.org",
       "@type": ["MedicalBusiness", "LocalBusiness"],
+
       name: `Dr. Maico Battistello - ${service.name} ${city.name}`,
-      description: `Specialista in ${service.name} a ${city.name}`,
+
+      description:
+        `${service.name} a ${city.name} con il Dr. Maico Battistello`,
+
       address: {
         "@type": "PostalAddress",
         addressLocality: city.name,
         addressRegion: "Veneto",
         addressCountry: "IT",
-       postalCode:
-  city.slug === "padova"
-    ? "35100"
-    : city.slug === "marostica"
-      ? "36063"
-      : city.slug === "malo"
-        ? "36034"
-        : city.slug === "schio"
-          ? "36015"
-          : "",
+        postalCode:
+          city.slug === "padova"
+            ? "35100"
+            : city.slug === "marostica"
+              ? "36063"
+              : city.slug === "malo"
+                ? "36034"
+                : city.slug === "schio"
+                  ? "36015"
+                  : "",
       },
+
       geo: {
         "@type": "GeoCoordinates",
         latitude: city.coordinates.lat,
         longitude: city.coordinates.lng,
       },
+
       areaServed: [
         {
           "@type": "City",
@@ -352,24 +388,38 @@ const isOsteopatiaMalo =
           name: town,
         })),
       ],
+
       medicalSpecialty: [service.name],
+
       priceRange: "€€",
-      telephone: "+39-XXX-XXXXXXX",
-      url: `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
+
+      telephone: "+393487383372",
+
+      url:
+        `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
+
       sameAs: [
         "https://www.facebook.com/drmaicobaattistello",
         "https://www.instagram.com/drmaicobaattistello",
         "https://www.linkedin.com/in/maico-battistello",
       ],
+
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: `Servizi di ${service.name}`,
-        itemListElement: service.conditions.map((condition, index) => ({
+        itemListElement: service.conditions.map((condition) => ({
           "@type": "Offer",
           itemOffered: {
-            "@type": service.name === "Medicina Legale" ? "Service" : "MedicalTherapy",
-            name: service.name === "Medicina Legale" ? `Consulenza ${condition}` : `Trattamento ${condition}`,
-            description: `${service.name} per ${condition} a ${city.name}`,
+            "@type":
+              service.name === "Medicina Legale"
+                ? "Service"
+                : "MedicalTherapy",
+            name:
+              service.name === "Medicina Legale"
+                ? `Consulenza ${condition}`
+                : `${service.name} - ${condition}`,
+            description:
+              `${service.name} per ${condition} a ${city.name}`,
           },
         })),
       },
