@@ -83,7 +83,7 @@ export default function OzonoOsteoSchioPage() {
                 Ozonoterapia e Osteopatia a Schio e nell&apos;Alto Vicentino
               </h2>
 
-              <p className="text-lg">
+              <p className="text-xl">
                 Lo studio di <strong>Schio</strong> è un riferimento anche per chi
                 proviene da <strong>Santorso, Thiene, Piovene Rocchette,
                 Torrebelvicino e Marano Vicentino</strong>, oltre che dagli altri
@@ -109,7 +109,7 @@ export default function OzonoOsteoSchioPage() {
           </AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.3}>
-            <p className="text-lg mb-8">
+            <p className="text-xl mb-8">
               La scelta del trattamento viene sempre definita dopo una{" "}
               <strong>valutazione individuale</strong>. In alcuni casi può
               essere indicata prevalentemente l&apos;ossigeno-ozonoterapia, in
