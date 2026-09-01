@@ -3,6 +3,11 @@ import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
+import type { Metadata } from "next"
+import Breadcrumb from "@/components/breadcrumb"
+import ContactForm from "@/components/contact-form"
+import QuadrantCarousel from "@/components/quadrant-carousel"
+import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
 const city = cities.find((c) => c.slug === "marostica")!
 const service = services.find((s) => s.slug === "osteopatia")!
@@ -37,18 +42,52 @@ export default function OsteopatiaMarosticaPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-     <div className="prose prose-lg max-w-none leading-relaxed">
+        <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-          <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
+          {/* INTRODUZIONE */}
+          <div className="text-xl leading-relaxed mb-8 space-y-5">
+            <p>
+              L&apos;<strong>Osteopatia</strong> è una disciplina manuale che
+              considera la persona nella sua globalità, con l&apos;obiettivo di
+              individuare e trattare le alterazioni funzionali che possono
+              influire sul movimento, sulla postura e sul benessere generale.
+            </p>
 
-         <p className="text-xl leading-relaxed mb-8">
-  L’<strong>Osteopatia</strong> è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di individuare e trattare le alterazioni funzionali che possono influire sul movimento, sulla postura e sul benessere generale.
+            <p>
+              A <strong>Marostica</strong>, il Dr. Maico Battistello offre{" "}
+              <strong>trattamenti osteopatici personalizzati</strong> rivolti a
+              persone di ogni età, attraverso una valutazione accurata delle
+              problematiche muscolo-scheletriche, delle tensioni posturali e
+              delle limitazioni funzionali.
+            </p>
 
-  A <strong>Marostica</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone di ogni età, attraverso una valutazione accurata delle problematiche muscolo-scheletriche, delle tensioni posturali e delle limitazioni funzionali.
+            <p>
+              Il trattamento osteopatico può essere utile in presenza di
+              cervicalgia, lombalgia, dolori articolari, disturbi posturali e
+              problematiche legate alla mobilità, con l&apos;obiettivo di
+              favorire il recupero della <strong>funzionalità</strong>, della{" "}
+              <strong>mobilità articolare</strong> e del benessere della persona.
+            </p>
+          </div>
 
-  Il trattamento osteopatico può essere utile in presenza di cervicalgia, lombalgia, dolori articolari, disturbi posturali e problematiche legate alla mobilità, con l’obiettivo di favorire il recupero della <strong>funzionalità</strong>, della <strong>mobilità articolare</strong> e del benessere della persona.
-</p>
+          {/* AREA GEOGRAFICA */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">
+              Un riferimento per Marostica e l&apos;area pedemontana
+            </h2>
+
+            <p className="text-xl leading-relaxed">
+              Lo studio di <strong>Marostica</strong> è facilmente raggiungibile
+              anche da{" "}
+              <strong>
+                Bassano del Grappa, Nove, Schiavon, Colceresa, Breganze,
+                Sandrigo e Lusiana Conco
+              </strong>
+              , oltre che dagli altri comuni dell&apos;area Bassanese e
+              pedemontana vicentina.
+            </p>
+          </div>
         </div>
       </div>
 
