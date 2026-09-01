@@ -76,7 +76,7 @@ export default function OzonoOsteoMaloPage() {
                 Ozonoterapia e Osteopatia a Malo e nell&apos;Alto Vicentino
               </h2>
 
-              <p className="text-lg">
+             <p className="text-xl">
                 L&apos;attività nell&apos;area di <strong>Malo</strong> rappresenta
                 un riferimento anche per chi proviene da{" "}
                 <strong>
