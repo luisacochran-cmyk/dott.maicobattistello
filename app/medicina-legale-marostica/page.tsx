@@ -49,7 +49,7 @@ export default function MedicinaLegaleMarosticaPage() {
             <p>
               Il Dr. Maico Battistello svolge attività di medicina legale a
               Marostica, offrendo consulenze medico-legali rivolte a privati,
-              professionisti, studi legali e compagnie assicurative di
+              professionisti, studi legali e agenzie assicurative di
               Marostica, Bassano del Grappa e dei comuni limitrofi.
             </p>
 
