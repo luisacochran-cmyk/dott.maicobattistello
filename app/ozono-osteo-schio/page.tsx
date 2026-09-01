@@ -76,6 +76,22 @@ export default function OzonoOsteoSchioPage() {
             </div>
           </AnimatedScrollElement>
 
+          {/* AREA GEOGRAFICA */}
+          <AnimatedScrollElement direction="up" delay={0.15}>
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">
+                Ozonoterapia e Osteopatia a Schio e nell&apos;Alto Vicentino
+              </h2>
+
+              <p className="text-lg">
+                Lo studio di <strong>Schio</strong> è un riferimento anche per chi
+                proviene da <strong>Santorso, Thiene, Piovene Rocchette,
+                Torrebelvicino e Marano Vicentino</strong>, oltre che dagli altri
+                comuni dell&apos;Alto Vicentino.
+              </p>
+            </div>
+          </AnimatedScrollElement>
+
           <AnimatedScrollElement direction="up" delay={0.2}>
             <h3 className="text-2xl font-semibold mb-5">
               Quando può essere indicato l&apos;approccio integrato a Schio
