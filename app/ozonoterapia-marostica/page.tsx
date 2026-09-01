@@ -36,23 +36,49 @@ export default function OzonoterapiaMarosticaPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
+        <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-          <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
+          {/* INTRODUZIONE */}
+          <div className="text-xl leading-relaxed mb-8 space-y-5">
+            <p>
+              L&apos;<strong>ossigeno-ozonoterapia</strong> è una terapia medica
+              che utilizza una miscela di ossigeno e ozono medicale nell&apos;ambito
+              di specifiche indicazioni cliniche.
+            </p>
 
-          <p className="text-lg mb-6">
-            L'ossigeno-ozonoterapia utilizza una <strong>miscela di ossigeno e gas ozono</strong> per il trattamento
-            sintomatico ed eziologico delle malattie umane e animali. Questi gas all'interno del corpo hanno proprietà
-            <strong> antinfiammatorie, analgesiche e antiedemigene</strong> e sono in grado di{" "}
-            <strong>generare benessere</strong>, guarire processi infiammatori e promuovere la{" "}
-            <strong>rigenerazione dei tessuti</strong>. A <strong>Marostica</strong>, il Dr. Maico Battistello offre
-            questi trattamenti presso strutture qualificate nel territorio vicentino. Per queste
-            caratteristiche è diventata una terapia medica di provata sicurezza, efficacia e minima invasività. Secondo
-            il Ministero della Salute, questo tipo di terapia è particolarmente efficace, non solo nel migliorare i
-            sintomi delle ernie discali ma anche nel ridurne il volume, esercitando un vero e proprio{" "}
-            <strong>effetto curativo</strong>.
-          </p>
+            <p>
+              A <strong>Marostica</strong>, il Dr. Maico Battistello utilizza
+              l&apos;ossigeno-ozonoterapia all&apos;interno di percorsi
+              personalizzati, definiti sulla base della valutazione clinica e
+              delle caratteristiche della singola persona.
+            </p>
+
+            <p>
+              In ambito muscolo-scheletrico può essere presa in considerazione,
+              quando clinicamente indicato, per problematiche caratterizzate da
+              dolore, infiammazione e limitazioni funzionali, anche in relazione
+              a disturbi della colonna e delle articolazioni.
+            </p>
+          </div>
+
+          {/* AREA GEOGRAFICA */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">
+              Un riferimento per Marostica e l&apos;area pedemontana
+            </h2>
+
+            <p className="text-xl leading-relaxed">
+              Lo studio di <strong>Marostica</strong> è facilmente raggiungibile
+              anche da{" "}
+              <strong>
+                Bassano del Grappa, Nove, Schiavon, Colceresa, Breganze,
+                Sandrigo e Lusiana Conco
+              </strong>
+              , oltre che dagli altri comuni dell&apos;area Bassanese e
+              pedemontana vicentina.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -93,19 +119,25 @@ export default function OzonoterapiaMarosticaPage() {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
           <div className="md:w-1/2">
-            <h3 className="text-xl font-semibold mb-4">Piccola Autoemoterapia (PAET) a {city.name}</h3>
-            <p className="text-lg mb-4">
-              La Piccola Autoemoterapia è una delle tecniche utilizzate nell'ozonoterapia a <strong>{city.name}</strong>
-              . Consiste nel prelevare una
-              <strong> piccola quantità</strong> di sangue dal paziente, miscelarla con ozono medicale e reiniettarla
-              per <strong>via intramuscolare</strong>.
-            </p>
-            <p className="text-lg">
-              Questo trattamento stimola il sistema immunitario e ha proprietà{" "}
-              <strong>antinfiammatorie, analgesiche e rigenerative</strong>. È particolarmente efficace per
-              problematiche localizzate e per <strong>migliorare la risposta immunitaria</strong> dell'organismo.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">
+              Piccola Autoemoterapia (PAET) a {city.name}
+            </h2>
+
+            <div className="text-xl leading-relaxed space-y-5">
+              <p>
+                La Piccola Autoemoterapia è una delle metodiche che possono
+                rientrare nell&apos;ambito dell&apos;ozonoterapia, quando
+                clinicamente indicato.
+              </p>
+
+              <p>
+                L&apos;eventuale utilizzo viene valutato dal medico in relazione
+                al quadro clinico, agli obiettivi del trattamento e alle
+                caratteristiche della persona.
+              </p>
+            </div>
           </div>
+
           <div className="md:w-1/2">
             <div className="rounded-lg overflow-hidden shadow-lg aspect-video w-full max-w-md md:max-w-none mx-auto">
               <iframe
@@ -135,46 +167,53 @@ export default function OzonoterapiaMarosticaPage() {
               />
             </div>
           </div>
+
           <div className="md:w-1/2 order-1 md:order-2">
-            <h3 className="text-xl font-semibold mb-4">Grande Autoemoterapia (GAET) a {city.name}</h3>
-            <p className="text-lg mb-4">
-              La Grande Autoemoterapia rappresenta la tecnica più avanzata dell'Ozonoterapia sistemica a{" "}
-              <strong>{city.name}</strong>. Consiste nel prelevare una <strong>maggiore quantità di sangue</strong> dal
-              paziente (circa 80-240ml), ozonizzarlo in modo controllato e reinfonderlo{" "}
-              <strong>per via endovenosa</strong>.
-            </p>
-            <p className="text-lg">
-              Questo trattamento ha <strong>effetti sistemici profondi</strong>, stimolando il sistema immunitario,
-              migliorando l'ossigenazione tissutale e producendo{" "}
-              <strong>potenti effetti antinfiammatori e rigenerativi</strong>. È particolarmente indicato per patologie
-              croniche e <strong>condizioni sistemiche complesse</strong>.
-            </p>
+            <h2 className="text-2xl font-semibold mb-4">
+              Grande Autoemoterapia (GAET) a {city.name}
+            </h2>
+
+            <div className="text-xl leading-relaxed space-y-5">
+              <p>
+                La Grande Autoemoterapia è una metodica di ozonoterapia sistemica
+                che può essere presa in considerazione in specifici percorsi
+                clinici.
+              </p>
+
+              <p>
+                Indicazioni, modalità di trattamento e appropriatezza vengono
+                definite dal medico dopo una valutazione individuale, tenendo
+                conto del quadro clinico complessivo e delle eventuali
+                controindicazioni.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-    {/* Ozonoterapia - Approfondimento */}
-<section className="container mx-auto max-w-4xl px-4 py-10">
-  <div className="rounded-xl border border-blue-200 bg-blue-50 p-6 md:p-8">
-    <h2 className="text-2xl font-bold mb-3">
-      Approfondisci l’Ozonoterapia
-    </h2>
+      {/* Ozonoterapia - Approfondimento */}
+      <section className="container mx-auto max-w-4xl px-4 py-10">
+        <div className="rounded-xl border border-blue-200 bg-blue-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold mb-3">
+            Approfondisci l&apos;Ozonoterapia
+          </h2>
 
-    <p className="text-lg leading-relaxed mb-5">
-      Per conoscere i metodi di somministrazione, le indicazioni
-      clinico-terapeutiche suddivise per livello di evidenza e le
-      controindicazioni, consulta la pagina completa dedicata
-      all’Ozonoterapia.
-    </p>
+          <p className="text-xl leading-relaxed mb-5">
+            Per conoscere i metodi di somministrazione, le indicazioni
+            clinico-terapeutiche suddivise per livello di evidenza e le
+            controindicazioni, consulta la pagina completa dedicata
+            all&apos;Ozonoterapia.
+          </p>
 
-    <Link
-      href="/ozonoterapia"
-      className="inline-flex items-center text-lg font-semibold text-blue-600 hover:text-blue-800 hover:underline"
-    >
-      Scopri metodi, indicazioni e controindicazioni →
-    </Link>
-  </div>
-</section>
+          <Link
+            href="/ozonoterapia"
+            className="inline-flex items-center text-lg font-semibold text-blue-600 hover:text-blue-800 hover:underline"
+          >
+            Scopri metodi, indicazioni e controindicazioni →
+          </Link>
+        </div>
+      </section>
+
       {/* Contact Form */}
       <ContactForm />
 
