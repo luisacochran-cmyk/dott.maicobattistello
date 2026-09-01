@@ -37,18 +37,52 @@ export default function OsteopatiaSchioPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="prose prose-lg max-w-none leading-relaxed">
+        <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
           <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
-      <p className="text-xl leading-relaxed mb-8">
-  L’<strong>Osteopatia</strong> è una disciplina manuale che si basa sulla valutazione e sul trattamento delle disfunzioni che possono influire sull’equilibrio e sulla mobilità del corpo.
+          {/* INTRODUZIONE */}
+          <div className="text-xl leading-relaxed mb-8 space-y-5">
+            <p>
+              L&apos;<strong>Osteopatia</strong> è una disciplina manuale che si
+              basa sulla valutazione e sul trattamento delle disfunzioni che
+              possono influire sull&apos;equilibrio e sulla mobilità del corpo.
+            </p>
 
-  A <strong>Schio</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone di ogni età, con un approccio orientato alla ricerca delle cause funzionali che possono contribuire a dolore, rigidità e limitazioni del movimento.
+            <p>
+              A <strong>Schio</strong>, il Dr. Maico Battistello offre{" "}
+              <strong>trattamenti osteopatici personalizzati</strong> rivolti a
+              persone di ogni età, con un approccio orientato alla ricerca delle
+              cause funzionali che possono contribuire a dolore, rigidità e
+              limitazioni del movimento.
+            </p>
 
-  Attraverso una valutazione individuale e tecniche manuali adattate alle esigenze del paziente, il trattamento osteopatico mira a favorire il recupero della <strong>funzionalità</strong>, della <strong>mobilità articolare</strong> e del benessere generale della persona.
-</p>
+            <p>
+              Attraverso una valutazione individuale e tecniche manuali adattate
+              alle esigenze del paziente, il trattamento osteopatico mira a
+              favorire il recupero della <strong>funzionalità</strong>, della{" "}
+              <strong>mobilità articolare</strong> e del benessere generale
+              della persona.
+            </p>
+          </div>
+
+          {/* AREA GEOGRAFICA */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">
+              Osteopatia a Schio e nell&apos;Alto Vicentino
+            </h2>
+
+            <p className="text-xl leading-relaxed">
+              Lo studio di <strong>Schio</strong> è un riferimento anche per chi
+              proviene da{" "}
+              <strong>
+                Santorso, Thiene, Piovene Rocchette, Torrebelvicino e Marano
+                Vicentino
+              </strong>
+              , oltre che dagli altri comuni dell&apos;Alto Vicentino.
+            </p>
+          </div>
         </div>
       </div>
 
