@@ -37,18 +37,50 @@ export default function OsteopatiaPadovaPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <div className="prose prose-lg max-w-none leading-relaxed">
+        <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-          <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
+          {/* INTRODUZIONE */}
+          <div className="text-xl leading-relaxed mb-8 space-y-5">
+            <p>
+              L&apos;<strong>Osteopatia</strong> è una disciplina manuale che
+              considera la persona nella sua globalità, valutando le relazioni
+              tra apparato muscolo-scheletrico, postura e funzionalità del
+              movimento.
+            </p>
 
-     <p className="text-xl leading-relaxed mb-8">
-  L’<strong>Osteopatia</strong> è una disciplina manuale che considera la persona nella sua globalità, valutando le relazioni tra apparato muscolo-scheletrico, postura e funzionalità del movimento.
+            <p>
+              A <strong>Padova</strong>, il Dr. Maico Battistello offre{" "}
+              <strong>trattamenti osteopatici personalizzati</strong> rivolti a
+              persone che presentano dolori muscolo-scheletrici, limitazioni
+              funzionali o disturbi correlati alla postura e alla mobilità
+              articolare.
+            </p>
 
-  A <strong>Padova</strong>, il Dr. Maico Battistello offre <strong>trattamenti osteopatici personalizzati</strong> rivolti a persone che presentano dolori muscolo-scheletrici, limitazioni funzionali o disturbi correlati alla postura e alla mobilità articolare.
+            <p>
+              Ogni percorso viene adattato alle esigenze del singolo paziente
+              attraverso una valutazione individuale, con l&apos;obiettivo di
+              favorire il recupero della <strong>funzionalità</strong>, dell&apos;
+              <strong>equilibrio corporeo</strong> e del benessere generale della
+              persona.
+            </p>
+          </div>
 
-  Ogni percorso viene adattato alle esigenze del singolo paziente attraverso una valutazione individuale, con l’obiettivo di favorire il recupero della <strong>funzionalità</strong>, dell’<strong>equilibrio corporeo</strong> e del benessere generale della persona.
-</p>
+          {/* AREA GEOGRAFICA */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">
+              Un riferimento per Padova e l&apos;area padovana
+            </h2>
+
+            <p className="text-xl leading-relaxed">
+              Lo studio di <strong>Padova</strong> è un riferimento anche per chi
+              proviene da{" "}
+              <strong>
+                Abano Terme, Selvazzano Dentro, Albignasego, Vigonza e Cadoneghe
+              </strong>
+              , oltre che dagli altri comuni dell&apos;area padovana.
+            </p>
+          </div>
         </div>
       </div>
 
