@@ -34,62 +34,94 @@ export default function OzonoterapiaPadovaPage() {
       />
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose max-w-none">
-      <h1 className="text-4xl font-bold mb-6">{seoData.h1}</h1>
+        <div className="prose prose-lg max-w-none leading-relaxed">
+          <h1 className="text-4xl font-bold mb-6">{seoData.h1}</h1>
 
-<h2 className="text-3xl font-semibold mb-6">{seoData.h2}</h2>
+          {/* INTRODUZIONE */}
+          <div className="text-xl leading-relaxed mb-8 space-y-5">
+            <p>
+              A <strong>Padova</strong>, il Dott. Maico Battistello utilizza
+              l&apos;<strong>ossigeno-ozonoterapia</strong> nell&apos;ambito di
+              percorsi rivolti alla gestione del <strong>dolore</strong>, dei{" "}
+              <strong>disturbi muscolo-scheletrici</strong> e delle problematiche
+              funzionali della <strong>colonna vertebrale</strong> e delle
+              articolazioni.
+            </p>
 
-<p className="text-xl leading-relaxed mb-6">
-  A <strong>Padova</strong>, il Dott. Maico Battistello utilizza
-  l'<strong>ossigeno-ozonoterapia</strong> nell'ambito di percorsi rivolti
-  alla gestione del <strong>dolore</strong>, dei{" "}
-  <strong>disturbi muscolo-scheletrici</strong> e delle problematiche
-  funzionali della <strong>colonna vertebrale</strong> e delle articolazioni.
-</p>
+            <p>
+              Ogni trattamento parte dalla <strong>valutazione clinica</strong>.
+              Natura e sede del disturbo, presenza di una componente infiammatoria,
+              limitazioni funzionali e caratteristiche individuali contribuiscono
+              a determinare se l&apos;ozonoterapia possa essere indicata e quale
+              modalità di somministrazione sia più appropriata.
+            </p>
 
-<p className="text-xl leading-relaxed mb-6">
-  Ogni trattamento parte dalla <strong>valutazione clinica</strong>. Natura e
-  sede del disturbo, presenza di una componente infiammatoria, limitazioni
-  funzionali e caratteristiche individuali contribuiscono a determinare se
-  l'ozonoterapia possa essere indicata e quale modalità di somministrazione
-  sia più appropriata.
-</p>
+            <p>
+              L&apos;obiettivo non è applicare un protocollo prestabilito, ma
+              costruire un percorso coerente con il quadro clinico della persona.
+              Quando indicato, il trattamento può inoltre inserirsi in un approccio
+              più ampio che considera non soltanto il dolore, ma anche{" "}
+              <strong>funzionalità, mobilità e qualità del movimento</strong>.
+            </p>
+          </div>
 
-<p className="text-xl leading-relaxed mb-8">
-  L'obiettivo non è applicare un protocollo prestabilito, ma costruire un
-  percorso coerente con il quadro clinico della persona. Quando indicato, il
-  trattamento può inoltre inserirsi in un approccio più ampio che considera
-  non soltanto il dolore, ma anche <strong>funzionalità, mobilità e qualità
-  del movimento</strong>.
-</p>
+          {/* INDICAZIONI */}
+          <h2 className="text-2xl font-semibold mt-8 mb-4">
+            Quando può essere indicata l&apos;ozonoterapia a Padova
+          </h2>
 
-<h3 className="text-2xl font-semibold mt-8 mb-4">
-  Quando può essere indicata l'ozonoterapia a Padova
-</h3>
+          <p className="text-xl leading-relaxed mb-5">
+            L&apos;ossigeno-ozonoterapia può essere presa in considerazione, dopo
+            valutazione medica, nell&apos;ambito di differenti condizioni
+            muscolo-scheletriche e dolorose, tra cui:
+          </p>
 
-<p className="text-xl leading-relaxed mb-5">
-  L'ossigeno-ozonoterapia può essere presa in considerazione, dopo valutazione
-  medica, nell'ambito di differenti condizioni muscolo-scheletriche e
-  dolorose, tra cui:
-</p>
+          <ul className="list-disc pl-6 mb-6 space-y-3 text-xl leading-relaxed">
+            <li>
+              <strong>Cervicalgia e lombalgia</strong>
+            </li>
+            <li>
+              <strong>Ernie e protrusioni discali</strong>
+            </li>
+            <li>
+              <strong>Sciatalgia e dolore radicolare</strong>
+            </li>
+            <li>
+              <strong>Artrosi e problematiche articolari</strong>
+            </li>
+            <li>
+              <strong>Tendinopatie e disturbi muscolo-scheletrici</strong>
+            </li>
+            <li>
+              Dolore associato a{" "}
+              <strong>limitazioni della mobilità e della funzionalità</strong>
+            </li>
+          </ul>
 
-<ul className="list-disc pl-6 mb-6 space-y-3 text-xl leading-relaxed">
-  <li><strong>Cervicalgia e lombalgia</strong></li>
-  <li><strong>Ernie e protrusioni discali</strong></li>
-  <li><strong>Sciatalgia e dolore radicolare</strong></li>
-  <li><strong>Artrosi e problematiche articolari</strong></li>
-  <li><strong>Tendinopatie e disturbi muscolo-scheletrici</strong></li>
-  <li>Dolore associato a <strong>limitazioni della mobilità e della funzionalità</strong></li>
-</ul>
+          <p className="text-xl leading-relaxed mb-8">
+            Le possibili indicazioni dell&apos;ozonoterapia presentano{" "}
+            <strong>livelli differenti di evidenza scientifica</strong>. Per questo
+            l&apos;indicazione non deriva semplicemente dalla presenza di una
+            determinata patologia: è la valutazione medica a stabilire
+            l&apos;appropriatezza del trattamento nel singolo caso e la modalità con
+            cui eventualmente inserirlo nel percorso terapeutico.
+          </p>
 
-<p className="text-xl leading-relaxed mb-8">
-  Le possibili indicazioni dell'ozonoterapia presentano{" "}
-  <strong>livelli differenti di evidenza scientifica</strong>. Per questo
-  l'indicazione non deriva semplicemente dalla presenza di una determinata
-  patologia: è la valutazione medica a stabilire l'appropriatezza del
-  trattamento nel singolo caso e la modalità con cui eventualmente inserirlo
-  nel percorso terapeutico.
-</p>
+          {/* AREA GEOGRAFICA */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">
+              Un riferimento per Padova e l&apos;area padovana
+            </h2>
+
+            <p className="text-xl leading-relaxed">
+              L&apos;attività a <strong>Padova</strong> rappresenta un riferimento
+              anche per chi proviene da{" "}
+              <strong>
+                Abano Terme, Selvazzano Dentro, Albignasego, Vigonza e Cadoneghe
+              </strong>
+              , oltre che dagli altri comuni dell&apos;area padovana.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -114,7 +146,8 @@ export default function OzonoterapiaPadovaPage() {
           ]}
         />
       </div>
-            {/* Piccola Autoemoterapia Section */}
+
+      {/* Piccola Autoemoterapia Section */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
           <div className="md:w-1/2">
@@ -122,19 +155,19 @@ export default function OzonoterapiaPadovaPage() {
               Piccola Autoemoterapia (PAET) a {city.name}
             </h3>
 
-            <p className="text-lg mb-4">
+            <p className="text-xl leading-relaxed mb-4">
               La Piccola Autoemoterapia è una delle tecniche utilizzate
-              nell'ozonoterapia a <strong>{city.name}</strong>. Consiste nel
+              nell&apos;ozonoterapia a <strong>{city.name}</strong>. Consiste nel
               prelevare una <strong>piccola quantità</strong> di sangue dal
               paziente, miscelarla con ozono medicale e reiniettarla per{" "}
               <strong>via intramuscolare</strong>.
             </p>
 
-            <p className="text-lg">
+            <p className="text-xl leading-relaxed">
               Questo trattamento stimola il sistema immunitario e ha proprietà{" "}
               <strong>antinfiammatorie, analgesiche e rigenerative</strong>. È
               particolarmente efficace per problematiche localizzate e per{" "}
-              <strong>migliorare la risposta immunitaria</strong> dell'organismo.
+              <strong>migliorare la risposta immunitaria</strong> dell&apos;organismo.
             </p>
           </div>
 
@@ -173,18 +206,18 @@ export default function OzonoterapiaPadovaPage() {
               Grande Autoemoterapia (GAET) a {city.name}
             </h3>
 
-            <p className="text-lg mb-4">
+            <p className="text-xl leading-relaxed mb-4">
               La Grande Autoemoterapia rappresenta la tecnica più avanzata
-              dell'Ozonoterapia sistemica a <strong>{city.name}</strong>.
+              dell&apos;Ozonoterapia sistemica a <strong>{city.name}</strong>.
               Consiste nel prelevare una{" "}
               <strong>maggiore quantità di sangue</strong> dal paziente (circa
               80-240ml), ozonizzarlo in modo controllato e reinfonderlo{" "}
               <strong>per via endovenosa</strong>.
             </p>
 
-            <p className="text-lg">
+            <p className="text-xl leading-relaxed">
               Questo trattamento ha <strong>effetti sistemici profondi</strong>,
-              stimolando il sistema immunitario, migliorando l'ossigenazione
+              stimolando il sistema immunitario, migliorando l&apos;ossigenazione
               tissutale e producendo{" "}
               <strong>potenti effetti antinfiammatori e rigenerativi</strong>. È
               particolarmente indicato per patologie croniche e{" "}
@@ -195,28 +228,28 @@ export default function OzonoterapiaPadovaPage() {
       </div>
 
       {/* Ozonoterapia - Approfondimento */}
-<section className="container mx-auto max-w-4xl px-4 py-10">
-  <div className="rounded-xl border border-blue-200 bg-blue-50 p-6 md:p-8">
-    <h2 className="text-2xl font-bold mb-3">
-      Approfondisci l’Ozonoterapia
-    </h2>
+      <section className="container mx-auto max-w-4xl px-4 py-10">
+        <div className="rounded-xl border border-blue-200 bg-blue-50 p-6 md:p-8">
+          <h2 className="text-2xl font-bold mb-3">
+            Approfondisci l&apos;Ozonoterapia
+          </h2>
 
-    <p className="text-lg leading-relaxed mb-5">
-      Per conoscere i metodi di somministrazione, le indicazioni
-      clinico-terapeutiche suddivise per livello di evidenza e le
-      controindicazioni, consulta la pagina completa dedicata
-      all’Ozonoterapia.
-    </p>
+          <p className="text-xl leading-relaxed mb-5">
+            Per conoscere i metodi di somministrazione, le indicazioni
+            clinico-terapeutiche suddivise per livello di evidenza e le
+            controindicazioni, consulta la pagina completa dedicata
+            all&apos;Ozonoterapia.
+          </p>
 
-    <Link
-      href="/ozonoterapia"
-      className="inline-flex items-center text-lg font-semibold text-blue-600 hover:text-blue-800 hover:underline"
-    >
-      Scopri metodi, indicazioni e controindicazioni →
-    </Link>
-  </div>
-</section>
-    
+          <Link
+            href="/ozonoterapia"
+            className="inline-flex items-center text-lg font-semibold text-blue-600 hover:text-blue-800 hover:underline"
+          >
+            Scopri metodi, indicazioni e controindicazioni →
+          </Link>
+        </div>
+      </section>
+
       <ContactForm />
 
       <script
