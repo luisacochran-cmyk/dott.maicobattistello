@@ -40,7 +40,6 @@ export default function OsteopatiaSchioPage() {
         <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-          <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
 
           {/* INTRODUZIONE */}
           <div className="text-xl leading-relaxed mb-8 space-y-5">
