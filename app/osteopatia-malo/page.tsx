@@ -4,6 +4,7 @@ import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 
+
 const city = cities.find((c) => c.slug === "malo")!
 const service = services.find((s) => s.slug === "osteopatia")!
 const seoData = generateLocalSEO(service, city)
@@ -46,25 +47,23 @@ export default function OsteopatiaMaloPage() {
               L&apos;<strong>Osteopatia</strong> è una disciplina manuale che
               considera la persona nella sua globalità, con l&apos;obiettivo di
               individuare e trattare le alterazioni funzionali che possono
-              contribuire a <strong>dolore</strong>, rigidità e limitazioni del
-              movimento.
+              influire sul movimento, sulla postura e sul benessere generale.
             </p>
 
             <p>
               Nell&apos;area di <strong>Malo</strong>, il Dr. Maico Battistello
-              svolge <strong>trattamenti osteopatici personalizzati</strong>{" "}
-              rivolti ad adulti, anziani, sportivi e donne in gravidanza,
-              attraverso una valutazione accurata della postura, della mobilità
-              articolare e delle tensioni muscolo-fasciali.
+              offre <strong>trattamenti osteopatici personalizzati</strong>{" "}
+              rivolti a persone di ogni età, attraverso una valutazione accurata
+              delle problematiche muscolo-scheletriche, delle tensioni
+              posturali e delle limitazioni funzionali.
             </p>
 
             <p>
               Il trattamento osteopatico può essere utile in presenza di
-              lombalgia, cervicalgia, dolori articolari, disturbi posturali e
-              problematiche muscolo-scheletriche, sempre nell&apos;ambito di un
-              percorso individualizzato orientato al recupero della{" "}
-              <strong>funzionalità</strong>, della <strong>mobilità</strong> e
-              del benessere generale della persona.
+              cervicalgia, lombalgia, dolori articolari, disturbi posturali e
+              problematiche legate alla mobilità, con l&apos;obiettivo di
+              favorire il recupero della <strong>funzionalità</strong>, della{" "}
+              <strong>mobilità articolare</strong> e del benessere della persona.
             </p>
           </div>
 
@@ -75,8 +74,8 @@ export default function OsteopatiaMaloPage() {
             </h2>
 
             <p className="text-xl leading-relaxed">
-              L&apos;attività nell&apos;area di <strong>Malo</strong> rappresenta
-              un riferimento anche per chi proviene da{" "}
+              L&apos;attività nell&apos;area di <strong>Malo</strong> è un
+              riferimento anche per chi proviene da{" "}
               <strong>
                 Isola Vicentina, Marano Vicentino, Thiene e Villaverla
               </strong>
