@@ -87,7 +87,7 @@ export default function LegalMedicinePage() {
             <li>Privati coinvolti in <strong>sinistri stradali o infortuni</strong></li>
             <li>Pazienti con <strong>postumi invalidanti</strong> che necessitano di una corretta valutazione medico-legale</li>
             <li>Studi legali che richiedono un <strong>riferimento medico-legale stabile</strong></li>
-            <li>Compagnie assicurative e broker</li>
+            <li>Agenzie assicurative e broker</li>
             <li>Agenzie che necessitano di <strong>supporto medico-legale</strong> sui propri assistiti</li>
           </ul>
 
