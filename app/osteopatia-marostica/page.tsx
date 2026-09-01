@@ -3,11 +3,7 @@ import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
-import type { Metadata } from "next"
-import Breadcrumb from "@/components/breadcrumb"
-import ContactForm from "@/components/contact-form"
-import QuadrantCarousel from "@/components/quadrant-carousel"
-import { cities, services, generateLocalSEO } from "@/lib/seo-config"
+
 
 const city = cities.find((c) => c.slug === "marostica")!
 const service = services.find((s) => s.slug === "osteopatia")!
