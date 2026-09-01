@@ -104,7 +104,7 @@ export default function OzonoOsteoMaloPage() {
           </AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.3}>
-            <p className="text-lg mb-8">
+           <p className="text-xl mb-8">
               La scelta del trattamento viene sempre definita dopo una{" "}
               <strong>valutazione individuale</strong>. In alcuni casi può
               essere indicata prevalentemente l&apos;ossigeno-ozonoterapia, in
