@@ -37,23 +37,52 @@ export default function OsteopatiaMaloPage() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-       <div className="prose prose-lg max-w-none leading-relaxed">
+        <div className="prose prose-lg max-w-none leading-relaxed">
           <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
 
-          <h2 className="text-2xl font-semibold mb-6">{seoData.h2}</h2>
+          {/* INTRODUZIONE */}
+          <div className="text-xl leading-relaxed mb-8 space-y-5">
+            <p>
+              L&apos;<strong>Osteopatia</strong> è una disciplina manuale che
+              considera la persona nella sua globalità, con l&apos;obiettivo di
+              individuare e trattare le alterazioni funzionali che possono
+              contribuire a <strong>dolore</strong>, rigidità e limitazioni del
+              movimento.
+            </p>
 
-  
-<p className="text-xl leading-relaxed mb-8">
-  L’Osteopatia è una disciplina manuale che considera la persona nella sua globalità, con l’obiettivo di individuare e trattare le alterazioni funzionali che possono contribuire a <strong>dolore</strong>, rigidità e limitazioni del movimento.
+            <p>
+              Nell&apos;area di <strong>Malo</strong>, il Dr. Maico Battistello
+              svolge <strong>trattamenti osteopatici personalizzati</strong>{" "}
+              rivolti ad adulti, anziani, sportivi e donne in gravidanza,
+              attraverso una valutazione accurata della postura, della mobilità
+              articolare e delle tensioni muscolo-fasciali.
+            </p>
 
-  A <strong>Monte di Malo</strong>, il Dr. Maico Battistello svolge <strong>trattamenti osteopatici personalizzati</strong> rivolti ad adulti, anziani, sportivi e donne in gravidanza, attraverso una valutazione accurata della postura, della mobilità articolare e delle tensioni muscolo-fasciali.
+            <p>
+              Il trattamento osteopatico può essere utile in presenza di
+              lombalgia, cervicalgia, dolori articolari, disturbi posturali e
+              problematiche muscolo-scheletriche, sempre nell&apos;ambito di un
+              percorso individualizzato orientato al recupero della{" "}
+              <strong>funzionalità</strong>, della <strong>mobilità</strong> e
+              del benessere generale della persona.
+            </p>
+          </div>
 
-  Il trattamento osteopatico può essere utile in presenza di lombalgia, cervicalgia, dolori articolari, disturbi posturali e problematiche muscolo-scheletriche, sempre nell’ambito di un percorso individualizzato orientato al recupero della <strong>funzionalità</strong>, della <strong>mobilità</strong> e del benessere generale della persona.
-</p>
+          {/* AREA GEOGRAFICA */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">
+              Un riferimento per Malo e l&apos;Alto Vicentino
+            </h2>
 
-
-
-
+            <p className="text-xl leading-relaxed">
+              L&apos;attività nell&apos;area di <strong>Malo</strong> rappresenta
+              un riferimento anche per chi proviene da{" "}
+              <strong>
+                Isola Vicentina, Marano Vicentino, Thiene e Villaverla
+              </strong>
+              , oltre che dagli altri comuni dell&apos;Alto Vicentino.
+            </p>
+          </div>
         </div>
       </div>
 
