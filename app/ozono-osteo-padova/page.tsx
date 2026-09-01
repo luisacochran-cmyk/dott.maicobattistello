@@ -70,6 +70,22 @@ export default function OzonoOsteoPadovaPage() {
             </div>
           </AnimatedScrollElement>
 
+          {/* AREA GEOGRAFICA */}
+          <AnimatedScrollElement direction="up" delay={0.15}>
+            <div className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4">
+                Ozonoterapia e Osteopatia a Padova e nell&apos;area padovana
+              </h2>
+
+              <p className="text-lg">
+                Lo studio di <strong>Padova</strong> è un riferimento anche per chi
+                proviene da <strong>Abano Terme, Selvazzano Dentro, Albignasego,
+                Vigonza e Cadoneghe</strong>, oltre che dagli altri comuni
+                dell&apos;area padovana.
+              </p>
+            </div>
+          </AnimatedScrollElement>
+
           <AnimatedScrollElement direction="up" delay={0.2}>
             <h3 className="text-2xl font-semibold mb-5">
               Quando può essere indicato l&apos;approccio integrato a Padova
