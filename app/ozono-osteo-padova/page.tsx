@@ -77,7 +77,7 @@ export default function OzonoOsteoPadovaPage() {
                 Ozonoterapia e Osteopatia a Padova e nell&apos;area padovana
               </h2>
 
-              <p className="text-lg">
+              <p className="text-xl">
                 Lo studio di <strong>Padova</strong> è un riferimento anche per chi
                 proviene da <strong>Abano Terme, Selvazzano Dentro, Albignasego,
                 Vigonza e Cadoneghe</strong>, oltre che dagli altri comuni
@@ -103,7 +103,7 @@ export default function OzonoOsteoPadovaPage() {
           </AnimatedScrollElement>
 
           <AnimatedScrollElement direction="up" delay={0.3}>
-            <p className="text-lg mb-8">
+            <p className="text-xl mb-8">
               La scelta del trattamento viene sempre definita dopo una{" "}
               <strong>valutazione individuale</strong>. In alcuni casi può
               essere indicata prevalentemente l&apos;ossigeno-ozonoterapia, in
