@@ -38,6 +38,8 @@ export default function MedicinaLegalepadovaPage() {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose prose-lg max-w-none">
 
+          {/* HERO / INTRODUZIONE */}
+
           <h1 className="text-3xl font-bold mb-6">
             {seoData.h1}
           </h1>
@@ -78,11 +80,13 @@ export default function MedicinaLegalepadovaPage() {
             </p>
           </div>
 
+          {/* SERVIZI */}
+
           <h2 className="text-2xl font-semibold mb-4">
-            Servizi di Medicina Legale a {city.name}
+            Servizi di Medicina Legale a Padova
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {service.conditions.map((condition, index) => (
               <div
                 key={index}
@@ -95,62 +99,149 @@ export default function MedicinaLegalepadovaPage() {
             ))}
           </div>
 
-          <h2 className="text-2xl font-semibold mb-4">
-            Consulenza Medico-Legale a Padova: ambiti di intervento
-          </h2>
+          {/* DANNO BIOLOGICO */}
 
-          <ul className="list-disc pl-6 mb-8 text-lg space-y-2">
-            {service.benefits.map((benefit, index) => (
-              <li key={index}>{benefit}</li>
-            ))}
-          </ul>
-
-          <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
-            <h2 className="text-2xl font-semibold mb-3">
-              Esperienza e competenza in Medicina Legale
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold mb-4">
+              Danno biologico e valutazione del danno alla persona
             </h2>
 
-            <p className="text-lg mb-3">
-              Il Dr. Maico Battistello è specialista in Medicina Legale e
-              svolge attività nella valutazione del danno biologico e del
-              danno alla persona, nella redazione di perizie medico-legali
-              e nell&apos;assistenza nell&apos;ambito di controversie
-              assicurative e giudiziarie.
+            <div className="text-lg space-y-4">
+              <p>
+                La valutazione del danno alla persona è uno degli ambiti
+                della Medicina Legale e permette di analizzare le conseguenze
+                di un evento lesivo sulla salute della persona.
+              </p>
+
+              <p>
+                La consulenza medico-legale prende in considerazione la
+                documentazione clinica disponibile, gli accertamenti
+                diagnostici, il percorso terapeutico, gli esiti delle
+                lesioni e gli eventuali postumi permanenti.
+              </p>
+
+              <p>
+                La valutazione può riguardare, tra gli altri, danni derivanti
+                da incidenti stradali, lesioni personali e altri eventi che
+                abbiano determinato conseguenze temporanee o permanenti.
+              </p>
+            </div>
+          </section>
+
+          {/* RESPONSABILITÀ SANITARIA E CTP */}
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold mb-4">
+              Responsabilità sanitaria e Consulenza Tecnica di Parte (CTP)
+            </h2>
+
+            <div className="text-lg space-y-4">
+              <p>
+                Nell&apos;ambito della responsabilità sanitaria e
+                professionale, la valutazione medico-legale consente di
+                esaminare la documentazione clinica e il percorso diagnostico
+                e terapeutico in relazione allo specifico caso.
+              </p>
+
+              <p>
+                Il medico legale può inoltre svolgere il ruolo di consulente
+                tecnico di parte (CTP), fornendo una valutazione specialistica
+                degli aspetti medico-legali e collaborando con il legale
+                nell&apos;analisi della documentazione e del caso.
+              </p>
+
+              <p>
+                La consulenza tecnica di parte può essere utilizzata sia
+                nella fase stragiudiziale sia nell&apos;ambito di un
+                procedimento giudiziario.
+              </p>
+            </div>
+          </section>
+
+          {/* INVALIDITÀ / INFORTUNI / ASSICURAZIONI */}
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold mb-4">
+              Invalidità, infortuni e valutazioni assicurative
+            </h2>
+
+            <div className="text-lg space-y-4">
+              <p>
+                L&apos;attività medico-legale comprende anche valutazioni
+                relative all&apos;invalidità civile, agli infortuni sul
+                lavoro e alle conseguenze permanenti derivanti da lesioni o
+                eventi traumatici.
+              </p>
+
+              <p>
+                In ambito assicurativo, la consulenza medico-legale permette
+                di analizzare la documentazione sanitaria e gli esiti
+                dell&apos;evento ai fini della valutazione del danno e delle
+                problematiche medico-legali connesse al caso.
+              </p>
+
+              <p>
+                Ogni valutazione viene effettuata sulla base della
+                documentazione disponibile e delle caratteristiche
+                specifiche della situazione esaminata.
+              </p>
+            </div>
+          </section>
+
+          {/* BOX PROFESSIONALE */}
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-6 my-10">
+            <h2 className="text-2xl font-semibold mb-3">
+              Valutazione medico-legale del caso
+            </h2>
+
+            <p className="text-lg">
+              Il Dr. Maico Battistello è specialista in Medicina Legale.
+              L&apos;attività comprende l&apos;analisi della documentazione
+              clinica, la valutazione medico-legale del danno alla persona,
+              la redazione di relazioni medico-legali e l&apos;assistenza
+              nell&apos;ambito di consulenze tecniche di parte.
             </p>
           </div>
 
-          <h2 className="text-2xl font-semibold mb-4">
-            Quando rivolgersi a un Medico Legale a Padova
-          </h2>
+          {/* QUANDO RIVOLGERSI AL MEDICO LEGALE */}
 
-          <div className="text-lg space-y-4 mb-8">
-            <p>
-              Una valutazione medico-legale può essere richiesta in seguito
-              a un incidente stradale, un infortunio o un evento che abbia
-              determinato conseguenze temporanee o permanenti sulla salute,
-              oppure nell&apos;ambito di una controversia assicurativa o di
-              un caso di responsabilità professionale sanitaria.
-            </p>
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold mb-4">
+              Quando rivolgersi a un Medico Legale a Padova
+            </h2>
 
-            <p>
-              Il medico legale analizza la documentazione sanitaria e gli
-              esiti dell&apos;evento, valutando le conseguenze del danno
-              alla persona e la loro rilevanza medico-legale.
-            </p>
+            <div className="text-lg space-y-4">
+              <p>
+                Una valutazione medico-legale può essere richiesta in seguito
+                a un incidente stradale, un infortunio o un evento che abbia
+                determinato conseguenze temporanee o permanenti sulla salute,
+                oppure nell&apos;ambito di una controversia assicurativa o di
+                un caso di responsabilità professionale sanitaria.
+              </p>
 
-            <p>
-              La consulenza può inoltre affiancare il paziente e il suo
-              legale attraverso una consulenza tecnica di parte (CTP), sia
-              nella fase stragiudiziale sia nell&apos;ambito di un
-              procedimento giudiziario.
-            </p>
-          </div>
+              <p>
+                Il medico legale analizza la documentazione sanitaria e gli
+                esiti dell&apos;evento, valutando le conseguenze del danno
+                alla persona e la loro rilevanza medico-legale.
+              </p>
+
+              <p>
+                La consulenza può inoltre affiancare la persona e il suo
+                legale attraverso una consulenza tecnica di parte (CTP), sia
+                nella fase stragiudiziale sia nell&apos;ambito di un
+                procedimento giudiziario.
+              </p>
+            </div>
+          </section>
+
+          {/* FAQ */}
 
           <h2 className="text-2xl font-semibold mb-4">
             Domande frequenti sulla Medicina Legale
           </h2>
 
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-10">
 
             <details className="bg-gray-50 p-5 rounded-lg">
               <summary className="font-semibold text-lg cursor-pointer">
@@ -233,13 +324,15 @@ export default function MedicinaLegalepadovaPage() {
 
           </div>
 
+          {/* CTA */}
+
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
             <h2 className="text-2xl font-semibold mb-3">
-              Consulenza di Medicina Legale a {city.name}
+              Consulenza di Medicina Legale a Padova
             </h2>
 
             <p className="text-lg mb-4">
-              Per richiedere una consulenza medico-legale a {city.name} o
+              Per richiedere una consulenza medico-legale a Padova o
               ricevere informazioni sulla valutazione del proprio caso,
               è possibile contattare il Dr. Maico Battistello.
             </p>
