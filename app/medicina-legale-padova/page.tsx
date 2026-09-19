@@ -25,6 +25,7 @@ export default function MedicinaLegalepadovaPage() {
       />
 
       <Breadcrumb
+        showTitle={false}
         items={[
           { label: "Home", href: "/" },
           { label: "Medicina Legale", href: "/legal-medicine" },
@@ -37,8 +38,6 @@ export default function MedicinaLegalepadovaPage() {
 
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="prose prose-lg max-w-none">
-
-          {/* HERO / INTRODUZIONE */}
 
           <h1 className="text-3xl font-bold mb-6">
             {seoData.h1}
@@ -80,8 +79,6 @@ export default function MedicinaLegalepadovaPage() {
             </p>
           </div>
 
-          {/* SERVIZI */}
-
           <h2 className="text-2xl font-semibold mb-4">
             Servizi di Medicina Legale a Padova
           </h2>
@@ -98,8 +95,6 @@ export default function MedicinaLegalepadovaPage() {
               </div>
             ))}
           </div>
-
-          {/* DANNO BIOLOGICO */}
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4">
@@ -127,8 +122,6 @@ export default function MedicinaLegalepadovaPage() {
               </p>
             </div>
           </section>
-
-          {/* RESPONSABILITÀ SANITARIA E CTP */}
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4">
@@ -158,8 +151,6 @@ export default function MedicinaLegalepadovaPage() {
             </div>
           </section>
 
-          {/* INVALIDITÀ / INFORTUNI / ASSICURAZIONI */}
-
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4">
               Invalidità, infortuni e valutazioni assicurative
@@ -188,8 +179,6 @@ export default function MedicinaLegalepadovaPage() {
             </div>
           </section>
 
-          {/* BOX PROFESSIONALE */}
-
           <div className="bg-green-50 border-l-4 border-green-500 p-6 my-10">
             <h2 className="text-2xl font-semibold mb-3">
               Valutazione medico-legale del caso
@@ -203,8 +192,6 @@ export default function MedicinaLegalepadovaPage() {
               nell&apos;ambito di consulenze tecniche di parte.
             </p>
           </div>
-
-          {/* QUANDO RIVOLGERSI AL MEDICO LEGALE */}
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold mb-4">
@@ -234,8 +221,6 @@ export default function MedicinaLegalepadovaPage() {
               </p>
             </div>
           </section>
-
-          {/* FAQ */}
 
           <h2 className="text-2xl font-semibold mb-4">
             Domande frequenti sulla Medicina Legale
@@ -323,8 +308,6 @@ export default function MedicinaLegalepadovaPage() {
             </details>
 
           </div>
-
-          {/* CTA */}
 
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
             <h2 className="text-2xl font-semibold mb-3">
