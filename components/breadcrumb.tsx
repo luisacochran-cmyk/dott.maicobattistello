@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, Home } from "lucide-react"
 
 interface BreadcrumbProps {
   items: {
@@ -11,53 +11,71 @@ interface BreadcrumbProps {
 
 export default function Breadcrumb({
   items,
-  showTitle = true,
+  showTitle = false,
 }: BreadcrumbProps) {
   const currentPage = items[items.length - 1]?.label || ""
 
   return (
-    <div className="bg-secondary py-4 w-full">
-      <div className="container mx-auto px-4 w-full">
+    <section className="w-full border-b border-blue-100 bg-gradient-to-r from-blue-50 via-white to-blue-50">
+      <div className="container mx-auto px-4 py-4">
         {showTitle && (
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">
+          <h1 className="mb-3 text-2xl font-bold text-gray-900 md:text-3xl">
             {currentPage}
           </h1>
         )}
 
-        <nav className="flex" aria-label="Breadcrumb">
-          <ol className="inline-flex items-center space-x-1 md:space-x-3">
-            <li className="inline-flex items-center">
+        <nav aria-label="Breadcrumb">
+          <ol className="flex flex-wrap items-center gap-y-2 text-sm md:text-base">
+
+            {/* HOME */}
+            <li className="flex items-center">
               <Link
                 href="/"
-                className="text-sm text-primary hover:underline"
+                className="group flex items-center gap-2 font-medium text-blue-700 transition-colors hover:text-blue-900"
               >
-                Home
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-blue-100 transition group-hover:bg-blue-100">
+                  <Home className="h-4 w-4" aria-hidden="true" />
+                </span>
+
+                <span>Home</span>
               </Link>
             </li>
 
-            {items.slice(1).map((item, index) => (
-              <li key={index}>
-                <div className="flex items-center">
-                  <ChevronRight className="w-4 h-4 text-gray-400" />
+            {/* BREADCRUMB ITEMS */}
+            {items.slice(1).map((item, index) => {
+              const isLast = index === items.slice(1).length - 1
 
-                  {index === items.slice(1).length - 1 ? (
-                    <span className="ml-1 text-sm text-gray-500 md:ml-2">
+              return (
+                <li
+                  key={`${item.href}-${index}`}
+                  className="flex items-center"
+                >
+                  <ChevronRight
+                    className="mx-2 h-4 w-4 text-blue-300 md:mx-3"
+                    aria-hidden="true"
+                  />
+
+                  {isLast ? (
+                    <span
+                      className="rounded-full bg-blue-600 px-4 py-1.5 font-semibold text-white shadow-sm"
+                      aria-current="page"
+                    >
                       {item.label}
                     </span>
                   ) : (
                     <Link
                       href={item.href}
-                      className="ml-1 text-sm text-primary hover:underline md:ml-2"
+                      className="font-medium text-blue-700 transition-colors hover:text-blue-900 hover:underline"
                     >
                       {item.label}
                     </Link>
                   )}
-                </div>
-              </li>
-            ))}
+                </li>
+              )
+            })}
           </ol>
         </nav>
       </div>
-    </div>
+    </section>
   )
 }
