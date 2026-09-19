@@ -316,6 +316,10 @@ export function generateLocalSEO(
   const isOzonoterapiaMalo =
     service.slug === "ozonoterapia" && city.slug === "malo"
 
+  // Ottimizzazione specifica per Medicina Legale a Padova
+  const isMedicinaLegalePadova =
+    service.slug === "medicina-legale" && city.slug === "padova"
+
   return {
     title: isOsteopatiaMarostica
       ? "Osteopata a Marostica | Dr. Maico Battistello – Osteopatia"
@@ -333,15 +337,22 @@ export function generateLocalSEO(
                   ? "Ozonoterapia a Schio | Dr. Maico Battistello"
                   : isOzonoterapiaMalo
                     ? "Ozonoterapia a Malo | Dr. Maico Battistello"
-                    : `${service.name} a ${city.name} | Dr. Maico Battistello`,
+                    : isMedicinaLegalePadova
+                      ? "Medico Legale Padova | Dr. Maico Battistello"
+                      : `${service.name} a ${city.name} | Dr. Maico Battistello`,
 
-    description:
-      `${service.description} a ${city.name} con il Dr. Maico Battistello. ` +
-      `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
+    description: isMedicinaLegalePadova
+      ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
+      : `${service.description} a ${city.name} con il Dr. Maico Battistello. ` +
+        `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
 
-    h1: `${service.name} a ${city.name} – Dr. Maico Battistello`,
+    h1: isMedicinaLegalePadova
+      ? "Medico Legale a Padova – Dr. Maico Battistello"
+      : `${service.name} a ${city.name} – Dr. Maico Battistello`,
 
-    h2: `${service.name} a ${city.name}`,
+    h2: isMedicinaLegalePadova
+      ? "Consulenze e valutazioni di Medicina Legale a Padova"
+      : `${service.name} a ${city.name}`,
 
     canonical:
       `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
