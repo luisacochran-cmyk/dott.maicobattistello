@@ -31,7 +31,7 @@ const articles: Article[] = [
     category: "ozone-therapy",
     publishDate: "18/01/2023",
     archived: true,
-
+    content: `
 È una malattia respiratoria acuta causata da virus influenzali appartenenti alla famiglia degli Orthomyxoviridae. Il contagio avviene tipicamente in inverno e le sue manifestazioni cliniche rappresentano un importante problema di salute pubblica, con caratteristiche simili al virus Covid-19.
 
 L'alto tasso di contagio e l'ubiquità dei virus influenzali, trasmessi per contatto diretto, causano ondate epidemiche annuali. Il rischio di gravi complicazioni sanitarie e ospedalizzazione colpisce principalmente individui con comorbilità e malattie croniche.
