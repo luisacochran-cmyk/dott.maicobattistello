@@ -25,7 +25,6 @@ interface Article {
 
 const articles: Article[] = [
   {
-   {
     id: 1,
     title: "Influenza Epidemica e Ozonoterapia",
     image: "/images/articolo1.jpg",
