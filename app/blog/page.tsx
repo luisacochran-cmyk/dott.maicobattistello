@@ -20,16 +20,18 @@ interface Article {
   category: Category
   content?: string
   publishDate?: string
+  archived?: boolean
 }
 
 const articles: Article[] = [
   {
+   {
     id: 1,
     title: "Influenza Epidemica e Ozonoterapia",
     image: "/images/articolo1.jpg",
     category: "ozone-therapy",
     publishDate: "18/01/2023",
-    content: `Cos'è esattamente l'influenza?
+    archived: true,
 
 È una malattia respiratoria acuta causata da virus influenzali appartenenti alla famiglia degli Orthomyxoviridae. Il contagio avviene tipicamente in inverno e le sue manifestazioni cliniche rappresentano un importante problema di salute pubblica, con caratteristiche simili al virus Covid-19.
 
@@ -66,6 +68,7 @@ Questo è un esempio di sottotitolo che dovrebbe essere gestito come un h3.
     image: "/images/articolo2.jpg",
     category: "ozone-therapy",
     publishDate: "20/12/2022",
+    archived: true,
     content: `Il Long Covid, noto anche come "sindrome post-Covid", si riferisce a sintomi persistenti dopo l'infezione da SARS-CoV-2, che durano settimane o mesi dopo la guarigione.
 
 I sintomi, la durata e l'intensità variano significativamente da paziente a paziente.
@@ -332,14 +335,20 @@ export default function BlogPage() {
     }
   }, [searchTerm, activeArticle])
 
-  const filteredArticles = articles.filter((article) => {
-    if (activeArticle) {
-      return true
-    }
-    const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesCategory = selectedCategory === "all" || article.category === selectedCategory
-    return matchesSearch && matchesCategory
-  })
+ const filteredArticles = articles.filter((article) => {
+  if (article.archived) {
+    return false
+  }
+
+  if (activeArticle) {
+    return true
+  }
+
+  const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase())
+  const matchesCategory = selectedCategory === "all" || article.category === selectedCategory
+
+  return matchesSearch && matchesCategory
+})
 
   const totalPages = Math.ceil(filteredArticles.length / articlesPerPage)
   const currentArticles = filteredArticles.slice((currentPage - 1) * articlesPerPage, currentPage * articlesPerPage)
