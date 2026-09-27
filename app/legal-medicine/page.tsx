@@ -36,8 +36,8 @@ export default function LegalMedicinePage() {
 
           <h2 className="text-2xl font-semibold mb-6 text-primary border-b-2 border-primary pb-3 mt-10">Presentazione</h2>
 
-         <p className="text-xl leading-relaxed mb-6">
-            Sono il <strong>Dr. Maico Battistello</strong>, medico chirurgo con esperienza dal 2001 in ambito di <strong>medicina legale e delle assicurazioni</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati, e agenzie.
+          <p className="text-xl leading-relaxed mb-6">
+            Sono il <strong>Dr. Maico Battistello</strong>, medico chirurgo, attivo nell'ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
           </p>
 
           <h3 className="text-xl font-semibold mb-4 text-primary">Responsabilità Civile (RC)</h3>
