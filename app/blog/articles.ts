@@ -160,7 +160,260 @@ Nei mesi autunnali il carico infiammatorio e lo stress ossidativo tendono a cres
 
 Selezionare di seguito per leggere le fonti peer-reviewed:`,
   },
+  {
+    slug: "lombalgia-approccio-integrato-osteopatia-ozonoterapia",
+    title: "Il paziente non è un protocollo",
+    image: "/images/Esame fisioterapico della schiena blog.png",
+    category: "Osteopatia",
+    publishDate: "05/10/2026",
+    content: `**Lombalgia, cambio di stagione e approccio integrato: perché il mal di schiena non si affronta allo stesso modo in ogni persona**
 
+Arriva l’autunno. E la schiena si fa sentire.
+
+C’è chi lo nota ogni anno: con il cambio di stagione il mal di schiena sembra tornare, oppure un fastidio rimasto silenzioso per mesi ricompare proprio adesso.
+
+Lo stesso può accadere alla cervicale, alle spalle, alle ginocchia o ad altre articolazioni.
+
+È un’osservazione frequente anche nella pratica clinica. Ma attribuire tutto semplicemente al freddo, all’umidità o alla pressione atmosferica sarebbe troppo facile.
+
+La ricerca scientifica, infatti, non dimostra un rapporto diretto e costante tra i comuni cambiamenti meteorologici e l’insorgenza della lombalgia.
+
+Alcuni studi hanno però osservato una stagionalità delle consultazioni per mal di schiena. A cambiare, insieme alle stagioni, possono essere soprattutto i nostri ritmi, il movimento, le attività, il tempo trascorso seduti, i carichi di lavoro e le abitudini quotidiane.
+
+Il cambio di stagione può quindi essere il momento in cui un equilibrio fino ad allora ben compensato comincia nuovamente a manifestare i propri limiti.
+
+Ma la domanda utile non è soltanto:
+
+«Perché proprio adesso?»
+
+La domanda più importante è:
+
+«Che cosa sta succedendo realmente a questa persona?»
+
+Perché dietro una parola apparentemente semplice come lombalgia possono esserci situazioni molto diverse.
+
+### Lombalgia: una parola, molte storie diverse
+
+Con il termine lombalgia si indica il dolore localizzato nella parte inferiore della schiena.
+
+È uno dei disturbi muscoloscheletrici più comuni e rappresenta una delle principali cause di limitazione funzionale nella popolazione adulta.
+
+Eppure, nella grande maggioranza dei casi, non è possibile attribuire con certezza tutto il dolore a una singola struttura anatomica. Per questo si parla molto spesso di lombalgia non specifica.
+
+Questo spiega perché due persone possano dire entrambe:
+
+«Ho mal di schiena»
+
+e avere, in realtà, quadri molto differenti.
+
+Un dolore può essere comparso ieri oppure essere presente da mesi. Può rimanere localizzato oppure irradiarsi verso il gluteo o l’arto inferiore. Può manifestarsi dopo uno sforzo, dopo molte ore trascorse seduti, durante alcuni movimenti oppure senza un evento preciso che la persona riesca a ricordare.
+
+Ma soprattutto, il punto nel quale viene percepito il dolore non coincide necessariamente con l’unico distretto coinvolto nel problema.
+
+**Stesso sintomo non significa stessa causa.**
+
+Per questo ogni trattamento deve essere costruito sulla persona.
+
+### E allora il cambio di stagione che cosa c’entra?
+
+Molte persone associano spontaneamente il peggioramento dei dolori muscoloscheletrici al cambio del tempo.
+
+È una percezione reale per chi la vive, ma il legame scientifico è più complesso di quanto suggerisca il luogo comune:
+
+«Fa freddo, quindi mi fa male la schiena.»
+
+Le revisioni disponibili non mostrano infatti che temperatura, umidità, pioggia o pressione atmosferica siano, da sole, cause affidabili di nuovi episodi di lombalgia.
+
+La stagionalità può però coincidere con cambiamenti molto concreti: si modificano le ore di luce, le attività all’aperto, il livello di movimento, il tempo trascorso seduti, i carichi di lavoro e le routine quotidiane.
+
+Un sistema muscoloscheletrico che nei mesi precedenti riusciva a compensare può quindi manifestare nuovamente rigidità, dolore o limitazioni funzionali.
+
+Anche il dolore, a sua volta, può modificare il modo in cui ci muoviamo.
+
+Quando una persona ha mal di schiena tende spesso, anche inconsapevolmente, a cambiare il modo di camminare, di stare seduta, di ruotare il tronco o di distribuire i carichi.
+
+Possono così comparire compensi e rigidità in distretti differenti.
+
+In altre parole: il periodo dell’anno può coincidere con una riacutizzazione, ma non basta guardare il termometro per spiegare il dolore.
+
+### Prima del trattamento viene la valutazione
+
+Quando una lombalgia compare o ritorna, il primo passaggio non dovrebbe essere scegliere automaticamente una tecnica.
+
+Occorre prima comprendere il problema.
+
+Come è iniziato il dolore?
+
+Da quanto tempo è presente?
+
+Che cosa lo modifica?
+
+È localizzato oppure irradiato?
+
+Ci sono formicolii, alterazioni della sensibilità o perdita di forza?
+
+Quale attività lavorativa e sportiva svolge la persona?
+
+Quali episodi ha avuto in precedenza?
+
+La valutazione serve anche a riconoscere quelle situazioni nelle quali il dolore lombare richiede ulteriori approfondimenti o un percorso differente.
+
+Nel mio approccio c’è però un ulteriore elemento fondamentale:
+
+non considero soltanto la regione nella quale il paziente avverte dolore.
+
+Una lombalgia può associarsi a rigidità o alterazioni funzionali del bacino, del tratto dorsale, della regione cervicale e, in alcuni casi, del cingolo scapolare.
+
+Analogamente, un dolore al ginocchio non viene necessariamente considerato come un problema isolato dal resto dell’arto inferiore, dal bacino o dalla colonna.
+
+Un problema alla spalla può richiedere di valutare anche cervicale, tratto dorsale, scapola e spalla controlaterale.
+
+Questo non significa trattare indiscriminatamente tutto il corpo.
+
+Significa individuare quali distretti siano realmente coinvolti in quella persona.
+
+**Il punto non è applicare un protocollo alla lombalgia.**
+
+**È costruire un percorso per quella persona.**
+
+### Osteopatia e ossigeno-ozonoterapia: due competenze integrate, un unico trattamento
+
+Nel mio approccio alla lombalgia, osteopatia e ossigeno-ozonoterapia non rappresentano due strade separate o due trattamenti da mettere in concorrenza.
+
+**Fanno parte dello stesso trattamento.**
+
+Il valore dell’integrazione non consiste semplicemente nel disporre di due tecniche diverse, ma nel poter valutare lo stesso problema contemporaneamente dal punto di vista doloroso-infiammatorio e da quello funzionale, biomeccanico e posturale.
+
+L’ossigeno-ozonoterapia viene utilizzata, quando indicata, per intervenire prevalentemente sulla componente dolorosa e infiammatoria.
+
+L’osteopatia consente contemporaneamente di valutare e trattare gli aspetti funzionali e biomeccanici associati: mobilità articolare, tensioni muscolari, compensi, adattamenti posturali e relazioni tra distretti differenti.
+
+I due approcci non vengono quindi semplicemente affiancati.
+
+Vengono integrati all’interno dello stesso ragionamento clinico.
+
+Il dolore può infatti essere accompagnato da un’alterazione funzionale già presente prima della comparsa dei sintomi, può essere favorito da essa oppure può generarla successivamente attraverso posture e movimenti antalgici.
+
+In molti pazienti questi aspetti finiscono per sovrapporsi.
+
+### Due strumenti. Un solo ragionamento clinico.
+
+Il trattamento viene quindi costruito valutando contemporaneamente:
+
+• la componente dolorosa e infiammatoria;
+• la mobilità dei distretti coinvolti;
+• i compensi muscolari;
+• gli adattamenti posturali;
+• le eventuali relazioni funzionali con altre regioni corporee.
+
+Non tratto soltanto il punto in cui compare il dolore: valuto il problema nel suo insieme e integro, nello stesso trattamento, le possibilità dell’osteopatia e dell’ossigeno-ozonoterapia.
+
+L’obiettivo non è semplicemente ridurre il dolore nel punto in cui viene percepito.
+
+È comprendere perché quel distretto stia soffrendo e quali elementi possano contribuire al mantenimento del problema.
+
+**Non due trattamenti eseguiti uno accanto all’altro, ma due competenze che convergono nello stesso ragionamento clinico e nello stesso progetto terapeutico.**
+
+### Un trattamento locale quando serve. Un approccio globale sempre.
+
+In alcuni pazienti il trattamento sarà prevalentemente concentrato sulla regione lombare.
+
+In altri, la valutazione può evidenziare la necessità di intervenire anche su distretti differenti.
+
+Una lombalgia può, per esempio, inserirsi in un quadro nel quale siano presenti rigidità cervicale, alterazioni del tratto dorsale, tensioni del cingolo scapolare o compensi del bacino.
+
+In questi casi il trattamento viene organizzato in maniera più ampia, integrando le modalità di ossigeno-ozonoterapia ritenute appropriate con il trattamento osteopatico e manipolativo.
+
+Quando indicato, anche l’approccio cranio-sacrale può entrare nel percorso osteopatico complessivo.
+
+La stessa logica viene applicata agli altri distretti.
+
+Un ginocchio doloroso non viene necessariamente considerato come un’articolazione isolata.
+
+Una spalla dolorosa non viene valutata separatamente dalla cervicale, dalla scapola, dal tratto dorsale e dal funzionamento dell’arto superiore nel suo insieme.
+
+Il dolore indica dove il paziente sente il problema.
+
+La valutazione deve stabilire dove sia realmente necessario intervenire.
+
+### Ossigeno-ozonoterapia: non esiste una sola modalità
+
+Parlare genericamente di “ozonoterapia” può far pensare a un’unica procedura.
+
+In realtà esistono differenti modalità di utilizzo dell’ossigeno-ozono e la loro scelta deve essere contestualizzata nel quadro clinico.
+
+Nella lombalgia il trattamento può essere mirato prevalentemente alla regione lombare oppure, quando la valutazione evidenzia altre componenti significative, inserirsi in un trattamento più esteso dell’apparato muscoloscheletrico.
+
+Questo è un punto per me particolarmente importante.
+
+Non utilizzo l’ossigeno-ozonoterapia come una procedura standard da applicare automaticamente nel punto in cui il paziente riferisce dolore.
+
+La inserisco all’interno di una valutazione globale della persona.
+
+È la stessa logica che guida il trattamento osteopatico.
+
+Per questo le due competenze vengono utilizzate insieme e non come due percorsi indipendenti.
+
+Nell’ambito della patologia discale lombare, l’utilizzo dell’ozono è stato studiato in numerosi lavori scientifici, con risultati favorevoli in alcuni quadri e con differenze tra tecniche, indicazioni e qualità degli studi disponibili.
+
+Anche in questo caso, però, prima della tecnica viene la valutazione del paziente.
+
+### «Quante sedute serviranno?»
+
+È una domanda comprensibile.
+
+Ma dare la stessa risposta a tutti significherebbe contraddire proprio il principio su cui si basa il trattamento.
+
+Numero, frequenza e progressione delle sedute dipendono dal quadro iniziale e dalla sua evoluzione.
+
+Il percorso deve poter essere rivalutato, modificato e adattato alla risposta individuale.
+
+Anche l’estensione del trattamento può cambiare nel tempo.
+
+In alcune fasi può essere necessario concentrarsi maggiormente sulla componente dolorosa e infiammatoria.
+
+In altre assume maggiore importanza il lavoro sugli aspetti funzionali e sui compensi.
+
+Spesso le due componenti vengono affrontate contemporaneamente.
+
+### Quando il mal di schiena merita una valutazione
+
+Molti episodi di lombalgia migliorano nel tempo.
+
+Un dolore importante o persistente, un cambiamento significativo rispetto agli episodi abituali, la presenza di sintomi neurologici o altre manifestazioni insolite richiedono però una valutazione clinica.
+
+Lo stesso vale quando gli episodi continuano a ripresentarsi e il mal di schiena comincia a interferire con movimento, attività quotidiane, lavoro o sonno.
+
+In questi casi l’obiettivo non è soltanto spegnere l’episodio del momento, ma comprenderne meglio le caratteristiche e impostare una gestione appropriata.
+
+### Il paziente non è un protocollo.
+
+La lombalgia è una parola.
+
+Dietro quella parola, però, ci sono persone diverse, storie diverse e sistemi muscoloscheletrici che si adattano e compensano in maniera differente.
+
+Per questo il trattamento non dovrebbe partire da una tecnica prestabilita, ma dalla valutazione della persona.
+
+Nel mio approccio, osteopatia e ossigeno-ozonoterapia vengono integrate all’interno dello stesso trattamento, modulandone modalità e progressione sulla base del quadro clinico e della risposta individuale.
+
+**Un trattamento locale quando serve.**
+
+**Un approccio globale sempre.**
+
+Perché l’obiettivo non è trattare semplicemente “una lombalgia”.
+
+È capire quella lombalgia, in quella persona, in quel momento.
+
+**IL MAL DI SCHIENA CONTINUA A TORNARE?**
+
+Una valutazione clinica permette di inquadrare le caratteristiche del dolore, individuare eventuali elementi che richiedano approfondimento e definire un percorso terapeutico integrato e personalizzato.
+
+**Dr. Maico Battistello**
+
+Medico Chirurgo · Osteopata · Ossigeno-Ozonoterapia
+
+Marostica · Malo · Schio · Padova`,
+  },
 ]
 
 export function getArticleBySlug(slug: string) {
