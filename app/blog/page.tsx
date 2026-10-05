@@ -257,6 +257,16 @@ Se desideri valutare il tuo stato infiammatorio e strutturare un percorso terape
 
 `,
   },
+    {
+    id: 5,
+    title: "Il paziente non è un protocollo",
+    image: "/images/Esame fisioterapico della schiena blog.png",
+    category: "osteopathy",
+    publishDate: "05/10/2026",
+    content: `**Lombalgia, cambio di stagione e approccio integrato: perché il mal di schiena non si affronta allo stesso modo in ogni persona**
+
+Questo articolo è disponibile nella pagina dedicata.`,
+  },
 ]
 
 type BibliographyDropdownProps = {}
@@ -353,12 +363,19 @@ export default function BlogPage() {
   const currentArticles = filteredArticles.slice((currentPage - 1) * articlesPerPage, currentPage * articlesPerPage)
 
   const handleArticleClick = (article: Article, e: React.MouseEvent) => {
-    e.preventDefault()
-    setActiveArticle(article)
-    setSearchTerm("")
-    setHighlightedContent(null)
-    window.scrollTo(0, 0)
+  e.preventDefault()
+
+  if (article.id === 5) {
+    window.location.href =
+      "/blog/lombalgia-approccio-integrato-osteopatia-ozonoterapia"
+    return
   }
+
+  setActiveArticle(article)
+  setSearchTerm("")
+  setHighlightedContent(null)
+  window.scrollTo(0, 0)
+}
 
   const handleBackToList = () => {
     setActiveArticle(null)
