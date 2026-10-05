@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 import { getArticleBySlug } from "../articles"
 import AnimatedLink from "@/components/animated-link"
+
 type BlogArticlePageProps = {
   params: {
     slug: string
@@ -25,7 +26,10 @@ export function generateMetadata({
 
   return {
     title: `${article.title} | Dr. Maico Battistello`,
-    description: article.content.slice(0, 155),
+    description: article.content
+      .replace(/\*\*/g, "")
+      .replace(/### /g, "")
+      .slice(0, 155),
     alternates: {
       canonical: `https://dottmaicobattistello.it/blog/${article.slug}`,
     },
@@ -41,159 +45,164 @@ export default function BlogArticlePage({
     notFound()
   }
 
-  const paragraphs = article.content.split("\n\n")
-    const renderArticleContent = () => {
+  const isLombalgiaArticle =
+    article.slug === "lombalgia-approccio-integrato-osteopatia-ozonoterapia"
+
+  const renderInlineContent = (text: string) => {
+    const parts = text.split(
+      /(\*\*.*?\*\*|Ossigeno-Ozonoterapia|ossigeno-ozonoterapia|Ozonoterapia|ozonoterapia|Osteopatia|osteopatia)/g,
+    )
+
+    return parts.map((part, index) => {
+      if (part.startsWith("**") && part.endsWith("**")) {
+        return (
+          <strong key={index} className="font-bold text-primary">
+            {part.slice(2, -2)}
+          </strong>
+        )
+      }
+
+      const lower = part.toLowerCase()
+
+      if (
+        lower === "ossigeno-ozonoterapia" ||
+        lower === "ozonoterapia"
+      ) {
+        return (
+          <AnimatedLink key={index} href="/ozonoterapia">
+            {part}
+          </AnimatedLink>
+        )
+      }
+
+      if (lower === "osteopatia") {
+        return (
+          <AnimatedLink key={index} href="/osteopatia">
+            {part}
+          </AnimatedLink>
+        )
+      }
+
+      return part
+    })
+  }
+
+  const renderArticleContent = () => {
     return article.content
       .split("\n\n")
       .map((paragraph, index) => {
-        if (!paragraph.trim()) return null
+        const trimmed = paragraph.trim()
 
-        if (paragraph.startsWith("### ")) {
-          const title = paragraph.replace("### ", "").trim()
+        if (!trimmed) return null
+
+        if (trimmed.startsWith("### BIBLIOGRAFIA")) {
+          return null
+        }
+
+        if (trimmed.startsWith("### ")) {
+          const title = trimmed.replace("### ", "").trim()
+
           return (
-            <h3 key={index} className="text-xl font-bold text-primary mt-6 mb-4 border-b-2 border-primary pb-2">
+            <h2
+              key={index}
+              className="text-2xl md:text-3xl font-bold text-primary mt-10 mb-5 border-b-2 border-primary pb-2"
+            >
               {title}
-            </h3>
+            </h2>
           )
         }
 
-        if (paragraph.trim() === "---") {
-          return <div key={index} className="my-8 border-t border-gray-300"></div>
+        if (trimmed === "---") {
+          return (
+            <div
+              key={index}
+              className="my-8 border-t border-gray-300"
+            />
+          )
         }
 
         if (
- 
-  (paragraph.includes("Ozonoterapia") ||
-    paragraph.includes("Osteopatia") ||
-    paragraph.includes("ossigeno-ozonoterapia"))
-) {
-          const parts = paragraph.split(/(Ozonoterapia|Osteopatia|ossigeno-ozonoterapia)/gi).map((part, i) => {
-            if (part?.toLowerCase() === "ossigeno-ozonoterapia") {
-              return (
-                <AnimatedLink key={i} href="/ozonoterapia">
-                  {part}
-                </AnimatedLink>
-              )
-            }
-            if (part?.toLowerCase() === "osteopatia") {
-              return (
-                <AnimatedLink key={i} href="/osteopatia">
-                  {part}
-                </AnimatedLink>
-              )
-            }
-            if (part?.toLowerCase() === "ossigeno-ozonoterapia") {
-              return (
-                <AnimatedLink key={i} href="/ozonoterapia">
-                  {part}
-                </AnimatedLink>
-              )
-            }
-            return part
-          })
-
-          return (
-            <p key={index} className="text-lg leading-relaxed mb-4">
-              {parts.map((part, i) => {
-                if (typeof part !== "string") return part
-
-                const boldItalicParts = part.split(/(\*\*\*.*?\*\*\*|\*\*.*?\*\*)/g)
-                return boldItalicParts.map((subpart, j) => {
-                  if (subpart?.startsWith("***") && subpart?.endsWith("***")) {
-                    return (
-                      <em key={j} className="italic font-semibold text-primary">
-                        {subpart.slice(3, -3)}
-                      </em>
-                    )
-                  }
-                  if (subpart?.startsWith("**") && subpart?.endsWith("**")) {
-                    return (
-                      <strong key={j} className="font-bold text-primary">
-                        {subpart.slice(2, -2)}
-                      </strong>
-                    )
-                  }
-                  return subpart
-                })
-              })}
-            </p>
+          article.slug === "infiammazione-cronica-basso-grado" &&
+          ["• **Marostica**", "• **Malo**", "• **Schio**", "• **Padova**"].includes(
+            trimmed,
           )
-        }
-if (
-  article.slug === "infiammazione-cronica-basso-grado" &&
-  ["• **Marostica**", "• **Malo**", "• **Schio**", "• **Padova**"].includes(paragraph.trim())
-) {
-  const cityLinks: Record<string, string> = {
-    Marostica: "/ozono-osteo-marostica",
-    Malo: "/ozono-osteo-malo",
-    Schio: "/ozono-osteo-schio",
-    Padova: "/ozono-osteo-padova",
-  }
+        ) {
+          const cityLinks: Record<string, string> = {
+            Marostica: "/ozono-osteo-marostica",
+            Malo: "/ozono-osteo-malo",
+            Schio: "/ozono-osteo-schio",
+            Padova: "/ozono-osteo-padova",
+          }
 
-  const city = paragraph
-    .trim()
-    .replace("• **", "")
-    .replace("**", "")
+          const city = trimmed
+            .replace("• **", "")
+            .replace("**", "")
 
-  return (
-    <p key={index} className="text-lg leading-relaxed mb-4">
-      •{" "}
-      <strong>
-        <AnimatedLink href={cityLinks[city]}>
-          {city}
-        </AnimatedLink>
-      </strong>
-    </p>
-  )
-}
-    
-        if (paragraph.includes("**")) {
-          const parts = paragraph.split(/(\*\*.*?\*\*)/g)
           return (
             <p key={index} className="text-lg leading-relaxed mb-4">
-              {parts.map((part, i) => {
-                if (part?.startsWith("**") && part?.endsWith("**")) {
-                  return (
-                    <strong key={i} className="font-bold text-primary">
-                      {part.slice(2, -2)}
-                    </strong>
-                  )
-                }
-                return part
-              })}
+              •{" "}
+              <strong>
+                <AnimatedLink href={cityLinks[city]}>
+                  {city}
+                </AnimatedLink>
+              </strong>
             </p>
           )
         }
 
-    
-        if (paragraph.includes("***")) {
-          const parts = paragraph.split(/(\*\*\*.*?\*\*\*)/g)
+        if (trimmed.startsWith("• ")) {
+          const items = trimmed
+            .split("\n")
+            .filter((line) => line.trim())
+            .map((line) => line.replace(/^•\s*/, ""))
+
           return (
-            <p key={index} className="text-lg leading-relaxed mb-4">
-              {parts.map((part, i) =>
-                part?.startsWith("***") && part?.endsWith("***") ? (
-                  <em key={i} className="italic font-semibold text-primary">
-                    {part.slice(3, -3)}
-                  </em>
-                ) : (
-                  part
-                ),
-              )}
+            <ul
+              key={index}
+              className="list-disc pl-7 text-lg leading-relaxed mb-6 space-y-2"
+            >
+              {items.map((item, itemIndex) => (
+                <li key={itemIndex}>{renderInlineContent(item)}</li>
+              ))}
+            </ul>
+          )
+        }
+
+        if (
+          isLombalgiaArticle &&
+          index === 0 &&
+          trimmed.startsWith("**") &&
+          trimmed.endsWith("**")
+        ) {
+          return (
+            <p
+              key={index}
+              className="text-xl md:text-2xl leading-relaxed font-semibold text-gray-700 mb-8"
+            >
+              {trimmed.slice(2, -2)}
             </p>
           )
         }
 
-    
+        if (
+          isLombalgiaArticle &&
+          trimmed === "**IL MAL DI SCHIENA CONTINUA A TORNARE?**"
+        ) {
+          return (
+            <div
+              key={index}
+              className="mt-10 mb-5 text-xl md:text-2xl font-bold text-primary"
+            >
+              IL MAL DI SCHIENA CONTINUA A TORNARE?
+            </div>
+          )
+        }
+
         return (
           <p key={index} className="text-lg leading-relaxed mb-4">
-            {paragraph}
+            {renderInlineContent(paragraph)}
           </p>
         )
-      })
-      .filter((_, index) => {
-        const paragraphs = article.content.split("\n\n")
-        const currentParagraph = paragraphs[index] || ""
-        return !currentParagraph.startsWith("### BIBLIOGRAFIA")
       })
   }
 
@@ -218,9 +227,9 @@ if (
           />
         </div>
 
-             <div className="prose max-w-none article-content">
-  {renderArticleContent()}
-</div>
+        <div className="prose max-w-none article-content">
+          {renderArticleContent()}
+        </div>
 
         <div className="mt-12 text-center">
           <Button
