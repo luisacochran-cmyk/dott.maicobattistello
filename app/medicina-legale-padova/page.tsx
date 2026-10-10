@@ -309,6 +309,24 @@ export default function MedicinaLegalepadovaPage() {
 
           </div>
 
+          <section className="mb-10" aria-labelledby="sede-medicina-legale-padova">
+            <h2 id="sede-medicina-legale-padova" className="text-2xl font-semibold mb-4">
+              Dove si svolgono le visite medico-legali a Padova
+            </h2>
+            <p className="text-lg mb-4">
+              Il Dr. Maico Battistello effettua consulenze e valutazioni
+              medico-legali a Padova, prevalentemente presso la Clinica
+              Medicina Amica, in Via Boccaccio 104/C, su appuntamento.
+              La struttura ospita le visite del professionista e non è
+              uno studio di sua proprietà.
+            </p>
+            <p className="text-lg">
+              Per conoscere le disponibilità, confermare la sede della visita
+              e ricevere indicazioni sulla documentazione necessaria,
+              consulta la pagina <Link href="/contatti" className="text-blue-700 underline">Contatti</Link>.
+            </p>
+          </section>
+
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
             <h2 className="text-2xl font-semibold mb-3">
               Consulenza di Medicina Legale a Padova
@@ -321,12 +339,18 @@ export default function MedicinaLegalepadovaPage() {
             </p>
 
             <Link
-              href="/contacts"
+              href="/contatti"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
             >
               Richiedi una consulenza
             </Link>
           </div>
+
+        </div>
+      </div>
+    </div>
+  )
+}
 
         </div>
       </div>
