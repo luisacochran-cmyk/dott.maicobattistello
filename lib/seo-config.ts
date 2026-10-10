@@ -359,35 +359,38 @@ export function generateLocalSEO(
 
     structuredData: {
       "@context": "https://schema.org",
-      "@type": ["MedicalBusiness", "LocalBusiness"],
+      // A Padova per medicina legale descriviamo il professionista, non una sede autonoma.
+      "@type": isMedicinaLegalePadova ? "Physician" : ["MedicalBusiness", "LocalBusiness"],
 
       name: `Dr. Maico Battistello - ${service.name} ${city.name}`,
 
       description:
         `${service.name} a ${city.name} con il Dr. Maico Battistello`,
 
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: city.name,
-        addressRegion: "Veneto",
-        addressCountry: "IT",
-        postalCode:
-          city.slug === "padova"
-            ? "35100"
-            : city.slug === "marostica"
-              ? "36063"
-              : city.slug === "malo"
-                ? "36034"
-                : city.slug === "schio"
-                  ? "36015"
-                  : "",
-      },
-
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: city.coordinates.lat,
-        longitude: city.coordinates.lng,
-      },
+      ...(!isMedicinaLegalePadova ? {
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: city.name,
+          addressRegion: "Veneto",
+          addressCountry: "IT",
+          postalCode:
+            city.slug === "padova"
+              ? "35100"
+              : city.slug === "marostica"
+                ? "36063"
+                : city.slug === "malo"
+                  ? "36034"
+                  : city.slug === "schio"
+                    ? "36015"
+                    : "",
+        },
+  
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: city.coordinates.lat,
+          longitude: city.coordinates.lng,
+        },
+      } : {}),
 
       areaServed: [
         {
