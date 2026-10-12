@@ -174,7 +174,7 @@ export default function RootLayout({
               },
               medicalSpecialty: ["Osteopatia", "Ozonoterapia", "Medicina Legale"],
               priceRange: "€€",
-              image: "https://dottmaicobattistello.it/images/nuovologo.png",
+             image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
               logo: "https://dottmaicobattistello.it/images/nuovologo.png",
              sameAs: [
   "https://dottmaicobattistello.it",
