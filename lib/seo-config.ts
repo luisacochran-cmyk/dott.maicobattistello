@@ -341,10 +341,14 @@ export function generateLocalSEO(
                       ? "Medico Legale Padova | Dr. Maico Battistello"
                       : `${service.name} a ${city.name} | Dr. Maico Battistello`,
 
-    description: isMedicinaLegalePadova
-      ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
-      : `${service.description} a ${city.name} con il Dr. Maico Battistello. ` +
-        `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
+  
+description: isMedicinaLegalePadova
+  ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
+  : service.slug === "ozonoterapia"
+    ? `Ozonoterapia a ${city.name} con il Dr. Maico Battistello. Grande autoemoterapia (GAET) e piccola autoemoterapia (PAET), previa valutazione medica.`
+    : `${service.description} a ${city.name} con il Dr. Maico Battistello. ` +
+      `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
+
 
     h1: isMedicinaLegalePadova
       ? "Medico Legale a Padova – Dr. Maico Battistello"
