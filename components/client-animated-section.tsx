@@ -185,29 +185,43 @@ export function TreatmentsSection() {
             showTitles={true}
           />
         </AnimatedScrollElement>
-        <div className="mt-8 text-center">
-  <p className="text-lg text-gray-700 mb-4">
-    Il Dr. Maico Battistello riceve a Marostica, un punto di riferimento
-    anche per chi proviene da Bassano del Grappa, Nove, Colceresa,
-    Schiavon e dai comuni limitrofi.
-  </p>
+        
+<div className="mt-12 max-w-5xl mx-auto px-4">
+  <div className="text-center mb-8">
+    <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-4">
+      Il Dr. Maico Battistello a Marostica
+    </h3>
+    <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+      Un riferimento per Marostica e il territorio circostante,
+      anche per chi proviene da Bassano del Grappa, Nove,
+      Colceresa e Schiavon. Scopri i servizi e gli
+      approfondimenti dedicati.
+    </p>
+  </div>
 
-  <div className="flex flex-wrap justify-center gap-4">
-    <a href="/ozonoterapia-marostica" className="text-blue-700 font-semibold hover:underline">
-      Ozonoterapia a Marostica
-    </a>
-
-    <a href="/osteopatia-marostica" className="text-blue-700 font-semibold hover:underline">
-      Osteopatia a Marostica
-    </a>
-
-    <a href="/medicina-legale-marostica" className="text-blue-700 font-semibold hover:underline">
-      Medicina legale a Marostica
-    </a>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+    {[
+      { title: "Ozonoterapia", href: "/ozonoterapia-marostica" },
+      { title: "Osteopatia", href: "/osteopatia-marostica" },
+      { title: "Medicina Legale", href: "/medicina-legale-marostica" },
+    ].map((item) => (
+      <a
+        key={item.href}
+        href={item.href}
+        className="block rounded-xl border border-blue-200 bg-blue-50 px-6 py-7 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
+      >
+        <span className="block text-xl font-semibold text-blue-800">
+          {item.title}
+        </span>
+        <span className="block mt-2 text-sm text-blue-600">
+          Scopri di più →
+        </span>
+      </a>
+    ))}
   </div>
 </div>
-      </div>
-    </section>
+    </div>
+  </section>
   )
 }
 
