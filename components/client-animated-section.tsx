@@ -232,7 +232,7 @@ export function TreatmentsSection() {
             ))}
           </div>
         </div>
-
+    </section>
   )
 }
 
