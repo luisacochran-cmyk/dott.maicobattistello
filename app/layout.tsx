@@ -244,7 +244,7 @@ export default function RootLayout({
               jobTitle: "Medico Chirurgo",
               description: "Specialista in Ozonoterapia, Osteopatia e Medicina Legale",
               url: "https://dottmaicobattistello.it",
-              image: "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
+              image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
               telephone: "+393487383372",
               email: "maico.battistello@gmail.com",
               worksFor: {
