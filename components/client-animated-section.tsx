@@ -183,55 +183,81 @@ export function TreatmentsSection() {
           />
         </AnimatedScrollElement>
 
-        <div className="mt-12 max-w-5xl mx-auto px-4">
+       
+        <div className="mt-12 max-w-6xl mx-auto px-4">
           <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-4">
-              Il Dr. Maico Battistello a Marostica
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-3">
+              Dove riceve
             </h3>
-
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Un riferimento per Marostica e il territorio circostante,
-              anche per chi proviene da Bassano del Grappa, Nove,
-              Colceresa e Schiavon. Scopri i servizi e gli
-              approfondimenti dedicati.
+            <p className="text-base md:text-lg text-gray-600">
+              Scopri le sedi e i servizi disponibili nelle diverse località.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
-                title: "Ozonoterapia",
-                href: "/ozonoterapia-marostica",
+                city: "Marostica",
+                links: [
+                  { label: "Ozonoterapia", href: "/ozonoterapia-marostica" },
+                  { label: "Osteopatia", href: "/osteopatia-marostica" },
+                  { label: "Medicina legale", href: "/medicina-legale-marostica" },
+                ],
               },
               {
-                title: "Osteopatia",
-                href: "/osteopatia-marostica",
+                city: "Schio",
+                links: [
+                  { label: "Ozonoterapia", href: "/ozonoterapia-schio" },
+                  { label: "Osteopatia", href: "/osteopatia-schio" },
+                  { label: "Medicina legale", href: "/medicina-legale-schio" },
+                ],
               },
               {
-                title: "Medicina Legale",
-                href: "/medicina-legale-marostica",
+                city: "Malo",
+                links: [
+                  { label: "Ozonoterapia", href: "/ozonoterapia-malo" },
+                  { label: "Osteopatia", href: "/osteopatia-malo" },
+                  { label: "Medicina legale", href: "/medicina-legale-malo" },
+                ],
               },
-            ].map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="block rounded-xl border border-blue-200 bg-blue-50 px-6 py-7 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
+              {
+                city: "Padova",
+                links: [
+                  { label: "Ozonoterapia", href: "/ozonoterapia-padova" },
+                  { label: "Osteopatia", href: "/osteopatia-padova" },
+                  { label: "Medicina legale", href: "/medicina-legale-padova" },
+                ],
+              },
+            ].map((location) => (
+              <div
+                key={location.city}
+                className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-7 text-center shadow-sm transition-all duration-300 hover:shadow-md"
               >
-                <span className="block text-xl font-semibold text-blue-800">
-                  {item.title}
-                </span>
+                <h4 className="text-xl font-bold text-blue-800 mb-5">
+                  {location.city}
+                </h4>
 
-                <span className="block mt-2 text-sm text-blue-600">
-                  Scopri di più →
-                </span>
-              </a>
+                <div className="flex flex-col gap-4">
+                  {location.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline transition-colors"
+                    >
+                      {link.label} →
+                    </a>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   )
 }
+
 
 export function SubtitleSection() {
   return (
