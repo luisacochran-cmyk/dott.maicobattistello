@@ -117,6 +117,25 @@ export default function OzonoOsteoSchioPage() {
               <strong>approccio integrato</strong> tra le due metodiche.
             </p>
           </AnimatedScrollElement>
+          
+        <div className="mb-8 text-xl leading-relaxed">
+        <h2 className="text-2xl font-semibold mb-4">
+        Grande e piccola autoemoterapia a Schio
+        </h2>
+        <p>
+        Il Dr. Maico Battistello esegue anche la grande
+        autoemoterapia (GAET) e la piccola autoemoterapia
+        (PAET), quando clinicamente indicate.
+        </p>
+      <p className="mt-4">
+      <Link
+      href="/ozonoterapia-schio"
+      className="text-blue-600 hover:underline font-semibold"
+    >
+      Scopri le metodiche di ozonoterapia a Schio →
+    </Link>
+  </p>
+</div>
 
           {/* CTA */}
           <AnimatedScrollElement direction="up" delay={0.4}>
