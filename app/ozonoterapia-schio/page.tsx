@@ -15,12 +15,17 @@ export const metadata: Metadata = {
   alternates: {
     canonical: seoData.canonical,
   },
-  openGraph: {
+   openGraph: {
     title: seoData.title,
     description: seoData.description,
     url: seoData.canonical,
+    images: [
+      {
+        url: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
+        alt: "Dr. Maico Battistello - Ozonoterapia a Schio",
+      },
+    ],
   },
-}
 
 export default function OzonoterapiaSchioPage() {
   return (
