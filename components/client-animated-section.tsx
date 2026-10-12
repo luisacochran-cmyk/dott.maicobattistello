@@ -213,7 +213,7 @@ export function TreatmentsSection() {
               },
               {
                 city: "Padova",
-                href: "/contatti",
+                href: "/contatti"
               },
             ].map((location) => (
               <a
