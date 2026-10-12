@@ -361,9 +361,8 @@ export function generateLocalSEO(
       "@context": "https://schema.org",
       // A Padova per medicina legale descriviamo il professionista, non una sede autonoma.
       "@type": isMedicinaLegalePadova ? "Physician" : ["MedicalBusiness", "LocalBusiness"],
-
       name: `Dr. Maico Battistello - ${service.name} ${city.name}`,
-
+     image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
       description:
         `${service.name} a ${city.name} con il Dr. Maico Battistello`,
 
