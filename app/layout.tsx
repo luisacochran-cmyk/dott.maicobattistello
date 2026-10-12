@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     siteName: "Dr. Maico Battistello",
     images: [
       {
-        url: "https://dottmaicobattistello.it/images/nuovologo.png",
+       url: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
         width: 1200,
         height: 630,
-        alt: "Dr. Maico Battistello - Logo",
+       alt: "Dr. Maico Battistello - Ritratto ufficiale",
         type: "image/png",
       },
     ],
