@@ -184,13 +184,16 @@ export function TreatmentsSection() {
         </AnimatedScrollElement>
 
        
+        
         <div className="mt-12 max-w-6xl mx-auto px-4">
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-3">
               Dove riceve
             </h3>
-            <p className="text-base md:text-lg text-gray-600">
-              Scopri le sedi e i servizi disponibili nelle diverse località.
+
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Ozonoterapia, osteopatia e medicina legale:
+              scopri le sedi e i servizi disponibili sul territorio.
             </p>
           </div>
 
@@ -198,63 +201,38 @@ export function TreatmentsSection() {
             {[
               {
                 city: "Marostica",
-                links: [
-                  { label: "Ozonoterapia", href: "/ozonoterapia-marostica" },
-                  { label: "Osteopatia", href: "/osteopatia-marostica" },
-                  { label: "Medicina legale", href: "/medicina-legale-marostica" },
-                ],
+                href: "/contatti",
               },
               {
                 city: "Schio",
-                links: [
-                  { label: "Ozonoterapia", href: "/ozonoterapia-schio" },
-                  { label: "Osteopatia", href: "/osteopatia-schio" },
-                  { label: "Medicina legale", href: "/medicina-legale-schio" },
-                ],
+                href: ""/contatti",
               },
               {
                 city: "Malo",
-                links: [
-                  { label: "Ozonoterapia", href: "/ozonoterapia-malo" },
-                  { label: "Osteopatia", href: "/osteopatia-malo" },
-                  { label: "Medicina legale", href: "/medicina-legale-malo" },
-                ],
+                href: "/contatti",
               },
               {
                 city: "Padova",
-                links: [
-                  { label: "Ozonoterapia", href: "/ozonoterapia-padova" },
-                  { label: "Osteopatia", href: "/osteopatia-padova" },
-                  { label: "Medicina legale", href: "/medicina-legale-padova" },
-                ],
+                href: "/contatti",
               },
             ].map((location) => (
-              <div
+              <a
                 key={location.city}
-                className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-7 text-center shadow-sm transition-all duration-300 hover:shadow-md"
+                href={location.href}
+                className="group flex flex-col items-center justify-center rounded-xl border border-blue-200 bg-blue-50 px-5 py-8 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
               >
                 <h4 className="text-xl font-bold text-blue-800 mb-5">
                   {location.city}
                 </h4>
 
-                <div className="flex flex-col gap-4">
-                  {location.links.map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      className="text-sm font-medium text-blue-700 hover:text-blue-900 hover:underline transition-colors"
-                    >
-                      {link.label} →
-                    </a>
-                  ))}
-                </div>
-              </div>
+                <span className="inline-block rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-colors group-hover:bg-blue-700">
+                  Scopri le sedi →
+                </span>
+              </a>
             ))}
           </div>
         </div>
 
-      </div>
-    </section>
   )
 }
 
