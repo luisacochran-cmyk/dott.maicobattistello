@@ -205,7 +205,7 @@ export function TreatmentsSection() {
               },
               {
                 city: "Schio",
-                href: ""/contatti",
+                href: "/contatti",
               },
               {
                 city: "Malo",
@@ -232,6 +232,7 @@ export function TreatmentsSection() {
             ))}
           </div>
         </div>
+      </div>
     </section>
   )
 }
