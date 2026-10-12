@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-},
+}
 export default function OzonoterapiaSchioPage() {
   return (
     <div className="pt-20">
