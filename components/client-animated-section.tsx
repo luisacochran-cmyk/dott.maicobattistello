@@ -128,6 +128,7 @@ export function ConditionsSection() {
     </section>
   )
 }
+
 export function TreatmentsSection() {
   return (
     <section className="py-16 md:py-20 bg-white">
@@ -137,30 +138,26 @@ export function TreatmentsSection() {
           direction="up"
           delay={0.1}
         >
-         <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
-  Un approccio costruito sulla persona
-</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+            Un approccio costruito sulla persona
+          </h2>
 
-   <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
-  L'esperienza maturata negli anni nell'Osteopatia e nell'Ozonoterapia ha portato
-  il Dott. Maico Battistello a sviluppare un approccio che parte dalla valutazione
-  della persona nel suo insieme, prima ancora dalla scelta del trattamento.
-</p>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
+            L&apos;ozonoterapia può essere indicata per intervenire sul dolore
+            e sui processi infiammatori; l&apos;osteopatia si concentra invece
+            sugli aspetti funzionali e posturali che possono contribuire al
+            disturbo. Sono discipline diverse, con modalità e ambiti di
+            intervento distinti, che possono essere utilizzate singolarmente
+            oppure integrate quando la valutazione clinica ne evidenzia
+            l&apos;indicazione.
+          </p>
 
-<p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
-  L'Ozonoterapia può essere indicata per intervenire sul dolore e sui processi
-  infiammatori; l'Osteopatia si concentra invece sugli aspetti funzionali e
-  posturali che possono contribuire al disturbo. Sono discipline diverse, con
-  modalità e ambiti di intervento distinti, che possono essere utilizzate
-  singolarmente oppure integrate quando la valutazione clinica ne evidenzia
-  l'indicazione.
-</p>
-
-<p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-  L'obiettivo non è applicare un trattamento prestabilito, ma individuare il
-  percorso più appropriato per la singola persona, tenendo conto del quadro
-  clinico, della funzionalità e delle esigenze individuali.
-</p>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+            L&apos;obiettivo non è applicare un trattamento prestabilito, ma
+            individuare il percorso più appropriato per la singola persona,
+            tenendo conto del quadro clinico, della funzionalità e delle
+            esigenze individuali.
+          </p>
         </AnimatedScrollElement>
 
         <AnimatedScrollElement direction="up" delay={0.3}>
@@ -185,43 +182,54 @@ export function TreatmentsSection() {
             showTitles={true}
           />
         </AnimatedScrollElement>
-        
-<div className="mt-12 max-w-5xl mx-auto px-4">
-  <div className="text-center mb-8">
-    <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-4">
-      Il Dr. Maico Battistello a Marostica
-    </h3>
-    <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-      Un riferimento per Marostica e il territorio circostante,
-      anche per chi proviene da Bassano del Grappa, Nove,
-      Colceresa e Schiavon. Scopri i servizi e gli
-      approfondimenti dedicati.
-    </p>
-  </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-    {[
-      { title: "Ozonoterapia", href: "/ozonoterapia-marostica" },
-      { title: "Osteopatia", href: "/osteopatia-marostica" },
-      { title: "Medicina Legale", href: "/medicina-legale-marostica" },
-    ].map((item) => (
-      <a
-        key={item.href}
-        href={item.href}
-        className="block rounded-xl border border-blue-200 bg-blue-50 px-6 py-7 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
-      >
-        <span className="block text-xl font-semibold text-blue-800">
-          {item.title}
-        </span>
-        <span className="block mt-2 text-sm text-blue-600">
-          Scopri di più →
-        </span>
-      </a>
-    ))}
-  </div>
-</div>
-    </div>
-  </section>
+        <div className="mt-12 max-w-5xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-4">
+              Il Dr. Maico Battistello a Marostica
+            </h3>
+
+            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Un riferimento per Marostica e il territorio circostante,
+              anche per chi proviene da Bassano del Grappa, Nove,
+              Colceresa e Schiavon. Scopri i servizi e gli
+              approfondimenti dedicati.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              {
+                title: "Ozonoterapia",
+                href: "/ozonoterapia-marostica",
+              },
+              {
+                title: "Osteopatia",
+                href: "/osteopatia-marostica",
+              },
+              {
+                title: "Medicina Legale",
+                href: "/medicina-legale-marostica",
+              },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="block rounded-xl border border-blue-200 bg-blue-50 px-6 py-7 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
+              >
+                <span className="block text-xl font-semibold text-blue-800">
+                  {item.title}
+                </span>
+
+                <span className="block mt-2 text-sm text-blue-600">
+                  Scopri di più →
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
