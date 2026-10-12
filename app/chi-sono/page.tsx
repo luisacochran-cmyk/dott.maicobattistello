@@ -1,3 +1,4 @@
+
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import WordCarousel from "@/components/word-carousel"
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
       "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
     images: [
       {
-        url: "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
+        url: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
         width: 800,
         height: 600,
         alt: "Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
     images: [
-      "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
+      "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
     ],
   },
   alternates: {
@@ -43,7 +44,7 @@ export default function ChiSonoPage() {
     jobTitle: "Medico Chirurgo",
     description: "Medico Legale, Osteopata e Ozonoterapeuta",
     image:
-      "https://dottmaicobattistello.it/images/medicinalegale1.jpg",
+      "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
     url: "https://dottmaicobattistello.it/chi-sono",
     sameAs: ["https://dottmaicobattistello.it"],
     alumniOf: [
@@ -86,7 +87,7 @@ export default function ChiSonoPage() {
             <div>
               <div className="w-full max-w-[430px] mx-auto md:mx-0">
                 <img
-                  src="/images/medicinalegale1.jpg"
+                  src="/images/Ritratto%20del%20medico%20in%20clinica.png"
                   alt="Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta"
                   className="w-full h-auto object-cover rounded-xl shadow-sm"
                 />
@@ -172,8 +173,8 @@ export default function ChiSonoPage() {
               </p>
 
               <p>
-                Accanto all&apos;attività medica, nel 2019 consegue anche la
-                certificazione nell&apos;ambito della Pet Therapy,
+                Accanto all&apos;attività medica, nel 2019 consegue anche
+                la certificazione nell&apos;ambito della Pet Therapy,
                 qualificandosi come Project Manager, Coordinatore di Intervento
                 e Conduttore di Cani: un&apos;ulteriore esperienza
                 all&apos;interno di un percorso professionale caratterizzato
