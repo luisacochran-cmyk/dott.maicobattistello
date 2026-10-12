@@ -185,6 +185,27 @@ export function TreatmentsSection() {
             showTitles={true}
           />
         </AnimatedScrollElement>
+        <div className="mt-8 text-center">
+  <p className="text-lg text-gray-700 mb-4">
+    Il Dr. Maico Battistello riceve a Marostica, un punto di riferimento
+    anche per chi proviene da Bassano del Grappa, Nove, Colceresa,
+    Schiavon e dai comuni limitrofi.
+  </p>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    <a href="/ozonoterapia-marostica" className="text-blue-700 font-semibold hover:underline">
+      Ozonoterapia a Marostica
+    </a>
+
+    <a href="/osteopatia-marostica" className="text-blue-700 font-semibold hover:underline">
+      Osteopatia a Marostica
+    </a>
+
+    <a href="/medicina-legale-marostica" className="text-blue-700 font-semibold hover:underline">
+      Medicina legale a Marostica
+    </a>
+  </div>
+</div>
       </div>
     </section>
   )
