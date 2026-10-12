@@ -89,7 +89,7 @@ export default function ChiSonoPage() {
                 <img
                   src="/images/Ritratto%20del%20medico%20in%20clinica.png"
                   alt="Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta"
-                 className="w-full h-[550px] object-cover object-top rounded-xl shadow-sm"
+                 className="w-full h-[600px] object-cover object-top rounded-xl shadow-sm"
                 />
               </div>
             </div>
