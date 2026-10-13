@@ -62,10 +62,10 @@ export function HeroSection({ className }: HeroSectionProps) {
 }
 export function ConditionsSection() {
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-[#F5F3ED]">
       <div className="container px-4">
         <AnimatedScrollElement
-          className="mb-12 text-center"
+          className="mb-9 text-center"
           direction="up"
           delay={0.1}
         >
@@ -131,10 +131,11 @@ export function ConditionsSection() {
 
 export function TreatmentsSection() {
   return (
-    <section className="py-20 md:py-28 bg-white">
-      <div className="container px-4">
+    <section className="bg-white">
+      <div className="bg-white pt-14 pb-8 md:pt-20 md:pb-10">
+        <div className="container px-4">
         <AnimatedScrollElement
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="text-center max-w-3xl mx-auto"
           direction="up"
           delay={0.1}
         >
@@ -159,7 +160,11 @@ export function TreatmentsSection() {
             esigenze individuali.
           </p>
         </AnimatedScrollElement>
+        </div>
+      </div>
 
+      <div className="bg-white py-12 md:py-16">
+        <div className="container px-4">
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
             items={[
@@ -182,30 +187,36 @@ export function TreatmentsSection() {
             showTitles={true}
           />
         </AnimatedScrollElement>
+        </div>
+      </div>
 
-       
-        
-        <div className="relative mt-20 md:mt-28 overflow-hidden rounded-[2rem] bg-[#F5F3ED] px-6 py-12 md:px-14 md:py-16">
-          <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full border border-[#0066CC]/10" aria-hidden="true" />
-          <div className="relative grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
-            <div>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Presenza sul territorio</p>
-              <h3 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900">Dove riceve<span className="text-[#0066CC]">.</span></h3>
-              <p className="mt-5 max-w-sm text-base md:text-lg leading-relaxed text-slate-600">
-                Ozonoterapia, osteopatia e medicina legale: scopri le sedi e i servizi disponibili sul territorio.
+      <div className="relative overflow-hidden bg-[#EAF1F7] py-16 md:py-24">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-28 -top-40 h-80 w-80 rounded-full border border-[#0066CC]/10" />
+        <div className="container relative px-4">
+          <div className="mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+            <AnimatedScrollElement direction="left" delay={0.1}>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Dove riceve</p>
+              <h2 className="max-w-lg text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
+                La cura inizia da una valutazione attenta.
+              </h2>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-slate-600 md:text-lg">
+                Il Dott. Maico Battistello riceve a Marostica, Schio, Malo e Padova.
               </p>
               <Link href="/contatti" className="group mt-8 inline-flex items-center gap-3 border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-all hover:gap-5 hover:border-[#0066CC]">
-                Sedi e contatti <span aria-hidden="true">↗</span>
+                Scopri le sedi e i contatti <span aria-hidden="true">↗</span>
               </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 self-center">
-              {["Marostica", "Schio", "Malo", "Padova"].map((city, index) => (
-                <div key={city} className="group flex items-baseline gap-4 border-b border-slate-300/70 py-5 transition-colors hover:border-[#0066CC]">
-                  <span className="text-xs tabular-nums tracking-widest text-[#0066CC]">0{index + 1}</span>
-                  <span className="text-2xl md:text-[1.75rem] font-medium tracking-tight text-slate-800 transition-transform duration-300 group-hover:translate-x-1">{city}</span>
+            </AnimatedScrollElement>
+            <AnimatedScrollElement direction="right" delay={0.2}>
+              <div className="rounded-[1.75rem] bg-white/90 p-6 shadow-[0_18px_55px_-42px_rgba(20,45,75,0.35)] md:p-9">
+                <div className="grid grid-cols-2 gap-x-5 md:gap-x-9">
+                  {["Marostica", "Schio", "Malo", "Padova"].map((city) => (
+                    <div key={city} className="flex min-h-24 items-center border-b border-[#D4DFE9] py-5 last:border-b sm:min-h-28">
+                      <span className="text-xl font-medium tracking-tight text-slate-800 sm:text-2xl md:text-[1.7rem]">{city}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            </AnimatedScrollElement>
           </div>
         </div>
       </div>
@@ -216,7 +227,7 @@ export function TreatmentsSection() {
 
 export function DescriptionSection() {
   return (
-    <section className="relative overflow-hidden bg-[#F5F3ED] py-20 md:py-28">
+    <section className="relative overflow-hidden bg-white pt-16 pb-20 md:pt-24 md:pb-28">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,390px)_1fr] gap-9 lg:gap-16 items-center">
           <AnimatedScrollElement direction="left" delay={0.1}>
@@ -360,7 +371,7 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-[#F5F3ED] py-16 md:py-24">
       <div className="container px-4">
         <div className="mx-auto max-w-5xl grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
           <AnimatedScrollElement direction="left" delay={0.1}>
