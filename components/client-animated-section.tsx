@@ -48,7 +48,7 @@ export function HeroSection({ className }: HeroSectionProps) {
                 size="lg"
                 className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-base sm:text-lg py-3 sm:py-6 hover-lift"
               >
-                <Link href="/contacts" className="flex items-center gap-2">
+                <Link href="/contatti" className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
                   <span>Prenota una visita</span>
                 </Link>
@@ -185,51 +185,24 @@ export function TreatmentsSection() {
 
        
         
-        <div className="mt-12 max-w-6xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-3">
-              Dove riceve
-            </h3>
-
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Ozonoterapia, osteopatia e medicina legale:
-              scopri le sedi e i servizi disponibili sul territorio.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              {
-                city: "Marostica",
-                href: "/contatti",
-              },
-              {
-                city: "Schio",
-                href: "/contatti",
-              },
-              {
-                city: "Malo",
-                href: "/contatti",
-              },
-              {
-                city: "Padova",
-                href: "/contatti"
-              },
-            ].map((location) => (
-              <a
-                key={location.city}
-                href={location.href}
-                className="group flex flex-col items-center justify-center rounded-xl border border-blue-200 bg-blue-50 px-5 py-8 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
-              >
-                <h4 className="text-xl font-bold text-blue-800 mb-5">
-                  {location.city}
-                </h4>
-
-                <span className="inline-block rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-colors group-hover:bg-blue-700">
-                  Scopri le sedi →
-                </span>
-              </a>
-            ))}
+        <div className="mt-16 max-w-5xl mx-auto border-t border-gray-200 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-start">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Dove riceve</h3>
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                Ozonoterapia, osteopatia e medicina legale: scopri le sedi e i servizi disponibili sul territorio.
+              </p>
+              <Link href="/contatti" className="inline-flex items-center mt-6 text-primary font-semibold border-b border-primary pb-1 hover:opacity-75 transition-opacity">
+                Sedi e contatti <span aria-hidden="true" className="ml-2">→</span>
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-x-8 gap-y-0 border-t border-gray-200 md:border-t-0">
+              {["Marostica", "Schio", "Malo", "Padova"].map((city) => (
+                <div key={city} className="py-5 border-b border-gray-200 text-lg md:text-xl font-medium text-gray-800">
+                  {city}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -238,37 +211,38 @@ export function TreatmentsSection() {
 }
 
 
-export function SubtitleSection() {
-  return (
-    <section className="py-8 bg-gray-100">
-      <div className="container">
-        <AnimatedScrollElement direction="up" delay={0.1}>
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-primary">
-           Il Dott. Maico Battistello
-          </h2>
-        </AnimatedScrollElement>
-      </div>
-    </section>
-  )
-}
-
 export function DescriptionSection() {
   return (
-    <section className="py-12">
-      <div className="container">
-        <AnimatedScrollElement className="mb-8" direction="up" delay={0.1}>
-       <p className="text-center text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-  Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche con l’Ozonoterapia e l’Osteopatia per costruire percorsi terapeutici personalizzati.
-  <br /><br />
-
-  Ogni scelta nasce da una valutazione clinica approfondita e dall'ascolto della persona, con l'obiettivo di individuare il trattamento più appropriato in base alle esigenze del singolo paziente.
-</p>
-        </AnimatedScrollElement>
-        <AnimatedScrollElement className="text-center" direction="up" delay={0.3}>
-        <Button asChild size="lg" className="bg-primary hover:bg-primary-dark text-white font-semibold text-lg px-8 h-12 hover-lift">
-           <Link href="/about-me">Conosci il Dott. Battistello</Link>
-          </Button>
-        </AnimatedScrollElement>
+    <section className="py-16 md:py-20 bg-gray-100">
+      <div className="container px-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,390px)_1fr] gap-9 lg:gap-16 items-center">
+          <AnimatedScrollElement direction="left" delay={0.1}>
+            <div className="overflow-hidden rounded-xl shadow-sm">
+              <Image
+                src="/images/Ritratto%20del%20medico%20in%20clinica.png"
+                alt="Dott. Maico Battistello, medico legale, osteopata e ozonoterapeuta"
+                width={430}
+                height={600}
+                sizes="(max-width: 768px) 100vw, 390px"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </AnimatedScrollElement>
+          <AnimatedScrollElement direction="right" delay={0.2}>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Il Dott. Maico Battistello</h2>
+            <div className="space-y-5 text-lg md:text-xl text-gray-600 leading-relaxed">
+              <p>
+                Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche con l’Ozonoterapia e l’Osteopatia per costruire percorsi terapeutici personalizzati.
+              </p>
+              <p>
+                Ogni scelta nasce da una valutazione clinica approfondita e dall&apos;ascolto della persona, con l&apos;obiettivo di individuare il trattamento più appropriato in base alle esigenze del singolo paziente.
+              </p>
+            </div>
+            <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary-dark text-white font-semibold text-lg px-8 h-12 hover-lift">
+              <Link href="/chi-sono">Chi sono</Link>
+            </Button>
+          </AnimatedScrollElement>
+        </div>
       </div>
     </section>
   )
@@ -298,7 +272,7 @@ export function AdvancedTherapySection() {
             size="lg"
            className="bg-white text-primary hover:bg-gray-100 hover-lift text-lg px-8 h-12"
           >
-            <Link href="/contacts" className="flex items-center gap-2">
+            <Link href="/contatti" className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
               <span>Prenota una visita</span>
             </Link>
@@ -397,11 +371,11 @@ export function FaqSection() {
             valutazione e come richiedere un appuntamento.
           </p>
 
-          <div className="max-w-4xl mx-auto space-y-4 text-left">
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-              className="border border-blue-100 rounded-2xl bg-gradient-to-br from-white to-blue-50/60 px-6 py-5 shadow-sm transition-all duration-300 hover:shadow-md hover:border-blue-200"
+              className="border border-blue-100 rounded-xl bg-gradient-to-br from-white to-blue-50/60 px-5 py-5 transition-colors duration-300 hover:border-blue-200"
               >
                 <h3 className="text-lg font-semibold mb-2">
                   {faq.question}
@@ -419,3 +393,4 @@ export function FaqSection() {
     </section>
   )
 }
+
