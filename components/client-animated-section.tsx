@@ -62,7 +62,7 @@ export function HeroSection({ className }: HeroSectionProps) {
 }
 export function ConditionsSection() {
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 md:py-28 bg-white">
       <div className="container px-4">
         <AnimatedScrollElement
           className="mb-12 text-center"
@@ -131,7 +131,7 @@ export function ConditionsSection() {
 
 export function TreatmentsSection() {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-20 md:py-28 bg-white">
       <div className="container px-4">
         <AnimatedScrollElement
           className="text-center max-w-3xl mx-auto mb-12"
@@ -185,21 +185,24 @@ export function TreatmentsSection() {
 
        
         
-        <div className="mt-16 max-w-5xl mx-auto border-t border-gray-200 pt-12">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 md:gap-12 items-start">
+        <div className="relative mt-20 md:mt-28 overflow-hidden rounded-[2rem] bg-[#F5F3ED] px-6 py-12 md:px-14 md:py-16">
+          <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full border border-[#0066CC]/10" aria-hidden="true" />
+          <div className="relative grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Dove riceve</h3>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed">
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Presenza sul territorio</p>
+              <h3 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900">Dove riceve<span className="text-[#0066CC]">.</span></h3>
+              <p className="mt-5 max-w-sm text-base md:text-lg leading-relaxed text-slate-600">
                 Ozonoterapia, osteopatia e medicina legale: scopri le sedi e i servizi disponibili sul territorio.
               </p>
-              <Link href="/contatti" className="inline-flex items-center mt-6 text-primary font-semibold border-b border-primary pb-1 hover:opacity-75 transition-opacity">
-                Sedi e contatti <span aria-hidden="true" className="ml-2">→</span>
+              <Link href="/contatti" className="group mt-8 inline-flex items-center gap-3 border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-all hover:gap-5 hover:border-[#0066CC]">
+                Sedi e contatti <span aria-hidden="true">↗</span>
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-0 border-t border-gray-200 md:border-t-0">
-              {["Marostica", "Schio", "Malo", "Padova"].map((city) => (
-                <div key={city} className="py-5 border-b border-gray-200 text-lg md:text-xl font-medium text-gray-800">
-                  {city}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 self-center">
+              {["Marostica", "Schio", "Malo", "Padova"].map((city, index) => (
+                <div key={city} className="group flex items-baseline gap-4 border-b border-slate-300/70 py-5 transition-colors hover:border-[#0066CC]">
+                  <span className="text-xs tabular-nums tracking-widest text-[#0066CC]">0{index + 1}</span>
+                  <span className="text-2xl md:text-[1.75rem] font-medium tracking-tight text-slate-800 transition-transform duration-300 group-hover:translate-x-1">{city}</span>
                 </div>
               ))}
             </div>
@@ -213,11 +216,11 @@ export function TreatmentsSection() {
 
 export function DescriptionSection() {
   return (
-    <section className="py-16 md:py-20 bg-gray-100">
+    <section className="relative overflow-hidden bg-[#F5F3ED] py-20 md:py-28">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,390px)_1fr] gap-9 lg:gap-16 items-center">
           <AnimatedScrollElement direction="left" delay={0.1}>
-            <div className="overflow-hidden rounded-xl shadow-sm">
+            <div className="overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
               <Image
                 src="/images/Ritratto%20del%20medico%20in%20clinica.png"
                 alt="Dott. Maico Battistello, medico legale, osteopata e ozonoterapeuta"
@@ -229,7 +232,7 @@ export function DescriptionSection() {
             </div>
           </AnimatedScrollElement>
           <AnimatedScrollElement direction="right" delay={0.2}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Il Dott. Maico Battistello</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-7">Il Dott. Maico Battistello</h2>
             <div className="space-y-5 text-lg md:text-xl text-gray-600 leading-relaxed">
               <p>
                 Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche con l’Ozonoterapia e l’Osteopatia per costruire percorsi terapeutici personalizzati.
@@ -238,7 +241,7 @@ export function DescriptionSection() {
                 Ogni scelta nasce da una valutazione clinica approfondita e dall&apos;ascolto della persona, con l&apos;obiettivo di individuare il trattamento più appropriato in base alle esigenze del singolo paziente.
               </p>
             </div>
-            <Button asChild size="lg" className="mt-8 bg-primary hover:bg-primary-dark text-white font-semibold text-lg px-8 h-12 hover-lift">
+            <Button asChild size="lg" className="mt-9 bg-[#0066CC] hover:bg-[#0057AD] text-white font-semibold text-base px-9 h-12 rounded-full">
               <Link href="/chi-sono">Chi sono</Link>
             </Button>
           </AnimatedScrollElement>
@@ -357,40 +360,31 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container px-4 md:px-4">
-        <AnimatedScrollElement
-          className="text-center"
-          direction="up"
-          delay={0.1}
-        >
-          <h2 className="text-3xl font-bold mb-4">Domande frequenti</h2>
-
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-            Alcune informazioni utili per comprendere come si svolge la
-            valutazione e come richiedere un appuntamento.
-          </p>
-
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-            {faqs.map((faq) => (
-              <div
-                key={faq.question}
-              className="border border-blue-100 rounded-xl bg-gradient-to-br from-white to-blue-50/60 px-5 py-5 transition-colors duration-300 hover:border-blue-200"
-              >
-                <h3 className="text-lg font-semibold mb-2">
-                  {faq.question}
-                </h3>
-
-               <p className="text-lg text-gray-600 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-
-        </AnimatedScrollElement>
+    <section className="bg-white py-20 md:py-28">
+      <div className="container px-4">
+        <div className="mx-auto max-w-5xl grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
+          <AnimatedScrollElement direction="left" delay={0.1}>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Informazioni utili</p>
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900">Domande<br className="hidden md:block" /> frequenti<span className="text-[#0066CC]">.</span></h2>
+            <p className="mt-6 max-w-sm text-lg leading-relaxed text-slate-600">
+              Alcune informazioni utili per comprendere come si svolge la valutazione e come richiedere un appuntamento.
+            </p>
+          </AnimatedScrollElement>
+          <AnimatedScrollElement direction="up" delay={0.2}>
+            <div className="border-t border-slate-300/80">
+              {faqs.map((faq, index) => (
+                <details key={faq.question} className="group border-b border-slate-300/80 py-1" open={index === 0}>
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-left marker:hidden [&::-webkit-details-marker]:hidden">
+                    <span className="text-lg md:text-xl font-medium leading-snug text-slate-900">{faq.question}</span>
+                    <span aria-hidden="true" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#0066CC]/30 text-xl font-light text-[#0066CC] transition-transform duration-300 group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="max-w-xl pb-7 pr-10 text-base md:text-lg leading-relaxed text-slate-600">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </AnimatedScrollElement>
+        </div>
       </div>
     </section>
   )
 }
-
