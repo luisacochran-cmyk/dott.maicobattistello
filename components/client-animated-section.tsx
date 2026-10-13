@@ -62,7 +62,7 @@ export function HeroSection({ className }: HeroSectionProps) {
 }
 export function ConditionsSection() {
   return (
-    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-[#F5F3ED]">
+    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-gradient-to-b from-[#F5F3ED] via-[#F5F3ED] to-white">
       <div className="container px-4">
         <AnimatedScrollElement
           className="mb-9 text-center"
@@ -132,7 +132,7 @@ export function ConditionsSection() {
 export function TreatmentsSection() {
   return (
     <section className="bg-white">
-      <div className="bg-white pt-14 pb-8 md:pt-20 md:pb-10">
+      <div className="bg-gradient-to-b from-white via-white to-[#F9FAFB] pt-14 pb-8 md:pt-20 md:pb-10">
         <div className="container px-4">
         <AnimatedScrollElement
           className="text-center max-w-3xl mx-auto"
@@ -163,7 +163,7 @@ export function TreatmentsSection() {
         </div>
       </div>
 
-      <div className="bg-white py-12 md:py-16">
+      <div className="bg-gradient-to-b from-[#F9FAFB] via-white to-[#F0F5F9] py-12 md:py-16">
         <div className="container px-4">
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
@@ -190,8 +190,8 @@ export function TreatmentsSection() {
         </div>
       </div>
 
-      <div className="relative overflow-hidden bg-[#EAF1F7] py-16 md:py-24">
-        <div aria-hidden="true" className="pointer-events-none absolute -right-28 -top-40 h-80 w-80 rounded-full border border-[#0066CC]/10" />
+      <div className="relative overflow-hidden bg-gradient-to-b from-[#F0F5F9] via-[#EAF1F7] to-[#F5F8FB] py-16 md:py-24">
+        <div aria-hidden="true" className="pointer-events-none absolute -right-28 -top-40 h-96 w-96 rounded-full bg-white/35 blur-3xl" />
         <div className="container relative px-4">
           <div className="mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
             <AnimatedScrollElement direction="left" delay={0.1}>
@@ -207,7 +207,7 @@ export function TreatmentsSection() {
               </Link>
             </AnimatedScrollElement>
             <AnimatedScrollElement direction="right" delay={0.2}>
-              <div className="rounded-[1.75rem] bg-white/90 p-6 shadow-[0_18px_55px_-42px_rgba(20,45,75,0.35)] md:p-9">
+              <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
                 <div className="grid grid-cols-2 gap-x-5 md:gap-x-9">
                   {["Marostica", "Schio", "Malo", "Padova"].map((city) => (
                     <div key={city} className="flex min-h-24 items-center border-b border-[#D4DFE9] py-5 last:border-b sm:min-h-28">
@@ -227,7 +227,7 @@ export function TreatmentsSection() {
 
 export function DescriptionSection() {
   return (
-    <section className="relative overflow-hidden bg-white pt-16 pb-20 md:pt-24 md:pb-28">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F5F8FB] via-white to-[#F8F7F3] pt-16 pb-20 md:pt-24 md:pb-28">
       <div className="container px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,390px)_1fr] gap-9 lg:gap-16 items-center">
           <AnimatedScrollElement direction="left" delay={0.1}>
@@ -371,7 +371,7 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="bg-[#F5F3ED] py-16 md:py-24">
+    <section className="bg-gradient-to-b from-[#F8F7F3] via-[#F5F3ED] to-[#F5F3ED] py-16 md:py-24">
       <div className="container px-4">
         <div className="mx-auto max-w-5xl grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
           <AnimatedScrollElement direction="left" delay={0.1}>
