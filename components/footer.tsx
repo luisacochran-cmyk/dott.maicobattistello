@@ -1,103 +1,138 @@
+
+import Link from "next/link"
+
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100">
-      <div className="container px-4 py-10 md:py-12">
+    <footer className="bg-[#F1F5F8] text-[#233247]">
+      {/* Transizione dalla sezione blu */}
+      <div
+        aria-hidden="true"
+        className="h-28 md:h-40 bg-gradient-to-b from-[#0066CC] via-[#B8D7EF] to-[#F1F5F8]"
+      />
 
-        {/* Identità */}
-        <div className="text-center">
-          <img
-            src="/images/logo-footer.png"
-            alt="Logo Dott. Maico Battistello"
-          className="h-24 w-24 object-contain mx-auto mb-2"
-          />
+      <div className="container mx-auto px-6 pb-8 pt-6 md:px-10 md:pb-10">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-12 border-b border-[#CBD9E5] pb-12 md:grid-cols-12 md:gap-8">
 
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">
-            Dott. Maico Battistello
-          </h3>
+            {/* Identità essenziale */}
+            <div className="md:col-span-5">
+              <div className="mb-5 flex items-center gap-4">
+                <img
+                  src="/images/logo-footer.png"
+                  alt="Logo Dott. Maico Battistello"
+                  className="h-14 w-14 object-contain"
+                />
 
-          <p className="text-lg text-primary leading-snug">
-            Medico Chirurgo · Medico Legale
-            <br />
-            Osteopata · Ozonoterapeuta
-          </p>
+                <div>
+                  <p className="text-xl font-semibold tracking-tight text-[#17283C]">
+                    Dott. Maico Battistello
+                  </p>
+                  <p className="mt-1 text-sm text-[#627488]">
+                    Attività medica e professionale
+                  </p>
+                </div>
+              </div>
 
-          <div className="w-12 h-0.5 bg-primary mx-auto my-4" />
+              <p className="max-w-sm text-base leading-relaxed text-[#526477]">
+                Informazioni sui servizi, sulle sedi e sulle modalità
+                per richiedere una visita.
+              </p>
 
-          <p className="text-base text-gray-700">
-            Marostica · Schio · Malo · Padova
-          </p>
-        </div>
+              <Link
+                href="/contatti"
+                className="mt-6 inline-flex items-center gap-2 border-b border-[#0066CC]/40 pb-1 font-medium text-[#0066CC] transition-colors hover:text-[#004E9E]"
+              >
+                Sedi e contatti
+                <span aria-hidden="true">↗</span>
+              </Link>
+            </div>
 
-        {/* Aree di attività */}
-       <div className="border-t border-gray-200 mt-6 pt-6">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
-
-            <a
-              href="/ozonoterapia"
-              className="font-semibold text-gray-900 hover:text-primary transition-colors"
+            {/* Navigazione */}
+            <nav
+              aria-label="Collegamenti ai servizi"
+              className="md:col-span-4"
             >
-              Ozonoterapia
-            </a>
+              <h2 className="mb-5 text-sm font-semibold uppercase tracking-[0.14em] text-[#17283C]">
+                Esplora
+              </h2>
 
-            <a
-              href="/osteopatia"
-              className="font-semibold text-gray-900 hover:text-primary transition-colors"
+              <div className="flex flex-col items-start gap-3 text-base text-[#526477]">
+                <Link
+                  href="/ozonoterapia"
+                  className="transition-colors hover:text-[#0066CC]"
+                >
+                  Ozonoterapia
+                </Link>
+
+                <Link
+                  href="/osteopatia"
+                  className="transition-colors hover:text-[#0066CC]"
+                >
+                  Osteopatia
+                </Link>
+
+                <Link
+                  href="/medicina-legale"
+                  className="transition-colors hover:text-[#0066CC]"
+                >
+                  Medicina Legale
+                </Link>
+
+                <Link
+                  href="/chi-sono"
+                  className="transition-colors hover:text-[#0066CC]"
+                >
+                  Chi sono
+                </Link>
+              </div>
+            </nav>
+
+            {/* Collegamenti utili */}
+            <nav
+              aria-label="Informazioni e social"
+              className="md:col-span-3"
             >
-              Osteopatia
-            </a>
+              <h2 className="mb-5 text-sm font-semibold uppercase tracking-[0.14em] text-[#17283C]">
+                Informazioni
+              </h2>
 
-            <a
-              href="/medicina-legale"
-              className="font-semibold text-gray-900 hover:text-primary transition-colors"
-            >
-              Medicina Legale
-            </a>
+              <div className="flex flex-col items-start gap-3 text-base text-[#526477]">
+                <Link
+                  href="/privacy-policy"
+                  className="transition-colors hover:text-[#0066CC]"
+                >
+                  Privacy Policy
+                </Link>
 
+                <Link
+                  href="/cookie-policy"
+                  className="transition-colors hover:text-[#0066CC]"
+                >
+                  Cookie Policy
+                </Link>
+
+                <a
+                  href="https://www.facebook.com/maicobattistello"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 transition-colors hover:text-[#0066CC]"
+                >
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#1877F2] text-sm font-bold text-white">
+                    f
+                  </span>
+                  Facebook
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+
+          {/* Copyright */}
+          <div className="flex flex-col gap-2 pt-6 text-sm text-[#627488] sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 Dott. Maico Battistello</p>
+            <p>Tutti i diritti riservati.</p>
           </div>
         </div>
-
-        {/* Informazioni */}
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mt-8 text-base text-gray-700">
-
-          <a
-            href="/privacy-policy"
-            className="hover:text-primary transition-colors"
-          >
-            Privacy Policy
-          </a>
-
-          <span className="hidden sm:inline text-gray-300">|</span>
-
-          <a
-            href="/cookie-policy"
-            className="hover:text-primary transition-colors"
-          >
-            Cookie Policy
-          </a>
-
-          <span className="hidden sm:inline text-gray-300">|</span>
-
-          <a
-            href="https://www.facebook.com/maicobattistello"
-            className="inline-flex items-center gap-2 font-medium text-primary hover:text-blue-600 transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#1877F2] text-sm font-bold text-white">
-              f
-            </span>
-            <span>Seguimi su Facebook</span>
-          </a>
-
-        </div>
-
-        {/* Copyright */}
-        <div className="border-t border-gray-200 mt-8 pt-5 text-center">
-          <p className="text-sm text-gray-600">
-            © 2026 Dott. Maico Battistello. Tutti i diritti riservati.
-          </p>
-        </div>
-
       </div>
     </footer>
   )
