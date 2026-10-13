@@ -5,7 +5,6 @@ import {
   HeroSection,
   TreatmentsSection,
   ConditionsSection,
-  SubtitleSection,
   DescriptionSection,
   FaqSection,
   AdvancedTherapySection,
@@ -25,8 +24,6 @@ export default function Home() {
       <ConditionsSection />
 
       <TreatmentsSection />
-
-      <SubtitleSection />
 
       <DescriptionSection />
 
