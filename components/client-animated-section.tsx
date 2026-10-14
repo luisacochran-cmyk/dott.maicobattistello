@@ -200,10 +200,10 @@ export function TreatmentsSection() {
                 La cura inizia da una valutazione attenta.
               </h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-slate-600 md:text-lg">
-                Scopri le sedi e i riferimenti per prenotare una visita.
+                Ozonoterapia + Osteopatia · Medicina Legale
               </p>
-              <Link href="/contatti" className="group mt-8 inline-flex items-center gap-3 border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-all hover:gap-5 hover:border-[#0066CC]">
-                Scopri le sedi e i contatti <span aria-hidden="true">↗</span>
+              <Link href="/contatti" className="mt-8 inline-flex items-center border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-colors hover:border-[#0066CC]">
+                Scopri le sedi e i contatti
               </Link>
             </AnimatedScrollElement>
             <AnimatedScrollElement direction="right" delay={0.2}>
@@ -275,7 +275,7 @@ export function DescriptionSection() {
 
 export function AdvancedTherapySection() {
   return (
-    <section className="py-16 bg-primary text-white">
+    <section className="bg-[#0066CC] py-16 text-white">
       <div className="container px-4 md:px-4">
         <AnimatedScrollElement
           className="text-center max-w-4xl mx-auto"
@@ -382,7 +382,7 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-[#F8F7F3] via-[#F5F3ED] to-[#F5F3ED] py-16 md:py-24">
+    <section className="bg-gradient-to-b from-[#F8F7F3] via-[#F0EAE0] to-[#F0EAE0] pt-16 pb-0 md:pt-24">
       <div className="container px-4">
         <div className="mx-auto max-w-5xl grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
           <AnimatedScrollElement direction="left" delay={0.1}>
@@ -407,6 +407,11 @@ export function FaqSection() {
           </AnimatedScrollElement>
         </div>
       </div>
+      {/* Transizione continua: crema delle FAQ verso il blu della sezione successiva */}
+      <div
+        aria-hidden="true"
+        className="mt-14 h-40 bg-gradient-to-b from-[#F0EAE0] via-[#A8C6DD] to-[#0066CC] md:mt-20 md:h-56"
+      />
     </section>
   )
 }
