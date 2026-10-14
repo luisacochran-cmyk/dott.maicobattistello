@@ -1,4 +1,3 @@
-
 import { Building, MapPin } from "lucide-react"
 
 export default function LocationList() {
@@ -8,7 +7,7 @@ export default function LocationList() {
       city: "Padova (PD)",
       name: "Clinica Cittàgiardino",
       address: "Via F. Piccolo 6",
-      services: "Ozonoterapia · Osteopatia · Percorso integrato",
+      services: "Ozonoterapia · Osteopatia · Percorso integrato · Medicina legale",
       mapsUrl:
         "https://www.google.com/maps/search/?api=1&query=Via+F+Piccolo+6+Padova",
     },
@@ -27,7 +26,7 @@ export default function LocationList() {
       name: "",
       address: "Via Ragazzoni 36",
       services:
-        "Ozonoterapia · Osteopatia · Medicina legale · Percorso integrato",
+        "Ozonoterapia · Osteopatia · Percorso integrato · Medicina legale",
       mapsUrl:
         "https://www.google.com/maps/search/?api=1&query=Via+Ragazzoni+36+Marostica+VI",
     },
@@ -37,7 +36,7 @@ export default function LocationList() {
       name: "Centro Medico Medicalis",
       address: "Via Sile 40",
       services:
-        "Ozonoterapia · Osteopatia · Medicina legale · Percorso integrato",
+        "Ozonoterapia · Osteopatia · Percorso integrato · Medicina legale",
       mapsUrl:
         "https://www.google.com/maps/search/?api=1&query=Via+Sile+40+Monte+di+Malo+VI",
     },
@@ -47,7 +46,7 @@ export default function LocationList() {
       name: "Centro Medico MET",
       address: "Via L. Muratori 1/A",
       services:
-        "Ozonoterapia · Osteopatia · Medicina legale · Percorso integrato",
+        "Ozonoterapia · Osteopatia · Percorso integrato · Medicina legale",
       mapsUrl:
         "https://www.google.com/maps/search/?api=1&query=Via+L+Muratori+1+A+Schio+VI",
     },
