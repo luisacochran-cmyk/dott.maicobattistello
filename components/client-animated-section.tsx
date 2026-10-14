@@ -62,14 +62,14 @@ export function HeroSection({ className }: HeroSectionProps) {
 }
 export function ConditionsSection() {
   return (
-    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-gradient-to-b from-[#F5F3ED] via-[#F5F3ED] to-white">
+    <section className="pt-9 pb-9 md:pt-12 md:pb-12 bg-gradient-to-b from-[#F0EAE0] via-[#F3EDE3] to-[#FAF8F4]">
       <div className="container px-4">
         <AnimatedScrollElement
-          className="mb-9 text-center"
+          className="mb-6 md:mb-8 text-center"
           direction="up"
           delay={0.1}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          <h2 className="text-[1.85rem] leading-tight md:text-4xl font-bold mb-3 tracking-tight">
             Per quali disturbi può essere utile una valutazione?
           </h2>
 
@@ -81,14 +81,14 @@ export function ConditionsSection() {
         </AnimatedScrollElement>
 
         <AnimatedScrollElement direction="up" delay={0.3}>
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-0">
 
             <div className="md:px-8">
-              <h3 className="text-xl font-semibold text-primary mb-5">
+              <h3 className="text-xl font-semibold text-primary mb-3">
                 Colonna e schiena
               </h3>
 
-             <div className="space-y-3 text-lg text-gray-700 leading-relaxed">
+             <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
                 <p>Cervicalgia</p>
                 <p>Lombalgia</p>
                 <p>Sciatalgia</p>
@@ -97,11 +97,11 @@ export function ConditionsSection() {
             </div>
 
             <div className="md:px-8 md:border-l md:border-gray-200">
-              <h3 className="text-xl font-semibold text-primary mb-5">
+              <h3 className="text-xl font-semibold text-primary mb-3">
                 Articolazioni e movimento
               </h3>
 
-             <div className="space-y-3 text-lg text-gray-700 leading-relaxed">
+             <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
                 <p>Artrosi</p>
                 <p>Tendiniti</p>
                 <p>Dolore alla spalla</p>
@@ -111,11 +111,11 @@ export function ConditionsSection() {
             </div>
 
             <div className="md:px-8 md:border-l md:border-gray-200">
-              <h3 className="text-xl font-semibold text-primary mb-5">
+              <h3 className="text-xl font-semibold text-primary mb-3">
                 Dolore e condizioni persistenti
               </h3>
 
-            <div className="space-y-3 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
                 <p>Infiammazione cronica</p>
                 <p>Fibromialgia</p>
                 <p>Stanchezza persistente e riduzione della vitalità</p>
@@ -132,18 +132,18 @@ export function ConditionsSection() {
 export function TreatmentsSection() {
   return (
     <section className="bg-white">
-      <div className="bg-gradient-to-b from-white via-white to-[#F9FAFB] pt-14 pb-8 md:pt-20 md:pb-10">
+      <div className="bg-gradient-to-b from-[#FAF8F4] via-[#FFFFFF] to-[#EDF4F9] pt-10 pb-6 md:pt-14 md:pb-8">
         <div className="container px-4">
         <AnimatedScrollElement
           className="text-center max-w-3xl mx-auto"
           direction="up"
           delay={0.1}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+          <h2 className="text-[1.85rem] leading-tight md:text-4xl font-bold mb-4 tracking-tight">
             Un approccio costruito sulla persona
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-5">
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
             L&apos;ozonoterapia può essere indicata per intervenire sul dolore
             e sui processi infiammatori; l&apos;osteopatia si concentra invece
             sugli aspetti funzionali e posturali che possono contribuire al
@@ -163,7 +163,7 @@ export function TreatmentsSection() {
         </div>
       </div>
 
-      <div className="bg-gradient-to-b from-[#F9FAFB] via-white to-[#F0F5F9] py-12 md:py-16">
+      <div className="bg-gradient-to-b from-[#EDF4F9] via-[#EAF2F8] to-[#E2EDF6] py-7 md:py-10">
         <div className="container px-4">
         <AnimatedScrollElement direction="up" delay={0.3}>
           <QuadrantCarousel
@@ -190,19 +190,19 @@ export function TreatmentsSection() {
         </div>
       </div>
 
-      <div className="relative overflow-hidden bg-gradient-to-b from-[#F0F5F9] via-[#EAF1F7] to-[#F5F8FB] py-16 md:py-24">
+      <div className="relative overflow-hidden bg-gradient-to-b from-[#E2EDF6] via-[#DDEAF4] to-[#F0F4F7] py-10 md:py-16">
         <div aria-hidden="true" className="pointer-events-none absolute -right-28 -top-40 h-96 w-96 rounded-full bg-white/35 blur-3xl" />
         <div className="container relative px-4">
-          <div className="mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+          <div className="mx-auto max-w-6xl grid items-center gap-7 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
             <AnimatedScrollElement direction="left" delay={0.1}>
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Dove riceve</p>
-              <h2 className="max-w-lg text-4xl font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
+              <h2 className="max-w-lg text-[2rem] font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
                 La cura inizia da una valutazione attenta.
               </h2>
-              <p className="mt-6 max-w-md text-base leading-relaxed text-slate-600 md:text-lg">
+              <p className="mt-4 max-w-md text-base leading-relaxed text-slate-600 md:text-lg">
                 Ozonoterapia + Osteopatia · Medicina Legale
               </p>
-              <Link href="/contatti" className="mt-8 inline-flex items-center border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-colors hover:border-[#0066CC]">
+              <Link href="/contatti" className="mt-5 inline-flex items-center border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-colors hover:border-[#0066CC]">
                 Scopri le sedi e i contatti
               </Link>
             </AnimatedScrollElement>
@@ -238,9 +238,9 @@ export function TreatmentsSection() {
 
 export function DescriptionSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F5F8FB] via-white to-[#F8F7F3] pt-16 pb-20 md:pt-24 md:pb-28">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F0F4F7] via-[#FFFFFF] to-[#F0EAE0] pt-10 pb-12 md:pt-16 md:pb-16">
       <div className="container px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,390px)_1fr] gap-9 lg:gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,390px)_1fr] gap-6 lg:gap-12 items-center">
           <AnimatedScrollElement direction="left" delay={0.1}>
             <div className="overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
               <Image
@@ -254,7 +254,7 @@ export function DescriptionSection() {
             </div>
           </AnimatedScrollElement>
           <AnimatedScrollElement direction="right" delay={0.2}>
-            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-7">Il Dott. Maico Battistello</h2>
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-5">Il Dott. Maico Battistello</h2>
             <div className="space-y-5 text-lg md:text-xl text-gray-600 leading-relaxed">
               <p>
                 Laureato in Medicina e Chirurgia e specializzato in Medicina Legale, il Dott. Maico Battistello integra competenze mediche con l’Ozonoterapia e l’Osteopatia per costruire percorsi terapeutici personalizzati.
@@ -263,7 +263,7 @@ export function DescriptionSection() {
                 Ogni scelta nasce da una valutazione clinica approfondita e dall&apos;ascolto della persona, con l&apos;obiettivo di individuare il trattamento più appropriato in base alle esigenze del singolo paziente.
               </p>
             </div>
-            <Button asChild size="lg" className="mt-9 bg-[#0066CC] hover:bg-[#0057AD] text-white font-semibold text-base px-9 h-12 rounded-full">
+            <Button asChild size="lg" className="mt-6 bg-[#0066CC] hover:bg-[#0057AD] text-white font-semibold text-base px-9 h-12 rounded-full">
               <Link href="/chi-sono">Chi sono</Link>
             </Button>
           </AnimatedScrollElement>
@@ -275,7 +275,7 @@ export function DescriptionSection() {
 
 export function AdvancedTherapySection() {
   return (
-    <section className="bg-[#0066CC] pt-16 text-white">
+    <section className="bg-[#0066CC] pt-10 md:pt-14 text-white">
       <div className="container px-4 md:px-4">
         <AnimatedScrollElement
           className="text-center max-w-4xl mx-auto"
@@ -307,7 +307,7 @@ export function AdvancedTherapySection() {
       {/* Unica sfumatura continua: dal blu della CTA al bianco da cui parte il footer. */}
       <div
         aria-hidden="true"
-        className="mt-12 h-20 md:mt-16 md:h-24"
+        className="mt-8 h-20 md:mt-12 md:h-24"
         style={{
           background: "linear-gradient(to bottom, #0066CC 0%, #418FD2 32%, #A9CDE8 68%, #FFFFFF 100%)",
         }}
@@ -390,20 +390,20 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-[#F8F7F3] via-[#F0EAE0] to-[#F0EAE0] pt-16 pb-0 md:pt-24">
+    <section className="bg-gradient-to-b from-[#F0EAE0] via-[#EEE5D9] to-[#EEE5D9] pt-10 pb-0 md:pt-16">
       <div className="container px-4">
-        <div className="mx-auto max-w-5xl grid gap-10 md:grid-cols-[0.75fr_1.25fr] md:gap-16">
+        <div className="mx-auto max-w-5xl grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
           <AnimatedScrollElement direction="left" delay={0.1}>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Informazioni utili</p>
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-slate-900">Domande<br className="hidden md:block" /> frequenti<span className="text-[#0066CC]">.</span></h2>
-            <p className="mt-6 max-w-sm text-lg leading-relaxed text-slate-600">
+            <p className="mt-4 max-w-sm text-lg leading-relaxed text-slate-600">
               Alcune informazioni utili per comprendere come si svolge la valutazione e come richiedere un appuntamento.
             </p>
           </AnimatedScrollElement>
           <AnimatedScrollElement direction="up" delay={0.2}>
             <div className="border-t border-slate-300/80">
-              {faqs.map((faq, index) => (
-                <details key={faq.question} className="group border-b border-slate-300/80 py-1" open={index === 0}>
+              {faqs.map((faq) => (
+                <details key={faq.question} className="group border-b border-slate-300/80 py-1">
                   <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-left marker:hidden [&::-webkit-details-marker]:hidden">
                     <span className="text-lg md:text-xl font-medium leading-snug text-slate-900">{faq.question}</span>
                     <span aria-hidden="true" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#0066CC]/30 text-xl font-light text-[#0066CC] transition-transform duration-300 group-open:rotate-45">+</span>
@@ -418,7 +418,7 @@ export function FaqSection() {
       {/* Transizione continua: crema delle FAQ verso il blu della sezione successiva */}
       <div
         aria-hidden="true"
-        className="mt-14 h-40 bg-gradient-to-b from-[#F0EAE0] via-[#A8C6DD] to-[#0066CC] md:mt-20 md:h-56"
+        className="mt-8 h-24 bg-gradient-to-b from-[#EEE5D9] via-[#8BB9DE] to-[#0066CC] md:mt-12 md:h-36"
       />
     </section>
   )
