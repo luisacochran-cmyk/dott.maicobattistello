@@ -185,53 +185,6 @@ export function TreatmentsSection() {
 
        
         
-        <div className="mt-12 max-w-6xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-blue-700 mb-3">
-              Dove riceve
-            </h3>
-
-            <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-              Ozonoterapia, osteopatia e medicina legale:
-              scopri le sedi e i servizi disponibili sul territorio.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {[
-              {
-                city: "Marostica",
-                href: "/contatti",
-              },
-              {
-                city: "Schio",
-                href: "/contatti",
-              },
-              {
-                city: "Malo",
-                href: "/contatti",
-              },
-              {
-                city: "Padova",
-                href: "/contatti"
-              },
-            ].map((location) => (
-              <a
-                key={location.city}
-                href={location.href}
-                className="group flex flex-col items-center justify-center rounded-xl border border-blue-200 bg-blue-50 px-5 py-8 text-center shadow-sm transition-all duration-300 hover:bg-blue-100 hover:shadow-md"
-              >
-                <h4 className="text-xl font-bold text-blue-800 mb-5">
-                  {location.city}
-                </h4>
-
-                <span className="inline-block rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition-colors group-hover:bg-blue-700">
-                  Scopri le sedi →
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
