@@ -4,17 +4,21 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="bg-[#F1F5F8] text-[#233247]">
-      {/* Transizione dalla sezione blu */}
+      {/* Transizione universale: bianco verso azzurro chiaro */}
       <div
         aria-hidden="true"
-        className="h-28 md:h-40 bg-gradient-to-b from-[#0066CC] via-[#B8D7EF] to-[#F1F5F8]"
+        className="h-28 md:h-40"
+        style={{
+          background:
+            "linear-gradient(to bottom, #FFFFFF 0%, #F9FBFD 28%, #EDF4F9 65%, #F1F5F8 100%)",
+        }}
       />
 
       <div className="container mx-auto px-6 pb-8 pt-6 md:px-10 md:pb-10">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-12 border-b border-[#CBD9E5] pb-12 md:grid-cols-12 md:gap-8">
 
-            {/* Identità essenziale */}
+            {/* Identità */}
             <div className="md:col-span-5">
               <div className="mb-5 flex items-center gap-4">
                 <img
@@ -86,7 +90,7 @@ export default function Footer() {
               </div>
             </nav>
 
-            {/* Collegamenti utili */}
+            {/* Informazioni */}
             <nav
               aria-label="Informazioni e social"
               className="md:col-span-3"
