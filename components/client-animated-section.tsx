@@ -275,7 +275,7 @@ export function DescriptionSection() {
 
 export function AdvancedTherapySection() {
   return (
-    <section className="bg-[#0066CC] py-16 text-white">
+    <section className="bg-[#0066CC] pt-16 text-white">
       <div className="container px-4 md:px-4">
         <AnimatedScrollElement
           className="text-center max-w-4xl mx-auto"
@@ -304,6 +304,14 @@ export function AdvancedTherapySection() {
           </Button>
         </AnimatedScrollElement>
       </div>
+      {/* Unica sfumatura continua: dal blu della CTA al bianco da cui parte il footer. */}
+      <div
+        aria-hidden="true"
+        className="mt-12 h-20 md:mt-16 md:h-24"
+        style={{
+          background: "linear-gradient(to bottom, #0066CC 0%, #418FD2 32%, #A9CDE8 68%, #FFFFFF 100%)",
+        }}
+      />
     </section>
   )
 }
