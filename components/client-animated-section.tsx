@@ -154,10 +154,17 @@ export function TreatmentsSection() {
           </p>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            L&apos;obiettivo non è applicare un trattamento prestabilito, ma
-            individuare il percorso più appropriato per la singola persona,
-            tenendo conto del quadro clinico, della funzionalità e delle
-            esigenze individuali.
+            L&apos;obiettivo è costruire un percorso personalizzato, che tenga
+            conto dei sintomi, della funzionalità e del benessere complessivo
+            della persona.
+          </p>
+
+          <p className="mt-5 text-lg md:text-xl text-gray-600 leading-relaxed">
+            L&apos;approccio del Dott. Maico Battistello comprende anche
+            l&apos;attenzione all&apos;alimentazione, attraverso
+            l&apos;elaborazione di schede nutrizionali personalizzate e la
+            consulenza nutraceutica, con indicazioni sull&apos;eventuale
+            utilizzo di integratori in base alle necessità del paziente.
           </p>
         </AnimatedScrollElement>
         </div>
