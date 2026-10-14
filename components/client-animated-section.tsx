@@ -200,7 +200,7 @@ export function TreatmentsSection() {
                 La cura inizia da una valutazione attenta.
               </h2>
               <p className="mt-6 max-w-md text-base leading-relaxed text-slate-600 md:text-lg">
-                Il Dott. Maico Battistello riceve a Marostica, Schio, Malo e Padova.
+                Scopri le sedi e i riferimenti per prenotare una visita.
               </p>
               <Link href="/contatti" className="group mt-8 inline-flex items-center gap-3 border-b border-[#0066CC]/40 pb-2 font-semibold text-[#0066CC] transition-all hover:gap-5 hover:border-[#0066CC]">
                 Scopri le sedi e i contatti <span aria-hidden="true">↗</span>
@@ -209,10 +209,21 @@ export function TreatmentsSection() {
             <AnimatedScrollElement direction="right" delay={0.2}>
               <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
                 <div className="grid grid-cols-2 gap-x-5 md:gap-x-9">
-                  {["Marostica", "Schio", "Malo", "Padova"].map((city) => (
-                    <div key={city} className="flex min-h-24 items-center border-b border-[#D4DFE9] py-5 last:border-b sm:min-h-28">
-                      <span className="text-xl font-medium tracking-tight text-slate-800 sm:text-2xl md:text-[1.7rem]">{city}</span>
-                    </div>
+                  {[
+                    { name: "Marostica", href: "/contatti#marostica" },
+                    { name: "Schio", href: "/contatti#schio" },
+                    { name: "Malo", href: "/contatti#malo" },
+                    { name: "Padova", href: "/contatti#padova" },
+                  ].map((city) => (
+                    <Link
+                      key={city.name}
+                      href={city.href}
+                      className="group flex min-h-24 items-center justify-between gap-2 border-b border-[#D4DFE9] py-5 transition-colors hover:text-[#0066CC] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC] sm:min-h-28"
+                      aria-label={`Sedi e contatti a ${city.name}`}
+                    >
+                      <span className="text-xl font-medium tracking-tight text-slate-800 transition-colors group-hover:text-[#0066CC] sm:text-2xl md:text-[1.7rem]">{city.name}</span>
+                      <span aria-hidden="true" className="text-[#0066CC] opacity-60 transition-all group-hover:translate-x-1 group-hover:opacity-100">→</span>
+                    </Link>
                   ))}
                 </div>
               </div>
