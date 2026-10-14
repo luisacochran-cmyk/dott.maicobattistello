@@ -27,8 +27,8 @@ export default function Footer() {
                   <p className="text-xl font-semibold tracking-tight text-[#17283C]">
                     Dott. Maico Battistello
                   </p>
-                  <p className="mt-1 text-sm text-[#627488]">
-                    Attività medica e professionale
+                  <p className="mt-1 text-sm leading-relaxed text-[#627488]">
+                    Medico Legale · Osteopata · Ozonoterapeuta
                   </p>
                 </div>
               </div>
@@ -40,10 +40,9 @@ export default function Footer() {
 
               <Link
                 href="/contatti"
-                className="mt-6 inline-flex items-center gap-2 border-b border-[#0066CC]/40 pb-1 font-medium text-[#0066CC] transition-colors hover:text-[#004E9E]"
+                className="mt-6 inline-flex items-center border-b border-[#0066CC]/40 pb-1 font-medium text-[#0066CC] transition-colors hover:text-[#004E9E]"
               >
                 Sedi e contatti
-                <span aria-hidden="true">↗</span>
               </Link>
             </div>
 
@@ -121,7 +120,6 @@ export default function Footer() {
                     f
                   </span>
                   Facebook
-                  <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </nav>
