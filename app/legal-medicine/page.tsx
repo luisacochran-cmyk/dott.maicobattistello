@@ -21,13 +21,13 @@ export default function LegalMedicinePage() {
   return (
     <main className="pt-20 text-slate-800">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicina Legale", href: "/medicina-legale" }]} />
-      <section className="bg-gradient-to-br from-[#0066CC] via-[#1680d8] to-[#eaf6ff] py-16 md:py-24">
+      <section className="bg-gradient-to-br from-[#0066CC] via-[#1680d8] to-[#dff1ff] py-16 md:py-24">
         <div className="container mx-auto max-w-6xl px-4">
           <h1 className="max-w-3xl text-4xl font-bold tracking-tight text-white md:text-5xl">Medicina Legale – Dr. Maico Battistello</h1>
           <p className="mt-5 max-w-2xl text-lg text-white/95">Consulenze specialistiche e valutazioni medico-legali</p>
         </div>
       </section>
-      <section className="bg-white py-14 md:py-20">
+      <section className="bg-gradient-to-b from-white to-[#fff9ee] py-14 md:py-20">
         <div className="container mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2">
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-[#0066CC]">Cos'è la Medicina Legale</h2>
@@ -37,12 +37,11 @@ export default function LegalMedicinePage() {
               <div className="relative aspect-[4/3] w-full">
                 <Image src="/images/design-mode/medlegale.jpg.jpeg" alt="Consulenza di Medicina Legale" fill className="object-contain" sizes="(max-width: 768px) 100vw, 50vw" priority />
               </div>
-              <figcaption className="px-5 py-4 text-center text-sm text-slate-700">Consulenza di Medicina Legale — Valutazione professionale e relazioni medico-legali specialistiche</figcaption>
             </figure>
           </AnimatedScrollElement>
         </div>
       </section>
-      <section className="bg-[#fff9ee] py-14 md:py-20">
+      <section className="bg-gradient-to-b from-[#fff9ee] to-white py-14 md:py-20">
         <div className="container mx-auto max-w-6xl space-y-6 px-4">
           <h2 className="text-3xl font-semibold text-[#0066CC]">Presentazione</h2>
 <p className="text-lg leading-relaxed text-slate-700">Sono il <strong>Dr. Maico Battistello</strong>, medico chirurgo, attivo nell'ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.</p>        </div>
