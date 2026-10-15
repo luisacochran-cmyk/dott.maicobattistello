@@ -21,7 +21,8 @@ export default function LegalMedicinePage() {
   return (
     <main className="pt-20 text-slate-800">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Medicina Legale", href: "/medicina-legale" }]} />
-      <section className="bg-gradient-to-b from-[#f1f7fc] via-white to-white py-14 md:py-20">
+      <div className="bg-[linear-gradient(to_bottom,#f1f7fc_0%,#ffffff_23%,#faf7f1_48%,#ffffff_73%,#f2eee7_100%)]">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2">
           <div className="space-y-6">
             <h1 className="text-3xl font-semibold text-[#173b64] md:text-4xl">Cos'è la Medicina Legale?</h1>
@@ -35,48 +36,48 @@ export default function LegalMedicinePage() {
           </AnimatedScrollElement>
         </div>
       </section>
-      <section className="bg-gradient-to-b from-white to-[#f2eee7] py-14 md:py-20">
+      <section className="py-8 md:py-10">
         <div className="container mx-auto max-w-6xl space-y-6 px-4">
           <h2 className="text-3xl font-semibold text-[#173b64]">Presentazione</h2>
 <p className="text-lg leading-relaxed text-slate-700">Sono il <strong>Dr. Maico Battistello</strong>, medico chirurgo, attivo nell'ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.</p>        </div>
       </section>
-      <section className="bg-gradient-to-b from-[#f2eee7] to-white py-14 md:py-20">
+      <section className="py-8 md:py-12">
         <div className="container mx-auto max-w-6xl px-4">
           <h2 className="mb-8 text-3xl font-semibold text-[#173b64]">Prestazioni medico-legali</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Responsabilità Civile (RC)</h3><ul className="list-disc pl-5 space-y-2 text-slate-700"><li>Valutazione del <strong>danno biologico temporaneo e permanente</strong></li>
+            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Responsabilità Civile (RC)</h3><ul className="list-disc pl-6 space-y-3 text-lg leading-relaxed text-slate-700"><li>Valutazione del <strong>danno biologico temporaneo e permanente</strong></li>
             <li>Analisi della <strong>documentazione clinica</strong></li>
             <li>Redazione di <strong>relazioni medico-legali</strong> per contenziosi civili e stragiudiziali</li>
             <li>Supporto nella definizione di <strong>accordi transattivi</strong></li></ul></article>
-            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Responsabilità Civile Auto (RCA)</h3><ul className="list-disc pl-5 space-y-2 text-slate-700"><li>Perizie medico-legali per <strong>sinistri stradali</strong></li>
+            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Responsabilità Civile Auto (RCA)</h3><ul className="list-disc pl-6 space-y-3 text-lg leading-relaxed text-slate-700"><li>Perizie medico-legali per <strong>sinistri stradali</strong></li>
             <li>Valutazione della <strong>dinamica lesiva</strong> e delle menomazioni conseguenti</li>
             <li>Verifica della <strong>congruità delle cure, dei tempi di guarigione</strong> e degli accertamenti eseguiti</li>
             <li>Relazioni chiare e documentabili per compagnie, legali e privati</li></ul></article>
-            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Polizze Infortuni</h3><ul className="list-disc pl-5 space-y-2 text-slate-700"><li>Valutazione dell'<strong>invalidità permanente</strong> secondo tabelle di polizza</li>
+            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Polizze Infortuni</h3><ul className="list-disc pl-6 space-y-3 text-lg leading-relaxed text-slate-700"><li>Valutazione dell'<strong>invalidità permanente</strong> secondo tabelle di polizza</li>
             <li>Analisi dei <strong>postumi da infortuni sportivi, lavorativi ed extra-lavorativi</strong></li>
             <li>Supporto in caso di <strong>contestazioni tra assicurato e compagnia</strong></li></ul></article>
-            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Polizze Malattia</h3><ul className="list-disc pl-5 space-y-2 text-slate-700"><li>Inquadramento medico-legale delle <strong>patologie coperte da polizza</strong></li>
+            <article className="rounded-2xl border border-[#dcecff] bg-white p-7 shadow-sm"><h3 className="mb-4 text-xl font-semibold text-[#173b64]">Polizze Malattia</h3><ul className="list-disc pl-6 space-y-3 text-lg leading-relaxed text-slate-700"><li>Inquadramento medico-legale delle <strong>patologie coperte da polizza</strong></li>
             <li>Verifica della <strong>corretta applicazione delle condizioni contrattuali</strong></li>
             <li>Stima delle <strong>menomazioni residue</strong></li></ul></article>
           </div>
         </div>
       </section>
-      <section className="bg-[#f2eee7] py-14 md:py-20">
+      <section className="py-8 md:py-10">
         <div className="container mx-auto max-w-6xl space-y-6 px-4">
           <h2 className="text-3xl font-semibold text-[#173b64]">Consulenze Tecniche di Parte (CTP)</h2>
 <p className="text-lg leading-relaxed text-slate-700">Offro attività di <strong>Consulente Tecnico di Parte</strong> in procedimenti civili, con studio del caso e della documentazione sanitaria; parere scritto preventivo sulla sostenibilità della richiesta risarcitoria; assistenza durante le operazioni peritali; confronto tecnico con CTU e altre parti coinvolte. L'obiettivo è tutelare in modo rigoroso e scientificamente fondato gli interessi del cliente.</p>        </div>
       </section>
-      <section className="bg-white py-14 md:py-20">
+      <section className="py-8 md:py-10">
         <div className="container mx-auto max-w-6xl space-y-6 px-4">
           <h2 className="text-3xl font-semibold text-[#173b64]">Approccio Integrato Medico-Legale e Terapeutico</h2>
-<p className="text-lg leading-relaxed text-slate-700">In qualità di medico legale, osteopata e ozonoterapeuta, unisco alla valutazione del danno una <strong>visione clinica completa</strong>. Questo mi permette di valutare la <strong>pertinenza e la congruità delle terapie eseguite</strong>; indicare quando siano necessari <strong>esami diagnostico-strumentali aggiuntivi</strong> per documentare al meglio le lesioni; e correlare in modo preciso <strong>quadro clinico, iter terapeutico e menomazioni permanenti</strong>. Questo approccio integrato offre un vantaggio concreto in ambito assicurativo e giudiziario.</p>          <h3 className="pt-4 text-2xl font-semibold text-[#173b64]">A chi è rivolto il servizio</h3>
-<ul className="list-disc pl-5 space-y-2 text-slate-700"><li>Privati coinvolti in <strong>sinistri stradali o infortuni</strong></li>
+<p className="text-lg leading-relaxed text-slate-700">In qualità di medico legale, osteopata e ozonoterapeuta, unisco alla valutazione del danno una <strong>visione clinica completa</strong>. Questo mi permette di valutare la <strong>pertinenza e la congruità delle terapie eseguite</strong>; indicare quando siano necessari <strong>esami diagnostico-strumentali aggiuntivi</strong> per documentare al meglio le lesioni; e correlare in modo preciso <strong>quadro clinico, iter terapeutico e menomazioni permanenti</strong>. Questo approccio integrato offre un vantaggio concreto in ambito assicurativo e giudiziario.</p>          <h3 className="pt-5 text-3xl font-semibold text-[#173b64]">A chi è rivolto il servizio</h3>
+<ul className="list-disc pl-6 space-y-3 text-lg leading-relaxed text-slate-700"><li>Privati coinvolti in <strong>sinistri stradali o infortuni</strong></li>
             <li>Pazienti con <strong>postumi invalidanti</strong> che necessitano di una corretta valutazione medico-legale</li>
             <li>Studi legali che richiedono un <strong>riferimento medico-legale stabile</strong></li>
             <li>Agenzie assicurative e broker</li>
             <li>Agenzie che necessitano di <strong>supporto medico-legale</strong> sui propri assistiti</li></ul>        </div>
       </section>
-      <section className="bg-gradient-to-b from-[#f2eee7] via-[#f7f5f0] to-white py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container mx-auto max-w-6xl px-4">
           <h2 className="mb-4 text-3xl font-semibold text-[#173b64]">Consulenze Medicina Legale nelle principali città</h2>
           <p className="mb-8 text-lg text-slate-700">Scopri le informazioni e i servizi disponibili nelle diverse sedi.</p>
@@ -90,6 +91,7 @@ export default function LegalMedicinePage() {
           </div>
         </div>
       </section>
+      </div>
     </main>
   )
 }
