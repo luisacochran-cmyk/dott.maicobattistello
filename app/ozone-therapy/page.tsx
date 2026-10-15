@@ -31,7 +31,7 @@ export default function OzoneTherapyPage() {
       />
 
       {/* Introduzione - palette coordinata al restyling */}
-      <section className="bg-gradient-to-br from-[#F0EAE0] via-white to-[#F2F7FD] py-12 md:py-16">
+      <section className="bg-gradient-to-b from-[#F2F7FD] via-white to-[#F8F5F0] py-12 md:py-16">
         <div className="container mx-auto max-w-6xl px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-6">Cos&apos;è l&apos;Ozonoterapia?</h1>
@@ -48,7 +48,7 @@ export default function OzoneTherapyPage() {
       </section>
 
       {/* Collegamenti alle landing page locali */}
-      <section className="bg-gradient-to-b from-[#F0EAE0] via-[#F8F5F0] to-white py-12 md:py-16">
+      <section className="bg-gradient-to-b from-[#F8F5F0] via-[#F5F0E9] to-[#F0EAE0] py-12 md:py-16">
         <div className="container mx-auto max-w-6xl px-4">
           <p className="text-sm tracking-[0.2em] font-semibold text-[#0066CC] mb-2">LE SEDI</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-3">Dove riceve per l&apos;Ozonoterapia</h2>
