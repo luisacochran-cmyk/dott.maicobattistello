@@ -43,7 +43,30 @@ export default function OzoneTherapyPage() {
             <h1 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-6">Cos&apos;è l&apos;Ozonoterapia?</h1>
             <div className="text-lg leading-relaxed text-slate-700 space-y-5">
               <p>L&apos;<strong>ossigeno-ozonoterapia</strong> utilizza una miscela di ossigeno e ozono impiegata in diversi ambiti della pratica medica come supporto nel trattamento di specifiche condizioni cliniche. Le modalità di applicazione vengono valutate dal medico in base alle caratteristiche del paziente e al quadro clinico.</p>
-              <p>L&apos;<strong>ozono medicale</strong> è oggetto di interesse per le sue proprietà biologiche e viene utilizzato, in contesti appropriati, come supporto nei percorsi terapeutici rivolti a <strong>patologie muscolo-scheletriche</strong>, stati infiammatori e condizioni dolorose.</p>
+             
+<p>
+  L&apos;<strong>ozono medicale</strong> è oggetto di interesse
+  per le sue proprietà biologiche e trova applicazione, in contesti
+  clinici appropriati, nell&apos;ambito di percorsi terapeutici
+  rivolti a <strong>patologie muscolo-scheletriche</strong>,{" "}
+  <strong>stati infiammatori</strong> e{" "}
+  <strong>condizioni dolorose</strong>.
+</p>
+<p>
+  Accanto ai trattamenti locali, l&apos;ossigeno-ozonoterapia
+  comprende anche un <strong>approccio sistemico</strong>,
+  attraverso metodiche quali la{" "}
+  <strong>Grande Autoemoterapia (GAET)</strong> e la{" "}
+  <strong>Piccola Autoemoterapia (PAET)</strong>.
+  Queste metodiche sono studiate e utilizzate in ambito
+  complementare anche per condizioni complesse come la{" "}
+  <strong>fibromialgia</strong>, il{" "}
+  <strong>dolore cronico diffuso</strong> e la sintomatologia
+  associata, tra cui <strong>affaticamento</strong> e{" "}
+  <strong>disturbi del sonno</strong>, sempre nell&apos;ambito
+  di una valutazione medica individuale.
+</p>
+
               <p>Per le sue caratteristiche di <strong>minima invasività</strong>, l&apos;ossigeno-ozonoterapia viene integrata in protocolli personalizzati dopo una <strong>valutazione medica specialistica</strong>, con l&apos;obiettivo di favorire il benessere della persona e il recupero della <strong>funzionalità</strong>.</p>
             </div>
           </div>
