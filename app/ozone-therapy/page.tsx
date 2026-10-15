@@ -42,7 +42,7 @@ export default function OzoneTherapyPage() {
             </div>
           </div>
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-[#F2F7FD]">
-            <Image src="/images/maico-ozonoterapia-gaet-restyling.jpg" alt="Dott. Maico Battistello durante una procedura di grande autoemoterapia (GAET)" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+            <Image src="/images/Medico con sacca di sangue in clinica.png" alt="Dott. Maico Battistello durante una procedura di grande autoemoterapia (GAET)" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
         </div>
       </section>
