@@ -63,7 +63,7 @@ export default function OsteopathyPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-[#F8F5F0] to-[#F4EFE8] py-12 md:py-16">
+     <section className="bg-gradient-to-b from-[#F8F5F0] via-[#F8F5F0] to-[#F0EAE0] py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="mb-8 text-center md:text-left">
             <p className="text-xs uppercase tracking-[0.22em] font-semibold text-[#0066CC] mb-3">Le sedi</p>
@@ -86,7 +86,7 @@ export default function OsteopathyPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-b from-[#F2F7FD] to-white py-10 md:py-14">
+      <section className="bg-gradient-to-b from-[#F0EAE0] via-[#F2F7FD] to-white py-10 md:py-14">
         <div className="container mx-auto px-4 max-w-6xl">
           <QuadrantCarousel
             items={[
