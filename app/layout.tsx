@@ -285,12 +285,12 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body className={roboto.className}>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-          <CookieBanner />
+            <body className={roboto.className}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+        <CookieBanner />
+        <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>
       </body>
