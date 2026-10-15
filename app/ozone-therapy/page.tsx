@@ -30,8 +30,14 @@ export default function OzoneTherapyPage() {
         ]}
       />
 
+      {/* Sfondo unico: introduzione -> sedi crema -> carosello bianco */}
+      <div
+        style={{
+          background: "linear-gradient(to bottom, #F2F7FD 0%, #FFFFFF 19%, #F8F5F0 35%, #F0EAE0 49%, #F0EAE0 60%, #F8F5F0 76%, #FFFFFF 93%, #FFFFFF 100%)",
+        }}
+      >
       {/* Introduzione - palette coordinata al restyling */}
-      <section className="bg-gradient-to-b from-[#F2F7FD] via-white to-[#F8F5F0] py-12 md:py-16">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-6xl px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-6">Cos&apos;è l&apos;Ozonoterapia?</h1>
@@ -48,7 +54,7 @@ export default function OzoneTherapyPage() {
       </section>
 
       {/* Collegamenti alle landing page locali */}
-      <section className="bg-gradient-to-b from-[#F8F5F0] via-[#F5F0E9] to-[#F0EAE0] py-12 md:py-16">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-6xl px-4">
           <p className="text-sm tracking-[0.2em] font-semibold text-[#0066CC] mb-2">LE SEDI</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-3">Dove riceve per l&apos;Ozonoterapia</h2>
@@ -70,7 +76,7 @@ export default function OzoneTherapyPage() {
       </section>
 
       {/* Image Carousel Section */}
-      <div className="py-10 bg-white">
+      <div className="py-10">
         <QuadrantCarousel
           items={[
             {
@@ -100,6 +106,8 @@ export default function OzoneTherapyPage() {
             },
           ]}
         />
+      </div>
+
       </div>
 
       {/* Piccola Autoemoterapia Section */}
