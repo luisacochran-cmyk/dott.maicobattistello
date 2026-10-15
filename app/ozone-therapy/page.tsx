@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion"
 import QuadrantCarousel from "@/components/quadrant-carousel"
 import Link from "next/link"
+import Image from "next/image"
 
 export const metadata = {
   title: "Ozonoterapia - Dr. Maico Battistello",
@@ -29,84 +30,47 @@ export default function OzoneTherapyPage() {
         ]}
       />
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose prose-lg max-w-none leading-relaxed">
-          <h2 className="text-3xl font-bold mb-6">
-            Cos&apos;è l&apos;Ozonoterapia?
-          </h2>
-
-          <p className="text-xl leading-relaxed mb-6">
-            L&apos;<strong>ossigeno-ozonoterapia</strong> utilizza una miscela
-            di ossigeno e ozono impiegata in diversi ambiti della pratica
-            medica come supporto nel trattamento di specifiche condizioni
-            cliniche. Le modalità di applicazione vengono valutate dal medico
-            in base alle caratteristiche del paziente e al quadro clinico.
-            <br />
-            <br />
-            L&apos;<strong>ozono medicale</strong> è oggetto di interesse per
-            le sue proprietà biologiche e viene utilizzato, in contesti
-            appropriati, come supporto nei percorsi terapeutici rivolti a{" "}
-            <strong>patologie muscolo-scheletriche</strong>, stati
-            infiammatori e condizioni dolorose.
-            <br />
-            <br />
-            Per le sue caratteristiche di <strong>minima invasività</strong>,
-            l&apos;ossigeno-ozonoterapia viene integrata in protocolli
-            personalizzati dopo una{" "}
-            <strong>valutazione medica specialistica</strong>, con
-            l&apos;obiettivo di favorire il benessere della persona e il
-            recupero della <strong>funzionalità</strong>.
-          </p>
-        </div>
-      </div>
-
-      {/* Cities Links Section */}
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
-          <h3 className="text-xl font-semibold mb-3">
-            📍 Trattamenti di Ozonoterapia nelle principali città
-          </h3>
-
-          <p className="text-lg leading-relaxed mb-4">
-            Il Dr. Maico Battistello offre trattamenti di ozonoterapia anche
-            presso:
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <Link
-              href="/ozonoterapia-padova"
-              className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
-            >
-              → Ozonoterapia a Padova
-            </Link>
-
-            <Link
-              href="/ozonoterapia-marostica"
-              className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
-            >
-              → Ozonoterapia a Marostica
-            </Link>
-
-            <Link
-              href="/ozonoterapia-schio"
-              className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
-            >
-              → Ozonoterapia a Schio
-            </Link>
-
-            <Link
-              href="/ozonoterapia-malo"
-              className="text-lg text-blue-600 hover:text-blue-800 underline font-medium"
-            >
-              → Ozonoterapia a Malo
-            </Link>
+      {/* Introduzione - palette coordinata al restyling */}
+      <section className="bg-gradient-to-br from-[#F0EAE0] via-white to-[#F2F7FD] py-12 md:py-16">
+        <div className="container mx-auto max-w-6xl px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-6">Cos&apos;è l&apos;Ozonoterapia?</h1>
+            <div className="text-lg leading-relaxed text-slate-700 space-y-5">
+              <p>L&apos;<strong>ossigeno-ozonoterapia</strong> utilizza una miscela di ossigeno e ozono impiegata in diversi ambiti della pratica medica come supporto nel trattamento di specifiche condizioni cliniche. Le modalità di applicazione vengono valutate dal medico in base alle caratteristiche del paziente e al quadro clinico.</p>
+              <p>L&apos;<strong>ozono medicale</strong> è oggetto di interesse per le sue proprietà biologiche e viene utilizzato, in contesti appropriati, come supporto nei percorsi terapeutici rivolti a <strong>patologie muscolo-scheletriche</strong>, stati infiammatori e condizioni dolorose.</p>
+              <p>Per le sue caratteristiche di <strong>minima invasività</strong>, l&apos;ossigeno-ozonoterapia viene integrata in protocolli personalizzati dopo una <strong>valutazione medica specialistica</strong>, con l&apos;obiettivo di favorire il benessere della persona e il recupero della <strong>funzionalità</strong>.</p>
+            </div>
+          </div>
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-[#F2F7FD]">
+            <Image src="/images/ozonoterapia.jpg" alt="Immagine illustrativa dell'ossigeno-ozonoterapia" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Collegamenti alle landing page locali */}
+      <section className="bg-gradient-to-b from-[#F0EAE0] via-[#F8F5F0] to-white py-12 md:py-16">
+        <div className="container mx-auto max-w-6xl px-4">
+          <p className="text-sm tracking-[0.2em] font-semibold text-[#0066CC] mb-2">LE SEDI</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#173B65] mb-3">Dove riceve per l&apos;Ozonoterapia</h2>
+          <p className="text-lg text-slate-600 mb-8">Scopri le informazioni e i servizi disponibili nelle diverse sedi.</p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-5">
+            {[
+              { city: "Marostica", href: "/ozonoterapia-marostica" },
+              { city: "Schio", href: "/ozonoterapia-schio" },
+              { city: "Monte di Malo", href: "/ozonoterapia-malo" },
+              { city: "Padova", href: "/ozonoterapia-padova" },
+            ].map(({ city, href }) => (
+              <Link key={href} href={href} className="group rounded-xl border border-[#E7E0D7] bg-white/90 px-3 py-6 md:px-5 text-center shadow-sm hover:shadow-md hover:border-[#0066CC]/30 transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0066CC]">
+                <span className="block font-semibold text-lg md:text-xl text-[#173B65]">{city}</span>
+                <span className="block mt-3 text-sm md:text-base font-medium text-[#0066CC] group-hover:underline underline-offset-4">Scopri di più</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Image Carousel Section */}
-      <div className="-mt-8 mb-12">
+      <div className="py-10 bg-white">
         <QuadrantCarousel
           items={[
             {
@@ -139,7 +103,7 @@ export default function OzoneTherapyPage() {
       </div>
 
       {/* Piccola Autoemoterapia Section */}
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="container mx-auto px-4 py-10 max-w-4xl">
         <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
           <div className="md:w-1/2">
             <h3 className="text-xl font-semibold mb-4">
@@ -181,7 +145,7 @@ export default function OzoneTherapyPage() {
       </div>
 
       {/* Grande Autoemoterapia Section */}
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="container mx-auto px-4 py-10 max-w-4xl">
         <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="rounded-lg overflow-hidden shadow-lg aspect-video w-full max-w-md md:max-w-none mx-auto">
