@@ -90,7 +90,7 @@ export default function OzoneTherapyPage() {
             },
             {
               title: "Ozonoterapia Avanzata",
-              image: "/images/maico-ozonoterapia-gaet-restyling.jpg",
+              image: "/images/Medico con sacca di sangue in clinica.png",
               link: "/ozonoterapia",
             },
             {
