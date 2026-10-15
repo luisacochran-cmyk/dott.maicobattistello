@@ -82,19 +82,12 @@ export default function LegalMedicinePage() {
           <p className="mb-8 text-lg text-slate-700">Scopri le informazioni e i servizi disponibili nelle diverse sedi.</p>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {sedi.map((sede) => (
-              <Link key={sede.href} href={sede.href} className="group rounded-xl border border-[#e7e0d8] bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+              <Link key={sede.href} href={sede.href} className="group rounded-xl border border-[#e7e0d8] bg-white p-6 text-center shadow-sm transition hover:border-[#0066CC] hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC]" aria-label={`Medicina Legale a ${sede.nome}`}>
                 <h3 className="text-xl font-semibold text-[#173b64]">{sede.nome}</h3>
-                <span className="mt-3 inline-block text-sm font-semibold text-[#0066CC]">Scopri di più</span>
+
               </Link>
             ))}
           </div>
-        </div>
-      </section>
-      <section className="bg-white py-14 md:py-20">
-        <div className="container mx-auto max-w-6xl rounded-2xl bg-[#0066CC] px-6 py-10 text-white md:px-12">
-          <h2 className="text-3xl font-semibold">Richiedi una consulenza</h2>
-          <p className="mt-4 max-w-2xl text-lg">Per i dettagli sui prezzi e per prenotare una consulenza, contattami.</p>
-          <Link href="/contatti" className="mt-6 inline-flex rounded-lg bg-white px-6 py-3 font-semibold text-[#0066CC] transition hover:bg-[#fff9ee]">Vai ai contatti →</Link>
         </div>
       </section>
     </main>
