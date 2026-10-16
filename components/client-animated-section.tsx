@@ -14,7 +14,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ className }: HeroSectionProps) {
   return (
-    <section className={`hero-section hero-section-mobile flex items-center pt-20 pb-10 md:pb-16 ${className}`}>
+    <section className={`hero-section hero-section-mobile flex items-center pt-28 md:pt-32 pb-10 md:pb-16 ${className}`}>
       <div className="container">
         <div className="max-w-xl md:max-w-2xl mx-auto md:mx-0 md:ml-[10%] lg:ml-[5%] text-left">
 
@@ -69,69 +69,64 @@ export function HeroSection({ className }: HeroSectionProps) {
 }
 
 export function ConditionsSection() {
+  const groups = [
+    {
+      title: "Colonna e schiena",
+      items: ["Cervicalgia", "Lombalgia", "Sciatalgia", "Ernia e protrusione discale"],
+    },
+    {
+      title: "Articolazioni e movimento",
+      items: ["Artrosi", "Tendiniti", "Dolore alla spalla", "Dolore al ginocchio", "Dolori muscolari e articolari"],
+    },
+    {
+      title: "Dolore e condizioni persistenti",
+      items: ["Infiammazione cronica", "Fibromialgia", "Stanchezza persistente e riduzione della vitalità"],
+    },
+  ]
+
   return (
-    <section className="pt-9 pb-9 md:pt-12 md:pb-12 bg-gradient-to-b from-[#F0EAE0] via-[#F3EDE3] to-[#FAF8F4]">
+    <section className="pt-12 pb-12 md:pt-16 md:pb-16 bg-gradient-to-b from-[#F0EAE0] via-[#F3EDE3] to-[#FAF8F4]">
       <div className="container px-4">
-        <AnimatedScrollElement
-          className="mb-6 md:mb-8 text-center"
-          direction="up"
-          delay={0.1}
-        >
-          <h2 className="text-[1.85rem] leading-tight md:text-4xl font-bold mb-3 tracking-tight">
-            Per quali disturbi può essere utile una valutazione?
-          </h2>
+        <div className="mx-auto max-w-5xl">
+          <AnimatedScrollElement className="mb-8 md:mb-12 max-w-3xl" direction="up" delay={0.1}>
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Ambiti di valutazione</p>
+            <h2 className="text-[2rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900">
+              Per quali disturbi può essere utile una valutazione<span className="text-[#0066CC]">?</span>
+            </h2>
+            <p className="mt-4 text-lg md:text-xl leading-relaxed text-slate-600">
+              Il dolore e la limitazione funzionale possono avere origini
+              differenti. Una valutazione medica permette di comprendere il
+              quadro della persona e individuare il percorso più appropriato.
+            </p>
+          </AnimatedScrollElement>
 
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Il dolore e la limitazione funzionale possono avere origini
-            differenti. Una valutazione medica permette di comprendere il
-            quadro della persona e individuare il percorso più appropriato.
-          </p>
-        </AnimatedScrollElement>
-
-        <AnimatedScrollElement direction="up" delay={0.3}>
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-0">
-
-            <div className="md:px-8">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                Colonna e schiena
-              </h3>
-
-              <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
-                <p>Cervicalgia</p>
-                <p>Lombalgia</p>
-                <p>Sciatalgia</p>
-                <p>Ernia e protrusione discale</p>
-              </div>
+          <AnimatedScrollElement direction="up" delay={0.3}>
+            <div className="grid grid-cols-1 md:grid-cols-3 border-t border-slate-300/80">
+              {groups.map((group, index) => (
+                <div
+                  key={group.title}
+                  className={`py-6 md:py-8 ${
+                    index === 0
+                      ? "md:pr-8"
+                      : "border-t border-slate-300/80 md:border-t-0 md:border-l md:px-8"
+                  }`}
+                >
+                  <h3 className="mb-4 text-lg md:text-xl font-semibold text-[#0066CC]">
+                    {group.title}
+                  </h3>
+                  <ul className="space-y-2.5 text-base md:text-lg leading-relaxed text-slate-700">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <span aria-hidden="true" className="mt-[0.65em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-
-            <div className="md:px-8 md:border-l md:border-gray-200">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                Articolazioni e movimento
-              </h3>
-
-              <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
-                <p>Artrosi</p>
-                <p>Tendiniti</p>
-                <p>Dolore alla spalla</p>
-                <p>Dolore al ginocchio</p>
-                <p>Dolori muscolari e articolari</p>
-              </div>
-            </div>
-
-            <div className="md:px-8 md:border-l md:border-gray-200">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                Dolore e condizioni persistenti
-              </h3>
-
-              <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
-                <p>Infiammazione cronica</p>
-                <p>Fibromialgia</p>
-                <p>Stanchezza persistente e riduzione della vitalità</p>
-              </div>
-            </div>
-
-          </div>
-        </AnimatedScrollElement>
+          </AnimatedScrollElement>
+        </div>
       </div>
     </section>
   )
@@ -140,41 +135,44 @@ export function ConditionsSection() {
 export function TreatmentsSection() {
   return (
     <section className="bg-white">
-      <div className="bg-gradient-to-b from-[#FAF8F4] via-[#FFFFFF] to-[#EDF4F9] pt-10 pb-6 md:pt-14 md:pb-8">
+      <div className="bg-gradient-to-b from-[#FAF8F4] via-[#FFFFFF] to-[#EDF4F9] pt-12 pb-8 md:pt-16 md:pb-10">
         <div className="container px-4">
-          <AnimatedScrollElement
-            className="text-center max-w-3xl mx-auto"
-            direction="up"
-            delay={0.1}
-          >
-            <h2 className="text-[1.85rem] leading-tight md:text-4xl font-bold mb-4 tracking-tight">
-              Un approccio costruito sulla persona
-            </h2>
+          <div className="mx-auto max-w-5xl grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
+            <AnimatedScrollElement direction="left" delay={0.1}>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">L&apos;approccio</p>
+              <h2 className="text-[2rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900">
+                Un approccio costruito sulla persona<span className="text-[#0066CC]">.</span>
+              </h2>
+            </AnimatedScrollElement>
 
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
-              L&apos;ozonoterapia può essere indicata per intervenire sul dolore
-              e sui processi infiammatori; l&apos;osteopatia si concentra invece
-              sugli aspetti funzionali e posturali che possono contribuire al
-              disturbo. Sono discipline diverse, con modalità e ambiti di
-              intervento distinti, che possono essere utilizzate singolarmente
-              oppure integrate quando la valutazione clinica ne evidenzia
-              l&apos;indicazione.
-            </p>
+            <AnimatedScrollElement direction="up" delay={0.2}>
+              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600">
+                <p>
+                  L&apos;ozonoterapia può essere indicata per intervenire sul dolore
+                  e sui processi infiammatori; l&apos;osteopatia si concentra invece
+                  sugli aspetti funzionali e posturali che possono contribuire al
+                  disturbo. Sono discipline diverse, con modalità e ambiti di
+                  intervento distinti, che possono essere utilizzate singolarmente
+                  oppure integrate quando la valutazione clinica ne evidenzia
+                  l&apos;indicazione.
+                </p>
 
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              L&apos;obiettivo è costruire un percorso personalizzato, che tenga
-              conto dei sintomi, della funzionalità e del benessere complessivo
-              della persona.
-            </p>
+                <p>
+                  L&apos;obiettivo è costruire un percorso personalizzato, che tenga
+                  conto dei sintomi, della funzionalità e del benessere complessivo
+                  della persona.
+                </p>
 
-            <p className="mt-5 text-lg md:text-xl text-gray-600 leading-relaxed">
-              L&apos;approccio del Dott. Maico Battistello comprende anche
-              l&apos;attenzione all&apos;alimentazione, attraverso
-              l&apos;elaborazione di schede nutrizionali personalizzate e la
-              consulenza nutraceutica, con indicazioni sull&apos;eventuale
-              utilizzo di integratori in base alle necessità del paziente.
-            </p>
-          </AnimatedScrollElement>
+                <p className="border-l-2 border-[#0066CC]/30 pl-5">
+                  L&apos;approccio del Dott. Maico Battistello comprende anche
+                  l&apos;attenzione all&apos;alimentazione, attraverso
+                  l&apos;elaborazione di schede nutrizionali personalizzate e la
+                  consulenza nutraceutica, con indicazioni sull&apos;eventuale
+                  utilizzo di integratori in base alle necessità del paziente.
+                </p>
+              </div>
+            </AnimatedScrollElement>
+          </div>
         </div>
       </div>
 
@@ -212,7 +210,7 @@ export function TreatmentsSection() {
             <AnimatedScrollElement direction="left" delay={0.1}>
               <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Dove riceve</p>
               <h2 className="max-w-lg text-[2rem] font-semibold leading-tight tracking-tight text-slate-900 md:text-5xl">
-                La cura inizia da una valutazione attenta.
+                La cura inizia da una valutazione attenta<span className="text-[#0066CC]">.</span>
               </h2>
               <p className="mt-4 max-w-md text-base leading-relaxed text-slate-600 md:text-lg">
                 Ozonoterapia + Osteopatia · Medicina Legale
