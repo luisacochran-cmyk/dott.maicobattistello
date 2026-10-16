@@ -5,9 +5,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Osteopatia - Dr. Maico Battistello",
+  title: "Osteopatia a Marostica, Schio, Malo e Padova | Dott. Maico Battistello",
   description:
-    "Osteopatia per dolori muscolo-scheletrici, cervicalgia, lombalgia e problematiche posturali. Visite a Marostica, Schio, Padova e Monte di Malo.",
+    "Osteopatia per dolori muscolo-scheletrici, cervicalgia, lombalgia e problematiche posturali. Visite a Marostica, Schio, Malo e Padova.",
   alternates: {
     canonical: "https://dottmaicobattistello.it/osteopatia",
   },
@@ -16,13 +16,13 @@ export const metadata = {
 const locations = [
   { name: "Marostica", href: "/osteopatia-marostica" },
   { name: "Schio", href: "/osteopatia-schio" },
-  { name: "Monte di Malo", href: "/osteopatia-malo" },
+  { name: "Malo", href: "/osteopatia-malo" },
   { name: "Padova", href: "/osteopatia-padova" },
 ]
 
 export default function OsteopathyPage() {
   return (
-    <main className="pt-20 bg-white">
+    <div className="pt-20 lg:pt-24 bg-white">
       <div className="w-full bg-[#F2F7FD]">
         <Breadcrumb
           items={[
@@ -34,14 +34,18 @@ export default function OsteopathyPage() {
 
       {/* Un unico sfondo continuo: introduzione → sedi → carosello */}
       <div className="bg-[linear-gradient(to_bottom,#F2F7FD_0%,#FFFFFF_28%,#F8F5F0_46%,#F0EAE0_60%,#F0EAE0_73%,#F8F5F0_85%,#FFFFFF_100%)]">
-        <section className="py-12 md:py-20">
+        {/* Introduzione */}
+        <section className="pt-10 pb-8 md:pt-16 md:pb-10">
           <div className="container mx-auto px-4 max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#173B65] mb-5">
-                Cos&apos;è l&apos;Osteopatia?
+              <p className="text-xs uppercase tracking-[0.24em] font-semibold text-[#0066CC] mb-4">
+                Terapia manuale
+              </p>
+              <h1 className="text-[2.25rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
+                Cos&apos;è l&apos;Osteopatia<span className="text-[#0066CC]">?</span>
               </h1>
               <div className="h-1 w-16 rounded-full bg-[#E8CFB0] mb-7" aria-hidden="true" />
-              <div className="space-y-5 text-lg leading-relaxed text-[#33465C]">
+              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
                 <p>
                   L&apos;Osteopatia è una <strong>terapia manuale</strong> che valuta le relazioni tra <strong>struttura e funzione del corpo</strong>, con particolare attenzione alla colonna vertebrale, alle articolazioni, al sistema muscolare e ai tessuti connettivi.
                 </p>
@@ -52,50 +56,78 @@ export default function OsteopathyPage() {
                   Il trattamento viene adattato alle caratteristiche della persona, con l&apos;obiettivo di favorire un migliore equilibrio funzionale e una maggiore qualità di vita.
                 </p>
               </div>
+
+              {/* Collegamento all'approccio integrato */}
+              <div className="mt-7 border-l-2 border-[#0066CC]/30 pl-5">
+                <p className="text-lg leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
+                  Nella pratica del Dott. Maico Battistello l&apos;osteopatia è parte di un{" "}
+                  <strong>approccio integrato</strong> con l&apos;ozonoterapia.
+                </p>
+                <Link
+                  href="/ozonoterapia-osteopatia"
+                  className="mt-3 inline-flex items-center border-b border-[#0066CC]/40 pb-1 font-semibold text-[#0066CC] transition-colors hover:border-[#0066CC]"
+                >
+                  Scopri l&apos;approccio integrato
+                </Link>
+              </div>
             </div>
-            <div className="relative w-full aspect-[4/3] lg:aspect-[5/6] overflow-hidden rounded-2xl shadow-sm">
+
+            {/* Foto: riquadro orizzontale, inquadratura su mani e schiena */}
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
               <Image
                 src="/images/nuovaosteo1.jpg"
-                alt="Trattamento osteopatico"
+                alt="Il Dott. Maico Battistello durante un trattamento osteopatico"
                 fill
+                priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="object-cover object-[center_70%]"
               />
             </div>
           </div>
         </section>
 
-        <section className="py-12 md:py-16">
+        {/* Sedi: stesso stile della sezione "Dove riceve" della home */}
+        <section className="py-10 md:py-14">
           <div className="container mx-auto px-4 max-w-6xl">
-            <div className="mb-8 text-center md:text-left">
-              <p className="text-xs uppercase tracking-[0.22em] font-semibold text-[#0066CC] mb-3">Le sedi</p>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#173B65] mb-3">Dove riceve per l&apos;Osteopatia</h2>
-              <p className="text-base md:text-lg text-[#526274]">Scopri le informazioni e i servizi disponibili nelle diverse sedi.</p>
+            <div className="mb-8">
+              <p className="text-xs uppercase tracking-[0.24em] font-semibold text-[#0066CC] mb-4">
+                Le sedi
+              </p>
+              <h2 className="text-[2rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-3">
+                Dove riceve per l&apos;Osteopatia<span className="text-[#0066CC]">.</span>
+              </h2>
+              <p className="text-base md:text-lg text-slate-600">
+                Scopri le informazioni e i servizi disponibili nelle diverse sedi.
+              </p>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-              {locations.map((location) => (
-                <Link
-                  key={location.href}
-                  href={location.href}
-                  aria-label={`Osteopatia a ${location.name}: scopri di più`}
-                  className="group flex min-h-28 flex-col items-center justify-center gap-2 rounded-xl border border-[#E7E0D7] bg-white/90 px-3 py-5 text-center shadow-sm transition-colors hover:border-[#A9C9E9] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC]"
-                >
-                  <span className="text-base md:text-lg font-semibold text-[#173B65]">{location.name}</span>
-                  <span className="text-sm font-medium text-[#0066CC] group-hover:underline underline-offset-4">Scopri di più</span>
-                </Link>
-              ))}
+            <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 md:gap-x-9">
+                {locations.map((location) => (
+                  <Link
+                    key={location.href}
+                    href={location.href}
+                    aria-label={`Osteopatia a ${location.name}`}
+                    className="group flex min-h-24 items-center border-b border-[#D4DFE9] py-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC] sm:min-h-28"
+                  >
+                    <span className="text-xl font-medium tracking-tight text-slate-800 transition-colors group-hover:text-[#0066CC] sm:text-2xl md:text-[1.7rem]">
+                      {location.name}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
+        {/* Carosello */}
         <section className="py-10 md:py-14">
           <div className="container mx-auto px-4 max-w-6xl">
             <QuadrantCarousel
               items={[
-                { title: "Trattamento Osteopatico", image: "/images/nuovaosteo1.jpg", link: "/osteopathy" },
-                { title: "Manipolazione Cranio-Sacrale", image: "/images/nuovaosteo2.jpg", link: "/osteopathy" },
-                { title: "Trattamento Viscerale", image: "/images/nuovaosteo3.jpg", link: "/osteopathy" },
-                { title: "Osteopatia Cervicale", image: "/images/osteopatiacervicale.jpg", link: "/osteopathy" },
+                { title: "Trattamento Osteopatico", image: "/images/nuovaosteo1.jpg", link: "/osteopatia" },
+                { title: "Manipolazione Cranio-Sacrale", image: "/images/nuovaosteo2.jpg", link: "/osteopatia" },
+                { title: "Trattamento Viscerale", image: "/images/nuovaosteo3.jpg", link: "/osteopatia" },
+                { title: "Osteopatia Cervicale", image: "/images/osteopatiacervicale.jpg", link: "/osteopatia" },
               ]}
             />
           </div>
@@ -105,6 +137,6 @@ export default function OsteopathyPage() {
       <section className="bg-white">
         <ContactForm />
       </section>
-    </main>
+    </div>
   )
 }
