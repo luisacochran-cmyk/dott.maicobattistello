@@ -3,14 +3,10 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="bg-[#F1F5F8] text-[#233247]">
-      {/* Per le pagine interne: raccordo delicato dal bianco al footer. */}
-      <div
-        aria-hidden="true"
-        className="h-14 md:h-20"
-        style={{ background: "linear-gradient(to bottom, #FFFFFF 0%, #F8FBFD 45%, #F1F5F8 100%)" }}
-      />
+      {/* Linea azzurra sottile: separa in modo netto ma leggero la pagina dal footer */}
+      <div aria-hidden="true" className="h-px w-full bg-[#BFD6EA]" />
 
-      <div className="container mx-auto px-6 pt-3 pb-10 md:px-10 md:pt-4 md:pb-12">
+      <div className="container mx-auto px-6 pt-12 pb-10 md:px-10 md:pt-16 md:pb-12">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-10 md:grid-cols-12 md:gap-8">
             <div className="md:col-span-5">
