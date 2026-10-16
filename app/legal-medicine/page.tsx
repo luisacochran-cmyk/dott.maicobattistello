@@ -90,7 +90,7 @@ export default function LegalMedicinePage() {
           </div>
         </section>
 
-        {/* Presentazione */}
+        {/* Presentazione + Consulenze Tecniche di Parte */}
         <section className="py-8 md:py-12">
           <div className="container mx-auto max-w-5xl px-4 grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
             <div>
@@ -99,9 +99,14 @@ export default function LegalMedicinePage() {
                 Presentazione<span className="text-[#0066CC]">.</span>
               </h2>
             </div>
-            <p className={testo}>
-              Sono il <strong>Dott. Maico Battistello</strong>, medico chirurgo, attivo nell&apos;ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
-            </p>
+            <div className={`space-y-5 ${testo}`}>
+              <p>
+                Sono il <strong>Dott. Maico Battistello</strong>, medico chirurgo, attivo nell&apos;ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
+              </p>
+              <p>
+                Offro attività di <strong>Consulente Tecnico di Parte (CTP)</strong> in procedimenti civili, con studio del caso e della documentazione sanitaria; parere scritto preventivo sulla sostenibilità della richiesta risarcitoria; assistenza durante le operazioni peritali; confronto tecnico con CTU e altre parti coinvolte. L&apos;obiettivo è tutelare in modo rigoroso e scientificamente fondato gli interessi del cliente.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -151,21 +156,6 @@ export default function LegalMedicinePage() {
                 </Elenco>
               </article>
             </div>
-          </div>
-        </section>
-
-        {/* CTP */}
-        <section className="py-8 md:py-12">
-          <div className="container mx-auto max-w-5xl px-4 grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
-            <div>
-              <p className={etichetta}>Procedimenti civili</p>
-              <h2 className={titoloH2}>
-                Consulenze Tecniche di Parte (CTP)<span className="text-[#0066CC]">.</span>
-              </h2>
-            </div>
-            <p className={testo}>
-              Offro attività di <strong>Consulente Tecnico di Parte</strong> in procedimenti civili, con studio del caso e della documentazione sanitaria; parere scritto preventivo sulla sostenibilità della richiesta risarcitoria; assistenza durante le operazioni peritali; confronto tecnico con CTU e altre parti coinvolte. L&apos;obiettivo è tutelare in modo rigoroso e scientificamente fondato gli interessi del cliente.
-            </p>
           </div>
         </section>
 
