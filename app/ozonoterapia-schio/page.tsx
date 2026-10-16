@@ -43,21 +43,25 @@ export default function OzonoterapiaSchioPage() {
       intro={
         <>
           <p>
-            L&apos;<strong>ossigeno-ozonoterapia</strong> è una terapia medica
-            che utilizza una miscela di ossigeno e ozono medicale nell&apos;ambito
-            di specifiche indicazioni cliniche.
+            A <strong>Schio</strong> il Dott. Maico Battistello svolge con
+            particolare continuità l&apos;attività di{" "}
+            <strong>ossigeno-ozonoterapia</strong>, sia con trattamenti locali
+            sia con le metodiche sistemiche di{" "}
+            <strong>Grande e Piccola Autoemoterapia</strong>.
           </p>
           <p>
-            A <strong>Schio</strong>, il Dott. Maico Battistello utilizza
-            l&apos;ossigeno-ozonoterapia all&apos;interno di percorsi
-            personalizzati, definiti sulla base della valutazione clinica e
-            delle caratteristiche della singola persona.
+            Per chi vive o lavora nell&apos;<strong>Alto Vicentino</strong>,
+            avere un riferimento vicino rende più semplice seguire un percorso
+            che può prevedere <strong>più sedute</strong>, programmate dopo la
+            valutazione iniziale.
           </p>
           <p>
-            In ambito muscolo-scheletrico può essere presa in considerazione,
-            quando clinicamente indicato, per problematiche caratterizzate da
-            dolore, infiammazione e limitazioni funzionali, anche in relazione
-            a disturbi della colonna e delle articolazioni.
+            L&apos;ozonoterapia viene presa in considerazione, quando
+            clinicamente indicato, per{" "}
+            <strong>dolore, infiammazione e limitazioni funzionali</strong>{" "}
+            della colonna e delle articolazioni, disturbi frequenti in chi
+            svolge <strong>lavori fisici</strong> o{" "}
+            <strong>attività sportive</strong>.
           </p>
         </>
       }
