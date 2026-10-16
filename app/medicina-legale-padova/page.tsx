@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 import {
   LandingPage,
@@ -6,7 +7,6 @@ import {
   LandingElenco,
   LandingRiquadro,
   LandingFaq,
-  LandingLink,
 } from "@/components/landing-layout"
 
 const city = cities.find((c) => c.slug === "padova")!
@@ -68,29 +68,9 @@ export default function MedicinaLegalePadovaPage() {
       }}
       datiStrutturati={seoData.structuredData}
     >
-      <LandingSezione etichetta="Ambiti di intervento" titolo={seoData.h2}>
+      <LandingSezione etichetta="Ambiti di intervento" titolo={`Servizi di Medicina Legale a ${city.name}`}>
         <LandingElenco voci={service.conditions} />
       </LandingSezione>
-
-      {/* Informazione unica e locale: in evidenza */}
-      <LandingRiquadro etichetta="La sede" titolo="Dove si svolgono le visite medico-legali a Padova">
-        <p>
-          Il Dott. Maico Battistello effettua consulenze e valutazioni
-          medico-legali a Padova, prevalentemente presso la{" "}
-          <strong>Clinica Medicina Amica</strong>, in{" "}
-          <strong>Via Boccaccio 104/C</strong>, su appuntamento. La struttura
-          ospita le visite del professionista e non è uno studio di sua
-          proprietà.
-        </p>
-        <p>
-          Per conoscere le disponibilità, confermare la sede della visita
-          e ricevere indicazioni sulla documentazione necessaria, consulta
-          la pagina Contatti.
-        </p>
-        <p>
-          <LandingLink href="/contatti">Vai ai contatti</LandingLink>
-        </p>
-      </LandingRiquadro>
 
       <LandingSezione etichetta="Danno alla persona" titolo="Danno biologico e valutazione del danno alla persona">
         <p>
@@ -161,7 +141,7 @@ export default function MedicinaLegalePadovaPage() {
         </p>
       </LandingRiquadro>
 
-      <LandingSezione etichetta="Quando rivolgersi" titolo="Quando rivolgersi a un Medico Legale a Padova">
+      <LandingSezione etichetta="Quando rivolgersi" titolo={`Quando rivolgersi a un Medico Legale a ${city.name}`}>
         <p>
           Una valutazione medico-legale può essere richiesta in seguito
           a un incidente stradale, un infortunio o un evento che abbia
@@ -179,6 +159,28 @@ export default function MedicinaLegalePadovaPage() {
           legale attraverso una consulenza tecnica di parte (CTP), sia
           nella fase stragiudiziale sia nell&apos;ambito di un
           procedimento giudiziario.
+        </p>
+      </LandingSezione>
+
+      <LandingSezione etichetta="La sede" titolo={`Dove si svolgono le visite medico-legali a ${city.name}`}>
+        <p>
+          Il Dott. Maico Battistello effettua consulenze e valutazioni
+          medico-legali a Padova, prevalentemente presso la Clinica
+          Medicina Amica, in Via Boccaccio 104/C, su appuntamento.
+          La struttura ospita le visite del professionista e non è
+          uno studio di sua proprietà.
+        </p>
+        <p>
+          Per conoscere le disponibilità, confermare la sede della visita
+          e ricevere indicazioni sulla documentazione necessaria,
+          consulta la pagina{" "}
+          <Link
+            href="/contatti"
+            className="font-semibold text-[#0066CC] underline decoration-[#0066CC]/30 underline-offset-4 hover:decoration-[#0066CC]"
+          >
+            Contatti
+          </Link>
+          .
         </p>
       </LandingSezione>
 
