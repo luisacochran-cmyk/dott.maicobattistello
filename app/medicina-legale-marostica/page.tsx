@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
 import {
   LandingPage,
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
   },
 }
 
+const stileLink =
+  "font-semibold text-[#0066CC] underline decoration-[#0066CC]/30 underline-offset-4 hover:decoration-[#0066CC]"
+
 export default function MedicinaLegaleMarosticaPage() {
   return (
     <LandingPage
@@ -33,162 +37,112 @@ export default function MedicinaLegaleMarosticaPage() {
       intro={
         <>
           <p>
-            Il Dott. Maico Battistello, specialista in Medicina Legale,
-            svolge attività di medicina legale a Marostica, offrendo
-            consulenze e valutazioni medico-legali rivolte a privati,
-            professionisti, studi legali e agenzie assicurative.
+            Marostica è la sede principale del Dott. Maico Battistello,
+            specialista in Medicina Legale dal 2004. Qui riceve privati,
+            studi legali e agenzie assicurative per consulenze e valutazioni
+            medico-legali, nell&apos;ambulatorio medico di Via Ragazzoni 36.
           </p>
           <p>
-            L&apos;attività comprende la valutazione del danno biologico e
-            del danno alla persona, le conseguenze di infortuni e sinistri
-            stradali, l&apos;invalidità permanente, le controversie
-            assicurative e la responsabilità professionale sanitaria.
-          </p>
-          <p>
-            La consulenza medico-legale parte dall&apos;analisi della
-            documentazione clinica, dall&apos;inquadramento del caso e
-            dalla valutazione specialistica, in relazione alle
-            caratteristiche della situazione esaminata.
-          </p>
-          <p>
-            Il servizio è rivolto a persone provenienti da Marostica,
-            Bassano del Grappa e dai comuni limitrofi.
+            Il servizio è rivolto a chi vive a Marostica e nei comuni vicini,
+            come Bassano del Grappa, Nove, Pianezze, Mason Vicentino e
+            Breganze. Per alcune valutazioni arrivano persone anche da più
+            lontano: in questi casi si sceglie insieme la sede e il giorno
+            più comodi.
           </p>
         </>
       }
       invito={{
         titolo: `Consulenza di Medicina Legale a ${city.name}`,
-        testo: `Per richiedere una consulenza medico-legale a ${city.name} o ricevere informazioni sulla valutazione del proprio caso, è possibile contattare il Dott. Maico Battistello.`,
+        testo:
+          "Per fissare una consulenza a Marostica, o per sapere quale documentazione portare, è possibile contattare direttamente il Dott. Maico Battistello.",
         pulsante: "Richiedi una consulenza",
       }}
       datiStrutturati={seoData.structuredData}
     >
-      <LandingSezione etichetta="Ambiti di intervento" titolo={`Servizi di Medicina Legale a ${city.name}`}>
-        <LandingElenco voci={service.conditions} />
-      </LandingSezione>
-
-      <LandingSezione etichetta="Danno alla persona" titolo="Danno biologico e valutazione del danno alla persona">
+      <LandingRiquadro etichetta="La sede" titolo="Dove riceve a Marostica">
         <p>
-          La valutazione del danno alla persona è uno degli ambiti
-          della Medicina Legale e permette di analizzare le conseguenze
-          di un evento lesivo sulla salute della persona.
+          <strong>Ambulatorio medico di Via Ragazzoni 36, Marostica (VI).</strong>{" "}
+          È l&apos;ambulatorio di medicina generale che si trova al piano
+          superiore, sopra i negozi. All&apos;esterno è presente la targa con
+          il nome del Dott. Maico Battistello, medico legale.
         </p>
         <p>
-          La consulenza medico-legale prende in considerazione la
-          documentazione clinica disponibile, gli accertamenti
-          diagnostici, il percorso terapeutico, gli esiti delle
-          lesioni e gli eventuali postumi permanenti.
-        </p>
-        <p>
-          La valutazione può riguardare, tra gli altri, danni derivanti
-          da incidenti stradali, lesioni personali e altri eventi che
-          abbiano determinato conseguenze temporanee o permanenti.
-        </p>
-      </LandingSezione>
-
-      <LandingSezione etichetta="Responsabilità sanitaria" titolo="Responsabilità sanitaria e Consulenza Tecnica di Parte (CTP)">
-        <p>
-          Nell&apos;ambito della responsabilità sanitaria e
-          professionale, la valutazione medico-legale consente di
-          esaminare la documentazione clinica e il percorso diagnostico
-          e terapeutico in relazione allo specifico caso.
-        </p>
-        <p>
-          Il medico legale può inoltre svolgere il ruolo di consulente
-          tecnico di parte (CTP), fornendo una valutazione specialistica
-          degli aspetti medico-legali e collaborando con il legale
-          nell&apos;analisi della documentazione e del caso.
-        </p>
-        <p>
-          La consulenza tecnica di parte può essere utilizzata sia
-          nella fase stragiudiziale sia nell&apos;ambito di un
-          procedimento giudiziario.
-        </p>
-      </LandingSezione>
-
-      <LandingSezione etichetta="Assicurazioni" titolo="Invalidità, infortuni e valutazioni assicurative">
-        <p>
-          L&apos;attività medico-legale comprende anche valutazioni
-          relative all&apos;invalidità civile, agli infortuni sul
-          lavoro e alle conseguenze permanenti derivanti da lesioni o
-          eventi traumatici.
-        </p>
-        <p>
-          In ambito assicurativo, la consulenza medico-legale permette
-          di analizzare la documentazione sanitaria e gli esiti
-          dell&apos;evento ai fini della valutazione del danno e delle
-          problematiche medico-legali connesse al caso.
-        </p>
-        <p>
-          Ogni valutazione viene effettuata sulla base della
-          documentazione disponibile e delle caratteristiche
-          specifiche della situazione esaminata.
-        </p>
-      </LandingSezione>
-
-      <LandingRiquadro etichetta="Il medico legale" titolo="Valutazione medico-legale del caso">
-        <p>
-          Il Dott. Maico Battistello è specialista in Medicina Legale.
-          L&apos;attività comprende l&apos;analisi della documentazione
-          clinica, la valutazione medico-legale del danno alla persona,
-          la redazione di relazioni medico-legali e l&apos;assistenza
-          nell&apos;ambito di consulenze tecniche di parte.
+          Di norma il dottore riceve a Marostica il <strong>lunedì</strong> e
+          il <strong>giovedì</strong>, sempre su appuntamento. Gli orari
+          variano in base alle visite in programma e vengono concordati al
+          momento della prenotazione. È disponibile il parcheggio.
         </p>
       </LandingRiquadro>
 
-      <LandingSezione etichetta="Quando rivolgersi" titolo={`Quando rivolgersi a un Medico Legale a ${city.name}`}>
+      <LandingSezione etichetta="Ambiti di intervento" titolo={`Di cosa si occupa a ${city.name}`}>
+        <LandingElenco voci={service.conditions} />
         <p>
-          Una valutazione medico-legale può essere richiesta in seguito
-          a un incidente stradale, un infortunio o un evento che abbia
-          determinato conseguenze temporanee o permanenti sulla salute,
-          oppure nell&apos;ambito di una controversia assicurativa o di
-          un caso di responsabilità professionale sanitaria.
+          In ogni caso il punto di partenza è lo stesso: l&apos;analisi della
+          documentazione clinica e una valutazione specialistica del caso.
+          Se vuoi approfondire cosa sono il danno biologico, la Consulenza
+          Tecnica di Parte (CTP) e le valutazioni assicurative, trovi tutte le
+          spiegazioni nella pagina{" "}
+          <Link href="/medicina-legale" className={stileLink}>
+            Medicina Legale
+          </Link>
+          .
+        </p>
+      </LandingSezione>
+
+      <LandingSezione etichetta="Per chi" titolo="Privati, studi legali e agenzie">
+        <p>
+          A Marostica il dottore segue soprattutto persone che hanno avuto un
+          incidente stradale, un infortunio o un evento con conseguenze sulla
+          salute, e che hanno bisogno di capire come documentarlo e valutarlo
+          correttamente.
         </p>
         <p>
-          Il medico legale analizza la documentazione sanitaria e gli
-          esiti dell&apos;evento, valutando le conseguenze del danno
-          alla persona e la loro rilevanza medico-legale.
+          Collabora inoltre con studi legali e agenzie assicurative della
+          zona, come consulente tecnico di parte e per la redazione di
+          relazioni medico-legali.
+        </p>
+      </LandingSezione>
+
+      <LandingSezione etichetta="Prima della visita" titolo="Cosa portare all'appuntamento">
+        <p>
+          Per una valutazione completa è utile portare tutta la
+          documentazione disponibile: verbale di pronto soccorso, referti,
+          esami diagnostici, certificati medici, eventuale documentazione
+          fisioterapica e, se presente, la corrispondenza con
+          l&apos;assicurazione o con il legale.
         </p>
         <p>
-          La consulenza può inoltre affiancare la persona e il suo
-          legale attraverso una consulenza tecnica di parte (CTP), sia
-          nella fase stragiudiziale sia nell&apos;ambito di un
-          procedimento giudiziario.
+          Se hai dubbi su cosa serve nel tuo caso, puoi chiederlo al momento
+          della prenotazione.
         </p>
       </LandingSezione>
 
       <LandingFaq
-        titolo="Domande frequenti sulla Medicina Legale"
+        titolo="Domande frequenti sulla sede di Marostica"
         domande={[
           {
-            domanda: "Cos'è una consulenza tecnica di parte (CTP)?",
+            domanda: "Dove si trova lo studio di Medicina Legale a Marostica?",
             risposta:
-              "La consulenza tecnica di parte è una consulenza medico-legale richiesta da una delle parti coinvolte per valutare gli aspetti sanitari e medico-legali del caso e fornire supporto specialistico nell'ambito di una controversia.",
+              "Il Dott. Maico Battistello riceve nell'ambulatorio medico di Via Ragazzoni 36, al piano superiore, sopra i negozi. All'esterno c'è la targa con il suo nome.",
           },
           {
-            domanda: "Come si quantifica l'invalidità permanente?",
+            domanda: "In quali giorni riceve a Marostica?",
             risposta:
-              "La valutazione dell'invalidità permanente prende in considerazione la documentazione clinica, gli esiti delle lesioni, la visita medico-legale e i criteri valutativi applicabili al caso specifico.",
+              "Di norma il lunedì e il giovedì, su appuntamento. Gli orari vengono concordati al momento della prenotazione.",
           },
           {
-            domanda: "Quando è utile una valutazione medico-legale dopo un incidente stradale?",
-            risposta:
-              "La valutazione medico-legale permette di esaminare la documentazione sanitaria, gli esiti delle lesioni e le eventuali conseguenze permanenti, fornendo gli elementi medico-legali utili alla valutazione del danno alla persona.",
+            domanda: "C'è parcheggio?",
+            risposta: "Sì, è disponibile il parcheggio.",
           },
           {
-            domanda: "Il medico legale può collaborare con il mio avvocato?",
+            domanda: "Abito a Bassano del Grappa: posso venire a Marostica?",
             risposta:
-              "Sì. Nell'ambito di una consulenza tecnica di parte, il medico legale può collaborare con il legale fornendo una valutazione specialistica degli aspetti medico-legali del caso.",
+              "Certo. Marostica è la sede più comoda per chi arriva da Bassano del Grappa e dai comuni vicini. Se un altro giorno ti è più comodo, si può valutare anche una delle altre sedi del dottore.",
           },
           {
-            domanda: "Quali documenti servono per una consulenza medico-legale?",
+            domanda: "Il medico legale può lavorare insieme al mio avvocato?",
             risposta:
-              "È utile presentare la documentazione sanitaria relativa al caso, come referti, cartelle cliniche, esami diagnostici, certificati medici e la documentazione assicurativa o legale disponibile.",
-          },
-          {
-            domanda: "Quanto dura una consulenza medico-legale?",
-            risposta:
-              "I tempi dipendono dalle caratteristiche e dalla complessità del caso, dalla quantità di documentazione da esaminare e dal tipo di valutazione medico-legale richiesta.",
+              "Sì. Come consulente tecnico di parte, il dottore collabora con il legale nell'analisi della documentazione e nella valutazione medico-legale del caso.",
           },
         ]}
       />
