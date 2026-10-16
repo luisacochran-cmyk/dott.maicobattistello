@@ -417,9 +417,11 @@ export function generateLocalSEO(
       url:
         `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
 
-      // Solo i profili che esistono davvero. Instagram e LinkedIn da aggiungere quando saranno creati.
+      // DA VERIFICARE: indirizzi dei profili social (possibile errore "baattistello")
       sameAs: [
-        "https://www.facebook.com/maicobattistello",
+        "https://www.facebook.com/drmaicobaattistello",
+        "https://www.instagram.com/drmaicobaattistello",
+        "https://www.linkedin.com/in/maico-battistello",
       ],
 
       hasOfferCatalog: {
