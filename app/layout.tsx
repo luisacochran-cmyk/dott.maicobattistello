@@ -186,7 +186,7 @@ export default function RootLayout({
                 { "@type": "EducationalOrganization", name: "Università di Padova" },
                 { "@type": "EducationalOrganization", name: "Università di Parma" },
               ],
-              knowsAbout: ["Osteopatia", "Ozonoterapia", "Medicina Legale"],
+              knowsAbout: ["Osteopatia", "Ozonoterapia", "Medicina Legale", "Pet Therapy"],
               sameAs: ["https://www.facebook.com/maicobattistello"],
             }),
           }}
