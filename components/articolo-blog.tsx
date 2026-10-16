@@ -5,16 +5,30 @@ import { Calendar } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
 import { type Articolo, formattaData } from "@/lib/articoli"
 
-/* Trasforma **testo** in grassetto */
-function conGrassetti(testo: string): ReactNode[] {
-  return testo.split(/(\*\*.*?\*\*)/g).map((parte, i) =>
-    parte.startsWith("**") && parte.endsWith("**") ? (
-      <strong key={i}>{parte.slice(2, -2)}</strong>
-    ) : (
-      parte
-    ),
-  )
+/* Trasforma **testo** in grassetto e [testo](/indirizzo) in link */
+function conFormattazione(testo: string): ReactNode[] {
+  return testo.split(/(\*\*.*?\*\*|\[[^\]]+\]\([^)]+\))/g).map((parte, i) => {
+    if (parte.startsWith("**") && parte.endsWith("**") && parte.length > 4) {
+      return <strong key={i}>{conFormattazione(parte.slice(2, -2))}</strong>
+    }
+    const link = parte.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    if (link) {
+      return (
+        <Link
+          key={i}
+          href={link[2]}
+          className="text-[#0066CC] underline decoration-[#0066CC]/30 underline-offset-4 transition-colors hover:decoration-[#0066CC]"
+        >
+          {link[1]}
+        </Link>
+      )
+    }
+    return parte
+  })
 }
+
+const tuttoGrassetto = (t: string) =>
+  t.startsWith("**") && t.endsWith("**") && !t.slice(2, -2).includes("**")
 
 /* Trasforma il testo dell'articolo in titoli, paragrafi, elenchi e citazioni */
 function TestoArticolo({ contenuto }: { contenuto: string }) {
@@ -26,27 +40,49 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
         const t = blocco.trim()
         if (!t) return null
 
+        // Linea di separazione
         if (t === "---") {
           return <hr key={i} className="my-10 border-slate-300/80" />
         }
 
+        // Titolo di sezione
         if (t.startsWith("### ")) {
           return (
-            <h2 key={i} className="pt-2 text-[1.6rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900">
+            <h2 key={i} className="pt-4 text-[1.6rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900">
               {t.slice(4)}
             </h2>
           )
         }
 
+        // Elenco puntato (una o più righe che iniziano con •)
         if (t.startsWith("• ")) {
+          const voci = t
+            .split("\n")
+            .map((riga) => riga.trim())
+            .filter(Boolean)
+            .map((riga) => riga.replace(/^•\s*/, ""))
           return (
-            <p key={i} className="flex items-start gap-3">
-              <span aria-hidden="true" className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60" />
-              <span>{conGrassetti(t.slice(2))}</span>
+            <ul key={i} className="space-y-3">
+              {voci.map((voce, j) => (
+                <li key={j} className="flex items-start gap-3">
+                  <span aria-hidden="true" className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60" />
+                  <span>{conFormattazione(voce)}</span>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+
+        // Frase d'apertura tutta in grassetto: diventa il sottotitolo
+        if (i === 0 && tuttoGrassetto(t)) {
+          return (
+            <p key={i} className="text-xl md:text-2xl font-semibold leading-relaxed text-slate-800">
+              {t.slice(2, -2)}
             </p>
           )
         }
 
+        // Citazione lunga tra virgolette
         if (t.startsWith('"') && t.endsWith('"')) {
           return (
             <blockquote key={i} className="border-l-2 border-[#0066CC]/40 pl-5 text-xl md:text-2xl italic leading-relaxed text-slate-800">
@@ -55,7 +91,17 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
           )
         }
 
-        return <p key={i}>{conGrassetti(t)}</p>
+        // Domanda o frase tra « »
+        if (t.startsWith("«") && t.endsWith("»")) {
+          return (
+            <p key={i} className="pl-5 text-xl italic text-slate-800">
+              {t}
+            </p>
+          )
+        }
+
+        // Paragrafo normale
+        return <p key={i}>{conFormattazione(t)}</p>
       })}
     </>
   )
