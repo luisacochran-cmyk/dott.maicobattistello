@@ -12,6 +12,7 @@ import QuadrantCarousel from "@/components/quadrant-carousel"
 
 type VoceBreadcrumb = { label: string; href: string }
 type VoceCarosello = { title: string; image: string; link: string }
+type InvitoFinale = { titolo: string; testo?: string; pulsante: string }
 
 const testo =
   "text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900"
@@ -24,6 +25,7 @@ export function LandingPage({
   children,
   carosello,
   datiStrutturati,
+  invito,
 }: {
   breadcrumb: VoceBreadcrumb[]
   etichetta: string
@@ -32,7 +34,11 @@ export function LandingPage({
   children: ReactNode
   carosello?: VoceCarosello[]
   datiStrutturati?: object
+  invito?: InvitoFinale
 }) {
+  const invitoTitolo = invito?.titolo ?? "Ogni percorso inizia da una valutazione"
+  const invitoPulsante = invito?.pulsante ?? "Prenota una visita"
+
   return (
     <div className="pt-20 lg:pt-24 bg-white">
       <div className="w-full bg-[#F2F7FD]">
@@ -57,19 +63,24 @@ export function LandingPage({
         {/* Sezioni specifiche della pagina */}
         {children}
 
-        {/* Invito a prenotare */}
+        {/* Invito finale (personalizzabile da ogni pagina) */}
         <section className="pt-6 pb-14 md:pt-8 md:pb-20">
           <div className="container mx-auto max-w-4xl px-4">
             <div className="rounded-[2.5rem] bg-white/70 p-7 text-center ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-10">
               <p className="text-xl md:text-2xl font-semibold tracking-tight text-slate-900">
-                Ogni percorso inizia da una valutazione<span className="text-[#0066CC]">.</span>
+                {invitoTitolo}<span className="text-[#0066CC]">.</span>
               </p>
+              {invito?.testo && (
+                <p className="mx-auto mt-3 max-w-2xl text-lg leading-relaxed text-slate-600">
+                  {invito.testo}
+                </p>
+              )}
               <Link
                 href="/contatti"
                 className="mt-6 inline-flex h-12 items-center gap-2 rounded-full bg-[#0066CC] px-8 text-base sm:text-lg font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
               >
                 <Calendar className="h-5 w-5" />
-                <span>Prenota una visita</span>
+                <span>{invitoPulsante}</span>
               </Link>
             </div>
           </div>
@@ -188,6 +199,68 @@ export function LandingVideo({
             {titolo}
           </h2>
           <div className={`space-y-5 ${testo}`}>{children}</div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* Riquadro azzurro evidenziato */
+export function LandingRiquadro({
+  etichetta,
+  titolo,
+  children,
+}: {
+  etichetta?: string
+  titolo: string
+  children: ReactNode
+}) {
+  return (
+    <section className="py-6 md:py-8">
+      <div className="container mx-auto max-w-4xl px-4">
+        <div className="rounded-[2.5rem] bg-[#EDF4F9] p-7 ring-1 ring-[#D4DFE9] md:p-10">
+          {etichetta && (
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
+              {etichetta}
+            </p>
+          )}
+          <h2 className="text-[1.75rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
+            {titolo}
+          </h2>
+          <div className={`space-y-5 ${testo}`}>{children}</div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* Domande frequenti a fisarmonica, come nella home */
+export function LandingFaq({
+  titolo,
+  domande,
+}: {
+  titolo: string
+  domande: { domanda: string; risposta: string }[]
+}) {
+  return (
+    <section className="py-6 md:py-8">
+      <div className="container mx-auto max-w-4xl px-4">
+        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
+          Informazioni utili
+        </p>
+        <h2 className="text-[1.75rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
+          {titolo}
+        </h2>
+        <div className="border-t border-slate-300/80">
+          {domande.map((faq) => (
+            <details key={faq.domanda} className="group border-b border-slate-300/80 py-1">
+              <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-left marker:hidden [&::-webkit-details-marker]:hidden">
+                <span className="text-lg md:text-xl font-medium leading-snug text-slate-900">{faq.domanda}</span>
+                <span aria-hidden="true" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#0066CC]/30 text-xl font-light text-[#0066CC] transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p className="max-w-2xl pb-7 pr-10 text-base md:text-lg leading-relaxed text-slate-600">{faq.risposta}</p>
+            </details>
+          ))}
         </div>
       </div>
     </section>
