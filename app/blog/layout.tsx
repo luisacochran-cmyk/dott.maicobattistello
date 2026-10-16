@@ -1,13 +1,12 @@
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
 
+// Valori di riserva per le pagine del blog.
+// Ogni pagina (elenco e articoli) dichiara il proprio titolo e il proprio indirizzo.
 export const metadata: Metadata = {
-  title: "Blog | Dr. Maico Battistello",
+  title: "Blog | Dott. Maico Battistello",
   description:
-    "Approfondimenti del Dr. Maico Battistello su ozonoterapia, osteopatia, medicina legale, dolore e salute.",
-  alternates: {
-    canonical: "https://dottmaicobattistello.it/blog",
-  },
+    "Approfondimenti del Dott. Maico Battistello su ozonoterapia, osteopatia, medicina legale, dolore e salute.",
 }
 
 export default function BlogLayout({
