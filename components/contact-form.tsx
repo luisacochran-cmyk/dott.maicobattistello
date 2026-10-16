@@ -4,10 +4,38 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import { Phone, MessageSquare, Calendar, CheckCircle, AlertCircle, Mail, Loader2 } from "lucide-react"
 import LocationList from "@/components/location-list"
-import AnimatedScrollElement from "@/components/animated-scroll-element"
 import AnimatedLink from "@/components/animated-link"
 
-export default function ContactForm() {
+const canali = [
+  {
+    icona: Phone,
+    etichetta: "Telefono",
+    testo: "+39 348 738 3372",
+    href: "tel:+393487383372",
+    esterno: false,
+  },
+  {
+    icona: MessageSquare,
+    etichetta: "WhatsApp",
+    testo: "Scrivi un messaggio",
+    href: "https://wa.me/393487383372",
+    esterno: true,
+  },
+  {
+    icona: Mail,
+    etichetta: "Email",
+    testo: "maico.battistello@gmail.com",
+    href: "mailto:maico.battistello@gmail.com",
+    esterno: false,
+  },
+]
+
+const stileCampo = (errore: boolean, animato: boolean) =>
+  `w-full rounded-xl border bg-white px-4 py-3 text-base text-slate-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0066CC]/30 focus:border-[#0066CC] ${
+    errore ? "border-red-500" : "border-slate-300"
+  } ${animato ? "input-error" : ""}`
+
+export default function ContactForm({ comePagina = false }: { comePagina?: boolean }) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -88,19 +116,16 @@ export default function ContactForm() {
     } = {}
     let isValid = true
 
-    // Validazione Nome
     if (!formData.firstName.trim()) {
       errors.firstName = "Il nome è obbligatorio"
       isValid = false
     }
 
-    // Validazione Cognome
     if (!formData.lastName.trim()) {
       errors.lastName = "Il cognome è obbligatorio"
       isValid = false
     }
 
-    // Validazione Email
     if (!formData.email.trim()) {
       errors.email = "L'email è obbligatoria"
       isValid = false
@@ -109,13 +134,11 @@ export default function ContactForm() {
       isValid = false
     }
 
-    // Validazione Telefono
     if (!formData.phone.trim()) {
       errors.phone = "Il numero di telefono è obbligatorio"
       isValid = false
     }
 
-    // Validazione Motivo
     if (!formData.reason.trim()) {
       errors.reason = "Il motivo è obbligatorio"
       isValid = false
@@ -123,7 +146,6 @@ export default function ContactForm() {
 
     setFormErrors(errors)
 
-    // Attiva l'animazione di errore se ci sono errori
     if (!isValid) {
       setAnimateError(true)
     }
@@ -135,10 +157,9 @@ export default function ContactForm() {
     e.preventDefault()
     setSubmitStatus(null)
 
-    // Validate privacy consent
+    // Controllo consenso privacy
     if (!formData.privacyConsent) {
       setCheckboxError(true)
-      // Trigger shake animation
       const checkbox = document.getElementById("privacy-checkbox-container")
       checkbox?.classList.add("animate-shake")
       setTimeout(() => {
@@ -147,17 +168,13 @@ export default function ContactForm() {
       return
     }
 
-    // Validate all required fields
+    // Controllo campi obbligatori
     const isValid = validateForm()
     if (!isValid) {
-      // Trova il primo campo con errore
       const firstErrorField = Object.keys(formErrors).find((key) => formErrors[key as keyof typeof formErrors])
 
       if (firstErrorField) {
-        // Imposta l'animazione per il campo con errore
         setFieldAnimation(firstErrorField)
-
-        // Focus sul primo campo con errore
         const element = document.getElementById(firstErrorField)
         element?.focus()
       }
@@ -187,10 +204,8 @@ export default function ContactForm() {
         throw new Error(data.error || "Invio email fallito")
       }
 
-      // Attiva l'animazione di successo
       setAnimateSuccess(true)
 
-      // Mostra messaggio di successo con un leggero ritardo per l'animazione
       setTimeout(() => {
         setSubmitStatus({
           success: true,
@@ -198,7 +213,6 @@ export default function ContactForm() {
         })
       }, 300)
 
-      // Reset form
       setFormData({
         firstName: "",
         lastName: "",
@@ -211,7 +225,6 @@ export default function ContactForm() {
     } catch (error) {
       console.error("Error sending email:", error)
 
-      // Attiva l'animazione di errore
       setAnimateError(true)
 
       setSubmitStatus({
@@ -223,7 +236,7 @@ export default function ContactForm() {
     }
   }
 
-  // Funzione per personalizzare i messaggi di errore
+  // Messaggi di errore personalizzati
   const setCustomValidity = (e: React.InvalidEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const target = e.target
 
@@ -242,287 +255,281 @@ export default function ContactForm() {
     }
   }
 
-  // Funzione per resettare il messaggio di errore personalizzato
   const resetCustomValidity = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     e.target.setCustomValidity("")
   }
 
+  // Nella pagina Contatti il titolo è l'H1, nelle altre pagine è un H2
+  const Titolo = comePagina ? "h1" : "h2"
+  const etichettaCampo = "block text-sm font-semibold text-slate-700 mb-2"
+
   return (
-    <div className="bg-white py-12">
-      <div className="container">
-        <AnimatedScrollElement direction="up" delay={0.1}>
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Prenota il Tuo Appuntamento Ora</h2>
-        </AnimatedScrollElement>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <AnimatedScrollElement direction="left" delay={0.2}>
-            <div>
-              <div className="flex flex-col space-y-6 mb-8">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-primary rounded-full p-3 text-white">
-                    <Phone size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-medium">Telefono</h3>
-                    <a href="tel:+393487383372" className="text-primary hover:underline text-lg">
-                      +39 348 738 3372
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-primary rounded-full p-3 text-white">
-                    <MessageSquare size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-medium">WhatsApp</h3>
-                    <a
-                      href="https://wa.me/393487383372"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:underline text-lg"
-                    >
-                      Invia un messaggio
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="bg-primary rounded-full p-3 text-white">
-                    <Mail size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-medium">Email</h3>
-                    <a
-                      href="mailto:maico.battistello@gmail.com"
-                      className="text-primary hover:underline text-lg group inline-flex items-center"
-                      rel="noopener"
-                      aria-label="Invia email a maico.battistello@gmail.com"
-                    >
-                      maico.battistello@gmail.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            <div className="flex items-center space-x-4 mt-4">
-  <div className="bg-primary rounded-full w-12 h-12 flex items-center justify-center text-white">
-  <span className="text-2xl font-bold">f</span>
-</div>
-  <div>
-    <h3 className="font-medium">Facebook</h3>
-    <a
-      href="https://www.facebook.com/maicobattistello"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-primary hover:underline text-lg"
+    <section
+      id="contatti"
+      className="bg-[linear-gradient(to_bottom,#FFFFFF_0%,#F8F5F0_100%)] py-14 md:py-20"
     >
-      Segui la pagina Facebook
-    </a>
-  </div>
-</div>
-          
-              <div className="pl-0">
-                <LocationList />
-              </div>
-            </div>
-          </AnimatedScrollElement>
+      <div className="container mx-auto max-w-6xl px-4">
+        {/* Intestazione */}
+        <div className="mb-10 md:mb-14 max-w-3xl">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Contatti</p>
+          <Titolo className="text-[2.25rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
+            Prenota una visita<span className="text-[#0066CC]">.</span>
+          </Titolo>
+          <div className="h-1 w-16 rounded-full bg-[#E8CFB0] mb-6" aria-hidden="true" />
+          <p className="text-lg md:text-xl leading-relaxed text-slate-600">
+            Chiama, scrivi su WhatsApp o compila il modulo: verrai ricontattato per fissare
+            l&apos;appuntamento nella sede più comoda per te.
+          </p>
+        </div>
 
-          <AnimatedScrollElement direction="right" delay={0.3}>
-            <AnimatedScrollElement direction="up" delay={0.2}>
-              <h3 className="text-2xl md:text-3xl font-bold text-center mb-6 md:hidden">
-                Compila il Form per Contattarmi
-              </h3>
-            </AnimatedScrollElement>
-            {submitStatus && submitStatus.success ? (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-6 flex flex-col items-center justify-center h-full success-message">
-                <CheckCircle className="h-16 w-16 text-green-500 mb-4 success-check" />
-                <h3 className="text-xl font-semibold text-green-800 mb-2 animate-fade-in">Messaggio Inviato!</h3>
-                <p className="text-center text-green-700 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                  {submitStatus.message}
-                </p>
-                <button
-                  onClick={() => setSubmitStatus(null)}
-                  className="mt-6 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors animate-fade-in hover-lift"
-                  style={{ animationDelay: "0.4s" }}
-                >
-                  Invia un altro messaggio
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className={`space-y-6 ${animateError ? "animate-shake" : ""}`}>
-                {submitStatus && !submitStatus.success && (
-                  <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4 flex items-start animate-slide-in-right">
-                    <AlertCircle className="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
-                    <p className="text-red-700">{submitStatus.message}</p>
-                  </div>
-                )}
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Nome *
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                      onInvalid={setCustomValidity}
-                      onFocus={resetCustomValidity}
-                      className={`w-full px-4 py-2 border transition-all duration-300 ${
-                        formErrors.firstName ? "border-red-500" : "border-gray-300"
-                      } ${fieldAnimation === "firstName" ? "input-error" : ""} rounded-md focus:outline-none focus:ring-2 focus:ring-primary`}
-                    />
-                    {formErrors.firstName && (
-                      <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.firstName}</p>
-                    )}
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Cognome *
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                      onInvalid={setCustomValidity}
-                      onFocus={resetCustomValidity}
-                      className={`w-full px-4 py-2 border transition-all duration-300 ${
-                        formErrors.lastName ? "border-red-500" : "border-gray-300"
-                      } ${fieldAnimation === "lastName" ? "input-error" : ""} rounded-md focus:outline-none focus:ring-2 focus:ring-primary`}
-                    />
-                    {formErrors.lastName && (
-                      <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.lastName}</p>
-                    )}
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      onInvalid={setCustomValidity}
-                      onFocus={resetCustomValidity}
-                      className={`w-full px-4 py-2 border transition-all duration-300 ${
-                        formErrors.email ? "border-red-500" : "border-gray-300"
-                      } ${fieldAnimation === "email" ? "input-error" : ""} rounded-md focus:outline-none focus:ring-2 focus:ring-primary`}
-                    />
-                    {formErrors.email && (
-                      <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.email}</p>
-                    )}
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Numero di Telefono *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      onInvalid={setCustomValidity}
-                      onFocus={resetCustomValidity}
-                      className={`w-full px-4 py-2 border transition-all duration-300 ${
-                        formErrors.phone ? "border-red-500" : "border-gray-300"
-                      } ${fieldAnimation === "phone" ? "input-error" : ""} rounded-md focus:outline-none focus:ring-2 focus:ring-primary`}
-                    />
-                    {formErrors.phone && (
-                      <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.phone}</p>
-                    )}
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="reason" className="block text-sm font-medium text-gray-700 mb-1">
-                    Motivo *
-                  </label>
-                  <textarea
-                    id="reason"
-                    name="reason"
-                    value={formData.reason}
-                    onChange={handleChange}
-                    onInvalid={setCustomValidity}
-                    onFocus={resetCustomValidity}
-                    rows={4}
-                    className={`w-full px-4 py-2 border transition-all duration-300 ${
-                      formErrors.reason ? "border-red-500" : "border-gray-300"
-                    } ${fieldAnimation === "reason" ? "input-error" : ""} rounded-md focus:outline-none focus:ring-2 focus:ring-primary`}
-                  />
-                  {formErrors.reason && (
-                    <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.reason}</p>
-                  )}
-                </div>
-
-                <div>
-                  <div className="flex items-start">
-                    <div id="privacy-checkbox-container" className={`relative ${checkboxError ? "animate-shake" : ""}`}>
-                      <input
-                        type="checkbox"
-                        id="privacyConsent"
-                        name="privacyConsent"
-                        checked={formData.privacyConsent}
-                        onChange={handleCheckboxChange}
-                        className="sr-only"
-                      />
-                      <label htmlFor="privacyConsent" className="flex items-center cursor-pointer">
-                        <div className="relative flex items-center justify-center">
-                          <div
-                            className={`w-6 h-6 rounded-full border-2 transition-all duration-300 ease-out 
-                              ${formData.privacyConsent ? "border-primary bg-primary scale-90" : "border-gray-300 hover:border-primary hover:shadow-[0_0_10px_rgba(59,130,246,0.5)]"} 
-                              group-hover:shadow-[0_0_15px_rgba(59,130,246,0.7)]`}
-                          >
-                            <svg
-                              className={`w-4 h-4 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 
-                                ${formData.privacyConsent ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={3}
-                                d="M5 13l4 4L19 7"
-                                className={`${formData.privacyConsent ? "animate-draw-check" : ""}`}
-                              />
-                            </svg>
-                          </div>
-                          <div
-                            className={`absolute w-10 h-10 rounded-full bg-primary/10 transform scale-0 transition-transform duration-300 
-                              ${formData.privacyConsent ? "animate-ripple" : ""}`}
-                          ></div>
-                        </div>
-                        <span className="text-lg text-gray-700 ml-2">
-                          Ho letto la{" "}
-                          <AnimatedLink href="/privacy-policy" className="text-primary">
-                            Privacy Policy
-                          </AnimatedLink>{" "}
-                          e acconsento al trattamento dei dati in conformità al Regolamento GDPR n. 679/2016.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
+          {/* Contatti rapidi */}
+          <div className="lg:col-start-1">
+            <ul className="divide-y divide-[#E7E0D7] rounded-[1.5rem] bg-white ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.45)]">
+              {canali.map((canale) => {
+                const Icona = canale.icona
+                return (
+                  <li key={canale.etichetta}>
+                    <a
+                      href={canale.href}
+                      {...(canale.esterno ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      className="group flex items-center gap-4 px-6 py-5 transition-colors hover:bg-[#F2F7FD] first:rounded-t-[1.5rem]"
+                    >
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0066CC]/10 text-[#0066CC]">
+                        <Icona className="h-5 w-5" />
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                          {canale.etichetta}
                         </span>
+                        <span className="block break-words text-lg font-semibold text-slate-900 group-hover:text-[#0066CC] transition-colors">
+                          {canale.testo}
+                        </span>
+                      </span>
+                    </a>
+                  </li>
+                )
+              })}
+              <li>
+                <a
+                  href="https://www.facebook.com/maicobattistello"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center gap-4 px-6 py-5 transition-colors hover:bg-[#F2F7FD] rounded-b-[1.5rem]"
+                >
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0066CC]/10 text-xl font-bold text-[#0066CC]">
+                    f
+                  </span>
+                  <span>
+                    <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                      Facebook
+                    </span>
+                    <span className="block text-lg font-semibold text-slate-900 group-hover:text-[#0066CC] transition-colors">
+                      Segui la pagina
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Modulo */}
+          <div className="lg:col-start-2 lg:row-start-1 lg:row-span-2">
+            <div className="lg:sticky lg:top-28 rounded-[2rem] bg-white p-6 md:p-8 ring-1 ring-[#E7E0D7] shadow-[0_24px_70px_-45px_rgba(20,45,75,0.5)]">
+              {submitStatus && submitStatus.success ? (
+                <div className="flex flex-col items-center justify-center py-10 text-center success-message">
+                  <CheckCircle className="h-16 w-16 text-[#0066CC] mb-4 success-check" />
+                  <h3 className="text-2xl font-semibold text-slate-900 mb-2 animate-fade-in">Messaggio inviato</h3>
+                  <p className="text-lg text-slate-600 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                    {submitStatus.message}
+                  </p>
+                  <button
+                    onClick={() => setSubmitStatus(null)}
+                    className="mt-8 inline-flex h-12 items-center rounded-full border border-[#0066CC]/30 px-6 font-semibold text-[#0066CC] transition-colors hover:bg-[#F2F7FD] animate-fade-in"
+                    style={{ animationDelay: "0.4s" }}
+                  >
+                    Invia un altro messaggio
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className={`space-y-5 ${animateError ? "animate-shake" : ""}`}>
+                  <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-slate-900">
+                    Scrivi al Dott. Battistello
+                  </h3>
+
+                  {submitStatus && !submitStatus.success && (
+                    <div className="rounded-xl bg-red-50 border border-red-200 p-4 flex items-start animate-slide-in-right">
+                      <AlertCircle className="h-5 w-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" />
+                      <p className="text-red-700">{submitStatus.message}</p>
+                    </div>
+                  )}
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label htmlFor="firstName" className={etichettaCampo}>
+                        Nome *
                       </label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        autoComplete="given-name"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        onInvalid={setCustomValidity}
+                        onFocus={resetCustomValidity}
+                        className={stileCampo(!!formErrors.firstName, fieldAnimation === "firstName")}
+                      />
+                      {formErrors.firstName && (
+                        <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.firstName}</p>
+                      )}
+                    </div>
+                    <div>
+                      <label htmlFor="lastName" className={etichettaCampo}>
+                        Cognome *
+                      </label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        autoComplete="family-name"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        onInvalid={setCustomValidity}
+                        onFocus={resetCustomValidity}
+                        className={stileCampo(!!formErrors.lastName, fieldAnimation === "lastName")}
+                      />
+                      {formErrors.lastName && (
+                        <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.lastName}</p>
+                      )}
                     </div>
                   </div>
-                  {checkboxError && (
-                    <p className="text-red-500 text-sm mt-1 ml-8 animate-fade-in">
-                      Per favore accetta la privacy policy per continuare
-                    </p>
-                  )}
-                </div>
 
-                <div className="text-center">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div>
+                      <label htmlFor="email" className={etichettaCampo}>
+                        Email *
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autoComplete="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        onInvalid={setCustomValidity}
+                        onFocus={resetCustomValidity}
+                        className={stileCampo(!!formErrors.email, fieldAnimation === "email")}
+                      />
+                      {formErrors.email && (
+                        <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.email}</p>
+                      )}
+                    </div>
+                    <div>
+                      <label htmlFor="phone" className={etichettaCampo}>
+                        Telefono *
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        autoComplete="tel"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        onInvalid={setCustomValidity}
+                        onFocus={resetCustomValidity}
+                        className={stileCampo(!!formErrors.phone, fieldAnimation === "phone")}
+                      />
+                      {formErrors.phone && (
+                        <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.phone}</p>
+                      )}
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="reason" className={etichettaCampo}>
+                      Motivo della richiesta *
+                    </label>
+                    <textarea
+                      id="reason"
+                      name="reason"
+                      value={formData.reason}
+                      onChange={handleChange}
+                      onInvalid={setCustomValidity}
+                      onFocus={resetCustomValidity}
+                      rows={4}
+                      placeholder="Per esempio: dolore lombare da alcune settimane, preferirei la sede di Schio."
+                      className={stileCampo(!!formErrors.reason, fieldAnimation === "reason")}
+                    />
+                    {formErrors.reason && (
+                      <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.reason}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <div className="flex items-start">
+                      <div id="privacy-checkbox-container" className={`relative ${checkboxError ? "animate-shake" : ""}`}>
+                        <input
+                          type="checkbox"
+                          id="privacyConsent"
+                          name="privacyConsent"
+                          checked={formData.privacyConsent}
+                          onChange={handleCheckboxChange}
+                          className="sr-only"
+                        />
+                        <label htmlFor="privacyConsent" className="flex items-start cursor-pointer">
+                          <div className="relative mt-0.5 flex shrink-0 items-center justify-center">
+                            <div
+                              className={`w-6 h-6 rounded-full border-2 transition-all duration-300 ease-out ${
+                                formData.privacyConsent
+                                  ? "border-[#0066CC] bg-[#0066CC] scale-90"
+                                  : "border-slate-300 hover:border-[#0066CC]"
+                              }`}
+                            >
+                              <svg
+                                className={`w-4 h-4 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
+                                  formData.privacyConsent ? "scale-100 opacity-100" : "scale-0 opacity-0"
+                                }`}
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={3}
+                                  d="M5 13l4 4L19 7"
+                                  className={`${formData.privacyConsent ? "animate-draw-check" : ""}`}
+                                />
+                              </svg>
+                            </div>
+                            <div
+                              className={`absolute w-10 h-10 rounded-full bg-[#0066CC]/10 transform scale-0 transition-transform duration-300 ${
+                                formData.privacyConsent ? "animate-ripple" : ""
+                              }`}
+                            ></div>
+                          </div>
+                          <span className="text-base leading-relaxed text-slate-600 ml-3">
+                            Ho letto la{" "}
+                            <AnimatedLink href="/privacy-policy" className="text-[#0066CC]">
+                              Privacy Policy
+                            </AnimatedLink>{" "}
+                            e acconsento al trattamento dei dati in conformità al Regolamento GDPR n. 679/2016.
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    {checkboxError && (
+                      <p className="text-red-500 text-sm mt-1 ml-9 animate-fade-in">
+                        Per favore accetta la privacy policy per continuare
+                      </p>
+                    )}
+                  </div>
+
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`btn-primary px-8 py-3 text-lg flex items-center justify-center gap-2 mx-auto hover-lift transition-all duration-300 ${
+                    className={`inline-flex h-12 w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-[#0066CC] px-8 text-base sm:text-lg font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD] ${
                       isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                     } ${animateSuccess ? "button-success" : ""}`}
                   >
@@ -534,16 +541,21 @@ export default function ContactForm() {
                     ) : (
                       <>
                         <Calendar className="h-5 w-5" />
-                        <span>Prenota Appuntamento</span>
+                        <span>Richiedi appuntamento</span>
                       </>
                     )}
                   </button>
-                </div>
-              </form>
-            )}
-          </AnimatedScrollElement>
+                </form>
+              )}
+            </div>
+          </div>
+
+          {/* Sedi */}
+          <div className="lg:col-start-1">
+            <LocationList />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
