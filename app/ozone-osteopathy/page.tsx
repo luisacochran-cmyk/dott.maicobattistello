@@ -47,8 +47,8 @@ export default function OzoneOsteopathyPage() {
       {/* Un unico sfondo per introduzione, sedi e passaggio al carosello:
           il crema emerge al centro e sfuma verso il bianco in uscita. */}
       <div className="bg-[linear-gradient(to_bottom,#F2F7FD_0%,#FFFFFF_22%,#F8F5F0_43%,#F0EAE0_63%,#F8F5F0_81%,#FFFFFF_100%)]">
-        {/* Introduzione: foto originali assemblate senza alterare i soggetti */}
-        <section className="py-12 md:py-20">
+        {/* Introduzione */}
+        <section className="pt-10 pb-6 md:pt-16 md:pb-8">
           <div className="container mx-auto max-w-6xl px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             <AnimatedScrollElement direction="up" delay={0.1}>
               <div>
@@ -83,21 +83,57 @@ export default function OzoneOsteopathyPage() {
                 </div>
               </div>
             </AnimatedScrollElement>
-            <div className="relative w-full aspect-[3/2] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
-              <Image
-                src="/images/maico-trio-foto-originali-sfumato.jpg"
-                alt="Composizione fotografica: trattamento osteopatico, grande autoemoterapia e trattamento del ginocchio"
-                fill
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
+
+            {/* Due foto reali affiancate, unite da un "+": l'integrazione raccontata per immagini */}
+            <AnimatedScrollElement direction="up" delay={0.2}>
+              <div className="relative">
+                <div className="grid grid-cols-2 gap-3 md:gap-5">
+                  <figure>
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+                      <Image
+                        src="/images/ozonoterapia-spalla-battistello.jpg"
+                        alt="Il Dott. Maico Battistello durante un trattamento di ossigeno-ozonoterapia alla spalla"
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        className="object-cover object-[65%_center]"
+                      />
+                    </div>
+                    <figcaption className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0066CC]">
+                      Ozonoterapia
+                    </figcaption>
+                  </figure>
+
+                  <figure className="mt-10 md:mt-14">
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+                      <Image
+                        src="/images/osteopatia-spalla-battistello.jpg"
+                        alt="Il Dott. Maico Battistello durante un trattamento osteopatico alla spalla"
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 50vw, 25vw"
+                        className="object-cover object-[62%_center]"
+                      />
+                    </div>
+                    <figcaption className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0066CC]">
+                      Osteopatia
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div
+                  aria-hidden="true"
+                  className="absolute left-1/2 top-1/2 flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-3xl font-light text-[#0066CC] shadow-lg ring-1 ring-black/5 md:h-14 md:w-14"
+                >
+                  +
+                </div>
+              </div>
+            </AnimatedScrollElement>
           </div>
         </section>
 
         {/* Indicazioni e valutazione individuale */}
-        <section className="py-10 md:py-14">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto max-w-6xl px-4">
             <AnimatedScrollElement direction="up" delay={0.2}>
               <div className="max-w-4xl">
@@ -127,7 +163,7 @@ export default function OzoneOsteopathyPage() {
         </section>
 
         {/* Sedi: stesso stile della sezione "Dove riceve" della home */}
-        <section className="py-12 md:py-20">
+        <section className="pt-8 pb-12 md:pt-10 md:pb-16">
           <div className="container mx-auto max-w-6xl px-4">
             <AnimatedScrollElement direction="up" delay={0.3}>
               <div className="mb-8">
