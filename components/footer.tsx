@@ -10,9 +10,9 @@ export default function Footer() {
         style={{ background: "linear-gradient(to bottom, #FFFFFF 0%, #F8FBFD 45%, #F1F5F8 100%)" }}
       />
 
-      <div className="container mx-auto px-6 pt-3 pb-8 md:px-10 md:pt-4 md:pb-9">
+      <div className="container mx-auto px-6 pt-3 pb-10 md:px-10 md:pt-4 md:pb-12">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-10 border-b border-[#CBD9E5] pb-9 md:grid-cols-12 md:gap-8">
+          <div className="grid gap-10 md:grid-cols-12 md:gap-8">
             <div className="md:col-span-5">
               <div className="mb-5 flex items-center gap-4">
                 <img
@@ -75,12 +75,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Chiusura blu: richiama l'header senza creare un grande blocco. */}
-      <div
-        aria-hidden="true"
-        className="h-12 md:h-16"
-        style={{ background: "linear-gradient(to bottom, #F1F5F8 0%, #BDD9ED 45%, #0066CC 100%)" }}
-      />
+      {/* Chiusura blu piena, senza sfumatura: richiama l'header */}
       <div className="bg-[#0066CC] text-white">
         <div className="container mx-auto flex flex-col gap-1 px-6 py-4 text-sm sm:flex-row sm:items-center sm:justify-between md:px-10">
           <p>© 2026 Dott. Maico Battistello</p>
