@@ -259,21 +259,23 @@ export default function ContactForm({ comePagina = false }: { comePagina?: boole
     e.target.setCustomValidity("")
   }
 
-  // Nella pagina Contatti il titolo è l'H1, nelle altre pagine è un H2
+  // Nella pagina Contatti il titolo è l'H1 "Prenota una visita".
+  // Nelle altre pagine è un H2 diverso, per non ripetere l'invito che c'è appena sopra.
   const Titolo = comePagina ? "h1" : "h2"
+  const testoTitolo = comePagina ? "Prenota una visita" : "Recapiti e sedi"
   const etichettaCampo = "block text-sm font-semibold text-slate-700 mb-2"
 
   return (
     <section
       id="contatti"
-      className="bg-[linear-gradient(to_bottom,#FFFFFF_0%,#F8F5F0_100%)] py-14 md:py-20"
+      className="bg-[linear-gradient(to_bottom,#FFFFFF_0%,#F8F5F0_35%,#F8F5F0_70%,#FFFFFF_100%)] py-14 md:py-20"
     >
       <div className="container mx-auto max-w-6xl px-4">
         {/* Intestazione */}
         <div className="mb-10 md:mb-14 max-w-3xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">Contatti</p>
           <Titolo className="text-[2.25rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
-            Prenota una visita<span className="text-[#0066CC]">.</span>
+            {testoTitolo}<span className="text-[#0066CC]">.</span>
           </Titolo>
           <div className="h-1 w-16 rounded-full bg-[#E8CFB0] mb-6" aria-hidden="true" />
           <p className="text-lg md:text-xl leading-relaxed text-slate-600">
@@ -412,150 +414,3 @@ export default function ContactForm({ comePagina = false }: { comePagina?: boole
                       </label>
                       <input
                         type="email"
-                        id="email"
-                        name="email"
-                        autoComplete="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        onInvalid={setCustomValidity}
-                        onFocus={resetCustomValidity}
-                        className={stileCampo(!!formErrors.email, fieldAnimation === "email")}
-                      />
-                      {formErrors.email && (
-                        <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.email}</p>
-                      )}
-                    </div>
-                    <div>
-                      <label htmlFor="phone" className={etichettaCampo}>
-                        Telefono *
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        autoComplete="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        onInvalid={setCustomValidity}
-                        onFocus={resetCustomValidity}
-                        className={stileCampo(!!formErrors.phone, fieldAnimation === "phone")}
-                      />
-                      {formErrors.phone && (
-                        <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.phone}</p>
-                      )}
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="reason" className={etichettaCampo}>
-                      Motivo della richiesta *
-                    </label>
-                    <textarea
-                      id="reason"
-                      name="reason"
-                      value={formData.reason}
-                      onChange={handleChange}
-                      onInvalid={setCustomValidity}
-                      onFocus={resetCustomValidity}
-                      rows={4}
-                      placeholder="Per esempio: dolore lombare da alcune settimane, preferirei la sede di Schio."
-                      className={stileCampo(!!formErrors.reason, fieldAnimation === "reason")}
-                    />
-                    {formErrors.reason && (
-                      <p className="text-red-500 text-sm mt-1 animate-fade-in">{formErrors.reason}</p>
-                    )}
-                  </div>
-
-                  <div>
-                    <div className="flex items-start">
-                      <div id="privacy-checkbox-container" className={`relative ${checkboxError ? "animate-shake" : ""}`}>
-                        <input
-                          type="checkbox"
-                          id="privacyConsent"
-                          name="privacyConsent"
-                          checked={formData.privacyConsent}
-                          onChange={handleCheckboxChange}
-                          className="sr-only"
-                        />
-                        <label htmlFor="privacyConsent" className="flex items-start cursor-pointer">
-                          <div className="relative mt-0.5 flex shrink-0 items-center justify-center">
-                            <div
-                              className={`w-6 h-6 rounded-full border-2 transition-all duration-300 ease-out ${
-                                formData.privacyConsent
-                                  ? "border-[#0066CC] bg-[#0066CC] scale-90"
-                                  : "border-slate-300 hover:border-[#0066CC]"
-                              }`}
-                            >
-                              <svg
-                                className={`w-4 h-4 text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
-                                  formData.privacyConsent ? "scale-100 opacity-100" : "scale-0 opacity-0"
-                                }`}
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth={3}
-                                  d="M5 13l4 4L19 7"
-                                  className={`${formData.privacyConsent ? "animate-draw-check" : ""}`}
-                                />
-                              </svg>
-                            </div>
-                            <div
-                              className={`absolute w-10 h-10 rounded-full bg-[#0066CC]/10 transform scale-0 transition-transform duration-300 ${
-                                formData.privacyConsent ? "animate-ripple" : ""
-                              }`}
-                            ></div>
-                          </div>
-                          <span className="text-base leading-relaxed text-slate-600 ml-3">
-                            Ho letto la{" "}
-                            <AnimatedLink href="/privacy-policy" className="text-[#0066CC]">
-                              Privacy Policy
-                            </AnimatedLink>{" "}
-                            e acconsento al trattamento dei dati in conformità al Regolamento GDPR n. 679/2016.
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                    {checkboxError && (
-                      <p className="text-red-500 text-sm mt-1 ml-9 animate-fade-in">
-                        Per favore accetta la privacy policy per continuare
-                      </p>
-                    )}
-                  </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className={`inline-flex h-12 w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-[#0066CC] px-8 text-base sm:text-lg font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD] ${
-                      isSubmitting ? "opacity-70 cursor-not-allowed" : ""
-                    } ${animateSuccess ? "button-success" : ""}`}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="h-5 w-5 animate-spin" />
-                        <span>Invio in corso...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Calendar className="h-5 w-5" />
-                        <span>Richiedi appuntamento</span>
-                      </>
-                    )}
-                  </button>
-                </form>
-              )}
-            </div>
-          </div>
-
-          {/* Sedi */}
-          <div className="lg:col-start-1">
-            <LocationList />
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
