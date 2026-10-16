@@ -88,37 +88,27 @@ export default function OzoneOsteopathyPage() {
             <AnimatedScrollElement direction="up" delay={0.2}>
               <div className="relative">
                 <div className="grid grid-cols-2 gap-3 md:gap-5">
-                  <figure>
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
-                      <Image
-                        src="/images/ozonoterapia-spalla-battistello.jpg"
-                        alt="Il Dott. Maico Battistello durante un trattamento di ossigeno-ozonoterapia alla spalla"
-                        fill
-                        priority
-                        sizes="(max-width: 1024px) 50vw, 25vw"
-                        className="object-cover object-[65%_center]"
-                      />
-                    </div>
-                    <figcaption className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0066CC]">
-                      Ozonoterapia
-                    </figcaption>
-                  </figure>
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+                    <Image
+                      src="/images/DSCF5346.JPG"
+                      alt="Il Dott. Maico Battistello durante un trattamento di ossigeno-ozonoterapia alla spalla"
+                      fill
+                      priority
+                      sizes="(max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-[65%_center]"
+                    />
+                  </div>
 
-                  <figure className="mt-10 md:mt-14">
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
-                      <Image
-                        src="/images/osteopatia-spalla-battistello.jpg"
-                        alt="Il Dott. Maico Battistello durante un trattamento osteopatico alla spalla"
-                        fill
-                        priority
-                        sizes="(max-width: 1024px) 50vw, 25vw"
-                        className="object-cover object-[62%_center]"
-                      />
-                    </div>
-                    <figcaption className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0066CC]">
-                      Osteopatia
-                    </figcaption>
-                  </figure>
+                  <div className="relative mt-10 md:mt-14 aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+                    <Image
+                      src="/images/DSCF5366.JPG"
+                      alt="Il Dott. Maico Battistello durante un trattamento osteopatico alla spalla"
+                      fill
+                      priority
+                      sizes="(max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-[62%_center]"
+                    />
+                  </div>
                 </div>
 
                 <div
