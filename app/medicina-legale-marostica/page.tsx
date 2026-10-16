@@ -74,6 +74,32 @@ export default function MedicinaLegaleMarosticaPage() {
         </p>
       </LandingRiquadro>
 
+      <LandingSezione etichetta="Per chi" titolo="A chi si rivolge la consulenza a Marostica">
+        <p>
+          Non serve passare da un avvocato o da un&apos;assicurazione: il
+          dottore può essere contattato direttamente. A Marostica segue
+          soprattutto:
+        </p>
+        <LandingElenco
+          voci={[
+            "Persone che hanno avuto un incidente stradale o un infortunio, sul lavoro, nello sport o nella vita quotidiana",
+            "Pazienti che ritengono di aver ricevuto cure non corrette, o che dopo un intervento hanno conseguenze inattese",
+            "Studi legali che hanno bisogno di un consulente tecnico di parte (CTP)",
+            "Agenzie assicurative che richiedono una valutazione medico-legale",
+          ]}
+        />
+      </LandingSezione>
+
+      <LandingSezione etichetta="Responsabilità sanitaria" titolo="Quando il dubbio riguarda le cure ricevute">
+        <p>
+          Capire se un esito sfavorevole dipende dalla malattia o da come è
+          stata gestita richiede una lettura attenta di cartelle cliniche,
+          referti e tempi del percorso di cura. È il lavoro del medico legale:
+          un parere tecnico che aiuta a decidere con più chiarezza se e come
+          procedere.
+        </p>
+      </LandingSezione>
+
       <LandingSezione etichetta="Ambiti di intervento" titolo={`Di cosa si occupa a ${city.name}`}>
         <LandingElenco voci={service.conditions} />
         <p>
@@ -86,20 +112,6 @@ export default function MedicinaLegaleMarosticaPage() {
             Medicina Legale
           </Link>
           .
-        </p>
-      </LandingSezione>
-
-      <LandingSezione etichetta="Per chi" titolo="Privati, studi legali e agenzie">
-        <p>
-          A Marostica il dottore segue soprattutto persone che hanno avuto un
-          incidente stradale, un infortunio o un evento con conseguenze sulla
-          salute, e che hanno bisogno di capire come documentarlo e valutarlo
-          correttamente.
-        </p>
-        <p>
-          Collabora inoltre con studi legali e agenzie assicurative della
-          zona, come consulente tecnico di parte e per la redazione di
-          relazioni medico-legali.
         </p>
       </LandingSezione>
 
@@ -126,13 +138,14 @@ export default function MedicinaLegaleMarosticaPage() {
               "Il Dott. Maico Battistello riceve nell'ambulatorio medico di Via Ragazzoni 36, al piano superiore, sopra i negozi. All'esterno c'è la targa con il suo nome.",
           },
           {
-            domanda: "In quali giorni riceve a Marostica?",
+            domanda: "In quali giorni riceve a Marostica? C'è parcheggio?",
             risposta:
-              "Di norma il lunedì e il giovedì, su appuntamento. Gli orari vengono concordati al momento della prenotazione.",
+              "Di norma il lunedì e il giovedì, su appuntamento; gli orari vengono concordati al momento della prenotazione. Sì, è disponibile il parcheggio.",
           },
           {
-            domanda: "C'è parcheggio?",
-            risposta: "Sì, è disponibile il parcheggio.",
+            domanda: "Posso rivolgermi a lui per un sospetto caso di malasanità?",
+            risposta:
+              "Sì. Il dottore esamina la documentazione clinica e il percorso di cura per capire se ci sono elementi di responsabilità sanitaria da approfondire, e può affiancare il tuo avvocato come consulente tecnico di parte.",
           },
           {
             domanda: "Abito a Bassano del Grappa: posso venire a Marostica?",
