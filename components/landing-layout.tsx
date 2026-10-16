@@ -155,3 +155,41 @@ export function LandingLink({ href, children }: { href: string; children: ReactN
     </Link>
   )
 }
+
+/* Video Vimeo affiancato al testo. "invertito" mette il video a destra */
+export function LandingVideo({
+  titolo,
+  video,
+  titoloVideo,
+  invertito = false,
+  children,
+}: {
+  titolo: string
+  video: string
+  titoloVideo: string
+  invertito?: boolean
+  children: ReactNode
+}) {
+  return (
+    <section className="py-6 md:py-8">
+      <div className="container mx-auto max-w-5xl px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className={`aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-900 shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)] ${invertito ? "md:order-2" : ""}`}>
+          <iframe
+            src={video}
+            className="h-full w-full"
+            loading="lazy"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title={titoloVideo}
+          />
+        </div>
+        <div className={invertito ? "md:order-1" : ""}>
+          <h2 className="text-[1.75rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
+            {titolo}
+          </h2>
+          <div className={`space-y-5 ${testo}`}>{children}</div>
+        </div>
+      </div>
+    </section>
+  )
+}
