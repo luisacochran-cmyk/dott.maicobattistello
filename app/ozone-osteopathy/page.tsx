@@ -88,7 +88,7 @@ export default function OzoneOsteopathyPage() {
             <AnimatedScrollElement direction="up" delay={0.2}>
               <div className="relative">
                 <div className="grid grid-cols-2 gap-3 md:gap-5">
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+                  <div className="relative aspect-square overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
                     <Image
                       src="/images/DSCF5346.JPG"
                       alt="Il Dott. Maico Battistello durante un trattamento di ossigeno-ozonoterapia alla spalla"
@@ -99,14 +99,14 @@ export default function OzoneOsteopathyPage() {
                     />
                   </div>
 
-                  <div className="relative mt-10 md:mt-14 aspect-[4/5] overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+                  <div className="relative mt-10 md:mt-14 aspect-square overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
                     <Image
                       src="/images/DSCF5366.JPG"
                       alt="Il Dott. Maico Battistello durante un trattamento osteopatico alla spalla"
                       fill
                       priority
                       sizes="(max-width: 1024px) 50vw, 25vw"
-                      className="object-cover object-[62%_center]"
+                      className="object-cover object-[40%_center]"
                     />
                   </div>
                 </div>
