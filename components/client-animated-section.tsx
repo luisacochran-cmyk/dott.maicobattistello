@@ -139,36 +139,36 @@ export function TreatmentsSection() {
         <div className="container px-4">
           <div className="mx-auto max-w-5xl grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
             <AnimatedScrollElement direction="left" delay={0.1}>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">L&apos;approccio</p>
+              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">L&apos;approccio integrato</p>
               <h2 className="text-[2rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900">
                 Un approccio costruito sulla persona<span className="text-[#0066CC]">.</span>
               </h2>
             </AnimatedScrollElement>
 
             <AnimatedScrollElement direction="up" delay={0.2}>
-              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600">
+              {/* Le parole chiave sono in <strong>: grassetto più scuro del testo, non blu */}
+              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
                 <p>
-                  L&apos;ozonoterapia può essere indicata per intervenire sul dolore
-                  e sui processi infiammatori; l&apos;osteopatia si concentra invece
-                  sugli aspetti funzionali e posturali che possono contribuire al
-                  disturbo. Sono discipline diverse, con modalità e ambiti di
-                  intervento distinti, che possono essere utilizzate singolarmente
-                  oppure integrate quando la valutazione clinica ne evidenzia
-                  l&apos;indicazione.
+                  L&apos;<strong>ozonoterapia</strong> può essere indicata per intervenire
+                  sul <strong>dolore</strong> e sui <strong>processi infiammatori</strong>;
+                  l&apos;<strong>osteopatia</strong> si concentra sugli{" "}
+                  <strong>aspetti funzionali e posturali</strong> che possono
+                  contribuire al disturbo.
                 </p>
 
                 <p>
-                  L&apos;obiettivo è costruire un percorso personalizzato, che tenga
-                  conto dei sintomi, della funzionalità e del benessere complessivo
-                  della persona.
+                  Il tratto distintivo del Dott. Maico Battistello è{" "}
+                  l&apos;<strong>integrazione di queste due discipline</strong>: non
+                  l&apos;una o l&apos;altra, ma un <strong>unico percorso</strong> in cui
+                  ozonoterapia e osteopatia si completano, costruito sulla
+                  valutazione clinica e sulle esigenze di ciascun paziente.
                 </p>
 
                 <p className="border-l-2 border-[#0066CC]/30 pl-5">
-                  L&apos;approccio del Dott. Maico Battistello comprende anche
-                  l&apos;attenzione all&apos;alimentazione, attraverso
-                  l&apos;elaborazione di schede nutrizionali personalizzate e la
-                  consulenza nutraceutica, con indicazioni sull&apos;eventuale
-                  utilizzo di integratori in base alle necessità del paziente.
+                  Il percorso comprende anche l&apos;<strong>attenzione all&apos;alimentazione</strong>,
+                  con l&apos;elaborazione di <strong>schede nutrizionali personalizzate</strong>{" "}
+                  affiancate dalla <strong>nutraceutica</strong>, in base alle necessità
+                  del paziente.
                 </p>
               </div>
             </AnimatedScrollElement>
@@ -231,11 +231,10 @@ export function TreatmentsSection() {
                     <Link
                       key={city.name}
                       href={city.href}
-                      className="group flex min-h-24 items-center justify-between gap-2 border-b border-[#D4DFE9] py-5 transition-colors hover:text-[#0066CC] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC] sm:min-h-28"
+                      className="group flex min-h-24 items-center border-b border-[#D4DFE9] py-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC] sm:min-h-28"
                       aria-label={`Sedi e contatti a ${city.name}`}
                     >
                       <span className="text-xl font-medium tracking-tight text-slate-800 transition-colors group-hover:text-[#0066CC] sm:text-2xl md:text-[1.7rem]">{city.name}</span>
-                      <span aria-hidden="true" className="text-[#0066CC] opacity-60 transition-all group-hover:translate-x-1 group-hover:opacity-100">→</span>
                     </Link>
                   ))}
                 </div>
