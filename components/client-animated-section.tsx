@@ -286,43 +286,30 @@ export function DescriptionSection() {
 
 export function AdvancedTherapySection() {
   return (
-    <section className="bg-[#0066CC] pt-10 md:pt-14 text-white">
-      <div className="container px-4 md:px-4">
-        <AnimatedScrollElement
-          className="text-center max-w-4xl mx-auto"
-          direction="up"
-          delay={0.1}
-        >
-          <h2 className="text-3xl font-bold mb-6">
-            Non esiste un trattamento giusto per tutti.
-          </h2>
-
-          <p className="text-lg leading-relaxed mb-8">
-            Dolore, infiammazione e limitazione funzionale possono presentarsi
-            in modo diverso da persona a persona. La visita permette di valutare
-            il quadro clinico e orientare il percorso terapeutico in modo mirato.
-          </p>
-
-          <Button
-            asChild
-            size="lg"
-            className="bg-white text-primary hover:bg-gray-100 hover-lift text-lg px-8 h-12"
-          >
-            <Link href="/contatti" className="flex items-center gap-2">
+    // Continua il crema delle FAQ e sfuma dolcemente verso il bianco da cui parte il footer
+    <section className="bg-gradient-to-b from-[#EEE5D9] via-[#F6F1EA] to-[#FFFFFF] pt-2 pb-16 md:pt-4 md:pb-24">
+      <div className="container px-4">
+        <AnimatedScrollElement className="mx-auto max-w-3xl" direction="up" delay={0.1}>
+          <div className="rounded-[2.5rem] bg-white/85 p-8 text-center ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-12">
+            <h2 className="text-[1.75rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900">
+              Non esiste un trattamento giusto per tutti<span className="text-[#0066CC]">.</span>
+            </h2>
+            <div className="mx-auto mt-5 mb-6 h-1 w-16 rounded-full bg-[#E8CFB0]" aria-hidden="true" />
+            <p className="mx-auto max-w-2xl text-lg md:text-xl leading-relaxed text-slate-600">
+              Dolore, infiammazione e limitazione funzionale possono presentarsi
+              in modo diverso da persona a persona. La visita permette di valutare
+              il quadro clinico e orientare il percorso terapeutico in modo mirato.
+            </p>
+            <Link
+              href="/contatti"
+              className="mt-8 inline-flex h-12 items-center gap-2 rounded-full bg-[#0066CC] px-8 text-base sm:text-lg font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
+            >
               <Calendar className="h-5 w-5" />
               <span>Prenota una visita</span>
             </Link>
-          </Button>
+          </div>
         </AnimatedScrollElement>
       </div>
-      {/* Unica sfumatura continua: dal blu della CTA al bianco da cui parte il footer. */}
-      <div
-        aria-hidden="true"
-        className="mt-8 h-20 md:mt-12 md:h-24"
-        style={{
-          background: "linear-gradient(to bottom, #0066CC 0%, #418FD2 32%, #A9CDE8 68%, #FFFFFF 100%)",
-        }}
-      />
     </section>
   )
 }
@@ -402,7 +389,8 @@ export function FaqSection() {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-[#F0EAE0] via-[#EEE5D9] to-[#EEE5D9] pt-10 pb-0 md:pt-16">
+    // Resta crema fino in fondo: prosegue senza stacchi nella sezione successiva
+    <section className="bg-gradient-to-b from-[#F0EAE0] via-[#EEE5D9] to-[#EEE5D9] pt-10 pb-12 md:pt-16 md:pb-16">
       <div className="container px-4">
         <div className="mx-auto max-w-5xl grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
           <AnimatedScrollElement direction="left" delay={0.1}>
@@ -427,11 +415,6 @@ export function FaqSection() {
           </AnimatedScrollElement>
         </div>
       </div>
-      {/* Transizione continua: crema delle FAQ verso il blu della sezione successiva */}
-      <div
-        aria-hidden="true"
-        className="mt-8 h-24 bg-gradient-to-b from-[#EEE5D9] via-[#8BB9DE] to-[#0066CC] md:mt-12 md:h-36"
-      />
     </section>
   )
 }
