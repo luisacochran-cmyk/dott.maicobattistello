@@ -14,52 +14,60 @@ interface HeroSectionProps {
 
 export function HeroSection({ className }: HeroSectionProps) {
   return (
-  <section className={`hero-section hero-section-mobile flex items-center pt-20 pb-10 md:pb-16 ${className}`}>
+    <section className={`hero-section hero-section-mobile flex items-center pt-20 pb-10 md:pb-16 ${className}`}>
       <div className="container">
         <div className="max-w-xl md:max-w-2xl mx-auto md:mx-0 md:ml-[10%] lg:ml-[5%] text-left">
-      
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-  <ClientTypewriter
-    text="Ozonoterapia e Osteopatia: due discipline, un unico percorso"
-    delay={80}
-  />
-</h1>
 
-     <AnimatedScrollElement className="mb-7" direction="left" delay={0.5}>
-  <p className="text-xl md:text-2xl text-white">
-    Un approccio personalizzato al dolore, all'infiammazione e al recupero della funzionalità.
-  </p>
-</AnimatedScrollElement>
+          <h1 className="grid text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-5">
+            {/* 1. Titolo completo: lo legge Google e tiene il posto, ma è trasparente */}
+            <span className="col-start-1 row-start-1 text-transparent select-none">
+              Ozonoterapia e Osteopatia: due discipline, un unico percorso
+            </span>
 
-          <AnimatedScrollElement direction="up" delay={0.7}>
+            {/* 2. Effetto macchina da scrivere, sovrapposto nello stesso punto */}
+            <span aria-hidden="true" className="col-start-1 row-start-1">
+              <ClientTypewriter
+                text="Ozonoterapia e Osteopatia: due discipline, un unico percorso"
+                delay={80}
+              />
+            </span>
+          </h1>
+
+          <AnimatedScrollElement className="mb-8" direction="left" delay={0.3}>
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+              Un approccio personalizzato al dolore, all'infiammazione e al recupero della funzionalità.
+            </p>
+          </AnimatedScrollElement>
+
+          <AnimatedScrollElement direction="up" delay={0.5}>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-base sm:text-lg py-3 sm:py-6 hover-lift"
-              >
-                <Link href="/ozone-osteopathy">
-                  Scopri l'approccio integrato
-                </Link>
-              </Button>
-
-              <Button
-                asChild
-                size="lg"
-                className="bg-primary hover:bg-primary-dark w-full sm:w-auto text-white font-medium text-base sm:text-lg py-3 sm:py-6 hover-lift"
+                className="w-full sm:w-auto h-12 rounded-full px-8 bg-[#0066CC] hover:bg-[#0057AD] text-white font-semibold text-base sm:text-lg shadow-lg"
               >
                 <Link href="/contatti" className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
                   <span>Prenota una visita</span>
                 </Link>
               </Button>
+
+              <Button
+                asChild
+                size="lg"
+                className="w-full sm:w-auto h-12 rounded-full px-8 border border-white/70 bg-white/10 text-white hover:bg-white hover:text-[#0066CC] font-semibold text-base sm:text-lg backdrop-blur-sm"
+              >
+                <Link href="/ozone-osteopathy">Scopri l'approccio integrato</Link>
+              </Button>
             </div>
           </AnimatedScrollElement>
+
         </div>
       </div>
     </section>
   )
 }
+
 export function ConditionsSection() {
   return (
     <section className="pt-9 pb-9 md:pt-12 md:pb-12 bg-gradient-to-b from-[#F0EAE0] via-[#F3EDE3] to-[#FAF8F4]">
@@ -73,7 +81,7 @@ export function ConditionsSection() {
             Per quali disturbi può essere utile una valutazione?
           </h2>
 
-         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Il dolore e la limitazione funzionale possono avere origini
             differenti. Una valutazione medica permette di comprendere il
             quadro della persona e individuare il percorso più appropriato.
@@ -88,7 +96,7 @@ export function ConditionsSection() {
                 Colonna e schiena
               </h3>
 
-             <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
                 <p>Cervicalgia</p>
                 <p>Lombalgia</p>
                 <p>Sciatalgia</p>
@@ -101,7 +109,7 @@ export function ConditionsSection() {
                 Articolazioni e movimento
               </h3>
 
-             <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
                 <p>Artrosi</p>
                 <p>Tendiniti</p>
                 <p>Dolore alla spalla</p>
@@ -115,7 +123,7 @@ export function ConditionsSection() {
                 Dolore e condizioni persistenti
               </h3>
 
-            <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
+              <div className="space-y-2 text-base md:text-lg text-gray-700 leading-relaxed">
                 <p>Infiammazione cronica</p>
                 <p>Fibromialgia</p>
                 <p>Stanchezza persistente e riduzione della vitalità</p>
@@ -134,66 +142,66 @@ export function TreatmentsSection() {
     <section className="bg-white">
       <div className="bg-gradient-to-b from-[#FAF8F4] via-[#FFFFFF] to-[#EDF4F9] pt-10 pb-6 md:pt-14 md:pb-8">
         <div className="container px-4">
-        <AnimatedScrollElement
-          className="text-center max-w-3xl mx-auto"
-          direction="up"
-          delay={0.1}
-        >
-          <h2 className="text-[1.85rem] leading-tight md:text-4xl font-bold mb-4 tracking-tight">
-            Un approccio costruito sulla persona
-          </h2>
+          <AnimatedScrollElement
+            className="text-center max-w-3xl mx-auto"
+            direction="up"
+            delay={0.1}
+          >
+            <h2 className="text-[1.85rem] leading-tight md:text-4xl font-bold mb-4 tracking-tight">
+              Un approccio costruito sulla persona
+            </h2>
 
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
-            L&apos;ozonoterapia può essere indicata per intervenire sul dolore
-            e sui processi infiammatori; l&apos;osteopatia si concentra invece
-            sugli aspetti funzionali e posturali che possono contribuire al
-            disturbo. Sono discipline diverse, con modalità e ambiti di
-            intervento distinti, che possono essere utilizzate singolarmente
-            oppure integrate quando la valutazione clinica ne evidenzia
-            l&apos;indicazione.
-          </p>
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
+              L&apos;ozonoterapia può essere indicata per intervenire sul dolore
+              e sui processi infiammatori; l&apos;osteopatia si concentra invece
+              sugli aspetti funzionali e posturali che possono contribuire al
+              disturbo. Sono discipline diverse, con modalità e ambiti di
+              intervento distinti, che possono essere utilizzate singolarmente
+              oppure integrate quando la valutazione clinica ne evidenzia
+              l&apos;indicazione.
+            </p>
 
-          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            L&apos;obiettivo è costruire un percorso personalizzato, che tenga
-            conto dei sintomi, della funzionalità e del benessere complessivo
-            della persona.
-          </p>
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              L&apos;obiettivo è costruire un percorso personalizzato, che tenga
+              conto dei sintomi, della funzionalità e del benessere complessivo
+              della persona.
+            </p>
 
-          <p className="mt-5 text-lg md:text-xl text-gray-600 leading-relaxed">
-            L&apos;approccio del Dott. Maico Battistello comprende anche
-            l&apos;attenzione all&apos;alimentazione, attraverso
-            l&apos;elaborazione di schede nutrizionali personalizzate e la
-            consulenza nutraceutica, con indicazioni sull&apos;eventuale
-            utilizzo di integratori in base alle necessità del paziente.
-          </p>
-        </AnimatedScrollElement>
+            <p className="mt-5 text-lg md:text-xl text-gray-600 leading-relaxed">
+              L&apos;approccio del Dott. Maico Battistello comprende anche
+              l&apos;attenzione all&apos;alimentazione, attraverso
+              l&apos;elaborazione di schede nutrizionali personalizzate e la
+              consulenza nutraceutica, con indicazioni sull&apos;eventuale
+              utilizzo di integratori in base alle necessità del paziente.
+            </p>
+          </AnimatedScrollElement>
         </div>
       </div>
 
       <div className="bg-gradient-to-b from-[#EDF4F9] via-[#EAF2F8] to-[#E2EDF6] py-7 md:py-10">
         <div className="container px-4">
-        <AnimatedScrollElement direction="up" delay={0.3}>
-          <QuadrantCarousel
-            items={[
-              {
-                title: "Approccio integrato",
-                image: "/images/homeozono.jpg",
-                link: "/ozone-osteopathy",
-              },
-              {
-                title: "Osteopatia nel percorso terapeutico",
-                image: "/images/homeosteo.jpg",
-                link: "/osteopathy",
-              },
-              {
-                title: "Ozonoterapia nel percorso terapeutico",
-                image: "/images/homeozonosteo.jpg",
-                link: "/ozone-therapy",
-              },
-            ]}
-            showTitles={true}
-          />
-        </AnimatedScrollElement>
+          <AnimatedScrollElement direction="up" delay={0.3}>
+            <QuadrantCarousel
+              items={[
+                {
+                  title: "Approccio integrato",
+                  image: "/images/homeozono.jpg",
+                  link: "/ozone-osteopathy",
+                },
+                {
+                  title: "Osteopatia nel percorso terapeutico",
+                  image: "/images/homeosteo.jpg",
+                  link: "/osteopathy",
+                },
+                {
+                  title: "Ozonoterapia nel percorso terapeutico",
+                  image: "/images/homeozonosteo.jpg",
+                  link: "/ozone-therapy",
+                },
+              ]}
+              showTitles={true}
+            />
+          </AnimatedScrollElement>
         </div>
       </div>
 
@@ -241,7 +249,6 @@ export function TreatmentsSection() {
     </section>
   )
 }
-
 
 export function DescriptionSection() {
   return (
@@ -302,7 +309,7 @@ export function AdvancedTherapySection() {
           <Button
             asChild
             size="lg"
-           className="bg-white text-primary hover:bg-gray-100 hover-lift text-lg px-8 h-12"
+            className="bg-white text-primary hover:bg-gray-100 hover-lift text-lg px-8 h-12"
           >
             <Link href="/contatti" className="flex items-center gap-2">
               <Calendar className="h-5 w-5" />
@@ -322,6 +329,7 @@ export function AdvancedTherapySection() {
     </section>
   )
 }
+
 export function LocationsSection() {
   const locations = [
     {
@@ -350,22 +358,22 @@ export function LocationsSection() {
           direction="up"
           delay={0.1}
         >
-       <h2 className="text-3xl font-bold mb-4">
-  Ozonoterapia + Osteopatia
-</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Ozonoterapia + Osteopatia
+          </h2>
 
-<p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
-  Scopri l’approccio integrato del Dott. Maico Battistello, che combina
-  ossigeno-ozonoterapia e osteopatia quando indicato dalla valutazione clinica.
-</p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
+            Scopri l’approccio integrato del Dott. Maico Battistello, che combina
+            ossigeno-ozonoterapia e osteopatia quando indicato dalla valutazione clinica.
+          </p>
 
-<Button
-  asChild
-  size="lg"
-  className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
->
- <Link href="/ozonoterapia-osteopatia">Scopri di più</Link>
-</Button>
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary-dark text-white font-medium hover-lift"
+          >
+            <Link href="/ozonoterapia-osteopatia">Scopri di più</Link>
+          </Button>
         </AnimatedScrollElement>
       </div>
     </section>
@@ -379,11 +387,11 @@ export function FaqSection() {
       answer:
         "La prima visita prevede la raccolta della storia clinica, l’ascolto dei sintomi e una valutazione medica del quadro complessivo. Solo successivamente viene individuato il percorso più appropriato.",
     },
-{
-  question: "Come vengono integrate Ozonoterapia e Osteopatia nel percorso di cura?",
-  answer:
-    "Quando clinicamente indicato, Ozonoterapia e Osteopatia possono essere integrate all’interno di un unico percorso, mettendo in relazione approcci differenti sulla base della valutazione complessiva della persona. Il trattamento viene quindi definito in modo personalizzato, in funzione del quadro clinico e delle specifiche esigenze.",
-},
+    {
+      question: "Come vengono integrate Ozonoterapia e Osteopatia nel percorso di cura?",
+      answer:
+        "Quando clinicamente indicato, Ozonoterapia e Osteopatia possono essere integrate all’interno di un unico percorso, mettendo in relazione approcci differenti sulla base della valutazione complessiva della persona. Il trattamento viene quindi definito in modo personalizzato, in funzione del quadro clinico e delle specifiche esigenze.",
+    },
     {
       question: "In quali sedi riceve il Dott. Maico Battistello?",
       answer:
