@@ -74,18 +74,16 @@ export default function LegalMedicinePage() {
               </div>
             </div>
 
-            {/* Foto fissa, senza animazione: compare subito */}
-            <figure className="overflow-hidden rounded-[1.5rem] bg-white shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src="/images/design-mode/medlegale.jpg.jpeg"
-                  alt="Consulenza di Medicina Legale con il Dott. Maico Battistello"
-                  fill
-                  priority
-                  className="object-contain"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
+            {/* Foto fissa, senza animazione: compare subito e riempie tutto il riquadro */}
+            <figure className="relative aspect-[4/3] w-full overflow-hidden rounded-[1.5rem] shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
+              <Image
+                src="/images/design-mode/medlegale.jpg.jpeg"
+                alt="Consulenza di Medicina Legale con il Dott. Maico Battistello"
+                fill
+                priority
+                className="object-cover object-[center_30%]"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </figure>
           </div>
         </section>
@@ -231,9 +229,9 @@ export default function LegalMedicinePage() {
         </section>
       </div>
 
-      <section className="bg-white">
+      <div className="bg-white">
         <ContactForm />
-      </section>
+      </div>
     </div>
   )
 }
