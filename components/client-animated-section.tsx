@@ -57,7 +57,7 @@ export function HeroSection({ className }: HeroSectionProps) {
                 size="lg"
                 className="w-full sm:w-auto h-12 rounded-full px-8 border border-white/70 bg-white/10 text-white hover:bg-white hover:text-[#0066CC] font-semibold text-base sm:text-lg backdrop-blur-sm"
               >
-                <Link href="/ozone-osteopathy">Scopri l'approccio integrato</Link>
+                <Link href="/ozonoterapia-osteopatia">Scopri l'approccio integrato</Link>
               </Button>
             </div>
           </AnimatedScrollElement>
@@ -184,17 +184,17 @@ export function TreatmentsSection() {
                 {
                   title: "Approccio integrato",
                   image: "/images/homeozono.jpg",
-                  link: "/ozone-osteopathy",
+                  link: "/ozonoterapia-osteopatia",
                 },
                 {
                   title: "Osteopatia nel percorso terapeutico",
                   image: "/images/homeosteo.jpg",
-                  link: "/osteopathy",
+                  link: "/osteopatia",
                 },
                 {
                   title: "Ozonoterapia nel percorso terapeutico",
                   image: "/images/homeozonosteo.jpg",
-                  link: "/ozone-therapy",
+                  link: "/ozonoterapia",
                 },
               ]}
               showTitles={true}
@@ -223,16 +223,16 @@ export function TreatmentsSection() {
               <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
                 <div className="grid grid-cols-2 gap-x-5 md:gap-x-9">
                   {[
-                    { name: "Marostica", href: "/contatti#marostica" },
-                    { name: "Schio", href: "/contatti#schio" },
-                    { name: "Malo", href: "/contatti#malo" },
-                    { name: "Padova", href: "/contatti#padova" },
+                    { name: "Marostica", href: "/ozono-osteo-marostica" },
+                    { name: "Schio", href: "/ozono-osteo-schio" },
+                    { name: "Malo", href: "/ozono-osteo-malo" },
+                    { name: "Padova", href: "/ozono-osteo-padova" },
                   ].map((city) => (
                     <Link
                       key={city.name}
                       href={city.href}
                       className="group flex min-h-24 items-center border-b border-[#D4DFE9] py-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC] sm:min-h-28"
-                      aria-label={`Sedi e contatti a ${city.name}`}
+                      aria-label={`Ozonoterapia e Osteopatia a ${city.name}`}
                     >
                       <span className="text-xl font-medium tracking-tight text-slate-800 transition-colors group-hover:text-[#0066CC] sm:text-2xl md:text-[1.7rem]">{city.name}</span>
                     </Link>
