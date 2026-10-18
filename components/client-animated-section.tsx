@@ -203,7 +203,7 @@ export function TreatmentsSection() {
                   l&apos;elaborazione di{" "}
                   <strong>schede nutrizionali personalizzate</strong> affiancate
                   dalla <strong>nutraceutica</strong>, in base alle necessità
-                  del paziente. Facciamo un test.
+                  del paziente.
                 </p>
               </div>
             </AnimatedScrollElement>
