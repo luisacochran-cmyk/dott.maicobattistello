@@ -1,74 +1,74 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import Link from "next/link"
-import { Menu, X, Calendar } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { Menu, X, Calendar } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 interface NavbarProps {
-  onMenuToggle?: (isOpen: boolean) => void
+  onMenuToggle?: (isOpen: boolean) => void;
 }
 
 export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const menuRef = useRef<HTMLDivElement>(null)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
 
+  // Header grande in cima alla pagina, compatto quando si scorre.
+  // Si rimpicciolisce oltre i 60px e torna grande sotto i 20px:
+  // la differenza evita che "tremi" quando ci si ferma sul limite.
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+      const y = window.scrollY;
+      setIsScrolled((prev) => (prev ? y > 20 : y > 60));
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    handleScroll(); // controlla subito, ad esempio se la pagina si ricarica a metà
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        toggleMenu(false)
+        toggleMenu(false);
       }
-    }
+    };
 
     if (isMenuOpen) {
-      document.addEventListener("mousedown", handleClickOutside)
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside)
+      document.removeEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [isMenuOpen])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = (isOpen: boolean) => {
-    setIsMenuOpen(isOpen)
-    onMenuToggle(isOpen)
+    setIsMenuOpen(isOpen);
+    onMenuToggle(isOpen);
     if (isOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = ""
+      document.body.style.overflow = "";
     }
-  }
+  };
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 h-20 lg:h-24 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
           isScrolled
-            ? "bg-primary/95 backdrop-blur-md shadow-lg shadow-black/10"
-            : "bg-primary"
+            ? "h-16 lg:h-[4.5rem] bg-primary/95 backdrop-blur-md shadow-lg shadow-black/10"
+            : "h-20 lg:h-24 bg-primary"
         }`}
       >
         <div className="container relative z-10 flex h-full items-center justify-between gap-6">
-
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
@@ -76,16 +76,29 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
               alt="Dott. Maico Battistello"
               width={64}
               height={64}
-              className="h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16 object-contain"
+              className={`object-contain transition-all duration-300 ease-out ${
+                isScrolled
+                  ? "h-10 w-10 lg:h-11 lg:w-11"
+                  : "h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16"
+              }`}
               priority
               quality={100}
             />
 
             <div className="flex flex-col leading-tight">
-              <span className="text-white text-base sm:text-xl font-bold tracking-tight whitespace-nowrap">
+              <span
+                className={`text-white font-bold tracking-tight whitespace-nowrap transition-all duration-300 ease-out ${
+                  isScrolled ? "text-base sm:text-lg" : "text-base sm:text-xl"
+                }`}
+              >
                 Dott. Maico Battistello
               </span>
-              <span className="text-white/80 text-[10px] sm:text-sm font-medium whitespace-nowrap">
+              {/* La riga delle specializzazioni scompare dolcemente quando l'header è compatto */}
+              <span
+                className={`overflow-hidden text-white/80 text-[10px] sm:text-sm font-medium whitespace-nowrap transition-all duration-300 ease-out ${
+                  isScrolled ? "max-h-0 opacity-0" : "max-h-6 opacity-100"
+                }`}
+              >
                 Medico Legale | Osteopata | Ozonoterapeuta
               </span>
             </div>
@@ -133,7 +146,9 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
             {/* Pulsante Prenota: solo su schermi larghi, dove c'è spazio */}
             <Link
               href="/contatti"
-              className="hidden xl:inline-flex h-11 items-center gap-2 rounded-full bg-white px-6 font-semibold text-primary shadow-sm transition-colors hover:bg-[#F0EAE0]"
+              className={`hidden xl:inline-flex items-center gap-2 rounded-full bg-white px-6 font-semibold text-primary shadow-sm transition-all duration-300 ease-out hover:bg-[#F0EAE0] ${
+                isScrolled ? "h-10" : "h-11"
+              }`}
             >
               <Calendar className="h-4 w-4" />
               <span>Prenota</span>
@@ -161,10 +176,14 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
         }`}
       >
         <div className="relative z-10 flex justify-between items-center h-20 px-4 border-b border-white/20">
-          <Link href="/" className="flex items-center" onClick={() => toggleMenu(false)}>
+          <Link
+            href="/"
+            className="flex items-center"
+            onClick={() => toggleMenu(false)}
+          >
             <Image
               src="/images/nuovologo.png"
-              alt="Dr. Maico Battistello Logo"
+              alt="Logo Dott. Maico Battistello"
               width={260}
               height={60}
               className="h-14 w-auto"
@@ -248,5 +267,5 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
         </div>
       </div>
     </>
-  )
+  );
 }
