@@ -16,15 +16,16 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
   const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    // Header grande in cima alla pagina, compatto quando si scorre.
+    // Si rimpicciolisce oltre i 60px e torna grande sotto i 20px:
+    // la differenza evita che "tremi" quando ci si ferma sul limite.
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
+      const y = window.scrollY
+      setIsScrolled((prev) => (prev ? y > 20 : y > 60))
     }
 
-    window.addEventListener("scroll", handleScroll)
+    handleScroll()
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
@@ -60,7 +61,11 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 h-24 transition-all duration-300 backdrop-blur-sm`}>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out backdrop-blur-sm ${
+          isScrolled ? "h-16 lg:h-[4.5rem] shadow-lg shadow-black/10" : "h-24"
+        }`}
+      >
         <div
           className="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 navbar-gradient"
           style={{
@@ -76,16 +81,27 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
     alt="Dott. Maico Battistello"
     width={64}
     height={64}
-    className="h-16 w-16 object-contain"
+    className={`object-contain transition-all duration-300 ease-out ${
+      isScrolled ? "h-10 w-10 lg:h-11 lg:w-11" : "h-16 w-16"
+    }`}
     priority
     quality={100}
   />
 
   <div className="flex flex-col leading-tight">
-    <span className="text-white text-base sm:text-xl font-bold whitespace-nowrap">
+    <span
+      className={`text-white font-bold whitespace-nowrap transition-all duration-300 ease-out ${
+        isScrolled ? "text-base sm:text-lg" : "text-base sm:text-xl"
+      }`}
+    >
       Dott. Maico Battistello
     </span>
-    <span className="text-white/90 text-[9px] sm:text-sm font-medium whitespace-nowrap">
+    {/* La riga delle specializzazioni scompare dolcemente quando l'header è compatto */}
+    <span
+      className={`overflow-hidden text-white/90 text-[9px] sm:text-sm font-medium whitespace-nowrap transition-all duration-300 ease-out ${
+        isScrolled ? "max-h-0 opacity-0" : "max-h-6 opacity-100"
+      }`}
+    >
       Medico Legale | Osteopata | Ozonoterapeuta
     </span>
   </div>
@@ -155,7 +171,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
           <Link href="/" className="flex items-center" onClick={() => toggleMenu(false)}>
             <Image
               src="/images/nuovologo.png"
-              alt="Dr. Maico Battistello Logo"
+              alt="Logo Dott. Maico Battistello"
               width={260}
               height={60}
               className="h-14 w-auto"
