@@ -200,9 +200,14 @@ export default function OzoneTherapyPage() {
           <p className="text-xs uppercase tracking-[0.24em] font-semibold text-[#0066CC] mb-4">
             Approfondimenti
           </p>
-          <h2 className="text-[2rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-8">
+          <h2 className="text-[2rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-4">
             Somministrazione, indicazioni e controindicazioni<span className="text-[#0066CC]">.</span>
           </h2>
+          <p className="mb-8 max-w-3xl text-lg leading-relaxed text-slate-600">
+            Per chi desidera approfondire: metodi di somministrazione, indicazioni
+            cliniche suddivise per livello di evidenza scientifica (A, B, C) e
+            controindicazioni.
+          </p>
 
           <div className="border-t border-slate-300/80">
             {/* METODI DI SOMMINISTRAZIONE */}
