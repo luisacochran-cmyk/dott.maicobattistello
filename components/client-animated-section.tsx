@@ -362,10 +362,10 @@ export function AdvancedTherapySection() {
               aria-hidden="true"
             />
             <p className="mx-auto max-w-2xl text-lg md:text-xl leading-relaxed text-slate-600">
-              Dolore, infiammazione e limitazione funzionale possono presentarsi
-              in modo diverso da persona a persona. La visita permette di
-              valutare il quadro clinico e orientare il percorso terapeutico in
-              modo mirato.
+              Lo stesso dolore, alla schiena, al collo o a un&apos;articolazione,
+              può avere cause diverse da persona a persona. Il primo passo è
+              capire da dove nasce il problema, per poter scegliere il percorso
+              giusto.
             </p>
             <Link
               href="/contatti"
