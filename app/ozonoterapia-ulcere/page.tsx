@@ -53,6 +53,7 @@ export default function OzonoterapiaUlcerePage() {
     >
       <LandingSezione etichetta="Indicazioni" titolo="Per quali ulcere">
         <LandingElenco
+          unaColonna
           voci={[
             "Ulcere venose",
             "Ulcere del piede diabetico",

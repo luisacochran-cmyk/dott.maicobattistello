@@ -136,10 +136,14 @@ export function LandingSezione({
   )
 }
 
-/* Elenco con pallini blu, su due colonne da computer */
-export function LandingElenco({ voci }: { voci: string[] }) {
+/* Elenco con pallini blu: su due colonne da computer, oppure su una sola con unaColonna */
+export function LandingElenco({ voci, unaColonna = false }: { voci: string[]; unaColonna?: boolean }) {
   return (
-    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-3 text-base md:text-lg leading-relaxed text-slate-700">
+    <ul
+      className={`grid grid-cols-1 ${
+        unaColonna ? "" : "md:grid-cols-2"
+      } gap-x-10 gap-y-3 text-base md:text-lg leading-relaxed text-slate-700`}
+    >
       {voci.map((voce) => (
         <li key={voce} className="flex items-start gap-3">
           <span aria-hidden="true" className="mt-[0.65em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60" />
