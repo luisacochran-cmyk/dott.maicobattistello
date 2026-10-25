@@ -245,7 +245,6 @@ export default function QuadrantCarousel({
                     src={items[itemIndex].image || "/placeholder.png"}
                     alt={items[itemIndex].title}
                     fill
-                    unoptimized
                     className={`transition-transform duration-500 ${
                       items[itemIndex].image.includes("medlegale.jpg")
                         ? "object-cover object-[70%_center] md:object-bottom"
@@ -259,8 +258,7 @@ export default function QuadrantCarousel({
                                 ? "object-cover object-bottom"
                                 : "object-cover"
                     }`}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    priority={isCurrent}
+                    sizes="(max-width: 768px) 90vw, 50vw"
                   />
                   {/* Enhanced overlay gradient for depth effect */}
                   <div

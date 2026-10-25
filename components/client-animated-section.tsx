@@ -23,6 +23,7 @@ export function HeroSection({ className }: HeroSectionProps) {
         alt=""
         fill
         priority
+        quality={60}
         sizes="100vw"
         className="-z-10 object-cover md:hidden"
       />

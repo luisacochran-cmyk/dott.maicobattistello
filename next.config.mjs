@@ -148,7 +148,7 @@ const nextConfig = {
     // Ottimizzazione attiva: Next.js ridimensiona le foto e le converte in WebP/AVIF
     // in base al dispositivo, invece di inviare sempre l'originale a piena grandezza.
     domains: ['hebbkx1anhila5yf.public.blob.vercel-storage.com', 'dottmaicobattistello.it'],
-    formats: ['image/webp', 'image/avif'],
+    formats: ['image/avif', 'image/webp'],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
