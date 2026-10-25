@@ -237,6 +237,29 @@ export default function LegalMedicinePage() {
             </div>
           </div>
         </section>
+
+        {/* Tariffario: rimando esterno alla pagina SISMLA (non al PDF, che cambia indirizzo a ogni versione) */}
+        <section className="pb-12 md:pb-16">
+          <div className="container mx-auto max-w-6xl px-4">
+            <p className={etichetta}>Onorari</p>
+            <h2 className={`${titoloH2} mb-4`}>
+              Tariffario<span className="text-[#0066CC]">.</span>
+            </h2>
+            <p className={`${testo} mb-7 max-w-3xl`}>
+              Come riferimento per gli onorari si utilizza il{" "}
+              <strong>tariffario indicativo SISMLA</strong> (Sindacato Italiano
+              Specialisti di Medicina Legale e delle Assicurazioni).
+            </p>
+            <a
+              href="https://www.sismla.it/servizi/tariffario-sismla-2024/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-[#0066CC] px-7 text-base font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
+            >
+              Consulta il tariffario
+            </a>
+          </div>
+        </section>
       </div>
 
       <div className="bg-white">
