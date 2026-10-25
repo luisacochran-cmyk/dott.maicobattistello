@@ -95,9 +95,8 @@
 /* Mobile-specific background image and positioning */
 @media (max-width: 768px) {
   .hero-section {
-    background-image: url("/images/homemobile3.jpg");
-    background-position: center;
-    background-size: cover;
+    /* Su telefono la foto è un <Image> ottimizzato in HeroSection (caricato subito) */
+    background-image: none;
   }
 }
 

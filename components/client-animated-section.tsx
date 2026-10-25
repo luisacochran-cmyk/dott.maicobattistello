@@ -15,8 +15,17 @@ interface HeroSectionProps {
 export function HeroSection({ className }: HeroSectionProps) {
   return (
     <section
-      className={`hero-section hero-section-mobile flex items-center pt-28 md:pt-32 pb-10 md:pb-16 ${className}`}
+      className={`hero-section hero-section-mobile isolate flex items-center pt-28 md:pt-32 pb-10 md:pb-16 ${className}`}
     >
+      {/* Foto della home su telefono: ottimizzata e caricata per prima (velocità) */}
+      <Image
+        src="/images/homemobile3.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="-z-10 object-cover md:hidden"
+      />
       <div className="container">
         <div className="max-w-xl md:max-w-2xl mx-auto md:mx-0 md:ml-[10%] lg:ml-[5%] text-left">
           <h1 className="grid text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight mb-5">
