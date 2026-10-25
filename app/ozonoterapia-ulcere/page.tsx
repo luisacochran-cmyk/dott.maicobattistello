@@ -3,8 +3,6 @@ import {
   LandingPage,
   LandingSezione,
   LandingElenco,
-  LandingRiquadro,
-  LandingNota,
 } from "@/components/landing-layout"
 
 // BOZZA in attesa di revisione del dottore: la pagina non viene indicizzata da Google.
@@ -46,8 +44,6 @@ export default function OzonoterapiaUlcerePage() {
       }
       invito={{
         titolo: "Valutazione per ulcere cutanee",
-        testo:
-          "Il primo passo è una visita con il Dott. Maico Battistello, per valutare l'ulcera e impostare il percorso.",
         pulsante: "Prenota una visita",
       }}
     >
@@ -75,19 +71,7 @@ export default function OzonoterapiaUlcerePage() {
         </p>
       </LandingSezione>
 
-      <LandingRiquadro etichetta="Le sedi" titolo="Dove si esegue">
-        <p>
-          Centro Medico Medicalis, Via Sile 40, Monte di Malo (VI).
-          <br />
-          Clinica Cittàgiardino, Via F. Piccolo 6, Padova.
-        </p>
-      </LandingRiquadro>
-
-      <LandingSezione etichetta="Foto" titolo="Il trattamento in immagini">
-        <LandingNota>
-          Spazio riservato alle foto, da inserire dopo la scelta con il dottore.
-        </LandingNota>
-      </LandingSezione>
+      {/* Da aggiungere più avanti: le sedi (quando confermate) e le foto del trattamento */}
     </LandingPage>
   )
 }
