@@ -201,10 +201,10 @@ export function TreatmentsSection() {
                 <p className="border-l-2 border-[#0066CC]/30 pl-5">
                   Il percorso comprende anche l&apos;
                   <strong>attenzione all&apos;alimentazione</strong>, con
-                  l&apos;elaborazione di{" "}
-                  <strong>schede nutrizionali personalizzate</strong> affiancate
-                  dalla <strong>nutraceutica</strong>, in base alle necessità
-                  del paziente.
+                  l&apos;elaborazione di un{" "}
+                  <strong>regime alimentare personalizzato</strong>, affiancato
+                  dalla <strong>nutraceutica</strong> in base alle necessità
+                  cliniche del paziente.
                 </p>
               </div>
             </AnimatedScrollElement>
