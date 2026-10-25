@@ -93,7 +93,7 @@
 }
 
 /* Mobile-specific background image and positioning */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-section {
     /* Su telefono la foto è un <Image> ottimizzato in HeroSection (caricato subito) */
     background-image: none;
