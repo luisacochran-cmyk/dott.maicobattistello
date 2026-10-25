@@ -238,7 +238,7 @@ export default function LegalMedicinePage() {
           </div>
         </section>
 
-        {/* Tariffario: rimando esterno alla pagina SISMLA (non al PDF, che cambia indirizzo a ogni versione) */}
+        {/* Tariffario: link diretto al PDF completo SISMLA 2023. Se esce una versione nuova, aggiornare il link (pagina: sismla.it/servizi/tariffario-sismla-2024/) */}
         <section className="pb-12 md:pb-16">
           <div className="container mx-auto max-w-6xl px-4">
             <p className={etichetta}>Onorari</p>
@@ -251,7 +251,7 @@ export default function LegalMedicinePage() {
               Specialisti di Medicina Legale e delle Assicurazioni).
             </p>
             <a
-              href="https://www.sismla.it/servizi/tariffario-sismla-2024/"
+              href="https://www.sismla.it/wp-content/uploads/2023/02/Tariffario-SISMLA-2023.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex h-12 items-center justify-center rounded-full bg-[#0066CC] px-7 text-base font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
