@@ -76,7 +76,7 @@ export function ConditionsSection() {
     {
       title: "Colonna e schiena",
       items: [
-        "Cervicalgia",
+        "Cervicalgia e cervicobrachialgia",
         "Lombalgia",
         "Sciatalgia",
         "Ernia e protrusione discale",
@@ -95,9 +95,10 @@ export function ConditionsSection() {
     {
       title: "Dolore e condizioni persistenti",
       items: [
-        "Infiammazione cronica",
         "Fibromialgia",
+        "Sindrome da fatica cronica (CFS)",
         "Stanchezza persistente e riduzione della vitalità",
+        "Infiammazione cronica di basso grado",
       ],
     },
   ];
