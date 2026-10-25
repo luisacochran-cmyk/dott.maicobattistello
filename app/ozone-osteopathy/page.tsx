@@ -62,10 +62,11 @@ export default function OzoneOsteopathyPage() {
                 <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
                   <p>
                     <strong>L&apos;ossigeno-ozonoterapia e l&apos;osteopatia</strong>{" "}
-                    sono due discipline differenti. Nella pratica clinica del
-                    Dott. Maico Battistello diventano un <strong>approccio integrato</strong>:
-                    non l&apos;una o l&apos;altra, ma due metodiche che si completano
-                    all&apos;interno di un <strong>unico percorso</strong>.
+                    sono due discipline <strong>differenti e sinergiche</strong>. Nella
+                    pratica clinica del Dott. Maico Battistello diventano un{" "}
+                    <strong>approccio unico e integrato</strong>: non l&apos;una o
+                    l&apos;altra, ma due metodiche che si completano all&apos;interno
+                    della <strong>stessa seduta terapeutica</strong>.
                   </p>
                   <p>
                     L&apos;ozonoterapia può intervenire sulla componente{" "}
