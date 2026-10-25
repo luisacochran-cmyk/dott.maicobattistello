@@ -117,22 +117,22 @@ export default function LegalMedicinePage() {
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
               <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
-                <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Civile (RC)</h3>
-                <Elenco>
-                  <Punto>Valutazione del <strong>danno biologico temporaneo e permanente</strong></Punto>
-                  <Punto>Analisi della <strong>documentazione clinica</strong></Punto>
-                  <Punto>Redazione di <strong>relazioni medico-legali</strong> per contenziosi civili e stragiudiziali</Punto>
-                  <Punto>Supporto nella definizione di <strong>accordi transattivi</strong></Punto>
-                </Elenco>
-              </article>
-
-              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
                 <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Civile Auto (RCA)</h3>
                 <Elenco>
                   <Punto>Perizie medico-legali per <strong>sinistri stradali</strong></Punto>
                   <Punto>Valutazione della <strong>dinamica lesiva</strong> e delle menomazioni conseguenti</Punto>
                   <Punto>Verifica della <strong>congruità delle cure, dei tempi di guarigione</strong> e degli accertamenti eseguiti</Punto>
                   <Punto>Relazioni chiare e documentabili per compagnie, legali e privati</Punto>
+                </Elenco>
+              </article>
+
+              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+                <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Civile (RC)</h3>
+                <Elenco>
+                  <Punto>Valutazione del <strong>danno biologico temporaneo e permanente</strong></Punto>
+                  <Punto>Analisi della <strong>documentazione clinica</strong></Punto>
+                  <Punto>Redazione di <strong>relazioni medico-legali</strong> per contenziosi civili e stragiudiziali</Punto>
+                  <Punto>Supporto nella definizione di <strong>accordi transattivi</strong></Punto>
                 </Elenco>
               </article>
 
