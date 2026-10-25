@@ -14,11 +14,21 @@ const roboto = Roboto({
   display: "swap",
 })
 
+const titoloSito =
+  "Dott. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova"
+const descrizioneSito =
+  "Dott. Maico Battistello, medico chirurgo specialista in Medicina Legale: ozonoterapia e osteopatia in un unico percorso integrato a Marostica, Schio, Malo e Padova."
+const immagineSito =
+  "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png"
+
+// Valori di riserva per tutto il sito.
+// Ogni pagina dichiara il proprio titolo e il proprio indirizzo (canonical):
+// qui il canonical NON va messo, altrimenti tutte le pagine senza canonical
+// direbbero a Google di essere una copia della home.
 export const metadata: Metadata = {
- title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova",
-  description:
-    "Dr. Maico Battistello - Specialista in Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova. Medicina Legale e trattamenti avanzati.",
-  generator: "v0.dev",
+  metadataBase: new URL("https://dottmaicobattistello.it"),
+  title: titoloSito,
+  description: descrizioneSito,
   verification: {
     google: "YCmYA_tPmgbNyc95YLxhBNEsiUExky3vTif5k2uJzwY",
   },
@@ -34,18 +44,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-   title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova",
-    description:
-     "Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova. Prenota la tua visita.",
-    url: "https://dottmaicobattistello.it",
-    siteName: "Dr. Maico Battistello",
+    title: titoloSito,
+    description: descrizioneSito,
+    siteName: "Dott. Maico Battistello",
     images: [
       {
-       url: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
-        width: 1200,
-        height: 630,
-       alt: "Dr. Maico Battistello - Ritratto ufficiale",
-        type: "image/png",
+        url: immagineSito,
+        alt: "Dott. Maico Battistello",
       },
     ],
     locale: "it_IT",
@@ -53,26 +58,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-   title: "Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova",
-    description:
-     "Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova. Prenota la tua visita.",
-    images: ["https://dottmaicobattistello.it/images/nuovologo.png"],
-    creator: "@drmaicobt",
-    site: "@drmaicobt",
-  },
-  alternates: {
-    canonical: "https://dottmaicobattistello.it",
+    title: titoloSito,
+    description: descrizioneSito,
+    images: [immagineSito],
   },
   other: {
     "format-detection": "telephone=no",
     "mobile-web-app-capable": "yes",
     "apple-mobile-web-app-capable": "yes",
-    "apple-mobile-web-app-status-bar-style": "default",
-    "theme-color": "#1e40af",
-    "msapplication-TileColor": "#1e40af",
+    "theme-color": "#0066CC",
+    "msapplication-TileColor": "#0066CC",
     "msapplication-config": "/browserconfig.xml",
     referrer: "origin-when-cross-origin",
-    viewport: "width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes",
   },
 }
 
@@ -89,10 +86,8 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover"
         />
 
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="Dr. Battistello" />
+        <meta name="apple-mobile-web-app-title" content="Dott. Battistello" />
 
         <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
         <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
@@ -101,35 +96,6 @@ export default function RootLayout({
         <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
 
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
-        <meta property="og:site_name" content="Dr. Maico Battistello" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="it_IT" />
-        <meta property="og:url" content="https://dottmaicobattistello.it" />
-       <meta property="og:title" content="Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova" />
-        <meta
-          property="og:description"
-  content="Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova. Prenota la tua visita."
-        />
-        <meta property="og:image" content="https://dottmaicobattistello.it/images/nuovologo.png" />
-        <meta property="og:image:secure_url" content="https://dottmaicobattistello.it/images/nuovologo.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Dr. Maico Battistello - Specialista in Ozonoterapia e Osteopatia" />
-        <meta property="og:image:type" content="image/png" />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@drmaicobt" />
-        <meta name="twitter:creator" content="@drmaicobt" />
-       <meta name="twitter:title" content="Dr. Maico Battistello - Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova" />
-        <meta
-          name="twitter:description"
-        content="Specialista in Medicina Legale, Ozonoterapia e Osteopatia a Marostica, Schio, Malo e Padova. Prenota la tua visita."
-        />
-        <meta name="twitter:image" content="https://dottmaicobattistello.it/images/nuovologo.png" />
-
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
@@ -145,7 +111,6 @@ export default function RootLayout({
 
         <link rel="manifest" href="/manifest.json" />
 
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -153,9 +118,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
               "@id": "https://dottmaicobattistello.it/#organization",
-              name: "Dr. Maico Battistello",
-              alternateName: "Dott. Maico Battistello",
-              description: "Specialista in Ozonoterapia, Osteopatia e Medicina Legale",
+              name: "Dott. Maico Battistello",
+              alternateName: "Dottor Maico Battistello",
+              description: "Specialista in Medicina Legale, Ozonoterapia e Osteopatia",
               url: "https://dottmaicobattistello.it",
               telephone: "+393487383372",
               email: "maico.battistello@gmail.com",
@@ -174,56 +139,22 @@ export default function RootLayout({
               },
               medicalSpecialty: ["Osteopatia", "Ozonoterapia", "Medicina Legale"],
               priceRange: "€€",
-             image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
+              image: immagineSito,
               logo: "https://dottmaicobattistello.it/images/nuovologo.png",
-             sameAs: [
-  "https://dottmaicobattistello.it",
-  "https://www.facebook.com/maicobattistello",
-],
-              openingHours: "Mo-Fr 09:00-18:00",
+              sameAs: ["https://www.facebook.com/maicobattistello"],
               areaServed: [
-                {
-                  "@type": "City",
-                  name: "Padova",
-                },
-                {
-                  "@type": "City",
-                  name: "Marostica",
-                },
-                {
-                  "@type": "City",
-                  name: "Schio",
-                },
-                {
-                  "@type": "City",
-                  name: "Malo",
-                },
+                { "@type": "City", name: "Padova" },
+                { "@type": "City", name: "Marostica" },
+                { "@type": "City", name: "Schio" },
+                { "@type": "City", name: "Malo" },
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
                 name: "Servizi Medici",
                 itemListElement: [
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "MedicalProcedure",
-                      name: "Ozonoterapia",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "MedicalProcedure",
-                      name: "Osteopatia",
-                    },
-                  },
-                  {
-                    "@type": "Offer",
-                    itemOffered: {
-                      "@type": "MedicalProcedure",
-                      name: "Medicina Legale",
-                    },
-                  },
+                  { "@type": "Offer", itemOffered: { "@type": "MedicalProcedure", name: "Ozonoterapia" } },
+                  { "@type": "Offer", itemOffered: { "@type": "MedicalProcedure", name: "Osteopatia" } },
+                  { "@type": "Offer", itemOffered: { "@type": "MedicalProcedure", name: "Medicina Legale" } },
                 ],
               },
             }),
@@ -237,31 +168,25 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "@id": "https://dottmaicobattistello.it/#person",
-              name: "Dr. Maico Battistello",
+              name: "Dott. Maico Battistello",
               givenName: "Maico",
               familyName: "Battistello",
-              honorificPrefix: "Dr.",
+              honorificPrefix: "Dott.",
               jobTitle: "Medico Chirurgo",
-              description: "Specialista in Ozonoterapia, Osteopatia e Medicina Legale",
+              description: "Specialista in Medicina Legale, Ozonoterapia e Osteopatia",
               url: "https://dottmaicobattistello.it",
-              image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
+              image: immagineSito,
               telephone: "+393487383372",
               email: "maico.battistello@gmail.com",
               worksFor: {
                 "@id": "https://dottmaicobattistello.it/#organization",
               },
               alumniOf: [
-                {
-                  "@type": "EducationalOrganization",
-                  name: "Università di Padova",
-                },
-                {
-                  "@type": "EducationalOrganization",
-                  name: "Università di Parma",
-                },
+                { "@type": "EducationalOrganization", name: "Università di Padova" },
+                { "@type": "EducationalOrganization", name: "Università di Parma" },
               ],
               knowsAbout: ["Osteopatia", "Ozonoterapia", "Medicina Legale", "Pet Therapy"],
-              sameAs: ["https://dottmaicobattistello.it"],
+              sameAs: ["https://www.facebook.com/maicobattistello"],
             }),
           }}
         />
@@ -274,18 +199,23 @@ export default function RootLayout({
                 __html: `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-        page_title: document.title,
-        page_location: window.location.href,
+      var consenso = null;
+      try { consenso = localStorage.getItem('cookie-consent'); } catch (e) {}
+      gtag('consent', 'default', {
+        analytics_storage: consenso === 'accepted' ? 'granted' : 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
       });
+      gtag('js', new Date());
+      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: false });
     `,
               }}
             />
           </>
         )}
       </head>
-            <body className={roboto.className}>
+      <body className={roboto.className}>
         <Navbar />
         <main>{children}</main>
         <Footer />

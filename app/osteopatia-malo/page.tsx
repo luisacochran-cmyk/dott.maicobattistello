@@ -1,9 +1,11 @@
 import type { Metadata } from "next"
-import Breadcrumb from "@/components/breadcrumb"
-import ContactForm from "@/components/contact-form"
-import QuadrantCarousel from "@/components/quadrant-carousel"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
-
+import {
+  LandingPage,
+  LandingSezione,
+  LandingNota,
+  LandingLink,
+} from "@/components/landing-layout"
 
 const city = cities.find((c) => c.slug === "malo")!
 const service = services.find((s) => s.slug === "osteopatia")!
@@ -24,105 +26,69 @@ export const metadata: Metadata = {
 
 export default function OsteopatiaMaloPage() {
   return (
-    <div className="pt-20">
-      {/* Breadcrumb */}
-      <div className="w-full bg-secondary">
-        <Breadcrumb
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Osteopatia", href: "/osteopathy" },
-            { label: `${city.name}`, href: `/osteopatia-${city.slug}` },
-          ]}
-        />
-      </div>
+    <LandingPage
+      breadcrumb={[
+        { label: "Home", href: "/" },
+        { label: "Osteopatia", href: "/osteopatia" },
+        { label: city.name, href: `/osteopatia-${city.slug}` },
+      ]}
+      etichetta={`Osteopatia · ${city.name}`}
+      titolo={seoData.h1}
+      intro={
+        <>
+          <p>
+            Nell&apos;area di <strong>Malo</strong> il Dott. Maico Battistello,
+            medico chirurgo e osteopata, riceve presso il{" "}
+            <strong>Centro Medico Medicalis</strong>, in Via Sile 40 a Monte
+            di Malo, a pochi minuti dal centro di Malo.
+          </p>
+          <p>
+            Qui esegue <strong>trattamenti osteopatici e manipolativi</strong>{" "}
+            per cervicalgia, lombalgia, dolori articolari e limitazioni del
+            movimento. Ogni trattamento parte da una valutazione della
+            postura e della mobilità, che non si ferma al punto in cui si
+            sente dolore ma considera anche i distretti collegati.
+          </p>
+          <p>
+            L&apos;obiettivo è favorire il recupero della{" "}
+            <strong>mobilità articolare</strong> e della{" "}
+            <strong>funzionalità</strong>, con un percorso costruito sulla
+            singola persona.
+          </p>
+        </>
+      }
+      carosello={[
+        { title: "Trattamento Osteopatico", image: "/images/nuovaosteo1.jpg", link: "/osteopatia" },
+        { title: "Manipolazione Cranio-Sacrale", image: "/images/nuovaosteo2.jpg", link: "/osteopatia" },
+        { title: "Trattamento Viscerale", image: "/images/nuovaosteo3.jpg", link: "/osteopatia" },
+        { title: "Osteopatia Cervicale", image: "/images/osteopatiacervicale.jpg", link: "/osteopatia" },
+      ]}
+      datiStrutturati={seoData.structuredData}
+    >
+      <LandingSezione
+        etichetta="Area geografica"
+        titolo="Un riferimento per Malo e l'Alto Vicentino"
+      >
+        <p>
+          La sede di Monte di Malo è comoda per chi vive a{" "}
+          <strong>Malo, Isola Vicentina, Marano Vicentino, Thiene e Villaverla</strong>,
+          oltre che negli altri comuni dell&apos;Alto Vicentino. È disponibile
+          il parcheggio presso il centro medico.
+        </p>
+      </LandingSezione>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose prose-lg max-w-none leading-relaxed">
-          <h1 className="text-3xl font-bold mb-6">{seoData.h1}</h1>
-
-          {/* INTRODUZIONE */}
-          <div className="text-xl leading-relaxed mb-8 space-y-5">
-            <p>
-              L&apos;<strong>Osteopatia</strong> è una disciplina manuale che
-              considera la persona nella sua globalità, con l&apos;obiettivo di
-              individuare e trattare le alterazioni funzionali che possono
-              influire sul movimento, sulla postura e sul benessere generale.
-            </p>
-
-            <p>
-              Nell&apos;area di <strong>Malo</strong>, il Dr. Maico Battistello
-              offre <strong>trattamenti osteopatici personalizzati</strong>{" "}
-              rivolti a persone di ogni età, attraverso una valutazione accurata
-              delle problematiche muscolo-scheletriche, delle tensioni
-              posturali e delle limitazioni funzionali.
-            </p>
-
-            <p>
-              Il trattamento osteopatico può essere utile in presenza di
-              cervicalgia, lombalgia, dolori articolari, disturbi posturali e
-              problematiche legate alla mobilità, con l&apos;obiettivo di
-              favorire il recupero della <strong>funzionalità</strong>, della{" "}
-              <strong>mobilità articolare</strong> e del benessere della persona.
-            </p>
-          </div>
-
-          {/* AREA GEOGRAFICA */}
-          <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">
-              Un riferimento per Malo e l&apos;Alto Vicentino
-            </h2>
-
-            <p className="text-xl leading-relaxed">
-              L&apos;attività nell&apos;area di <strong>Malo</strong> è un
-              riferimento anche per chi proviene da{" "}
-              <strong>
-                Isola Vicentina, Marano Vicentino, Thiene e Villaverla
-              </strong>
-              , oltre che dagli altri comuni dell&apos;Alto Vicentino.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Image Carousel Section */}
-      <div className="my-12">
-        <QuadrantCarousel
-          items={[
-            {
-              title: "Trattamento Osteopatico",
-              image: "/images/nuovaosteo1.jpg",
-              link: `/osteopatia-${city.slug}`,
-            },
-            {
-              title: "Manipolazione Cranio-Sacrale",
-              image: "/images/nuovaosteo2.jpg",
-              link: `/osteopatia-${city.slug}`,
-            },
-            {
-              title: "Trattamento Viscerale",
-              image: "/images/nuovaosteo3.jpg",
-              link: `/osteopatia-${city.slug}`,
-            },
-            {
-              title: "Osteopatia Cervicale",
-              image: "/images/osteopatiacervicale.jpg",
-              link: `/osteopatia-${city.slug}`,
-            },
-          ]}
-        />
-      </div>
-
-      {/* Contact Form */}
-      <ContactForm />
-
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(seoData.structuredData),
-        }}
-      />
-    </div>
+      <LandingSezione etichetta="Nella stessa sede" titolo="Osteopatia e ozonoterapia, senza cambiare struttura">
+        <LandingNota>
+          A Medicalis il Dott. Maico Battistello esegue anche
+          l&apos;<strong>ossigeno-ozonoterapia</strong> e
+          l&apos;<strong>autoemoterapia</strong>. L&apos;osteopatia viene così integrata con l&apos;ozonoterapia nello stesso percorso e nella stessa sede.
+        </LandingNota>
+        <p>
+          <LandingLink href="/ozono-osteo-malo">
+            Scopri l&apos;approccio integrato a Malo
+          </LandingLink>
+        </p>
+      </LandingSezione>
+    </LandingPage>
   )
 }

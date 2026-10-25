@@ -219,7 +219,7 @@ export const services: ServiceConfig[] = [
     description:
       "Approccio integrato tra ossigeno-ozonoterapia e osteopatia, definito sulla base della valutazione clinica individuale",
     longDescription:
-      "Il Dr. Maico Battistello mette in relazione ossigeno-ozonoterapia e osteopatia quando clinicamente indicato. Le due metodiche vengono considerate all'interno di un percorso personalizzato, sulla base della valutazione complessiva della persona, del quadro clinico e delle specifiche esigenze.",
+      "Il Dott. Maico Battistello integra ossigeno-ozonoterapia e osteopatia in un unico percorso personalizzato, costruito sulla valutazione complessiva della persona, del quadro clinico e delle specifiche esigenze.",
     keywords: [
       "ozonoterapia osteopatia",
       "ossigeno ozonoterapia osteopatia",
@@ -232,7 +232,7 @@ export const services: ServiceConfig[] = [
     ],
     benefits: [
       "Valutazione complessiva della persona",
-      "Approccio integrato quando clinicamente indicato",
+      "Approccio integrato",
       "Percorso personalizzato",
       "Valutazione della componente dolorosa e funzionale",
       "Integrazione di strumenti terapeutici differenti",
@@ -292,6 +292,10 @@ export function generateLocalSEO(
 ) {
   const nearbyTownsText = city.nearbyTowns.slice(0, 5).join(", ")
 
+  // Nei titoli e negli H1 si usa "e" al posto di "+": è come le persone cercano su Google
+  const serviceLabel =
+    service.slug === "ozono-osteo" ? "Ozonoterapia e Osteopatia" : service.name
+
   const isOsteopatiaMarostica =
     service.slug === "osteopatia" && city.slug === "marostica"
 
@@ -322,41 +326,39 @@ export function generateLocalSEO(
 
   return {
     title: isOsteopatiaMarostica
-      ? "Osteopata a Marostica | Dr. Maico Battistello – Osteopatia"
+      ? "Osteopata a Marostica | Dott. Maico Battistello – Osteopatia"
       : isOsteopatiaSchio
-        ? "Osteopata a Schio | Dr. Maico Battistello – Osteopatia"
+        ? "Osteopata a Schio | Dott. Maico Battistello – Osteopatia"
         : isOsteopatiaMalo
-          ? "Osteopata a Malo | Dr. Maico Battistello – Osteopatia"
+          ? "Osteopata a Malo | Dott. Maico Battistello – Osteopatia"
           : isOsteopatiaPadova
-            ? "Osteopata a Padova | Dr. Maico Battistello – Osteopatia"
+            ? "Osteopata a Padova | Dott. Maico Battistello – Osteopatia"
             : isOzonoterapiaPadova
-              ? "Ozonoterapia a Padova | Dr. Maico Battistello"
+              ? "Ozonoterapia a Padova | Dott. Maico Battistello"
               : isOzonoterapiaMarostica
-                ? "Ozonoterapia a Marostica | Dr. Maico Battistello"
+                ? "Ozonoterapia a Marostica | Dott. Maico Battistello"
                 : isOzonoterapiaSchio
-                  ? "Ozonoterapia a Schio | Dr. Maico Battistello"
+                  ? "Ozonoterapia a Schio | Dott. Maico Battistello"
                   : isOzonoterapiaMalo
-                    ? "Ozonoterapia a Malo | Dr. Maico Battistello"
+                    ? "Ozonoterapia a Malo | Dott. Maico Battistello"
                     : isMedicinaLegalePadova
-                      ? "Medico Legale Padova | Dr. Maico Battistello"
-                      : `${service.name} a ${city.name} | Dr. Maico Battistello`,
+                      ? "Medico Legale Padova | Dott. Maico Battistello"
+                      : `${serviceLabel} a ${city.name} | Dott. Maico Battistello`,
 
-  
-description: isMedicinaLegalePadova
-  ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
-  : service.slug === "ozonoterapia"
-    ? `Ozonoterapia a ${city.name} con il Dr. Maico Battistello. Grande autoemoterapia (GAET) e piccola autoemoterapia (PAET), previa valutazione medica.`
-    : `${service.description} a ${city.name} con il Dr. Maico Battistello. ` +
-      `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
-
+    description: isMedicinaLegalePadova
+      ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
+      : service.slug === "ozonoterapia"
+        ? `Ozonoterapia a ${city.name} con il Dott. Maico Battistello. Grande autoemoterapia (GAET) e piccola autoemoterapia (PAET), previa valutazione medica.`
+        : `${service.description} a ${city.name} con il Dott. Maico Battistello. ` +
+          `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
 
     h1: isMedicinaLegalePadova
-      ? "Medico Legale a Padova – Dr. Maico Battistello"
-      : `${service.name} a ${city.name} – Dr. Maico Battistello`,
+      ? "Medico Legale a Padova – Dott. Maico Battistello"
+      : `${serviceLabel} a ${city.name} – Dott. Maico Battistello`,
 
     h2: isMedicinaLegalePadova
       ? "Consulenze e valutazioni di Medicina Legale a Padova"
-      : `${service.name} a ${city.name}`,
+      : `${serviceLabel} a ${city.name}`,
 
     canonical:
       `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
@@ -365,10 +367,10 @@ description: isMedicinaLegalePadova
       "@context": "https://schema.org",
       // A Padova per medicina legale descriviamo il professionista, non una sede autonoma.
       "@type": isMedicinaLegalePadova ? "Physician" : ["MedicalBusiness", "LocalBusiness"],
-      name: `Dr. Maico Battistello - ${service.name} ${city.name}`,
-     image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
+      name: `Dott. Maico Battistello - ${serviceLabel} ${city.name}`,
+      image: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
       description:
-        `${service.name} a ${city.name} con il Dr. Maico Battistello`,
+        `${serviceLabel} a ${city.name} con il Dott. Maico Battistello`,
 
       ...(!isMedicinaLegalePadova ? {
         address: {
@@ -387,7 +389,7 @@ description: isMedicinaLegalePadova
                     ? "36015"
                     : "",
         },
-  
+
         geo: {
           "@type": "GeoCoordinates",
           latitude: city.coordinates.lat,
@@ -406,7 +408,7 @@ description: isMedicinaLegalePadova
         })),
       ],
 
-      medicalSpecialty: [service.name],
+      medicalSpecialty: [serviceLabel],
 
       priceRange: "€€",
 
@@ -415,15 +417,14 @@ description: isMedicinaLegalePadova
       url:
         `https://dottmaicobattistello.it/${service.slug}-${city.slug}`,
 
+      // Solo i profili che esistono davvero. Instagram e LinkedIn da aggiungere quando saranno creati.
       sameAs: [
-        "https://www.facebook.com/drmaicobaattistello",
-        "https://www.instagram.com/drmaicobaattistello",
-        "https://www.linkedin.com/in/maico-battistello",
+        "https://www.facebook.com/maicobattistello",
       ],
 
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: `Servizi di ${service.name}`,
+        name: `Servizi di ${serviceLabel}`,
         itemListElement: service.conditions.map((condition) => ({
           "@type": "Offer",
           itemOffered: {
@@ -434,9 +435,9 @@ description: isMedicinaLegalePadova
             name:
               service.name === "Medicina Legale"
                 ? `Consulenza ${condition}`
-                : `${service.name} - ${condition}`,
+                : `${serviceLabel} - ${condition}`,
             description:
-              `${service.name} per ${condition} a ${city.name}`,
+              `${serviceLabel} per ${condition} a ${city.name}`,
           },
         })),
       },

@@ -1,4 +1,10 @@
+import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
+export const metadata: Metadata = {
+  title: "Cookie Policy | Dott. Maico Battistello",
+  alternates: { canonical: "https://dottmaicobattistello.it/cookie-policy" },
+}
+
 
 export default function CookiePolicyPage() {
   return (
@@ -15,7 +21,7 @@ export default function CookiePolicyPage() {
           <h1 className="text-3xl font-bold mb-6">Cookie Policy</h1>
 
           <p className="text-lg mb-6">
-            Questa Cookie Policy spiega cosa sono i cookie e come vengono utilizzati sul sito web del Dr. Maico
+            Questa Cookie Policy spiega cosa sono i cookie e come vengono utilizzati sul sito web del Dott. Maico
             Battistello. La preghiamo di leggere attentamente questa policy per comprendere come trattiamo i suoi dati.
           </p>
 

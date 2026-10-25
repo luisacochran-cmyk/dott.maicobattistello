@@ -27,15 +27,20 @@ export default function CookieBanner() {
     localStorage.setItem("cookie-consent", "accepted")
     setIsVisible(false)
 
-    // Here you would typically initialize analytics or other cookie-dependent services
-    // For example: initializeAnalytics()
+    // Attiva i cookie di Google Analytics solo dopo il consenso
+    if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+      ;(window as any).gtag("consent", "update", { analytics_storage: "granted" })
+    }
   }
 
   const declineCookies = () => {
     localStorage.setItem("cookie-consent", "declined")
     setIsVisible(false)
 
-    // Here you would ensure no non-essential cookies are set
+    // Google Analytics resta senza cookie (consenso negato)
+    if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+      ;(window as any).gtag("consent", "update", { analytics_storage: "denied" })
+    }
   }
 
   const closeBanner = () => {

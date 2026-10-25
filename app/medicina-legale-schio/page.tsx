@@ -1,12 +1,19 @@
+import type { Metadata } from "next"
 import Link from "next/link"
-import Breadcrumb from "@/components/breadcrumb"
 import { cities, services, generateLocalSEO } from "@/lib/seo-config"
+import {
+  LandingPage,
+  LandingSezione,
+  LandingElenco,
+  LandingRiquadro,
+  LandingFaq,
+} from "@/components/landing-layout"
 
 const city = cities.find((c) => c.slug === "schio")!
 const service = services.find((s) => s.slug === "medicina-legale")!
 const seoData = generateLocalSEO(service, city)
 
-export const metadata = {
+export const metadata: Metadata = {
   title: seoData.title,
   description: seoData.description,
   alternates: {
@@ -14,316 +21,129 @@ export const metadata = {
   },
 }
 
+const stileLink =
+  "font-semibold text-[#0066CC] underline decoration-[#0066CC]/30 underline-offset-4 hover:decoration-[#0066CC]"
+
 export default function MedicinaLegaleSchioPage() {
   return (
-    <div className="pt-20">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(seoData.structuredData),
-        }}
-      />
+    <LandingPage
+      breadcrumb={[
+        { label: "Home", href: "/" },
+        { label: "Medicina Legale", href: "/medicina-legale" },
+        { label: `Medicina Legale a ${city.name}`, href: `/medicina-legale-${city.slug}` },
+      ]}
+      etichetta={`Medicina Legale · ${city.name}`}
+      titolo={seoData.h1}
+      intro={
+        <>
+          <p>
+            A Schio il Dott. Maico Battistello, specialista in Medicina Legale,
+            riceve presso il Centro Medico MET, punto di riferimento per chi
+            vive nell&apos;Alto Vicentino.
+          </p>
+          <p>
+            Si rivolgono a lui privati, studi legali e agenzie assicurative
+            di Schio e dei comuni vicini, come Santorso, Thiene e Piovene
+            Rocchette, per valutazioni dopo incidenti, infortuni, anche sul
+            lavoro, e casi di responsabilità sanitaria.
+          </p>
+        </>
+      }
+      invito={{
+        titolo: `Consulenza di Medicina Legale a ${city.name}`,
+        testo:
+          "Per fissare una consulenza a Schio, o per sapere quale documentazione serve nel tuo caso, è possibile contattare direttamente il Dott. Maico Battistello.",
+        pulsante: "Richiedi una consulenza",
+      }}
+      datiStrutturati={seoData.structuredData}
+    >
+      <LandingRiquadro etichetta="La sede" titolo="Dove riceve a Schio">
+        <p>
+          <strong>Centro Medico MET, Via L. Muratori 1/A, Schio (VI).</strong>
+        </p>
+        <p>
+          Di norma il dottore è a Schio il <strong>mercoledì pomeriggio</strong>,
+          su appuntamento. Gli orari vengono concordati al momento della
+          prenotazione. È disponibile il parcheggio presso il centro medico.
+        </p>
+      </LandingRiquadro>
 
-      <Breadcrumb
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Medicina Legale", href: "/legal-medicine" },
+      <LandingSezione etichetta="Infortuni" titolo="Dopo un infortunio, anche sul lavoro">
+        <p>
+          Un infortunio può lasciare conseguenze che non si vedono subito:
+          dolore che persiste, movimenti limitati, difficoltà a riprendere il
+          proprio lavoro. Una valutazione medico-legale aiuta a capire quali
+          postumi sono documentabili e come vanno descritti, sia per una
+          polizza infortuni sia in caso di responsabilità di terzi.
+        </p>
+        <p>
+          Prima ci si muove, più è semplice ricostruire con precisione il
+          percorso di cura: per questo conviene conservare fin dall&apos;inizio
+          referti, certificati e ogni documento relativo all&apos;evento.
+        </p>
+      </LandingSezione>
+
+      <LandingSezione etichetta="A chi si rivolge" titolo="Privati, avvocati e assicurazioni">
+        <LandingElenco
+          voci={[
+            "Privati che vogliono una valutazione indipendente del proprio caso, anche senza essere già seguiti da un avvocato",
+            "Pazienti con dubbi sulle cure ricevute, per una prima lettura della documentazione clinica",
+            "Studi legali dell'Alto Vicentino che cercano un consulente tecnico di parte (CTP)",
+            "Compagnie e agenzie assicurative che richiedono visite medico-legali",
+          ]}
+        />
+        <p>
+          Gli ambiti in cui interviene sono descritti in dettaglio nella
+          pagina{" "}
+          <Link href="/medicina-legale" className={stileLink}>
+            Medicina Legale
+          </Link>
+          : danno biologico, invalidità, responsabilità sanitaria e
+          consulenza tecnica di parte.
+        </p>
+      </LandingSezione>
+
+      <LandingSezione etichetta="Nella stessa sede" titolo="Ozonoterapia e osteopatia a Schio">
+        <p>
+          Al Centro Medico MET il dottore si occupa anche, e soprattutto, di
+          ossigeno-ozonoterapia e trattamento osteopatico per il dolore
+          muscolare e articolare. Trovi tutte le informazioni nella pagina{" "}
+          <Link href="/ozono-osteo-schio" className={stileLink}>
+            Ozonoterapia e Osteopatia a Schio
+          </Link>
+          .
+        </p>
+      </LandingSezione>
+
+      <LandingFaq
+        titolo="Domande frequenti sulla sede di Schio"
+        domande={[
           {
-            label: `Medicina Legale a ${city.name}`,
-            href: seoData.canonical,
+            domanda: "Dove riceve il medico legale a Schio?",
+            risposta:
+              "Il Dott. Maico Battistello riceve al Centro Medico MET, in Via L. Muratori 1/A a Schio.",
+          },
+          {
+            domanda: "In quale giorno è a Schio?",
+            risposta:
+              "Di norma il mercoledì pomeriggio, su appuntamento. Se ti serve un altro giorno, puoi essere visitato nelle sedi di Malo, Marostica o Padova.",
+          },
+          {
+            domanda: "Ho avuto un infortunio sul lavoro: ha senso una valutazione medico-legale?",
+            risposta:
+              "Sì, soprattutto se restano dolore, limitazioni o difficoltà nel lavoro. La valutazione aiuta a capire quali conseguenze sono documentabili e come descriverle correttamente.",
+          },
+          {
+            domanda: "Quali documenti conviene conservare dopo un infortunio?",
+            risposta:
+              "Il verbale di pronto soccorso, i certificati medici, i referti degli esami, la documentazione di eventuali terapie o fisioterapia e ogni comunicazione con il datore di lavoro o con l'assicurazione.",
+          },
+          {
+            domanda: "C'è parcheggio?",
+            risposta: "Sì, è disponibile il parcheggio presso il centro medico.",
           },
         ]}
       />
-
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        <div className="prose prose-lg max-w-none">
-
-          {/* H1 UNICO */}
-          <h1 className="text-3xl font-bold mb-6">
-            {seoData.h1}
-          </h1>
-
-          {/* INTRODUZIONE */}
-          <div className="text-xl mb-8 space-y-4">
-            <p>
-              Il Dr. Maico Battistello, specialista in Medicina Legale,
-              svolge attività di medicina legale a Schio offrendo consulenze
-              e valutazioni medico-legali rivolte a privati, professionisti,
-              studi legali e agenzie assicurative.
-            </p>
-
-            <p>
-              L&apos;attività comprende la valutazione del danno biologico e
-              del danno alla persona, le conseguenze di infortuni e sinistri
-              stradali, l&apos;invalidità permanente, le controversie
-              assicurative e la responsabilità professionale sanitaria.
-            </p>
-
-            <p>
-              La consulenza medico-legale parte dall&apos;analisi della
-              documentazione clinica, dall&apos;inquadramento del caso e
-              dalla valutazione specialistica, in relazione alle
-              caratteristiche della situazione esaminata.
-            </p>
-
-            <p>
-              Il servizio è rivolto a persone provenienti da Schio e
-              dall&apos;area dell&apos;Alto Vicentino, tra cui Santorso,
-              Thiene e Piovene Rocchette.
-            </p>
-          </div>
-
-          {/* SERVIZI */}
-          <h2 className="text-2xl font-semibold mb-4">
-            Servizi di Medicina Legale a {city.name}
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {service.conditions.map((condition, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm"
-              >
-                <p className="font-medium text-lg text-gray-800">
-                  ✓ {condition}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* DANNO BIOLOGICO */}
-          <h2 className="text-2xl font-semibold mb-4">
-            Danno biologico e valutazione del danno alla persona
-          </h2>
-
-          <div className="text-lg space-y-4 mb-8">
-            <p>
-              La valutazione del danno alla persona è uno degli ambiti della
-              Medicina Legale e permette di analizzare le conseguenze di un
-              evento lesivo sulla salute della persona.
-            </p>
-
-            <p>
-              La consulenza medico-legale prende in considerazione la
-              documentazione clinica disponibile, gli accertamenti
-              diagnostici, il percorso terapeutico, gli esiti delle lesioni
-              e gli eventuali postumi permanenti.
-            </p>
-
-            <p>
-              La valutazione può riguardare, tra gli altri, danni derivanti
-              da incidenti stradali, lesioni personali e altri eventi che
-              abbiano determinato conseguenze temporanee o permanenti.
-            </p>
-          </div>
-
-          {/* RESPONSABILITÀ SANITARIA E CTP */}
-          <h2 className="text-2xl font-semibold mb-4">
-            Responsabilità sanitaria e Consulenza Tecnica di Parte (CTP)
-          </h2>
-
-          <div className="text-lg space-y-4 mb-8">
-            <p>
-              Nell&apos;ambito della responsabilità sanitaria e
-              professionale, la valutazione medico-legale consente di
-              esaminare la documentazione clinica e il percorso diagnostico
-              e terapeutico in relazione allo specifico caso.
-            </p>
-
-            <p>
-              Il medico legale può inoltre svolgere il ruolo di consulente
-              tecnico di parte (CTP), fornendo una valutazione specialistica
-              degli aspetti medico-legali e collaborando con il legale
-              nell&apos;analisi della documentazione e del caso.
-            </p>
-
-            <p>
-              La consulenza tecnica di parte può essere utilizzata sia nella
-              fase stragiudiziale sia nell&apos;ambito di un procedimento
-              giudiziario.
-            </p>
-          </div>
-
-          {/* INVALIDITÀ E ASSICURAZIONI */}
-          <h2 className="text-2xl font-semibold mb-4">
-            Invalidità, infortuni e valutazioni assicurative
-          </h2>
-
-          <div className="text-lg space-y-4 mb-8">
-            <p>
-              L&apos;attività medico-legale comprende anche valutazioni
-              relative all&apos;invalidità civile, agli infortuni sul lavoro
-              e alle conseguenze permanenti derivanti da lesioni o eventi
-              traumatici.
-            </p>
-
-            <p>
-              In ambito assicurativo, la consulenza medico-legale permette
-              di analizzare la documentazione sanitaria e gli esiti
-              dell&apos;evento ai fini della valutazione del danno e delle
-              problematiche medico-legali connesse al caso.
-            </p>
-
-            <p>
-              Ogni valutazione viene effettuata sulla base della
-              documentazione disponibile e delle caratteristiche specifiche
-              della situazione esaminata.
-            </p>
-          </div>
-
-          {/* BOX COMPETENZA */}
-          <div className="bg-green-50 border-l-4 border-green-500 p-6 my-8">
-            <h2 className="text-2xl font-semibold mb-3">
-              Valutazione medico-legale del caso
-            </h2>
-
-            <p className="text-lg">
-              Il Dr. Maico Battistello è specialista in Medicina Legale.
-              L&apos;attività comprende l&apos;analisi della documentazione
-              clinica, la valutazione medico-legale del danno alla persona,
-              la redazione di relazioni medico-legali e l&apos;assistenza
-              nell&apos;ambito di consulenze tecniche di parte.
-            </p>
-          </div>
-
-          {/* QUANDO RIVOLGERSI */}
-          <h2 className="text-2xl font-semibold mb-4">
-            Quando rivolgersi a un Medico Legale a {city.name}
-          </h2>
-
-          <div className="text-lg space-y-4 mb-8">
-            <p>
-              Una valutazione medico-legale può essere richiesta in seguito
-              a un incidente stradale, un infortunio o un evento che abbia
-              determinato conseguenze temporanee o permanenti sulla salute,
-              oppure nell&apos;ambito di una controversia assicurativa o di
-              un caso di responsabilità professionale sanitaria.
-            </p>
-
-            <p>
-              Il medico legale analizza la documentazione sanitaria e gli
-              esiti dell&apos;evento, valutando le conseguenze del danno alla
-              persona e la loro rilevanza medico-legale.
-            </p>
-
-            <p>
-              La consulenza può inoltre affiancare la persona e il suo legale
-              attraverso una consulenza tecnica di parte (CTP), sia nella
-              fase stragiudiziale sia nell&apos;ambito di un procedimento
-              giudiziario.
-            </p>
-          </div>
-
-          {/* FAQ */}
-          <h2 className="text-2xl font-semibold mb-4">
-            Domande frequenti sulla Medicina Legale
-          </h2>
-
-          <div className="space-y-4 mb-8">
-
-            <details className="bg-gray-50 p-5 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer">
-                Cos&apos;è una consulenza tecnica di parte (CTP)?
-              </summary>
-
-              <p className="mt-2 text-lg text-gray-700">
-                La consulenza tecnica di parte è una consulenza
-                medico-legale richiesta da una delle parti coinvolte per
-                valutare gli aspetti sanitari e medico-legali del caso e
-                fornire supporto specialistico nell&apos;ambito di una
-                controversia.
-              </p>
-            </details>
-
-            <details className="bg-gray-50 p-5 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer">
-                Come si quantifica l&apos;invalidità permanente?
-              </summary>
-
-              <p className="mt-2 text-lg text-gray-700">
-                La valutazione dell&apos;invalidità permanente prende in
-                considerazione la documentazione clinica, gli esiti delle
-                lesioni, la visita medico-legale e i criteri valutativi
-                applicabili al caso specifico.
-              </p>
-            </details>
-
-            <details className="bg-gray-50 p-5 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer">
-                Quando è utile una valutazione medico-legale dopo un
-                incidente stradale?
-              </summary>
-
-              <p className="mt-2 text-lg text-gray-700">
-                La valutazione medico-legale permette di esaminare la
-                documentazione sanitaria, gli esiti delle lesioni e le
-                eventuali conseguenze permanenti, fornendo gli elementi
-                medico-legali utili alla valutazione del danno alla persona.
-              </p>
-            </details>
-
-            <details className="bg-gray-50 p-5 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer">
-                Il medico legale può collaborare con il mio avvocato?
-              </summary>
-
-              <p className="mt-2 text-lg text-gray-700">
-                Sì. Nell&apos;ambito di una consulenza tecnica di parte,
-                il medico legale può collaborare con il legale fornendo una
-                valutazione specialistica degli aspetti medico-legali del
-                caso.
-              </p>
-            </details>
-
-            <details className="bg-gray-50 p-5 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer">
-                Quali documenti servono per una consulenza medico-legale?
-              </summary>
-
-              <p className="mt-2 text-lg text-gray-700">
-                È utile presentare la documentazione sanitaria relativa al
-                caso, come referti, cartelle cliniche, esami diagnostici,
-                certificati medici e la documentazione assicurativa o
-                legale disponibile.
-              </p>
-            </details>
-
-            <details className="bg-gray-50 p-5 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer">
-                Quanto dura una consulenza medico-legale?
-              </summary>
-
-              <p className="mt-2 text-lg text-gray-700">
-                I tempi dipendono dalle caratteristiche e dalla complessità
-                del caso, dalla quantità di documentazione da esaminare e
-                dal tipo di valutazione medico-legale richiesta.
-              </p>
-            </details>
-
-          </div>
-
-          {/* CTA */}
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 my-8">
-            <h2 className="text-2xl font-semibold mb-3">
-              Consulenza di Medicina Legale a {city.name}
-            </h2>
-
-            <p className="text-lg mb-4">
-              Per richiedere una consulenza medico-legale a {city.name} o
-              ricevere informazioni sulla valutazione del proprio caso,
-              è possibile contattare il Dr. Maico Battistello.
-            </p>
-
-            <Link
-              href="/contacts"
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
-            >
-              Richiedi una consulenza
-            </Link>
-          </div>
-
-        </div>
-      </div>
-    </div>
+    </LandingPage>
   )
 }
