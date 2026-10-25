@@ -99,7 +99,7 @@ export default function LegalMedicinePage() {
             </div>
             <div className={`space-y-5 ${testo}`}>
               <p>
-                Sono il <strong>Dott. Maico Battistello</strong>, medico chirurgo, attivo nell&apos;ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Responsabilità Medica (RCP), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
+                Sono il <strong>Dott. Maico Battistello</strong>, medico chirurgo, attivo nell&apos;ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile Auto (RCA), Responsabilità Civile (RC), Responsabilità Medica (RCP), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
               </p>
               <p>
                 Offro attività di <strong>Consulente Tecnico di Parte (CTP)</strong> in procedimenti civili, con studio del caso e della documentazione sanitaria; parere scritto preventivo sulla sostenibilità della richiesta risarcitoria; assistenza durante le operazioni peritali; confronto tecnico con CTU e altre parti coinvolte. L&apos;obiettivo è tutelare in modo rigoroso e scientificamente fondato gli interessi del cliente.
