@@ -35,31 +35,21 @@ export default function CookiePolicyPage() {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Come utilizziamo i cookie</h2>
           <p className="text-lg mb-6">
-            Il nostro sito utilizza diversi tipi di cookie per vari scopi. In particolare, utilizziamo:
+            Questo sito <strong>non utilizza cookie di profilazione né cookie analitici</strong>. Per questo motivo
+            non viene mostrato alcun banner per la raccolta del consenso.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">Cookie tecnici</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-3">Statistiche delle visite</h3>
           <p className="text-lg mb-6">
-            Questi cookie sono necessari per il funzionamento del sito e non possono essere disattivati nei nostri
-            sistemi. Vengono solitamente impostati solo in risposta ad azioni da lei effettuate che costituiscono una
-            richiesta di servizi, come l'impostazione delle preferenze di privacy, l'accesso o la compilazione di
-            moduli. Può impostare il suo browser per bloccare o avere avvisi riguardo questi cookie, ma alcune parti del
-            sito potrebbero non funzionare correttamente.
+            Per conoscere il numero di visite e le pagine più consultate utilizziamo Vercel Web Analytics, un servizio
+            che <strong>non installa cookie</strong> sul suo dispositivo e raccoglie esclusivamente dati aggregati e
+            anonimi, senza identificare il singolo visitatore.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-3">Cookie analitici</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-3">Video</h3>
           <p className="text-lg mb-6">
-            Questi cookie ci permettono di contare le visite e le fonti di traffico in modo da poter misurare e
-            migliorare le prestazioni del nostro sito. Ci aiutano a sapere quali pagine sono le più e le meno popolari e
-            vedere come i visitatori si muovono nel sito. Tutte le informazioni raccolte da questi cookie sono aggregate
-            e quindi anonime.
-          </p>
-
-          <h3 className="text-xl font-semibold mt-6 mb-3">Cookie di terze parti</h3>
-          <p className="text-lg mb-6">
-            Il nostro sito potrebbe utilizzare servizi di terze parti, come Google Analytics, che potrebbero impostare
-            cookie sul suo dispositivo. Non abbiamo il controllo diretto sui cookie impostati da questi servizi. La
-            invitiamo a consultare i rispettivi siti web per ulteriori informazioni sui loro cookie e su come gestirli.
+            I video presenti nel sito sono ospitati su Vimeo e sono inseriti con l&apos;opzione &quot;Do Not
+            Track&quot;, che impedisce a Vimeo di tracciare la navigazione tramite cookie.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Come gestire i cookie</h2>
@@ -87,13 +77,13 @@ export default function CookiePolicyPage() {
           <p className="text-lg mb-6">
             Se ha domande o dubbi riguardo alla nostra Cookie Policy, può contattarci tramite i recapiti disponibili
             nella sezione{" "}
-            <a href="/contacts" className="text-primary hover:underline">
+            <a href="/contatti" className="text-primary hover:underline">
               Contatti
             </a>{" "}
             del nostro sito.
           </p>
 
-          <p className="text-lg mt-10 text-gray-600">Ultimo aggiornamento: 10 Aprile 2025</p>
+          <p className="text-lg mt-10 text-gray-600">Ultimo aggiornamento: 25 ottobre 2026</p>
         </div>
       </div>
     </div>

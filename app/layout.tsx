@@ -4,9 +4,6 @@ import { Roboto } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import CookieBanner from "@/components/cookie-banner"
-import GoogleAnalytics from "@/components/google-analytics"
-import { Suspense } from "react"
 import { Analytics } from "@vercel/analytics/next"
 
 const roboto = Roboto({
@@ -187,40 +184,13 @@ export default function RootLayout({
           }}
         />
 
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}></script>
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      var consenso = null;
-      try { consenso = localStorage.getItem('cookie-consent'); } catch (e) {}
-      gtag('consent', 'default', {
-        analytics_storage: consenso === 'accepted' ? 'granted' : 'denied',
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-      });
-      gtag('js', new Date());
-      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: false });
-    `,
-              }}
-            />
-          </>
-        )}
       </head>
       <body className={roboto.className}>
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <CookieBanner />
         {/* Statistiche visite di Vercel: senza cookie */}
         <Analytics />
-        <Suspense fallback={null}>
-          <GoogleAnalytics />
-        </Suspense>
       </body>
     </html>
   )

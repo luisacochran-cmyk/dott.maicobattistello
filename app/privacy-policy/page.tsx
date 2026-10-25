@@ -59,7 +59,7 @@ export default function PrivacyPolicyPage() {
               personali inseriti nella comunicazione.
             </li>
             <li className="mb-2">
-              <strong>Cookie:</strong> Il nostro sito utilizza cookie tecnici e analitici. Per maggiori informazioni sui
+              <strong>Cookie:</strong> Il nostro sito non utilizza cookie di profilazione né cookie analitici. Per maggiori informazioni sui
               cookie utilizzati, consulti la nostra{" "}
               <a href="/cookie-policy" className="text-primary hover:underline">
                 Cookie Policy
