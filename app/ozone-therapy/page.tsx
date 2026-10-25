@@ -194,6 +194,31 @@ export default function OzoneTherapyPage() {
         </section>
       </div>
 
+      {/* Rimando alla pagina dedicata all'ozonoterapia topica per le ulcere */}
+      <section className="bg-[#F0EAE0] pt-12 md:pt-16">
+        <div className="container mx-auto max-w-5xl px-4">
+          <div className="flex flex-col gap-5 rounded-[1.5rem] bg-white/80 p-6 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)] md:flex-row md:items-center md:justify-between md:p-8">
+            <div>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
+                Ozonoterapia topica
+              </p>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
+                Ulcere e ferite difficili<span className="text-[#0066CC]">.</span>
+              </h2>
+              <p className="mt-2 max-w-xl text-base md:text-lg leading-relaxed text-slate-600">
+                L&apos;ozono applicato con sacchetti come supporto nel trattamento delle ulcere cutanee.
+              </p>
+            </div>
+            <Link
+              href="/ozonoterapia-ulcere"
+              className="inline-flex h-12 shrink-0 items-center justify-center rounded-full bg-[#0066CC] px-7 text-base font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
+            >
+              Scopri il trattamento
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Approfondimenti: tendine native, il testo resta leggibile da Google */}
       <section className="bg-gradient-to-b from-[#F0EAE0] to-[#FAF8F4] py-12 md:py-16">
         <div className="container mx-auto max-w-5xl px-4">
