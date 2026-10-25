@@ -100,8 +100,7 @@ export default function OzonoOsteoMarosticaPage() {
       <LandingSezione etichetta="Il metodo" titolo="Grande e piccola autoemoterapia a Marostica">
         <p>
           Il Dott. Maico Battistello esegue anche la grande autoemoterapia
-          (GAET) e la piccola autoemoterapia (PAET), quando clinicamente
-          indicate.
+          (GAET) e la piccola autoemoterapia (PAET).
         </p>
         <p>
           <LandingLink href="/ozonoterapia-marostica">

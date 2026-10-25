@@ -83,8 +83,7 @@ export default function OsteopatiaSchioPage() {
       <LandingSezione etichetta="L'approccio integrato" titolo="Osteopatia e ozonoterapia insieme">
         <LandingNota>
           Nella pratica del Dott. Maico Battistello l&apos;osteopatia è parte di
-          un <strong>approccio integrato</strong> con l&apos;ozonoterapia, quando
-          la valutazione clinica lo indica.
+          un <strong>approccio integrato</strong> con l&apos;ozonoterapia.
         </LandingNota>
         <p>
           <LandingLink href="/ozono-osteo-schio">

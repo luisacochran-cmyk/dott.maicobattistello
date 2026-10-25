@@ -56,8 +56,7 @@ export default function OzonoterapiaSchioPage() {
             valutazione iniziale.
           </p>
           <p>
-            L&apos;ozonoterapia viene presa in considerazione, quando
-            clinicamente indicato, per{" "}
+            L&apos;ozonoterapia viene utilizzata per{" "}
             <strong>dolore, infiammazione e limitazioni funzionali</strong>{" "}
             della colonna e delle articolazioni, disturbi frequenti in chi
             svolge <strong>lavori fisici</strong> o{" "}
@@ -95,9 +94,7 @@ export default function OzonoterapiaSchioPage() {
         titoloVideo="Video: la Grande Autoemoterapia (GAET)"
       >
         <p>
-          La Grande Autoemoterapia è una metodica di ozonoterapia sistemica
-          che può essere presa in considerazione in specifici percorsi
-          clinici.
+          La Grande Autoemoterapia è una metodica di ozonoterapia sistemica che il dottore utilizza all&apos;interno del percorso.
         </p>
         <p>
           Indicazioni, modalità di trattamento e appropriatezza vengono
@@ -114,12 +111,10 @@ export default function OzonoterapiaSchioPage() {
         invertito
       >
         <p>
-          La Piccola Autoemoterapia è una delle metodiche che possono
-          rientrare nell&apos;ambito dell&apos;ozonoterapia, quando
-          clinicamente indicato.
+          La Piccola Autoemoterapia è una delle metodiche dell&apos;ozonoterapia utilizzate dal dottore.
         </p>
         <p>
-          L&apos;eventuale utilizzo viene valutato dal medico in relazione
+          Il suo utilizzo viene definito dal medico in relazione
           al quadro clinico, agli obiettivi del trattamento e alle
           caratteristiche della persona.
         </p>

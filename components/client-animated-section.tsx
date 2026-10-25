@@ -413,8 +413,7 @@ export function LocationsSection() {
 
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-10">
             Scopri l’approccio integrato del Dott. Maico Battistello, che
-            combina ossigeno-ozonoterapia e osteopatia quando indicato dalla
-            valutazione clinica.
+            combina ossigeno-ozonoterapia e osteopatia in un unico percorso.
           </p>
 
           <Button

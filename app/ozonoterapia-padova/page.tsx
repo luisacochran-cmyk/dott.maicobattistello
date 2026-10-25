@@ -56,7 +56,7 @@ export default function OzonoterapiaPadovaPage() {
           <p>
             L&apos;obiettivo non è applicare un protocollo prestabilito, ma
             costruire un percorso coerente con il quadro clinico della persona.
-            Quando indicato, il trattamento può inoltre inserirsi in un approccio
+            Il trattamento si inserisce inoltre in un approccio
             più ampio che considera non soltanto il dolore, ma anche{" "}
             <strong>funzionalità, mobilità e qualità del movimento</strong>.
           </p>
@@ -83,8 +83,7 @@ export default function OzonoterapiaPadovaPage() {
         titolo="Quando può essere indicata l'ozonoterapia a Padova"
       >
         <p>
-          L&apos;ossigeno-ozonoterapia può essere presa in considerazione, dopo
-          valutazione medica, nell&apos;ambito di differenti condizioni
+          L&apos;ossigeno-ozonoterapia viene utilizzata, dopo la valutazione medica, nell&apos;ambito di differenti condizioni
           muscolo-scheletriche e dolorose, tra cui:
         </p>
         <LandingElenco

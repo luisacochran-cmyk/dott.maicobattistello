@@ -48,8 +48,7 @@ export default function OzonoterapiaMarosticaPage() {
             delle caratteristiche della singola persona.
           </p>
           <p>
-            In ambito muscolo-scheletrico può essere presa in considerazione,
-            quando clinicamente indicato, per problematiche caratterizzate da
+            In ambito muscolo-scheletrico viene utilizzata per problematiche caratterizzate da
             dolore, infiammazione e limitazioni funzionali, anche in relazione
             a disturbi della colonna e delle articolazioni.
           </p>
@@ -86,9 +85,7 @@ export default function OzonoterapiaMarosticaPage() {
         titoloVideo="Video: la Grande Autoemoterapia (GAET)"
       >
         <p>
-          La Grande Autoemoterapia è una metodica di ozonoterapia sistemica
-          che può essere presa in considerazione in specifici percorsi
-          clinici.
+          La Grande Autoemoterapia è una metodica di ozonoterapia sistemica che il dottore utilizza all&apos;interno del percorso.
         </p>
         <p>
           Indicazioni, modalità di trattamento e appropriatezza vengono
@@ -105,12 +102,10 @@ export default function OzonoterapiaMarosticaPage() {
         invertito
       >
         <p>
-          La Piccola Autoemoterapia è una delle metodiche che possono
-          rientrare nell&apos;ambito dell&apos;ozonoterapia, quando
-          clinicamente indicato.
+          La Piccola Autoemoterapia è una delle metodiche dell&apos;ozonoterapia utilizzate dal dottore.
         </p>
         <p>
-          L&apos;eventuale utilizzo viene valutato dal medico in relazione
+          Il suo utilizzo viene definito dal medico in relazione
           al quadro clinico, agli obiettivi del trattamento e alle
           caratteristiche della persona.
         </p>

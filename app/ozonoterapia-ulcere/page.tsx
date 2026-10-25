@@ -47,7 +47,7 @@ export default function OzonoterapiaUlcerePage() {
       invito={{
         titolo: "Valutazione per ulcere cutanee",
         testo:
-          "Per capire se il trattamento è indicato nel tuo caso, il primo passo è una visita con il Dott. Maico Battistello.",
+          "Il primo passo è una visita con il Dott. Maico Battistello, per valutare l'ulcera e impostare il percorso.",
         pulsante: "Prenota una visita",
       }}
     >

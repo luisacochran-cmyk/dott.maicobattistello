@@ -81,9 +81,7 @@ export default function OsteopatiaMaloPage() {
         <LandingNota>
           A Medicalis il Dott. Maico Battistello esegue anche
           l&apos;<strong>ossigeno-ozonoterapia</strong> e
-          l&apos;<strong>autoemoterapia</strong>. Quando la valutazione
-          clinica lo indica, l&apos;osteopatia può quindi essere integrata con
-          l&apos;ozonoterapia nello stesso percorso e nella stessa sede.
+          l&apos;<strong>autoemoterapia</strong>. L&apos;osteopatia viene così integrata con l&apos;ozonoterapia nello stesso percorso e nella stessa sede.
         </LandingNota>
         <p>
           <LandingLink href="/ozono-osteo-malo">
