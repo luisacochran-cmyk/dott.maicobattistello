@@ -7,6 +7,7 @@ import Footer from "@/components/footer"
 import CookieBanner from "@/components/cookie-banner"
 import GoogleAnalytics from "@/components/google-analytics"
 import { Suspense } from "react"
+import { Analytics } from "@vercel/analytics/next"
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -215,6 +216,8 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <CookieBanner />
+        {/* Statistiche visite di Vercel: senza cookie */}
+        <Analytics />
         <Suspense fallback={null}>
           <GoogleAnalytics />
         </Suspense>
