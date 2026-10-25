@@ -12,7 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Ozonoterapia per ulcere e ferite complesse | Dott. Maico Battistello",
   description:
-    "Grande Autoemoterapia (GAET), ozono in apposite sacche a tenuta e trattamento topico per ulcere venose, da decubito, diabetiche e ferite post-chirurgiche. Dott. Maico Battistello.",
+    "Grande Autoemoterapia (GAET), ozono in apposite sacche a tenuta e trattamento topico per ulcere venose, del piede diabetico e ferite post-chirurgiche con ritardo di cicatrizzazione. Dott. Maico Battistello.",
   alternates: {
     canonical: "https://dottmaicobattistello.it/ozonoterapia-ulcere",
   },
@@ -55,9 +55,8 @@ export default function OzonoterapiaUlcerePage() {
         <LandingElenco
           voci={[
             "Ulcere venose",
-            "Ulcere da decubito",
             "Ulcere del piede diabetico",
-            "Ferite post-chirurgiche che faticano a guarire",
+            "Ferite post-chirurgiche con ritardo di cicatrizzazione",
           ]}
         />
       </LandingSezione>
