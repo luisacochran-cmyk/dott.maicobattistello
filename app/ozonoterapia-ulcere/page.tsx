@@ -34,12 +34,9 @@ export default function OzonoterapiaUlcerePage() {
           <p>
             Il trattamento di queste lesioni prevede l&apos;
             <strong>abbinamento della Grande Autoemoterapia (GAET)</strong> con
-            l&apos;applicazione di ozono in <strong>apposite sacche a tenuta</strong>,
-            e il <strong>trattamento topico della lesione</strong>.
-          </p>
-          <p>
-            La zona interessata viene racchiusa in una sacca a tenuta, nella quale
-            viene immesso ozono medicale a fini rigenerativi.
+            l&apos;applicazione di <strong>ozono medicale a fini rigenerativi</strong>{" "}
+            in un&apos;<strong>apposita sacca a tenuta</strong>, che racchiude la zona
+            interessata, e il <strong>trattamento topico della lesione</strong>.
           </p>
           <p>
             Tutto avviene nella stessa seduta: durante la GAET viene applicata la
