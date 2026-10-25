@@ -203,10 +203,10 @@ export default function OzoneTherapyPage() {
                 Ozonoterapia topica
               </p>
               <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">
-                Ulcere e ferite difficili<span className="text-[#0066CC]">.</span>
+                Ulcere, ferite e medicazioni complesse<span className="text-[#0066CC]">.</span>
               </h2>
               <p className="mt-2 max-w-xl text-base md:text-lg leading-relaxed text-slate-600">
-                L&apos;ozono applicato con sacchetti come supporto nel trattamento delle ulcere cutanee.
+                Grande Autoemoterapia (GAET), ozono in apposite sacche a tenuta e trattamento topico delle lesioni.
               </p>
             </div>
             <Link

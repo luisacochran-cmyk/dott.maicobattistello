@@ -10,9 +10,9 @@ import {
 // BOZZA in attesa di revisione del dottore: la pagina non viene indicizzata da Google.
 // Quando il testo è approvato: togliere "robots" qui sotto.
 export const metadata: Metadata = {
-  title: "Ozonoterapia per ulcere e ferite difficili | Dott. Maico Battistello",
+  title: "Ozonoterapia per ulcere e ferite complesse | Dott. Maico Battistello",
   description:
-    "Ozonoterapia topica con sacchetti di ozono come supporto nel trattamento di ulcere venose, da decubito, diabetiche e ferite post-chirurgiche. Dott. Maico Battistello.",
+    "Grande Autoemoterapia (GAET), ozono in apposite sacche a tenuta e trattamento topico per ulcere venose, da decubito, diabetiche e ferite post-chirurgiche. Dott. Maico Battistello.",
   alternates: {
     canonical: "https://dottmaicobattistello.it/ozonoterapia-ulcere",
   },
@@ -25,22 +25,25 @@ export default function OzonoterapiaUlcerePage() {
       breadcrumb={[
         { label: "Home", href: "/" },
         { label: "Ozonoterapia", href: "/ozonoterapia" },
-        { label: "Ulcere e ferite difficili", href: "/ozonoterapia-ulcere" },
+        { label: "Ulcere e ferite complesse", href: "/ozonoterapia-ulcere" },
       ]}
       etichetta="Ozonoterapia topica"
-      titolo="Ozonoterapia per ulcere e ferite difficili"
+      titolo="Ozonoterapia per ulcere e ferite complesse"
       intro={
         <>
           <p>
-            Oltre all&apos;ozonoterapia infiltrativa e sistemica, il Dott. Maico
-            Battistello utilizza l&apos;ozono anche <strong>per via topica</strong>:
-            la zona interessata viene racchiusa in un sacchetto in cui viene
-            immesso ozono medicale, come supporto nel trattamento delle ulcere
-            cutanee.
+            Il trattamento di queste lesioni prevede l&apos;
+            <strong>abbinamento della Grande Autoemoterapia (GAET)</strong> con
+            l&apos;applicazione di ozono in <strong>apposite sacche a tenuta</strong>,
+            e il <strong>trattamento topico della lesione</strong>.
           </p>
           <p>
-            Il dottore segue personalmente anche le medicazioni, all&apos;interno
-            dello stesso percorso.
+            La zona interessata viene racchiusa in una sacca a tenuta, nella quale
+            viene immesso ozono medicale a fini rigenerativi.
+          </p>
+          <p>
+            Tutto avviene nella stessa seduta: durante la GAET viene applicata la
+            sacca e il dottore segue personalmente anche le medicazioni.
           </p>
         </>
       }
@@ -65,7 +68,7 @@ export default function OzonoterapiaUlcerePage() {
       <LandingSezione etichetta="La seduta" titolo="Come si svolge">
         <p>
           La seduta dura circa 45 minuti, durante i quali la persona resta
-          seduta o sdraiata con il sacchetto applicato. Il trattamento non è
+          seduta o sdraiata con la sacca applicata. Il trattamento non è
           doloroso.
         </p>
         <p>
