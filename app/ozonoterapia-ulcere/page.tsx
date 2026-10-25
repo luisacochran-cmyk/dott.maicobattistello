@@ -5,8 +5,6 @@ import {
   LandingElenco,
 } from "@/components/landing-layout"
 
-// BOZZA in attesa di revisione del dottore: la pagina non viene indicizzata da Google.
-// Quando il testo è approvato: togliere "robots" qui sotto.
 export const metadata: Metadata = {
   title: "Ozonoterapia per ulcere e ferite complesse | Dott. Maico Battistello",
   description:
@@ -14,7 +12,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://dottmaicobattistello.it/ozonoterapia-ulcere",
   },
-  robots: { index: false, follow: true },
 }
 
 export default function OzonoterapiaUlcerePage() {

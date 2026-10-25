@@ -1,4 +1,10 @@
+import type { Metadata } from "next"
 import Breadcrumb from "@/components/breadcrumb"
+export const metadata: Metadata = {
+  title: "Privacy Policy | Dott. Maico Battistello",
+  alternates: { canonical: "https://dottmaicobattistello.it/privacy-policy" },
+}
+
 
 export default function PrivacyPolicyPage() {
   return (
@@ -17,13 +23,13 @@ export default function PrivacyPolicyPage() {
 
           <p className="text-lg mb-6">
             La presente Privacy Policy descrive le modalità di raccolta, utilizzo e protezione dei dati personali degli
-            utenti che visitano il sito web del Dr. Maico Battistello. La preghiamo di leggere attentamente questa
+            utenti che visitano il sito web del Dott. Maico Battistello. La preghiamo di leggere attentamente questa
             policy per comprendere come trattiamo i suoi dati personali.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Titolare del trattamento</h2>
           <p className="text-lg mb-6">
-            Il titolare del trattamento dei dati personali è il Dr. Maico Battistello, con sede professionale a Padova
+            Il titolare del trattamento dei dati personali è il Dott. Maico Battistello, con sede professionale a Padova
             (PD). Per qualsiasi informazione relativa alla presente Privacy Policy, può contattarci tramite i recapiti
             disponibili nella sezione{" "}
             <a href="/contacts" className="text-primary hover:underline">

@@ -142,7 +142,6 @@ export default function RootLayout({
               image: immagineSito,
               logo: "https://dottmaicobattistello.it/images/nuovologo.png",
               sameAs: ["https://www.facebook.com/maicobattistello"],
-              openingHours: "Mo-Fr 09:00-18:00",
               areaServed: [
                 { "@type": "City", name: "Padova" },
                 { "@type": "City", name: "Marostica" },
@@ -200,11 +199,16 @@ export default function RootLayout({
                 __html: `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-        page_title: document.title,
-        page_location: window.location.href,
+      var consenso = null;
+      try { consenso = localStorage.getItem('cookie-consent'); } catch (e) {}
+      gtag('consent', 'default', {
+        analytics_storage: consenso === 'accepted' ? 'granted' : 'denied',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
       });
+      gtag('js', new Date());
+      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', { send_page_view: false });
     `,
               }}
             />

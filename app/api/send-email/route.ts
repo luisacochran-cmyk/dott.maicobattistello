@@ -37,7 +37,7 @@ export async function POST(request: Request) {
     })
 
     const mailOptions = {
-      from: '"Sito Web Dr. Battistello" <maico.battistello@gmail.com>',
+      from: '"Sito Web Dott. Battistello" <maico.battistello@gmail.com>',
       to: "maico.battistello@gmail.com",
       subject: `Nuovo contatto dal sito: ${firstName} ${lastName}`,
       replyTo: email,
@@ -73,7 +73,7 @@ export async function POST(request: Request) {
           </div>
           
           <p style="margin-top: 30px; font-size: 12px; color: #999; text-align: center; border-top: 1px solid #e0e0e0; padding-top: 15px;">
-            Questo messaggio è stato inviato automaticamente dal sito web del Dr. Maico Battistello.
+            Questo messaggio è stato inviato automaticamente dal sito web del Dott. Maico Battistello.
           </p>
         </div>
       `,

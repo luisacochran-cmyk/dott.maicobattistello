@@ -5,28 +5,28 @@ import WordCarousel from "@/components/word-carousel"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Chi Sono - Dr. Maico Battistello | Medico Specialista",
+  title: "Chi Sono - Dott. Maico Battistello | Medico Specialista",
   description:
-    "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta. Un percorso professionale costruito tra Medicina, valutazione funzionale e approccio personalizzato.",
+    "Dott. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta. Un percorso professionale costruito tra Medicina, valutazione funzionale e approccio personalizzato.",
   openGraph: {
-    title: "Chi Sono - Dr. Maico Battistello",
+    title: "Chi Sono - Dott. Maico Battistello",
     description:
-      "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
+      "Dott. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
     images: [
       {
         url: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
         width: 800,
         height: 600,
-        alt: "Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta",
+        alt: "Dott. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta",
       },
     ],
     type: "profile",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chi Sono - Dr. Maico Battistello",
+    title: "Chi Sono - Dott. Maico Battistello",
     description:
-      "Dr. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
+      "Dott. Maico Battistello, Medico Legale, Osteopata e Ozonoterapeuta.",
     images: [
       "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
     ],
@@ -40,7 +40,7 @@ export default function ChiSonoPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Dr. Maico Battistello",
+    name: "Dott. Maico Battistello",
     jobTitle: "Medico Chirurgo",
     description: "Medico Legale, Osteopata e Ozonoterapeuta",
     image:
@@ -88,7 +88,7 @@ export default function ChiSonoPage() {
               <div className="w-full max-w-[430px] mx-auto md:mx-0">
                 <img
                   src="/images/Ritratto%20del%20medico%20in%20clinica.png"
-                  alt="Dr. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta"
+                  alt="Dott. Maico Battistello - Medico Legale, Osteopata e Ozonoterapeuta"
                  className="w-full h-[600px] object-cover object-top rounded-xl shadow-sm"
                 />
               </div>
@@ -103,7 +103,7 @@ export default function ChiSonoPage() {
                 className="text-3xl font-bold mb-3"
                 itemProp="name"
               >
-                Dr. Maico Battistello
+                Dott. Maico Battistello
               </h1>
 
               <h2
@@ -117,7 +117,7 @@ export default function ChiSonoPage() {
                 className="text-xl font-medium leading-relaxed mb-8 text-gray-800"
                 itemProp="description"
               >
-                Quello del Dr. Maico Battistello è un percorso professionale
+                Quello del Dott. Maico Battistello è un percorso professionale
                 cresciuto nel tempo, attraversando discipline diverse e
                 mettendole progressivamente in relazione. Dalla Medicina
                 Legale all&apos;Osteopatia, fino all&apos;Ossigeno-Ozonoterapia,
@@ -189,7 +189,7 @@ export default function ChiSonoPage() {
               </p>
 
               <p>
-                Il Dr. Maico Battistello riceve su appuntamento nelle sedi di
+                Il Dott. Maico Battistello riceve su appuntamento nelle sedi di
                 <strong> Marostica, Malo, Schio e Padova</strong>.
               </p>
             </div>

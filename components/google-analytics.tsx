@@ -5,21 +5,24 @@ import { usePathname, useSearchParams } from "next/navigation"
 
 declare global {
   interface Window {
-    gtag: (command: string, targetId: string, config?: Record<string, any>) => void
+    gtag: (...args: any[]) => void
   }
 }
 
+// Una sola visita registrata per pagina: la configurazione iniziale
+// (in layout.tsx) non invia visite, le invia solo questo componente.
 export default function GoogleAnalytics() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
   useEffect(() => {
-    const gaId = process.env.NEXT_PUBLIC_GA_ID
-    if (typeof window.gtag !== "undefined" && gaId) {
-      window.gtag("config", gaId, {
-        page_path: pathname + searchParams.toString(),
-      })
-    }
+    if (typeof window.gtag === "undefined" || !process.env.NEXT_PUBLIC_GA_ID) return
+    const query = searchParams.toString()
+    window.gtag("event", "page_view", {
+      page_path: pathname + (query ? `?${query}` : ""),
+      page_location: window.location.href,
+      page_title: document.title,
+    })
   }, [pathname, searchParams])
 
   return null
