@@ -99,7 +99,7 @@ export default function LegalMedicinePage() {
             </div>
             <div className={`space-y-5 ${testo}`}>
               <p>
-                Sono il <strong>Dott. Maico Battistello</strong>, medico chirurgo, attivo nell&apos;ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
+                Sono il <strong>Dott. Maico Battistello</strong>, medico chirurgo, attivo nell&apos;ambito della <strong>medicina legale e assicurativa dal 2001</strong> e <strong>specialista in Medicina Legale dal 2004</strong>. Svolgo attività di consulenza e perizia medico-legale per <strong>Responsabilità Civile (RC), Responsabilità Civile Auto (RCA), Responsabilità Medica (RCP), Polizze Infortuni e Polizze Malattia</strong>, offrendo un supporto tecnico competente e indipendente a pazienti, avvocati e agenzie.
               </p>
               <p>
                 Offro attività di <strong>Consulente Tecnico di Parte (CTP)</strong> in procedimenti civili, con studio del caso e della documentazione sanitaria; parere scritto preventivo sulla sostenibilità della richiesta risarcitoria; assistenza durante le operazioni peritali; confronto tecnico con CTU e altre parti coinvolte. L&apos;obiettivo è tutelare in modo rigoroso e scientificamente fondato gli interessi del cliente.
@@ -133,6 +133,16 @@ export default function LegalMedicinePage() {
                   <Punto>Valutazione della <strong>dinamica lesiva</strong> e delle menomazioni conseguenti</Punto>
                   <Punto>Verifica della <strong>congruità delle cure, dei tempi di guarigione</strong> e degli accertamenti eseguiti</Punto>
                   <Punto>Relazioni chiare e documentabili per compagnie, legali e privati</Punto>
+                </Elenco>
+              </article>
+
+              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+                <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Medica (RCP)</h3>
+                <Elenco>
+                  <Punto>Valutazione dei casi di presunta <strong>responsabilità sanitaria</strong></Punto>
+                  <Punto>Analisi della <strong>cartella clinica</strong> e della documentazione sanitaria</Punto>
+                  <Punto>Valutazione del <strong>nesso causale</strong> tra l&apos;operato sanitario e il danno</Punto>
+                  <Punto>Stima del <strong>danno biologico</strong> conseguente</Punto>
                 </Elenco>
               </article>
 
