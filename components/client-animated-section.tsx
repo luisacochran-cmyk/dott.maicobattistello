@@ -441,7 +441,7 @@ export function FaqSection() {
       question:
         "Come vengono integrate Ozonoterapia e Osteopatia nel percorso di cura?",
       answer:
-        "Quando clinicamente indicato, Ozonoterapia e Osteopatia possono essere integrate all’interno di un unico percorso, mettendo in relazione approcci differenti sulla base della valutazione complessiva della persona. Il trattamento viene quindi definito in modo personalizzato, in funzione del quadro clinico e delle specifiche esigenze.",
+        "Ozonoterapia e Osteopatia fanno parte di un unico percorso: non due trattamenti separati, ma due discipline che lavorano insieme. Vengono messe in relazione sulla base della valutazione complessiva della persona, e modalità, tempi e progressione del trattamento sono definiti in modo personalizzato, in funzione del quadro clinico e delle specifiche esigenze.",
     },
     {
       question: "In quali sedi riceve il Dott. Maico Battistello?",
