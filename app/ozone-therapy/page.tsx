@@ -226,62 +226,15 @@ export default function OzoneTherapyPage() {
             Approfondimenti
           </p>
           <h2 className="text-[2rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900 mb-4">
-            Somministrazione, indicazioni e controindicazioni<span className="text-[#0066CC]">.</span>
+            Indicazioni, somministrazione e controindicazioni<span className="text-[#0066CC]">.</span>
           </h2>
           <p className="mb-8 max-w-3xl text-lg leading-relaxed text-slate-600">
-            Per chi desidera approfondire: metodi di somministrazione, indicazioni
-            cliniche suddivise per livello di evidenza scientifica (A, B, C) e
-            controindicazioni.
+            Per chi desidera approfondire: indicazioni cliniche suddivise per
+            livello di evidenza scientifica (A, B, C), metodi di somministrazione
+            e controindicazioni.
           </p>
 
           <div className="border-t border-slate-300/80">
-            {/* METODI DI SOMMINISTRAZIONE */}
-            <Approfondimento title="Metodi di Somministrazione">
-              <div className="space-y-4 text-lg leading-relaxed text-slate-700">
-                <p>
-                  L&apos;ozonoterapia può essere somministrata localmente o
-                  sistemicamente a seconda delle patologie da trattare.
-                </p>
-                <p>
-                  Le varie vie di somministrazione possono anche essere
-                  utilizzate da sole o in combinazione, per esercitare un
-                  effetto sinergico.
-                </p>
-                <p className="font-semibold text-slate-900">
-                  Le principali vie di somministrazione sono:
-                </p>
-
-                <h3 className="pt-2 text-xl font-semibold text-[#0066CC]">Sistemica:</h3>
-                <p>
-                  Applicata nei casi in cui la prognosi e la progressione della
-                  malattia possono beneficiare della modulazione della risposta
-                  infiammatoria o di un migliore apporto di ossigeno ai
-                  tessuti. Questi includono:
-                </p>
-                <ul className="list-disc space-y-1 pl-6 marker:text-[#0066CC]/60">
-                  <li>Grande Auto-emoterapia (GAET) - venosa;</li>
-                  <li>Piccola Auto-emoterapia Infusionale (PAEI) - muscolo profondo;</li>
-                  <li>Rettale</li>
-                </ul>
-
-                <h3 className="pt-2 text-xl font-semibold text-[#0066CC]">Locale:</h3>
-                <p>
-                  Applicata quando c&apos;è la necessità di sfruttare gli
-                  effetti analgesici, antinfiammatori e miorilassanti per
-                  patologie muscolo-scheletriche, intestinali e altre. La
-                  somministrazione avviene tramite:
-                </p>
-                <ul className="list-disc space-y-1 pl-6 marker:text-[#0066CC]/60">
-                  <li>Intramuscolare, paravertebrale</li>
-                  <li>Sottocutanea</li>
-                  <li>Peri-articolare</li>
-                  <li>Intra-articolare</li>
-                  <li>Insufflazione (rettale e vaginale)</li>
-                  <li>Topica con Sacca di Ozono</li>
-                </ul>
-              </div>
-            </Approfondimento>
-
             {/* INDICAZIONI CLINICO-TERAPEUTICHE */}
             <Approfondimento title="Indicazioni Clinico-Terapeutiche">
               <div className="space-y-6">
@@ -380,6 +333,53 @@ export default function OzoneTherapyPage() {
                   mediche convenzionali, ma può integrarsi in un percorso
                   clinico appropriato.
                 </p>
+              </div>
+            </Approfondimento>
+
+            {/* METODI DI SOMMINISTRAZIONE */}
+            <Approfondimento title="Metodi di Somministrazione">
+              <div className="space-y-4 text-lg leading-relaxed text-slate-700">
+                <p>
+                  L&apos;ozonoterapia può essere somministrata localmente o
+                  sistemicamente a seconda delle patologie da trattare.
+                </p>
+                <p>
+                  Le varie vie di somministrazione possono anche essere
+                  utilizzate da sole o in combinazione, per esercitare un
+                  effetto sinergico.
+                </p>
+                <p className="font-semibold text-slate-900">
+                  Le principali vie di somministrazione sono:
+                </p>
+
+                <h3 className="pt-2 text-xl font-semibold text-[#0066CC]">Sistemica:</h3>
+                <p>
+                  Applicata nei casi in cui la prognosi e la progressione della
+                  malattia possono beneficiare della modulazione della risposta
+                  infiammatoria o di un migliore apporto di ossigeno ai
+                  tessuti. Questi includono:
+                </p>
+                <ul className="list-disc space-y-1 pl-6 marker:text-[#0066CC]/60">
+                  <li>Grande Auto-emoterapia (GAET) - venosa;</li>
+                  <li>Piccola Auto-emoterapia Infusionale (PAEI) - muscolo profondo;</li>
+                  <li>Rettale</li>
+                </ul>
+
+                <h3 className="pt-2 text-xl font-semibold text-[#0066CC]">Locale:</h3>
+                <p>
+                  Applicata quando c&apos;è la necessità di sfruttare gli
+                  effetti analgesici, antinfiammatori e miorilassanti per
+                  patologie muscolo-scheletriche, intestinali e altre. La
+                  somministrazione avviene tramite:
+                </p>
+                <ul className="list-disc space-y-1 pl-6 marker:text-[#0066CC]/60">
+                  <li>Intramuscolare, paravertebrale</li>
+                  <li>Sottocutanea</li>
+                  <li>Peri-articolare</li>
+                  <li>Intra-articolare</li>
+                  <li>Insufflazione (rettale e vaginale)</li>
+                  <li>Topica con Sacca di Ozono</li>
+                </ul>
               </div>
             </Approfondimento>
 
