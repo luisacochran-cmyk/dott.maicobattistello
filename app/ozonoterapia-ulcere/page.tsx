@@ -64,14 +64,14 @@ export default function OzonoterapiaUlcerePage() {
 
       <LandingSezione etichetta="La seduta" titolo="Come si svolge">
         <p>
-          La seduta dura circa 45 minuti, durante i quali la persona resta
-          seduta o sdraiata con la sacca applicata. Il trattamento non è
-          doloroso.
+          La seduta dura circa 45 minuti e comprende sia la Grande
+          Autoemoterapia (GAET) sia l&apos;applicazione dell&apos;ozono: durante
+          la GAET la persona resta sdraiata, con la lesione racchiusa nella
+          sacca a tenuta. Il trattamento non è doloroso.
         </p>
         <p>
-          Il numero e la frequenza delle sedute dipendono dall&apos;estensione e
-          dalle caratteristiche dell&apos;ulcera, e vengono definiti dopo la
-          valutazione.
+          Il numero e la frequenza delle sedute dipendono dall&apos;estensione,
+          dalla gravità e dalle caratteristiche della lesione.
         </p>
       </LandingSezione>
 
