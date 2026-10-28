@@ -148,6 +148,15 @@ export default function OzoneOsteopathyPage() {
                   come integrare le due metodiche in base al quadro clinico e alle
                   esigenze della persona.
                 </p>
+                <p className="mt-6 text-base md:text-lg text-slate-600">
+                  Approfondisci sul blog:{" "}
+                  <Link
+                    href="/blog/lombosciatalgia-dolore-schiena-gamba"
+                    className="font-semibold text-[#0066CC] underline decoration-[#0066CC]/30 underline-offset-4 transition-colors hover:decoration-[#0066CC]"
+                  >
+                    Lombosciatalgia: quando il mal di schiena scende lungo la gamba
+                  </Link>
+                </p>
               </div>
             </AnimatedScrollElement>
           </div>

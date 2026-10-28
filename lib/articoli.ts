@@ -366,7 +366,11 @@ Una valutazione clinica permette di inquadrare le caratteristiche del dolore, in
 
 Medico Chirurgo · Osteopata · Ossigeno-Ozonoterapia
 
-Marostica · Malo · Schio · Padova`,
+Marostica · Malo · Schio · Padova
+
+---
+
+Leggi anche: [Lombosciatalgia: quando il mal di schiena scende lungo la gamba](/blog/lombosciatalgia-dolore-schiena-gamba)`,
   },
   {
     slug: "infiammazione-cronica-basso-grado",
