@@ -946,3 +946,27 @@ body.menu-open {
   .to-\[\#EDF4F9\] { --tw-gradient-to: #DDEBF6 var(--tw-gradient-to-position); }
   .to-\[\#E2EDF6\] { --tw-gradient-to: #D2E4F2 var(--tw-gradient-to-position); }
 }
+
+/* Computer: sfumature leggermente più intense (a metà rispetto al telefono) */
+@media (min-width: 768px) {
+  .from-\[\#FAF8F4\] { --tw-gradient-from: #F6F3EC var(--tw-gradient-from-position); }
+  .from-\[\#F0EAE0\] { --tw-gradient-from: #ECE4D8 var(--tw-gradient-from-position); }
+  .from-\[\#F0F4F7\] { --tw-gradient-from: #EAF0F5 var(--tw-gradient-from-position); }
+  .from-\[\#EFF5FA\] { --tw-gradient-from: #E8F1F8 var(--tw-gradient-from-position); }
+  .from-\[\#EEE5D9\] { --tw-gradient-from: #EADECF var(--tw-gradient-from-position); }
+  .from-\[\#EDF4F9\] { --tw-gradient-from: #E5F0F8 var(--tw-gradient-from-position); }
+  .from-\[\#E2EDF6\] { --tw-gradient-from: #DAE8F4 var(--tw-gradient-from-position); }
+  .via-\[\#F8FAFC\] { --tw-gradient-stops: var(--tw-gradient-from), #F4F8FB var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#F6F1EA\] { --tw-gradient-stops: var(--tw-gradient-from), #F2ECE2 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#F3EDE3\] { --tw-gradient-stops: var(--tw-gradient-from), #EFE7DA var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#EEE5D9\] { --tw-gradient-stops: var(--tw-gradient-from), #EADECF var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#EAF2F8\] { --tw-gradient-stops: var(--tw-gradient-from), #E3EEF6 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#DDEAF4\] { --tw-gradient-stops: var(--tw-gradient-from), #D6E6F2 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .to-\[\#FAF8F4\] { --tw-gradient-to: #F6F3EC var(--tw-gradient-to-position); }
+  .to-\[\#F0F4F7\] { --tw-gradient-to: #EAF0F5 var(--tw-gradient-to-position); }
+  .to-\[\#F0EAE0\] { --tw-gradient-to: #ECE4D8 var(--tw-gradient-to-position); }
+  .to-\[\#EFF5FA\] { --tw-gradient-to: #E8F1F8 var(--tw-gradient-to-position); }
+  .to-\[\#EEE5D9\] { --tw-gradient-to: #EADECF var(--tw-gradient-to-position); }
+  .to-\[\#EDF4F9\] { --tw-gradient-to: #E5F0F8 var(--tw-gradient-to-position); }
+  .to-\[\#E2EDF6\] { --tw-gradient-to: #DAE8F4 var(--tw-gradient-to-position); }
+}
