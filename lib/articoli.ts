@@ -28,6 +28,91 @@ const bibliografiaOzono = [
 
 export const articoli: Articolo[] = [
   {
+    slug: "lombosciatalgia-dolore-schiena-gamba",
+    titolo: "Lombosciatalgia: quando il mal di schiena scende lungo la gamba",
+    descrizione:
+      "Dolore che dalla schiena scende lungo la gamba: che cos'è la lombosciatalgia, quando preoccuparsi, quando serve la risonanza e come ozonoterapia e osteopatia possono inserirsi nel percorso.",
+    immagine: "/images/blog-lombosciatalgia.jpg",
+    categoria: "Osteopatia",
+    data: "2026-10-28",
+    bibliografia: [
+      "National Institute for Health and Care Excellence (NICE). Low back pain and sciatica in over 16s: assessment and management. NICE guideline NG59, 2016 (aggiornata 2020).",
+      "Koes BW, van Tulder MW, Peul WC. Diagnosis and treatment of sciatica. BMJ. 2007;334(7607):1313-1317.",
+      "Ropper AH, Zafonte RD. Sciatica. New England Journal of Medicine. 2015;372(13):1240-1248.",
+      "Magalhaes FN, Dotta L, Sasse A, Teixeira MJ, Fonoff ET. Ozone therapy as a treatment for low back pain secondary to herniated disc: a systematic review and meta-analysis of randomized controlled trials. Pain Physician. 2012;15(2):E115-E129.",
+      "Steppan J, Meaders T, Muto M, Murphy KJ. A metaanalysis of the effectiveness and safety of ozone treatments for herniated lumbar discs. Journal of Vascular and Interventional Radiology. 2010;21(4):534-548.",
+      "Paoloni M, et al. Intramuscular oxygen-ozone therapy in the treatment of acute back pain with lumbar disc herniation: a multicenter, randomized, double-blind, clinical trial of active and simulated lumbar paravertebral injection. Spine. 2009;34(13):1337-1344.",
+      "Franke H, Franke JD, Fryer G. Osteopathic manipulative treatment for nonspecific low back pain: a systematic review and meta-analysis. BMC Musculoskeletal Disorders. 2014;15:286.",
+    ],
+    contenuto: `**Il dolore parte dalla schiena. Poi scende: il gluteo, la coscia, a volte fino al polpaccio o al piede.**
+
+È una delle ragioni più frequenti per cui le persone chiamano lo studio. E quasi sempre arrivano con le stesse domande: è un'ernia? Devo preoccuparmi? Serve una risonanza? Che cosa posso fare?
+
+Proviamo a rispondere, con ordine.
+
+### Che cos'è la lombosciatalgia?
+
+È un dolore che nasce nella zona lombare, la parte bassa della schiena, e si irradia lungo la gamba, seguendo il percorso del nervo sciatico.
+
+La differenza con la semplice lombalgia è proprio questa: nella lombalgia il dolore resta nella schiena; nella lombosciatalgia scende lungo l'arto inferiore. Spesso è accompagnato da formicolio, ridotta sensibilità al tatto, bruciore o una sensazione di "scossa" lungo la gamba.
+
+Il dolore alla gamba, a volte, è più forte di quello alla schiena.
+
+### Perché il dolore scende lungo la gamba? È un'ernia?
+
+Il dolore scende lungo la gamba quando una radice nervosa, nel punto in cui esce dalla colonna, viene irritata o compressa da un'ernia o una protrusione del disco intervertebrale, ma non è l'unica causa: possono contribuire anche il restringimento del canale vertebrale, l'artrosi delle vertebre o, a volte, tensioni muscolari importanti nella zona del gluteo.
+
+C'è poi un aspetto che sorprende molti: un'ernia vista in risonanza non spiega sempre, da sola, il dolore. Molte persone hanno protrusioni o piccole ernie senza alcun sintomo.
+
+Per questo vale anche qui un principio semplice: **stesso sintomo non significa stessa causa.** Il dolore va letto nella storia di quella persona, non solo nel referto.
+
+### Quando devo preoccuparmi?
+
+Nella maggior parte dei casi la lombosciatalgia tende a migliorare nell'arco di alcune settimane. Esistono però alcuni segnali che richiedono una visita **urgente**, senza aspettare:
+
+• perdita di forza a una gamba o al piede, che peggiora (per esempio il piede che "cade" camminando)
+• formicolio o perdita di sensibilità nella zona genitale o tra le gambe
+• difficoltà a urinare, oppure perdita del controllo di urine o feci
+• dolore che compare insieme a febbre, dopo una caduta o un trauma importante
+• dolore in persone con una storia di tumore, o accompagnato da un calo di peso senza motivo
+
+In questi casi è necessario rivolgersi subito al medico o al pronto soccorso.
+
+### Serve la risonanza?
+
+Non sempre, e non subito. Le linee guida internazionali indicano la risonanza magnetica quando sono presenti segnali di allarme, quando i sintomi non migliorano nel tempo o quando si sta valutando un intervento.
+
+Il primo passo è la visita: il medico raccoglie la storia del dolore, verifica forza, sensibilità e riflessi della gamba, e valuta come la persona si muove. È da qui che si decide se e quali esami servono.
+
+E quando gli esami ci sono già, vanno letti insieme a quello che la persona racconta e a quello che emerge dalla visita.
+
+### Ozonoterapia e osteopatia possono aiutare?
+
+Nella lombosciatalgia convivono spesso due aspetti: una componente infiammatoria, che alimenta il dolore, e una componente meccanica, fatta di tensioni, rigidità e compensi nel modo di muoversi.
+
+L'**ossigeno-ozonoterapia**, ad esempio con infiltrazioni paravertebrali, può intervenire sulla componente infiammatoria e dolorosa. Il suo utilizzo nel dolore lombare con ernia del disco è stato studiato in diverse ricerche cliniche e revisioni scientifiche.
+
+L'**osteopatia** lavora sulle tensioni e sui fattori biomeccanici che possono contribuire a mantenere il problema nel tempo, come le rigidità del bacino, delle anche o della colonna.
+
+Nell'approccio del Dott. Maico Battistello le due discipline sono differenti e sinergiche: non l'una o l'altra, ma due metodiche che si completano all'interno della stessa seduta terapeutica. Numero di sedute e modalità vengono definiti dopo la valutazione, in base al quadro clinico di ciascuno.
+
+Approfondisci: [Ozonoterapia + Osteopatia](/ozonoterapia-osteopatia)
+
+### Che cosa posso fare io nel frattempo?
+
+Il riposo assoluto a letto, per giorni, oggi non è più consigliato: le linee guida suggeriscono di restare attivi, per quanto il dolore lo permette.
+
+Camminare un po' alla volta, alternare le posizioni ed evitare di restare seduti troppo a lungo aiuta più dell'immobilità. Anche ascoltare il proprio corpo è importante: il movimento non deve peggiorare in modo netto il dolore alla gamba.
+
+E se il dolore non passa, o continua a tornare, non conviene abituarsi: è il momento di capirne l'origine. Puoi leggere anche il nostro articolo sulla [lombalgia e l'approccio integrato](/blog/lombalgia-approccio-integrato-osteopatia-ozonoterapia).
+
+### Il primo passo
+
+La lombosciatalgia non è uguale per tutti. Lo stesso dolore lungo la gamba può avere origini diverse, e per questo il percorso giusto parte sempre da una valutazione completa della persona.
+
+Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).`,
+  },
+  {
     slug: "lombalgia-approccio-integrato-osteopatia-ozonoterapia",
     titolo: "Il paziente non è un protocollo",
     descrizione:
