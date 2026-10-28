@@ -922,3 +922,27 @@ body.menu-open {
   color: transparent;
   animation: textWaveRed 3s linear infinite;
 }
+
+/* Telefono: sfumature degli sfondi più intense, perché sugli schermi piccoli si notavano poco */
+@media (max-width: 767px) {
+  .from-\[\#FAF8F4\] { --tw-gradient-from: #F3EEE5 var(--tw-gradient-from-position); }
+  .from-\[\#F0EAE0\] { --tw-gradient-from: #E9DFCF var(--tw-gradient-from-position); }
+  .from-\[\#F0F4F7\] { --tw-gradient-from: #E5EDF3 var(--tw-gradient-from-position); }
+  .from-\[\#EFF5FA\] { --tw-gradient-from: #E1EDF7 var(--tw-gradient-from-position); }
+  .from-\[\#EEE5D9\] { --tw-gradient-from: #E6D8C5 var(--tw-gradient-from-position); }
+  .from-\[\#EDF4F9\] { --tw-gradient-from: #DDEBF6 var(--tw-gradient-from-position); }
+  .from-\[\#E2EDF6\] { --tw-gradient-from: #D2E4F2 var(--tw-gradient-from-position); }
+  .via-\[\#F8FAFC\] { --tw-gradient-stops: var(--tw-gradient-from), #F0F5FA var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#F6F1EA\] { --tw-gradient-stops: var(--tw-gradient-from), #EFE6DA var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#F3EDE3\] { --tw-gradient-stops: var(--tw-gradient-from), #EBE1D2 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#EEE5D9\] { --tw-gradient-stops: var(--tw-gradient-from), #E6D8C5 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#EAF2F8\] { --tw-gradient-stops: var(--tw-gradient-from), #DCEAF5 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .via-\[\#DDEAF4\] { --tw-gradient-stops: var(--tw-gradient-from), #CFE2F1 var(--tw-gradient-via-position), var(--tw-gradient-to); }
+  .to-\[\#FAF8F4\] { --tw-gradient-to: #F3EEE5 var(--tw-gradient-to-position); }
+  .to-\[\#F0F4F7\] { --tw-gradient-to: #E5EDF3 var(--tw-gradient-to-position); }
+  .to-\[\#F0EAE0\] { --tw-gradient-to: #E9DFCF var(--tw-gradient-to-position); }
+  .to-\[\#EFF5FA\] { --tw-gradient-to: #E1EDF7 var(--tw-gradient-to-position); }
+  .to-\[\#EEE5D9\] { --tw-gradient-to: #E6D8C5 var(--tw-gradient-to-position); }
+  .to-\[\#EDF4F9\] { --tw-gradient-to: #DDEBF6 var(--tw-gradient-to-position); }
+  .to-\[\#E2EDF6\] { --tw-gradient-to: #D2E4F2 var(--tw-gradient-to-position); }
+}
