@@ -353,6 +353,68 @@ export function DescriptionSection() {
   );
 }
 
+/* Recensioni: solo punteggio e rimando a Google, senza citare testimonianze
+   (pubblicità sanitaria informativa). Aggiornare a mano punteggio e numero. */
+const RECENSIONI = { media: "4,9", totale: 21 }
+const LINK_LEGGI_RECENSIONI =
+  "https://www.google.com/maps/search/?api=1&query=Dott.+Maico+Battistello+Marostica"
+const LINK_LASCIA_RECENSIONE = "https://g.page/r/CXgHCy2OFbP1EAE/review"
+
+function Stella() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7 md:h-8 md:w-8 fill-[#F5B301]" aria-hidden="true">
+      <path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" />
+    </svg>
+  )
+}
+
+export function ReviewsSection() {
+  return (
+    <section className="bg-gradient-to-b from-[#F0EAE0] via-[#F6F1EA] to-[#F0EAE0] py-10 md:py-14">
+      <div className="container px-4">
+        <AnimatedScrollElement className="mx-auto max-w-3xl text-center" direction="up" delay={0.1}>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
+            Recensioni su Google
+          </p>
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-5">
+            <span className="text-5xl md:text-6xl font-semibold tracking-tight text-slate-900">
+              {RECENSIONI.media}
+            </span>
+            <div className="flex flex-col items-center sm:items-start">
+              <div className="flex gap-1" aria-label={`${RECENSIONI.media} stelle su 5`}>
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <Stella key={i} />
+                ))}
+              </div>
+              <span className="mt-1 text-base md:text-lg text-slate-600">
+                {RECENSIONI.totale} recensioni dei pazienti
+              </span>
+            </div>
+          </div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+            <a
+              href={LINK_LEGGI_RECENSIONI}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-full bg-[#0066CC] px-8 text-base font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
+            >
+              Leggi le recensioni su Google
+            </a>
+            <a
+              href={LINK_LASCIA_RECENSIONE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-12 items-center justify-center rounded-full border border-[#0066CC]/40 bg-white/70 px-8 text-base font-semibold text-[#0066CC] transition-colors hover:bg-white"
+            >
+              Lascia una recensione
+            </a>
+          </div>
+        </AnimatedScrollElement>
+      </div>
+    </section>
+  )
+}
+
 export function AdvancedTherapySection() {
   return (
     // Continua il crema delle FAQ e sfuma dolcemente verso il bianco da cui parte il footer
