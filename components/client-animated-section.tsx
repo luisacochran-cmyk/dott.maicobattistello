@@ -189,7 +189,8 @@ export function TreatmentsSection() {
 
             <AnimatedScrollElement direction="up" delay={0.2}>
               {/* Le parole chiave sono in <strong>: grassetto più scuro del testo, non blu */}
-              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-90                <p>
+              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
+                <p>
                   Una caviglia che fa male può essere il risultato di una catena
                   che parte dalla zona lombare o dalla spalla; un dolore al collo
                   può avere origine in un punto della spalla. Per questo la{" "}
@@ -217,8 +218,6 @@ export function TreatmentsSection() {
                   in un approccio costruito sulla persona, sulla valutazione
                   clinica e sulle esigenze di ciascun paziente.
                 </p>
-
-p>
 
                 <p className="border-l-2 border-[#0066CC]/30 pl-5">
                   Il percorso comprende anche l&apos;
