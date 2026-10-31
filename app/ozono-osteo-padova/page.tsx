@@ -22,6 +22,12 @@ export const metadata: Metadata = {
     title: seoData.title,
     description: seoData.description,
     url: seoData.canonical,
+    images: [
+      {
+        url: "https://dottmaicobattistello.it/images/Ritratto%20del%20medico%20in%20clinica.png",
+        alt: "Dott. Maico Battistello - Ozonoterapia e Osteopatia a Padova",
+      },
+    ],
   },
 }
 
