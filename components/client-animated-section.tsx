@@ -182,17 +182,26 @@ export function TreatmentsSection() {
                 L&apos;approccio integrato
               </p>
               <h2 className="text-[2rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900">
-                Un approccio costruito sulla persona
+                Il dolore non sempre nasce dove si sente
                 <span className="text-[#0066CC]">.</span>
               </h2>
             </AnimatedScrollElement>
 
             <AnimatedScrollElement direction="up" delay={0.2}>
               {/* Le parole chiave sono in <strong>: grassetto più scuro del testo, non blu */}
-              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
+              <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-90                <p>
+                  Una caviglia che fa male può essere il risultato di una catena
+                  che parte dalla zona lombare o dalla spalla; un dolore al collo
+                  può avere origine in un punto della spalla. Per questo la{" "}
+                  <strong>valutazione osteopatica</strong> guida anche
+                  l&apos;<strong>ozonoterapia</strong>: il trattamento non si
+                  ferma al punto che fa male, ma può estendersi alle aree che
+                  hanno originato o mantengono il problema.
+                </p>
+
                 <p>
-                  L&apos;<strong>ozonoterapia</strong> può essere indicata per
-                  intervenire sul <strong>dolore</strong> e sui{" "}
+                  L&apos;<strong>ozonoterapia</strong> può intervenire sul{" "}
+                  <strong>dolore</strong> e sui{" "}
                   <strong>processi infiammatori</strong>; l&apos;
                   <strong>osteopatia</strong> si concentra sugli{" "}
                   <strong>aspetti funzionali e posturali</strong> che possono
@@ -200,13 +209,16 @@ export function TreatmentsSection() {
                 </p>
 
                 <p>
-                  Il tratto distintivo del Dott. Maico Battistello è l&apos;
-                  <strong>integrazione di queste due discipline</strong>: non
-                  l&apos;una o l&apos;altra, ma un{" "}
-                  <strong>unico percorso</strong> in cui ozonoterapia e
-                  osteopatia si completano, costruito sulla valutazione clinica
-                  e sulle esigenze di ciascun paziente.
+                  Il tratto distintivo del Dott. Maico Battistello è
+                  l&apos;integrazione di{" "}
+                  <strong>due discipline differenti e sinergiche</strong>: non
+                  l&apos;una o l&apos;altra, ma due metodiche che si completano{" "}
+                  <strong>all&apos;interno della stessa seduta terapeutica</strong>,
+                  in un approccio costruito sulla persona, sulla valutazione
+                  clinica e sulle esigenze di ciascun paziente.
                 </p>
+
+p>
 
                 <p className="border-l-2 border-[#0066CC]/30 pl-5">
                   Il percorso comprende anche l&apos;
