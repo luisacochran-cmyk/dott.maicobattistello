@@ -196,6 +196,36 @@ export default function ChiSonoPage() {
           </div>
         </div>
 
+        {/* Percorso professionale: linea del tempo */}
+        <section className="mt-6 rounded-[2rem] bg-gradient-to-b from-[#EFF5FA] via-[#F8FAFC] to-[#F0EAE0] px-6 py-10 md:px-12 md:py-14">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
+            Formazione ed esperienza
+          </p>
+          <h2 className="mb-10 text-[2rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900">
+            Il percorso professionale<span className="text-[#0066CC]">.</span>
+          </h2>
+          <ol className="relative ml-2 border-l-2 border-[#0066CC]/25">
+            {[
+              { anno: "1999", titolo: "Laurea in Medicina e Chirurgia", luogo: "Università di Padova" },
+              { anno: "2001", titolo: "Inizio dell'attività in Medicina Legale e delle Assicurazioni", luogo: "Consulenze e perizie medico-legali" },
+              { anno: "2004", titolo: "Specializzazione in Medicina Legale", luogo: "Università di Parma" },
+              { anno: "2005", titolo: "Diploma in Osteopatia", luogo: "Istituto Europeo per la Medicina Osteopatica (EIOM), Padova" },
+              { anno: "2017", titolo: "Ossigeno-Ozonoterapia nella pratica clinica", luogo: "Integrata con l'osteopatia nello stesso percorso terapeutico" },
+              { anno: "2019", titolo: "Certificazione in Pet Therapy", luogo: "Project Manager, Coordinatore di Intervento e Conduttore di Cani" },
+            ].map((tappa) => (
+              <li key={tappa.anno} className="relative mb-8 pl-8 last:mb-0">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full border-2 border-white bg-[#0066CC] shadow"
+                />
+                <p className="text-sm font-semibold tracking-wide text-[#0066CC]">{tappa.anno}</p>
+                <p className="mt-1 text-lg md:text-xl font-semibold text-slate-900">{tappa.titolo}</p>
+                <p className="mt-1 text-base md:text-lg text-slate-600">{tappa.luogo}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
         <div className="my-14">
           <WordCarousel
             words={[
