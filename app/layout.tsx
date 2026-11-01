@@ -122,6 +122,7 @@ export default function RootLayout({
               url: "https://dottmaicobattistello.it",
               telephone: "+393487383372",
               email: "maico.battistello@gmail.com",
+              vatID: "IT02849290248",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Via Ragazzoni 36",

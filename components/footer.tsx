@@ -73,9 +73,21 @@ export default function Footer() {
 
       {/* Chiusura blu piena, senza sfumatura: richiama l'header */}
       <div className="bg-[#0066CC] text-white">
-        <div className="container mx-auto flex flex-col gap-1 px-6 py-4 text-sm sm:flex-row sm:items-center sm:justify-between md:px-10">
-          <p>© 2026 Dott. Maico Battistello</p>
-          <p>Tutti i diritti riservati.</p>
+        <div className="container mx-auto px-6 py-5 text-sm md:px-10">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+            <p className="font-semibold">© 2026 Dott. Maico Battistello · Medico Chirurgo</p>
+            <p>Tutti i diritti riservati.</p>
+          </div>
+          {/* Dati professionali obbligatori: P.IVA (art. 35 DPR 633/1972) e iscrizione all'Ordine */}
+          <p className="mt-3 border-t border-white/20 pt-3 text-xs leading-relaxed text-white/85">
+            Iscritto all&apos;Ordine dei Medici Chirurghi e degli Odontoiatri della Provincia di Vicenza, n. 4871
+            <span aria-hidden="true" className="mx-2">·</span>
+            P.IVA 02849290248
+          </p>
+          <p className="mt-1 text-xs leading-relaxed text-white/70">
+            Le informazioni presenti nel sito hanno carattere divulgativo e non sostituiscono la visita medica.
+            Contenuti conformi alle linee guida sulla pubblicità dell&apos;informazione sanitaria (artt. 55-57 del Codice di Deontologia Medica).
+          </p>
         </div>
       </div>
     </footer>
