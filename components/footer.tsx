@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
           {/* Dati professionali obbligatori: P.IVA (art. 35 DPR 633/1972) e iscrizione all'Ordine */}
           <p className="mt-3 border-t border-white/20 pt-3 text-xs leading-relaxed text-white/85">
-            Iscritto all&apos;Ordine dei Medici Chirurghi e degli Odontoiatri della Provincia di Vicenza, n. 4871
+            Iscritto all&apos;Albo dei Medici Chirurghi della Provincia di Vicenza, n. 4871
             <span aria-hidden="true" className="mx-2">·</span>
             P.IVA 02849290248
           </p>
