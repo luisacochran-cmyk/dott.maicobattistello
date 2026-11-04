@@ -123,7 +123,9 @@ L'approccio è pensato per chi ha un dolore muscolo-scheletrico che ritorna, che
 
 Se convivi con un dolore che torna o che i trattamenti locali non hanno risolto, il primo passo è capire da dove nasce. Nella prima visita ricostruiamo insieme la catena disfunzionale e valutiamo se questo approccio fa per te.
 
-[Prenota una visita di valutazione](/contatti).`,
+[Prenota una visita di valutazione](/contatti).
+
+I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`,
   },
   {
     slug: "lombosciatalgia-dolore-schiena-gamba",
