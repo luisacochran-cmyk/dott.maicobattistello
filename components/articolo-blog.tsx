@@ -54,6 +54,55 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
           )
         }
 
+        // Tabella: righe che iniziano con | (la prima è l'intestazione)
+        if (t.startsWith("|")) {
+          const righe = t
+            .split("\n")
+            .map((riga) => riga.trim())
+            .filter((riga) => riga.startsWith("|") && !/^\|[\s|:-]+\|$/.test(riga))
+            .map((riga) => riga.replace(/^\||\|$/g, "").split("|").map((c) => c.trim()))
+          const [intestazione, ...corpo] = righe
+          return (
+            <div key={i} className="overflow-x-auto rounded-[1.25rem] bg-gradient-to-br from-[#F2F7FD] via-white to-[#FAF6F0] ring-1 ring-[#E3E8EF]">
+              <table className="w-full min-w-[34rem] border-collapse text-left text-base md:text-lg">
+                <thead>
+                  <tr>
+                    {intestazione.map((cella, j) => (
+                      <th
+                        key={j}
+                        scope="col"
+                        className={`px-5 pt-5 pb-3 align-bottom text-sm font-semibold uppercase tracking-[0.12em] ${j === intestazione.length - 1 ? "text-[#0066CC]" : "text-slate-500"}`}
+                      >
+                        {cella}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {corpo.map((riga, r) => (
+                    <tr key={r} className="border-t border-slate-200/80">
+                      {riga.map((cella, j) =>
+                        j === 0 ? (
+                          <th key={j} scope="row" className="px-5 py-4 align-top font-semibold text-slate-900">
+                            {conFormattazione(cella)}
+                          </th>
+                        ) : (
+                          <td
+                            key={j}
+                            className={`px-5 py-4 align-top ${j === riga.length - 1 ? "text-slate-900" : "text-slate-600"}`}
+                          >
+                            {conFormattazione(cella)}
+                          </td>
+                        ),
+                      )}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+        }
+
         // Elenco puntato (una o più righe che iniziano con •)
         if (t.startsWith("• ")) {
           const voci = t

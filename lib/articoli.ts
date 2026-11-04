@@ -28,6 +28,104 @@ const bibliografiaOzono = [
 
 export const articoli: Articolo[] = [
   {
+    slug: "ozonoterapia-approccio-osteopatico",
+    titolo: "Ozonoterapia con approccio osteopatico",
+    descrizione:
+      "Ozonoterapia con approccio osteopatico: perché il dolore è spesso l'ultimo anello di una catena e come ossigeno-ozonoterapia e osteopatia, nella stessa seduta, trattano sia il dolore sia la catena che lo produce.",
+    immagine: "/images/blog-ozonoterapia-approccio-osteopatico.jpg",
+    categoria: "Ozonoterapia",
+    data: "2026-11-04",
+    bibliografia: [
+      "Wainner RS, Whitman JM, Cleland JA, Flynn TW. Regional interdependence: a musculoskeletal examination model whose time has come. J Orthop Sports Phys Ther. 2007;37(11):658-660.",
+      "Sueki DG, Cleland JA, Wainner RS. A regional interdependence model of musculoskeletal dysfunction: research, mechanisms, and clinical implications. J Man Manip Ther. 2013;21(2):90-102.",
+      "Donnelly JM, Fernández-de-las-Peñas C, Finnegan M, Freeman JL. Travell, Simons & Simons' Myofascial Pain and Dysfunction: The Trigger Point Manual. 3rd ed. Wolters Kluwer; 2019.",
+      "Magalhaes FN, Dotta L, Sasse A, Teixeira MJ, Fonoff ET. Ozone therapy as a treatment for low back pain secondary to herniated disc: a systematic review and meta-analysis of randomized controlled trials. Pain Physician. 2012;15(2):E115-E129.",
+      "Paoloni M, et al. Intramuscular oxygen-ozone therapy in the treatment of acute back pain with lumbar disc herniation: a multicenter, randomized, double-blind, clinical trial of active and simulated lumbar paravertebral injection. Spine. 2009;34(13):1337-1344.",
+      "Franke H, Franke JD, Fryer G. Osteopathic manipulative treatment for nonspecific low back pain: a systematic review and meta-analysis. BMC Musculoskelet Disord. 2014;15:286.",
+      "Raeissadat SA, Tabibian E, Rayegani SM, Rahimi-Dehgolan S, Babaei-Ghazani A. An investigation into the efficacy of intra-articular ozone (O2-O3) injection in patients with knee osteoarthritis: a systematic review and meta-analysis. J Pain Res. 2018;11:2537-2550.",
+      "Raeissadat SA, et al. Comparison of ozone and lidocaine injection efficacy vs dry needling in myofascial pain syndrome patients. J Pain Res. 2018;11:1273-1279.",
+      "Sagai M, Bocci V. Mechanisms of action involved in ozone therapy: is healing induced via a mild oxidative stress? Med Gas Res. 2011;1:29.",
+    ],
+    contenuto: `**Il punto in cui senti dolore non sempre coincide con il punto in cui il problema è nato.**
+
+### Il dolore è spesso l'ultimo anello di una catena
+
+Un ginocchio che fa male, una schiena che si blocca, un collo rigido possono essere l'ultimo anello di una catena di tensioni partita altrove, anche mesi prima.
+
+Per questo nel mio studio unisco due competenze: l'ossigeno-ozonoterapia e l'osteopatia. L'obiettivo è trattare sia il dolore per cui mi chiami, sia il percorso che lo ha prodotto.
+
+### Come nasce una catena disfunzionale
+
+Il corpo funziona come un sistema collegato. Muscoli, legamenti e fasce (le membrane che avvolgono muscoli e organi) trasmettono le tensioni da una regione all'altra [3].
+
+Quando una zona perde la sua normale mobilità, si crea quella che in osteopatia chiamiamo **disfunzione**. Il corpo non resta fermo: si adatta. Modifica la postura, sposta i carichi, chiede ad altre articolazioni di lavorare di più. Questo compenso può scendere dall'alto verso il basso o risalire dal basso verso l'alto.
+
+Per un po' il compenso funziona e non dà sintomi. Poi, a valle, una struttura sovraccaricata cede e compare il dolore. È a quel punto che il paziente chiede aiuto.
+
+L'idea che una regione del corpo influenzi le altre non appartiene solo all'osteopatia. In ambito riabilitativo è descritta come **interdipendenza regionale** [1, 2].
+
+### Due modi di usare l'ozono
+
+L'ossigeno-ozonoterapia infiltrativa è una tecnica medica consolidata per il dolore muscolo-scheletrico. Esistono due modi di impiegarla.
+
+| | Ozonoterapia classica | Con approccio osteopatico |
+|---|---|---|
+| Dove si infiltra | Nella sede del dolore | Nella sede del dolore e lungo la catena disfunzionale che lo ha prodotto |
+| Valutazione | Clinica della zona dolente | Clinica e osteopatica di tutto il corpo |
+| Dopo l'ozono | Fine della seduta | Manovre osteopatiche e riequilibrio posturale |
+
+Sono due approcci diversi per ampiezza, non per qualità. Quello che descrivo qui è l'approccio esteso alla catena.
+
+### Il metodo in tre fasi
+
+**1. Diagnosi della catena.** Prima di trattare, valuto il paziente nel suo insieme. Con l'esame clinico e osteopatico individuo i punti di scompenso e ricostruisco la catena che porta fino al dolore.
+
+**2. Ozono a ritroso.** Infiltro con miscela di ossigeno-ozono la sede dolorosa e le aree di tensione muscolare, legamentosa o fasciale che mantengono le disfunzioni lungo la catena. Il trattamento risale dal dolore verso la sua origine.
+
+**3. Manipolazione e riequilibrio.** Subito dopo, con i tessuti meno infiammati, meno contratti e meno dolenti, eseguo le manovre osteopatiche per ripristinare la mobilità dei distretti coinvolti. Chiudo con un riequilibrio posturale complessivo.
+
+L'ordine conta. L'ozono riduce tensione, infiammazione e dolore; la manipolazione lavora su tessuti più disponibili; il riequilibrio aiuta a consolidare il risultato.
+
+### Un esempio: dal collo al ginocchio
+
+Un paziente arriva per un dolore al ginocchio comparso da poche settimane, senza traumi.
+
+La valutazione racconta una storia più lunga. Una disfunzione cervicale ha alterato la postura del tratto dorsale e lombare. Per evitare il dolore il corpo ha adottato un atteggiamento antalgico di compenso, che ha spostato i carichi sugli arti inferiori. Il ginocchio, sovraccaricato, ha reso dolorosa un'artrosi iniziale fino ad allora silente.
+
+Trattare solo il ginocchio può dare sollievo, ma la catena che lo sovraccarica resta attiva. Per questo procedo così:
+
+• infiltrazione intra-articolare di ozono nel ginocchio;
+• infiltrazioni paravertebrali e miofasciali nel tratto lombare e dorso-cervicale;
+• manovre osteopatiche di sblocco su tutti i distretti coinvolti;
+• riequilibrio posturale finale.
+
+Il numero di sedute dipende dal singolo caso e lo concordiamo dopo la prima valutazione.
+
+### Perché ha senso: biologia e ricerca
+
+**Cosa fa l'ozono.** A basse concentrazioni l'ozono induce nei tessuti un lieve stress ossidativo controllato. L'organismo risponde attivando le proprie difese antiossidanti e riducendo i mediatori dell'infiammazione [9]. Nel muscolo contratto questo si traduce in meno dolore e meno tensione.
+
+**Perché poi la manipolazione.** Un tessuto meno dolente e meno contratto oppone meno resistenza. Le manovre osteopatiche possono così ripristinare la mobilità con più facilità. Ridurre la tensione lungo la catena, spesso, è già sufficiente ad attenuare la disfunzione; la manipolazione e il riequilibrio aiutano a completare il lavoro.
+
+**Cosa dice la ricerca.** Le singole tecniche sono state studiate:
+
+• l'ozono infiltrativo ha mostrato efficacia nel mal di schiena da ernia discale [4, 5], nel dolore miofasciale [8] e nell'artrosi di ginocchio [7];
+• il trattamento osteopatico ha mostrato benefici nel mal di schiena aspecifico [6];
+• il modello dell'interdipendenza regionale descrive come una regione influenzi le altre [1, 2].
+
+Va detto con chiarezza: la sequenza combinata ozono più osteopatia, applicata a tutta la catena, non è ancora stata studiata in trial dedicati. Si basa sul razionale biologico e sull'esperienza clinica. È un approccio coerente, non una promessa di guarigione.
+
+### A chi può essere utile
+
+L'approccio è pensato per chi ha un dolore muscolo-scheletrico che ritorna, che si sposta o che non risponde ai trattamenti locali: cervicalgia, dorsalgia, lombalgia, dolore all'anca, al ginocchio o alla spalla con una componente posturale.
+
+### Il primo passo è la valutazione
+
+Se convivi con un dolore che torna o che i trattamenti locali non hanno risolto, il primo passo è capire da dove nasce. Nella prima visita ricostruiamo insieme la catena disfunzionale e valutiamo se questo approccio fa per te.
+
+[Prenota una visita di valutazione](/contatti).`,
+  },
+  {
     slug: "lombosciatalgia-dolore-schiena-gamba",
     titolo: "Lombosciatalgia: quando il mal di schiena scende lungo la gamba",
     descrizione:

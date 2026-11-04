@@ -191,29 +191,29 @@ export function TreatmentsSection() {
               {/* Le parole chiave sono in <strong>: grassetto più scuro del testo, non blu */}
               <div className="space-y-5 text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
                 <p>
-                  Una caviglia che fa male può essere il risultato di una catena
-                  che parte dalla zona lombare o dalla spalla; un dolore al collo
-                  può avere origine in un punto della spalla. Per questo la{" "}
-                  <strong>valutazione osteopatica</strong> guida anche
+                  Un ginocchio che fa male può essere l&apos;ultimo anello di una
+                  catena partita dal collo e passata per la schiena; un dolore al
+                  collo può avere origine nella spalla o nel tratto dorsale. Per
+                  questo la <strong>valutazione osteopatica</strong> guida anche
                   l&apos;<strong>ozonoterapia</strong>: il trattamento non si
-                  ferma al punto che fa male, ma può estendersi alle aree che
-                  hanno originato o mantengono il problema.
+                  ferma al punto che fa male, ma si estende alle aree che hanno
+                  originato o mantengono il problema.
                 </p>
 
                 <p>
-                  L&apos;<strong>ozonoterapia</strong> può intervenire sul{" "}
-                  <strong>dolore</strong> e sui{" "}
-                  <strong>processi infiammatori</strong>; l&apos;
-                  <strong>osteopatia</strong> si concentra sugli{" "}
-                  <strong>aspetti funzionali e posturali</strong> che possono
-                  contribuire al disturbo.
+                  L&apos;<strong>ozonoterapia</strong> può ridurre{" "}
+                  <strong>dolore, infiammazione e tensioni muscolari e fasciali</strong>,
+                  anche lungo la catena che ha generato il disturbo.
+                  L&apos;<strong>osteopatia</strong> interviene subito dopo, su
+                  tessuti più disponibili, per ripristinare{" "}
+                  <strong>mobilità ed equilibrio posturale</strong>.
                 </p>
 
                 <p>
                   Il tratto distintivo del Dott. Maico Battistello è
                   l&apos;integrazione di{" "}
-                  <strong>due discipline differenti e sinergiche</strong>: non
-                  l&apos;una o l&apos;altra, ma due metodiche che si completano{" "}
+                  <strong>due discipline complementari</strong>: non l&apos;una o
+                  l&apos;altra, ma due metodiche che si completano{" "}
                   <strong>all&apos;interno della stessa seduta terapeutica</strong>,
                   in un approccio costruito sulla persona, sulla valutazione
                   clinica e sulle esigenze di ciascun paziente.
@@ -227,6 +227,14 @@ export function TreatmentsSection() {
                   dalla <strong>nutraceutica</strong> in base alle necessità
                   cliniche del paziente.
                 </p>
+
+                <Link
+                  href="/blog/ozonoterapia-approccio-osteopatico"
+                  className="inline-flex items-center gap-2 border-b border-[#0066CC]/40 pb-1 text-base md:text-lg font-semibold text-[#0066CC] transition-colors hover:border-[#0066CC]"
+                >
+                  Approfondisci: ozonoterapia con approccio osteopatico
+                  <span aria-hidden="true">→</span>
+                </Link>
               </div>
             </AnimatedScrollElement>
           </div>
