@@ -99,6 +99,14 @@ Trattare solo il ginocchio può dare sollievo, ma la catena che lo sovraccarica 
 • manovre osteopatiche di sblocco su tutti i distretti coinvolti;
 • riequilibrio posturale finale.
 
+Non sono due trattamenti uno dopo l'altro, ma un unico lavoro integrato: l'ozono viene portato anche sui blocchi osteopatici lungo la catena, e quei blocchi vengono manipolati subito dopo. Ecco la sequenza di una seduta.
+
+@foto /images/blog-sequenza-1-ozono-ginocchio.jpg | Ozono nel ginocchio, la sede del dolore
+@foto /images/blog-sequenza-2-ozono-schiena.jpg | Ozono sulle tensioni della schiena
+@foto /images/blog-sequenza-3-manipolazione-schiena.jpg | Manipolazione osteopatica della schiena
+@foto /images/blog-sequenza-4-ozono-cervicale.jpg | Ozono nel tratto cervicale
+@foto /images/blog-sequenza-5-manipolazione-cervicale.jpg | Sblocco osteopatico della cervicale
+
 Il numero di sedute dipende dal singolo caso e lo concordiamo dopo la prima valutazione.
 
 ### Perché ha senso: biologia e ricerca

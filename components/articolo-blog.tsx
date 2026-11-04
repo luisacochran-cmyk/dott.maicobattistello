@@ -54,6 +54,36 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
           )
         }
 
+        // Sequenza di foto numerate: righe "@foto /indirizzo | didascalia"
+        if (t.startsWith("@foto ")) {
+          const foto = t
+            .split("\n")
+            .map((riga) => riga.trim().replace(/^@foto\s+/, ""))
+            .filter(Boolean)
+            .map((riga) => {
+              const [src, didascalia = ""] = riga.split("|").map((p) => p.trim())
+              return { src, didascalia }
+            })
+          return (
+            <figure key={i} className="md:-mx-24 lg:-mx-32">
+              <p className="mb-3 text-sm text-slate-500 md:hidden">Scorri le foto →</p>
+              <ol className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:grid md:grid-cols-5 md:gap-4 md:overflow-visible md:px-0">
+                {foto.map((f, j) => (
+                  <li key={j} className="w-[72%] shrink-0 snap-start md:w-auto">
+                    <div className="relative aspect-square overflow-hidden rounded-[1.25rem] bg-[#F8F5F0] shadow-[0_18px_45px_-32px_rgba(20,35,55,0.55)]">
+                      <Image src={f.src} alt={f.didascalia} fill sizes="(max-width: 768px) 72vw, 200px" className="object-cover" />
+                      <span className="absolute left-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-[#0066CC] text-sm font-semibold text-white shadow-md">
+                        {j + 1}
+                      </span>
+                    </div>
+                    <p className="mt-3 text-base leading-snug text-slate-700">{f.didascalia}</p>
+                  </li>
+                ))}
+              </ol>
+            </figure>
+          )
+        }
+
         // Tabella: righe che iniziano con | (la prima è l'intestazione)
         if (t.startsWith("|")) {
           const righe = t
