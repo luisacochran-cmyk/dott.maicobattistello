@@ -4,6 +4,7 @@ import { Calendar } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 import QuadrantCarousel from "@/components/quadrant-carousel"
+import { articoli } from "@/lib/articoli"
 
 /* ------------------------------------------------------------------
    Stampo grafico comune a tutte le landing page delle sedi.
@@ -13,6 +14,27 @@ import QuadrantCarousel from "@/components/quadrant-carousel"
 type VoceBreadcrumb = { label: string; href: string }
 type VoceCarosello = { title: string; image: string; link: string }
 type InvitoFinale = { titolo: string; testo?: string; pulsante: string }
+type Servizio = "osteopatia" | "ozonoterapia" | "ozono-osteo" | "medicina-legale"
+
+/* Articoli del blog da suggerire in fondo alle pagine delle sedi, per servizio */
+const ARTICOLI_PER_SERVIZIO: Record<Servizio, string[]> = {
+  osteopatia: [
+    "ozonoterapia-approccio-osteopatico",
+    "lombosciatalgia-dolore-schiena-gamba",
+    "lombalgia-approccio-integrato-osteopatia-ozonoterapia",
+  ],
+  ozonoterapia: [
+    "ozonoterapia-approccio-osteopatico",
+    "malanni-stagionali-ozonoterapia-osteopatia-gaet-paet",
+    "infiammazione-cronica-basso-grado",
+  ],
+  "ozono-osteo": [
+    "ozonoterapia-approccio-osteopatico",
+    "lombosciatalgia-dolore-schiena-gamba",
+    "malanni-stagionali-ozonoterapia-osteopatia-gaet-paet",
+  ],
+  "medicina-legale": [],
+}
 
 const testo =
   "text-lg md:text-xl leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900"
@@ -26,6 +48,7 @@ export function LandingPage({
   carosello,
   datiStrutturati,
   invito,
+  servizio,
 }: {
   breadcrumb: VoceBreadcrumb[]
   etichetta: string
@@ -35,9 +58,13 @@ export function LandingPage({
   carosello?: VoceCarosello[]
   datiStrutturati?: object
   invito?: InvitoFinale
+  servizio?: Servizio
 }) {
   const invitoTitolo = invito?.titolo ?? "Ogni percorso inizia da una valutazione"
   const invitoPulsante = invito?.pulsante ?? "Prenota una visita"
+  const articoliCollegati = (servizio ? ARTICOLI_PER_SERVIZIO[servizio] : [])
+    .map((slug) => articoli.find((a) => a.slug === slug))
+    .filter((a): a is (typeof articoli)[number] => Boolean(a))
 
   return (
     <div className="pt-20 lg:pt-24 bg-white">
@@ -62,6 +89,30 @@ export function LandingPage({
 
         {/* Sezioni specifiche della pagina */}
         {children}
+
+        {/* Approfondimenti dal blog */}
+        {articoliCollegati.length > 0 && (
+          <section className="pt-4 pb-6 md:pt-6 md:pb-8">
+            <div className="container mx-auto max-w-4xl px-4">
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
+                Approfondisci sul blog
+              </p>
+              <ul className="divide-y divide-slate-200/80 border-y border-slate-200/80">
+                {articoliCollegati.map((a) => (
+                  <li key={a.slug}>
+                    <Link
+                      href={`/blog/${a.slug}`}
+                      className="group flex items-center justify-between gap-6 py-4 text-lg md:text-xl font-semibold text-slate-900 transition-colors hover:text-[#0066CC]"
+                    >
+                      <span>{a.titolo}</span>
+                      <span aria-hidden="true" className="text-[#0066CC] transition-transform group-hover:translate-x-1">→</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
 
         {/* Invito finale (personalizzabile da ogni pagina) */}
         <section className="pt-6 pb-14 md:pt-8 md:pb-20">

@@ -34,6 +34,7 @@ export const metadata: Metadata = {
 export default function OzonoOsteoMaloPage() {
   return (
     <LandingPage
+      servizio="ozono-osteo"
       breadcrumb={[
         { label: "Home", href: "/" },
         { label: "Ozonoterapia + Osteopatia", href: "/ozonoterapia-osteopatia" },

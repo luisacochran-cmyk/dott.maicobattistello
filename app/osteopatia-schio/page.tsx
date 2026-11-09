@@ -33,6 +33,7 @@ export const metadata: Metadata = {
 export default function OsteopatiaSchioPage() {
   return (
     <LandingPage
+      servizio="osteopatia"
       breadcrumb={[
         { label: "Home", href: "/" },
         { label: "Osteopatia", href: "/osteopatia" },

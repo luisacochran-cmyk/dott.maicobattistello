@@ -290,6 +290,29 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
               ))}
             </div>
           </div>
+          {/* Sedi collegate alla categoria dell'articolo */}
+          <div className="mt-10">
+            <p className={`mb-4 ${etichetta}`}>Dove riceve il Dott. Battistello</p>
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
+              {["Marostica", "Schio", "Malo", "Padova"].map((citta) => {
+                const servizio =
+                  articolo.categoria === "Osteopatia"
+                    ? "osteopatia"
+                    : articolo.categoria === "Medicina Legale"
+                      ? "medicina-legale"
+                      : "ozono-osteo"
+                return (
+                  <Link
+                    key={citta}
+                    href={`/${servizio}-${citta.toLowerCase()}`}
+                    className="inline-flex items-center border-b border-[#0066CC]/40 pb-1 font-semibold text-[#0066CC] transition-colors hover:border-[#0066CC]"
+                  >
+                    {citta}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
         </div>
 
         {/* Invito a prenotare */}

@@ -27,6 +27,7 @@ const stileLink =
 export default function MedicinaLegalePadovaPage() {
   return (
     <LandingPage
+      servizio="medicina-legale"
       breadcrumb={[
         { label: "Home", href: "/" },
         { label: "Medicina Legale", href: "/medicina-legale" },

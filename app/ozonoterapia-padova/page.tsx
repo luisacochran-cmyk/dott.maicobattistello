@@ -35,6 +35,7 @@ export const metadata: Metadata = {
 export default function OzonoterapiaPadovaPage() {
   return (
     <LandingPage
+      servizio="ozonoterapia"
       breadcrumb={[
         { label: "Home", href: "/" },
         { label: "Ozonoterapia", href: "/ozonoterapia" },
