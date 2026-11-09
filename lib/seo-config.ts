@@ -326,13 +326,13 @@ export function generateLocalSEO(
 
   return {
     title: isOsteopatiaMarostica
-      ? "Osteopata a Marostica | Dott. Maico Battistello – Osteopatia"
+      ? "Osteopata a Marostica, medico chirurgo | Dott. Battistello"
       : isOsteopatiaSchio
-        ? "Osteopata a Schio | Dott. Maico Battistello – Osteopatia"
+        ? "Osteopata a Schio, medico chirurgo | Dott. Battistello"
         : isOsteopatiaMalo
-          ? "Osteopata a Malo | Dott. Maico Battistello – Osteopatia"
+          ? "Osteopata a Malo, medico chirurgo | Dott. Battistello"
           : isOsteopatiaPadova
-            ? "Osteopata a Padova | Dott. Maico Battistello – Osteopatia"
+            ? "Osteopata a Padova, medico chirurgo | Dott. Battistello"
             : isOzonoterapiaPadova
               ? "Ozonoterapia a Padova | Dott. Maico Battistello"
               : isOzonoterapiaMarostica
@@ -347,6 +347,8 @@ export function generateLocalSEO(
 
     description: isMedicinaLegalePadova
       ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
+      : service.slug === "osteopatia"
+        ? `Il dolore non sempre nasce dove si sente. A ${city.name} un osteopata che è anche medico: valutazione clinica e, nella stessa seduta, l'integrazione con l'ozono.`
       : service.slug === "ozonoterapia"
         ? `Ozonoterapia a ${city.name} con il Dott. Maico Battistello. Grande autoemoterapia (GAET) e piccola autoemoterapia (PAET), previa valutazione medica.`
         : `${service.description} a ${city.name} con il Dott. Maico Battistello. ` +
