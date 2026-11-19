@@ -184,7 +184,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
             <Image
               src="/images/nuovologo.png"
               alt="Logo Dott. Maico Battistello"
-              width={260}
+              width={197}
               height={60}
               className="h-14 w-auto"
               priority
