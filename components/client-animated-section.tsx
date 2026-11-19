@@ -374,7 +374,7 @@ export function DescriptionSection() {
 
 /* Recensioni: solo punteggio e rimando a Google, senza citare testimonianze
    (pubblicità sanitaria informativa). Aggiornare a mano punteggio e numero. */
-const RECENSIONI = { media: "4,9", totale: 21 }
+const RECENSIONI = { media: "4,9", totale: 23 }
 const LINK_LEGGI_RECENSIONI =
   "https://www.google.com/maps/search/?api=1&query=Dott.+Maico+Battistello+Marostica"
 const LINK_LASCIA_RECENSIONE = "https://g.page/r/CXgHCy2OFbP1EAE/review"
@@ -400,7 +400,7 @@ export function ReviewsSection() {
               {RECENSIONI.media}
             </span>
             <div className="flex flex-col items-center sm:items-start">
-              <div className="flex gap-1" aria-label={`${RECENSIONI.media} stelle su 5`}>
+              <div className="flex gap-1" role="img" aria-label={`${RECENSIONI.media} stelle su 5`}>
                 {[0, 1, 2, 3, 4].map((i) => (
                   <Stella key={i} />
                 ))}

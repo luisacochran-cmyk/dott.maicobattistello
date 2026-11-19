@@ -87,20 +87,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Dott. Battistello" />
 
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-Frame-Options" content="SAMEORIGIN" />
-        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
         <meta httpEquiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-        <meta httpEquiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
 
         <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//hebbkx1anhila5yf.public.blob.vercel-storage.com" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com" />
 
         <link rel="icon" href="/images/fotoweb.png" sizes="any" />

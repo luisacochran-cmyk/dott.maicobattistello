@@ -321,6 +321,9 @@ export default function QuadrantCarousel({
         {items.map((_, index) => (
           <button
             key={index}
+            type="button"
+            aria-label={`Vai alla foto ${index + 1}`}
+            aria-current={index === activeIndex ? "true" : undefined}
             className={`rounded-full transition-all duration-300 shadow-[0_2px_4px_rgba(0,0,0,0.4)] ${
               index === activeIndex ? "bg-white w-5 h-3" : "bg-white/70 w-3 h-3"
             }`}

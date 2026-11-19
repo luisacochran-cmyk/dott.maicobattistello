@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer() {
@@ -11,16 +12,19 @@ export default function Footer() {
           <div className="grid gap-10 md:grid-cols-12 md:gap-8">
             <div className="md:col-span-5">
               <div className="mb-5 flex items-center gap-4">
-                <img
+                <Image
                   src="/images/logo-footer.png"
                   alt="Logo Dott. Maico Battistello"
+                  width={56}
+                  height={56}
+                  sizes="56px"
                   className="h-14 w-14 object-contain"
                 />
                 <div>
                   <p className="text-xl font-semibold tracking-tight text-[#17283C]">
                     Dott. Maico Battistello
                   </p>
-                  <p className="mt-1 text-sm leading-relaxed text-[#627488]">
+                  <p className="mt-1 text-sm leading-relaxed text-[#475569]">
                     Medico Legale · Osteopata · Ozonoterapeuta
                   </p>
                 </div>
@@ -79,12 +83,12 @@ export default function Footer() {
             <p>Tutti i diritti riservati.</p>
           </div>
           {/* Dati professionali obbligatori: P.IVA (art. 35 DPR 633/1972) e iscrizione all'Ordine */}
-          <p className="mt-3 border-t border-white/20 pt-3 text-xs leading-relaxed text-white/85">
+          <p className="mt-3 border-t border-white/20 pt-3 text-xs leading-relaxed text-white">
             Iscritto all&apos;Albo dei Medici Chirurghi della Provincia di Vicenza, n. 4871
             <span aria-hidden="true" className="mx-2">·</span>
             P.IVA 02849290248
           </p>
-          <p className="mt-1 text-xs leading-relaxed text-white/70">
+          <p className="mt-1 text-xs leading-relaxed text-white/95">
             Le informazioni presenti nel sito hanno carattere divulgativo e non sostituiscono la visita medica.
             Contenuti conformi alle linee guida sulla pubblicità dell&apos;informazione sanitaria (artt. 55-57 del Codice di Deontologia Medica).
           </p>

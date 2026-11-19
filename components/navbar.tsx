@@ -95,7 +95,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
               </span>
               {/* La riga delle specializzazioni scompare dolcemente quando l'header è compatto */}
               <span
-                className={`overflow-hidden text-white/80 text-[10px] sm:text-sm font-medium whitespace-nowrap transition-all duration-300 ease-out ${
+                className={`overflow-hidden text-white text-[10px] sm:text-sm font-medium whitespace-nowrap transition-all duration-300 ease-out ${
                   isScrolled ? "max-h-0 opacity-0" : "max-h-6 opacity-100"
                 }`}
               >
