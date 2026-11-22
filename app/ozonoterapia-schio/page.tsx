@@ -93,6 +93,7 @@ export default function OzonoterapiaSchioPage() {
       <LandingVideo
         titolo={`Grande Autoemoterapia (GAET) a ${city.name}`}
         video={VIDEO_GAET.src}
+        videoMobile={VIDEO_GAET.srcMobile}
         poster={VIDEO_GAET.poster}
         titoloVideo={VIDEO_GAET.titolo}
       >
@@ -110,6 +111,7 @@ export default function OzonoterapiaSchioPage() {
       <LandingVideo
         titolo={`Piccola Autoemoterapia (PAET) a ${city.name}`}
         video={VIDEO_PAET.src}
+        videoMobile={VIDEO_PAET.srcMobile}
         poster={VIDEO_PAET.poster}
         titoloVideo={VIDEO_PAET.titolo}
         invertito

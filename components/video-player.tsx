@@ -6,10 +6,12 @@
 
 export default function VideoPlayer({
   src,
+  srcMobile,
   poster,
   titolo,
 }: {
   src: string
+  srcMobile?: string
   poster?: string
   titolo: string
 }) {
@@ -36,6 +38,9 @@ export default function VideoPlayer({
       aria-label={titolo}
       title={titolo}
     >
+      {srcMobile && (
+        <source src={srcMobile} type="video/mp4" media="(max-width: 767px)" />
+      )}
       <source src={src} type="video/mp4" />
       Il suo browser non riesce a riprodurre il video.{" "}
       <a href={src}>Scarichi il video</a>.

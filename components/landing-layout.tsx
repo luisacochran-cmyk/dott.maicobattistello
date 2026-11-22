@@ -227,6 +227,7 @@ export function LandingLink({ href, children }: { href: string; children: ReactN
 export function LandingVideo({
   titolo,
   video,
+  videoMobile,
   poster,
   titoloVideo,
   invertito = false,
@@ -234,6 +235,7 @@ export function LandingVideo({
 }: {
   titolo: string
   video: string
+  videoMobile?: string
   poster?: string
   titoloVideo: string
   invertito?: boolean
@@ -243,7 +245,7 @@ export function LandingVideo({
     <section className="py-6 md:py-8">
       <div className="container mx-auto max-w-5xl px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div className={`aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-900 shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)] ${invertito ? "md:order-2" : ""}`}>
-          <VideoPlayer src={video} poster={poster} titolo={titoloVideo} />
+          <VideoPlayer src={video} srcMobile={videoMobile} poster={poster} titolo={titoloVideo} />
         </div>
         <div className={invertito ? "md:order-1" : ""}>
           <h2 className="text-[1.75rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">

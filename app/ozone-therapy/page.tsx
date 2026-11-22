@@ -129,6 +129,7 @@ export default function OzoneTherapyPage() {
                 <div className="aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-900 shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
                   <VideoPlayer
                     src={VIDEO_GAET.src}
+                    srcMobile={VIDEO_GAET.srcMobile}
                     poster={VIDEO_GAET.poster}
                     titolo={VIDEO_GAET.titolo}
                   />
@@ -180,6 +181,7 @@ export default function OzoneTherapyPage() {
                 <div className="order-1 md:order-2 aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-900 shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
                   <VideoPlayer
                     src={VIDEO_PAET.src}
+                    srcMobile={VIDEO_PAET.srcMobile}
                     poster={VIDEO_PAET.poster}
                     titolo={VIDEO_PAET.titolo}
                   />
