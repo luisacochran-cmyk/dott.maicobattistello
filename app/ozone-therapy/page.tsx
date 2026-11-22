@@ -4,6 +4,8 @@ import QuadrantCarousel from "@/components/quadrant-carousel"
 import Link from "next/link"
 import Image from "next/image"
 import type { ReactNode } from "react"
+import VideoPlayer from "@/components/video-player"
+import { VIDEO_GAET, VIDEO_PAET } from "@/lib/video"
 
 export const metadata = {
   title: "Ozonoterapia a Marostica, Schio, Malo e Padova | Dott. Maico Battistello",
@@ -125,13 +127,10 @@ export default function OzoneTherapyPage() {
               {/* Grande Autoemoterapia */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-900 shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
-                  <iframe
-                    src="https://player.vimeo.com/video/1167667746?h=c3a7c519ea&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&dnt=1"
-                    className="h-full w-full"
-                    loading="lazy"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    title="Video: la Grande Autoemoterapia (GAET)"
+                  <VideoPlayer
+                    src={VIDEO_GAET.src}
+                    poster={VIDEO_GAET.poster}
+                    titolo={VIDEO_GAET.titolo}
                   />
                 </div>
                 <div className="space-y-4 text-lg leading-relaxed text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-900">
@@ -179,13 +178,10 @@ export default function OzoneTherapyPage() {
                   </p>
                 </div>
                 <div className="order-1 md:order-2 aspect-video w-full overflow-hidden rounded-[1.5rem] bg-slate-900 shadow-[0_24px_70px_-40px_rgba(20,35,55,0.5)]">
-                  <iframe
-                    src="https://player.vimeo.com/video/1167667781?h=802d55120b&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&dnt=1"
-                    className="h-full w-full"
-                    loading="lazy"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    title="Video: la Piccola Autoemoterapia (PAET)"
+                  <VideoPlayer
+                    src={VIDEO_PAET.src}
+                    poster={VIDEO_PAET.poster}
+                    titolo={VIDEO_PAET.titolo}
                   />
                 </div>
               </div>

@@ -8,6 +8,7 @@ import {
   LandingVideo,
   LandingLink,
 } from "@/components/landing-layout"
+import { VIDEO_GAET, VIDEO_PAET } from "@/lib/video"
 
 const city = cities.find((c) => c.slug === "padova")!
 const service = services.find((s) => s.slug === "ozonoterapia")!
@@ -129,8 +130,9 @@ export default function OzonoterapiaPadovaPage() {
 
       <LandingVideo
         titolo={`Grande Autoemoterapia (GAET) a ${city.name}`}
-        video="https://player.vimeo.com/video/1167667746?h=c3a7c519ea&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&dnt=1"
-        titoloVideo="Video: la Grande Autoemoterapia (GAET)"
+        video={VIDEO_GAET.src}
+        poster={VIDEO_GAET.poster}
+        titoloVideo={VIDEO_GAET.titolo}
       >
         <p>
           La Grande Autoemoterapia rappresenta la tecnica più avanzata
@@ -152,8 +154,9 @@ export default function OzonoterapiaPadovaPage() {
 
       <LandingVideo
         titolo={`Piccola Autoemoterapia (PAET) a ${city.name}`}
-        video="https://player.vimeo.com/video/1167667781?h=802d55120b&title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&dnt=1"
-        titoloVideo="Video: la Piccola Autoemoterapia (PAET)"
+        video={VIDEO_PAET.src}
+        poster={VIDEO_PAET.poster}
+        titoloVideo={VIDEO_PAET.titolo}
         invertito
       >
         <p>

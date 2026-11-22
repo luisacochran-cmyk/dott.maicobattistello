@@ -48,8 +48,8 @@ export default function CookiePolicyPage() {
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Video</h3>
           <p className="text-lg mb-6">
-            I video presenti nel sito sono ospitati su Vimeo e sono inseriti con l&apos;opzione &quot;Do Not
-            Track&quot;, che impedisce a Vimeo di tracciare la navigazione tramite cookie.
+            I video presenti nel sito sono ospitati direttamente sul sito, senza servizi esterni, e non installano
+            alcun cookie.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Come gestire i cookie</h2>
