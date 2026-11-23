@@ -384,7 +384,7 @@ export function CitazioneSection() {
           <figure className="mx-auto max-w-4xl text-center">
             <div className="mx-auto mb-8 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
             <blockquote className={`${corsivo.className} text-[1.7rem] font-normal italic leading-snug text-[#1D4E89] md:text-[2.6rem] md:leading-[1.25]`}>
-              Il trattamento non parte mai da una tecnica precostituita, ma dalla comprensione clinica del problema.
+              &ldquo;Il trattamento non parte mai da una tecnica precostituita, ma dalla comprensione clinica del problema.&rdquo;
             </blockquote>
             <figcaption className="mt-7 text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
               Dott. Maico Battistello
