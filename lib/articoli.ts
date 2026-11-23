@@ -38,7 +38,7 @@ export const articoli: Articolo[] = [
     titolo: "Male alla spalla quando alzi il braccio o di notte: le cause più frequenti",
     descrizione:
       "Dolore alla spalla quando alzi il braccio o di notte: tendini, borsite, spalla congelata. Quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
-    immagine: "/images/ozspalla.jpg",
+    immagine: "/images/blog-spalla.jpg",
     categoria: "Ozonoterapia + Osteopatia",
     data: "2026-11-23",
     bibliografia: [
@@ -109,9 +109,7 @@ Approfondisci: [Ozonoterapia + Osteopatia](/ozonoterapia-osteopatia)
 
 "Male alla spalla" può voler dire cose molto diverse. Capire quale struttura è coinvolta, e perché, è il primo passo per scegliere il percorso.
 
-Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).
-
-I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`,
+Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).`,
   },
   {
     slug: "cervicale-braccio-formicola-cervicobrachialgia",
@@ -196,16 +194,14 @@ Approfondisci: [Ozonoterapia + Osteopatia](/ozonoterapia-osteopatia)
 
 "La cervicale" non è una diagnosi, ma un punto di partenza. Capire da dove nasce il dolore è ciò che permette di scegliere il percorso giusto.
 
-Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).
-
-I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`,
+Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).`,
   },
   {
     slug: "male-al-ginocchio-artrosi",
     titolo: "Male al ginocchio: è davvero solo artrosi?",
     descrizione:
       "Male al ginocchio e artrosi: perché il dolore non dipende solo dalla cartilagine, quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
-    immagine: "/images/blog-sequenza-1-ozono-ginocchio.jpg",
+    immagine: "/images/blog-ginocchio-artrosi.jpg",
     categoria: "Ozonoterapia",
     data: "2026-11-23",
     bibliografia: [
