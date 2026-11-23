@@ -25,7 +25,7 @@ export default function CatenaDolore() {
     if (pausa) return
     const ridotto = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     if (ridotto) return
-    const t = setInterval(() => setAttivo((a) => (a + 1) % PUNTI.length), 3200)
+    const t = setInterval(() => setAttivo((a) => (a + 1) % PUNTI.length), 5500)
     return () => clearInterval(t)
   }, [pausa])
 
