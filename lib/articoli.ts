@@ -85,7 +85,7 @@ Serve invece **in tempi rapidi** il medico di base o, nei casi più gravi, il pr
 • dopo una caduta o un trauma **non riesci ad alzare il braccio**
 • la spalla è **deformata** o molto gonfia
 • c'è **febbre** con spalla calda e arrossata
-• il dolore alla spalla, soprattutto la sinistra, compare con **affanno, oppressione al petto o sudorazione**: in questo caso chiama subito il 112
+• il dolore alla spalla, soprattutto la sinistra, compare con **affanno, oppressione al petto o sudorazione**: in questo caso chiama subito il 118
 
 ### Che cosa può fare l'ozonoterapia?
 
