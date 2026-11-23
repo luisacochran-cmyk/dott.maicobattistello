@@ -9,6 +9,7 @@ import {
   FaqSection,
   AdvancedTherapySection,
   ReviewsSection,
+  CitazioneSection,
 } from "@/components/client-animated-section"
 
 export const metadata: Metadata = {
@@ -27,6 +28,8 @@ export default function Home() {
       <TreatmentsSection />
 
       <DescriptionSection />
+
+      <CitazioneSection />
 
       <ReviewsSection />
 

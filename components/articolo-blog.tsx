@@ -2,7 +2,7 @@ import type { ReactNode } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar } from "lucide-react"
-import { Lora } from "next/font/google"
+import { corsivo } from "@/lib/fonts"
 import Breadcrumb from "@/components/breadcrumb"
 import IndiceArticolo from "@/components/indice-articolo"
 import { type Articolo, formattaData, tempoLettura, sezioni, ancora } from "@/lib/articoli"
@@ -29,13 +29,6 @@ function conFormattazione(testo: string): ReactNode[] {
   })
 }
 
-/* Corsivo elegante per apertura, frasi in evidenza e "cose da sapere" */
-const corsivo = Lora({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  style: ["italic"],
-  display: "swap",
-})
 
 const tuttoGrassetto = (t: string) =>
   t.startsWith("**") && t.endsWith("**") && !t.slice(2, -2).includes("**")

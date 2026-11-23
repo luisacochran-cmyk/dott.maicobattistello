@@ -7,6 +7,8 @@ import { Calendar } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import QuadrantCarousel from "@/components/quadrant-carousel";
+import CatenaDolore from "@/components/catena-dolore";
+import { corsivo } from "@/lib/fonts";
 
 interface HeroSectionProps {
   className?: string;
@@ -185,6 +187,7 @@ export function TreatmentsSection() {
                 Il dolore non sempre nasce dove si sente
                 <span className="text-[#0066CC]">.</span>
               </h2>
+              <CatenaDolore />
             </AnimatedScrollElement>
 
             <AnimatedScrollElement direction="up" delay={0.2}>
@@ -294,7 +297,7 @@ export function TreatmentsSection() {
               </Link>
             </AnimatedScrollElement>
             <AnimatedScrollElement direction="right" delay={0.2}>
-              <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
+              <div>
                 <div className="grid grid-cols-2 gap-x-5 md:gap-x-9">
                   {[
                     { name: "Marostica", href: "/ozono-osteo-marostica" },
@@ -372,6 +375,28 @@ export function DescriptionSection() {
   );
 }
 
+/* Una frase del Dott. Battistello, in grande */
+export function CitazioneSection() {
+  return (
+    <section className="bg-gradient-to-b from-[#F0EAE0] via-[#F6F1EA] to-[#F0EAE0] py-14 md:py-20">
+      <div className="container px-4">
+        <AnimatedScrollElement direction="up" delay={0.1}>
+          <figure className="mx-auto max-w-4xl text-center">
+            <div className="mx-auto mb-8 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
+            <blockquote className={`${corsivo.className} text-[1.7rem] font-normal italic leading-snug text-[#1D4E89] md:text-[2.6rem] md:leading-[1.25]`}>
+              &ldquo;Il trattamento non parte mai da una tecnica precostituita, ma dalla comprensione clinica del problema.&rdquo;
+            </blockquote>
+            <figcaption className="mt-7 text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+              Dott. Maico Battistello
+            </figcaption>
+            <div className="mx-auto mt-8 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
+          </figure>
+        </AnimatedScrollElement>
+      </div>
+    </section>
+  );
+}
+
 /* Recensioni: solo punteggio e rimando a Google, senza citare testimonianze
    (pubblicità sanitaria informativa). Aggiornare a mano punteggio e numero. */
 const RECENSIONI = { media: "4,9", totale: 23 }
@@ -444,7 +469,7 @@ export function AdvancedTherapySection() {
           direction="up"
           delay={0.1}
         >
-          <div className="rounded-[2.5rem] bg-white/85 p-8 text-center ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-12">
+          <div className="px-2 py-4 text-center md:py-8">
             <h2 className="text-[1.75rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900">
               Non esiste un trattamento giusto per tutti
               <span className="text-[#0066CC]">.</span>
