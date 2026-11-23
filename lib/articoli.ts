@@ -34,6 +34,274 @@ const bibliografiaOzono = [
 
 export const articoli: Articolo[] = [
   {
+    slug: "male-alla-spalla-cause",
+    titolo: "Male alla spalla quando alzi il braccio o di notte: le cause più frequenti",
+    descrizione:
+      "Dolore alla spalla quando alzi il braccio o di notte: tendini, borsite, spalla congelata. Quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
+    immagine: "/images/ozspalla.jpg",
+    categoria: "Ozonoterapia + Osteopatia",
+    data: "2026-11-23",
+    bibliografia: [
+      "Lewis J. Rotator cuff related shoulder pain: assessment, management and uncertainties. Manual Therapy. 2016;23:57-68.",
+      "Millar NL, et al. Tendinopathy. Nature Reviews Disease Primers. 2021;7(1):1.",
+    ],
+    contenuto: `**Pettinarsi, allacciare il reggiseno, prendere un piatto dallo scaffale alto. E di notte non riuscire a dormire sul fianco o a pancia in su.**
+
+Il dolore alla spalla toglie gesti semplici, e spesso anche il sonno.
+
+### Perché fa male la spalla?
+
+Le cause più frequenti sono:
+
+• **tendini della cuffia dei rotatori**: sovraccarico, infiammazione (tendinite) o usura dei tendini che muovono la spalla
+• **borsite**: infiammazione della piccola "sacca" che fa scorrere i tendini
+• **tendinite calcifica**: depositi di calcio nel tendine, a volte molto dolorosi
+• **spalla congelata** (capsulite adesiva): la spalla si irrigidisce progressivamente in tutti i movimenti
+• **artrosi** della spalla o dell'articolazione acromion-clavicolare
+• **dolore che arriva dal collo**
+
+Il vecchio termine "periartrite" raccoglieva molte di queste situazioni insieme.
+
+### La spalla e il collo sono collegati?
+
+Sì, molto. Una parte del dolore alla spalla può arrivare dalla colonna cervicale. E una scapola che si muove poco, o una schiena dorsale rigida, costringono la spalla a lavorare in posizioni sfavorevoli.
+
+Per questo la valutazione non riguarda solo la spalla, ma anche **collo, scapola, coste e postura**.
+
+### Quando posso aiutarti?
+
+Può essere utile una valutazione in caso di:
+
+• **dolore quando si alza il braccio** o lo si porta dietro la schiena
+• **dolore notturno**, con difficoltà a dormire sul fianco
+• **spalla che si irrigidisce** progressivamente
+• **tendinite o calcificazione già diagnosticata** che non migliora
+• **dolore alla spalla insieme a rigidità** del collo o della parte alta della schiena
+
+### Quando devo preoccuparmi?
+
+Serve invece **in tempi rapidi** il medico di base o, nei casi più gravi, il pronto soccorso o il 118, se:
+
+• dopo una caduta o un trauma **non riesci ad alzare il braccio**
+• la spalla è **deformata** o molto gonfia
+• c'è **febbre** con spalla calda e arrossata
+• il dolore alla spalla, soprattutto la sinistra, compare con **affanno, oppressione al petto o sudorazione**: in questo caso chiama subito il 112
+
+### Che cosa può fare l'ozonoterapia?
+
+L'**ossigeno-ozonoterapia** viene utilizzata con infiltrazioni intra-articolari e periarticolari, nei tessuti e nei punti dei tendini coinvolti, per agire sulla componente infiammatoria e dolorosa.
+
+### E l'osteopatia?
+
+L'**osteopatia** lavora sulla mobilità della spalla, della scapola, del collo e di tutta la schiena, per ridurre i compensi che sovraccaricano i tendini.
+
+Nell'approccio del Dott. Maico Battistello le due discipline sono differenti e sinergiche e si integrano nella stessa seduta terapeutica. Modalità e numero di sedute si definiscono dopo la valutazione.
+
+Approfondisci: [Ozonoterapia + Osteopatia](/ozonoterapia-osteopatia)
+
+### Che cosa posso fare io?
+
+• **non tenere il braccio fermo** a lungo: il movimento dolce, entro il limite del dolore, aiuta a non irrigidire la spalla
+• **evitare per un periodo i gesti sopra la testa** ripetuti e i carichi pesanti
+• di notte, un **cuscino sotto il braccio** può alleggerire la spalla
+
+### Il primo passo
+
+"Male alla spalla" può voler dire cose molto diverse. Capire quale struttura è coinvolta, e perché, è il primo passo per scegliere il percorso.
+
+Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).
+
+I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`,
+  },
+  {
+    slug: "cervicale-braccio-formicola-cervicobrachialgia",
+    titolo: "Cervicale e braccio che formicola: da dove nasce il dolore",
+    descrizione:
+      "Dolore al collo che scende alla spalla o al braccio: cervicalgia e cervicobrachialgia, quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
+    immagine: "/images/oscervicale.jpg",
+    categoria: "Ozonoterapia + Osteopatia",
+    data: "2026-11-23",
+    bibliografia: [
+      "Blanpied PR, et al. Neck Pain: Revision 2017. Clinical Practice Guidelines. Journal of Orthopaedic & Sports Physical Therapy. 2017;47(7):A1-A83.",
+      "Cohen SP. Epidemiology, diagnosis, and treatment of neck pain. Mayo Clinic Proceedings. 2015;90(2):284-299.",
+    ],
+    contenuto: `**Il collo è rigido e dolorante la mattina. Girare la testa per fare retromarcia diventa difficile. A volte il dolore scende verso la spalla, il braccio, fino alle dita, con formicolio.**
+
+È quello che molti chiamano semplicemente "la cervicale". Ma dietro questa parola ci sono situazioni diverse.
+
+### Che cos'è la cervicalgia?
+
+È il dolore nella zona del collo, il tratto cervicale della colonna. Può essere accompagnato da rigidità, difficoltà a ruotare o piegare la testa, tensione fino alle spalle e, a volte, mal di testa.
+
+Quando il dolore scende lungo il braccio si parla di **cervicobrachialgia**: spesso significa che una radice nervosa del collo è irritata, per esempio da una protrusione o da un'ernia del disco, o dall'artrosi delle vertebre.
+
+### Perché viene?
+
+Le cause più frequenti si sommano tra loro:
+
+• posture mantenute a lungo: computer, telefono, guida
+• tensioni muscolari legate allo stress
+• artrosi delle vertebre cervicali (spondiloartrosi)
+• protrusioni o ernie del disco
+• traumi, come il colpo di frusta
+• problemi di mobilità della parte alta della schiena e delle spalle
+• **problemi masticatori e occlusali**, compreso il serramento dei denti (bruxismo)
+
+E anche qui vale lo stesso principio: **il dolore non sempre nasce dove si sente.** Una schiena dorsale rigida, una spalla che lavora male o problemi di masticazione e di occlusione possono sovraccaricare il collo.
+
+### Quando posso aiutarti?
+
+Può essere utile una valutazione in caso di:
+
+• **collo rigido e dolente** che dura da settimane o si ripresenta spesso
+• **dolore o formicolio che scende** verso la spalla o il braccio, senza perdita di forza
+• **tensione a collo e spalle** legata a postura, computer, guida o stress, a volte con mal di testa
+• **protrusione o ernia cervicale già documentata**, con dolore che non migliora
+• **dolore dopo un colpo di frusta**, anche per la valutazione medico-legale del danno
+
+### Quando devo preoccuparmi?
+
+Serve invece **in tempi rapidi** il medico di base o, nei casi più gravi, il pronto soccorso o il 118, se:
+
+• il braccio o la mano **perdono forza**
+• compaiono **difficoltà a camminare**, a mantenere l'equilibrio o a usare le mani nei gesti fini
+• il dolore è comparso dopo un **trauma** importante
+• c'è **febbre**, un calo di peso senza motivo o una storia di tumore
+• il dolore è fortissimo, notturno e non cambia con le posizioni
+
+### Servono radiografia o risonanza?
+
+Non sempre e non subito. Gli esami servono quando ci sono segnali d'allarme, quando i sintomi al braccio non migliorano o quando il quadro non è chiaro. E vanno letti insieme alla visita: molte persone hanno artrosi o protrusioni cervicali senza alcun dolore.
+
+### Come si inseriscono ozonoterapia e osteopatia?
+
+Nella cervicalgia convivono spesso una **componente infiammatoria** e una **componente meccanica**, fatta di rigidità, tensioni e compensi.
+
+L'**ossigeno-ozonoterapia**, con piccole infiltrazioni nei muscoli paravertebrali del collo, può agire sulla componente infiammatoria e dolorosa.
+
+L'**osteopatia** lavora sulla mobilità del collo e delle spalle, ma anche del tratto dorsale e lombare, del bacino e degli arti inferiori, fino alle caviglie, per ridurre i compensi che mantengono il problema.
+
+Nell'approccio del Dott. Maico Battistello le due discipline sono differenti e sinergiche, e si integrano nella stessa seduta terapeutica. Modalità e numero di sedute si definiscono dopo la valutazione.
+
+Approfondisci: [Ozonoterapia + Osteopatia](/ozonoterapia-osteopatia)
+
+### Che cosa posso fare io?
+
+• **muovere il collo** con dolcezza, senza forzare: l'immobilità prolungata e il collare, se non prescritti, irrigidiscono di più
+• **fare pause** dal computer e dal telefono, alzando lo schermo all'altezza degli occhi
+• **curare il sonno** e un cuscino che mantenga il collo allineato
+• dare spazio alla **gestione dello stress**, per esempio con tecniche di meditazione: lo stress si scarica spesso proprio su collo e spalle
+
+### Il primo passo
+
+"La cervicale" non è una diagnosi, ma un punto di partenza. Capire da dove nasce il dolore è ciò che permette di scegliere il percorso giusto.
+
+Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).
+
+I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`,
+  },
+  {
+    slug: "male-al-ginocchio-artrosi",
+    titolo: "Male al ginocchio: è davvero solo artrosi?",
+    descrizione:
+      "Male al ginocchio e artrosi: perché il dolore non dipende solo dalla cartilagine, quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
+    immagine: "/images/blog-sequenza-1-ozono-ginocchio.jpg",
+    categoria: "Ozonoterapia",
+    data: "2026-11-23",
+    bibliografia: [
+      "National Institute for Health and Care Excellence (NICE). Osteoarthritis in over 16s: diagnosis and management. NICE guideline NG226, 2022.",
+      "Kolasinski SL, et al. 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee. Arthritis Care & Research. 2020;72(2):149-162.",
+      "Sconza C, et al. Oxygen-ozone therapy for the treatment of knee osteoarthritis: a systematic review of randomized controlled trials. Arthroscopy. 2020;36(1):277-286.",
+      "Raeissadat SA, et al. Intra-articular ozone or hyaluronic acid injection: which one is superior in patients with knee osteoarthritis? A 6-month randomized clinical trial. Journal of Pain Research. 2018;11:111-117.",
+      "Costa T, Rodrigues-Manica S, et al. Ozone Therapy in Knee Osteoarthritis: A Systematic Review. Acta Médica Portuguesa. 2018;31(10):576-580.",
+      "Bannuru RR, et al. OARSI guidelines for the non-surgical management of knee, hip, and polyarticular osteoarthritis. Osteoarthritis and Cartilage. 2019;27(11):1578-1589.",
+    ],
+    contenuto: `**Il ginocchio fa male quando si scendono le scale, quando ci si alza dalla sedia, la mattina appena svegli. E la risposta che molti si sentono dare è sempre la stessa: «è l'età, è artrosi».**
+
+A volte è così. Ma l'artrosi non spiega sempre tutto, e soprattutto non vuol dire che non si possa fare nulla.
+
+Proviamo a rispondere alle domande che i pazienti fanno più spesso.
+
+### Perché mi fa male il ginocchio?
+
+Le cause possibili sono molte, e cambiano con l'età e lo stile di vita:
+
+• **artrosi** (gonartrosi): la cartilagine che riveste l'articolazione si usura nel tempo
+• **sovraccarico e tendini**: per esempio il tendine rotuleo o la zampa d'oca, frequenti in chi corre o cammina molto
+• **legamenti crociati e collaterali**: una lesione anche di anni prima può rendere oggi l'articolazione instabile
+• **menisco**: dopo un trauma con torsione del ginocchio, o per usura
+• **dolore della rotula** (femoro-rotuleo), comune anche nei giovani
+• **dolore che arriva da altre zone**: la zona lombare, l'anca, il bacino, la caviglia o il piede
+
+Proprio quest'ultimo punto è spesso sottovalutato.
+
+### Il dolore nasce sempre nel ginocchio?
+
+Non sempre. Il ginocchio sta in mezzo tra la colonna e l'anca, da un lato, e il piede dall'altro: se uno di questi lavora male, il ginocchio compensa e si sovraccarica.
+
+Un appoggio del piede alterato, un'anca rigida o un dolore lombare possono cambiare il modo in cui il peso scarica sull'articolazione, passo dopo passo, per migliaia di passi al giorno.
+
+Per questo vale un principio semplice: **il dolore non sempre nasce dove si sente.** Il ginocchio può essere l'ultimo anello di una catena. Ne parliamo anche nell'articolo [Ozonoterapia con approccio osteopatico](/blog/ozonoterapia-approccio-osteopatico).
+
+### Ho l'artrosi in radiografia: il dolore dipende da quella?
+
+Non è detto. È una delle cose che sorprende di più: il grado di artrosi visibile in radiografia non corrisponde sempre all'intensità del dolore. Ci sono persone con un'artrosi importante e poco dolore, e persone con un'artrosi lieve e molto dolore.
+
+Il dolore dipende anche dall'**infiammazione** dell'articolazione, dalla forza dei muscoli della coscia, dal peso corporeo, dal modo di camminare. Sono tutti aspetti su cui si può lavorare.
+
+### Quando posso aiutarti?
+
+Può essere utile una valutazione in caso di:
+
+• **dolore persistente salendo o scendendo le scale**, alzandosi dalla sedia o dopo una camminata
+• **rigidità al mattino** o dopo essere stati seduti a lungo
+• **artrosi già diagnosticata**, con dolore che limita le attività quotidiane o lo sport
+• **anca, bacino o piede che lavorano male**, con il ginocchio che compensa e si sovraccarica
+• **peso in eccesso**, quando serve un percorso alimentare per ridurre il carico sul ginocchio
+
+### Quando devo preoccuparmi?
+
+Serve invece **in tempi rapidi** il medico di base o, nei casi più gravi, il pronto soccorso o il 118, se:
+
+• il ginocchio è **gonfio, caldo e arrossato**, soprattutto se c'è febbre
+• il dolore è comparso dopo un **trauma** e non si riesce a caricare il peso
+• il ginocchio si **blocca** e non si riesce a distenderlo del tutto
+• il ginocchio **cede** improvvisamente camminando
+• il polpaccio è gonfio e dolente (va esclusa una trombosi)
+
+### Che cosa può fare l'ozonoterapia?
+
+Nell'artrosi del ginocchio l'**ossigeno-ozonoterapia** viene utilizzata con infiltrazioni all'interno dell'articolazione o nei tessuti intorno. Lo scopo è agire sulla componente infiammatoria e dolorosa e favorire il trofismo dei tessuti articolari.
+
+Il suo utilizzo nella gonartrosi è stato studiato in diversi studi clinici e revisioni scientifiche, anche a confronto con altre infiltrazioni come l'acido ialuronico [3][4][5].
+
+### E l'osteopatia?
+
+L'**osteopatia** lavora anche su ciò che sta lontano dal ginocchio: la colonna, l'anca, il bacino, la caviglia, il piede. L'obiettivo è ridurre i compensi che sovraccaricano l'articolazione e recuperare una postura corretta.
+
+Nell'approccio del Dott. Maico Battistello le due discipline sono differenti e sinergiche: non l'una o l'altra, ma due metodiche che si completano nella stessa seduta terapeutica. Numero di sedute e modalità si decidono dopo la valutazione, in base al quadro clinico di ciascuno.
+
+Approfondisci: [Ozonoterapia + Osteopatia](/ozonoterapia-osteopatia)
+
+### Che cosa posso fare io?
+
+Le linee guida internazionali sull'artrosi del ginocchio sono d'accordo su alcuni punti [1][2][6]:
+
+• **muoversi**: il movimento regolare e gli esercizi per rinforzare i muscoli della coscia sono tra le indicazioni più solide
+• **ridurre il peso** se in eccesso: anche pochi chili in meno riducono il carico sul ginocchio
+• **non fermarsi del tutto**: il riposo prolungato indebolisce i muscoli e irrigidisce l'articolazione
+
+L'obiettivo non è «sopportare», ma restare attivi con meno dolore.
+
+### Il primo passo
+
+Lo stesso dolore al ginocchio può avere cause diverse. Per questo il percorso giusto parte da una valutazione completa: del ginocchio, ma anche di come la persona si muove.
+
+Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota una visita](/contatti).
+
+I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`,
+  },
+  {
     slug: "medicina-legale-quando-serve-come-funziona",
     titolo: "Medicina legale: quando serve e come funziona",
     descrizione:
