@@ -124,7 +124,7 @@ Le informazioni di questo articolo hanno carattere divulgativo e non sostituisco
     titolo: "Ozonoterapia con approccio osteopatico",
     descrizione:
       "Ozonoterapia con approccio osteopatico: perché il dolore è spesso l'ultimo anello di una catena e come ossigeno-ozonoterapia e osteopatia, nella stessa seduta, trattano sia il dolore sia la catena che lo produce.",
-    immagine: "/images/blog-ozonoterapia-approccio-osteopatico.jpg",
+    immagine: "/images/blog-ozonoterapia-approccio-osteopatico-copertina.jpg",
     categoria: "Ozonoterapia",
     data: "2026-11-04",
     bibliografia: [
