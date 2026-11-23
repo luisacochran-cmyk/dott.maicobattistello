@@ -268,7 +268,9 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
             <div className="h-1 w-16 rounded-full bg-[#E8CFB0] mb-5" aria-hidden="true" />
             <p className="text-base text-slate-500">
               di Dott. Maico Battistello
-              <span className="italic"> · Tempo di lettura: {tempoLettura(articolo)} {tempoLettura(articolo) === 1 ? "minuto" : "minuti"}</span>
+              <span className="block italic md:inline">
+                <span className="hidden md:inline"> · </span>Tempo di lettura: {tempoLettura(articolo)} {tempoLettura(articolo) === 1 ? "minuto" : "minuti"}
+              </span>
             </p>
           </div>
         </header>
@@ -298,16 +300,16 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           <div>
           {/* Le cose da sapere */}
           {articolo.daSapere && articolo.daSapere.length > 0 && (
-            <section aria-label="Le cose da sapere" className="mb-12 rounded-[2rem] bg-[radial-gradient(120%_140%_at_0%_0%,#DCEAF9_0%,#EAF3FC_45%,#F7FAFE_100%)] px-8 py-9 md:px-12 md:py-11">
-              <div className="mb-4 h-1 w-12 rounded-full bg-[#E8CFB0]" aria-hidden="true" />
-              <p className={`${corsivo.className} mb-6 text-[1.45rem] md:text-[1.7rem] font-medium italic leading-tight text-[#1D4E89]`}>
+            <section aria-label="Le cose da sapere" className="mb-10 rounded-[1.5rem] bg-[radial-gradient(120%_140%_at_0%_0%,#DCEAF9_0%,#EAF3FC_45%,#F7FAFE_100%)] px-5 py-6 md:mb-12 md:rounded-[2rem] md:px-12 md:py-11">
+              <div className="mb-3 h-1 w-10 rounded-full bg-[#E8CFB0] md:mb-4 md:w-12" aria-hidden="true" />
+              <p className={`${corsivo.className} mb-4 text-[1.25rem] md:mb-6 md:text-[1.7rem] font-medium italic leading-tight text-[#1D4E89]`}>
                 Le tre cose da sapere
               </p>
-              <ul className="space-y-4">
+              <ul className="space-y-3 md:space-y-4">
                 {articolo.daSapere.map((cosa, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span aria-hidden="true" className="mt-[0.75rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60 ring-4 ring-[#0066CC]/10" />
-                    <span className={`${corsivo.className} text-[1.15rem] md:text-[1.3rem] font-normal italic leading-relaxed text-slate-700`}>{cosa}</span>
+                  <li key={i} className="flex gap-3 md:gap-4">
+                    <span aria-hidden="true" className="mt-[0.6rem] md:mt-[0.75rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60 ring-4 ring-[#0066CC]/10" />
+                    <span className={`${corsivo.className} text-[1.02rem] md:text-[1.3rem] font-normal italic leading-normal md:leading-relaxed text-slate-700`}>{cosa}</span>
                   </li>
                 ))}
               </ul>
@@ -316,19 +318,24 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
 
           {/* Indice, su telefono e tablet */}
           {conIndice && (
-            <nav aria-label="Indice dell'articolo" className="mb-10 rounded-[1.5rem] bg-[#F2F7FD] p-6 md:p-7 xl:hidden">
-              <p className={`mb-4 ${etichetta}`}>In questo articolo</p>
-              <ol className="grid gap-x-8 gap-y-2.5 md:grid-cols-2">
-                {indice.map((s, i) => (
-                  <li key={s.id} className="flex gap-3 text-base leading-snug">
-                    <span className="font-semibold text-[#0066CC]">{i + 1}.</span>
-                    <a href={`#${s.id}`} className="text-slate-700 underline-offset-4 hover:text-[#0066CC] hover:underline">
-                      {s.titolo}
-                    </a>
-                  </li>
-                ))}
-              </ol>
-            </nav>
+            <details className="group mb-10 rounded-[1.25rem] bg-[#F2F7FD] xl:hidden">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 marker:hidden [&::-webkit-details-marker]:hidden md:px-7">
+                <span className={etichetta}>In questo articolo</span>
+                <span aria-hidden="true" className="text-[#0066CC] transition-transform duration-300 group-open:rotate-180">▾</span>
+              </summary>
+              <nav aria-label="Indice dell'articolo" className="px-5 pb-5 md:px-7 md:pb-6">
+                <ol className="grid gap-x-8 gap-y-2.5 md:grid-cols-2">
+                  {indice.map((s, i) => (
+                    <li key={s.id} className="flex gap-3 text-base leading-snug">
+                      <span className="font-semibold text-[#0066CC]">{i + 1}.</span>
+                      <a href={`#${s.id}`} className="text-slate-700 underline-offset-4 hover:text-[#0066CC] hover:underline">
+                        {s.titolo}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            </details>
           )}
           <div id="testo-articolo" className="space-y-6 text-lg md:text-xl leading-relaxed text-slate-700 [&_strong]:font-semibold [&_strong]:text-slate-900">
             {articolo.contenuto && <TestoArticolo contenuto={articolo.contenuto} />}
