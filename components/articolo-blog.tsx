@@ -236,13 +236,16 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
         <header className="pt-10 pb-8 md:pt-16">
           <div className="container mx-auto max-w-3xl px-4">
             <p className={`mb-4 ${etichetta}`}>
-              {articolo.categoria} · {formattaData(articolo.data)} · {tempoLettura(articolo)} min di lettura
+              {articolo.categoria} · {formattaData(articolo.data)}
             </p>
             <h1 className="text-[2rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
               {articolo.titolo}
             </h1>
             <div className="h-1 w-16 rounded-full bg-[#E8CFB0] mb-5" aria-hidden="true" />
-            <p className="text-base text-slate-500">di Dott. Maico Battistello</p>
+            <p className="text-base text-slate-500">
+              di Dott. Maico Battistello
+              <span className="italic"> · Tempo di lettura: {tempoLettura(articolo)} {tempoLettura(articolo) === 1 ? "minuto" : "minuti"}</span>
+            </p>
           </div>
         </header>
 

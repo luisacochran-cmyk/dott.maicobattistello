@@ -64,7 +64,10 @@ export default function BlogPage() {
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0066CC]">
-                      {articolo.categoria} · {formattaData(articolo.data)} · {tempoLettura(articolo)} min
+                      {articolo.categoria} · {formattaData(articolo.data)}
+                    </p>
+                    <p className="-mt-1 mb-3 text-sm italic text-slate-500">
+                      Tempo di lettura: {tempoLettura(articolo)} {tempoLettura(articolo) === 1 ? "minuto" : "minuti"}
                     </p>
                     <h2 className="text-xl font-semibold leading-snug tracking-tight text-slate-900 group-hover:text-[#0066CC] transition-colors">
                       {articolo.titolo}
