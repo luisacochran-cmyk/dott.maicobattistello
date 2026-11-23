@@ -38,7 +38,7 @@ export const articoli: Articolo[] = [
     titolo: "Male alla spalla quando alzi il braccio o di notte: le cause più frequenti",
     descrizione:
       "Dolore alla spalla quando alzi il braccio o di notte: tendini, borsite, spalla congelata. Quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
-    immagine: "/images/blog-spalla.jpg",
+    immagine: "/images/ozspalla.jpg",
     categoria: "Ozonoterapia + Osteopatia",
     data: "2026-11-23",
     bibliografia: [
