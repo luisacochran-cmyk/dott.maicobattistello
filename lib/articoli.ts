@@ -40,7 +40,7 @@ export const articoli: Articolo[] = [
       "Dolore alla spalla quando alzi il braccio o di notte: tendini, borsite, spalla congelata. Quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
     immagine: "/images/ozspalla.jpg",
     categoria: "Ozonoterapia + Osteopatia",
-    data: "2026-11-23",
+    data: "2026-12-14",
     bibliografia: [
       "Lewis J. Rotator cuff related shoulder pain: assessment, management and uncertainties. Manual Therapy. 2016;23:57-68.",
       "Millar NL, et al. Tendinopathy. Nature Reviews Disease Primers. 2021;7(1):1.",
@@ -118,7 +118,7 @@ Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota un
       "Dolore al collo che scende alla spalla o al braccio: cervicalgia e cervicobrachialgia, quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
     immagine: "/images/oscervicale.jpg",
     categoria: "Ozonoterapia + Osteopatia",
-    data: "2026-11-23",
+    data: "2026-12-07",
     bibliografia: [
       "Blanpied PR, et al. Neck Pain: Revision 2017. Clinical Practice Guidelines. Journal of Orthopaedic & Sports Physical Therapy. 2017;47(7):A1-A83.",
       "Cohen SP. Epidemiology, diagnosis, and treatment of neck pain. Mayo Clinic Proceedings. 2015;90(2):284-299.",
@@ -203,7 +203,7 @@ Il Dott. Maico Battistello riceve a Marostica, Padova, Schio e Malo. [Prenota un
       "Male al ginocchio e artrosi: perché il dolore non dipende solo dalla cartilagine, quando preoccuparsi e come ozonoterapia e osteopatia si integrano.",
     immagine: "/images/blog-ginocchio-artrosi.jpg",
     categoria: "Ozonoterapia",
-    data: "2026-11-23",
+    data: "2026-11-30",
     bibliografia: [
       "National Institute for Health and Care Excellence (NICE). Osteoarthritis in over 16s: diagnosis and management. NICE guideline NG226, 2022.",
       "Kolasinski SL, et al. 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee. Arthritis Care & Research. 2020;72(2):149-162.",
