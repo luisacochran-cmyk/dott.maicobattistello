@@ -18,6 +18,8 @@ export interface Articolo {
   data: string // formato AAAA-MM-GG
   contenuto: string
   bibliografia?: string[]
+  /* riquadro "Le cose da sapere" in cima all'articolo */
+  daSapere?: string[]
   /* titolo della sezione finale; se manca: "Riferimenti bibliografici" */
   titoloBibliografia?: string
 }
@@ -40,6 +42,11 @@ export const articoli: Articolo[] = [
     categoria: "Medicina Legale",
     data: "2026-11-23",
     titoloBibliografia: "Riferimenti normativi",
+    daSapere: [
+      "Raccogliere la documentazione fin dal primo giorno: verbale di pronto soccorso, certificati, esami e fatture delle cure.",
+      "Chiedere un parere al proprio medico legale prima di firmare la quietanza, o meglio ancora prima della visita con il medico dell'assicurazione.",
+      "Rispettare i tempi: la denuncia di un infortunio va fatta di regola entro tre giorni e ogni diritto ha un termine di prescrizione.",
+    ],
     bibliografia: [
       "D.Lgs. 209/2005 (Codice delle assicurazioni private), artt. 138 e 139: danno biologico e tabelle.",
       "D.P.R. 13 gennaio 2025, n. 12: tabella unica nazionale per le lesioni da 10 a 100 punti.",

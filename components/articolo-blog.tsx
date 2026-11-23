@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Calendar } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
+import IndiceArticolo from "@/components/indice-articolo"
 import { type Articolo, formattaData, tempoLettura, sezioni, ancora } from "@/lib/articoli"
 
 /* Trasforma **testo** in grassetto e [testo](/indirizzo) in link */
@@ -191,6 +192,7 @@ const etichetta = "text-xs font-semibold uppercase tracking-[0.24em] text-[#0066
 export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
   const indirizzo = `https://dottmaicobattistello.it/blog/${articolo.slug}`
   const indice = sezioni(articolo)
+  const conIndice = indice.length >= 5
   const medicoLegale = articolo.categoria === "Medicina Legale"
   const linkCollegati = medicoLegale
     ? [
@@ -264,11 +266,36 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           </div>
         </div>
 
-        {/* Testo */}
-        <div className="container mx-auto max-w-3xl px-4 py-10 md:py-14">
-          {/* Indice, solo negli articoli lunghi */}
-          {indice.length >= 5 && (
-            <nav aria-label="Indice dell'articolo" className="mb-10 rounded-[1.5rem] bg-[#F2F7FD] p-6 md:p-7">
+        {/* Testo, con l'indice laterale su computer */}
+        <div className={`container mx-auto px-4 py-10 md:py-14 ${conIndice ? "max-w-3xl xl:grid xl:max-w-6xl xl:grid-cols-[14rem_minmax(0,48rem)] xl:justify-center xl:gap-14" : "max-w-3xl"}`}>
+          {conIndice && (
+            <aside className="hidden xl:block">
+              <IndiceArticolo sezioni={indice} />
+            </aside>
+          )}
+          <div>
+          {/* Le cose da sapere */}
+          {articolo.daSapere && articolo.daSapere.length > 0 && (
+            <section aria-label="Le cose da sapere" className="mb-12 overflow-hidden rounded-[1.75rem] bg-[linear-gradient(135deg,#0066CC_0%,#1D4E89_100%)] p-7 text-white shadow-[0_24px_60px_-38px_rgba(0,60,130,0.7)] md:p-9">
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-white/80">
+                {articolo.daSapere.length === 3 ? "Le 3 cose da sapere" : "Le cose da sapere"}
+              </p>
+              <ol className="space-y-5">
+                {articolo.daSapere.map((cosa, i) => (
+                  <li key={i} className="flex gap-4">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-base font-semibold text-[#0066CC]">
+                      {i + 1}
+                    </span>
+                    <span className="pt-1 text-lg leading-snug md:text-xl">{cosa}</span>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          )}
+
+          {/* Indice, su telefono e tablet */}
+          {conIndice && (
+            <nav aria-label="Indice dell'articolo" className="mb-10 rounded-[1.5rem] bg-[#F2F7FD] p-6 md:p-7 xl:hidden">
               <p className={`mb-4 ${etichetta}`}>In questo articolo</p>
               <ol className="grid gap-x-8 gap-y-2.5 md:grid-cols-2">
                 {indice.map((s, i) => (
@@ -282,7 +309,7 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
               </ol>
             </nav>
           )}
-          <div className="space-y-6 text-lg md:text-xl leading-relaxed text-slate-700 [&_strong]:font-semibold [&_strong]:text-slate-900">
+          <div id="testo-articolo" className="space-y-6 text-lg md:text-xl leading-relaxed text-slate-700 [&_strong]:font-semibold [&_strong]:text-slate-900">
             {articolo.contenuto && <TestoArticolo contenuto={articolo.contenuto} />}
           </div>
 
@@ -341,6 +368,7 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
                 )
               })}
             </div>
+          </div>
           </div>
         </div>
 
