@@ -2,7 +2,7 @@ import type { ReactNode } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Calendar } from "lucide-react"
-import { Cormorant_Garamond } from "next/font/google"
+import { Lora } from "next/font/google"
 import Breadcrumb from "@/components/breadcrumb"
 import IndiceArticolo from "@/components/indice-articolo"
 import { type Articolo, formattaData, tempoLettura, sezioni, ancora } from "@/lib/articoli"
@@ -30,9 +30,9 @@ function conFormattazione(testo: string): ReactNode[] {
 }
 
 /* Corsivo elegante per apertura, frasi in evidenza e "cose da sapere" */
-const corsivo = Cormorant_Garamond({
+const corsivo = Lora({
   subsets: ["latin"],
-  weight: ["500", "600"],
+  weight: ["400", "500"],
   style: ["italic"],
   display: "swap",
 })
@@ -165,7 +165,7 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
         // Frase d'apertura tutta in grassetto: diventa il sottotitolo
         if (i === 0 && tuttoGrassetto(t)) {
           return (
-            <p key={i} className={`${corsivo.className} text-[1.65rem] md:text-[2.1rem] font-medium italic leading-snug text-slate-800`}>
+            <p key={i} className={`${corsivo.className} text-[1.3rem] md:text-[1.6rem] font-normal italic leading-snug text-slate-800`}>
               {t.slice(2, -2)}
             </p>
           )
@@ -176,7 +176,7 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
           return (
             <figure key={i} className="my-4 py-8 md:-mx-10">
               <div className="mx-auto mb-6 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
-              <p className={`${corsivo.className} text-center text-[1.9rem] md:text-[2.5rem] font-medium italic leading-tight text-[#1D4E89]`}>
+              <p className={`${corsivo.className} text-center text-[1.5rem] md:text-[1.95rem] font-normal italic leading-snug text-[#1D4E89]`}>
                 {t.slice(10).trim()}
               </p>
               <div className="mx-auto mt-6 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
@@ -300,14 +300,14 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           {articolo.daSapere && articolo.daSapere.length > 0 && (
             <section aria-label="Le cose da sapere" className="mb-12 rounded-[2rem] bg-[radial-gradient(120%_140%_at_0%_0%,#DCEAF9_0%,#EAF3FC_45%,#F7FAFE_100%)] px-8 py-9 md:px-12 md:py-11">
               <div className="mb-4 h-1 w-12 rounded-full bg-[#E8CFB0]" aria-hidden="true" />
-              <p className={`${corsivo.className} mb-6 text-[1.9rem] md:text-[2.2rem] font-semibold italic leading-tight text-[#1D4E89]`}>
+              <p className={`${corsivo.className} mb-6 text-[1.45rem] md:text-[1.7rem] font-medium italic leading-tight text-[#1D4E89]`}>
                 Le tre cose da sapere
               </p>
               <ul className="space-y-4">
                 {articolo.daSapere.map((cosa, i) => (
                   <li key={i} className="flex gap-4">
-                    <span aria-hidden="true" className="mt-[0.85rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60 ring-4 ring-[#0066CC]/10" />
-                    <span className={`${corsivo.className} text-[1.45rem] md:text-[1.65rem] font-medium italic leading-snug text-slate-700`}>{cosa}</span>
+                    <span aria-hidden="true" className="mt-[0.75rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60 ring-4 ring-[#0066CC]/10" />
+                    <span className={`${corsivo.className} text-[1.15rem] md:text-[1.3rem] font-normal italic leading-relaxed text-slate-700`}>{cosa}</span>
                   </li>
                 ))}
               </ul>
