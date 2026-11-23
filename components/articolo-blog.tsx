@@ -276,20 +276,21 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           <div>
           {/* Le cose da sapere */}
           {articolo.daSapere && articolo.daSapere.length > 0 && (
-            <section aria-label="Le cose da sapere" className="mb-12 rounded-[1.75rem] border border-[#C9DDF2] bg-[linear-gradient(160deg,#E6F0FB_0%,#F3F8FD_100%)] px-7 py-8 md:px-10 md:py-9">
-              <p className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
-                {articolo.daSapere.length === 3 ? "Le 3 cose da sapere" : "Le cose da sapere"}
+            <section aria-label="Le cose da sapere" className="relative mb-12 overflow-hidden rounded-[2rem] bg-[radial-gradient(120%_140%_at_0%_0%,#DCEAF9_0%,#EAF3FC_45%,#F7FAFE_100%)] px-8 py-9 md:px-12 md:py-11">
+              <span aria-hidden="true" className="pointer-events-none absolute -right-6 -top-10 select-none font-serif text-[11rem] italic leading-none text-[#0066CC]/[0.07]">
+                &rdquo;
+              </span>
+              <p className="mb-7 font-serif text-2xl italic text-[#1D4E89] md:text-[1.7rem]">
+                Le tre cose da sapere
               </p>
-              <ol className="divide-y divide-[#C9DDF2]">
+              <ul className="space-y-5">
                 {articolo.daSapere.map((cosa, i) => (
-                  <li key={i} className="flex items-baseline gap-5 py-4 first:pt-0 last:pb-0">
-                    <span className="w-7 shrink-0 text-sm font-semibold tabular-nums tracking-wider text-[#0066CC]/70">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-lg italic leading-relaxed text-slate-700 md:text-xl">{cosa}</span>
+                  <li key={i} className="flex gap-4">
+                    <span aria-hidden="true" className="mt-[0.7rem] h-1.5 w-1.5 shrink-0 rounded-full bg-[#0066CC]/60 ring-4 ring-[#0066CC]/10" />
+                    <span className="font-serif text-xl italic leading-relaxed text-slate-700 md:text-[1.35rem]">{cosa}</span>
                   </li>
                 ))}
-              </ol>
+              </ul>
             </section>
           )}
 
