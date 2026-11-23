@@ -297,7 +297,7 @@ export function TreatmentsSection() {
               </Link>
             </AnimatedScrollElement>
             <AnimatedScrollElement direction="right" delay={0.2}>
-              <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
+              <div>
                 <div className="grid grid-cols-2 gap-x-5 md:gap-x-9">
                   {[
                     { name: "Marostica", href: "/ozono-osteo-marostica" },
@@ -469,7 +469,7 @@ export function AdvancedTherapySection() {
           direction="up"
           delay={0.1}
         >
-          <div className="rounded-[2.5rem] bg-white/85 p-8 text-center ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-12">
+          <div className="px-2 py-4 text-center md:py-8">
             <h2 className="text-[1.75rem] md:text-4xl font-semibold leading-tight tracking-tight text-slate-900">
               Non esiste un trattamento giusto per tutti
               <span className="text-[#0066CC]">.</span>
