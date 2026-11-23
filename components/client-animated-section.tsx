@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import QuadrantCarousel from "@/components/quadrant-carousel";
 import CatenaDolore from "@/components/catena-dolore";
+import { corsivo } from "@/lib/fonts";
 
 interface HeroSectionProps {
   className?: string;
@@ -360,6 +361,23 @@ export function DescriptionSection() {
                 del singolo paziente.
               </p>
             </div>
+            {/* Numeri chiave */}
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 border-y border-[#D4DFE9] py-6 sm:grid-cols-4">
+              {[
+                { n: "25+", l: "anni da medico chirurgo" },
+                { n: "2 in 1", l: "discipline nella stessa seduta" },
+                { n: "4", l: "sedi tra Vicenza e Padova" },
+                { n: `${RECENSIONI.media}\u2605`, l: `su ${RECENSIONI.totale} recensioni Google` },
+              ].map((x) => (
+                <div key={x.l}>
+                  <dt className="sr-only">{x.l}</dt>
+                  <dd>
+                    <span className="block text-3xl font-semibold tracking-tight text-[#0066CC] md:text-[2.1rem]">{x.n}</span>
+                    <span className="mt-1 block text-sm leading-snug text-slate-500">{x.l}</span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
             <Button
               asChild
               size="lg"
@@ -369,6 +387,28 @@ export function DescriptionSection() {
             </Button>
           </AnimatedScrollElement>
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* Una frase del Dott. Battistello, in grande */
+export function CitazioneSection() {
+  return (
+    <section className="bg-gradient-to-b from-[#F0EAE0] via-[#F6F1EA] to-[#F0EAE0] py-14 md:py-20">
+      <div className="container px-4">
+        <AnimatedScrollElement direction="up" delay={0.1}>
+          <figure className="mx-auto max-w-4xl text-center">
+            <div className="mx-auto mb-8 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
+            <blockquote className={`${corsivo.className} text-[1.7rem] font-normal italic leading-snug text-[#1D4E89] md:text-[2.6rem] md:leading-[1.25]`}>
+              Il trattamento non parte mai da una tecnica precostituita, ma dalla comprensione clinica del problema.
+            </blockquote>
+            <figcaption className="mt-7 text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">
+              Dott. Maico Battistello
+            </figcaption>
+            <div className="mx-auto mt-8 h-px w-16 bg-[#D9BC95]" aria-hidden="true" />
+          </figure>
+        </AnimatedScrollElement>
       </div>
     </section>
   );
