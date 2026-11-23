@@ -276,17 +276,17 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           <div>
           {/* Le cose da sapere */}
           {articolo.daSapere && articolo.daSapere.length > 0 && (
-            <section aria-label="Le cose da sapere" className="mb-12 overflow-hidden rounded-[1.75rem] bg-[linear-gradient(135deg,#0066CC_0%,#1D4E89_100%)] p-7 text-white shadow-[0_24px_60px_-38px_rgba(0,60,130,0.7)] md:p-9">
-              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.24em] text-white/80">
+            <section aria-label="Le cose da sapere" className="mb-12 rounded-[1.75rem] border border-[#C9DDF2] bg-[linear-gradient(160deg,#E6F0FB_0%,#F3F8FD_100%)] px-7 py-8 md:px-10 md:py-9">
+              <p className="mb-6 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
                 {articolo.daSapere.length === 3 ? "Le 3 cose da sapere" : "Le cose da sapere"}
               </p>
-              <ol className="space-y-5">
+              <ol className="divide-y divide-[#C9DDF2]">
                 {articolo.daSapere.map((cosa, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-base font-semibold text-[#0066CC]">
-                      {i + 1}
+                  <li key={i} className="flex items-baseline gap-5 py-4 first:pt-0 last:pb-0">
+                    <span className="w-7 shrink-0 text-sm font-semibold tabular-nums tracking-wider text-[#0066CC]/70">
+                      {String(i + 1).padStart(2, "0")}
                     </span>
-                    <span className="pt-1 text-lg leading-snug md:text-xl">{cosa}</span>
+                    <span className="text-lg italic leading-relaxed text-slate-700 md:text-xl">{cosa}</span>
                   </li>
                 ))}
               </ol>
