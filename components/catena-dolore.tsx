@@ -14,7 +14,7 @@ const PUNTI = [
   { nome: "Schiena", testo: "La colonna collega tutto: una zona rigida sposta il carico su quelle vicine." },
   { nome: "Bacino", testo: "Bacino e anche distribuiscono il peso verso le gambe, a ogni passo." },
   { nome: "Ginocchio", testo: "Spesso è l'ultimo anello: compensa ciò che sopra o sotto lavora male." },
-  { nome: "Piede", testo: "L'appoggio del piede cambia il modo in cui il peso scarica su caviglia, ginocchio e colonna in toto." },
+  { nome: "Piede", testo: "L'appoggio del piede cambia il modo in cui il peso scarica su caviglia, ginocchio, bacino, schiena, spalla e collo." },
 ]
 
 export default function CatenaDolore() {
