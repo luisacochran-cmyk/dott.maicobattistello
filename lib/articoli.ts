@@ -16,6 +16,8 @@ export interface Articolo {
   data: string // formato AAAA-MM-GG
   contenuto: string
   bibliografia?: string[]
+  /* titolo della sezione finale; se manca: "Riferimenti bibliografici" */
+  titoloBibliografia?: string
 }
 
 const bibliografiaOzono = [
@@ -27,6 +29,85 @@ const bibliografiaOzono = [
 ]
 
 export const articoli: Articolo[] = [
+  {
+    slug: "medicina-legale-quando-serve-come-funziona",
+    titolo: "Medicina legale: quando serve e come funziona",
+    descrizione:
+      "Dopo un incidente, un infortunio o un trattamento sanitario: che cosa fa il medico legale, come si valuta il danno biologico, i punti di invalidità, le polizze e i tempi da rispettare.",
+    immagine: "/images/blog-medicina-legale-guida.jpg",
+    categoria: "Medicina Legale",
+    data: "2026-11-23",
+    titoloBibliografia: "Riferimenti normativi",
+    bibliografia: [
+      "D.Lgs. 209/2005 (Codice delle assicurazioni private), artt. 138 e 139: danno biologico e tabelle.",
+      "D.P.R. 13 gennaio 2025, n. 12: tabella unica nazionale per le lesioni da 10 a 100 punti.",
+      "Legge 8 marzo 2017, n. 24 (Gelli-Bianco), artt. 7 e 8: responsabilità sanitaria e tentativo obbligatorio di conciliazione.",
+      "Codice civile, artt. 1913 (denuncia del sinistro), 2947 (prescrizione del risarcimento) e 2952 (prescrizione dei diritti assicurativi).",
+    ],
+    contenuto: `**Dopo un incidente, un infortunio o un trattamento sanitario andato male, le domande sono sempre le stesse: cosa mi è rimasto? A cosa ho diritto? Da dove comincio?**
+
+### Che cos'è la medicina legale
+
+La medicina legale mette in relazione la medicina con l'ambito giuridico e assicurativo. Il medico legale valuta in modo scientifico le conseguenze di un evento sulla salute di una persona, e le mette per iscritto in una **relazione tecnica documentata**.
+
+Lavora per privati, professionisti e studi legali. Quando affianca una persona nel confronto con un'assicurazione redige una consulenza medico-legale di parte; nei procedimenti davanti al giudice assume il ruolo di consulente tecnico di parte, o CTP, e si confronta con il consulente nominato dal giudice (CTU).
+
+### Dopo un incidente stradale
+
+Dopo un sinistro stradale la perizia medico-legale serve a ricostruire il nesso causale tra l'incidente e le lesioni, e a valutarne le conseguenze: il periodo di inabilità temporanea, totale e parziale, e gli eventuali postumi permanenti.
+
+Un aspetto spesso sottovalutato è che alcuni disturbi compaiono o si chiariscono solo nelle settimane successive. Per questo la valutazione va fatta quando il quadro si è stabilizzato, ma **la documentazione va raccolta fin dal primo giorno**. Il verbale di pronto soccorso o il certificato del medico curante, redatto in pertinente continuità temporale con l'incidente, è spesso il documento più importante di tutta la pratica.
+
+Per le lesioni lievi la legge richiede che il danno permanente sia riscontrabile con un **accertamento clinico strumentale obiettivo**. Non significa che serva per forza una risonanza: la giurisprudenza ha chiarito che conta un accertamento medico-legale rigoroso, che può basarsi anche sull'esame clinico. Significa però che un disturbo solo riferito, e mai documentato, difficilmente viene riconosciuto.
+
+### Il danno biologico
+
+Il danno biologico è la lesione, temporanea o permanente, dell'integrità psicofisica della persona, suscettibile di accertamento medico-legale, che incide sulle attività quotidiane e sulla vita di relazione, **indipendentemente dalle conseguenze sul reddito**. Non riguarda solo il dolore: comprende limitazioni nei movimenti, fastidi persistenti e ripercussioni sulle normali attività quotidiane. La sofferenza interiore legata alla lesione, il cosiddetto danno morale, viene considerata a parte al momento della liquidazione.
+
+Si distingue in temporaneo, cioè il periodo di malattia e di cure, e permanente, cioè quello che resta dopo la stabilizzazione clinica, quando i postumi non sono più suscettibili di ulteriori miglioramenti.
+
+### Cosa sono i "punti di invalidità"
+
+Il danno permanente si esprime in una percentuale, i cosiddetti punti di invalidità. **Non dipendono solo dalla diagnosi o da una radiografia**. In RC auto e nella responsabilità sanitaria si usano tabelle stabilite per legge: una per le lesioni lievi, da 1 a 9 punti, e dal 2025 una tabella unica nazionale per quelle da 10 a 100 punti.
+
+Il medico legale considera la documentazione sanitaria, le cure ricevute, il decorso della lesione e le limitazioni realmente riscontrabili alla visita. Per questo due persone con la stessa diagnosi possono avere valutazioni diverse.
+
+Attenzione a un equivoco frequente: la stessa lesione può valere percentuali diverse a seconda dell'ambito. Un risarcimento per responsabilità civile, una polizza infortuni e una pratica INAIL usano criteri e tabelle differenti, e **i numeri non sono confrontabili tra loro**.
+
+### Le polizze infortuni e malattia
+
+**Molte persone sono assicurate senza saperlo**: oltre alle polizze stipulate direttamente, esistono coperture legate al contratto di lavoro, al mutuo, al conto in banca, alla carta di credito o a un'associazione sportiva.
+
+Ogni polizza è un contratto con regole proprie: cosa intende per infortunio, tabelle di invalidità, franchigie, esclusioni e tempi per denunciare l'evento. Se il contratto non dice diversamente, **la denuncia va fatta entro tre giorni**; il diritto all'indennizzo, di regola, si prescrive in due anni. La compagnia di solito chiede la documentazione e fissa una visita con un suo medico fiduciario, poi formula una proposta. Se la valutazione non è condivisa dall'assicurato, di norma le polizze prevedono un **collegio medico** che decide sulle divergenze: è un passaggio da preparare bene, con un medico legale di propria fiducia.
+
+Il momento giusto per un parere è **prima di firmare la quietanza, o meglio ancora prima della visita**: una volta firmata a saldo, nella maggior parte dei casi la pratica si chiude.
+
+### Quando un trattamento sanitario solleva dubbi
+
+Un esito inatteso, un aggravamento, un dubbio sul percorso diagnostico o terapeutico: in questi casi una valutazione medico-legale indipendente aiuta a ricostruire i fatti in modo oggettivo, prima di prendere qualsiasi decisione.
+
+Non è un'accusa a nessuno. Un esito sfavorevole **non significa di per sé che ci sia stato un errore**. È un modo per capire, con documenti alla mano, se ci sono elementi che meritano un approfondimento. Il primo passo pratico è richiedere la **copia completa della cartella clinica**.
+
+Se si decide di procedere, la legge sulla responsabilità sanitaria (Legge 24/2017, detta Gelli-Bianco) prevede, prima di una causa, un **tentativo obbligatorio di conciliazione**, spesso con una consulenza tecnica preventiva in cui la valutazione medico-legale è centrale.
+
+### Perché muoversi presto
+
+In tutti questi casi vale la stessa regola: **prima ci si muove, più la valutazione è completa**. Ci sono anche **termini di prescrizione** da rispettare, diversi da caso a caso: di regola due anni per il risarcimento da incidente stradale e per i diritti nascenti da una polizza; nella responsabilità sanitaria dieci anni verso la struttura e cinque verso il medico che vi opera. Per i tempi del proprio caso è bene sentire anche un avvocato. Conviene conservare referti, esami, certificati e fatture delle cure.
+
+Un consiglio semplice in più: **tenere un diario dei disturbi**, annotando con la data il dolore, le attività che non si riescono a fare, le cure e i disturbi nuovi. A distanza di mesi la memoria è imprecisa; un diario aiuta a ricostruire il decorso.
+
+### Il Dott. Maico Battistello
+
+Il Dott. Maico Battistello è medico chirurgo specialista in medicina legale. È anche osteopata e ozonoterapeuta: tratta ogni giorno pazienti con dolori muscolari e articolari, e porta questa esperienza clinica anche nella valutazione dei postumi.
+
+Riceve su appuntamento a Marostica, Schio, Malo e Padova. A Padova le consulenze medico-legali si svolgono alla Clinica Medicina Amica, in Via Boccaccio 104/C.
+
+Approfondisci: [Medicina Legale](/medicina-legale) · [Prenota una consulenza medico-legale](/contatti)
+
+---
+
+Le informazioni di questo articolo hanno carattere divulgativo e non sostituiscono la valutazione del singolo caso. Aggiornato a novembre 2026.`,
+  },
   {
     slug: "ozonoterapia-approccio-osteopatico",
     titolo: "Ozonoterapia con approccio osteopatico",

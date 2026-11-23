@@ -257,7 +257,7 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           {articolo.bibliografia && articolo.bibliografia.length > 0 && (
             <details className="group mt-12 border-y border-slate-300/80">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 marker:hidden [&::-webkit-details-marker]:hidden">
-                <span className="text-lg md:text-xl font-semibold text-slate-900">Riferimenti bibliografici</span>
+                <span className="text-lg md:text-xl font-semibold text-slate-900">{articolo.titoloBibliografia ?? "Riferimenti bibliografici"}</span>
                 <span aria-hidden="true" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[#0066CC]/30 text-xl font-light text-[#0066CC] transition-transform duration-300 group-open:rotate-45">+</span>
               </summary>
               <ol className="space-y-3 pb-6 text-sm md:text-base leading-relaxed text-slate-600">
