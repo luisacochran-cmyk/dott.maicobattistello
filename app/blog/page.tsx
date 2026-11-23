@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import Breadcrumb from "@/components/breadcrumb"
-import { articoli, formattaData } from "@/lib/articoli"
+import { articoli, formattaData, tempoLettura } from "@/lib/articoli"
 
 export const metadata: Metadata = {
   title: "Blog | Dott. Maico Battistello",
@@ -59,11 +59,12 @@ export default function BlogPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      style={articolo.posizioneImmagine ? { objectPosition: articolo.posizioneImmagine } : undefined}
                     />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#0066CC]">
-                      {articolo.categoria} · {formattaData(articolo.data)}
+                      {articolo.categoria} · {formattaData(articolo.data)} · {tempoLettura(articolo)} min
                     </p>
                     <h2 className="text-xl font-semibold leading-snug tracking-tight text-slate-900 group-hover:text-[#0066CC] transition-colors">
                       {articolo.titolo}

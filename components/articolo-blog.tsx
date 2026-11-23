@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Calendar } from "lucide-react"
 import Breadcrumb from "@/components/breadcrumb"
-import { type Articolo, formattaData } from "@/lib/articoli"
+import { type Articolo, formattaData, tempoLettura, sezioni, ancora } from "@/lib/articoli"
 
 /* Trasforma **testo** in grassetto e [testo](/indirizzo) in link */
 function conFormattazione(testo: string): ReactNode[] {
@@ -48,7 +48,7 @@ function TestoArticolo({ contenuto }: { contenuto: string }) {
         // Titolo di sezione
         if (t.startsWith("### ")) {
           return (
-            <h2 key={i} className="pt-4 text-[1.6rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900">
+            <h2 key={i} id={ancora(t.slice(4).trim())} className="scroll-mt-28 pt-4 text-[1.6rem] md:text-3xl font-semibold leading-tight tracking-tight text-slate-900">
               {t.slice(4)}
             </h2>
           )
@@ -190,6 +190,19 @@ const etichetta = "text-xs font-semibold uppercase tracking-[0.24em] text-[#0066
 
 export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
   const indirizzo = `https://dottmaicobattistello.it/blog/${articolo.slug}`
+  const indice = sezioni(articolo)
+  const medicoLegale = articolo.categoria === "Medicina Legale"
+  const linkCollegati = medicoLegale
+    ? [
+        { href: "/medicina-legale", testo: "Medicina Legale" },
+        { href: "/chi-sono", testo: "Chi è il Dott. Battistello" },
+        { href: "/contatti", testo: "Contatti e sedi" },
+      ]
+    : [
+        { href: "/ozonoterapia-osteopatia", testo: "L'approccio integrato" },
+        { href: "/ozonoterapia", testo: "Ozonoterapia" },
+        { href: "/osteopatia", testo: "Osteopatia" },
+      ]
 
   const datiStrutturati = {
     "@context": "https://schema.org",
@@ -223,7 +236,7 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
         <header className="pt-10 pb-8 md:pt-16">
           <div className="container mx-auto max-w-3xl px-4">
             <p className={`mb-4 ${etichetta}`}>
-              {articolo.categoria} · {formattaData(articolo.data)}
+              {articolo.categoria} · {formattaData(articolo.data)} · {tempoLettura(articolo)} min di lettura
             </p>
             <h1 className="text-[2rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
               {articolo.titolo}
@@ -243,12 +256,29 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
               priority
               sizes="(max-width: 1024px) 100vw, 900px"
               className={articolo.immagineIntera ? "object-contain" : "object-cover"}
+              style={articolo.posizioneImmagine ? { objectPosition: articolo.posizioneImmagine } : undefined}
             />
           </div>
         </div>
 
         {/* Testo */}
         <div className="container mx-auto max-w-3xl px-4 py-10 md:py-14">
+          {/* Indice, solo negli articoli lunghi */}
+          {indice.length >= 5 && (
+            <nav aria-label="Indice dell'articolo" className="mb-10 rounded-[1.5rem] bg-[#F2F7FD] p-6 md:p-7">
+              <p className={`mb-4 ${etichetta}`}>In questo articolo</p>
+              <ol className="grid gap-x-8 gap-y-2.5 md:grid-cols-2">
+                {indice.map((s, i) => (
+                  <li key={s.id} className="flex gap-3 text-base leading-snug">
+                    <span className="font-semibold text-[#0066CC]">{i + 1}.</span>
+                    <a href={`#${s.id}`} className="text-slate-700 underline-offset-4 hover:text-[#0066CC] hover:underline">
+                      {s.titolo}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
           <div className="space-y-6 text-lg md:text-xl leading-relaxed text-slate-700 [&_strong]:font-semibold [&_strong]:text-slate-900">
             {articolo.contenuto && <TestoArticolo contenuto={articolo.contenuto} />}
           </div>
@@ -275,11 +305,7 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           <div className="mt-12">
             <p className={`mb-4 ${etichetta}`}>Approfondisci</p>
             <div className="flex flex-wrap gap-x-8 gap-y-3">
-              {[
-                { href: "/ozonoterapia-osteopatia", testo: "L'approccio integrato" },
-                { href: "/ozonoterapia", testo: "Ozonoterapia" },
-                { href: "/osteopatia", testo: "Osteopatia" },
-              ].map((link) => (
+              {linkCollegati.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -320,14 +346,14 @@ export function PaginaArticolo({ articolo }: { articolo: Articolo }) {
           <div className="container mx-auto max-w-3xl px-4">
             <div className="rounded-[2.5rem] bg-white/80 p-7 text-center ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-10">
               <p className="text-xl md:text-2xl font-semibold tracking-tight text-slate-900">
-                Ogni percorso inizia da una valutazione<span className="text-[#0066CC]">.</span>
+                {medicoLegale ? "Ogni pratica inizia da una valutazione" : "Ogni percorso inizia da una valutazione"}<span className="text-[#0066CC]">.</span>
               </p>
               <Link
                 href="/contatti"
                 className="mt-6 inline-flex h-12 items-center gap-2 rounded-full bg-[#0066CC] px-8 text-base sm:text-lg font-semibold text-white shadow-lg transition-colors hover:bg-[#0057AD]"
               >
                 <Calendar className="h-5 w-5" />
-                <span>Prenota una visita</span>
+                <span>{medicoLegale ? "Richiedi una consulenza medico-legale" : "Prenota una visita"}</span>
               </Link>
             </div>
           </div>

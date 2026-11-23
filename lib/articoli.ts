@@ -12,6 +12,8 @@ export interface Articolo {
   descrizione: string
   immagine: string
   immagineIntera?: boolean
+  /* inquadratura della copertina, es. "center 25%" (default: centro) */
+  posizioneImmagine?: string
   categoria: CategoriaArticolo
   data: string // formato AAAA-MM-GG
   contenuto: string
@@ -35,6 +37,7 @@ export const articoli: Articolo[] = [
     descrizione:
       "Dopo un incidente, un infortunio o un trattamento sanitario: che cosa fa il medico legale, come si valuta il danno biologico, i punti di invalidità, le polizze e i tempi da rispettare.",
     immagine: "/images/blog-medicina-legale-guida.jpg",
+    posizioneImmagine: "center 22%",
     categoria: "Medicina Legale",
     data: "2026-11-23",
     titoloBibliografia: "Riferimenti normativi",
@@ -102,7 +105,7 @@ Il Dott. Maico Battistello è medico chirurgo specialista in medicina legale. È
 
 Riceve su appuntamento a Marostica, Schio, Malo e Padova. A Padova le consulenze medico-legali si svolgono alla Clinica Medicina Amica, in Via Boccaccio 104/C.
 
-Approfondisci: [Medicina Legale](/medicina-legale) · [Prenota una consulenza medico-legale](/contatti)
+**[Prenota una consulenza medico-legale](/contatti)**
 
 ---
 
@@ -724,4 +727,33 @@ export function formattaData(data: string): string {
     month: "long",
     year: "numeric",
   })
+}
+
+/* Tempo di lettura stimato (circa 200 parole al minuto) */
+export function tempoLettura(articolo: Articolo): number {
+  const testo = articolo.contenuto
+    .replace(/@foto[^\n]*/g, "")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+  const parole = testo.split(/\s+/).filter((p) => /[A-Za-zÀ-ÿ0-9]/.test(p)).length
+  return Math.max(1, Math.round(parole / 200))
+}
+
+/* Trasforma un titolo di sezione in un'ancora per l'indice */
+export function ancora(titolo: string): string {
+  return titolo
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+}
+
+/* Titoli di sezione ("### ...") dell'articolo, per l'indice */
+export function sezioni(articolo: Articolo): { titolo: string; id: string }[] {
+  return articolo.contenuto
+    .split(/\n\s*\n/)
+    .map((b) => b.trim())
+    .filter((b) => b.startsWith("### "))
+    .map((b) => b.slice(4).trim())
+    .map((titolo) => ({ titolo, id: ancora(titolo) }))
 }
