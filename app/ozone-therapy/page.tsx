@@ -195,7 +195,7 @@ export default function OzoneTherapyPage() {
       {/* Rimando alla pagina dedicata all'ozonoterapia topica per le ulcere */}
       <section className="bg-[#F0EAE0] pt-12 md:pt-16">
         <div className="container mx-auto max-w-5xl px-4">
-          <div className="flex flex-col gap-5 rounded-[1.5rem] bg-white/80 p-6 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)] md:flex-row md:items-center md:justify-between md:p-8">
+          <div className="flex flex-col gap-5 border-y border-[#D9CDBE] py-8 md:flex-row md:items-center md:justify-between md:py-10">
             <div>
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
                 Ozonoterapia topica
@@ -244,7 +244,7 @@ export default function OzoneTherapyPage() {
                 </p>
 
                 {/* Evidenza Tipo A */}
-                <div className="rounded-[1.5rem] bg-[#EDF4F9] p-6 ring-1 ring-[#D4DFE9]">
+                <div className="border-l-2 border-[#0066CC] py-1 pl-5 md:pl-7">
                   <div className="flex items-start gap-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0066CC] text-lg font-semibold text-white">
                       A
@@ -269,7 +269,7 @@ export default function OzoneTherapyPage() {
                 </div>
 
                 {/* Evidenza Tipo B */}
-                <div className="rounded-[1.5rem] bg-white/80 p-6 ring-1 ring-[#D4DFE9]">
+                <div className="border-l-2 border-[#0066CC]/45 py-1 pl-5 md:pl-7">
                   <div className="flex items-start gap-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-[#0066CC] text-lg font-semibold text-[#0066CC]">
                       B
@@ -291,7 +291,7 @@ export default function OzoneTherapyPage() {
                 </div>
 
                 {/* Evidenza Tipo C */}
-                <div className="rounded-[1.5rem] bg-[#F8F5F0] p-6 ring-1 ring-[#E7E0D7]">
+                <div className="border-l-2 border-slate-300 py-1 pl-5 md:pl-7">
                   <div className="flex items-start gap-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 border-slate-400 text-lg font-semibold text-slate-600">
                       C
@@ -433,7 +433,7 @@ export default function OzoneTherapyPage() {
               Scopri le informazioni e i servizi disponibili nelle diverse sedi.
             </p>
           </div>
-          <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-9">
+          <div>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 md:gap-x-9">
               {locations.map((location) => (
                 <Link
