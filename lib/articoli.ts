@@ -37,7 +37,6 @@ export const articoli: Articolo[] = [
     descrizione:
       "Dopo un incidente, un infortunio o un trattamento sanitario: che cosa fa il medico legale, come si valuta il danno biologico, i punti di invalidità, le polizze e i tempi da rispettare.",
     immagine: "/images/blog-medicina-legale-guida.jpg",
-    posizioneImmagine: "center 22%",
     categoria: "Medicina Legale",
     data: "2026-11-23",
     titoloBibliografia: "Riferimenti normativi",
