@@ -115,8 +115,8 @@ export default function LegalMedicinePage() {
             <h2 className={`${titoloH2} mb-8`}>
               Prestazioni medico-legali<span className="text-[#0066CC]">.</span>
             </h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+            <div className="grid gap-x-12 gap-y-10 md:grid-cols-2">
+              <article className="border-t border-[#D9CDBE] pt-6">
                 <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Civile Auto (RCA)</h3>
                 <Elenco>
                   <Punto>Perizie medico-legali per <strong>sinistri stradali</strong></Punto>
@@ -126,7 +126,7 @@ export default function LegalMedicinePage() {
                 </Elenco>
               </article>
 
-              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+              <article className="border-t border-[#D9CDBE] pt-6">
                 <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Civile (RC)</h3>
                 <Elenco>
                   <Punto>Valutazione del <strong>danno biologico temporaneo e permanente</strong></Punto>
@@ -136,7 +136,7 @@ export default function LegalMedicinePage() {
                 </Elenco>
               </article>
 
-              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+              <article className="border-t border-[#D9CDBE] pt-6">
                 <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Responsabilità Medica (RCP)</h3>
                 <Elenco>
                   <Punto>Valutazione dei casi di presunta <strong>responsabilità sanitaria</strong></Punto>
@@ -146,7 +146,7 @@ export default function LegalMedicinePage() {
                 </Elenco>
               </article>
 
-              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+              <article className="border-t border-[#D9CDBE] pt-6">
                 <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Polizze Infortuni</h3>
                 <Elenco>
                   <Punto>Valutazione dell&apos;<strong>invalidità permanente</strong> secondo tabelle di polizza</Punto>
@@ -155,7 +155,7 @@ export default function LegalMedicinePage() {
                 </Elenco>
               </article>
 
-              <article className="rounded-[1.5rem] bg-white/80 p-7 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-50px_rgba(20,45,75,0.4)]">
+              <article className="border-t border-[#D9CDBE] pt-6">
                 <h3 className="mb-4 text-xl font-semibold text-[#0066CC]">Polizze Malattia</h3>
                 <Elenco>
                   <Punto>Inquadramento medico-legale delle <strong>patologie coperte da polizza</strong></Punto>
@@ -170,7 +170,7 @@ export default function LegalMedicinePage() {
         {/* Approccio integrato medico-legale e terapeutico: in evidenza */}
         <section className="py-8 md:py-12">
           <div className="container mx-auto max-w-5xl px-4">
-            <div className="rounded-[2.5rem] bg-[#EDF4F9] p-7 ring-1 ring-[#D4DFE9] md:p-12">
+            <div className="border-l-2 border-[#0066CC] py-2 pl-6 md:pl-10">
               <p className={etichetta}>Il valore aggiunto</p>
               <h2 className={`${titoloH2} mb-6`}>
                 Approccio Integrato Medico-Legale e Terapeutico<span className="text-[#0066CC]">.</span>
@@ -219,7 +219,7 @@ export default function LegalMedicinePage() {
                 Scopri le informazioni e i servizi disponibili nelle diverse sedi.
               </p>
             </div>
-            <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-9">
+            <div>
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 md:gap-x-9">
                 {sedi.map((sede) => (
                   <Link

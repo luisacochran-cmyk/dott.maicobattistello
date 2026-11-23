@@ -118,7 +118,7 @@ export function LandingPage({
         {/* Invito finale (personalizzabile da ogni pagina) */}
         <section className="pt-6 pb-14 md:pt-8 md:pb-20">
           <div className="container mx-auto max-w-4xl px-4">
-            <div className="rounded-[2.5rem] bg-white/70 p-7 text-center ring-1 ring-[#E7E0D7] shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] md:p-10">
+            <div className="border-y border-[#D9CDBE] px-2 py-10 text-center md:py-12">
               <p className="text-xl md:text-2xl font-semibold tracking-tight text-slate-900">
                 {invitoTitolo}<span className="text-[#0066CC]">.</span>
               </p>
@@ -271,7 +271,7 @@ export function LandingRiquadro({
   return (
     <section className="py-6 md:py-8">
       <div className="container mx-auto max-w-4xl px-4">
-        <div className="rounded-[2.5rem] bg-[#EDF4F9] p-7 ring-1 ring-[#D4DFE9] md:p-10">
+        <div className="border-l-2 border-[#0066CC] py-2 pl-6 md:pl-10">
           {etichetta && (
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">
               {etichetta}

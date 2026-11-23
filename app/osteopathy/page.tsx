@@ -100,7 +100,7 @@ export default function OsteopathyPage() {
                 Scopri le informazioni e i servizi disponibili nelle diverse sedi.
               </p>
             </div>
-            <div className="rounded-[2.5rem] bg-white/70 p-6 ring-1 ring-white/70 shadow-[0_24px_65px_-46px_rgba(20,45,75,0.4)] backdrop-blur-sm md:p-9">
+            <div>
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 md:gap-x-9">
                 {locations.map((location) => (
                   <Link
