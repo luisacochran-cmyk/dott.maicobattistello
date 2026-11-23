@@ -64,7 +64,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out ${
           isScrolled
-            ? "h-16 lg:h-[4.5rem] bg-primary/95 backdrop-blur-md shadow-lg shadow-black/10"
+            ? "h-14 lg:h-16 bg-primary/95 backdrop-blur-md shadow-lg shadow-black/10"
             : "h-20 lg:h-24 bg-primary"
         }`}
       >
@@ -78,7 +78,7 @@ export default function Navbar({ onMenuToggle = () => {} }: NavbarProps) {
               height={64}
               className={`object-contain transition-all duration-300 ease-out ${
                 isScrolled
-                  ? "h-10 w-10 lg:h-11 lg:w-11"
+                  ? "h-9 w-9 lg:h-10 lg:w-10"
                   : "h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16"
               }`}
               priority
