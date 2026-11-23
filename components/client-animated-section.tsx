@@ -7,6 +7,7 @@ import { Calendar } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import QuadrantCarousel from "@/components/quadrant-carousel";
+import CatenaDolore from "@/components/catena-dolore";
 
 interface HeroSectionProps {
   className?: string;
@@ -185,6 +186,7 @@ export function TreatmentsSection() {
                 Il dolore non sempre nasce dove si sente
                 <span className="text-[#0066CC]">.</span>
               </h2>
+              <CatenaDolore />
             </AnimatedScrollElement>
 
             <AnimatedScrollElement direction="up" delay={0.2}>
