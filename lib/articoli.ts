@@ -97,6 +97,8 @@ Un esito inatteso, un aggravamento, un dubbio sul percorso diagnostico o terapeu
 
 Non è un'accusa a nessuno. Un esito sfavorevole **non significa di per sé che ci sia stato un errore**. È un modo per capire, con documenti alla mano, se ci sono elementi che meritano un approfondimento. Il primo passo pratico è richiedere la **copia completa della cartella clinica**.
 
+@evidenza Un esito sfavorevole non significa di per sé che ci sia stato un errore.
+
 Se si decide di procedere, la legge sulla responsabilità sanitaria (Legge 24/2017, detta Gelli-Bianco) prevede, prima di una causa, un **tentativo obbligatorio di conciliazione**, spesso con una consulenza tecnica preventiva in cui la valutazione medico-legale è centrale.
 
 ### Perché muoversi presto
