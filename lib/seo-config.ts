@@ -334,7 +334,7 @@ export function generateLocalSEO(
           : isOsteopatiaPadova
             ? "Osteopata a Padova, medico chirurgo | Dott. Battistello"
             : isOzonoterapiaPadova
-              ? "Ozonoterapia a Padova: infiltrazioni, GAET e PAET | Dott. Battistello"
+              ? "Ozonoterapia a Padova: infiltrazioni, GAET e PAET"
               : isOzonoterapiaMarostica
                 ? "Ozonoterapia a Marostica | Dott. Maico Battistello"
                 : isOzonoterapiaSchio
@@ -357,8 +357,8 @@ export function generateLocalSEO(
           `Riferimento anche per ${nearbyTownsText} e comuni limitrofi.`,
 
     h1: isMedicinaLegalePadova
-      ? "Medico Legale a Padova – Dott. Maico Battistello"
-      : `${serviceLabel} a ${city.name} – Dott. Maico Battistello`,
+      ? "Medico Legale a Padova"
+      : `${serviceLabel} a ${city.name}`,
 
     h2: isMedicinaLegalePadova
       ? "Consulenze e valutazioni di Medicina Legale a Padova"

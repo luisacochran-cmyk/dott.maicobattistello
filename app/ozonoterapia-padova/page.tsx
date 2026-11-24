@@ -55,9 +55,9 @@ export default function OzonoterapiaPadovaPage() {
             articolazioni.
           </p>
           <p>
-            A Padova il Dott. Battistello riceve alla{" "}
+            Lo studio si trova alla{" "}
             <strong>Clinica Cittàgiardino, in Via F. Piccolo 6</strong>, dove
-            esegue le <strong>infiltrazioni di ossigeno-ozono</strong>, la{" "}
+            vengono eseguite le <strong>infiltrazioni di ossigeno-ozono</strong>, la{" "}
             <strong>grande autoemoterapia (GAET)</strong> e la{" "}
             <strong>piccola autoemoterapia (PAET)</strong>.
           </p>
