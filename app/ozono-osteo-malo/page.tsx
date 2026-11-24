@@ -104,6 +104,25 @@ export default function OzonoOsteoMaloPage() {
         </LandingNota>
       </LandingSezione>
 
+      <LandingSezione
+        etichetta="Dopo la fisioterapia"
+        titolo="Quando la fisioterapia non è bastata"
+      >
+        <p>
+          Molti pazienti arrivano allo studio di <strong>Malo</strong> dopo
+          cicli di <strong>fisioterapia</strong> che non hanno risolto il
+          dolore, oppure cercando un&apos;alternativa o un complemento alla
+          fisioterapia.
+        </p>
+        <p>
+          In questi casi una <strong>valutazione medica e osteopatica</strong>{" "}
+          aiuta a capire l&apos;origine del problema: se accanto alla
+          componente meccanica c&apos;è un&apos;infiammazione che mantiene il
+          dolore, la <strong>terapia con ozono</strong> e l&apos;osteopatia
+          possono lavorare insieme, nella stessa seduta.
+        </p>
+      </LandingSezione>
+
       <LandingSezione etichetta="Il metodo" titolo="Grande e piccola autoemoterapia a Malo">
         <p>
           Il Dott. Maico Battistello esegue anche la grande autoemoterapia
