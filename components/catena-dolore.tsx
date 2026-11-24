@@ -71,15 +71,23 @@ export default function CatenaDolore() {
 
   return (
     <div className="mt-8 rounded-[2rem] bg-[radial-gradient(120%_140%_at_0%_0%,#E3EEFA_0%,#F1F6FC_55%,#FAFCFE_100%)] p-6 md:p-7">
-      <div className="mb-5 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+      <div className="mb-7 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#0066CC]">La catena</p>
         <p
           key={risalita ? "su" : "giu"}
-          className={`${corsivo.className} animate-[catenaIn_0.6s_ease-out] text-sm italic ${
-            risalita ? "text-[#9A7A4E]" : "text-[#1D4E89]/70"
+          className={`${corsivo.className} flex animate-[catenaIn_0.6s_ease-out] items-center gap-2 text-[1.0625rem] italic md:text-lg ${
+            risalita ? "text-[#9A7A4E]" : "text-[#1D4E89]"
           }`}
         >
-          {risalita ? "↑ e risale: catena ascendente" : "↓ catena discendente"}
+          <span
+            aria-hidden="true"
+            className={`not-italic font-sans text-[2.1rem] font-bold leading-none md:text-[2.25rem] ${
+              risalita ? "text-[#B8935F]" : "text-[#0066CC]"
+            }`}
+          >
+            {risalita ? "↑" : "↓"}
+          </span>
+          {risalita ? "e risale: catena ascendente" : "catena discendente"}
         </p>
       </div>
 
