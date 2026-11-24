@@ -55,6 +55,13 @@ export default function OzonoterapiaPadovaPage() {
             articolazioni.
           </p>
           <p>
+            A Padova il Dott. Battistello riceve alla{" "}
+            <strong>Clinica Cittàgiardino, in Via F. Piccolo 6</strong>, dove
+            esegue le <strong>infiltrazioni di ossigeno-ozono</strong>, la{" "}
+            <strong>grande autoemoterapia (GAET)</strong> e la{" "}
+            <strong>piccola autoemoterapia (PAET)</strong>.
+          </p>
+          <p>
             Ogni trattamento parte dalla <strong>valutazione clinica</strong>.
             Natura e sede del disturbo, presenza di una componente infiammatoria,
             limitazioni funzionali e caratteristiche individuali contribuiscono
@@ -112,6 +119,32 @@ export default function OzonoterapiaPadovaPage() {
           l&apos;appropriatezza del trattamento nel singolo caso e la modalità con
           cui eventualmente inserirlo nel percorso terapeutico.
         </LandingNota>
+      </LandingSezione>
+
+      <LandingSezione
+        etichetta="Trattamento locale"
+        titolo="Infiltrazioni di ossigeno-ozono a Padova"
+      >
+        <p>
+          Le <strong>infiltrazioni di ossigeno-ozono</strong> portano la miscela
+          direttamente nella zona del dolore. Sono la modalità più utilizzata
+          per i disturbi della <strong>colonna vertebrale</strong> e delle{" "}
+          <strong>articolazioni</strong>:
+        </p>
+        <LandingElenco
+          voci={[
+            "Infiltrazioni paravertebrali per ernia del disco, lombalgia e sciatica",
+            "Infiltrazioni per cervicalgia e dolore cervicale",
+            "Infiltrazioni per spalla, ginocchio, anca e altre articolazioni",
+            "Infiltrazioni per tendinopatie e contratture muscolari dolorose",
+          ]}
+        />
+        <p>
+          Accanto al trattamento locale, la <strong>GAET</strong> e la{" "}
+          <strong>PAET</strong> agiscono per via sistemica: le trovi descritte
+          qui sotto, con i video. Quale modalità utilizzare, e se integrarle tra
+          loro, viene deciso dopo la visita.
+        </p>
       </LandingSezione>
 
       <LandingSezione

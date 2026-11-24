@@ -334,7 +334,7 @@ export function generateLocalSEO(
           : isOsteopatiaPadova
             ? "Osteopata a Padova, medico chirurgo | Dott. Battistello"
             : isOzonoterapiaPadova
-              ? "Ozonoterapia a Padova | Dott. Maico Battistello"
+              ? "Ozonoterapia a Padova: infiltrazioni, GAET e PAET | Dott. Battistello"
               : isOzonoterapiaMarostica
                 ? "Ozonoterapia a Marostica | Dott. Maico Battistello"
                 : isOzonoterapiaSchio
@@ -347,6 +347,8 @@ export function generateLocalSEO(
 
     description: isMedicinaLegalePadova
       ? "Medico legale a Padova: consulenze medico-legali, valutazione del danno biologico, CTP, responsabilità sanitaria, invalidità e perizie assicurative."
+      : isOzonoterapiaPadova
+        ? "Ozonoterapia a Padova con un medico chirurgo: infiltrazioni di ossigeno-ozono per ernia, lombalgia, cervicale e dolori articolari, grande e piccola autoemoterapia (GAET e PAET). Clinica Cittàgiardino."
       : service.slug === "osteopatia"
         ? `Il dolore non sempre nasce dove si sente. A ${city.name} un osteopata che è anche medico: valutazione clinica e, nella stessa seduta, l'integrazione con l'ozono.`
       : service.slug === "ozonoterapia"
