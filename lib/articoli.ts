@@ -229,9 +229,9 @@ I numeri tra parentesi quadre rimandano ai riferimenti bibliografici qui sotto.`
   },
   {
     slug: "lombosciatalgia-dolore-schiena-gamba",
-    titolo: "Lombosciatalgia: quando il mal di schiena scende lungo la gamba",
+    titolo: "Lombosciatalgia: sintomi, quanto dura e cosa fare quando il dolore scende lungo la gamba",
     descrizione:
-      "Dolore che dalla schiena scende lungo la gamba: che cos'è la lombosciatalgia, quando preoccuparsi, quando serve la risonanza e come ozonoterapia e osteopatia possono inserirsi nel percorso.",
+      "Dolore che dalla schiena scende al gluteo e lungo la gamba: sintomi della lombosciatalgia, quanto dura, tempi di recupero, quando preoccuparsi, quando serve la risonanza e come ozonoterapia e osteopatia possono inserirsi nel percorso.",
     immagine: "/images/blog-lombosciatalgia.jpg",
     categoria: "Osteopatia",
     data: "2026-10-28",
@@ -258,6 +258,19 @@ La differenza con la semplice lombalgia è proprio questa: nella lombalgia il do
 
 Il dolore alla gamba, a volte, è più forte di quello alla schiena.
 
+### Quali sono i sintomi?
+
+I sintomi della lombosciatalgia possono variare molto da persona a persona. I più frequenti sono:
+
+• dolore nella parte bassa della schiena che scende al gluteo e lungo la parte posteriore o laterale della coscia
+• dolore che arriva al polpaccio, alla caviglia o al piede
+• formicolio, intorpidimento o sensazione di "scossa" lungo la gamba
+• bruciore o ridotta sensibilità in una zona della gamba o del piede
+• dolore che peggiora stando seduti a lungo, tossendo, starnutendo o piegandosi in avanti
+• rigidità al risveglio e difficoltà a trovare una posizione comoda
+
+Di solito i sintomi interessano una sola gamba, la sinistra o la destra, a seconda del lato in cui la radice nervosa è irritata. Più raramente coinvolgono entrambe le gambe: in questo caso è bene farsi valutare con attenzione.
+
 ### Perché il dolore scende lungo la gamba? È un'ernia?
 
 Il dolore scende lungo la gamba quando una radice nervosa, nel punto in cui esce dalla colonna, viene irritata o compressa da un'ernia o una protrusione del disco intervertebrale, ma non è l'unica causa: possono contribuire anche il restringimento del canale vertebrale, l'artrosi delle vertebre o, a volte, tensioni muscolari importanti nella zona del gluteo.
@@ -277,6 +290,16 @@ Nella maggior parte dei casi la lombosciatalgia tende a migliorare nell'arco di 
 • dolore in persone con una storia di tumore, o accompagnato da un calo di peso senza motivo
 
 In questi casi è necessario rivolgersi subito al medico o al pronto soccorso.
+
+### Quanto dura la lombosciatalgia? I tempi di recupero
+
+Non esiste una durata uguale per tutti: i tempi di recupero dipendono dalla causa, dall'intensità dell'irritazione del nervo, dall'età, dal lavoro e dallo stile di vita di ciascuno.
+
+In molti casi la fase acuta migliora nell'arco di alcune settimane, spesso entro quattro-sei. Il dolore alla schiena tende a calmarsi per primo; formicolio e sensibilità alterata lungo la gamba possono invece richiedere più tempo.
+
+Quando il dolore dura oltre i tre mesi si parla di lombosciatalgia cronica. Altre volte il problema sembra risolto ma torna, a distanza di mesi, ogni volta che si riaccende la stessa causa.
+
+Per questo, più che chiedersi solo "quanto dura", conviene chiedersi **perché è comparsa**: intervenire sia sull'infiammazione sia sui fattori che la mantengono aiuta a ridurre i tempi e il rischio che il dolore ritorni.
 
 ### Serve la risonanza?
 
