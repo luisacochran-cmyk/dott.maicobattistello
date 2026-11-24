@@ -232,7 +232,7 @@ export default function LegalMedicinePage() {
                 <Punto>Per i sinistri stradali, il <strong>modulo di constatazione amichevole</strong> o il verbale delle autorità</Punto>
               </Elenco>
               <p>
-                Se manca qualcosa non è un problema: durante la consulenza si valuta insieme quali documenti integrare. Per saperne di più leggi anche{" "}
+                L&apos;elenco preciso dei documenti necessari viene indicato dal Dott. Battistello già al primo contatto telefonico, così da arrivare alla consulenza con tutto il necessario. Per saperne di più leggi anche{" "}
                 <Link href="/blog/medicina-legale-quando-serve-come-funziona" className="text-[#0066CC] underline underline-offset-4 hover:text-[#004C99]">
                   Medicina legale: quando serve e come funziona
                 </Link>
