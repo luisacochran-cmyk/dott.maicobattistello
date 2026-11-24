@@ -5,9 +5,9 @@ import Breadcrumb from "@/components/breadcrumb"
 import ContactForm from "@/components/contact-form"
 
 export const metadata = {
-  title: "Medicina Legale a Padova, Marostica, Schio e Malo | Dott. Maico Battistello",
+  title: "Consulenza medico legale a Padova, Marostica, Schio e Malo | Dott. Maico Battistello",
   description:
-    "Consulenze medico-legali specialistiche e perizie per danni da incidenti e malattie. Valutazione accurata del danno biologico e invalidità permanente. Padova, Marostica, Schio e Malo.",
+    "Consulenza medico legale e perizie per incidenti stradali, infortuni e malattie. Valutazione accurata del danno biologico e invalidità permanente. Padova, Marostica, Schio e Malo.",
   alternates: {
     canonical: "https://dottmaicobattistello.it/medicina-legale",
   },
@@ -63,6 +63,9 @@ export default function LegalMedicinePage() {
               <h1 className="text-[2.25rem] md:text-5xl font-semibold leading-tight tracking-tight text-slate-900 mb-5">
                 Cos&apos;è la Medicina Legale<span className="text-[#0066CC]">?</span>
               </h1>
+              <p className="-mt-2 mb-5 text-lg md:text-xl text-slate-600">
+                Consulenza medico legale e perizie per incidenti stradali, infortuni e invalidità.
+              </p>
               <div className="h-1 w-16 rounded-full bg-[#E8CFB0] mb-7" aria-hidden="true" />
               <div className={`space-y-5 ${testo}`}>
                 <p>
@@ -204,6 +207,38 @@ export default function LegalMedicinePage() {
               <Punto>Agenzie assicurative e broker</Punto>
               <Punto>Agenzie che necessitano di <strong>supporto medico-legale</strong> sui propri assistiti</Punto>
             </Elenco>
+          </div>
+        </section>
+
+        {/* Come preparare la documentazione */}
+        <section className="py-8 md:py-12">
+          <div className="container mx-auto max-w-5xl px-4 grid gap-6 md:grid-cols-[0.75fr_1.25fr] md:gap-12">
+            <div>
+              <p className={etichetta}>Prima della consulenza</p>
+              <h2 className={titoloH2}>
+                Come preparare la documentazione<span className="text-[#0066CC]">.</span>
+              </h2>
+            </div>
+            <div className={`space-y-5 ${testo}`}>
+              <p>
+                Per una consulenza medico legale accurata è utile portare con sé tutta la documentazione disponibile, raccolta <strong>fin dal primo giorno</strong>:
+              </p>
+              <Elenco>
+                <Punto><strong>Verbale di pronto soccorso</strong> o primo certificato del medico curante</Punto>
+                <Punto><strong>Referti e certificati</strong> delle visite successive</Punto>
+                <Punto><strong>Esami strumentali</strong> (radiografie, ecografie, risonanze) con i relativi referti</Punto>
+                <Punto><strong>Fatture e ricevute</strong> delle spese mediche, dei farmaci e delle terapie</Punto>
+                <Punto>Eventuale <strong>polizza assicurativa</strong> e corrispondenza con la compagnia</Punto>
+                <Punto>Per i sinistri stradali, il <strong>modulo di constatazione amichevole</strong> o il verbale delle autorità</Punto>
+              </Elenco>
+              <p>
+                Se manca qualcosa non è un problema: durante la consulenza si valuta insieme quali documenti integrare. Per saperne di più leggi anche{" "}
+                <Link href="/blog/medicina-legale-quando-serve-come-funziona" className="text-[#0066CC] underline underline-offset-4 hover:text-[#004C99]">
+                  Medicina legale: quando serve e come funziona
+                </Link>
+                .
+              </p>
+            </div>
           </div>
         </section>
 
